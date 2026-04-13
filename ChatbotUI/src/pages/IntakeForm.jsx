@@ -3,593 +3,333 @@ import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 const API_BASE_URL =
-	import.meta.env.VITE_API_BASE_URL || `${window.location.origin}/api`;
+    import.meta.env.VITE_API_BASE_URL || `${window.location.origin}/api`;
 
 const IntakeForm = () => {
-	const navigate = useNavigate();
-	const [satTaken, setSatTaken] = useState("no");
-	const [actTaken, setActTaken] = useState("no");
+    const navigate = useNavigate();
+    const [satTaken, setSatTaken] = useState("no");
+    const [actTaken, setActTaken] = useState("no");
 
-	const satDisabled = satTaken !== "yes";
-	const actDisabled = actTaken !== "yes";
+    const satDisabled = satTaken !== "yes";
+    const actDisabled = actTaken !== "yes";
 
-	const handleSubmit = async (event) => {
-		event.preventDefault();
-		const formData = new FormData(event.target);
-		const payload = {};
-		for (const [key, value] of formData.entries()) {
-			if (payload[key]) {
-				payload[key] = Array.isArray(payload[key])
-					? [...payload[key], value]
-					: [payload[key], value];
-			} else {
-				payload[key] = value;
-			}
-		}
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        const payload = {};
+        for (const [key, value] of formData.entries()) {
+            if (payload[key]) {
+                payload[key] = Array.isArray(payload[key])
+                    ? [...payload[key], value]
+                    : [payload[key], value];
+            } else {
+                payload[key] = value;
+            }
+        }
 
-		try {
-			const response = await fetch(`${API_BASE_URL}/intake`, {
-				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify(payload),
-			});
-			if (!response.ok) {
-				const detail = await response.text();
-				throw new Error(detail || "Save failed");
-			}
-			toast.success("Form saved!");
-			navigate("/uni");
-		} catch (error) {
-			console.error("Intake submit failed", error);
-			toast.error(
-				"Could not save form. Please try again. If this keeps happening, make sure the backend is running at /api/intake."
-			);
-		}
-	};
+        try {
+            const response = await fetch(`${API_BASE_URL}/intake`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+            });
+            if (!response.ok) {
+                const detail = await response.text();
+                throw new Error(detail || "Save failed");
+            }
+            toast.success("Form saved successfully!");
+            navigate("/uni");
+        } catch (error) {
+            console.error("Intake submit failed", error);
+            toast.error(
+                "Could not save form. Please try again. If this keeps happening, make sure the backend is running at /api/intake."
+            );
+        }
+    };
 
-	return (
-		<section className="bg-slate-100 min-h-screen flex items-center justify-center p-4">
-			<div className="w-full max-w-6xl bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
-				<header className="px-6 sm:px-10 py-6 border-b border-slate-200 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white">
-					<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-						<div className="flex flex-col">
-							<h1 className="text-xl sm:text-2xl font-semibold">
-								Tell us about yourself to get started
-							</h1>
-							<p className="text-xs sm:text-sm text-slate-200 mt-1">
-								Filling this form will help us make you a better education plan.
-							</p>
-						</div>
+    return (
+        <section className="bg-slate-50 min-h-screen flex items-center justify-center py-10 px-4">
+            <div className="w-full max-w-5xl bg-white rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-200 overflow-hidden">
+                {/* Header */}
+                <header className="px-6 sm:px-8 py-5 border-b border-slate-200 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                    <div>
+                        <h1 className="text-xl sm:text-2xl font-bold tracking-tight">
+                            Tell us about yourself
+                        </h1>
+                        <p className="text-xs sm:text-sm text-slate-300 mt-1">
+                            This helps us generate a highly personalized education plan for you.
+                        </p>
+                    </div>
+                    <button
+                        type="button"
+                        className="whitespace-nowrap px-4 py-2 rounded-lg border border-slate-600 text-xs sm:text-sm font-medium text-white hover:bg-slate-700 transition-colors"
+                        onClick={() => navigate("/uni")}
+                    >
+                        Skip for now
+                    </button>
+                </header>
 
-						<button
-							type="button"
-							className="px-4 py-2.5 rounded-full border border-slate-300 text-xs sm:text-sm font-medium text-slate-700 bg-white hover:bg-slate-50"
-							onClick={() => navigate("/uni")}
-						>
-							Skip for now
-						</button>
-					</div>
-				</header>
+                <form onSubmit={handleSubmit} className="px-6 sm:px-8 py-6 space-y-8">
+                    
+                    {/* --- Academic Performance --- */}
+                    <section>
+                        <div className="flex items-center justify-between mb-4 border-b border-slate-100 pb-2">
+                            <h2 className="text-lg font-semibold text-slate-800">Academic Performance</h2>
+                            <span className="text-xs font-semibold tracking-wide text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-200">
+                                REQUIRED
+                            </span>
+                        </div>
+                        
+                        <div className="grid gap-x-4 gap-y-4 md:grid-cols-12">
+                            {/* Row 1 */}
+                            <label className="md:col-span-6 flex flex-col gap-1 text-sm font-medium text-slate-700">
+                                <span>High School Name <span className="text-red-500">*</span></span>
+                                <input name="high_school_name" type="text" placeholder="e.g. Lincoln High School" required className="input-field" />
+                            </label>
+                            <label className="md:col-span-3 flex flex-col gap-1 text-sm font-medium text-slate-700">
+                                <span>Graduation Year <span className="text-red-500">*</span></span>
+                                <select name="graduation_year" required className="input-field bg-white">
+                                    <option value="">Select</option>
+                                    <option>2025</option><option>2026</option><option>2027</option><option>2028</option>
+                                </select>
+                            </label>
+                            <label className="md:col-span-3 flex flex-col gap-1 text-sm font-medium text-slate-700">
+                                <span>State <span className="text-red-500">*</span></span>
+                                <input name="state" type="text" placeholder="e.g. CA / Outside US" required className="input-field" />
+                            </label>
 
-				<form onSubmit={handleSubmit} className="px-6 sm:px-10 py-8 space-y-10">
-					{/* Academic Performance */}
-					<section>
-						<div className="flex items-center justify-between gap-2 mb-4">
-							<h2 className="text-lg sm:text-xl font-semibold text-slate-900">
-								Academic Performance
-							</h2>
-							<span className="text-sm font-medium text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100">
-								Required
-							</span>
-						</div>
-						<div className="grid gap-4 md:grid-cols-4">
-							<label className="flex flex-col gap-1.5 text-sm font-medium text-slate-700">
-								<span className="flex items-center gap-1">
-									High School Name <span className="text-red-500">*</span>
-								</span>
-								<input
-									name="high_school_name"
-									type="text"
-									placeholder="e.g. Lincoln High School"
-									className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
-									required
-								/>
-							</label>
-							<label className="flex flex-col gap-1.5 text-sm font-medium text-slate-700">
-								<span className="flex items-center gap-1">
-									Graduation Year <span className="text-red-500">*</span>
-								</span>
-								<select
-									name="graduation_year"
-									className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm bg-white focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
-									required
-								>
-									<option value="">Select year</option>
-									<option>2025</option>
-									<option>2026</option>
-									<option>2027</option>
-									<option>2028</option>
-								</select>
-							</label>
-							<label className="flex flex-col gap-1.5 text-sm font-medium text-slate-700">
-								<span className="flex items-center gap-1">
-									State <span className="text-red-500">*</span>
-								</span>
-								<input
-									name="state"
-									type="text"
-									placeholder="e.g. California / Outside US"
-									className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
-									required
-								/>
-							</label>
-							<label className="flex flex-col gap-1.5 text-sm font-medium text-slate-700">
-								<span className="flex items-center gap-1">
-									Resident Status <span className="text-red-500">*</span>
-								</span>
-								<select
-									name="resident_status"
-									className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm bg-white focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
-									required
-								>
-									<option value="">Select status</option>
-									<option>In state</option>
-									<option>Out of state</option>
-									<option>International</option>
-								</select>
-							</label>
-						</div>{" "}
-						<div className="mt-6 grid gap-4 md:grid-cols-3">
-							<label className="flex flex-col gap-1.5 text-sm font-medium text-slate-700">
-								<span className="flex items-center gap-1">
-									GPA <span className="text-red-500">*</span>
-								</span>
-								<input
-									name="gpa"
-									type="number"
-									placeholder="e.g. 3 / 4"
-									min="0"
-									max="4"
-									required
-									className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
-								/>
-								<span className="text-[13px] text-slate-500">
-									You can enter GPA as 4 scale
-								</span>
-							</label>
-							<label className="flex flex-col gap-1.5 text-sm font-medium text-slate-700">
-								<span className="flex items-center gap-1">
-									Upload 12th Grade Marksheet{" "}
-								</span>
-								<input
-									name="marksheet_12th"
-									type="file"
-									accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
-									className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm shadow-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
-								/>
-								<span className="text-[13px] text-slate-500">
-									PDF, JPG, PNG, DOC, or DOCX (max 10MB)
-								</span>
-							</label>
-							<label className="flex flex-col gap-1.5 text-sm font-medium text-slate-700">
-								Class Rank (if reported)
-								<select
-									name="class_rank"
-									className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm bg-white focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
-								>
-									<option value="">Not reported</option>
-									<option>Top 5%</option>
-									<option>Top 10%</option>
-									<option>Top 25%</option>
-									<option>Top 50%</option>
-								</select>
-							</label>
-							<label className="flex flex-col gap-1.5 text-sm font-medium text-slate-700">
-								<span className="flex items-center gap-1">
-									Student Type <span className="text-red-500">*</span>
-								</span>
-								<select
-									name="student_type"
-									className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm bg-white focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
-									required
-								>
-									<option value="">Select</option>
-									<option>First Generation</option>
-									<option>African-American</option>
-									<option>Hispanic</option>
-									<option>Low Income</option>
-								</select>
-							</label>
-						</div>
-						<div className="mt-6">
-							<div className="flex items-center justify-between mb-2">
-								<p className="text-sm font-medium text-slate-700 uppercase tracking-wide">
-									Core Subject Grades (recent year)
-								</p>
-								<p className="text-[13px] text-slate-500">
-									Use A/B/C or % as on your transcript.
-								</p>
-							</div>
-							<div className="grid gap-4 md:grid-cols-4">
-								{[
-									{ name: "grade_english", label: "English" },
-									{ name: "grade_math", label: "Mathematics" },
-									{ name: "grade_science", label: "Science" },
-									{ name: "grade_social_studies", label: "Social Studies" },
-								].map((field) => (
-									<label
-										key={field.name}
-										className="flex flex-col gap-1.5 text-sm font-medium text-slate-700"
-									>
-										<span className="flex items-center gap-1">
-											{field.label}
-											<span className="text-red-500">*</span>
-										</span>
-										<input
-											name={field.name}
-											type="text"
-											placeholder="e.g. A / 93%"
-											required
-											className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
-										/>
-									</label>
-								))}
-							</div>
-						</div>
-					</section>
+                            {/* Row 2 */}
+                            <label className="md:col-span-3 flex flex-col gap-1 text-sm font-medium text-slate-700">
+                                <span>Resident Status <span className="text-red-500">*</span></span>
+                                <select name="resident_status" required className="input-field bg-white">
+                                    <option value="">Select status</option>
+                                    <option>In state</option><option>Out of state</option><option>International</option>
+                                </select>
+                            </label>
+                            <label className="md:col-span-3 flex flex-col gap-1 text-sm font-medium text-slate-700">
+                                <span>Student Type <span className="text-red-500">*</span></span>
+                                <select name="student_type" required className="input-field bg-white">
+                                    <option value="">Select</option>
+                                    <option>First Generation</option><option>African-American</option><option>Hispanic</option><option>Low Income</option>
+                                </select>
+                            </label>
+                            <label className="md:col-span-3 flex flex-col gap-1 text-sm font-medium text-slate-700">
+                                <span>GPA (4 scale) <span className="text-red-500">*</span></span>
+                                <input name="gpa" type="number" placeholder="e.g. 3.5" min="0" max="4" step="0.01" required className="input-field" />
+                            </label>
+                            <label className="md:col-span-3 flex flex-col gap-1 text-sm font-medium text-slate-700">
+                                Class Rank
+                                <select name="class_rank" className="input-field bg-white">
+                                    <option value="">Not reported</option>
+                                    <option>Top 5%</option><option>Top 10%</option><option>Top 25%</option><option>Top 50%</option>
+                                </select>
+                            </label>
 
-					{/* Tests */}
-					<section className="border-t border-slate-200 pt-6">
-						<div className="flex items-center justify-between gap-2 mb-4">
-							<h2 className="text-lg sm:text-xl font-semibold text-slate-900">
-								Standardized Tests (US)
-							</h2>
-							<span className="text-sm font-medium text-slate-500">
-								Optional but helpful
-							</span>
-						</div>
+                            {/* Row 3 - File Upload & Core Subjects */}
+                            <label className="md:col-span-4 flex flex-col gap-1 text-sm font-medium text-slate-700">
+                                <span>12th Grade Marksheet <span className="text-slate-400 font-normal text-xs">(Max 10MB)</span></span>
+                                <input name="marksheet_12th" type="file" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" className="input-field py-1.5" />
+                            </label>
+                            
+                            <div className="md:col-span-8 bg-slate-50 p-3 rounded-lg border border-slate-200">
+                                <p className="text-[13px] font-semibold text-slate-600 mb-2">Core Subject Grades <span className="font-normal text-slate-500">(A/B/C or %)</span> <span className="text-red-500">*</span></p>
+                                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                    {[{ name: "grade_english", label: "English" }, { name: "grade_math", label: "Math" }, { name: "grade_science", label: "Science" }, { name: "grade_social_studies", label: "Social St." }].map((field) => (
+                                        <input key={field.name} name={field.name} type="text" placeholder={field.label} required className="input-field" />
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-						<div className="rounded-xl border border-sky-100 bg-sky-50/60 p-4 sm:p-5 mb-5">
-							<div className="flex flex-wrap items-center justify-between gap-3 mb-3">
-								<div className="flex items-center gap-2">
-									<div className="h-7 w-7 rounded-lg bg-sky-600 text-white flex items-center justify-center text-xs font-semibold">
-										SAT
-									</div>
-									<p className="text-sm font-semibold text-slate-800">
-										SAT Scores
-									</p>
-								</div>
-								<div className="flex items-center gap-4 text-xs sm:text-sm text-slate-700">
-									<label className="inline-flex items-center gap-1 cursor-pointer">
-										<input
-											type="radio"
-											name="sat_taken"
-											value="no"
-											checked={satTaken === "no"}
-											onChange={() => setSatTaken("no")}
-											className="h-4 w-4 text-sky-600 border-slate-300 focus:ring-sky-500"
-										/>
-										<span>Haven&apos;t taken</span>
-									</label>
-									<label className="inline-flex items-center gap-1 cursor-pointer">
-										<input
-											type="radio"
-											name="sat_taken"
-											value="yes"
-											checked={satTaken === "yes"}
-											onChange={() => setSatTaken("yes")}
-											className="h-4 w-4 text-sky-600 border-slate-300 focus:ring-sky-500"
-										/>
-										<span>Taken</span>
-									</label>
-								</div>
-							</div>
-							<div
-								className={`grid gap-4 md:grid-cols-4 ${
-									satDisabled ? "opacity-40 pointer-events-none" : ""
-								}`}
-							>
-								{[
-									{
-										name: "sat_total",
-										label: "Total (1600)",
-										min: 0,
-										max: 1600,
-									},
-									{ name: "sat_math", label: "Math (800)", min: 0, max: 800 },
-									{
-										name: "sat_reading",
-										label: "Reading & Writing (800)",
-										min: 0,
-										max: 800,
-									},
-								].map((field) => (
-									<label
-										key={field.name}
-										className="flex flex-col gap-1.5 text-xs font-medium text-slate-700"
-									>
-										{field.label}
-										<input
-											name={field.name}
-											type="number"
-											min={field.min}
-											max={field.max}
-											placeholder="e.g. 400"
-											disabled={satDisabled}
-											className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm shadow-sm focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
-										/>
-									</label>
-								))}
-								<label className="flex flex-col gap-1.5 text-xs font-medium text-slate-700">
-									Test Date
-									<input
-										name="sat_date"
-										type="date"
-										disabled={satDisabled}
-										className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm shadow-sm focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
-									/>
-								</label>
-							</div>
-						</div>
+                    {/* --- Standardized Tests --- */}
+                    <section>
+                        <div className="flex items-center justify-between mb-4 border-b border-slate-100 pb-2">
+                            <h2 className="text-lg font-semibold text-slate-800">Standardized Tests</h2>
+                            <span className="text-xs font-medium text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md">Optional</span>
+                        </div>
+                        
+                        {/* Side by side layout for SAT and ACT on Desktop */}
+                        <div className="grid md:grid-cols-2 gap-6">
+                            {/* SAT Box */}
+                            <div className="rounded-xl border border-sky-200 bg-sky-50/30 p-4">
+                                <div className="flex items-center justify-between mb-4 border-b border-sky-100 pb-3">
+                                    <div className="flex items-center gap-2">
+                                        <div className="h-6 w-6 rounded bg-sky-600 text-white flex items-center justify-center text-[10px] font-bold tracking-wider">SAT</div>
+                                    </div>
+                                    <div className="flex items-center gap-3 text-sm text-slate-700 font-medium">
+                                        <label className="flex items-center gap-1 cursor-pointer">
+                                            <input type="radio" name="sat_taken" value="no" checked={satTaken === "no"} onChange={() => setSatTaken("no")} className="h-4 w-4 text-sky-600" /> No
+                                        </label>
+                                        <label className="flex items-center gap-1 cursor-pointer">
+                                            <input type="radio" name="sat_taken" value="yes" checked={satTaken === "yes"} onChange={() => setSatTaken("yes")} className="h-4 w-4 text-sky-600" /> Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div className={`grid grid-cols-2 gap-3 transition-opacity ${satDisabled ? "opacity-40 pointer-events-none" : "opacity-100"}`}>
+                                    <label className="flex flex-col gap-1 text-xs font-semibold text-slate-700">Total (1600)
+                                        <input name="sat_total" type="number" min="0" max="1600" placeholder="e.g. 1400" disabled={satDisabled} className="input-field-sm focus:ring-sky-500 focus:border-sky-500" />
+                                    </label>
+                                    <label className="flex flex-col gap-1 text-xs font-semibold text-slate-700">Math (800)
+                                        <input name="sat_math" type="number" min="0" max="800" placeholder="e.g. 700" disabled={satDisabled} className="input-field-sm focus:ring-sky-500 focus:border-sky-500" />
+                                    </label>
+                                    <label className="flex flex-col gap-1 text-xs font-semibold text-slate-700">Reading (800)
+                                        <input name="sat_reading" type="number" min="0" max="800" placeholder="e.g. 700" disabled={satDisabled} className="input-field-sm focus:ring-sky-500 focus:border-sky-500" />
+                                    </label>
+                                    <label className="flex flex-col gap-1 text-xs font-semibold text-slate-700">Test Date
+                                        <input name="sat_date" type="date" disabled={satDisabled} className="input-field-sm focus:ring-sky-500 focus:border-sky-500" />
+                                    </label>
+                                </div>
+                            </div>
 
-						<div className="rounded-xl border border-emerald-100 bg-emerald-50/60 p-4 sm:p-5">
-							<div className="flex flex-wrap items-center justify-between gap-3 mb-3">
-								<div className="flex items-center gap-2">
-									<div className="h-7 w-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-semibold">
-										ACT
-									</div>
-									<p className="text-sm font-semibold text-slate-800">
-										ACT Scores
-									</p>
-								</div>
-								<div className="flex items-center gap-4 text-xs sm:text-sm text-slate-700">
-									<label className="inline-flex items-center gap-1 cursor-pointer">
-										<input
-											type="radio"
-											name="act_taken"
-											value="no"
-											checked={actTaken === "no"}
-											onChange={() => setActTaken("no")}
-											className="h-4 w-4 text-emerald-600 border-slate-300 focus:ring-emerald-500"
-										/>
-										<span>Haven&apos;t taken</span>
-									</label>
-									<label className="inline-flex items-center gap-1 cursor-pointer">
-										<input
-											type="radio"
-											name="act_taken"
-											value="yes"
-											checked={actTaken === "yes"}
-											onChange={() => setActTaken("yes")}
-											className="h-4 w-4 text-emerald-600 border-slate-300 focus:ring-emerald-500"
-										/>
-										<span>Taken</span>
-									</label>
-								</div>
-							</div>
-							<div
-								className={`grid gap-4 md:grid-cols-6 ${
-									actDisabled ? "opacity-40 pointer-events-none" : ""
-								}`}
-							>
-								{[
-									{ name: "act_composite", label: "Composite (36)" },
-									{ name: "act_english", label: "English" },
-									{ name: "act_math", label: "Math" },
-									{ name: "act_reading", label: "Reading" },
-									{ name: "act_science", label: "Science" },
-								].map((field) => (
-									<label
-										key={field.name}
-										className="flex flex-col gap-1.5 text-xs font-medium text-slate-700"
-									>
-										{field.label}
-										<input
-											name={field.name}
-											type="number"
-											min="1"
-											max="36"
-											placeholder="e.g. 30"
-											disabled={actDisabled}
-											className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm shadow-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
-										/>
-									</label>
-								))}
-								<label className="flex flex-col gap-1.5 text-xs font-medium text-slate-700">
-									Test Date
-									<input
-										name="act_date"
-										type="date"
-										disabled={actDisabled}
-										className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm shadow-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
-									/>
-								</label>
-							</div>
-						</div>
-					</section>
+                            {/* ACT Box */}
+                            <div className="rounded-xl border border-emerald-200 bg-emerald-50/30 p-4">
+                                <div className="flex items-center justify-between mb-4 border-b border-emerald-100 pb-3">
+                                    <div className="flex items-center gap-2">
+                                        <div className="h-6 w-6 rounded bg-emerald-600 text-white flex items-center justify-center text-[10px] font-bold tracking-wider">ACT</div>
+                                    </div>
+                                    <div className="flex items-center gap-3 text-sm text-slate-700 font-medium">
+                                        <label className="flex items-center gap-1 cursor-pointer">
+                                            <input type="radio" name="act_taken" value="no" checked={actTaken === "no"} onChange={() => setActTaken("no")} className="h-4 w-4 text-emerald-600" /> No
+                                        </label>
+                                        <label className="flex items-center gap-1 cursor-pointer">
+                                            <input type="radio" name="act_taken" value="yes" checked={actTaken === "yes"} onChange={() => setActTaken("yes")} className="h-4 w-4 text-emerald-600" /> Yes
+                                        </label>
+                                    </div>
+                                </div>
+                                <div className={`grid grid-cols-3 gap-3 transition-opacity ${actDisabled ? "opacity-40 pointer-events-none" : "opacity-100"}`}>
+                                    <label className="flex flex-col gap-1 text-xs font-semibold text-slate-700">Comp. (36)
+                                        <input name="act_composite" type="number" min="1" max="36" placeholder="30" disabled={actDisabled} className="input-field-sm focus:ring-emerald-500 focus:border-emerald-500" />
+                                    </label>
+                                    <label className="flex flex-col gap-1 text-xs font-semibold text-slate-700">English
+                                        <input name="act_english" type="number" min="1" max="36" disabled={actDisabled} className="input-field-sm focus:ring-emerald-500 focus:border-emerald-500" />
+                                    </label>
+                                    <label className="flex flex-col gap-1 text-xs font-semibold text-slate-700">Math
+                                        <input name="act_math" type="number" min="1" max="36" disabled={actDisabled} className="input-field-sm focus:ring-emerald-500 focus:border-emerald-500" />
+                                    </label>
+                                    <label className="flex flex-col gap-1 text-xs font-semibold text-slate-700">Reading
+                                        <input name="act_reading" type="number" min="1" max="36" disabled={actDisabled} className="input-field-sm focus:ring-emerald-500 focus:border-emerald-500" />
+                                    </label>
+                                    <label className="flex flex-col gap-1 text-xs font-semibold text-slate-700">Science
+                                        <input name="act_science" type="number" min="1" max="36" disabled={actDisabled} className="input-field-sm focus:ring-emerald-500 focus:border-emerald-500" />
+                                    </label>
+                                    <label className="flex flex-col gap-1 text-xs font-semibold text-slate-700">Date
+                                        <input name="act_date" type="date" disabled={actDisabled} className="input-field-sm focus:ring-emerald-500 focus:border-emerald-500 px-1" />
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-					{/* Financial */}
-					<section className="border-t border-slate-200 pt-6">
-						<div className="flex items-center justify-between gap-2 mb-4">
-							<h2 className="text-lg sm:text-xl font-semibold text-slate-900">
-								Financial Readiness (US Study Costs)
-							</h2>
-							<span className="text-xs font-medium text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-100">
-								Used to match realistic options
-							</span>
-						</div>
+                    {/* --- Financial Readiness --- */}
+                    <section>
+                        <div className="flex items-center justify-between mb-3 border-b border-slate-100 pb-2">
+                            <h2 className="text-lg font-semibold text-slate-800">Financial Readiness</h2>
+                        </div>
+                        <p className="text-[13px] text-slate-500 mb-4">
+                            Helps filter realistic college options based on US study and living costs.
+                        </p>
 
-						<p className="text-sm sm:text-[14px] font-semibold text-slate-600 mb-4">
-							US colleges and the student visa process usually expect proof that
-							you can cover at least one year of tuition and living expenses.
-							This helps EdPlan AI suggest colleges that truly fit your
-							situation.
-						</p>
+                        <div className="grid md:grid-cols-2 gap-4 mb-5">
+                            <label className="flex flex-col gap-1 text-sm font-medium text-slate-700">
+                                <span>Estimated Total Budget <span className="text-slate-400 font-normal">(USD/year)</span> <span className="text-red-500">*</span></span>
+                                <div className="relative">
+                                    <span className="absolute inset-y-0 left-3 flex items-center text-slate-400">$</span>
+                                    <input name="budget_total" type="number" min="0" required placeholder="35000" className="input-field pl-7" />
+                                </div>
+                            </label>
+                            <label className="flex flex-col gap-1 text-sm font-medium text-slate-700">
+                                <span>Max Tuition You Can Afford <span className="text-slate-400 font-normal">(USD/year)</span> <span className="text-red-500">*</span></span>
+                                <div className="relative">
+                                    <span className="absolute inset-y-0 left-3 flex items-center text-slate-400">$</span>
+                                    <input name="max_tuition" type="number" min="0" required placeholder="22000" className="input-field pl-7" />
+                                </div>
+                            </label>
+                        </div>
 
-						<div className="grid gap-4 md:grid-cols-2">
-							<label className="flex flex-col gap-1.5 text-sm font-medium text-slate-700">
-								<span className="flex items-center gap-1">
-									Estimated Total Budget (USD per year){" "}
-									<span className="text-red-500">*</span>
-								</span>
-								<div className="relative">
-									<span className="absolute inset-y-0 left-3 flex items-center text-xs text-slate-500">
-										$
-									</span>
-									<input
-										name="budget_total"
-										type="number"
-										min="0"
-										required
-										placeholder="e.g. 35000"
-										className="w-full rounded-lg border border-slate-300 pl-7 pr-3 py-2.5 text-sm shadow-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
-									/>
-								</div>
-								<span className="text-[13px] text-slate-500">
-									Include tuition, housing, food, insurance, and other living
-									costs.
-								</span>
-							</label>
-							<label className="flex flex-col gap-1.5 text-sm font-medium text-slate-700">
-								<span className="flex items-center gap-1">
-									Maximum Tuition You Can Afford (USD per year){" "}
-									<span className="text-red-500">*</span>
-								</span>
-								<div className="relative">
-									<span className="absolute inset-y-0 left-3 flex items-center text-xs text-slate-500">
-										$
-									</span>
-									<input
-										name="max_tuition"
-										type="number"
-										min="0"
-										placeholder="e.g. 22000"
-										required
-										className="w-full rounded-lg border border-slate-300 pl-7 pr-3 py-2.5 text-sm shadow-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
-									/>
-								</div>
-								<span className="text-[13px] text-slate-500">
-									Helps us filter out unaffordable options.
-								</span>
-							</label>
-						</div>
+                        <div className="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <p className="text-[13px] font-semibold text-slate-700 mb-2">Need financial aid/scholarships?</p>
+                                <div className="flex flex-col gap-2">
+                                    {[
+                                        { value: "no_aid", label: "No, I can attend without aid" },
+                                        { value: "some_aid", label: "Yes, I need some aid" },
+                                        { value: "significant_aid", label: "Yes, I need significant aid" },
+                                    ].map((opt) => (
+                                        <label key={opt.value} className="flex items-center gap-2 text-sm text-slate-600 cursor-pointer">
+                                            <input type="radio" name="need_aid" value={opt.value} className="h-4 w-4 text-emerald-600 focus:ring-emerald-500" />
+                                            <span>{opt.label}</span>
+                                        </label>
+                                    ))}
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <p className="text-[13px] font-semibold text-slate-700 mb-2">Expected ways to pay (Select multiple)</p>
+                                <div className="flex flex-wrap gap-2">
+                                    {["Family savings", "Student loans", "Need-based aid", "Merit scholarships", "Sponsor", "Other"].map((label) => (
+                                        <label key={label} className="inline-flex items-center gap-1.5 rounded-md border border-slate-200 bg-slate-50 px-2.5 py-1 text-[13px] cursor-pointer hover:border-emerald-400 transition-colors">
+                                            <input type="checkbox" name="pay_options" value={label} className="h-3.5 w-3.5 rounded text-emerald-600 focus:ring-emerald-500" />
+                                            <span className="text-slate-700">{label}</span>
+                                        </label>
+                                    ))}
+                                </div>
+                                <div className="mt-4 flex items-center gap-3">
+                                    <p className="text-[13px] font-semibold text-slate-700">Interested in on-campus work?</p>
+                                    <label className="text-sm flex items-center gap-1 cursor-pointer"><input type="radio" name="work_study" value="yes" className="text-emerald-600" /> Yes</label>
+                                    <label className="text-sm flex items-center gap-1 cursor-pointer"><input type="radio" name="work_study" value="no" className="text-emerald-600" /> No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-						<div className="mt-5">
-							<p className="block text-sm font-medium text-slate-700 mb-2">
-								Will you need financial aid or scholarships?
-							</p>
-							<div className="flex flex-wrap gap-3 text-sm sm:text-sm text-slate-700">
-								{[
-									{ value: "no_aid", label: "No, I can attend without aid" },
-									{ value: "some_aid", label: "Yes, I will need some aid" },
-									{
-										value: "significant_aid",
-										label: "Yes, I will need significant aid",
-									},
-								].map((option) => (
-									<label
-										key={option.value}
-										className="inline-flex items-center gap-2 cursor-pointer"
-									>
-										<input
-											type="radio"
-											name="need_aid"
-											value={option.value}
-											className="h-4 w-4 text-emerald-600 border-slate-300 focus:ring-emerald-500"
-										/>
-										<span>{option.label}</span>
-									</label>
-								))}
-							</div>
-						</div>
+                    {/* --- Footer & Submit --- */}
+                    <section className="border-t border-slate-200 pt-5 flex flex-col md:flex-row md:items-center justify-between gap-4 mt-2">
+                        <label className="flex items-start gap-2 text-[13px] text-slate-600 max-w-2xl cursor-pointer">
+                            <input name="consent" type="checkbox" required className="mt-0.5 h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500 flex-shrink-0" />
+                            <span>I confirm the information provided is accurate. EdPlan AI will use this to estimate fit and suggest US colleges.</span>
+                        </label>
 
-						<div className="mt-5">
-							<p className="block text-sm font-medium text-slate-700 mb-2">
-								Main ways you expect to pay for college (select all that apply)
-							</p>
-							<div className="flex flex-wrap gap-2">
-								{[
-									"Family savings / income",
-									"Student loans",
-									"Need-based aid",
-									"Merit scholarships",
-									"Sponsor (relative/company)",
-									"Other",
-								].map((label) => (
-									<label
-										key={label}
-										className="inline-flex items-center gap-2 rounded-full border border-slate-300 px-3 py-1.5 text-sm cursor-pointer hover:border-emerald-500 hover:bg-emerald-50"
-									>
-										<input
-											type="checkbox"
-											name="pay_options"
-											value={label}
-											className="h-4 w-4 text-emerald-600 border-slate-300 rounded focus:ring-emerald-500"
-										/>
-										<span>{label}</span>
-									</label>
-								))}
-							</div>
-						</div>
-
-						<div className="mt-5">
-							<p className="block text-sm font-medium text-slate-700 mb-2">
-								Are you interested in on-campus work (if eligible)?
-							</p>
-							<div className="flex flex-wrap gap-4 text-xs sm:text-sm text-slate-700">
-								{["yes", "no"].map((value) => (
-									<label
-										key={value}
-										className="inline-flex items-center gap-2 cursor-pointer"
-									>
-										<input
-											type="radio"
-											name="work_study"
-											value={value}
-											className="h-4 w-4 text-emerald-600 border-slate-300 focus:ring-emerald-500"
-										/>
-										<span>{value === "yes" ? "Yes" : "No"}</span>
-									</label>
-								))}
-							</div>
-						</div>
-					</section>
-
-					<section className="border-t border-slate-200 pt-6 mt-2">
-						<label className="flex items-start gap-2 text-xs sm:text-sm text-slate-700 mb-4">
-							<input
-								name="consent"
-								type="checkbox"
-								required
-								className="mt-0.5 h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500"
-							/>
-							<span>
-								I confirm that the information provided is accurate to the best
-								of my knowledge. EdPlan AI will use this only to estimate my fit
-								and suggest US colleges and pathways.
-							</span>
-						</label>
-
-						<div className="flex gap-3 justify-end">
-							<button
-								type="button"
-								className="px-4 py-2.5 rounded-full border border-slate-300 text-xs sm:text-sm font-medium text-slate-700 bg-white hover:bg-slate-50"
-								onClick={() => navigate("/uni")}
-							>
-								Skip for now
-							</button>
-							<button
-								type="submit"
-								className="px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold text-white bg-gradient-to-r from-sky-600 to-emerald-600 shadow-md hover:shadow-lg hover:brightness-105"
-							>
-								Submit
-							</button>
-						</div>
-					</section>
-				</form>
-			</div>
-		</section>
-	);
+                        <div className="flex gap-3 shrink-0">
+                            <button type="button" onClick={() => navigate("/uni")} className="px-5 py-2.5 rounded-lg border border-slate-300 text-sm font-medium text-slate-700 hover:bg-slate-100 transition-colors">
+                                Skip For Now
+                            </button>
+                            <button type="submit" className="px-6 py-2.5 rounded-lg text-sm font-semibold text-white bg-slate-900 shadow-md hover:bg-slate-800 hover:shadow-lg transition-all">
+                                Save Profile
+                            </button>
+                        </div>
+                    </section>
+                </form>
+            </div>
+            
+            {/* Injecting basic standard styles for inputs so we don't repeat long tailwind classes */}
+            <style>{`
+                .input-field {
+                    width: 100%;
+                    border-radius: 0.5rem;
+                    border: 1px solid #cbd5e1;
+                    padding: 0.5rem 0.75rem;
+                    font-size: 0.875rem;
+                    outline: none;
+                    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+                    transition: all 0.2s;
+                }
+                .input-field:focus {
+                    border-color: #10b981;
+                    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+                }
+                .input-field-sm {
+                    width: 100%;
+                    border-radius: 0.375rem;
+                    border: 1px solid #cbd5e1;
+                    padding: 0.375rem 0.5rem;
+                    font-size: 0.75rem;
+                    outline: none;
+                    background: white;
+                }
+            `}</style>
+        </section>
+    );
 };
 
 export default IntakeForm;

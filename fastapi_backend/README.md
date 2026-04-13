@@ -19,6 +19,7 @@ source .venv/bin/activate  # or .venv\\Scripts\\activate on Windows
 pip install -e .[dev]
 cp .env.example .env
 uvicorn app.main:app --reload
+
 ```
 
 Set `DATABASE_URL` to an async Postgres connection string (PostgreSQL 18), e.g.
