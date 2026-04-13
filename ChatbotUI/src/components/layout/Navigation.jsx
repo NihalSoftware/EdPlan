@@ -1,85 +1,150 @@
+import { useState, useEffect } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import clsx from "clsx";
 import { load, remove } from "../../utils/storage.js";
 
-const NavItem = ({ to, label }) => (
-	<NavLink
-		to={to}
-		className={({ isActive }) =>
-			clsx(
-				"w-full px-4 py-3 font-semibold text-left rounded-md transition",
-				isActive
-					? "bg-[#016ce6] text-white shadow-lg"
-					: "text-slate-600 bg-slate-100 hover:bg-slate-200"
-			)
-		}
-	>
-		{label}
-	</NavLink>
+// Added onClick prop so the menu closes when a link is clicked on mobile
+const NavItem = ({ to, label, onClick }) => (
+    <NavLink
+        to={to}
+        onClick={onClick}
+        className={({ isActive }) =>
+            clsx(
+                "w-full px-4 py-3 font-semibold text-left rounded-md transition",
+                isActive
+                    ? "bg-[#016ce6] text-white shadow-lg"
+                    : "text-slate-600 bg-slate-100 hover:bg-slate-200"
+            )
+        }
+    >
+        {label}
+    </NavLink>
 );
 
 const Navigation = () => {
-	const location = useLocation();
-	const navigate = useNavigate();
-	const isAuthenticated = Boolean(load("AuthToken"));
-	const profile = load("UserProfile");
-	const firstName =
-		typeof profile?.first_name === "string"
-			? profile.first_name
-			: typeof profile?.firstName === "string"
-			? profile.firstName
-			: "";
+    const location = useLocation();
+    const navigate = useNavigate();
+    
+    // State to handle mobile menu toggle
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-	const buttonLabel = isAuthenticated
-		? "Logout"
-		: location.pathname === "/login"
-		? "Sign up"
-		: "Login";
+    const isAuthenticated = Boolean(load("AuthToken"));
+    const profile = load("UserProfile");
+    const firstName =
+        typeof profile?.first_name === "string"
+            ? profile.first_name
+            : typeof profile?.firstName === "string"
+            ? profile.firstName
+            : "";
 
-	const handleAuthClick = () => {
-		if (isAuthenticated) {
-			remove("AuthToken");
-			remove("UserEmail");
-			remove("UserProfile");
-			navigate("/login");
-			return;
-		}
-		navigate(location.pathname === "/login" ? "/signup" : "/login");
-	};
+    const buttonLabel = isAuthenticated
+        ? "Logout"
+        : location.pathname === "/login"
+        ? "Sign up"
+        : "Login";
 
-	return (
-		<aside className="w-full lg:w-72 bg-white border-r border-slate-200 shadow-sm p-6 flex flex-col gap-6 lg:fixed lg:h-screen lg:top-0 lg:left-0 lg:overflow-y-auto">
-			<header className="flex items-start justify-between gap-4">
-				<div>
-					<h1 className="ml-4 text-3xl font-semibold text-slate-900">
-						EdPlan.ai
-					</h1>
-				</div>
-				<div className="flex flex-col items-end">
-					{isAuthenticated && firstName && (
-						<span className="text-md font-medium text-slate-600">
-							{firstName}
-						</span>
-					)}
-					<button
-						type="button"
-						onClick={handleAuthClick}
-						className="font-medium text-lg text-indigo-600 hover:text-indigo-500"
-					>
-						{buttonLabel}
-					</button>
-				</div>
-			</header>
-			<nav className="flex flex-col gap-2">
-				<NavItem to="/home" label="Home" />
-				<NavItem to="/career" label="Career & Program" />
-				<NavItem to="/intake" label="Onboarding Form" />
-				<NavItem to="/uni" label="Find University" />
-				<NavItem to="/educationplan" label="Create Education Plan" />
-				<NavItem to="/view" label="Saved Plans" />
-			</nav>
-		</aside>
-	);
+    const handleAuthClick = () => {
+        if (isAuthenticated) {
+            remove("AuthToken");
+            remove("UserEmail");
+            remove("UserProfile");
+            navigate("/login");
+            setIsMenuOpen(false); // Close menu on logout
+            return;
+        }
+        navigate(location.pathname === "/login" ? "/signup" : "/login");
+        setIsMenuOpen(false);
+    };
+
+    const closeMenu = () => setIsMenuOpen(false);
+
+    // Prevent body scrolling when the mobile menu is open
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+    }, [isMenuOpen]);
+
+    return (
+        <>
+            {/* Mobile & Tablet Header (Visible only on smaller screens) */}
+            <div className="lg:hidden flex items-center justify-between p-4 bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+                <h1 className="text-2xl font-semibold text-slate-900">EdPlan.ai</h1>
+                <button
+                    onClick={() => setIsMenuOpen(true)}
+                    className="p-2 text-slate-600 hover:bg-slate-100 rounded-md focus:outline-none"
+                    aria-label="Open menu"
+                >
+                    {/* 3-Dots Vertical Menu Icon */}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v.01M12 12v.01M12 18v.01" />
+                    </svg>
+                </button>
+            </div>
+
+            {/* Dark Overlay for Mobile when menu is open */}
+            {isMenuOpen && (
+                <div
+                    className="fixed inset-0 bg-slate-900/50 z-40 lg:hidden transition-opacity"
+                    onClick={closeMenu}
+                />
+            )}
+
+            {/* Sidebar Navigation */}
+            <aside
+                className={clsx(
+                    "fixed top-0 left-0 z-50 h-screen w-72 bg-white border-r border-slate-200 shadow-sm p-6 flex flex-col gap-6 overflow-y-auto transition-transform duration-300 ease-in-out lg:translate-x-0",
+                    isMenuOpen ? "translate-x-0" : "-translate-x-full" // Slide in/out on mobile
+                )}
+            >
+                <header className="flex flex-col gap-4">
+                    <div className="flex items-center justify-between lg:block">
+                        <h1 className="text-3xl font-semibold text-slate-900">
+                            EdPlan.ai
+                        </h1>
+                        {/* Close button for Mobile Sidebar */}
+                        <button
+                            onClick={closeMenu}
+                            className="lg:hidden p-2 text-slate-500 hover:bg-slate-100 rounded-md"
+                            aria-label="Close menu"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div className="flex items-center justify-between border-b border-slate-100 pb-4 lg:border-none lg:pb-0">
+                        {isAuthenticated && firstName ? (
+                            <span className="text-md font-medium text-slate-600 truncate mr-2">
+                                {firstName}
+                            </span>
+                        ) : (
+                            <span /> // Empty span to keep the button aligned to the right if no name
+                        )}
+                        <button
+                            type="button"
+                            onClick={handleAuthClick}
+                            className="font-medium text-lg text-indigo-600 hover:text-indigo-500 whitespace-nowrap"
+                        >
+                            {buttonLabel}
+                        </button>
+                    </div>
+                </header>
+
+                <nav className="flex flex-col gap-2 mt-2">
+                    <NavItem to="/home" label="Home" onClick={closeMenu} />
+                    <NavItem to="/career" label="Career & Program" onClick={closeMenu} />
+                    <NavItem to="/intake" label="Onboarding Form" onClick={closeMenu} />
+                    <NavItem to="/uni" label="Find University" onClick={closeMenu} />
+                    <NavItem to="/educationplan" label="Create Education Plan" onClick={closeMenu} />
+                    <NavItem to="/view" label="Saved Plans" onClick={closeMenu} />
+                </nav>
+            </aside>
+        </>
+    );
 };
 
 export default Navigation;
