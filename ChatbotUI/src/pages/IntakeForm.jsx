@@ -16,17 +16,107 @@ const IntakeForm = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
-        const payload = {};
-        for (const [key, value] of formData.entries()) {
-            if (payload[key]) {
-                payload[key] = Array.isArray(payload[key])
-                    ? [...payload[key], value]
-                    : [payload[key], value];
-            } else {
-                payload[key] = value;
+        
+        // ==========================================
+        // 1. FILE SIZE VALIDATION (Max 10MB)
+        // ==========================================
+        const marksheetFile = formData.get("marksheet_12th");
+        if (marksheetFile && marksheetFile.size > 0) {
+            const maxSize = 10 * 1024 * 1024; // 10MB in bytes
+            if (marksheetFile.size > maxSize) {
+                toast.error("Marksheet file size must be less than 10MB.");
+                return; // Stop submission
             }
         }
 
+        // ==========================================
+        // 2. EXTRACT & CLEAN PAYLOAD (Trim spaces)
+        // ==========================================
+        const payload = {};
+        for (const [key, value] of formData.entries()) {
+            // Agar value string hai toh .trim() lagakar extra spaces hata do
+            const cleanValue = typeof value === 'string' ? value.trim() : value;
+            
+            if (payload[key]) {
+                payload[key] = Array.isArray(payload[key])
+                    ? [...payload[key], cleanValue]
+                    : [payload[key], cleanValue];
+            } else {
+                payload[key] = cleanValue;
+            }
+        }
+        
+        // High School Name Check (Cannot be empty or just 1 letter)
+        if (!payload.high_school_name || payload.high_school_name.length < 2) {
+            toast.error("Please enter a valid High School Name (No blank spaces).");
+            return;
+        }
+
+        // State Check (Only letters, spaces, and basic punctuation, min 2 chars)
+        const stateRegex = /^[a-zA-Z\s\.,-]+$/;
+        if (!payload.state || payload.state.length < 2 || !stateRegex.test(payload.state)) {
+            toast.error("Please enter a valid State name (No numbers or special characters).");
+            return;
+        }
+
+        // GPA Check (0 to 4)
+        const gpaNum = parseFloat(payload.gpa);
+        if (isNaN(gpaNum) || gpaNum < 0 || gpaNum > 4) {
+            toast.error("GPA must be a valid number between 0 and 4.");
+            return;
+        }
+
+        // Core Subjects Check (Cannot be blank spaces)
+        const coreSubjects = ["grade_english", "grade_math", "grade_science", "grade_social_studies"];
+        for (let subj of coreSubjects) {
+            if (!payload[subj]) {
+                toast.error("Please enter valid grades for all core subjects (No blank spaces).");
+                return;
+            }
+        }
+
+        // SAT Validations
+        if (satTaken === "yes") {
+            const total = parseInt(payload.sat_total);
+            const math = parseInt(payload.sat_math);
+            const reading = parseInt(payload.sat_reading);
+            
+            if (!total || total < 400 || total > 1600) { toast.error("Valid SAT Total (400-1600) is required."); return; }
+            if (!math || math < 200 || math > 800) { toast.error("Valid SAT Math (200-800) is required."); return; }
+            if (!reading || reading < 200 || reading > 800) { toast.error("Valid SAT Reading (200-800) is required."); return; }
+            if (!payload.sat_date) { toast.error("SAT Test Date is required."); return; }
+        } else {
+            // Clean payload if 'No' is selected so junk data doesn't go to DB
+            delete payload.sat_total; delete payload.sat_math; delete payload.sat_reading; delete payload.sat_date;
+        }
+
+        // ACT Validations
+        if (actTaken === "yes") {
+            const actFields = ['act_composite', 'act_english', 'act_math', 'act_reading', 'act_science'];
+            for (let f of actFields) {
+                const val = parseInt(payload[f]);
+                if (!val || val < 1 || val > 36) {
+                    toast.error("Valid ACT scores (1-36) are required for all sections.");
+                    return;
+                }
+            }
+            if (!payload.act_date) { toast.error("ACT Test Date is required."); return; }
+        } else {
+             // Clean payload
+            delete payload.act_composite; delete payload.act_english; delete payload.act_math; delete payload.act_reading; delete payload.act_science; delete payload.act_date;
+        }
+
+        // Financial Validations
+        const budget = parseInt(payload.budget_total);
+        const maxTuition = parseInt(payload.max_tuition);
+        if (isNaN(budget) || budget < 0) { toast.error("Please enter a valid Estimated Total Budget."); return; }
+        if (isNaN(maxTuition) || maxTuition < 0) { toast.error("Please enter a valid Maximum Tuition."); return; }
+        if (!payload.need_aid) { toast.error("Please select your financial aid needs."); return; }
+        if (!payload.work_study) { toast.error("Please select if you are interested in on-campus work."); return; }
+
+        // ==========================================
+        // 4. API CALL
+        // ==========================================
         try {
             const response = await fetch(`${API_BASE_URL}/intake`, {
                 method: "POST",
@@ -42,7 +132,7 @@ const IntakeForm = () => {
         } catch (error) {
             console.error("Intake submit failed", error);
             toast.error(
-                "Could not save form. Please try again. If this keeps happening, make sure the backend is running at /api/intake."
+                "Could not save form. Please try again. If this keeps happening, make sure the backend is running."
             );
         }
     };
@@ -84,7 +174,8 @@ const IntakeForm = () => {
                             {/* Row 1 */}
                             <label className="md:col-span-6 flex flex-col gap-1 text-sm font-medium text-slate-700">
                                 <span>High School Name <span className="text-red-500">*</span></span>
-                                <input name="high_school_name" type="text" placeholder="e.g. Lincoln High School" required className="input-field" />
+                                {/* Added pattern to strictly prevent space-only submissions in HTML5 too */}
+                                <input name="high_school_name" type="text" placeholder="e.g. Lincoln High School" pattern=".*\S+.*" title="Cannot be empty spaces" required className="input-field" />
                             </label>
                             <label className="md:col-span-3 flex flex-col gap-1 text-sm font-medium text-slate-700">
                                 <span>Graduation Year <span className="text-red-500">*</span></span>
@@ -95,7 +186,7 @@ const IntakeForm = () => {
                             </label>
                             <label className="md:col-span-3 flex flex-col gap-1 text-sm font-medium text-slate-700">
                                 <span>State <span className="text-red-500">*</span></span>
-                                <input name="state" type="text" placeholder="e.g. CA / Outside US" required className="input-field" />
+                                <input name="state" type="text" placeholder="e.g. CA / Outside US" pattern=".*\S+.*" title="Cannot be empty spaces" required className="input-field" />
                             </label>
 
                             {/* Row 2 */}
@@ -135,7 +226,7 @@ const IntakeForm = () => {
                                 <p className="text-[13px] font-semibold text-slate-600 mb-2">Core Subject Grades <span className="font-normal text-slate-500">(A/B/C or %)</span> <span className="text-red-500">*</span></p>
                                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                                     {[{ name: "grade_english", label: "English" }, { name: "grade_math", label: "Math" }, { name: "grade_science", label: "Science" }, { name: "grade_social_studies", label: "Social St." }].map((field) => (
-                                        <input key={field.name} name={field.name} type="text" placeholder={field.label} required className="input-field" />
+                                        <input key={field.name} name={field.name} type="text" pattern=".*\S+.*" title="Cannot be empty spaces" placeholder={field.label} required className="input-field" />
                                     ))}
                                 </div>
                             </div>
@@ -168,13 +259,13 @@ const IntakeForm = () => {
                                 </div>
                                 <div className={`grid grid-cols-2 gap-3 transition-opacity ${satDisabled ? "opacity-40 pointer-events-none" : "opacity-100"}`}>
                                     <label className="flex flex-col gap-1 text-xs font-semibold text-slate-700">Total (1600)
-                                        <input name="sat_total" type="number" min="0" max="1600" placeholder="e.g. 1400" disabled={satDisabled} className="input-field-sm focus:ring-sky-500 focus:border-sky-500" />
+                                        <input name="sat_total" type="number" min="400" max="1600" placeholder="e.g. 1400" disabled={satDisabled} className="input-field-sm focus:ring-sky-500 focus:border-sky-500" />
                                     </label>
                                     <label className="flex flex-col gap-1 text-xs font-semibold text-slate-700">Math (800)
-                                        <input name="sat_math" type="number" min="0" max="800" placeholder="e.g. 700" disabled={satDisabled} className="input-field-sm focus:ring-sky-500 focus:border-sky-500" />
+                                        <input name="sat_math" type="number" min="200" max="800" placeholder="e.g. 700" disabled={satDisabled} className="input-field-sm focus:ring-sky-500 focus:border-sky-500" />
                                     </label>
                                     <label className="flex flex-col gap-1 text-xs font-semibold text-slate-700">Reading (800)
-                                        <input name="sat_reading" type="number" min="0" max="800" placeholder="e.g. 700" disabled={satDisabled} className="input-field-sm focus:ring-sky-500 focus:border-sky-500" />
+                                        <input name="sat_reading" type="number" min="200" max="800" placeholder="e.g. 700" disabled={satDisabled} className="input-field-sm focus:ring-sky-500 focus:border-sky-500" />
                                     </label>
                                     <label className="flex flex-col gap-1 text-xs font-semibold text-slate-700">Test Date
                                         <input name="sat_date" type="date" disabled={satDisabled} className="input-field-sm focus:ring-sky-500 focus:border-sky-500" />
@@ -249,7 +340,7 @@ const IntakeForm = () => {
 
                         <div className="grid md:grid-cols-2 gap-6">
                             <div>
-                                <p className="text-[13px] font-semibold text-slate-700 mb-2">Need financial aid/scholarships?</p>
+                                <p className="text-[13px] font-semibold text-slate-700 mb-2">Need financial aid/scholarships? <span className="text-red-500">*</span></p>
                                 <div className="flex flex-col gap-2">
                                     {[
                                         { value: "no_aid", label: "No, I can attend without aid" },
@@ -257,7 +348,7 @@ const IntakeForm = () => {
                                         { value: "significant_aid", label: "Yes, I need significant aid" },
                                     ].map((opt) => (
                                         <label key={opt.value} className="flex items-center gap-2 text-sm text-slate-600 cursor-pointer">
-                                            <input type="radio" name="need_aid" value={opt.value} className="h-4 w-4 text-emerald-600 focus:ring-emerald-500" />
+                                            <input type="radio" name="need_aid" value={opt.value} required className="h-4 w-4 text-emerald-600 focus:ring-emerald-500" />
                                             <span>{opt.label}</span>
                                         </label>
                                     ))}
@@ -275,9 +366,9 @@ const IntakeForm = () => {
                                     ))}
                                 </div>
                                 <div className="mt-4 flex items-center gap-3">
-                                    <p className="text-[13px] font-semibold text-slate-700">Interested in on-campus work?</p>
-                                    <label className="text-sm flex items-center gap-1 cursor-pointer"><input type="radio" name="work_study" value="yes" className="text-emerald-600" /> Yes</label>
-                                    <label className="text-sm flex items-center gap-1 cursor-pointer"><input type="radio" name="work_study" value="no" className="text-emerald-600" /> No</label>
+                                    <p className="text-[13px] font-semibold text-slate-700">Interested in on-campus work? <span className="text-red-500">*</span></p>
+                                    <label className="text-sm flex items-center gap-1 cursor-pointer"><input type="radio" name="work_study" required value="yes" className="text-emerald-600" /> Yes</label>
+                                    <label className="text-sm flex items-center gap-1 cursor-pointer"><input type="radio" name="work_study" required value="no" className="text-emerald-600" /> No</label>
                                 </div>
                             </div>
                         </div>
@@ -302,7 +393,6 @@ const IntakeForm = () => {
                 </form>
             </div>
             
-            {/* Injecting basic standard styles for inputs so we don't repeat long tailwind classes */}
             <style>{`
                 .input-field {
                     width: 100%;
