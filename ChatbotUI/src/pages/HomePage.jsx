@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import { load } from "../utils/storage.js";
+
 
 const HomePage = () => {
 	const profile = load("UserProfile");
@@ -9,7 +10,7 @@ const HomePage = () => {
 			: typeof profile?.firstName === "string"
 			? profile.firstName
 			: "";
-
+	const navigate = useNavigate();
 	return (
 		<section className="w-full h-full flex flex-col items-center justify-center py-12 px-6 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,6 +34,15 @@ const HomePage = () => {
 						personalized education plans. Make informed decisions about your
 						future with comprehensive data and expert guidance.
 					</p>
+<p  className="text-slate-600">
+    If you have already chosen your college,{" "}
+    <span
+      onClick={() => navigate("/uni")}
+        className="underline cursor-pointer hover:text-[#0069e0] transition text-slate-600"
+    >
+        click me
+    </span>
+</p>
 				</div>
 			</div>
 
