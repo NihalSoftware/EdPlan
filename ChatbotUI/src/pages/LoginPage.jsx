@@ -112,6 +112,8 @@ const LoginPage = ({ initialMode = "login" }) => {
 				<form onSubmit={handleSubmit} className="space-y-4">
 					{!isLogin && (
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+
+							{/* First Name (Required + No Empty Spaces) */}
 							<label className="text-sm text-slate-600 space-y-1">
 								<span className="font-semibold">First Name</span>
 								<input
