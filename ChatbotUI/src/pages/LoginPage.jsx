@@ -115,15 +115,21 @@ const LoginPage = ({ initialMode = "login" }) => {
 
 							{/* First Name (Required + No Empty Spaces) */}
 							<label className="text-sm text-slate-600 space-y-1">
-								<span className="font-semibold">First Name</span>
+								<span className="font-semibold">
+									First Name <span className="text-red-500">*</span>
+								</span>
 								<input
 									name="firstName"
 									value={form.firstName}
 									onChange={handleChange}
+									pattern=".*\S.*"
+									title="First Name cannot be empty or spaces only"
 									className="w-full px-3 py-2 rounded-lg border border-slate-200"
 									required
 								/>
 							</label>
+
+							{/* Last Name (Optional) */}
 							<label className="text-sm text-slate-600 space-y-1">
 								<span className="font-semibold">Last Name</span>
 								<input
@@ -131,9 +137,9 @@ const LoginPage = ({ initialMode = "login" }) => {
 									value={form.lastName}
 									onChange={handleChange}
 									className="w-full px-3 py-2 rounded-lg border border-slate-200"
-									required
 								/>
 							</label>
+
 						</div>
 					)}
 
@@ -159,7 +165,7 @@ const LoginPage = ({ initialMode = "login" }) => {
 							<span className="font-semibold">Contact Number</span>
 							<input
 								name="phoneNumber"
-								type= "number"
+								type="text"
 								value={form.phoneNumber}
 								onChange={handleChange}
 								className="w-full px-3 py-2 rounded-lg border border-slate-200"
