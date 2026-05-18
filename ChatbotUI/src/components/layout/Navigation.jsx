@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { FiLogOut } from "react-icons/fi";
 import clsx from "clsx";
 import { load, remove } from "../../utils/storage.js";
 
@@ -121,17 +122,20 @@ const Navigation = () => {
                         ) : (
                             <span />
                         )}
-                        <button
-                            type="button"
-                            onClick={handleAuthClick}
-                            className="font-medium text-lg text-indigo-600 hover:text-indigo-500 whitespace-nowrap"
-                        >
-                            {buttonLabel}
-                        </button>
+                        {!isAuthenticated && (
+                            <button
+                                type="button"
+                                onClick={handleAuthClick}
+                                className="font-medium text-lg text-indigo-600 hover:text-indigo-500 whitespace-nowrap"
+                            >
+                                {buttonLabel}
+                            </button>
+                        )}
                     </div>
                 </header>
 
-                <nav className="flex flex-col gap-2 mt-2">
+                <div className="flex-1 flex flex-col overflow-y-auto">
+                    <nav className="flex flex-col gap-2 mt-2">
                     <NavItem to="/home" label="Home" onClick={closeMenu} />
                     <NavItem to="/career" label="Career & Program" onClick={closeMenu} />
                     <NavItem to="/intake" label="Onboarding Form" onClick={closeMenu} />
@@ -139,6 +143,20 @@ const Navigation = () => {
                     <NavItem to="/educationplan" label="Create Education Plan" onClick={closeMenu} />
                     <NavItem to="/view" label="Saved Plans" onClick={closeMenu} />
                 </nav>
+                </div>
+
+                {isAuthenticated && (
+                    <div className="mt-auto pt-4">
+                        <button
+                            type="button"
+                            onClick={handleAuthClick}
+                            className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 bg-transparent border border-[#ef4444] text-[#ef4444] font-medium rounded-lg transition hover:bg-[#fde8e8]"
+                        >
+                            <FiLogOut className="w-5 h-5" />
+                            Sign Out
+                        </button>
+                    </div>
+                )}
             </aside>
 
             {/* ✅ LOGOUT MODAL */}
@@ -169,7 +187,7 @@ const Navigation = () => {
                                     navigate("/login");
                                     setIsMenuOpen(false);
                                 }}
-                                className="px-4 py-2 text-sm bg-red-500 text-white rounded-md hover:bg-red-600"
+                                className="px-4 py-2 text-sm bg-[#ef4444] text-white rounded-md hover:bg-[#dc2626]"
                             >
                                 Logout
                             </button>

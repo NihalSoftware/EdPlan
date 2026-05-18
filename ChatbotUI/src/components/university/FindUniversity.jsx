@@ -37,9 +37,7 @@ const FindUniversity = ({ onSelectProgram }) => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
     
-    const [searchTerm, setSearchTerm] = useState("");
-    const [showSuggestions, setShowSuggestions] = useState(false); // Naya state suggestions ke liye
-    
+
     const [stateFilter, setStateFilter] = useState("");
     const [costFilter, setCostFilter] = useState(18000);
     const [programOptions, setProgramOptions] = useState([]);
@@ -214,14 +212,6 @@ const FindUniversity = ({ onSelectProgram }) => {
         }
     }, []);
 
-    // Yeh logic input ke hisaab se suggestions filter karta hai
-    const searchSuggestions = useMemo(() => {
-        if (!searchTerm.trim()) return [];
-        return allowedCampuses.filter((name) =>
-            name.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-    }, [searchTerm]);
-
     const filteredUniversities = useMemo(() => {
         const degreeNorm = normalizeDegree(selectedDegree);
         const degreeSetForProgram = selectedProgram
@@ -234,8 +224,6 @@ const FindUniversity = ({ onSelectProgram }) => {
 
         return universities
             .filter((university) => {
-                const matchesSearch = !searchTerm || (university.name || "").toLowerCase().includes(searchTerm.toLowerCase());
-
                 const matchesProgram =
                     !selectedProgram ||
                     programMap.get(selectedProgram)?.has(university.name) ||
@@ -252,7 +240,7 @@ const FindUniversity = ({ onSelectProgram }) => {
                     !university.average_annual_cost ||
                     Number(university.average_annual_cost || 0) <= Number(costFilter);
 
-                return matchesSearch && matchesCost && matchesProgram && matchesDegree;
+                return matchesCost && matchesProgram && matchesDegree;
             })
             .sort((a, b) => {
                 const target = "northern new mexico college";
@@ -264,7 +252,7 @@ const FindUniversity = ({ onSelectProgram }) => {
                 if (!aIsTarget && bIsTarget) return 1;
                 return 0;
             });
-    }, [universities, costFilter, selectedProgram, selectedDegree, programMap, programDegreeMap, searchTerm]);
+    }, [universities, costFilter, selectedProgram, selectedDegree, programMap, programDegreeMap]);
 
     const handleSelect = (university) => {
         const programToSave = selectedProgram || university.program || "";
@@ -316,12 +304,6 @@ const FindUniversity = ({ onSelectProgram }) => {
         navigate("/compare");
     };
 
-    const handleSearch = (event) => {
-        event.preventDefault();
-        fetchUniversities({ search: searchTerm, state: stateFilter });
-        setShowSuggestions(false); // Submit karne par suggestions hide karein
-    };
-
     const handleViewDetails = (university) => {
         if (!university?.unit_id) {
             toast.error("College details unavailable for this entry.");
@@ -336,44 +318,8 @@ const FindUniversity = ({ onSelectProgram }) => {
             <header className="flex flex-col gap-4">
                 <h1 className="text-3xl font-semibold text-slate-900">Explore <span className="text-[#0069e0]">Colleges</span> & <span className="text-[#0069e0]">Universities</span></h1>
                 <form
-                    onSubmit={handleSearch}
                     className="flex flex-col md:flex-row gap-3"
                 >
-                    {/* Search Input with Suggestions Dropdown */}
-                    <div className="relative md:w-[500px]">
-                        <input
-                            value={searchTerm}
-                            onChange={(event) => {
-                                setSearchTerm(event.target.value);
-                                setShowSuggestions(true);
-                            }}
-                            onFocus={() => setShowSuggestions(true)}
-                            // setTimeout is used here so that onClick on the suggestion registers before onBlur hides the menu
-                            onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
-                            className="px-4 py-2 w-full rounded-lg border border-slate-200 text-center"
-                            placeholder="Search by University Name"
-                            autoComplete="off"
-                        />
-                        
-                        {/* Dropdown Menu */}
-                        {showSuggestions && searchSuggestions.length > 0 && (
-                            <ul className="absolute z-10 w-full bg-white border border-slate-200 rounded-lg shadow-lg mt-1 max-h-60 overflow-y-auto text-left">
-                                {searchSuggestions.map((name) => (
-                                    <li
-                                        key={name}
-                                        onClick={() => {
-                                            setSearchTerm(name);
-                                            setShowSuggestions(false);
-                                        }}
-                                        className="px-4 py-2 hover:bg-indigo-50 cursor-pointer text-sm text-slate-700 border-b last:border-0"
-                                    >
-                                        {name}
-                                    </li>
-                                ))}
-                            </ul>
-                        )}
-                    </div>
-
                     <select
                         value={selectedProgram}
                         onChange={(event) => {
