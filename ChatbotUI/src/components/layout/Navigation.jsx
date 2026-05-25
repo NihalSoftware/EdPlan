@@ -2,9 +2,10 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import clsx from "clsx";
 import { load, remove } from "../../utils/storage.js";
 
-const NavItem = ({ to, label }) => (
+const NavItem = ({ to, label, onClick }) => (
 	<NavLink
 		to={to}
+		onClick={onClick}
 		className={({ isActive }) =>
 			clsx(
 				"w-full px-4 py-3 font-semibold text-left rounded-md transition",
@@ -18,7 +19,7 @@ const NavItem = ({ to, label }) => (
 	</NavLink>
 );
 
-const Navigation = () => {
+const Navigation = ({ open, setOpen }) => {
 	const location = useLocation();
 	const navigate = useNavigate();
 	const isAuthenticated = Boolean(load("AuthToken"));
@@ -48,18 +49,42 @@ const Navigation = () => {
 	};
 
 	return (
-		<aside className="w-full lg:w-72 bg-white border-r border-slate-200 shadow-sm p-6 flex flex-col gap-6 lg:fixed lg:h-screen lg:top-0 lg:left-0 lg:overflow-y-auto">
-			<header className="flex items-start justify-between gap-4">
-				<div>
-					<h1 className="ml-4 text-3xl font-semibold text-slate-900">
-						EdPlan.ai
-					</h1>
+		<aside
+			className={clsx(
+				"bg-white border-r border-slate-200 shadow-sm flex flex-col",
+				// Mobile: show as left-side drawer when open, otherwise hidden. Large screens: always show.
+				open ? "fixed inset-y-0 left-0 z-50 w-72 h-full overflow-y-auto" : "hidden",
+				"lg:block lg:w-72 lg:fixed lg:h-screen lg:top-0 lg:left-0 lg:overflow-y-auto"
+			)}
+		>
+			<header className="p-6 flex items-center justify-between gap-4">
+				<div className="flex items-center gap-3">
+					<button
+						type="button"
+						onClick={() => setOpen && setOpen(false)}
+						className="lg:hidden p-2 rounded-md hover:bg-slate-100"
+						aria-label="Close menu"
+					>
+						<span className="text-xl text-slate-700">✕</span>
+					</button>
+
+					<h1 className="text-3xl font-semibold text-slate-900">EdPlan.ai</h1>
 				</div>
-				<div className="flex flex-col items-end">
+			</header>
+
+			<nav className="flex flex-col gap-2 px-6">
+				<NavItem to="/home" label="Home" onClick={() => setOpen && setOpen(false)} />
+				<NavItem to="/career" label="Career & Program" onClick={() => setOpen && setOpen(false)} />
+				<NavItem to="/intake" label="Onboarding Form" onClick={() => setOpen && setOpen(false)} />
+				<NavItem to="/uni" label="Find University" onClick={() => setOpen && setOpen(false)} />
+				<NavItem to="/educationplan" label="Create Education Plan" onClick={() => setOpen && setOpen(false)} />
+				<NavItem to="/view" label="Saved Plans" onClick={() => setOpen && setOpen(false)} />
+			</nav>
+
+			<footer className="mt-auto border-t border-slate-50 p-10">
+				<div className="flex items-center justify-between gap-3">
 					{isAuthenticated && firstName && (
-						<span className="text-md font-medium text-slate-600">
-							{firstName}
-						</span>
+						<span className="text-md font-medium text-slate-600">{firstName}</span>
 					)}
 					<button
 						type="button"
@@ -69,15 +94,7 @@ const Navigation = () => {
 						{buttonLabel}
 					</button>
 				</div>
-			</header>
-			<nav className="flex flex-col gap-2">
-				<NavItem to="/home" label="Home" />
-				<NavItem to="/career" label="Career & Program" />
-				<NavItem to="/intake" label="Onboarding Form" />
-				<NavItem to="/uni" label="Find University" />
-				<NavItem to="/educationplan" label="Create Education Plan" />
-				<NavItem to="/view" label="Saved Plans" />
-			</nav>
+			</footer>
 		</aside>
 	);
 };
