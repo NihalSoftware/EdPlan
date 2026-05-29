@@ -11,6 +11,7 @@ import ChatbotPage from "./pages/ChatbotPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import SignupPage from "./pages/SignupPage.jsx";
 import IntakeForm from "./pages/IntakeForm.jsx";
+import RecommendationPage from "./pages/RecommendationPage.jsx";
 
 const App = () => (
 	<Routes>
@@ -25,6 +26,7 @@ const App = () => (
 			<Route path="/uni" element={<FindUniversityPage />} />
 			<Route path="/compare" element={<CollegeComparePage />} />
 			<Route path="/college/:unitId" element={<CollegeDetailPage />} />
+			<Route path="/recommendations" element={<RecommendationPage />} />
 		</Route>
 		<Route path="/login" element={<LoginPage />} />
 		<Route path="/signup" element={<SignupPage />} />
