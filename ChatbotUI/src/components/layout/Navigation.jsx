@@ -77,6 +77,7 @@ const Navigation = ({ open, setOpen }) => {
 				<NavItem to="/career" label="Career & Program" onClick={() => setOpen && setOpen(false)} />
 				<NavItem to="/intake" label="Onboarding Form" onClick={() => setOpen && setOpen(false)} />
 				<NavItem to="/uni" label="Find University" onClick={() => setOpen && setOpen(false)} />
+			<NavItem to="/nexus" label="EdPlan Nexus" onClick={() => setOpen && setOpen(false)} />
 				<NavItem to="/educationplan" label="Create Education Plan" onClick={() => setOpen && setOpen(false)} />
 				<NavItem to="/view" label="Saved Plans" onClick={() => setOpen && setOpen(false)} />
 			</nav>

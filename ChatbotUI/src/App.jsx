@@ -11,6 +11,10 @@ import ChatbotPage from "./pages/ChatbotPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import SignupPage from "./pages/SignupPage.jsx";
 import IntakeForm from "./pages/IntakeForm.jsx";
+import NexusPage from "./pages/NexusPage.jsx";
+import PathfinderPage from "./pages/PathfinderPage.jsx";
+import SchedulePilotPage from "./pages/SchedulePilotPage.jsx";
+import CourseCompassPage from "./pages/CourseCompassPage.jsx";
 
 const App = () => (
 	<Routes>
@@ -21,6 +25,10 @@ const App = () => (
 			<Route path="/chatbot" element={<ChatbotPage />} />
 			<Route path="/educationplan" element={<EducationPlanEditPage />} />
 			<Route path="/career" element={<CareerProgramPage />} />
+			<Route path="/nexus" element={<NexusPage />} />
+			<Route path="/nexus/pathfinder" element={<PathfinderPage />} />
+			<Route path="/nexus/schedulepilot" element={<SchedulePilotPage />} />
+			<Route path="/nexus/coursecompass" element={<CourseCompassPage />} />
 			<Route path="/view" element={<ViewEducationPlanPage />} />
 			<Route path="/uni" element={<FindUniversityPage />} />
 			<Route path="/compare" element={<CollegeComparePage />} />
