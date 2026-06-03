@@ -1,100 +1,82 @@
 import { useState, useEffect, useRef } from "react";
-import { load } from "../utils/storage";
+import { load, save } from "../utils/storage";
 import { getRecommendedPrograms, getProgramList } from "../utils/recommendationEngine";
 import clsx from "clsx";
 
-// --- Sub-Component: Individual Result Card ---
+// --- Sub-Component: Smart Modern Result Card ---
 const ResultCard = ({ prog }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [activeYearIndex, setActiveYearIndex] = useState(0);
+  const [activeSemIndex, setActiveSemIndex] = useState(0);
 
   return (
-    <div className="bg-white border border-slate-200 rounded-2xl shadow-sm mb-4 overflow-hidden">
-      <div className="p-5 flex flex-col md:flex-row md:items-start justify-between gap-4">
-        <div className="flex-1">
-          <div className="flex items-center gap-2 mb-1">
-            <h3 className="text-xl font-bold text-slate-900">{prog.program || "Unknown Program"}</h3>
-            <span className="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wide">
-              {prog.degree || "Degree"}
+    <div className="bg-white border border-slate-200 rounded-2xl shadow-sm mb-5 overflow-hidden transition-all hover:shadow-md w-full">
+      <div className="p-6 flex flex-col md:flex-row justify-between items-start gap-5">
+        <div className="flex-1 w-full">
+          <div className="flex flex-wrap items-center gap-3 mb-2">
+            <h3 className="text-xl font-extrabold text-slate-800">{prog.program}</h3>
+            <span className="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-xs font-bold tracking-wider border border-blue-100 whitespace-nowrap">
+              {prog.degree}
             </span>
           </div>
-          <p className="text-slate-600 font-medium mb-3 text-sm">{prog.university || "University not specified"}</p>
+          <p className="text-slate-500 font-medium text-sm flex items-center gap-1 mb-4">
+            🏛️ {prog.university}
+          </p>
           
-          <div className="flex flex-wrap gap-3 text-xs text-slate-500 mb-3">
-            <span className="bg-slate-100 px-2 py-1 rounded-md">⏱ Credits: {prog.total_credit_hours || "N/A"}</span>
-            <span className="bg-slate-100 px-2 py-1 rounded-md">💸 {prog.average_annual_cost ? `${prog.average_annual_cost.split(' ')[0]}/yr` : "Cost N/A"}</span>
+          <div className="flex flex-wrap gap-2 text-xs font-semibold text-slate-600">
+            <span className="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">⏱ {prog.total_credit_hours} Credits</span>
+            <span className="bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-100">✨ Fits your schedule</span>
           </div>
         </div>
         
-        <div className="flex flex-col items-end gap-2 min-w-[140px]">
-          <div className="bg-green-50 border border-green-200 text-green-700 px-3 py-1.5 rounded-lg text-center shadow-sm w-full text-xs font-bold">
-            Perfect Match ✓
-          </div>
-          <button 
-            onClick={() => { setIsExpanded(!isExpanded); setActiveYearIndex(0); }}
-            className="w-full text-center px-3 py-1.5 border border-[#016ce6] text-[#016ce6] hover:bg-[#016ce6] hover:text-white rounded-lg text-sm font-semibold transition"
-          >
-            {isExpanded ? "Hide ⬆" : "Details ⬇"}
-          </button>
-        </div>
+        <button 
+          onClick={() => { setIsExpanded(!isExpanded); setActiveSemIndex(0); }}
+          className="w-full md:w-auto px-6 py-2.5 bg-slate-900 text-white hover:bg-blue-600 rounded-xl text-sm font-bold transition-all shadow-sm"
+        >
+          {isExpanded ? "Close Details ⌃" : "View Curriculum ⌄"}
+        </button>
       </div>
 
       {isExpanded && (
-        <div className="p-5 border-t border-slate-200 bg-slate-50 animate-fade-in">
-          {/* ... (College Profile aur Curriculum wala code same rahega) ... */}
-          {prog.college_profile && (
-            <div className="mb-6 bg-white p-4 rounded-xl border border-slate-200">
-              <h4 className="text-sm font-bold text-slate-800 border-b pb-2 mb-3">🏫 College Profile</h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs text-slate-700">
-                <p><strong>Size:</strong> {prog.college_profile.size || "N/A"}</p>
-                <p><strong>Acceptance:</strong> {prog.college_profile.acceptance_rate || "N/A"}</p>
-                <p><strong>Earnings:</strong> {prog.college_profile.median_earnings || "N/A"}</p>
-              </div>
-            </div>
-          )}
-
-          {prog.years && prog.years.length > 0 && (
+        <div className="p-6 border-t border-slate-100 bg-[#f8fafc] animate-fade-in">
+          {prog.semesters && prog.semesters.length > 0 && (
             <div>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {prog.years.map((yearData, idx) => (
+              {/* Semester Tabs */}
+              <div className="flex flex-wrap gap-2 mb-5 bg-slate-200/50 p-1.5 rounded-xl w-fit">
+                {prog.semesters.map((semData, idx) => (
                   <button
                     key={idx}
-                    onClick={() => setActiveYearIndex(idx)}
+                    onClick={() => setActiveSemIndex(idx)}
                     className={clsx(
-                      "px-3 py-1.5 rounded-lg font-semibold text-xs transition-colors",
-                      activeYearIndex === idx ? "bg-[#016ce6] text-white shadow-md" : "bg-slate-200 text-slate-700 hover:bg-slate-300"
+                      "px-4 py-2 rounded-lg font-bold text-xs transition-all duration-300",
+                      activeSemIndex === idx ? "bg-white text-blue-600 shadow-sm border border-slate-200" : "text-slate-500 hover:text-slate-800"
                     )}
                   >
-                    {yearData.year}
+                    {semData.semesterName}
                   </button>
                 ))}
               </div>
 
-              <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm animate-fade-in">
-                <h5 className="text-sm font-bold text-[#016ce6] mb-3">{prog.years[activeYearIndex].year} Schedule</h5>
-                <div className="space-y-4">
-                  {prog.years[activeYearIndex].semesters?.map((sem, sIdx) => (
-                    <div key={sIdx}>
-                      <h6 className="font-semibold text-slate-700 mb-2 bg-slate-100 px-2 py-1 rounded text-xs inline-block">
-                        {sem.semester} Sem ({sem.total_credits} Cr)
-                      </h6>
-                      <ul className="space-y-2">
-                        {sem.courses?.map((course, cIdx) => (
-                          <li key={cIdx} className="text-xs p-3 border border-slate-100 rounded-lg bg-slate-50">
-                            <div className="font-bold text-slate-800 mb-1">
-                              {course.code}: {course.name} <span className="text-slate-500 font-normal">({course.credits} Cr)</span>
-                            </div>
-                            <div className="flex gap-2 mt-1">
-                              <span className="bg-white px-2 py-0.5 border border-slate-200 rounded shadow-sm font-medium">
-                                🕒 {course.schedule?.day || "TBD"} | {course.schedule?.time || "TBD"}
-                              </span>
-                            </div>
-                          </li>
-                        ))}
-                      </ul>
+              {/* Course Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {prog.semesters[activeSemIndex].courses?.map((course, cIdx) => (
+                  <div key={cIdx} className="p-4 border border-slate-200/80 rounded-2xl bg-white hover:border-blue-300 transition-colors shadow-sm">
+                    <div className="flex justify-between items-start mb-2 gap-2">
+                      <div className="font-extrabold text-slate-800 break-words">{course.code}</div>
+                      <div className="text-xs font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded-md whitespace-nowrap">{course.credits} Cr</div>
                     </div>
-                  ))}
-                </div>
+                    <div className="text-sm font-semibold text-slate-600 mb-3">{course.name}</div>
+                    
+                    <div className="flex flex-col gap-2 mt-auto">
+                      <div className="flex items-center gap-2 text-xs font-medium text-slate-500 bg-slate-50 p-2 rounded-lg border border-slate-100">
+                        <span className="text-blue-500">🕒</span> {course.schedule.day} | {course.schedule.time}
+                      </div>
+                      <div className="flex items-center justify-between text-[11px] font-semibold text-slate-400 px-1 mt-1">
+                        <span className="truncate mr-2">👤 {course.instructor || "TBA"}</span>
+                        <span className="whitespace-nowrap">📍 {course.campus}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           )}
@@ -104,14 +86,14 @@ const ResultCard = ({ prog }) => {
   );
 };
 
-// --- Main Chatbot Page ---
+// --- Modern Main Chatbot App (Full Screen) ---
 const RecommendationPage = () => {
   const [messages, setMessages] = useState([]);
-  const [step, setStep] = useState(1); // 1: Search Text, 1.5: Pick Program, 2: Days, 3: Times, 4: Done
+  const [step, setStep] = useState(1); 
   const [isTyping, setIsTyping] = useState(false);
+  const [searchResults, setSearchResults] = useState([]);
   const chatEndRef = useRef(null);
 
-  // Search aur filtering states
   const [keyword, setKeyword] = useState("");
   const [filteredPrograms, setFilteredPrograms] = useState([]);
   const allPrograms = getProgramList();
@@ -122,19 +104,17 @@ const RecommendationPage = () => {
     busyTimes: { morning: false, afternoon: false, evening: false }
   });
 
-  // Auto-scroll
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, isTyping, step]);
 
-  // Initial Greeting
   useEffect(() => {
     const profile = load("UserProfile") || {};
     const name = profile.firstName || "there";
     
     setMessages([
-      { sender: "bot", type: "text", text: `Hi ${name}! 👋 I am your AI Education Planner.` },
-      { sender: "bot", type: "text", text: "What field of study or program are you looking for? (e.g., 'Computer', 'Nursing', 'Business')" }
+      { sender: "bot", type: "text", text: `Hi ${name}! 👋 I am EdPlan AI.` },
+      { sender: "bot", type: "text", text: "Tell me, which subject or career path are you interested in? (e.g., Computer, Art, Math)" }
     ]);
   }, []);
 
@@ -150,21 +130,23 @@ const RecommendationPage = () => {
     setMessages(prev => [...prev, { sender: "user", type: "text", text }]);
   };
 
-  // --- Step 1: Handle Search Text Input ---
   const handleKeywordSubmit = (e) => {
     e.preventDefault();
     if (!keyword.trim()) return;
 
     addUserMessage(keyword);
+    const searchTerms = keyword.toLowerCase().split(' ').filter(Boolean);
     setKeyword("");
     setIsTyping(true);
 
     setTimeout(() => {
       setIsTyping(false);
-      // Search program list based on keyword
-      const matches = allPrograms.filter(prog => 
-        prog.toLowerCase().includes(keyword.toLowerCase()) && prog !== "All Programs"
-      );
+      
+      const matches = allPrograms.filter(prog => {
+        if (prog === "All Programs") return false;
+        const progLower = prog.toLowerCase();
+        return searchTerms.some(term => progLower.includes(term));
+      });
 
       if (matches.length > 0) {
         setFilteredPrograms(matches);
@@ -172,27 +154,25 @@ const RecommendationPage = () => {
         setMessages(prev => [...prev, { 
           sender: "bot", 
           type: "text", 
-          text: `I found ${matches.length} matching program(s). Please select one from the options below:` 
+          text: `I found these related programs. Tap the one you want:` 
         }]);
       } else {
         setMessages(prev => [...prev, { 
           sender: "bot", 
           type: "text", 
-          text: "I couldn't find any programs matching that keyword. Could you try a different word?" 
+          text: "I couldn't find a match for that. Try something like 'Computer', 'Science', or 'Nursing'." 
         }]);
       }
-    }, 600);
+    }, 800);
   };
 
-  // --- Step 1.5: Program Selection ---
   const handleProgramSelect = (prog) => {
     setUserInputs(prev => ({ ...prev, selectedProgram: prog }));
     addUserMessage(prog);
     setStep(2);
-    addBotMessage("Great choice! Now, tell me which days you are BUSY (working or unavailable)?");
+    addBotMessage("Got it! Now, select the days you usually WORK or are BUSY:");
   };
 
-  // --- Step 2: Days Selection ---
   const toggleDay = (day) => {
     setUserInputs(prev => ({
       ...prev, busyDays: { ...prev.busyDays, [day]: !prev.busyDays[day] }
@@ -201,18 +181,18 @@ const RecommendationPage = () => {
 
   const submitDays = () => {
     const selected = Object.keys(userInputs.busyDays).filter(d => userInputs.busyDays[d]);
-    const replyText = selected.length > 0 ? selected.join(", ") : "I'm free all week!";
+    const replyText = selected.length > 0 ? selected.join(", ") : "I'm totally free!";
     addUserMessage(replyText);
-    setStep(3);
     
     if (selected.length === 0) {
+      setStep(4);
       analyzeResults({ ...userInputs, busyDays: {} });
     } else {
-      addBotMessage("Got it. And what time slots are you BUSY on those days?");
+      setStep(3);
+      addBotMessage("Cool. And what specific times are you busy on those days?");
     }
   };
 
-  // --- Step 3: Times Selection ---
   const toggleTime = (timeSlot) => {
     setUserInputs(prev => ({
       ...prev, busyTimes: { ...prev.busyTimes, [timeSlot]: !prev.busyTimes[timeSlot] }
@@ -221,18 +201,17 @@ const RecommendationPage = () => {
 
   const submitTimes = () => {
     const selected = Object.keys(userInputs.busyTimes).filter(t => userInputs.busyTimes[t]);
-    const replyText = selected.length > 0 ? selected.join(", ") : "Any time works for me!";
+    const replyText = selected.length > 0 ? selected.join(", ") : "Any time!";
     addUserMessage(replyText);
     setStep(4);
     analyzeResults(userInputs);
   };
 
-  // --- Final Step: Generate Results ---
   const analyzeResults = (finalInputs) => {
     setIsTyping(true);
     setTimeout(() => {
       setIsTyping(false);
-      setMessages(prev => [...prev, { sender: "bot", type: "text", text: "Analyzing schedules and your availability... 🔍" }]);
+      setMessages(prev => [...prev, { sender: "bot", type: "text", text: "Scanning campus schedules to find your perfect fit... ⚙️" }]);
       
       setTimeout(() => {
         try {
@@ -241,178 +220,199 @@ const RecommendationPage = () => {
           const results = getRecommendedPrograms(searchParams);
           
           if (results.length === 0) {
-            setMessages(prev => [...prev, { sender: "bot", type: "text", text: "⚠️ I couldn't find any classes that perfectly match this schedule. You might need to free up some days." }]);
+            setMessages(prev => [...prev, { sender: "bot", type: "text", text: "Hmm, your schedule is a bit too tight for the current offerings. You may need to clear up some days." }]);
           } else {
-            setMessages(prev => [...prev, { sender: "bot", type: "text", text: `I found ${results.length} perfect match(es) for you! Here they are:` }]);
+            setSearchResults(results);
             setMessages(prev => [...prev, { sender: "bot", type: "results", data: results }]);
           }
           setStep(5);
         } catch (error) {
           console.error(error);
         }
-      }, 1000);
+      }, 1500);
     }, 800);
   };
 
+  const handleSavePlan = () => {
+    if (searchResults.length === 0) return;
+    const existingPlans = load("SavedPlans") || [];
+    const newPlan = { id: Date.now(), date: new Date().toLocaleDateString(), program: userInputs.selectedProgram, results: searchResults };
+    save("SavedPlans", [...existingPlans, newPlan]);
+    setMessages(prev => [...prev, { sender: "bot", type: "text", text: "✅ Saved securely to your EdPlan profile!" }]);
+    setStep(6);
+  };
+
   const restartChat = () => {
-    setMessages([{ sender: "bot", type: "text", text: "Let's start over! What field of study are you looking for?" }]);
-    setUserInputs({
-      selectedProgram: "",
-      busyDays: { Mon: false, Tue: false, Wed: false, Thu: false, Fri: false },
-      busyTimes: { morning: false, afternoon: false, evening: false }
-    });
+    setMessages([{ sender: "bot", type: "text", text: "Let's find something else. What subject are you looking for?" }]);
+    setUserInputs({ selectedProgram: "", busyDays: { Mon: false, Tue: false, Wed: false, Thu: false, Fri: false }, busyTimes: { morning: false, afternoon: false, evening: false } });
+    setSearchResults([]);
     setStep(1);
     setKeyword("");
   };
 
   return (
-    <div className="max-w-4xl mx-auto h-[calc(100vh-80px)] flex flex-col bg-slate-50 font-sans shadow-xl border-x border-slate-200">
+    // Full Screen Edge-to-Edge Container
+    <div className="flex flex-col h-screen w-full bg-[#f4f6f8]">
       
-      {/* Header */}
-      <header className="bg-white p-5 border-b border-slate-200 flex items-center justify-between shadow-sm z-10">
+      {/* Top Header - Full Width */}
+      <header className="w-full bg-white px-6 py-4 flex items-center justify-between border-b border-slate-200 shadow-sm z-20">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-[#016ce6] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-inner">
+          <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-extrabold text-lg shadow-md">
             AI
           </div>
           <div>
-            <h2 className="text-xl font-bold text-slate-800">EdPlan Scheduler Agent</h2>
-            <p className="text-xs text-green-600 font-medium flex items-center gap-1">
-              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Online
-            </p>
+            <h2 className="text-xl font-bold text-slate-800 tracking-tight">EdPlan Assistant</h2>
+            <div className="flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+              <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider">Online</span>
+            </div>
           </div>
         </div>
         {step > 1 && (
-          <button onClick={restartChat} className="text-sm font-semibold text-slate-500 hover:text-[#016ce6] transition bg-slate-100 px-3 py-1.5 rounded-lg">
-            🔄 Restart
+          <button onClick={restartChat} className="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-600 text-sm font-bold rounded-lg transition-colors flex items-center gap-2">
+            <span>🔄</span> <span className="hidden sm:inline">Restart Chat</span>
           </button>
         )}
       </header>
 
-      {/* Chat Area */}
-      <div className="flex-1 overflow-y-auto p-4 md:p-6 space-y-6 bg-[#f0f2f5] scroll-smooth custom-scrollbar">
-        {messages.map((msg, index) => (
-          <div key={index} className={clsx("flex", msg.sender === "user" ? "justify-end" : "justify-start")}>
-            {msg.sender === "bot" && msg.type !== "results" && (
-               <div className="w-8 h-8 rounded-full bg-[#016ce6] text-white flex items-center justify-center text-xs font-bold mr-2 mt-1 flex-shrink-0">AI</div>
-            )}
-            
-            <div className={clsx(
-              "max-w-[85%] md:max-w-[75%]",
-              msg.sender === "user" 
-                ? "bg-[#016ce6] text-white rounded-2xl rounded-tr-sm px-5 py-3 shadow-sm" 
-                : msg.type === "results" 
-                  ? "w-full" 
-                  : "bg-white text-slate-800 rounded-2xl rounded-tl-sm px-5 py-3 shadow-sm border border-slate-100"
-            )}>
-              {msg.type === "text" && <p className="text-sm md:text-base leading-relaxed">{msg.text}</p>}
+      {/* Chat Area - Centered Content */}
+      <div className="flex-1 overflow-y-auto w-full scroll-smooth flex justify-center">
+        <div className="w-full max-w-4xl p-4 md:p-8 space-y-6">
+          {messages.map((msg, index) => (
+            <div key={index} className={clsx("flex", msg.sender === "user" ? "justify-end" : "justify-start")}>
               
-              {msg.type === "results" && (
-                <div className="w-full mt-2 animate-fade-in-up">
-                  {msg.data.map((prog, i) => <ResultCard key={i} prog={prog} />)}
-                </div>
+              {/* Bot Avatar */}
+              {msg.sender === "bot" && msg.type !== "results" && (
+                 <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-[10px] font-bold mr-3 mt-1 shadow-sm flex-shrink-0">AI</div>
               )}
+              
+              {/* Chat Bubbles */}
+              <div className={clsx(
+                "max-w-[85%] md:max-w-[75%]",
+                msg.sender === "user" 
+                  ? "bg-blue-600 text-white rounded-2xl rounded-tr-sm px-5 py-3.5 shadow-md font-medium" 
+                  : msg.type === "results" 
+                    ? "w-full max-w-full" 
+                    : "bg-white text-slate-800 rounded-2xl rounded-tl-sm px-5 py-3.5 shadow-sm border border-slate-200 font-medium leading-relaxed"
+              )}>
+                {msg.type === "text" && <p>{msg.text}</p>}
+                
+                {msg.type === "results" && (
+                  <div className="w-full mt-2 animate-fade-in-up">
+                    {msg.data.map((prog, i) => <ResultCard key={i} prog={prog} />)}
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
 
-        {isTyping && (
-          <div className="flex justify-start animate-fade-in">
-             <div className="w-8 h-8 rounded-full bg-[#016ce6] text-white flex items-center justify-center text-xs font-bold mr-2 mt-1 flex-shrink-0">AI</div>
-             <div className="bg-white rounded-2xl rounded-tl-sm px-5 py-4 shadow-sm border border-slate-100 flex gap-1 items-center">
-                <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce"></div>
-                <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-                <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
-             </div>
-          </div>
-        )}
-        
-        <div ref={chatEndRef} />
+          {/* Typing Indicator */}
+          {isTyping && (
+            <div className="flex justify-start animate-fade-in">
+               <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-[10px] font-bold mr-3 mt-1 flex-shrink-0">AI</div>
+               <div className="bg-white rounded-2xl rounded-tl-sm px-5 py-4 shadow-sm border border-slate-200 flex gap-1.5 items-center">
+                  <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce"></div>
+                  <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '0.15s' }}></div>
+                  <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '0.3s' }}></div>
+               </div>
+            </div>
+          )}
+          
+          <div ref={chatEndRef} className="h-4" />
+        </div>
       </div>
 
-      {/* Input Area (Strict Height Constraints to Prevent Overflow) */}
-      <div className="bg-white border-t border-slate-200 p-4 md:p-5 min-h-[80px] max-h-[35vh] overflow-y-auto">
-        
-        {/* Step 1: Text Search Input */}
-        {step === 1 && !isTyping && (
-          <form onSubmit={handleKeywordSubmit} className="flex gap-2 animate-fade-in-up">
-            <input 
-              type="text" 
-              value={keyword}
-              onChange={(e) => setKeyword(e.target.value)}
-              placeholder="Type a subject (e.g. Science, Art...)" 
-              className="flex-1 p-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-[#016ce6] focus:border-[#016ce6] outline-none transition"
-              autoFocus
-            />
-            <button type="submit" className="bg-[#016ce6] hover:bg-blue-700 text-white px-6 rounded-xl font-bold transition shadow-sm">
-              Send
-            </button>
-          </form>
-        )}
+      {/* Dynamic Input Control Panel - Centered Content */}
+      <div className="w-full bg-white border-t border-slate-200 flex justify-center shadow-[0_-10px_40px_rgba(0,0,0,0.03)] z-20">
+        <div className="w-full max-w-4xl p-4 md:p-6 min-h-[90px] max-h-[35vh] overflow-y-auto">
+          
+          {/* Step 1: Text Search */}
+          {step === 1 && !isTyping && (
+            <form onSubmit={handleKeywordSubmit} className="flex gap-3 bg-slate-50 p-2 rounded-2xl border border-slate-200 animate-fade-in-up">
+              <input 
+                type="text" 
+                value={keyword}
+                onChange={(e) => setKeyword(e.target.value)}
+                placeholder="Type 'Computer', 'Nursing', 'Math'..." 
+                className="flex-1 bg-transparent px-4 py-2 font-medium text-slate-800 placeholder-slate-400 outline-none w-full"
+                autoFocus
+              />
+              <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-bold transition-all shadow-sm">
+                Search
+              </button>
+            </form>
+          )}
 
-        {/* Step 1.5: Filtered Program Selection (No Overflow now!) */}
-        {step === 1.5 && !isTyping && (
-           <div className="flex flex-wrap gap-2 animate-fade-in-up">
-             {filteredPrograms.map(prog => (
-               <button 
-                 key={prog} 
-                 onClick={() => handleProgramSelect(prog)}
-                 className="bg-slate-50 hover:bg-indigo-50 border border-slate-200 hover:border-indigo-300 text-slate-700 px-4 py-2.5 rounded-full text-sm font-semibold transition shadow-sm"
-               >
-                 {prog}
-               </button>
-             ))}
-             <button 
-               onClick={() => setStep(1)}
-               className="text-slate-500 underline text-sm ml-2 self-center hover:text-slate-800"
-             >
-               Search again
-             </button>
-           </div>
-        )}
-
-        {/* Step 2: Days Selection */}
-        {step === 2 && !isTyping && (
-           <div className="animate-fade-in-up flex flex-col gap-4">
-             <div className="flex flex-wrap gap-2">
-               {Object.keys(userInputs.busyDays).map((day) => (
-                 <button
-                   key={day}
-                   onClick={() => toggleDay(day)}
-                   className={clsx(
-                     "px-5 py-2.5 rounded-full font-semibold text-sm transition-all border shadow-sm",
-                     userInputs.busyDays[day] ? "bg-[#016ce6] text-white border-[#016ce6] transform scale-[1.02]" : "bg-white text-slate-600 border-slate-300 hover:bg-slate-50"
-                   )}
+          {/* Step 1.5: Select Program Pills */}
+          {step === 1.5 && !isTyping && (
+             <div className="flex flex-wrap gap-2 animate-fade-in-up">
+               {filteredPrograms.map(prog => (
+                 <button 
+                   key={prog} 
+                   onClick={() => handleProgramSelect(prog)}
+                   className="bg-white border border-slate-200 text-slate-700 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-700 px-5 py-2.5 rounded-full text-sm font-bold transition-all shadow-sm"
                  >
-                   {day}
+                   {prog}
                  </button>
                ))}
+               <button onClick={() => setStep(1)} className="text-blue-600 underline text-sm ml-2 self-center font-bold hover:text-blue-800">
+                 Try another search
+               </button>
              </div>
-             <button onClick={submitDays} className="self-end bg-[#016ce6] hover:bg-blue-700 text-white px-8 py-2.5 rounded-xl font-bold text-sm shadow-md transition">
-               Submit Days ➔
-             </button>
-           </div>
-        )}
+          )}
 
-        {/* Step 3: Times Selection */}
-        {step === 3 && !isTyping && (
-           <div className="animate-fade-in-up flex flex-col gap-4">
-             <div className="flex flex-wrap gap-2">
-                <button onClick={() => toggleTime('morning')} className={clsx("px-5 py-2.5 rounded-full font-semibold text-sm border shadow-sm transition", userInputs.busyTimes.morning ? "bg-[#016ce6] text-white border-[#016ce6]" : "bg-white text-slate-600 border-slate-300")}>Morning (8am-12pm)</button>
-                <button onClick={() => toggleTime('afternoon')} className={clsx("px-5 py-2.5 rounded-full font-semibold text-sm border shadow-sm transition", userInputs.busyTimes.afternoon ? "bg-[#016ce6] text-white border-[#016ce6]" : "bg-white text-slate-600 border-slate-300")}>Afternoon (12pm-4pm)</button>
-                <button onClick={() => toggleTime('evening')} className={clsx("px-5 py-2.5 rounded-full font-semibold text-sm border shadow-sm transition", userInputs.busyTimes.evening ? "bg-[#016ce6] text-white border-[#016ce6]" : "bg-white text-slate-600 border-slate-300")}>Evening (4pm+)</button>
+          {/* Step 2: Day Picker */}
+          {step === 2 && !isTyping && (
+             <div className="animate-fade-in-up flex flex-col sm:flex-row gap-4 justify-between items-center">
+               <div className="flex flex-wrap gap-3">
+                 {Object.keys(userInputs.busyDays).map((day) => (
+                   <button
+                     key={day}
+                     onClick={() => toggleDay(day)}
+                     className={clsx(
+                       "w-14 h-14 sm:w-16 sm:h-16 rounded-2xl font-bold flex items-center justify-center transition-all",
+                       userInputs.busyDays[day] ? "bg-slate-900 text-white shadow-md transform -translate-y-1" : "bg-white text-slate-600 border border-slate-200 hover:border-slate-400"
+                     )}
+                   >
+                     {day}
+                   </button>
+                 ))}
+               </div>
+               <button onClick={submitDays} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-bold text-sm shadow-md transition-all w-full sm:w-auto">
+                 Confirm Days ➔
+               </button>
              </div>
-             <button onClick={submitTimes} className="self-end bg-green-600 hover:bg-green-700 text-white px-8 py-2.5 rounded-xl font-bold text-sm shadow-md transition">
-               Find Matches 🔍
-             </button>
-           </div>
-        )}
+          )}
 
-        {step === 5 && (
-           <div className="text-center text-slate-500 text-sm font-medium animate-fade-in py-2">
-             Mission accomplished! Check your tailored recommendations above.
-           </div>
-        )}
+          {/* Step 3: Time Picker */}
+          {step === 3 && !isTyping && (
+             <div className="animate-fade-in-up flex flex-col gap-4">
+               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <button onClick={() => toggleTime('morning')} className={clsx("p-4 rounded-2xl font-bold flex flex-col items-center gap-1 transition-all border", userInputs.busyTimes.morning ? "bg-slate-900 text-white border-slate-900 shadow-md" : "bg-white text-slate-600 border-slate-200 hover:bg-slate-50")}>
+                    <span className="text-2xl">🌅</span> Morning <span className="text-xs font-medium opacity-70">8am - 12pm</span>
+                  </button>
+                  <button onClick={() => toggleTime('afternoon')} className={clsx("p-4 rounded-2xl font-bold flex flex-col items-center gap-1 transition-all border", userInputs.busyTimes.afternoon ? "bg-slate-900 text-white border-slate-900 shadow-md" : "bg-white text-slate-600 border-slate-200 hover:bg-slate-50")}>
+                    <span className="text-2xl">☀️</span> Afternoon <span className="text-xs font-medium opacity-70">12pm - 4pm</span>
+                  </button>
+                  <button onClick={() => toggleTime('evening')} className={clsx("p-4 rounded-2xl font-bold flex flex-col items-center gap-1 transition-all border", userInputs.busyTimes.evening ? "bg-slate-900 text-white border-slate-900 shadow-md" : "bg-white text-slate-600 border-slate-200 hover:bg-slate-50")}>
+                    <span className="text-2xl">🌙</span> Evening <span className="text-xs font-medium opacity-70">4pm Onwards</span>
+                  </button>
+               </div>
+               <button onClick={submitTimes} className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-2xl font-bold text-sm shadow-md transition-all self-end w-full sm:w-auto">
+                 Find My Perfect Schedule ✨
+               </button>
+             </div>
+          )}
 
+          {/* Step 5: Save Button */}
+          {step === 5 && !isTyping && (
+             <div className="flex justify-center animate-fade-in-up py-2">
+               <button onClick={handleSavePlan} className="bg-slate-900 hover:bg-black text-white px-10 py-4 rounded-2xl font-bold shadow-lg flex items-center gap-2 transition-transform transform hover:-translate-y-1">
+                 <span>💾</span> Save Plan to Profile
+               </button>
+             </div>
+          )}
+        </div>
       </div>
     </div>
   );

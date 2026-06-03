@@ -1,30 +1,42 @@
 // src/utils/recommendationEngine.js
-import programData from "../../public/assets/programdetail_old.json";
+import programData from "../../public/assets/ScheduleNNMC.json";
 
-// Helper function: Extract unique programs for the dropdown
-export const getProgramList = () => {
-  if (!programData) return [];
-  const programs = programData.map(p => p.program);
-  return ["All Programs", ...new Set(programs)]; // Removes duplicates
+const dayMap = {
+  "M": "Mon",
+  "T": "Tue",
+  "W": "Wed",
+  "R": "Thu",
+  "F": "Fri",
+  "S": "Sat",
+  "U": "Sun"
 };
 
-// Helper function: Strictly check time conflicts
-const checkTimeConflict = (courseTimeStr, busyTimes) => {
-  if (!courseTimeStr || courseTimeStr === "TBD" || courseTimeStr === "Asynchronous" || courseTimeStr === "Online") {
-    return false; // Flexible courses never clash
-  }
+// Extract unique programs
+export const getProgramList = () => {
+  if (!programData || !programData.semesters) return ["All Programs"];
 
-  const timeLower = courseTimeStr.toLowerCase();
-  let isMorning = false;   
-  let isAfternoon = false; 
-  let isEvening = false;   
+  const programsSet = new Set();
+  
+  Object.values(programData.semesters).forEach((semester) => {
+    if (semester.programs) {
+      Object.keys(semester.programs).forEach((progName) => {
+        programsSet.add(progName);
+      });
+    }
+  });
 
-  // Regex for accurate time slot matching
-  if (timeLower.includes("am")) isMorning = true;
-  if (timeLower.match(/(12:|1:|2:|3:).*pm/)) isAfternoon = true;
-  if (timeLower.match(/(4:|5:|6:|7:|8:|9:|10:|11:).*pm/)) isEvening = true;
+  return ["All Programs", ...Array.from(programsSet).sort()]; // Sorted alphabetically
+};
 
-  // Agar user ne time select nahi kiya par day match ho gaya, to default "busy" mano
+// Strict Time Matcher
+const checkTimeConflict = (startTime, busyTimes) => {
+  if (!startTime) return false;
+
+  const hour = parseInt(startTime.split(":")[0], 10);
+  let isMorning = hour >= 0 && hour < 12;
+  let isAfternoon = hour >= 12 && hour < 16;
+  let isEvening = hour >= 16;
+
   const noTimeSelected = !busyTimes.morning && !busyTimes.afternoon && !busyTimes.evening;
   if (noTimeSelected) return true; 
 
@@ -35,59 +47,95 @@ const checkTimeConflict = (courseTimeStr, busyTimes) => {
   return false;
 };
 
+// Naya Grouping Engine
 export const getRecommendedPrograms = (searchParams) => {
-  if (!searchParams || !programData) return [];
+  if (!searchParams || !programData || !programData.semesters) return [];
 
   const { selectedProgram, busyDays, busyTimes } = searchParams;
   const busyDaysArray = busyDays ? Object.keys(busyDays).filter((day) => busyDays[day]) : [];
 
-  return programData.filter((program) => {
-    // 1. Program Dropdown Filter
-    if (selectedProgram && selectedProgram !== "All Programs" && program.program !== selectedProgram) {
-      return false; // Reject if it doesn't match the selected program
-    }
+  const groupedPrograms = {};
+  const uniName = programData.universityName || "Northern New Mexico College";
 
-    // 2. Schedule Filter
-    if (busyDaysArray.length === 0) return true; // No busy days = free for everything
+  Object.entries(programData.semesters).forEach(([semesterKey, semesterData]) => {
+    if (!semesterData.programs) return;
 
-    let hasScheduleConflict = false;
+    Object.entries(semesterData.programs).forEach(([progName, progData]) => {
+      
+      if (selectedProgram && selectedProgram !== "All Programs" && progName !== selectedProgram) {
+        return; 
+      }
 
-    // Deep loop through the curriculum
-    if (program.years) {
-      for (const year of program.years) {
-        if (year.semesters) {
-          for (const sem of year.semesters) {
-            if (sem.courses) {
-              for (const course of sem.courses) {
-                const schedule = course.schedule || {};
-                const courseDays = schedule.day || "";
-                const courseTime = schedule.time || "";
+      let hasConflict = false;
+      let semCredits = 0;
+      const formattedCourses = [];
 
-                if (courseDays === "Online" || courseDays === "TBD" || courseDays === "Asynchronous") {
-                  continue;
-                }
+      if (progData.courses) {
+        Object.values(progData.courses).forEach(course => {
+          let validSectionFound = false;
+          let selectedSection = null;
 
-                // Split course days (e.g., "Mon, Wed" -> ["Mon", "Wed"]) and check exact match
-                const parsedCourseDays = courseDays.split(',').map(d => d.trim());
-                const dayMatch = parsedCourseDays.some(d => busyDaysArray.includes(d));
+          if (course.sections && course.sections.length > 0) {
+            for (const sec of course.sections) {
+              const days = sec.days || [];
+              const startTime = sec.startTime;
+              const mappedDays = days.map(d => dayMap[d] || d);
+              let sectionClash = false;
 
+              if (busyDaysArray.length > 0 && days.length > 0) {
+                const dayMatch = mappedDays.some(d => busyDaysArray.includes(d));
                 if (dayMatch) {
-                  const timeClash = checkTimeConflict(courseTime, busyTimes);
-                  if (timeClash) {
-                    hasScheduleConflict = true;
-                    break; // Inner loop break
-                  }
+                  if (checkTimeConflict(startTime, busyTimes)) sectionClash = true;
                 }
               }
-              if (hasScheduleConflict) break;
-            }
-            if (hasScheduleConflict) break;
-          }
-        }
-        if (hasScheduleConflict) break;
-      }
-    }
 
-    return !hasScheduleConflict;
+              if (!sectionClash) {
+                validSectionFound = true;
+                selectedSection = sec;
+                break;
+              }
+            }
+
+            if (!validSectionFound) {
+              hasConflict = true; 
+            } else {
+              semCredits += selectedSection.credits || 0;
+              formattedCourses.push({
+                code: course.courseCode,
+                name: course.courseName,
+                credits: selectedSection.credits,
+                instructor: selectedSection.instructor,
+                campus: selectedSection.campus || "Main",
+                schedule: {
+                  day: selectedSection.days.map(d => dayMap[d]).join(", ") || (selectedSection.instructionMethod.includes("OL") ? "Online" : "TBD"),
+                  time: selectedSection.startTime ? `${selectedSection.startTime} - ${selectedSection.endTime}` : "Asynchronous"
+                }
+              });
+            }
+          }
+        });
+      }
+
+      if (!hasConflict && formattedCourses.length > 0) {
+        // Grouping Data into single Program Card
+        if (!groupedPrograms[progName]) {
+            groupedPrograms[progName] = {
+                program: progName,
+                university: uniName,
+                degree: "Degree / Certificate",
+                total_credit_hours: 0,
+                semesters: []
+            };
+        }
+        groupedPrograms[progName].total_credit_hours += semCredits;
+        groupedPrograms[progName].semesters.push({
+            semesterName: semesterKey.replace("_", " "), 
+            total_credits: semCredits,
+            courses: formattedCourses
+        });
+      }
+    });
   });
+
+  return Object.values(groupedPrograms);
 };
