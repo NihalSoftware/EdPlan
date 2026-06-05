@@ -220,7 +220,7 @@ const RecommendationPage = () => {
           const results = getRecommendedPrograms(searchParams);
           
           if (results.length === 0) {
-            setMessages(prev => [...prev, { sender: "bot", type: "text", text: "Hmm, your schedule is a bit too tight for the current offerings. You may need to clear up some days." }]);
+            setMessages(prev => [...prev, { sender: "bot", type: "text", text: "your schedule is a bit too tight for the current offerings. You may need to clear up some days." }]);
           } else {
             setSearchResults(results);
             setMessages(prev => [...prev, { sender: "bot", type: "results", data: results }]);
@@ -261,7 +261,7 @@ const RecommendationPage = () => {
             AI
           </div>
           <div>
-            <h2 className="text-xl font-bold text-slate-800 tracking-tight">EdPlan Assistant</h2>
+            <h2 className="text-xl font-bold text-slate-800 tracking-tight">EdPlan Scheduler</h2>
             <div className="flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
               <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider">Online</span>
