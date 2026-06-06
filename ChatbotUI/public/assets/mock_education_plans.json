@@ -1,0 +1,245 @@
+{
+  "plans": [
+    {
+      "id": "cs-zero-credit-6-hour",
+      "name": "Steady Computer Science Plan",
+      "description": "Best fit for a student starting with 0 completed credits and about 6 study hours per day. The plan uses a steady load and keeps prerequisite chains in order.",
+      "criteria": {
+        "completedCredits": 0,
+        "studyHoursPerDay": 6
+      },
+      "maxCredits": 15,
+      "remainingCredits": 91,
+      "semesters": [
+        {
+          "title": "Fall 2026",
+          "credits": 14,
+          "courses": [
+            { "code": "ENGL 1110", "name": "Composition I", "credits": 3, "prerequisite": "None", "corequisite": "None" },
+            { "code": "MATH 1511", "name": "Calculus I", "credits": 4, "prerequisite": "None", "corequisite": "None" },
+            { "code": "C S 151", "name": "Intro to Computer Science", "credits": 3, "prerequisite": "None", "corequisite": "C S 152L" },
+            { "code": "C S 152L", "name": "CS Lab I", "credits": 1, "prerequisite": "None", "corequisite": "C S 151" },
+            { "code": "ELEC-111", "name": "Creative Writing Elective", "credits": 3, "prerequisite": "None", "corequisite": "None" }
+          ]
+        },
+        {
+          "title": "Spring 2027",
+          "credits": 14,
+          "courses": [
+            { "code": "ENGL 2221", "name": "Writing in the Humanities & Social Sciences", "credits": 3, "prerequisite": "ENGL 1110", "corequisite": "None" },
+            { "code": "MATH 1521", "name": "Calculus II", "credits": 4, "prerequisite": "MATH 1511", "corequisite": "None" },
+            { "code": "C S 172", "name": "Intro to Java", "credits": 3, "prerequisite": "C S 151", "corequisite": "None" },
+            { "code": "PHYS 1310", "name": "Algebra-Based Physics I", "credits": 3, "prerequisite": "MATH 1511", "corequisite": "PHYS 1310L" },
+            { "code": "PHYS 1310L", "name": "Algebra-Based Physics I Lab", "credits": 1, "prerequisite": "None", "corequisite": "PHYS 1310" }
+          ]
+        },
+        {
+          "title": "Fall 2027",
+          "credits": 13,
+          "courses": [
+            { "code": "C S 272", "name": "Data Structures", "credits": 3, "prerequisite": "C S 151", "corequisite": "None" },
+            { "code": "MATH 2530", "name": "Calculus III", "credits": 4, "prerequisite": "MATH 1521", "corequisite": "None" },
+            { "code": "C S 278", "name": "Discrete Math for CS", "credits": 3, "prerequisite": "MATH 1511", "corequisite": "None" },
+            { "code": "COMM 1115", "name": "Introduction to Communication", "credits": 3, "prerequisite": "None", "corequisite": "None" }
+          ]
+        },
+        {
+          "title": "Spring 2028",
+          "credits": 14,
+          "courses": [
+            { "code": "C S 370", "name": "Computer Architecture", "credits": 3, "prerequisite": "C S 172", "corequisite": "None" },
+            { "code": "C S 371", "name": "Software Development", "credits": 3, "prerequisite": "C S 272", "corequisite": "None" },
+            { "code": "STAT 2510", "name": "Statistics for Engineers", "credits": 3, "prerequisite": "MATH 1511", "corequisite": "None" },
+            { "code": "C S 273L", "name": "Data Structures Lab", "credits": 2, "prerequisite": "C S 272", "corequisite": "None" },
+            { "code": "ELEC-220", "name": "Humanities Elective", "credits": 3, "prerequisite": "None", "corequisite": "None" }
+          ]
+        },
+        {
+          "title": "Fall 2028",
+          "credits": 12,
+          "courses": [
+            { "code": "C S 474", "name": "Operating Systems", "credits": 3, "prerequisite": "C S 370", "corequisite": "None" },
+            { "code": "C S 482", "name": "Database Management Systems", "credits": 3, "prerequisite": "C S 272", "corequisite": "None" },
+            { "code": "C S 477", "name": "Algorithms", "credits": 3, "prerequisite": "C S 272 and C S 278", "corequisite": "None" },
+            { "code": "ELEC-310", "name": "Social Science Elective", "credits": 3, "prerequisite": "None", "corequisite": "None" }
+          ]
+        },
+        {
+          "title": "Spring 2029",
+          "credits": 12,
+          "courses": [
+            { "code": "C S 456", "name": "Computer Networks", "credits": 3, "prerequisite": "C S 370", "corequisite": "None" },
+            { "code": "C S 458", "name": "Software Engineering", "credits": 3, "prerequisite": "C S 371", "corequisite": "None" },
+            { "code": "C S 469", "name": "Artificial Intelligence", "credits": 3, "prerequisite": "C S 477", "corequisite": "None" },
+            { "code": "ELEC-330", "name": "Technical Elective I", "credits": 3, "prerequisite": "Junior standing", "corequisite": "None" }
+          ]
+        },
+        {
+          "title": "Fall 2029",
+          "credits": 12,
+          "courses": [
+            { "code": "C S 488", "name": "Senior Design I", "credits": 3, "prerequisite": "C S 458", "corequisite": "None" },
+            { "code": "C S 489", "name": "Senior Design II", "credits": 3, "prerequisite": "C S 488", "corequisite": "None" },
+            { "code": "ELEC-430", "name": "Technical Elective II", "credits": 3, "prerequisite": "Junior standing", "corequisite": "None" },
+            { "code": "ELEC-440", "name": "Free Elective", "credits": 3, "prerequisite": "None", "corequisite": "None" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cs-zero-credit-8-hour",
+      "name": "Focused Computer Science Plan",
+      "description": "Best fit for a student starting with 0 completed credits and about 8 study hours per day. It uses a stronger load while staying inside the 8-18 credit rule.",
+      "criteria": {
+        "completedCredits": 0,
+        "studyHoursPerDay": 8
+      },
+      "maxCredits": 17,
+      "remainingCredits": 91,
+      "semesters": [
+        {
+          "title": "Fall 2026",
+          "credits": 17,
+          "courses": [
+            { "code": "ENGL 1110", "name": "Composition I", "credits": 3, "prerequisite": "None", "corequisite": "None" },
+            { "code": "MATH 1511", "name": "Calculus I", "credits": 4, "prerequisite": "None", "corequisite": "None" },
+            { "code": "C S 151", "name": "Intro to Computer Science", "credits": 3, "prerequisite": "None", "corequisite": "C S 152L" },
+            { "code": "C S 152L", "name": "CS Lab I", "credits": 1, "prerequisite": "None", "corequisite": "C S 151" },
+            { "code": "COMM 1115", "name": "Introduction to Communication", "credits": 3, "prerequisite": "None", "corequisite": "None" },
+            { "code": "ELEC-111", "name": "Creative Writing Elective", "credits": 3, "prerequisite": "None", "corequisite": "None" }
+          ]
+        },
+        {
+          "title": "Spring 2027",
+          "credits": 17,
+          "courses": [
+            { "code": "ENGL 2221", "name": "Writing in the Humanities & Social Sciences", "credits": 3, "prerequisite": "ENGL 1110", "corequisite": "None" },
+            { "code": "MATH 1521", "name": "Calculus II", "credits": 4, "prerequisite": "MATH 1511", "corequisite": "None" },
+            { "code": "C S 172", "name": "Intro to Java", "credits": 3, "prerequisite": "C S 151", "corequisite": "None" },
+            { "code": "C S 272", "name": "Data Structures", "credits": 3, "prerequisite": "C S 151", "corequisite": "None" },
+            { "code": "PHYS 1310", "name": "Algebra-Based Physics I", "credits": 3, "prerequisite": "MATH 1511", "corequisite": "PHYS 1310L" },
+            { "code": "PHYS 1310L", "name": "Algebra-Based Physics I Lab", "credits": 1, "prerequisite": "None", "corequisite": "PHYS 1310" }
+          ]
+        },
+        {
+          "title": "Fall 2027",
+          "credits": 16,
+          "courses": [
+            { "code": "MATH 2530", "name": "Calculus III", "credits": 4, "prerequisite": "MATH 1521", "corequisite": "None" },
+            { "code": "C S 278", "name": "Discrete Math for CS", "credits": 3, "prerequisite": "MATH 1511", "corequisite": "None" },
+            { "code": "C S 370", "name": "Computer Architecture", "credits": 3, "prerequisite": "C S 172", "corequisite": "None" },
+            { "code": "C S 371", "name": "Software Development", "credits": 3, "prerequisite": "C S 272", "corequisite": "None" },
+            { "code": "STAT 2510", "name": "Statistics for Engineers", "credits": 3, "prerequisite": "MATH 1511", "corequisite": "None" }
+          ]
+        },
+        {
+          "title": "Spring 2028",
+          "credits": 14,
+          "courses": [
+            { "code": "C S 273L", "name": "Data Structures Lab", "credits": 2, "prerequisite": "C S 272", "corequisite": "None" },
+            { "code": "C S 474", "name": "Operating Systems", "credits": 3, "prerequisite": "C S 370", "corequisite": "None" },
+            { "code": "C S 482", "name": "Database Management Systems", "credits": 3, "prerequisite": "C S 272", "corequisite": "None" },
+            { "code": "C S 477", "name": "Algorithms", "credits": 3, "prerequisite": "C S 272 and C S 278", "corequisite": "None" },
+            { "code": "ELEC-310", "name": "Social Science Elective", "credits": 3, "prerequisite": "None", "corequisite": "None" }
+          ]
+        },
+        {
+          "title": "Fall 2028",
+          "credits": 15,
+          "courses": [
+            { "code": "C S 456", "name": "Computer Networks", "credits": 3, "prerequisite": "C S 370", "corequisite": "None" },
+            { "code": "C S 458", "name": "Software Engineering", "credits": 3, "prerequisite": "C S 371", "corequisite": "None" },
+            { "code": "C S 469", "name": "Artificial Intelligence", "credits": 3, "prerequisite": "C S 477", "corequisite": "None" },
+            { "code": "ELEC-330", "name": "Technical Elective I", "credits": 3, "prerequisite": "Junior standing", "corequisite": "None" },
+            { "code": "ELEC-430", "name": "Technical Elective II", "credits": 3, "prerequisite": "Junior standing", "corequisite": "None" }
+          ]
+        },
+        {
+          "title": "Spring 2029",
+          "credits": 12,
+          "courses": [
+            { "code": "C S 488", "name": "Senior Design I", "credits": 3, "prerequisite": "C S 458", "corequisite": "None" },
+            { "code": "C S 489", "name": "Senior Design II", "credits": 3, "prerequisite": "C S 488", "corequisite": "None" },
+            { "code": "ELEC-440", "name": "Free Elective", "credits": 3, "prerequisite": "None", "corequisite": "None" },
+            { "code": "ELEC-450", "name": "Capstone Support Elective", "credits": 3, "prerequisite": "Senior standing", "corequisite": "None" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cs-zero-credit-10-hour",
+      "name": "Intensive Computer Science Plan",
+      "description": "Best fit for a student starting with 0 completed credits and about 10 study hours per day. This is the most compressed mock route while preserving course dependencies.",
+      "criteria": {
+        "completedCredits": 0,
+        "studyHoursPerDay": 10
+      },
+      "maxCredits": 18,
+      "remainingCredits": 91,
+      "semesters": [
+        {
+          "title": "Fall 2026",
+          "credits": 18,
+          "courses": [
+            { "code": "ENGL 1110", "name": "Composition I", "credits": 3, "prerequisite": "None", "corequisite": "None" },
+            { "code": "MATH 1511", "name": "Calculus I", "credits": 4, "prerequisite": "None", "corequisite": "None" },
+            { "code": "C S 151", "name": "Intro to Computer Science", "credits": 3, "prerequisite": "None", "corequisite": "C S 152L" },
+            { "code": "C S 152L", "name": "CS Lab I", "credits": 1, "prerequisite": "None", "corequisite": "C S 151" },
+            { "code": "COMM 1115", "name": "Introduction to Communication", "credits": 3, "prerequisite": "None", "corequisite": "None" },
+            { "code": "ELEC-111", "name": "Creative Writing Elective", "credits": 3, "prerequisite": "None", "corequisite": "None" },
+            { "code": "NMSU 1010", "name": "Freshman Seminar", "credits": 1, "prerequisite": "None", "corequisite": "None" }
+          ]
+        },
+        {
+          "title": "Spring 2027",
+          "credits": 18,
+          "courses": [
+            { "code": "ENGL 2221", "name": "Writing in the Humanities & Social Sciences", "credits": 3, "prerequisite": "ENGL 1110", "corequisite": "None" },
+            { "code": "MATH 1521", "name": "Calculus II", "credits": 4, "prerequisite": "MATH 1511", "corequisite": "None" },
+            { "code": "C S 172", "name": "Intro to Java", "credits": 3, "prerequisite": "C S 151", "corequisite": "None" },
+            { "code": "C S 272", "name": "Data Structures", "credits": 3, "prerequisite": "C S 151", "corequisite": "None" },
+            { "code": "PHYS 1310", "name": "Algebra-Based Physics I", "credits": 3, "prerequisite": "MATH 1511", "corequisite": "PHYS 1310L" },
+            { "code": "PHYS 1310L", "name": "Algebra-Based Physics I Lab", "credits": 1, "prerequisite": "None", "corequisite": "PHYS 1310" },
+            { "code": "ELEC-220", "name": "Humanities Elective", "credits": 1, "prerequisite": "None", "corequisite": "None" }
+          ]
+        },
+        {
+          "title": "Fall 2027",
+          "credits": 18,
+          "courses": [
+            { "code": "MATH 2530", "name": "Calculus III", "credits": 4, "prerequisite": "MATH 1521", "corequisite": "None" },
+            { "code": "C S 278", "name": "Discrete Math for CS", "credits": 3, "prerequisite": "MATH 1511", "corequisite": "None" },
+            { "code": "C S 370", "name": "Computer Architecture", "credits": 3, "prerequisite": "C S 172", "corequisite": "None" },
+            { "code": "C S 371", "name": "Software Development", "credits": 3, "prerequisite": "C S 272", "corequisite": "None" },
+            { "code": "STAT 2510", "name": "Statistics for Engineers", "credits": 3, "prerequisite": "MATH 1511", "corequisite": "None" },
+            { "code": "C S 273L", "name": "Data Structures Lab", "credits": 2, "prerequisite": "C S 272", "corequisite": "None" }
+          ]
+        },
+        {
+          "title": "Spring 2028",
+          "credits": 18,
+          "courses": [
+            { "code": "C S 474", "name": "Operating Systems", "credits": 3, "prerequisite": "C S 370", "corequisite": "None" },
+            { "code": "C S 482", "name": "Database Management Systems", "credits": 3, "prerequisite": "C S 272", "corequisite": "None" },
+            { "code": "C S 477", "name": "Algorithms", "credits": 3, "prerequisite": "C S 272 and C S 278", "corequisite": "None" },
+            { "code": "C S 456", "name": "Computer Networks", "credits": 3, "prerequisite": "C S 370", "corequisite": "None" },
+            { "code": "C S 458", "name": "Software Engineering", "credits": 3, "prerequisite": "C S 371", "corequisite": "None" },
+            { "code": "ELEC-330", "name": "Technical Elective I", "credits": 3, "prerequisite": "Junior standing", "corequisite": "None" }
+          ]
+        },
+        {
+          "title": "Fall 2028",
+          "credits": 18,
+          "courses": [
+            { "code": "C S 469", "name": "Artificial Intelligence", "credits": 3, "prerequisite": "C S 477", "corequisite": "None" },
+            { "code": "C S 488", "name": "Senior Design I", "credits": 3, "prerequisite": "C S 458", "corequisite": "None" },
+            { "code": "C S 489", "name": "Senior Design II", "credits": 3, "prerequisite": "C S 488", "corequisite": "None" },
+            { "code": "ELEC-310", "name": "Social Science Elective", "credits": 3, "prerequisite": "None", "corequisite": "None" },
+            { "code": "ELEC-430", "name": "Technical Elective II", "credits": 3, "prerequisite": "Junior standing", "corequisite": "None" },
+            { "code": "ELEC-440", "name": "Free Elective", "credits": 3, "prerequisite": "None", "corequisite": "None" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,41 +1,38 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { FaBookOpen, FaClipboardList, FaGraduationCap, FaRobot, FaShieldAlt, FaUniversity, FaUser } from "react-icons/fa";
+import { useEffect, useRef, useState } from "react";
+import {
+  FaBookOpen,
+  FaBullseye,
+  FaCalendarAlt,
+  FaChartLine,
+  FaCheckCircle,
+  FaClipboardList,
+  FaGraduationCap,
+  FaLayerGroup,
+  FaRobot,
+  FaShieldAlt,
+} from "react-icons/fa";
 import { FiCalendar } from "react-icons/fi";
 import AgentCard from "../components/nexus/AgentCard.jsx";
 
-const cardIcons = {
-  student: FaUser,
-  university: FaUniversity,
-  program: FaShieldAlt,
-  year: FiCalendar,
-  plans: FaClipboardList,
-  schedules: FaBookOpen,
-  recommendations: FaGraduationCap,
-  confidence: FaRobot,
-};
-
 const agentStyles = {
   pathfinder: {
-    accent: "#1668DC",
-    accentBg: "#E8F1FF",
-    Icon: FaRobot,
+    accent: "#6D28D9",
+    accentBg: "#F0E7FF",
   },
   schedulepilot: {
     accent: "#059669",
     accentBg: "#E6F7EE",
-    Icon: FaRobot,
   },
   coursecompass: {
     accent: "#7C3AED",
     accentBg: "#F0E7FF",
-    Icon: FaRobot,
   },
 };
 
 const NexusPage = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const agentsSectionRef = useRef(null);
 
   useEffect(() => {
     fetch("/assets/nexus_data.json")
@@ -47,105 +44,91 @@ const NexusPage = () => {
 
   if (loading) {
     return (
-      <section className="p-6 min-h-screen bg-[#F4F7FC]">
-        <div className="mx-auto flex max-w-6xl items-center justify-center py-32 text-slate-500">
-          Loading Nexus...
-        </div>
+      <section className="min-h-screen bg-[#F4F7FC] px-4 py-6 sm:px-6 xl:px-8">
+        <div className="mx-auto flex w-full max-w-[1400px] items-center justify-center py-32 text-slate-500">Loading Nexus...</div>
       </section>
     );
   }
 
   if (!data) {
     return (
-      <section className="p-6 min-h-screen bg-[#F4F7FC]">
-        <div className="mx-auto max-w-6xl rounded-[24px] bg-white p-10 shadow-sm border border-[#DCE3F0]">Unable to load Nexus content.</div>
+      <section className="min-h-screen bg-[#F4F7FC] px-4 py-6 sm:px-6 xl:px-8">
+        <div className="mx-auto w-full max-w-[1400px] rounded-[24px] border border-[#DCE3F0] bg-white p-10 shadow-sm">Unable to load Nexus content.</div>
       </section>
     );
   }
 
   const { overview, agents, activity, insights } = data;
+  const progress = 45;
+
+  const scrollToAgents = () => {
+    agentsSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   const overviewCards = [
-    { key: "student", label: "Student", value: overview.student, Icon: cardIcons.student, iconBg: "bg-[#E8F1FF]", iconColor: "#1668DC" },
-    { key: "university", label: "University", value: overview.university, Icon: cardIcons.university, iconBg: "bg-[#E8F1FF]", iconColor: "#1668DC" },
-    { key: "program", label: "Program", value: overview.program, Icon: cardIcons.program, iconBg: "bg-[#E8F1FF]", iconColor: "#1668DC" },
-    { key: "year", label: "Academic Year", value: overview.year, Icon: cardIcons.year, iconBg: "bg-[#E8F1FF]", iconColor: "#1668DC" },
-  ];
-
-  const statCards = [
-    { key: "plans", label: "Education Plans", value: overview.stats[0].value, detail: overview.stats[0].detail, Icon: cardIcons.plans, accent: "#1668DC" },
-    { key: "schedules", label: "Schedules", value: overview.stats[1].value, detail: overview.stats[1].detail, Icon: cardIcons.schedules, accent: "#059669" },
-    { key: "recommendations", label: "Recommendations", value: overview.stats[2].value, detail: overview.stats[2].detail, Icon: cardIcons.recommendations, accent: "#7C3AED" },
-    { key: "confidence", label: "AI Confidence", value: overview.stats[3].value, detail: overview.stats[3].detail, Icon: cardIcons.confidence, accent: "#F97316" },
+    {
+      label: "Program",
+      value: "BS Computer Science",
+      detail: "Bachelor of Science",
+      Icon: FaGraduationCap,
+      color: "#7C3AED",
+      bg: "#F0E7FF",
+    },
+    {
+      label: "Credits Earned",
+      value: "30 / 72",
+      detail: "Total Degree Credits",
+      Icon: FaBookOpen,
+      color: "#059669",
+      bg: "#E6F7EE",
+    },
+    {
+      label: "Current Semester",
+      value: "Fall 2026",
+      detail: "In Progress",
+      Icon: FiCalendar,
+      color: "#1668DC",
+      bg: "#E8F1FF",
+    },
+    {
+      label: "Graduation Progress",
+      value: `${progress}%`,
+      detail: "On Track",
+      Icon: FaChartLine,
+      color: "#F97316",
+      bg: "#FFF1E7",
+    },
+    {
+      label: "Expected Graduation",
+      value: "Spring 2028",
+      detail: "On Time",
+      Icon: FaBullseye,
+      color: "#7C3AED",
+      bg: "#F0E7FF",
+    },
   ];
 
   return (
-    <section className="p-6 min-h-screen bg-[#F4F7FC]">
-      <div className="mx-auto max-w-7xl space-y-8">
-        <div className="rounded-[24px] border border-[#DCE3F0] bg-white p-8 shadow-sm">
-          <div className="flex flex-col gap-6 xl:flex-row xl:items-start xl:justify-between">
-            <div className="max-w-3xl">
-              <p className="text-xs uppercase tracking-[0.4em] text-slate-400">EdPlan Nexus</p>
-              <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900">AI-powered academic intelligence center</h1>
-              <p className="mt-4 text-base leading-7 text-slate-600">
-                Explore your academic roadmap, optimize your semester schedule, and discover course recommendations powered by intelligent academic agents.
-              </p>
-            </div>
+    <section className="min-h-screen bg-[#F4F7FC] px-4 py-5 sm:px-6 xl:px-7">
+      <div className="mx-auto w-full max-w-[1400px] space-y-5">
+        <NexusHero student={overview.student} progress={progress} onTryNexus={scrollToAgents} />
 
-            <Link
-              to="/nexus/pathfinder"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-[#1668DC] px-6 text-sm font-semibold text-white transition hover:bg-[#1659c9]"
-            >
-              Launch PathFinder
-            </Link>
-          </div>
-        </div>
-
-        <div className="grid gap-4 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-3.5 md:grid-cols-2 xl:grid-cols-5">
           {overviewCards.map((card) => (
-            <div key={card.key} className="rounded-[20px] border border-[#DCE3F0] bg-white p-5 shadow-sm min-w-0">
-              <div className="flex items-start gap-4">
-                <div className={`flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-2xl ${card.iconBg}`}>
-                  <card.Icon className="h-5 w-5" style={{ color: card.iconColor }} />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-xs uppercase tracking-[0.35em] text-slate-400">{card.label}</p>
-                  <p className="mt-3 text-lg font-semibold leading-snug text-slate-900 break-words whitespace-normal">{card.value}</p>
-                </div>
-              </div>
-            </div>
+            <OverviewCard key={card.label} {...card} />
           ))}
         </div>
 
-        <div className="grid gap-4 lg:grid-cols-4">
-          {statCards.map((card) => (
-            <div key={card.key} className="rounded-[20px] border border-[#DCE3F0] bg-white p-5 shadow-sm">
-              <div className="flex items-center justify-between gap-4">
-                <div className="flex h-11 w-11 items-center justify-center rounded-2xl" style={{ backgroundColor: `${card.accent}1A`, color: card.accent }}>
-                  <card.Icon className="h-5 w-5" />
-                </div>
-                <div className="text-right">
-                  <p className="text-xs uppercase tracking-[0.35em] text-slate-400">{card.label}</p>
-                  <p className="mt-3 text-2xl font-semibold text-slate-900">{card.value}</p>
-                </div>
-              </div>
-              <p className="mt-4 text-sm text-slate-500">{card.detail}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="grid gap-5 lg:grid-cols-3">
+        <div ref={agentsSectionRef} className="scroll-mt-5 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
           {agents.map((agent) => {
             const style = agentStyles[agent.id] || agentStyles.pathfinder;
             return (
               <AgentCard
                 key={agent.id}
-                Icon={style.Icon}
                 accent={style.accent}
                 accentBg={style.accentBg}
                 title={agent.name}
                 description={agent.description}
-                metrics={agent.metrics}
                 buttonText={agent.buttonText}
                 link={agent.link}
               />
@@ -153,44 +136,197 @@ const NexusPage = () => {
           })}
         </div>
 
-        <div className="grid gap-5 lg:grid-cols-[1.4fr_0.9fr]">
-          <div className="rounded-[24px] border border-[#DCE3F0] bg-white p-6 shadow-sm">
-            <div className="flex items-center justify-between gap-4">
-              <div>
-                <h2 className="text-xl font-semibold text-slate-900">Recent Activity</h2>
-                <p className="mt-2 text-sm text-slate-500">Track the latest AI-generated updates to your plan, schedule, and recommendations.</p>
-              </div>
-              <button className="rounded-full border border-[#DCE3F0] px-4 py-2 text-xs font-semibold text-slate-600">View all</button>
-            </div>
-            <div className="mt-6 space-y-4">
-              {activity.map((item) => (
-                <div key={item.title} className="rounded-3xl border border-[#E8EFFA] bg-slate-50 p-4">
-                  <p className="font-semibold text-slate-900">{item.title}</p>
-                  <p className="mt-1 text-sm text-slate-500">{item.time}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="rounded-[24px] border border-[#DCE3F0] bg-white p-6 shadow-sm">
-            <div className="flex items-center justify-between gap-4">
-              <div>
-                <h2 className="text-xl font-semibold text-slate-900">AI Insights</h2>
-                <p className="mt-2 text-sm text-slate-500">Personalized guidance the system has identified for your academic path.</p>
-              </div>
-              <button className="rounded-full border border-[#DCE3F0] px-4 py-2 text-xs font-semibold text-slate-600">View all</button>
-            </div>
-            <div className="mt-6 space-y-3">
-              {insights.map((insight) => (
-                <div key={insight} className="rounded-3xl border border-[#E8EFFA] bg-slate-50 p-4">
-                  <p className="text-sm text-slate-700">{insight}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="grid grid-cols-1 gap-4 xl:grid-cols-[0.95fr_1.05fr_1.15fr]">
+          <AcademicHealthPanel />
+          <RecentActivityPanel activity={activity} />
+          <InsightsPanel insights={insights} />
         </div>
       </div>
     </section>
+  );
+};
+
+const NexusHero = ({ student, progress, onTryNexus }) => (
+  <div className="relative w-full overflow-hidden rounded-[20px] border border-[#DCE3F0] bg-gradient-to-br from-[#F0E7FF] via-white to-[#E8F1FF] p-5 shadow-sm sm:p-6 xl:min-h-[226px]">
+    <div className="pointer-events-none absolute right-12 top-7 hidden h-36 w-72 rounded-[50%] border border-[#C4B5FD] opacity-70 lg:block" />
+    <div className="pointer-events-none absolute right-20 top-14 hidden h-24 w-64 rotate-[-18deg] rounded-[50%] border border-[#BFD4F7] opacity-70 lg:block" />
+    <div className="pointer-events-none absolute right-24 top-10 hidden h-20 w-20 rounded-full bg-gradient-to-br from-[#1D4ED8] to-[#7C3AED] shadow-xl shadow-violet-200 lg:block" />
+    <FaGraduationCap className="pointer-events-none absolute right-[7.75rem] top-14 hidden h-16 w-16 rotate-[-8deg] text-slate-900 drop-shadow-xl lg:block" />
+
+    <div className="relative grid w-full gap-6 lg:grid-cols-[minmax(0,1fr)_200px] xl:grid-cols-[minmax(0,1fr)_220px_300px] xl:items-center">
+      <div className="min-w-0">
+        <p className="text-xs font-semibold text-[#6D28D9]">Welcome back, {student}</p>
+        <h1 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight text-slate-900 xl:text-[2.65rem] xl:leading-tight">AI Academic Intelligence Center</h1>
+        <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600">
+          Track your academic journey, optimize your schedule, and get personalized recommendations from intelligent agents.
+        </p>
+        <div className="mt-5 grid w-full max-w-3xl gap-2 rounded-[12px] border border-[#DCE3F0] bg-white/75 p-3 shadow-sm md:grid-cols-3">
+          <HeroMiniMetric Icon={FaCalendarAlt} label="Fall 2026" detail="Current Semester" />
+          <HeroMiniMetric Icon={FaLayerGroup} label="BS Computer Science" detail="Your Program" />
+          <HeroMiniMetric Icon={FaCalendarAlt} label="Spring 2028" detail="Expected Graduation" />
+        </div>
+      </div>
+
+      <div className="flex justify-center">
+        <div className="relative flex h-36 w-36 items-center justify-center rounded-full bg-white shadow-inner shadow-slate-200">
+          <div
+            className="absolute inset-0 rounded-full"
+            style={{ background: `conic-gradient(#6D28D9 ${progress * 3.6}deg, #E5E7F4 0deg)` }}
+          />
+          <div className="relative flex h-24 w-24 flex-col items-center justify-center rounded-full bg-white text-center shadow-sm">
+            <p className="text-3xl font-semibold text-slate-900">{progress}%</p>
+            <p className="mt-1 text-xs font-semibold text-slate-500">Degree Progress</p>
+            <FaGraduationCap className="mt-1.5 h-3.5 w-3.5 text-slate-700" />
+          </div>
+        </div>
+      </div>
+
+      <div className="hidden min-h-[158px] xl:flex xl:items-end xl:justify-center">
+        <button
+          type="button"
+          onClick={onTryNexus}
+          className="inline-flex h-10 items-center justify-center rounded-full bg-[#6D28D9] px-6 text-sm font-semibold text-white shadow-lg shadow-violet-200 transition hover:-translate-y-0.5 hover:bg-[#5B21B6]"
+        >
+          Try Nexus
+        </button>
+      </div>
+    </div>
+  </div>
+);
+
+const HeroMiniMetric = ({ Icon, label, detail }) => (
+  <div className="flex items-center gap-2.5 border-[#E6EAF3] md:border-r md:last:border-r-0">
+    <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-[9px] bg-[#EEF4FF] text-[#1668DC]">
+      <Icon className="h-[1.125rem] w-[1.125rem]" />
+    </span>
+    <div className="min-w-0">
+      <p className="text-xs font-semibold text-slate-900">{label}</p>
+      <p className="text-xs text-slate-500">{detail}</p>
+    </div>
+  </div>
+);
+
+const OverviewCard = ({ label, value, detail, Icon, color, bg }) => (
+  <div className="min-h-[96px] rounded-[16px] border border-[#DCE3F0] bg-white p-4 shadow-sm">
+    <div className="flex items-start gap-3">
+      <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-[14px]" style={{ backgroundColor: bg, color }}>
+        <Icon className="h-5 w-5" />
+      </span>
+      <div className="min-w-0">
+        <p className="text-xs font-semibold text-slate-500">{label}</p>
+        <p className="mt-1.5 text-base font-semibold leading-snug text-slate-900 break-words">{value}</p>
+        <p className="mt-0.5 text-xs text-slate-500">{detail}</p>
+      </div>
+    </div>
+  </div>
+);
+
+const AcademicHealthPanel = () => (
+  <div className="rounded-[18px] border border-[#DCE3F0] bg-white p-5 shadow-sm">
+    <div className="flex items-center gap-2">
+      <h2 className="text-base font-semibold text-slate-900">Academic Health</h2>
+      <FaCheckCircle className="h-4 w-4 text-slate-400" />
+    </div>
+    <div className="mt-4 grid gap-4 md:grid-cols-[112px_1fr] md:items-center">
+      <div className="relative flex h-28 w-28 items-center justify-center rounded-full bg-white">
+        <div className="absolute inset-0 rounded-full" style={{ background: "conic-gradient(#059669 313deg, #E6EAF3 0deg)" }} />
+        <div className="relative flex h-20 w-20 flex-col items-center justify-center rounded-full bg-white">
+          <p className="text-3xl font-semibold text-slate-900">87</p>
+          <p className="text-xs text-slate-500">/100</p>
+        </div>
+      </div>
+      <div className="space-y-2.5">
+        <HealthLine title="On track for graduation" detail="You are progressing as planned." positive />
+        <HealthLine title="Balanced workload" detail="Your course load is well balanced." positive />
+        <HealthLine title="Prerequisites clear" detail="You have no missing prerequisites." positive />
+        <HealthLine title="Consider ML electives" detail="Great match for your interests." />
+      </div>
+    </div>
+    <button type="button" className="mt-4 h-9 w-full rounded-[10px] border border-[#DCE3F0] text-xs font-semibold text-emerald-700">
+      View Full Analysis
+    </button>
+  </div>
+);
+
+const HealthLine = ({ title, detail, positive = false }) => (
+  <div className="flex items-start gap-2.5">
+    <span className={`mt-1 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full ${positive ? "bg-emerald-50 text-emerald-600" : "bg-orange-50 text-orange-500"}`}>
+      <FaCheckCircle className="h-3 w-3" />
+    </span>
+    <div>
+      <p className="text-xs font-semibold text-slate-900">{title}</p>
+      <p className="text-xs leading-4 text-slate-500">{detail}</p>
+    </div>
+  </div>
+);
+
+const RecentActivityPanel = ({ activity }) => (
+  <div className="rounded-[18px] border border-[#DCE3F0] bg-white p-5 shadow-sm">
+    <div className="flex items-center justify-between">
+      <h2 className="text-base font-semibold text-slate-900">Recent Activity</h2>
+      <button type="button" className="text-xs font-semibold text-[#1668DC]">View all</button>
+    </div>
+    <div className="mt-4 space-y-4">
+      {activity.map((item, index) => {
+        const ActivityIcon = [FaGraduationCap, FaCalendarAlt, FaBullseye][index % 3];
+        return (
+          <div key={item.title} className="flex gap-3">
+            <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-[#EEF4FF] text-[#1668DC]">
+              <ActivityIcon className="h-3.5 w-3.5" />
+            </span>
+            <div>
+              <p className="text-xs font-semibold text-slate-900">{item.title}</p>
+              <p className="mt-1 text-xs text-slate-500">{item.time}</p>
+            </div>
+          </div>
+        );
+      })}
+      <div className="flex gap-3">
+        <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-[#E8F1FF] text-[#1668DC]">
+          <FaClipboardList className="h-3.5 w-3.5" />
+        </span>
+        <div>
+          <p className="text-xs font-semibold text-slate-900">Academic profile updated</p>
+          <p className="mt-1 text-xs text-slate-500">Yesterday, 04:30 PM</p>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+const InsightsPanel = ({ insights }) => {
+  const enrichedInsights = [
+    "You are on track to graduate in Spring 2028. Great job staying consistent!",
+    "Machine Learning electives align well with your goals. Consider adding more ML-related courses.",
+    "Your current workload is well balanced. Keep up the good work!",
+    "COMP-350 is recommended for next semester. Strong next step for your program.",
+  ];
+
+  return (
+    <div className="rounded-[18px] border border-[#DCE3F0] bg-white p-5 shadow-sm">
+      <div className="flex items-center justify-between">
+        <h2 className="text-base font-semibold text-slate-900">AI Insights</h2>
+        <button type="button" className="text-xs font-semibold text-[#1668DC]">View all</button>
+      </div>
+      <div className="mt-4 space-y-2.5">
+        {enrichedInsights.map((insight, index) => (
+          <InsightRow key={insight} insight={insights[index] || insight} index={index} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const InsightRow = ({ insight, index }) => {
+  const InsightIcon = [FaCheckCircle, FaBookOpen, FaRobot, FaBullseye][index % 4];
+
+  return (
+    <div className="flex gap-3 rounded-[12px] border border-[#E6EAF3] bg-slate-50 p-3">
+      <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-white text-[#7C3AED]">
+        <InsightIcon className="h-3.5 w-3.5" />
+      </span>
+      <p className="text-xs leading-5 text-slate-700">{insight}</p>
+    </div>
   );
 };
 
