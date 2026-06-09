@@ -2,6 +2,58 @@ import { useEffect, useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { save as saveStorage } from "../utils/storage.js";
 import toast from "react-hot-toast";
+import { getCareers } from "../services/catalogService.js";
+import { listPrograms } from "../services/educationPlanService.js";
+
+const normalizeDegreeName = (value = "") => {
+	const normalized = String(value).trim().toLowerCase();
+	if (normalized.includes("certificate")) return "Certificate";
+	if (normalized.includes("associate")) return "Associate";
+	if (normalized.includes("bachelor")) return "Bachelors";
+	if (normalized.includes("master")) return "Masters";
+	return value || "Unspecified";
+};
+
+const salaryLabel = (value) =>
+	value || value === 0 ? `$${Number(value).toLocaleString()}` : "N/A";
+
+const buildCareerProgramData = (programs = [], careers = []) => {
+	const careersForDisplay = careers.map((career) => ({
+		title: career.career_name,
+		salary: salaryLabel(career.average_salary),
+		competencies: career.career_description
+			? [
+					{
+						topic: career.industry,
+						description: career.career_description,
+					},
+			  ]
+			: [],
+	}));
+	const degreeMap = new Map();
+	programs.forEach((program) => {
+		const degreeName = normalizeDegreeName(program.degree);
+		if (!degreeMap.has(degreeName)) {
+			degreeMap.set(degreeName, { name: degreeName, programs: [] });
+		}
+		degreeMap.get(degreeName).programs.push({
+			name: program.program,
+			description:
+				program.description ||
+				`${program.program} at ${program.university}`,
+			careers: careersForDisplay,
+		});
+	});
+	return {
+		degrees: Array.from(degreeMap.values()).map((degree) => ({
+			...degree,
+			programs: Array.from(
+				new Map(degree.programs.map((program) => [program.name, program])).values()
+			),
+		})),
+		competencies: {},
+	};
+};
 
 const CareerProgramPage = () => {
   const [data, setData] = useState(null);
@@ -9,17 +61,30 @@ const CareerProgramPage = () => {
   const [selectedProgram, setSelectedProgram] = useState("");
   const [notAvailable, setNotAvailable] = useState("");
   const [employers, setEmployers] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("/assets/career_program_data.json")
-      .then((res) => res.json())
-      .then((json) => setData(json))
-      .catch(() => setData({ degrees: [] }));
-
-    fetch("/assets/career_employers.json")
-      .then((res) => res.json())
-      .then((json) => setEmployers(json))
-      .catch(() => setEmployers({}));
+    const loadCatalogCareers = async () => {
+      setLoading(true);
+      setError("");
+      try {
+        const [programs, careers] = await Promise.all([
+          listPrograms(),
+          getCareers(),
+        ]);
+        setData(buildCareerProgramData(programs, careers));
+        setEmployers({});
+      } catch (err) {
+        console.error("Unable to load career catalog", err);
+        setData({ degrees: [] });
+        setEmployers({});
+        setError("Unable to load career catalog.");
+      } finally {
+        setLoading(false);
+      }
+    };
+    loadCatalogCareers();
   }, []);
 
   const degreeOptions = useMemo(() => {
@@ -133,6 +198,16 @@ const CareerProgramPage = () => {
             Connect your program to real careers and the competencies you need.
           </p>
         </header>
+        {loading && (
+          <div className="mb-5 rounded-lg border border-blue-100 bg-blue-50 px-4 py-3 text-sm font-semibold text-blue-700">
+            Loading catalog...
+          </div>
+        )}
+        {error && (
+          <div className="mb-5 rounded-lg border border-rose-100 bg-rose-50 px-4 py-3 text-sm font-semibold text-rose-700">
+            {error}
+          </div>
+        )}
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <div>

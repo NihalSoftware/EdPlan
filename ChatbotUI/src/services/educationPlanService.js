@@ -1,4 +1,49 @@
+import {
+	getCatalogCourses,
+	getCatalogPrograms,
+	getCatalogUniversities,
+} from "./catalogService.js";
+
 let educationCache = null;
+
+const YEAR_LABELS = {
+	1: "First Year",
+	2: "Second Year",
+	3: "Third Year",
+	4: "Fourth Year",
+	5: "Fifth Year",
+	6: "Sixth Year",
+	7: "Seventh Year",
+	8: "Eighth Year",
+};
+
+const UNIVERSITY_DISPLAY_ALIASES = {
+	"new mexico state university": "New Mexico State University-Main Campus",
+	"university of new mexico": "University of New Mexico-Main Campus",
+};
+
+const displayUniversityName = (name = "") => {
+	const cleaned = String(name || "").trim();
+	return UNIVERSITY_DISPLAY_ALIASES[cleaned.toLowerCase()] || cleaned;
+};
+
+const normalizeCourse = (course) => ({
+	id: course.course_id,
+	code: course.course_code,
+	name: course.course_name,
+	courseName: course.course_name,
+	credits: course.credits,
+	lecture_hours: course.lecture_hours,
+	lab_hours: course.lab_hours,
+	prerequisite: "",
+	corequisite: "",
+	recommended_year:
+		YEAR_LABELS[course.recommended_year] ||
+		course.recommended_year ||
+		"Unassigned Year",
+	recommended_semester: course.recommended_semester || "Unassigned Semester",
+	description: course.description || "",
+});
 
 const groupCoursesByTerm = (courses = []) => {
 	const yearMap = new Map();
@@ -29,32 +74,39 @@ const groupCoursesByTerm = (courses = []) => {
 	}));
 };
 
-const normalizeProgramCatalog = (payload) => {
-	if (Array.isArray(payload)) return payload;
-
-	if (Array.isArray(payload?.universities)) {
-		return payload.universities.flatMap((universityEntry) =>
-			(universityEntry.programs || []).map((program) => ({
-				...program,
-				university: program.university || universityEntry.university,
-				college_profile:
-					program.college_profile || universityEntry.college_profile || null,
-				years: program.years || groupCoursesByTerm(program.courses || []),
-			}))
-		);
-	}
-
-	return [];
-};
-
 const loadPrograms = async () => {
 	if (educationCache) return educationCache;
-	const response = await fetch("/assets/programdetail.json");
-	if (!response.ok) {
-		throw new Error("Unable to load education plans");
-	}
-	const payload = await response.json();
-	educationCache = normalizeProgramCatalog(payload);
+	const universities = await getCatalogUniversities();
+	const programGroups = await Promise.all(
+		universities.map(async (university) => {
+			const programs = await getCatalogPrograms(university.university_id);
+			const universityName = displayUniversityName(university.university_name);
+			return Promise.all(
+				programs.map(async (program) => {
+					const courses = (await getCatalogCourses(program.program_id)).map(
+						normalizeCourse
+					);
+					return {
+						...program,
+						program: program.program_name,
+						university: universityName,
+						campus: universityName,
+						degree: program.degree,
+						total_credit_hours: program.total_credit_hours,
+						college_profile: {
+							university_name: universityName,
+							city: university.city,
+							state: university.state,
+							website: university.website,
+						},
+						courses,
+						years: groupCoursesByTerm(courses),
+					};
+				})
+			);
+		})
+	);
+	educationCache = programGroups.flat();
 	return educationCache;
 };
 
