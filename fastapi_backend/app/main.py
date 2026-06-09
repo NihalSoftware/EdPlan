@@ -11,6 +11,8 @@ from app.api.routes import get_api_router
 from app.core.config import settings
 from app.db.session import engine
 
+from app.api.chat import router as chat_router
+
 logger = logging.getLogger(__name__)
 
 
@@ -60,6 +62,7 @@ def create_application() -> FastAPI:
     )
 
     app.include_router(get_api_router())
+    app.include_router(chat_router, prefix="/api", tags=["Chat Assistant"])
     return app
 
 

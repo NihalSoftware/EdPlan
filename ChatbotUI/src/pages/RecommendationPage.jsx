@@ -1,417 +1,441 @@
 import { useState, useEffect, useRef } from "react";
 import { load, save } from "../utils/storage";
-import { getRecommendedPrograms, getProgramList } from "../utils/recommendationEngine";
+import { getRecommendedPrograms } from "../utils/recommendationEngine";
 import clsx from "clsx";
 
-// --- Sub-Component: Smart Modern Result Card ---
-const ResultCard = ({ prog }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [activeSemIndex, setActiveSemIndex] = useState(0);
+// --- Icons (SVG) ---
+const Icons = {
+  Brain: () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5A3 3 0 0 0 13.6 4.4"/><path d="M6.401 6.5A3 3 0 0 1 10.4 4.4"/></svg>,
+  Database: () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>,
+  Calendar: () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>,
+  Sparkles: () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>,
+  Check: () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>,
+  Loader: () => <svg className="animate-spin" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" x2="12" y1="2" y2="6"/><line x1="12" x2="12" y1="18" y2="22"/><line x1="4.93" x2="7.76" y1="4.93" y2="7.76"/><line x1="16.24" x2="19.07" y1="16.24" y2="19.07"/><line x1="2" x2="6" y1="12" y2="12"/><line x1="18" x2="22" y1="12" y2="12"/><line x1="4.93" x2="7.76" y1="19.07" y2="16.24"/><line x1="16.24" x2="19.07" y1="7.76" y2="4.93"/></svg>,
+  Filter: () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+};
+
+// --- Agentic Workflow Visualizer Component ---
+const AgentWorkflow = ({ currentStep, isSearching }) => {
+  const steps = isSearching 
+    ? [
+        { id: 1, label: "Analyzing contextual intent", icon: <Icons.Brain /> },
+        { id: 2, label: "Cross-referencing university database", icon: <Icons.Database /> },
+        { id: 3, label: "Mapping availability matrices", icon: <Icons.Calendar /> },
+        { id: 4, label: "Synthesizing schedule artifacts", icon: <Icons.Sparkles /> },
+      ]
+    : [
+        { id: 1, label: "Updating system parameters", icon: <Icons.Brain /> },
+        { id: 4, label: "Awaiting further directives", icon: <Icons.Check /> },
+      ];
 
   return (
-    <div className="bg-white border border-slate-200 rounded-2xl shadow-sm mb-5 overflow-hidden transition-all hover:shadow-md w-full">
-      <div className="p-6 flex flex-col md:flex-row justify-between items-start gap-5">
-        <div className="flex-1 w-full">
-          <div className="flex flex-wrap items-center gap-3 mb-2">
-            <h3 className="text-xl font-extrabold text-slate-800">{prog.program}</h3>
-            <span className="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-xs font-bold tracking-wider border border-blue-100 whitespace-nowrap">
-              {prog.degree}
-            </span>
-          </div>
-          <p className="text-slate-500 font-medium text-sm flex items-center gap-1 mb-4">
-            🏛️ {prog.university}
-          </p>
-          
-          <div className="flex flex-wrap gap-2 text-xs font-semibold text-slate-600">
-            <span className="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">⏱ {prog.total_credit_hours} Credits</span>
-            <span className="bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-lg border border-emerald-100">✨ Fits your schedule</span>
-          </div>
-        </div>
-        
-        <button 
-          onClick={() => { setIsExpanded(!isExpanded); setActiveSemIndex(0); }}
-          className="w-full md:w-auto px-6 py-2.5 bg-slate-900 text-white hover:bg-blue-600 rounded-xl text-sm font-bold transition-all shadow-sm"
-        >
-          {isExpanded ? "Close Details ⌃" : "View Curriculum ⌄"}
-        </button>
+    <div className="bg-slate-50/80 border border-slate-200 rounded-xl p-5 mb-6 max-w-2xl font-mono text-sm shadow-sm animate-fade-in">
+      <div className="text-slate-500 font-bold mb-4 flex items-center gap-2 uppercase tracking-wider text-[10px]">
+        <span className="flex h-2 w-2 relative">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+        </span>
+        Agent Execution in Progress
       </div>
+      <div className="space-y-3">
+        {steps.map((step) => {
+          const isCompleted = currentStep > step.id;
+          const isActive = currentStep === step.id;
+          const isPending = currentStep < step.id;
 
-      {isExpanded && (
-        <div className="p-6 border-t border-slate-100 bg-[#f8fafc] animate-fade-in">
-          {prog.semesters && prog.semesters.length > 0 && (
-            <div>
-              {/* Semester Tabs */}
-              <div className="flex flex-wrap gap-2 mb-5 bg-slate-200/50 p-1.5 rounded-xl w-fit">
-                {prog.semesters.map((semData, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => setActiveSemIndex(idx)}
-                    className={clsx(
-                      "px-4 py-2 rounded-lg font-bold text-xs transition-all duration-300",
-                      activeSemIndex === idx ? "bg-white text-blue-600 shadow-sm border border-slate-200" : "text-slate-500 hover:text-slate-800"
-                    )}
-                  >
-                    {semData.semesterName}
-                  </button>
-                ))}
+          return (
+            <div key={step.id} className={clsx(
+              "flex items-center gap-3 transition-opacity duration-500",
+              isPending ? "opacity-30" : "opacity-100"
+            )}>
+              <div className={clsx(
+                "w-6 h-6 rounded-md flex items-center justify-center transition-colors",
+                isCompleted ? "bg-green-100 text-green-600" : isActive ? "bg-blue-100 text-blue-600" : "bg-slate-200 text-slate-400"
+              )}>
+                {isCompleted ? <Icons.Check /> : isActive ? <Icons.Loader /> : step.icon}
               </div>
-
-              {/* Course Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {prog.semesters[activeSemIndex].courses?.map((course, cIdx) => (
-                  <div key={cIdx} className="p-4 border border-slate-200/80 rounded-2xl bg-white hover:border-blue-300 transition-colors shadow-sm">
-                    <div className="flex justify-between items-start mb-2 gap-2">
-                      <div className="font-extrabold text-slate-800 break-words">{course.code}</div>
-                      <div className="text-xs font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded-md whitespace-nowrap">{course.credits} Cr</div>
-                    </div>
-                    <div className="text-sm font-semibold text-slate-600 mb-3">{course.name}</div>
-                    
-                    <div className="flex flex-col gap-2 mt-auto">
-                      <div className="flex items-center gap-2 text-xs font-medium text-slate-500 bg-slate-50 p-2 rounded-lg border border-slate-100">
-                        <span className="text-blue-500">🕒</span> {course.schedule.day} | {course.schedule.time}
-                      </div>
-                      <div className="flex items-center justify-between text-[11px] font-semibold text-slate-400 px-1 mt-1">
-                        <span className="truncate mr-2">👤 {course.instructor || "TBA"}</span>
-                        <span className="whitespace-nowrap">📍 {course.campus}</span>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <span className={clsx(
+                "font-medium transition-colors",
+                isCompleted ? "text-slate-600" : isActive ? "text-slate-900" : "text-slate-400"
+              )}>
+                {step.label}
+              </span>
             </div>
-          )}
-        </div>
-      )}
+          );
+        })}
+      </div>
     </div>
   );
 };
 
-// --- Modern Main Chatbot App (Full Screen) ---
+// --- Generated Artifact (Schedule Card) ---
+const ScheduleArtifact = ({ prog }) => {
+  const [activeSemIndex, setActiveSemIndex] = useState(0);
+
+  return (
+    <div className="bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 w-full mb-6 group">
+      <div className="bg-slate-900 px-6 py-4 flex justify-between items-center rounded-t-2xl">
+        <div className="flex items-center gap-3">
+          <span className="text-xl">🎓</span>
+          <h3 className="text-lg font-bold text-white tracking-wide">{prog.program}</h3>
+        </div>
+        <span className="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider border border-blue-500/30">
+          Generated Plan
+        </span>
+      </div>
+      
+      <div className="p-6">
+        <div className="flex flex-wrap gap-4 mb-6 pb-6 border-b border-slate-100">
+          <div className="flex-1 min-w-[200px]">
+            <p className="text-xs text-slate-400 font-bold uppercase tracking-wider mb-1">Institution</p>
+            <p className="text-slate-800 font-semibold">{prog.university}</p>
+          </div>
+          <div className="flex-1 min-w-[120px]">
+            <p className="text-xs text-slate-400 font-bold uppercase tracking-wider mb-1">Credential</p>
+            <p className="text-slate-800 font-semibold">{prog.degree}</p>
+          </div>
+          <div className="flex-1 min-w-[100px]">
+            <p className="text-xs text-slate-400 font-bold uppercase tracking-wider mb-1">Total Workload</p>
+            <p className="text-slate-800 font-semibold">{prog.total_credit_hours} Credits</p>
+          </div>
+        </div>
+
+        {prog.semesters && prog.semesters.length > 0 && (
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-sm font-bold text-slate-800">Timeline / Curriculum</span>
+              <div className="h-[1px] flex-1 bg-slate-100 ml-2"></div>
+            </div>
+            
+            <div className="flex gap-2 mb-4 overflow-x-auto pb-2 scrollbar-hide">
+              {prog.semesters.map((semData, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setActiveSemIndex(idx)}
+                  className={clsx(
+                    "px-4 py-2 rounded-lg font-bold text-sm transition-all whitespace-nowrap",
+                    activeSemIndex === idx ? "bg-slate-900 text-white shadow-md" : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                  )}
+                >
+                  {semData.semesterName}
+                </button>
+              ))}
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {prog.semesters[activeSemIndex].courses?.map((course, cIdx) => (
+                <div key={cIdx} className="p-4 border border-slate-200 rounded-xl bg-slate-50 hover:bg-white transition-colors group-hover:border-blue-100 relative">
+                  <div className="absolute top-4 right-4 bg-white border border-slate-200 text-slate-600 text-[10px] font-extrabold px-2 py-1 rounded shadow-sm">
+                    {course.credits} CR
+                  </div>
+                  <div className="text-xs font-mono text-blue-600 font-bold mb-1">{course.code}</div>
+                  <div className="text-sm font-bold text-slate-800 mb-3 pr-10 leading-tight">{course.name}</div>
+                  
+                  <div className="bg-white p-2.5 rounded-lg border border-slate-100 shadow-sm flex items-center gap-2 mb-2">
+                    <span className="text-slate-400"><Icons.Calendar /></span>
+                    <span className="text-xs font-bold text-slate-700">{course.schedule.day} • {course.schedule.time}</span>
+                  </div>
+                  <div className="flex justify-between text-[11px] font-semibold text-slate-500 px-1">
+                    <span>Prof. {course.instructor || "TBA"}</span>
+                    <span>{course.campus} Campus</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+// --- Main Agentic Scheduler App ---
 const RecommendationPage = () => {
-  const [messages, setMessages] = useState([]);
-  const [step, setStep] = useState(1); 
-  const [isTyping, setIsTyping] = useState(false);
-  const [searchResults, setSearchResults] = useState([]);
-  const chatEndRef = useRef(null);
-
+  const [feed, setFeed] = useState([]); 
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [currentAgentStep, setCurrentAgentStep] = useState(0);
+  const [isSearchingContext, setIsSearchingContext] = useState(true);
   const [keyword, setKeyword] = useState("");
-  const [filteredPrograms, setFilteredPrograms] = useState([]);
-  const allPrograms = getProgramList();
+  const feedEndRef = useRef(null);
 
-  const [userInputs, setUserInputs] = useState({
+  // --- MEMORY STATE: Agent ab context yaad rakhega ---
+  const [agentMemory, setAgentMemory] = useState({
     selectedProgram: "",
-    busyDays: { Mon: false, Tue: false, Wed: false, Thu: false, Fri: false },
-    busyTimes: { morning: false, afternoon: false, evening: false }
+    busyDays: {},
+    busyTimes: {}
   });
 
   useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages, isTyping, step]);
+    feedEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [feed, currentAgentStep]);
 
   useEffect(() => {
     const profile = load("UserProfile") || {};
-    const name = profile.firstName || "there";
+    const name = profile.firstName || "User";
     
-    setMessages([
-      { sender: "bot", type: "text", text: `Hi ${name}! 👋 I am EdPlan AI.` },
-      { sender: "bot", type: "text", text: "Tell me, which subject or career path are you interested in? (e.g., Computer, Art, Math)" }
+    setFeed([
+      { 
+        type: "agent-text", 
+        content: `System initialized. Welcome, ${name}. I am the EdPlan Scheduling Agent. My core function is to generate optimal learning pathways based on your subject interests and scheduling constraints. How may I assist you today?` 
+      }
     ]);
   }, []);
 
-  const addBotMessage = (text, delay = 600) => {
-    setIsTyping(true);
-    setTimeout(() => {
-      setIsTyping(false);
-      setMessages(prev => [...prev, { sender: "bot", type: "text", text }]);
-    }, delay);
-  };
-
-  const addUserMessage = (text) => {
-    setMessages(prev => [...prev, { sender: "user", type: "text", text }]);
-  };
-
-  const handleKeywordSubmit = (e) => {
+  const handleCommandSubmit = async (e) => {
     e.preventDefault();
-    if (!keyword.trim()) return;
+    if (!keyword.trim() || isProcessing) return;
 
-    addUserMessage(keyword);
-    const searchTerms = keyword.toLowerCase().split(' ').filter(Boolean);
+    const userCommand = keyword;
+    setFeed(prev => [...prev, { type: "user-command", content: userCommand }]);
     setKeyword("");
-    setIsTyping(true);
+    setIsProcessing(true);
+    setCurrentAgentStep(1); 
 
-    setTimeout(() => {
-      setIsTyping(false);
-      
-      const matches = allPrograms.filter(prog => {
-        if (prog === "All Programs") return false;
-        const progLower = prog.toLowerCase();
-        return searchTerms.some(term => progLower.includes(term));
+    try {
+      const response = await fetch("http://127.0.0.1:8000/api/extract-intent", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ user_input: userCommand }),
       });
 
-      if (matches.length > 0) {
-        setFilteredPrograms(matches);
-        setStep(1.5);
-        setMessages(prev => [...prev, { 
-          sender: "bot", 
-          type: "text", 
-          text: `I found these related programs. Tap the one you want:` 
-        }]);
-      } else {
-        setMessages(prev => [...prev, { 
-          sender: "bot", 
-          type: "text", 
-          text: "I couldn't find a match for that. Try something like 'Computer', 'Science', or 'Nursing'." 
-        }]);
-      }
-    }, 800);
-  };
+      if (!response.ok) throw new Error("API Connection Failed");
+      const extractedData = await response.json();
+      
+      setTimeout(() => {
+        // Handle Out of Scope / General Chat
+        if (extractedData.is_relevant === false) {
+            setIsProcessing(false);
+            setCurrentAgentStep(0);
+            setFeed(prev => [...prev, { 
+                type: "agent-text", 
+                content: "I am specifically designed to function as an Educational Scheduling Agent. I can help you find courses, build a schedule, and filter programs based on your availability. Please provide a request related to your educational planning." 
+            }]);
+            return;
+        }
 
-  const handleProgramSelect = (prog) => {
-    setUserInputs(prev => ({ ...prev, selectedProgram: prog }));
-    addUserMessage(prog);
-    setStep(2);
-    addBotMessage("Got it! Now, select the days you usually WORK or are BUSY:");
-  };
+        // --- MERGE MEMORY (Update Context) ---
+        const updatedMemory = { ...agentMemory };
+        if (extractedData.selectedProgram) updatedMemory.selectedProgram = extractedData.selectedProgram;
+        if (extractedData.busyDays && Object.keys(extractedData.busyDays).length > 0) {
+            updatedMemory.busyDays = { ...updatedMemory.busyDays, ...extractedData.busyDays };
+        }
+        if (extractedData.busyTimes && Object.keys(extractedData.busyTimes).length > 0) {
+            updatedMemory.busyTimes = { ...updatedMemory.busyTimes, ...extractedData.busyTimes };
+        }
+        setAgentMemory(updatedMemory);
 
-  const toggleDay = (day) => {
-    setUserInputs(prev => ({
-      ...prev, busyDays: { ...prev.busyDays, [day]: !prev.busyDays[day] }
-    }));
-  };
+        // Check if we have enough info to search (We need a program)
+        if (!updatedMemory.selectedProgram) {
+            setIsSearchingContext(false);
+            setCurrentAgentStep(4); // Skip to end of short workflow
+            
+            setTimeout(() => {
+                setIsProcessing(false);
+                setCurrentAgentStep(0);
+                setFeed(prev => [...prev, { 
+                    type: "agent-text", 
+                    content: "I have updated your scheduling constraints in my active memory. However, I still need to know: Which specific program or subject are you interested in studying?" 
+                }]);
+            }, 1000);
+            return;
+        }
 
-  const submitDays = () => {
-    const selected = Object.keys(userInputs.busyDays).filter(d => userInputs.busyDays[d]);
-    const replyText = selected.length > 0 ? selected.join(", ") : "I'm totally free!";
-    addUserMessage(replyText);
-    
-    if (selected.length === 0) {
-      setStep(4);
-      analyzeResults({ ...userInputs, busyDays: {} });
-    } else {
-      setStep(3);
-      addBotMessage("Cool. And what specific times are you busy on those days?");
+        // If we have a program, proceed with full search
+        setIsSearchingContext(true);
+        setCurrentAgentStep(2);
+        
+        setTimeout(() => {
+          setCurrentAgentStep(3);
+          const profile = load("UserProfile") || {};
+          const searchParams = { ...profile, ...updatedMemory }; // Use Merged Memory!
+          const results = getRecommendedPrograms(searchParams);
+
+          setTimeout(() => {
+            setCurrentAgentStep(4);
+            
+            setTimeout(() => {
+              setIsProcessing(false);
+              setCurrentAgentStep(0);
+              
+              if (results.length === 0) {
+                setFeed(prev => [...prev, { 
+                  type: "agent-text", 
+                  content: `Analysis complete. I scanned the database for '${updatedMemory.selectedProgram}' with your current time constraints, but could not resolve a valid schedule. Consider relaxing your availability.` 
+                }]);
+              } else {
+                setFeed(prev => [...prev, { 
+                  type: "agent-text", 
+                  content: `Resolution successful. I synthesized optimal schedule(s) for '${updatedMemory.selectedProgram}'. Review the generated artifacts below:` 
+                }]);
+                setFeed(prev => [...prev, { type: "artifact", data: results }]);
+              }
+            }, 1200); 
+          }, 1500); 
+        }, 1200); 
+      }, 1000); 
+
+    } catch (error) {
+      console.error(error);
+      setIsProcessing(false);
+      setCurrentAgentStep(0);
+      setFeed(prev => [...prev, { type: "agent-text", content: "System Error: Connection to the primary reasoning engine failed. Verify backend services." }]);
     }
   };
 
-  const toggleTime = (timeSlot) => {
-    setUserInputs(prev => ({
-      ...prev, busyTimes: { ...prev.busyTimes, [timeSlot]: !prev.busyTimes[timeSlot] }
-    }));
-  };
-
-  const submitTimes = () => {
-    const selected = Object.keys(userInputs.busyTimes).filter(t => userInputs.busyTimes[t]);
-    const replyText = selected.length > 0 ? selected.join(", ") : "Any time!";
-    addUserMessage(replyText);
-    setStep(4);
-    analyzeResults(userInputs);
-  };
-
-  const analyzeResults = (finalInputs) => {
-    setIsTyping(true);
-    setTimeout(() => {
-      setIsTyping(false);
-      setMessages(prev => [...prev, { sender: "bot", type: "text", text: "Scanning campus schedules to find your perfect fit... ⚙️" }]);
-      
-      setTimeout(() => {
-        try {
-          const profile = load("UserProfile") || {};
-          const searchParams = { ...profile, ...finalInputs };
-          const results = getRecommendedPrograms(searchParams);
-          
-          if (results.length === 0) {
-            setMessages(prev => [...prev, { sender: "bot", type: "text", text: "your schedule is a bit too tight for the current offerings. You may need to clear up some days." }]);
-          } else {
-            setSearchResults(results);
-            setMessages(prev => [...prev, { sender: "bot", type: "results", data: results }]);
-          }
-          setStep(5);
-        } catch (error) {
-          console.error(error);
-        }
-      }, 1500);
-    }, 800);
-  };
-
-  const handleSavePlan = () => {
-    if (searchResults.length === 0) return;
+  const handleSavePlan = (planData) => {
     const existingPlans = load("SavedPlans") || [];
-    const newPlan = { id: Date.now(), date: new Date().toLocaleDateString(), program: userInputs.selectedProgram, results: searchResults };
+    const newPlan = { id: Date.now(), date: new Date().toLocaleDateString(), program: planData[0]?.program || "Agent Plan", results: planData };
     save("SavedPlans", [...existingPlans, newPlan]);
-    setMessages(prev => [...prev, { sender: "bot", type: "text", text: "✅ Saved securely to your EdPlan profile!" }]);
-    setStep(6);
+    setFeed(prev => [...prev, { type: "agent-text", content: "Action executed. The selected artifact has been saved to your secure profile." }]);
   };
 
-  const restartChat = () => {
-    setMessages([{ sender: "bot", type: "text", text: "Let's find something else. What subject are you looking for?" }]);
-    setUserInputs({ selectedProgram: "", busyDays: { Mon: false, Tue: false, Wed: false, Thu: false, Fri: false }, busyTimes: { morning: false, afternoon: false, evening: false } });
-    setSearchResults([]);
-    setStep(1);
-    setKeyword("");
+  const handleClearContext = () => {
+    setAgentMemory({ selectedProgram: "", busyDays: {}, busyTimes: {} });
+    setFeed([{ type: "agent-text", content: "Active memory flushed. Session cleared. Awaiting new scheduling directives." }]);
   };
+
+  // Helper to render active filters
+  const hasActiveFilters = agentMemory.selectedProgram || Object.keys(agentMemory.busyDays).length > 0 || Object.keys(agentMemory.busyTimes).length > 0;
 
   return (
-    // Full Screen Edge-to-Edge Container
-    <div className="flex flex-col h-screen w-full bg-[#f4f6f8]">
+    <div className="flex flex-col h-screen w-full bg-[#fafafa] font-sans selection:bg-blue-100">
       
-      {/* Top Header - Full Width */}
-      <header className="w-full bg-white px-6 py-4 flex items-center justify-between border-b border-slate-200 shadow-sm z-20">
+      {/* Sleek Agent Header */}
+      <header className="w-full bg-white px-6 py-4 flex flex-col md:flex-row md:items-center justify-between border-b border-slate-200/60 sticky top-0 z-20 gap-4">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-extrabold text-lg shadow-md">
-            AI
+          <div className="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center text-white shadow-sm">
+            <Icons.Sparkles />
           </div>
           <div>
-            <h2 className="text-xl font-bold text-slate-800 tracking-tight">EdPlan Scheduler</h2>
-            <div className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-              <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider">Online</span>
+            <h2 className="text-lg font-bold text-slate-800 tracking-tight leading-none">EdPlan Scheduling Agent</h2>
+            <div className="flex items-center gap-1.5 mt-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">System Active</span>
             </div>
           </div>
         </div>
-        {step > 1 && (
-          <button onClick={restartChat} className="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-600 text-sm font-bold rounded-lg transition-colors flex items-center gap-2">
-            <span>🔄</span> <span className="hidden sm:inline">Restart Chat</span>
-          </button>
-        )}
+        <button 
+          onClick={handleClearContext} 
+          className="text-xs font-bold text-slate-400 hover:text-slate-800 transition-colors uppercase tracking-wider self-start md:self-auto"
+        >
+          Reset Context & Session
+        </button>
       </header>
 
-      {/* Chat Area - Centered Content */}
-      <div className="flex-1 overflow-y-auto w-full scroll-smooth flex justify-center">
-        <div className="w-full max-w-4xl p-4 md:p-8 space-y-6">
-          {messages.map((msg, index) => (
-            <div key={index} className={clsx("flex", msg.sender === "user" ? "justify-end" : "justify-start")}>
+      {/* Execution Feed */}
+      <div className="flex-1 overflow-y-auto w-full flex justify-center py-10 px-4 md:px-0">
+        <div className="w-full max-w-3xl space-y-8">
+          
+          {feed.map((block, index) => (
+            <div key={index} className="animate-fade-in-up">
               
-              {/* Bot Avatar */}
-              {msg.sender === "bot" && msg.type !== "results" && (
-                 <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-[10px] font-bold mr-3 mt-1 shadow-sm flex-shrink-0">AI</div>
-              )}
-              
-              {/* Chat Bubbles */}
-              <div className={clsx(
-                "max-w-[85%] md:max-w-[75%]",
-                msg.sender === "user" 
-                  ? "bg-blue-600 text-white rounded-2xl rounded-tr-sm px-5 py-3.5 shadow-md font-medium" 
-                  : msg.type === "results" 
-                    ? "w-full max-w-full" 
-                    : "bg-white text-slate-800 rounded-2xl rounded-tl-sm px-5 py-3.5 shadow-sm border border-slate-200 font-medium leading-relaxed"
-              )}>
-                {msg.type === "text" && <p>{msg.text}</p>}
-                
-                {msg.type === "results" && (
-                  <div className="w-full mt-2 animate-fade-in-up">
-                    {msg.data.map((prog, i) => <ResultCard key={i} prog={prog} />)}
+              {/* User Command Block */}
+              {block.type === "user-command" && (
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center font-bold text-slate-500 text-xs flex-shrink-0 uppercase">You</div>
+                  <div className="pt-1">
+                    <p className="text-lg font-medium text-slate-800 leading-relaxed">{block.content}</p>
                   </div>
-                )}
-              </div>
+                </div>
+              )}
+
+              {/* Agent Text Block */}
+              {block.type === "agent-text" && (
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 rounded-md bg-blue-600 flex items-center justify-center text-white flex-shrink-0 shadow-sm mt-1">
+                    <Icons.Brain />
+                  </div>
+                  <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm w-full">
+                    <p className="text-slate-700 font-medium leading-relaxed">{block.content}</p>
+                  </div>
+                </div>
+              )}
+
+              {/* Generated Artifacts (Results) */}
+              {block.type === "artifact" && (
+                <div className="pl-12 w-full">
+                  <div className="mb-3 flex items-center gap-2">
+                    <span className="h-[1px] flex-1 bg-slate-200"></span>
+                    <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Generated Artifacts</span>
+                    <span className="h-[1px] flex-1 bg-slate-200"></span>
+                  </div>
+                  {block.data.map((prog, i) => <ScheduleArtifact key={i} prog={prog} />)}
+                  
+                  <div className="flex justify-end mt-2">
+                    <button 
+                      onClick={() => handleSavePlan(block.data)}
+                      className="flex items-center gap-2 bg-white border border-slate-200 hover:border-slate-400 text-slate-700 px-4 py-2 rounded-lg text-sm font-bold shadow-sm transition-all"
+                    >
+                      <Icons.Check /> Accept & Save Plan
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           ))}
 
-          {/* Typing Indicator */}
-          {isTyping && (
-            <div className="flex justify-start animate-fade-in">
-               <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-[10px] font-bold mr-3 mt-1 flex-shrink-0">AI</div>
-               <div className="bg-white rounded-2xl rounded-tl-sm px-5 py-4 shadow-sm border border-slate-200 flex gap-1.5 items-center">
-                  <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce"></div>
-                  <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '0.15s' }}></div>
-                  <div className="w-2 h-2 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '0.3s' }}></div>
-               </div>
+          {/* Active Processing State */}
+          {isProcessing && (
+            <div className="pl-12">
+              <AgentWorkflow currentStep={currentAgentStep} isSearching={isSearchingContext} />
             </div>
           )}
           
-          <div ref={chatEndRef} className="h-4" />
+          <div ref={feedEndRef} className="h-32" />
         </div>
       </div>
 
-      {/* Dynamic Input Control Panel - Centered Content */}
-      <div className="w-full bg-white border-t border-slate-200 flex justify-center shadow-[0_-10px_40px_rgba(0,0,0,0.03)] z-20">
-        <div className="w-full max-w-4xl p-4 md:p-6 min-h-[90px] max-h-[35vh] overflow-y-auto">
-          
-          {/* Step 1: Text Search */}
-          {step === 1 && !isTyping && (
-            <form onSubmit={handleKeywordSubmit} className="flex gap-3 bg-slate-50 p-2 rounded-2xl border border-slate-200 animate-fade-in-up">
-              <input 
-                type="text" 
-                value={keyword}
-                onChange={(e) => setKeyword(e.target.value)}
-                placeholder="Type 'Computer', 'Nursing', 'Math'..." 
-                className="flex-1 bg-transparent px-4 py-2 font-medium text-slate-800 placeholder-slate-400 outline-none w-full"
-                autoFocus
-              />
-              <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-bold transition-all shadow-sm">
-                Search
-              </button>
-            </form>
-          )}
-
-          {/* Step 1.5: Select Program Pills */}
-          {step === 1.5 && !isTyping && (
-             <div className="flex flex-wrap gap-2 animate-fade-in-up">
-               {filteredPrograms.map(prog => (
-                 <button 
-                   key={prog} 
-                   onClick={() => handleProgramSelect(prog)}
-                   className="bg-white border border-slate-200 text-slate-700 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-700 px-5 py-2.5 rounded-full text-sm font-bold transition-all shadow-sm"
-                 >
-                   {prog}
-                 </button>
-               ))}
-               <button onClick={() => setStep(1)} className="text-blue-600 underline text-sm ml-2 self-center font-bold hover:text-blue-800">
-                 Try another search
-               </button>
+      {/* Persistent Command Bar with Active Context */}
+      <div className="w-full flex flex-col items-center fixed bottom-0 left-0 px-4 pb-6 bg-gradient-to-t from-[#fafafa] via-[#fafafa] to-transparent pointer-events-none">
+        
+        {/* Active Memory Chips */}
+        {hasActiveFilters && (
+          <div className="w-full max-w-3xl flex gap-2 mb-2 px-2 overflow-x-auto scrollbar-hide">
+             <div className="flex items-center gap-1.5 text-[10px] font-bold text-slate-400 uppercase tracking-widest mr-2">
+                <Icons.Filter /> Active Context:
              </div>
-          )}
+             {agentMemory.selectedProgram && (
+               <span className="bg-blue-100 text-blue-700 px-2.5 py-1 rounded-md text-xs font-bold whitespace-nowrap">
+                 🎯 {agentMemory.selectedProgram}
+               </span>
+             )}
+             {Object.keys(agentMemory.busyDays).length > 0 && (
+               <span className="bg-rose-100 text-rose-700 px-2.5 py-1 rounded-md text-xs font-bold whitespace-nowrap">
+                 🚫 Days: {Object.keys(agentMemory.busyDays).join(", ")}
+               </span>
+             )}
+             {Object.keys(agentMemory.busyTimes).length > 0 && (
+               <span className="bg-amber-100 text-amber-700 px-2.5 py-1 rounded-md text-xs font-bold whitespace-nowrap">
+                 🕒 Times: {Object.keys(agentMemory.busyTimes).join(", ")}
+               </span>
+             )}
+          </div>
+        )}
 
-          {/* Step 2: Day Picker */}
-          {step === 2 && !isTyping && (
-             <div className="animate-fade-in-up flex flex-col sm:flex-row gap-4 justify-between items-center">
-               <div className="flex flex-wrap gap-3">
-                 {Object.keys(userInputs.busyDays).map((day) => (
-                   <button
-                     key={day}
-                     onClick={() => toggleDay(day)}
-                     className={clsx(
-                       "w-14 h-14 sm:w-16 sm:h-16 rounded-2xl font-bold flex items-center justify-center transition-all",
-                       userInputs.busyDays[day] ? "bg-slate-900 text-white shadow-md transform -translate-y-1" : "bg-white text-slate-600 border border-slate-200 hover:border-slate-400"
-                     )}
-                   >
-                     {day}
-                   </button>
-                 ))}
-               </div>
-               <button onClick={submitDays} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-bold text-sm shadow-md transition-all w-full sm:w-auto">
-                 Confirm Days ➔
-               </button>
-             </div>
-          )}
-
-          {/* Step 3: Time Picker */}
-          {step === 3 && !isTyping && (
-             <div className="animate-fade-in-up flex flex-col gap-4">
-               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                  <button onClick={() => toggleTime('morning')} className={clsx("p-4 rounded-2xl font-bold flex flex-col items-center gap-1 transition-all border", userInputs.busyTimes.morning ? "bg-slate-900 text-white border-slate-900 shadow-md" : "bg-white text-slate-600 border-slate-200 hover:bg-slate-50")}>
-                    <span className="text-2xl">🌅</span> Morning <span className="text-xs font-medium opacity-70">8am - 12pm</span>
-                  </button>
-                  <button onClick={() => toggleTime('afternoon')} className={clsx("p-4 rounded-2xl font-bold flex flex-col items-center gap-1 transition-all border", userInputs.busyTimes.afternoon ? "bg-slate-900 text-white border-slate-900 shadow-md" : "bg-white text-slate-600 border-slate-200 hover:bg-slate-50")}>
-                    <span className="text-2xl">☀️</span> Afternoon <span className="text-xs font-medium opacity-70">12pm - 4pm</span>
-                  </button>
-                  <button onClick={() => toggleTime('evening')} className={clsx("p-4 rounded-2xl font-bold flex flex-col items-center gap-1 transition-all border", userInputs.busyTimes.evening ? "bg-slate-900 text-white border-slate-900 shadow-md" : "bg-white text-slate-600 border-slate-200 hover:bg-slate-50")}>
-                    <span className="text-2xl">🌙</span> Evening <span className="text-xs font-medium opacity-70">4pm Onwards</span>
-                  </button>
-               </div>
-               <button onClick={submitTimes} className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-2xl font-bold text-sm shadow-md transition-all self-end w-full sm:w-auto">
-                 Find My Perfect Schedule ✨
-               </button>
-             </div>
-          )}
-
-          {/* Step 5: Save Button */}
-          {step === 5 && !isTyping && (
-             <div className="flex justify-center animate-fade-in-up py-2">
-               <button onClick={handleSavePlan} className="bg-slate-900 hover:bg-black text-white px-10 py-4 rounded-2xl font-bold shadow-lg flex items-center gap-2 transition-transform transform hover:-translate-y-1">
-                 <span>💾</span> Save Plan to Profile
-               </button>
-             </div>
-          )}
+        {/* Input Box */}
+        <div className="w-full max-w-3xl bg-white rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.1)] border border-slate-200 p-2 pointer-events-auto transition-all focus-within:shadow-[0_10px_50px_rgba(37,99,235,0.15)] focus-within:border-blue-400 ring-1 ring-black/5">
+          <form onSubmit={handleCommandSubmit} className="flex items-center gap-2 relative">
+            <div className="pl-4 text-slate-400">
+              <Icons.Sparkles />
+            </div>
+            <input 
+              type="text" 
+              value={keyword}
+              onChange={(e) => setKeyword(e.target.value)}
+              placeholder="E.g., Map out an Art plan, or exclude Monday mornings..." 
+              className="flex-1 bg-transparent px-2 py-3 font-medium text-slate-700 placeholder-slate-400 outline-none w-full text-base"
+              autoFocus
+              disabled={isProcessing}
+              autoComplete="off"
+            />
+            <button 
+              type="submit" 
+              disabled={isProcessing || !keyword.trim()}
+              className="bg-slate-900 hover:bg-blue-600 disabled:bg-slate-200 disabled:text-slate-400 text-white px-5 py-2.5 rounded-xl font-bold transition-all flex items-center gap-2"
+            >
+              Execute
+            </button>
+          </form>
         </div>
       </div>
     </div>

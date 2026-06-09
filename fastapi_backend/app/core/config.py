@@ -44,6 +44,8 @@ class Settings(BaseSettings):
     )
     default_admin_email: str = Field(..., alias="DEFAULT_ADMIN_EMAIL")
     default_admin_password: str = Field(..., alias="DEFAULT_ADMIN_PASSWORD")
+    
+    groq_api_key: str | None = Field(None, alias="GROQ_API_KEY")
 
     @field_validator("cors_origins", mode="before")
     @classmethod

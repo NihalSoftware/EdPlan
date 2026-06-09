@@ -2,13 +2,8 @@
 import programData from "../../public/assets/ScheduleNNMC.json";
 
 const dayMap = {
-  "M": "Mon",
-  "T": "Tue",
-  "W": "Wed",
-  "R": "Thu",
-  "F": "Fri",
-  "S": "Sat",
-  "U": "Sun"
+  "Mon": "Mon", "Tue": "Tue", "Wed": "Wed", "Thu": "Thu", "Fri": "Fri",
+  "M": "Mon", "T": "Tue", "W": "Wed", "R": "Thu", "F": "Fri", "S": "Sat", "U": "Sun"
 };
 
 // Extract unique programs
@@ -25,12 +20,12 @@ export const getProgramList = () => {
     }
   });
 
-  return ["All Programs", ...Array.from(programsSet).sort()]; // Sorted alphabetically
+  return ["All Programs", ...Array.from(programsSet).sort()];
 };
 
 // Strict Time Matcher
 const checkTimeConflict = (startTime, busyTimes) => {
-  if (!startTime) return false;
+  if (!startTime) return false; // Agar asynchronous/online hai to conflict nahi hai
 
   const hour = parseInt(startTime.split(":")[0], 10);
   let isMorning = hour >= 0 && hour < 12;
@@ -47,12 +42,19 @@ const checkTimeConflict = (startTime, busyTimes) => {
   return false;
 };
 
-// Naya Grouping Engine
+// Advanced Smart Matching Engine
 export const getRecommendedPrograms = (searchParams) => {
   if (!searchParams || !programData || !programData.semesters) return [];
 
   const { selectedProgram, busyDays, busyTimes } = searchParams;
+  
+  // Clean busy days arrays
   const busyDaysArray = busyDays ? Object.keys(busyDays).filter((day) => busyDays[day]) : [];
+  
+  // Format search keyword for fuzzy matching
+  const searchKeyword = selectedProgram && selectedProgram !== "All Programs" 
+    ? selectedProgram.toLowerCase().trim() 
+    : "";
 
   const groupedPrograms = {};
   const uniName = programData.universityName || "Northern New Mexico College";
@@ -62,8 +64,13 @@ export const getRecommendedPrograms = (searchParams) => {
 
     Object.entries(semesterData.programs).forEach(([progName, progData]) => {
       
-      if (selectedProgram && selectedProgram !== "All Programs" && progName !== selectedProgram) {
-        return; 
+      // ✅ FIX: FUZZY MATCHING
+      // Agar user ne "math" bola hai to "Mathematics, General" match ho jayega
+      if (searchKeyword) {
+        const actualName = progName.toLowerCase();
+        if (!actualName.includes(searchKeyword)) {
+          return; // Match nahi hua to skip kar do
+        }
       }
 
       let hasConflict = false;
@@ -79,20 +86,27 @@ export const getRecommendedPrograms = (searchParams) => {
             for (const sec of course.sections) {
               const days = sec.days || [];
               const startTime = sec.startTime;
+              
+              // Map short days like 'M', 'T' to 'Mon', 'Tue'
               const mappedDays = days.map(d => dayMap[d] || d);
               let sectionClash = false;
 
+              // Day & Time Conflict Check
               if (busyDaysArray.length > 0 && days.length > 0) {
                 const dayMatch = mappedDays.some(d => busyDaysArray.includes(d));
                 if (dayMatch) {
-                  if (checkTimeConflict(startTime, busyTimes)) sectionClash = true;
+                  // Agar day match hua, tab time check karo
+                  if (checkTimeConflict(startTime, busyTimes || {})) {
+                    sectionClash = true;
+                  }
                 }
               }
 
+              // Agar clash nahi hai, tab is section ko add karo
               if (!sectionClash) {
                 validSectionFound = true;
                 selectedSection = sec;
-                break;
+                break; // Ek valid section mil gaya ek course ke liye, toh baaki check karne ki zarurat nahi
               }
             }
 
@@ -107,8 +121,8 @@ export const getRecommendedPrograms = (searchParams) => {
                 instructor: selectedSection.instructor,
                 campus: selectedSection.campus || "Main",
                 schedule: {
-                  day: selectedSection.days.map(d => dayMap[d]).join(", ") || (selectedSection.instructionMethod.includes("OL") ? "Online" : "TBD"),
-                  time: selectedSection.startTime ? `${selectedSection.startTime} - ${selectedSection.endTime}` : "Asynchronous"
+                  day: selectedSection.days.map(d => dayMap[d]).join(", ") || (selectedSection.instructionMethod.includes("OL") ? "Online" : "Asynchronous"),
+                  time: selectedSection.startTime ? `${selectedSection.startTime} - ${selectedSection.endTime}` : "Flexible"
                 }
               });
             }
@@ -116,8 +130,8 @@ export const getRecommendedPrograms = (searchParams) => {
         });
       }
 
+      // Agar kisi bhi course me conflict nahi hai aur at least 1 course mila hai, toh result me daalo
       if (!hasConflict && formattedCourses.length > 0) {
-        // Grouping Data into single Program Card
         if (!groupedPrograms[progName]) {
             groupedPrograms[progName] = {
                 program: progName,
