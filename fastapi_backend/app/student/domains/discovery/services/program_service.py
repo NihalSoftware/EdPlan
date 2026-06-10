@@ -45,32 +45,23 @@ class ProgramService:
                     status_code=status.HTTP_400_BAD_REQUEST,
                     detail="Invalid university_id",
                 ) from exc
-            programs = await self.repository.get_programs_by_university(db, university_id)
-        elif search:
-            programs = await self.repository.search_programs(db, search)
-        else:
-            programs = await self.repository.get_programs(db)
 
-        if degree:
-            normalized_degree = degree.strip().lower()
-            programs = [
-                program
-                for program in programs
-                if str(program.get("degree") or "").strip().lower() == normalized_degree
-            ]
-
-        if search and university_id:
-            matching_ids = {
-                program["program_id"]
-                for program in await self.repository.search_programs(db, search)
-            }
-            programs = [
-                program for program in programs if program["program_id"] in matching_ids
-            ]
-
-        return programs
+        return await self.repository.get_programs(
+            db,
+            university_id=university_id,
+            degree=degree,
+            search=search,
+        )
 
     async def get_program_by_id(self, db: AsyncSession, program_id: str) -> dict:
+        try:
+            uuid.UUID(str(program_id))
+        except ValueError as exc:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Invalid program_id",
+            ) from exc
+
         program = await self.repository.get_program_by_id(db, program_id)
         if not program:
             raise HTTPException(

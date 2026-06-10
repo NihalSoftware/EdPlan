@@ -12,14 +12,31 @@ class UniversitySummary(BaseModel):
 class ProgramSummary(BaseModel):
     program_id: str
     program_name: str
-    degree: str | None = None
-    total_credit_hours: int | None = None
+    degree: str
+    total_credit_hours: int
     university: UniversitySummary
+
+
+class CourseSummary(BaseModel):
+    course_id: str
+    program_id: str
+    course_code: str
+    code: str | None = None
+    course_name: str
+    credits: int
+    lecture_hours: int = 0
+    lab_hours: int = 0
+    recommended_year: int | None = None
+    year: int | str | None = None
+    recommended_semester: str | None = None
+    semester: str | None = None
+    description: str | None = None
 
 
 class ProgramDetail(ProgramSummary):
     average_annual_cost: str | None = None
     eligibility_criteria: str | None = None
+    courses: list[CourseSummary] = Field(default_factory=list)
     years: list[dict] = Field(default_factory=list)
 
 

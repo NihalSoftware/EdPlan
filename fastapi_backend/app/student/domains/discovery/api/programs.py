@@ -2,10 +2,12 @@ from fastapi import APIRouter, Depends, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.db.session import get_db
+from app.student.domains.discovery.schemas.course import CourseListResponse
 from app.student.domains.discovery.schemas.program import (
     ProgramDetailResponse,
     ProgramListResponse,
 )
+from app.student.domains.discovery.services.course_service import course_service
 from app.student.domains.discovery.services.program_service import program_service
 
 router = APIRouter(prefix="/programs", tags=["programs"])
@@ -48,6 +50,20 @@ async def list_programs(
         "success": True,
         "data": programs,
         "metadata": {"count": len(programs)},
+    }
+
+
+@router.get(
+    "/{program_id}/courses",
+    response_model=CourseListResponse,
+    summary="List courses for an academic program",
+)
+async def list_program_courses(program_id: str, db: AsyncSession = Depends(get_db)):
+    courses = await course_service.list_courses(db, program_id=program_id)
+    return {
+        "success": True,
+        "data": courses,
+        "metadata": {"count": len(courses), "program_id": program_id},
     }
 
 

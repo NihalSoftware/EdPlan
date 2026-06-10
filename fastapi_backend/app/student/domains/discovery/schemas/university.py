@@ -28,7 +28,9 @@ class CollegeInfo(BaseModel):
 
 
 class University(BaseModel):
-    unit_id: int | None = None
+    university_id: str | None = None
+    university_name: str | None = None
+    unit_id: str | None = None
     name: str | None = None
     city: str | None = None
     state: str | None = None
@@ -64,4 +66,20 @@ class University(BaseModel):
 
 
 class CompareRequest(BaseModel):
-    unit_ids: list[int]
+    unit_ids: list[str]
+
+
+class UniversityListResponse(BaseModel):
+    success: bool
+    data: list[University]
+    metadata: dict | None = None
+
+
+class UniversityDetailResponse(BaseModel):
+    success: bool
+    data: University
+
+
+class UniversityCompareResponse(BaseModel):
+    success: bool
+    data: list[University]
