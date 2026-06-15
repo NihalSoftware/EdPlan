@@ -1,3 +1,10 @@
+from app.student.domains.planning.schemas.graduation_audit import (  # noqa: F401
+    GraduationAuditCourseSummary,
+    GraduationAuditCourses,
+    GraduationAuditCredits,
+    GraduationAuditProgram,
+    GraduationAuditResult,
+)
 from app.student.domains.planning.schemas.normalized_plan import (  # noqa: F401
     PlanCourseCreateRequest,
     PlanCourseDeleteResponse,
