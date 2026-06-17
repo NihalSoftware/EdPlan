@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from typing import Any, Dict
 import logging
 
 from fastapi import APIRouter, Depends, HTTPException
@@ -15,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 
 @router.post("")
-async def save_intake(payload: Dict[str, Any], db: AsyncSession = Depends(get_db)):
+async def save_intake(payload: dict, db: AsyncSession = Depends(get_db)):
     """Save intake form submission to the database."""
     try:
         entry = await intake_service.save_submission(db, payload)

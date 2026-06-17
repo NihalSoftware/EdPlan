@@ -19,7 +19,7 @@ async def request_email_verification(data: dict):
 
 @router.get("/users/email-verification/status")
 async def get_email_verification_status(email: str):
-    """Check if email is verified (simplified implementation)"""
+    """Return the current disabled email-verification status."""
     if not email:
         raise HTTPException(status_code=400, detail="email parameter is required")
 
