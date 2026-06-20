@@ -1,4 +1,4 @@
-# EduPlan FastAPI Backend
+# EdPlan FastAPI Backend
 
 This service replaces the legacy ASP.NET Core API. It exposes the same routes the React
 frontend expects via FastAPI and persists data in PostgreSQL using SQLAlchemy.
