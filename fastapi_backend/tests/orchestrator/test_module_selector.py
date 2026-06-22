@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from app.orchestrator.modules.base_module import BaseModule
 from app.orchestrator.modules.module_registry import ModuleRegistry
+from app.orchestrator.modules.example_module import EXAMPLE_MODULE
 from app.orchestrator.router.module_selector import ACADEMIC_PLANNING, CAREER, ModuleSelector
 from app.orchestrator.schemas.intent_result import IntentResult
 from app.orchestrator.schemas.module_response import ModuleResponse
@@ -68,3 +69,16 @@ def test_module_selector_rejects_unknown_module_names():
 
     assert result.selected_modules == [CAREER]
     assert result.invalid_modules == ["course_intelligence"]
+
+
+def test_module_selector_allows_reference_example_module():
+    result = ModuleSelector().select(
+        IntentResult(
+            intent="example",
+            confidence=1.0,
+            target_modules=[EXAMPLE_MODULE],
+        )
+    )
+
+    assert result.selected_modules == [EXAMPLE_MODULE]
+    assert result.invalid_modules == []

@@ -73,6 +73,8 @@ class ModuleExecutor:
         start_time = perf_counter()
         try:
             response = await module.execute(context=context, query=query)
+            if not isinstance(response, ModuleResponse):
+                raise TypeError("Module execute must return ModuleResponse.")
         except Exception as exc:
             execution_time_ms = self._elapsed_ms(start_time)
             logger.exception("Module execution failed module_name=%s", module.name)

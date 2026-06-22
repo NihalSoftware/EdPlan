@@ -21,6 +21,13 @@ class FakeModule(BaseModule):
         return ModuleResponse(module_name=self.name, content=f"{self.name} completed")
 
 
+class InvalidResponseModule(BaseModule):
+    name = "InvalidResponseModule"
+
+    async def execute(self, context: StudentContext, query: str):
+        return {"module_name": self.name}
+
+
 def build_executor(*modules: FakeModule) -> ModuleExecutor:
     registry = ModuleRegistry()
     for module in modules:
@@ -85,3 +92,16 @@ async def test_module_executor_handles_empty_module_list():
     result = await ModuleExecutor().execute_selected([], StudentContext(), "Explain EdPlan")
 
     assert result == {}
+
+
+@pytest.mark.asyncio
+async def test_module_executor_rejects_invalid_module_response():
+    result = await build_executor(InvalidResponseModule()).execute_selected(
+        ["InvalidResponseModule"],
+        StudentContext(),
+        "Run invalid module",
+    )
+
+    assert result["InvalidResponseModule"].success is False
+    assert result["InvalidResponseModule"].response is None
+    assert result["InvalidResponseModule"].error == "Module execute must return ModuleResponse."

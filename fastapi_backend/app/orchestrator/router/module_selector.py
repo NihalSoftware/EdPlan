@@ -11,6 +11,7 @@ CAREER = "Career"
 FINANCE = "Finance"
 ACADEMIC_SUCCESS = "Academic Success"
 COLLEGE_COMPARISON = "College Comparison"
+EXAMPLE_MODULE = "ExampleModule"
 
 OFFICIAL_MODULES: tuple[str, ...] = (
     ACADEMIC_PLANNING,
@@ -19,6 +20,7 @@ OFFICIAL_MODULES: tuple[str, ...] = (
     FINANCE,
     ACADEMIC_SUCCESS,
     COLLEGE_COMPARISON,
+    EXAMPLE_MODULE,
 )
 
 

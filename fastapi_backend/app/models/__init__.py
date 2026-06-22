@@ -22,3 +22,11 @@ from app.models.education_plan import (  # noqa: F401
     ProgramCourse,
     State,
 )
+from app.models.agentic import (  # noqa: F401
+    AgenticEdPlan,
+    ConversationMemory,
+    ModuleExecution,
+    OrchestratorRun,
+    StudentPreference,
+    WorkflowEvent,
+)

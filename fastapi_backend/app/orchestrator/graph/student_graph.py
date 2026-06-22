@@ -2,7 +2,13 @@ from __future__ import annotations
 
 from collections.abc import Awaitable, Callable
 from dataclasses import dataclass
+from inspect import isawaitable
+from typing import TypeVar
 from uuid import UUID
+
+from langgraph.graph import END as LANGGRAPH_END
+from langgraph.graph import START as LANGGRAPH_START
+from langgraph.graph import StateGraph
 
 from app.orchestrator.execution.module_executor import ModuleExecutionResult
 from app.orchestrator.schemas.intent_result import IntentResult
@@ -17,9 +23,11 @@ INTENT_ROUTER = "IntentRouter"
 MODULE_SELECTOR = "ModuleSelector"
 MODULE_EXECUTOR = "ModuleExecutor"
 RESPONSE_COMPOSER = "ResponseComposer"
+MEMORY_MANAGER = "MemoryManager"
 END = "END"
 
 StudentGraphNodeHandler = Callable[[EdPlanState], Awaitable[EdPlanState]]
+T = TypeVar("T")
 
 
 @dataclass(frozen=True)
@@ -31,19 +39,49 @@ class StudentGraphNode:
 
 
 class StudentGraph:
-    """Dependency-free graph foundation that can later be replaced by LangGraph."""
+    """LangGraph-backed student orchestration workflow."""
 
     def __init__(self, nodes: list[StudentGraphNode]) -> None:
         self.nodes = nodes
+        self._compiled_graph = self._compile(nodes)
 
     async def execute(self, state: EdPlanState) -> EdPlanState:
-        """Run graph nodes in sequence and return the resulting state."""
+        """Run the compiled LangGraph workflow and return the resulting state."""
         self._record_event(state, START)
-        for node in self.nodes:
-            self._record_event(state, node.name)
-            state = await node.handler(state)
+        result = await self._compiled_graph.ainvoke(state.model_dump(mode="python"))
+        state = self._coerce_state(result)
         self._record_event(state, END)
         return state
+
+    def _compile(self, nodes: list[StudentGraphNode]):
+        graph = StateGraph(EdPlanState)
+        for node in nodes:
+            graph.add_node(node.name, self._build_langgraph_handler(node))
+
+        if not nodes:
+            graph.add_edge(LANGGRAPH_START, LANGGRAPH_END)
+        else:
+            graph.add_edge(LANGGRAPH_START, nodes[0].name)
+            for current_node, next_node in zip(nodes, nodes[1:]):
+                graph.add_edge(current_node.name, next_node.name)
+            graph.add_edge(nodes[-1].name, LANGGRAPH_END)
+
+        return graph.compile()
+
+    def _build_langgraph_handler(self, node: StudentGraphNode):
+        async def handler(raw_state: EdPlanState | dict) -> dict:
+            state = self._coerce_state(raw_state)
+            self._record_event(state, node.name)
+            updated_state = await node.handler(state)
+            return updated_state.model_dump(mode="python")
+
+        return handler
+
+    @staticmethod
+    def _coerce_state(raw_state: EdPlanState | dict) -> EdPlanState:
+        if isinstance(raw_state, EdPlanState):
+            return raw_state
+        return EdPlanState.model_validate(raw_state)
 
     @staticmethod
     def _record_event(state: EdPlanState, event_type: str) -> None:
@@ -83,12 +121,12 @@ async def route_intent_node(state: EdPlanState) -> EdPlanState:
 
 
 def build_intent_router_node(
-    router: Callable[[str, StudentContext | None], IntentResult],
+    router: Callable[[str, StudentContext | None], IntentResult | Awaitable[IntentResult]],
 ) -> StudentGraphNodeHandler:
     """Build an IntentRouter graph node bound to a router callable."""
 
     async def intent_router_node(state: EdPlanState) -> EdPlanState:
-        state.intent_result = router(state.query, state.student_context)
+        state.intent_result = await _maybe_await(router(state.query, state.student_context))
         return state
 
     return intent_router_node
@@ -102,7 +140,7 @@ async def select_modules_node(state: EdPlanState) -> EdPlanState:
 
 
 def build_module_selector_node(
-    selector: Callable[[IntentResult], object],
+    selector: Callable[[IntentResult], object | Awaitable[object]],
 ) -> StudentGraphNodeHandler:
     """Build a ModuleSelector graph node bound to a selector callable."""
 
@@ -110,11 +148,11 @@ def build_module_selector_node(
         if state.intent_result is None:
             state.selected_modules = []
             return state
-        selection = selector(state.intent_result)
+        selection = await _maybe_await(selector(state.intent_result))
         selected_modules = getattr(selection, "selected_modules", [])
         state.selected_modules = list(selected_modules)
         if hasattr(selection, "model_dump"):
-            state.metadata["module_selection"] = selection.model_dump()
+            state.metadata["module_selection"] = selection.model_dump(mode="json")
         return state
 
     return module_selector_node
@@ -143,16 +181,18 @@ async def execute_modules_node(state: EdPlanState) -> EdPlanState:
 def build_response_composer_node(
     composer: Callable[
         [StudentContext | None, IntentResult | None, dict[str, ModuleExecutionResult]],
-        FinalResponse,
+        FinalResponse | Awaitable[FinalResponse],
     ],
 ) -> StudentGraphNodeHandler:
     """Build a ResponseComposer graph node bound to a composer callable."""
 
     async def response_composer_node(state: EdPlanState) -> EdPlanState:
-        state.final_response = composer(
-            state.student_context,
-            state.intent_result,
-            state.module_results,
+        state.final_response = await _maybe_await(
+            composer(
+                state.student_context,
+                state.intent_result,
+                state.module_results,
+            )
         )
         return state
 
@@ -171,3 +211,26 @@ async def compose_response_node(state: EdPlanState) -> EdPlanState:
             ],
         )
     return state
+
+
+async def update_memory_node(state: EdPlanState) -> EdPlanState:
+    """Placeholder memory node with no persistence side effects."""
+    return state
+
+
+def build_memory_manager_node(
+    memory_manager: Callable[[EdPlanState], None | Awaitable[None]],
+) -> StudentGraphNodeHandler:
+    """Build a MemoryManager graph node bound to a memory callable."""
+
+    async def memory_manager_node(state: EdPlanState) -> EdPlanState:
+        await _maybe_await(memory_manager(state))
+        return state
+
+    return memory_manager_node
+
+
+async def _maybe_await(value: T | Awaitable[T]) -> T:
+    if isawaitable(value):
+        return await value
+    return value
