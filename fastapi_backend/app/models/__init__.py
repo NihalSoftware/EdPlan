@@ -23,7 +23,6 @@ from app.models.education_plan import (  # noqa: F401
     State,
 )
 from app.models.agentic import (  # noqa: F401
-    AgenticEdPlan,
     ConversationMemory,
     ModuleExecution,
     OrchestratorRun,

@@ -3,24 +3,10 @@ from __future__ import annotations
 from datetime import datetime
 from uuid import UUID, uuid4
 
-from sqlalchemy import Boolean, DateTime, ForeignKey, Integer, JSON, String, Text, Uuid, func
+from sqlalchemy import Boolean, DateTime, ForeignKey, Integer, JSON, String, Text, Uuid, func, text
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.db.base import Base
-
-
-class AgenticEdPlan(Base):
-    """ORM mapping for existing agentic education plans."""
-
-    __tablename__ = "ed_plans"
-    __table_args__ = {"schema": "agentic"}
-
-    plan_id: Mapped[UUID] = mapped_column(Uuid, primary_key=True)
-    user_id: Mapped[int | None] = mapped_column(Integer, nullable=True)
-    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
-    updated_at: Mapped[datetime] = mapped_column(
-        DateTime(timezone=True), server_default=func.now(), onupdate=func.now()
-    )
 
 
 class StudentPreference(Base):
@@ -29,8 +15,21 @@ class StudentPreference(Base):
     __tablename__ = "student_preferences"
     __table_args__ = {"schema": "agentic"}
 
-    preference_id: Mapped[UUID] = mapped_column(Uuid, primary_key=True, default=uuid4)
-    user_id: Mapped[int] = mapped_column(Integer, nullable=False, index=True)
+    preference_id: Mapped[UUID] = mapped_column(
+        Uuid, primary_key=True, default=uuid4, server_default=text("gen_random_uuid()")
+    )
+    user_id: Mapped[int] = mapped_column(
+        Integer,
+        ForeignKey("public.users.id", onupdate="CASCADE", ondelete="CASCADE"),
+        nullable=False,
+        index=True,
+    )
+    plan_id: Mapped[UUID | None] = mapped_column(
+        Uuid,
+        ForeignKey("public.ed_plans.plan_id", onupdate="CASCADE", ondelete="CASCADE"),
+        nullable=True,
+        index=True,
+    )
     preference_key: Mapped[str] = mapped_column(String(128), nullable=False)
     preference_value: Mapped[str] = mapped_column(Text, nullable=False)
     updated_at: Mapped[datetime] = mapped_column(
@@ -44,10 +43,27 @@ class ConversationMemory(Base):
     __tablename__ = "conversation_memory"
     __table_args__ = {"schema": "agentic"}
 
-    memory_id: Mapped[UUID] = mapped_column(Uuid, primary_key=True, default=uuid4)
-    user_id: Mapped[int] = mapped_column(Integer, nullable=False, index=True)
-    plan_id: Mapped[UUID] = mapped_column(Uuid, nullable=False, index=True)
-    run_id: Mapped[UUID] = mapped_column(Uuid, nullable=False, index=True)
+    memory_id: Mapped[UUID] = mapped_column(
+        Uuid, primary_key=True, default=uuid4, server_default=text("gen_random_uuid()")
+    )
+    user_id: Mapped[int] = mapped_column(
+        Integer,
+        ForeignKey("public.users.id", onupdate="CASCADE", ondelete="CASCADE"),
+        nullable=False,
+        index=True,
+    )
+    plan_id: Mapped[UUID] = mapped_column(
+        Uuid,
+        ForeignKey("public.ed_plans.plan_id", onupdate="CASCADE", ondelete="CASCADE"),
+        nullable=False,
+        index=True,
+    )
+    run_id: Mapped[UUID | None] = mapped_column(
+        Uuid,
+        ForeignKey("agentic.orchestrator_runs.run_id", ondelete="SET NULL"),
+        nullable=True,
+        index=True,
+    )
     summary: Mapped[str] = mapped_column(Text, nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
@@ -58,9 +74,21 @@ class OrchestratorRun(Base):
     __tablename__ = "orchestrator_runs"
     __table_args__ = {"schema": "agentic"}
 
-    run_id: Mapped[UUID] = mapped_column(Uuid, primary_key=True, default=uuid4)
-    user_id: Mapped[int] = mapped_column(Integer, nullable=False, index=True)
-    plan_id: Mapped[UUID] = mapped_column(Uuid, nullable=False, index=True)
+    run_id: Mapped[UUID] = mapped_column(
+        Uuid, primary_key=True, default=uuid4, server_default=text("gen_random_uuid()")
+    )
+    user_id: Mapped[int] = mapped_column(
+        Integer,
+        ForeignKey("public.users.id", onupdate="CASCADE", ondelete="CASCADE"),
+        nullable=False,
+        index=True,
+    )
+    plan_id: Mapped[UUID] = mapped_column(
+        Uuid,
+        ForeignKey("public.ed_plans.plan_id", onupdate="CASCADE", ondelete="CASCADE"),
+        nullable=False,
+        index=True,
+    )
     query: Mapped[str] = mapped_column(Text, nullable=False)
     intent: Mapped[str | None] = mapped_column(String(128), nullable=True)
     selected_modules: Mapped[list[str]] = mapped_column(JSON, default=list)
@@ -77,7 +105,9 @@ class ModuleExecution(Base):
     __tablename__ = "module_executions"
     __table_args__ = {"schema": "agentic"}
 
-    execution_id: Mapped[UUID] = mapped_column(Uuid, primary_key=True, default=uuid4)
+    execution_id: Mapped[UUID] = mapped_column(
+        Uuid, primary_key=True, default=uuid4, server_default=text("gen_random_uuid()")
+    )
     run_id: Mapped[UUID] = mapped_column(
         Uuid, ForeignKey("agentic.orchestrator_runs.run_id", ondelete="CASCADE"), index=True
     )
@@ -97,7 +127,9 @@ class WorkflowEvent(Base):
     __tablename__ = "workflow_events"
     __table_args__ = {"schema": "agentic"}
 
-    event_id: Mapped[UUID] = mapped_column(Uuid, primary_key=True, default=uuid4)
+    event_id: Mapped[UUID] = mapped_column(
+        Uuid, primary_key=True, default=uuid4, server_default=text("gen_random_uuid()")
+    )
     run_id: Mapped[UUID] = mapped_column(
         Uuid, ForeignKey("agentic.orchestrator_runs.run_id", ondelete="CASCADE"), index=True
     )

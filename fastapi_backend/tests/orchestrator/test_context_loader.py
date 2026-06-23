@@ -5,7 +5,7 @@ from uuid import uuid4
 
 import pytest
 
-from app.models.agentic import AgenticEdPlan, ConversationMemory, StudentPreference
+from app.models.agentic import ConversationMemory, StudentPreference
 from app.models.education_plan import CourseSchedule, EducationPlan, ProgramCourse
 from app.models.user import User, UserRole
 from app.orchestrator.context.context_loader import (
@@ -15,6 +15,7 @@ from app.orchestrator.context.context_loader import (
     UserNotFoundError,
     UniversityNotFoundError,
 )
+from app.student.domains.planning.models import EdPlan
 
 
 class FakeScalarResult:
@@ -91,6 +92,16 @@ def build_operational_plan() -> EducationPlan:
     return plan
 
 
+def build_plan(plan_id) -> EdPlan:
+    return EdPlan(
+        plan_id=plan_id,
+        user_id=1,
+        university_id=uuid4(),
+        program_id=uuid4(),
+        plan_name="Primary Plan",
+    )
+
+
 @pytest.mark.asyncio
 async def test_load_student_context_successfully():
     plan_id = uuid4()
@@ -101,7 +112,7 @@ async def test_load_student_context_successfully():
     session = FakeAsyncSession(
         [
             FakeResult(scalar=build_user()),
-            FakeResult(scalar=AgenticEdPlan(plan_id=plan_id)),
+            FakeResult(scalar=build_plan(plan_id)),
             FakeResult(scalar=operational_plan),
             FakeResult(
                 items=[
@@ -176,7 +187,7 @@ async def test_load_student_context_missing_program():
     session = FakeAsyncSession(
         [
             FakeResult(scalar=build_user()),
-            FakeResult(scalar=AgenticEdPlan(plan_id=plan_id)),
+            FakeResult(scalar=build_plan(plan_id)),
             FakeResult(scalar=None),
         ]
     )
@@ -193,7 +204,7 @@ async def test_load_student_context_missing_university():
     session = FakeAsyncSession(
         [
             FakeResult(scalar=build_user()),
-            FakeResult(scalar=AgenticEdPlan(plan_id=plan_id)),
+            FakeResult(scalar=build_plan(plan_id)),
             FakeResult(scalar=operational_plan),
         ]
     )
@@ -208,7 +219,7 @@ async def test_load_student_context_empty_preferences():
     session = FakeAsyncSession(
         [
             FakeResult(scalar=build_user()),
-            FakeResult(scalar=AgenticEdPlan(plan_id=plan_id)),
+            FakeResult(scalar=build_plan(plan_id)),
             FakeResult(scalar=build_operational_plan()),
             FakeResult(items=[]),
             FakeResult(items=[]),
@@ -228,7 +239,7 @@ async def test_load_student_context_empty_memory():
     session = FakeAsyncSession(
         [
             FakeResult(scalar=build_user()),
-            FakeResult(scalar=AgenticEdPlan(plan_id=plan_id)),
+            FakeResult(scalar=build_plan(plan_id)),
             FakeResult(scalar=build_operational_plan()),
             FakeResult(items=[]),
             FakeResult(
