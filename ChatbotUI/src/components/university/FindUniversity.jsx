@@ -93,6 +93,8 @@ const FindUniversity = ({ onSelectProgram }) => {
 	const [stateFilter, setStateFilter] = useState("");
 	const [costFilter, setCostFilter] = useState(18000);
 	const [programOptions, setProgramOptions] = useState([]);
+	const [programCatalogLoading, setProgramCatalogLoading] = useState(false);
+	const [programCatalogError, setProgramCatalogError] = useState("");
 	const [selectedProgram, setSelectedProgram] = useState("");
 	const [selectedDegree, setSelectedDegree] = useState("");
 	const [programMap, setProgramMap] = useState(new Map());
@@ -127,6 +129,8 @@ const FindUniversity = ({ onSelectProgram }) => {
 	};
 
 	useEffect(() => {
+		setProgramCatalogLoading(true);
+		setProgramCatalogError("");
 		listPrograms()
 			.then((items) => {
 				const programSet = new Set();
@@ -186,10 +190,13 @@ const FindUniversity = ({ onSelectProgram }) => {
 				setProgramDegreeLabelMap(degreeLabelLookup);
 				setProgramDegreeByUniversity(degreeByUniversity);
 				setCrimeRateMap(crimeLookup);
+				setProgramCatalogLoading(false);
 			})
 			.catch((err) => {
 				console.error("Unable to load program list", err);
 				setProgramOptions([]);
+				setProgramCatalogError("Unable to load academic catalog filters.");
+				setProgramCatalogLoading(false);
 			});
 	}, []);
 
@@ -498,6 +505,16 @@ const FindUniversity = ({ onSelectProgram }) => {
 			{error && (
 				<div className="bg-rose-50 text-rose-700 border border-rose-100 rounded-lg px-4 py-3">
 					{error}
+				</div>
+			)}
+			{programCatalogLoading && (
+				<div className="bg-blue-50 text-blue-700 border border-blue-100 rounded-lg px-4 py-3">
+					Loading academic catalog filters...
+				</div>
+			)}
+			{programCatalogError && (
+				<div className="bg-amber-50 text-amber-700 border border-amber-100 rounded-lg px-4 py-3">
+					{programCatalogError}
 				</div>
 			)}
 
