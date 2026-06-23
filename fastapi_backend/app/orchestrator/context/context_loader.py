@@ -8,10 +8,11 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
 
-from app.models.agentic import AgenticEdPlan, ConversationMemory, StudentPreference
+from app.models.agentic import ConversationMemory, StudentPreference
 from app.models.education_plan import CourseSchedule, EducationPlan
 from app.models.user import User
 from app.orchestrator.schemas.student_context import StudentContext
+from app.student.domains.planning.models import EdPlan
 
 logger = logging.getLogger(__name__)
 
@@ -25,7 +26,7 @@ class UserNotFoundError(ContextLoaderError):
 
 
 class PlanNotFoundError(ContextLoaderError):
-    """Raised when the requested agentic education plan cannot be found."""
+    """Raised when the requested education plan cannot be found."""
 
 
 class ProgramNotFoundError(ContextLoaderError):
@@ -53,8 +54,8 @@ class ContextLoader:
         if user is None:
             raise UserNotFoundError(f"User not found: {user_id}")
 
-        agentic_plan = await self._load_agentic_plan(plan_id)
-        if agentic_plan is None:
+        plan = await self._load_plan(user_id, plan_id)
+        if plan is None:
             raise PlanNotFoundError(f"Plan not found: {plan_id}")
 
         operational_plan = await self._load_operational_plan(user_id)
@@ -70,7 +71,7 @@ class ContextLoader:
         logger.debug("Loaded student context user_id=%s plan_id=%s", user_id, plan_id)
         return StudentContext(
             user=self._serialize_user(user),
-            plan=self._serialize_plan(agentic_plan, operational_plan),
+            plan=self._serialize_plan(plan, operational_plan),
             program=self._serialize_program(operational_plan),
             university=self._serialize_university(operational_plan),
             completed_courses=self._serialize_courses(operational_plan, schedules),
@@ -83,8 +84,10 @@ class ContextLoader:
         result = await self.db.execute(select(User).where(User.id == user_id))
         return result.scalar_one_or_none()
 
-    async def _load_agentic_plan(self, plan_id: UUID) -> AgenticEdPlan | None:
-        result = await self.db.execute(select(AgenticEdPlan).where(AgenticEdPlan.plan_id == plan_id))
+    async def _load_plan(self, user_id: int, plan_id: UUID) -> EdPlan | None:
+        result = await self.db.execute(
+            select(EdPlan).where(EdPlan.plan_id == plan_id, EdPlan.user_id == user_id)
+        )
         return result.scalar_one_or_none()
 
     async def _load_operational_plan(self, user_id: int) -> EducationPlan | None:
@@ -138,9 +141,9 @@ class ContextLoader:
 
     @staticmethod
     def _serialize_plan(
-        agentic_plan: AgenticEdPlan, operational_plan: EducationPlan | None
+        plan_model: EdPlan, operational_plan: EducationPlan | None
     ) -> dict[str, Any]:
-        plan: dict[str, Any] = {"plan_id": str(agentic_plan.plan_id)}
+        plan: dict[str, Any] = {"plan_id": str(plan_model.plan_id)}
         if operational_plan is not None:
             plan.update(
                 {
