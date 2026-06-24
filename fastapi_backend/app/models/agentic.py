@@ -20,13 +20,13 @@ class StudentPreference(Base):
     )
     user_id: Mapped[int] = mapped_column(
         Integer,
-        ForeignKey("public.users.id", onupdate="CASCADE", ondelete="CASCADE"),
+        ForeignKey("users.id", onupdate="CASCADE", ondelete="CASCADE"),
         nullable=False,
         index=True,
     )
     plan_id: Mapped[UUID | None] = mapped_column(
         Uuid,
-        ForeignKey("public.ed_plans.plan_id", onupdate="CASCADE", ondelete="CASCADE"),
+        ForeignKey("ed_plans.plan_id", onupdate="CASCADE", ondelete="CASCADE"),
         nullable=True,
         index=True,
     )
@@ -48,13 +48,13 @@ class ConversationMemory(Base):
     )
     user_id: Mapped[int] = mapped_column(
         Integer,
-        ForeignKey("public.users.id", onupdate="CASCADE", ondelete="CASCADE"),
+        ForeignKey("users.id", onupdate="CASCADE", ondelete="CASCADE"),
         nullable=False,
         index=True,
     )
     plan_id: Mapped[UUID] = mapped_column(
         Uuid,
-        ForeignKey("public.ed_plans.plan_id", onupdate="CASCADE", ondelete="CASCADE"),
+        ForeignKey("ed_plans.plan_id", onupdate="CASCADE", ondelete="CASCADE"),
         nullable=False,
         index=True,
     )
@@ -79,13 +79,13 @@ class OrchestratorRun(Base):
     )
     user_id: Mapped[int] = mapped_column(
         Integer,
-        ForeignKey("public.users.id", onupdate="CASCADE", ondelete="CASCADE"),
+        ForeignKey("users.id", onupdate="CASCADE", ondelete="CASCADE"),
         nullable=False,
         index=True,
     )
     plan_id: Mapped[UUID] = mapped_column(
         Uuid,
-        ForeignKey("public.ed_plans.plan_id", onupdate="CASCADE", ondelete="CASCADE"),
+        ForeignKey("ed_plans.plan_id", onupdate="CASCADE", ondelete="CASCADE"),
         nullable=False,
         index=True,
     )
