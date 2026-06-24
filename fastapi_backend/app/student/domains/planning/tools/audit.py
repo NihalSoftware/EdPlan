@@ -20,7 +20,18 @@ def _default_service():
 
 class AuditPlanTool:
     name = "audit_plan"
-    description = "Audit a student education plan against graduation requirements"
+    description = (
+        "Audit a student education plan against catalog graduation requirements. "
+        "Input: plan_id. Output: required credits, planned credits, missing courses, "
+        "completion percentages, and graduation_ready status. Use for graduation "
+        "readiness, remaining requirement, and acceleration questions."
+    )
+    parameters = {
+        "type": "object",
+        "properties": {"plan_id": {"type": "string"}},
+        "required": ["plan_id"],
+        "additionalProperties": False,
+    }
 
     def __init__(self, service: "GraduationAuditService | None" = None) -> None:
         self.service = service

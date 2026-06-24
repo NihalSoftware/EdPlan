@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 from app.orchestrator.modules.module_registry import ModuleRegistry
 from app.orchestrator.schemas.intent_result import IntentResult
 
-ACADEMIC_PLANNING = "Academic Planning"
+ACADEMIC_PLANNING = "academic_planning"
 SCHEDULING = "Scheduling"
 CAREER = "Career"
 FINANCE = "Finance"

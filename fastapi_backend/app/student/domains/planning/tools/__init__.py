@@ -10,6 +10,14 @@ from app.student.domains.planning.tools.plans import (
     GetPlanTool,
     UpdatePlanTool,
 )
+from app.student.domains.planning.tools.read import (
+    GetAvailableTermsTool,
+    GetCorequisitesTool,
+    GetCourseDetailsTool,
+    GetPrerequisitesTool,
+    GetProgramRequirementsTool,
+    GetRemainingCoursesTool,
+)
 from app.student.domains.planning.tools.registry import PLANNING_TOOLS
 from app.student.domains.planning.tools.validation import ValidatePlanTool
 
@@ -19,6 +27,12 @@ __all__ = [
     "CreatePlanTool",
     "DeletePlanTool",
     "GetPlanTool",
+    "GetAvailableTermsTool",
+    "GetCorequisitesTool",
+    "GetCourseDetailsTool",
+    "GetPrerequisitesTool",
+    "GetProgramRequirementsTool",
+    "GetRemainingCoursesTool",
     "MoveCourseTool",
     "PLANNING_TOOLS",
     "RemoveCourseTool",

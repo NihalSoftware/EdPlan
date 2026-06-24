@@ -27,7 +27,31 @@ def _default_service():
 
 class AddCourseTool:
     name = "add_course"
-    description = "Add a course to a student education plan"
+    description = (
+        "Add a course to a student education plan. Input: plan_id and payload with "
+        "course_id, optional planned_term_id, status, and notes. Output: created "
+        "planned-course record. Use for explicit add-course requests after course "
+        "identity is known."
+    )
+    parameters = {
+        "type": "object",
+        "properties": {
+            "plan_id": {"type": "string"},
+            "payload": {
+                "type": "object",
+                "properties": {
+                    "course_id": {"type": "string"},
+                    "planned_term_id": {"type": ["string", "null"]},
+                    "status": {"type": "string", "enum": ["Planned", "In Progress", "Completed"]},
+                    "notes": {"type": ["string", "null"]},
+                },
+                "required": ["course_id"],
+                "additionalProperties": False,
+            },
+        },
+        "required": ["plan_id", "payload"],
+        "additionalProperties": False,
+    }
 
     def __init__(self, service: "NormalizedPlanService | None" = None) -> None:
         self.service = service
@@ -48,7 +72,20 @@ class AddCourseTool:
 
 class RemoveCourseTool:
     name = "remove_course"
-    description = "Remove a course from a student education plan"
+    description = (
+        "Remove a course from a student education plan. Input: plan_id and course_id. "
+        "Output: no content on success. Use only for explicit remove/drop-course "
+        "requests."
+    )
+    parameters = {
+        "type": "object",
+        "properties": {
+            "plan_id": {"type": "string"},
+            "course_id": {"type": "string"},
+        },
+        "required": ["plan_id", "course_id"],
+        "additionalProperties": False,
+    }
 
     def __init__(self, service: "NormalizedPlanService | None" = None) -> None:
         self.service = service
@@ -60,7 +97,30 @@ class RemoveCourseTool:
 
 class MoveCourseTool:
     name = "move_course"
-    description = "Move a planned course to another academic term"
+    description = (
+        "Move or update a planned course. Input: plan_id, course_id, and payload with "
+        "planned_term_id, status, or notes. Output: updated planned-course record. "
+        "Use when the student asks to move a course to another term or adjust its "
+        "planning status."
+    )
+    parameters = {
+        "type": "object",
+        "properties": {
+            "plan_id": {"type": "string"},
+            "course_id": {"type": "string"},
+            "payload": {
+                "type": "object",
+                "properties": {
+                    "planned_term_id": {"type": ["string", "null"]},
+                    "status": {"type": "string", "enum": ["Planned", "In Progress", "Completed"]},
+                    "notes": {"type": ["string", "null"]},
+                },
+                "additionalProperties": False,
+            },
+        },
+        "required": ["plan_id", "course_id", "payload"],
+        "additionalProperties": False,
+    }
 
     def __init__(self, service: "NormalizedPlanService | None" = None) -> None:
         self.service = service

@@ -1,7 +1,7 @@
 from functools import lru_cache
 from typing import List, Union
 
-from pydantic import AnyHttpUrl, Field, field_validator
+from pydantic import AnyHttpUrl, Field, SecretStr, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -42,6 +42,16 @@ class Settings(BaseSettings):
         "https://api.data.gov/ed/collegescorecard/v1",
         alias="COLLEGE_SCORECARD_BASE_URL",
     )
+    openrouter_api_key: SecretStr | None = Field(None, alias="OPENROUTER_API_KEY")
+    openrouter_model: str = Field("qwen/qwen3-7b-plus", alias="OPENROUTER_MODEL")
+    openrouter_fallback_model: str | None = Field(None, alias="OPENROUTER_FALLBACK_MODEL")
+    openrouter_base_url: str = Field(
+        "https://openrouter.ai/api/v1",
+        alias="OPENROUTER_BASE_URL",
+    )
+    openrouter_temperature: float = Field(0.2, alias="OPENROUTER_TEMPERATURE")
+    openrouter_max_tokens: int = Field(1024, alias="OPENROUTER_MAX_TOKENS")
+    openrouter_timeout: float = Field(30.0, alias="OPENROUTER_TIMEOUT")
     default_admin_email: str = Field(..., alias="DEFAULT_ADMIN_EMAIL")
     default_admin_password: str = Field(..., alias="DEFAULT_ADMIN_PASSWORD")
 

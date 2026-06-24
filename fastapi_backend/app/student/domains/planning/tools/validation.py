@@ -24,7 +24,25 @@ def _default_service():
 
 class ValidatePlanTool:
     name = "validate_plan"
-    description = "Validate a student education plan"
+    description = (
+        "Validate a student education plan against duplicate, prerequisite, "
+        "corequisite, and credit-load rules. Input: plan_id and optional payload "
+        "with mode save or draft. Output: validation result and issues. Use before "
+        "recommending a plan or after proposed course changes."
+    )
+    parameters = {
+        "type": "object",
+        "properties": {
+            "plan_id": {"type": "string"},
+            "payload": {
+                "type": "object",
+                "properties": {"mode": {"type": "string", "enum": ["save", "draft"]}},
+                "additionalProperties": False,
+            },
+        },
+        "required": ["plan_id"],
+        "additionalProperties": False,
+    }
 
     def __init__(
         self,

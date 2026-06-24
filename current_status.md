@@ -2,25 +2,91 @@
 
 Generated: 2026-06-23
 
-Scope: Student Platform backend under `fastapi_backend/app`, supporting docs under `docs`, and backend tests under `fastapi_backend/tests`.
+Scope: Current merged repository state for the Student Platform backend under `fastapi_backend/app`, Alembic migrations under `fastapi_backend/alembic`, tests under `fastapi_backend/tests`, and architecture docs under `docs`.
 
-Note: `development_plan.md` was requested as the comparison target, but no file with that name exists in the repository. This review compares the backend against the planned module architecture documented in `docs/orchestrator_module_developer_guide.md`, `docs/domain_map.md`, `docs/domain_boundary_review.md`, and related planning docs.
+Important note: `development_plan.md` is still not present in the repository. Architecture comparison is therefore based on the current planned-module contract in `docs/orchestrator_module_developer_guide.md`, current backend code, and the official module names in `app/orchestrator/router/module_selector.py`.
 
 ## Executive Summary
 
-The backend is a FastAPI application with a domain-oriented structure. The strongest implemented areas are catalog discovery, normalized academic planning, validation, graduation audit, scheduling catalog lookup, auth, onboarding intake, and a generic orchestrator framework.
+The merged backend is stronger than the previous status report in three areas:
 
-Academic Planning is the most complete planned module. It has normalized plan CRUD, plan-course CRUD, deterministic validation, graduation audit, tests, and a thin tool layer.
+- Alembic migrations now include normalized catalog, planning, career-mapping, scheduling, and agentic tables through revision `0009`.
+- SQLAlchemy metadata now imports normalized discovery, scheduling catalog, planning, legacy, onboarding, user, and agentic models.
+- Orchestrator infrastructure now includes durable run tracking, workflow events, module execution tracking, deterministic memory/preference extraction, prompt registry/manager, provider-neutral LLM contracts, and an OpenRouter provider stub.
 
-Scheduling is partial. The backend has course offerings, sections, and section meetings as read-only catalog data, plus a legacy reschedule queue. It does not generate schedules, select sections for a student plan, persist normalized schedules, or perform time conflict detection.
+The main implementation reality has not changed as much as the data model. Academic Planning remains the only planned product module with a real tool layer. Scheduling has catalog lookup but not schedule generation. Career, Finance, Academic Success, and College Comparison have routing/prompt labels but no production domain modules or tool registries.
 
-Career, Finance, Academic Success, and College Comparison are not implemented as first-class backend modules. Some supporting data exists for Career and College Comparison, but there are no dedicated student-domain APIs, services, repositories, schemas, or tools for those planned modules.
+## Merge Impact Analysis
 
-## Domain Structure
+### Newly Added Or Now Present Components
 
-### Student Auth
+APIs:
+- No new student product API surface was found beyond the existing auth, discovery, scheduling catalog, planning, graduation audit, reschedule, notifications, onboarding, and global data endpoints.
 
-Purpose: User registration, login, profile response, and disabled email-verification compatibility.
+Services:
+- Orchestrator service layer is present through `StudentOrchestrator`.
+- Durable orchestrator helpers are present: `RunTracker`, `WorkflowTracker`, and `MemoryManager`.
+- Provider/prompt services are present: `PromptManager`, `PromptRegistry`, `OpenRouterProvider`.
+
+Repositories:
+- No new product-domain repositories were found for Career, Finance, Academic Success, College Comparison, or true Scheduling.
+- Existing repositories remain centered on Discovery, Scheduling Catalog, Planning, Auth, Onboarding, and legacy reschedule/plan persistence.
+
+Schemas:
+- Provider-neutral LLM schemas exist: `LLMMessage`, `LLMRequest`, `LLMResponse`, `LLMUsage`, `LLMHealthCheck`.
+- Orchestrator schemas exist for intent results, module responses, student context, workflow events, and orchestrator state.
+- Agentic SQLAlchemy models exist for run/memory/observability persistence.
+
+Modules:
+- `app/models/agentic.py` now defines agentic persistence models.
+- `app/orchestrator/*` contains a full orchestration scaffold.
+- `student.domains.planning.module` exposes Planning module metadata and tools.
+
+Tool layers:
+- Academic Planning tool registry exists with 9 tools.
+- No Scheduling, Career, Finance, Academic Success, or College Comparison tool registry exists.
+
+Provider integrations:
+- OpenRouter provider abstraction exists as a stub.
+- Network calls are intentionally disabled.
+- Health check returns configured/stub status.
+
+Database/migrations:
+- Migrations now run from `0001` through `0009`.
+- `0005` creates normalized catalog/planning/career/scheduling tables.
+- `0006` links normalized plans to legacy education plans.
+- `0007` and `0008` adjust active plan schedule behavior.
+- `0009` creates the `agentic` schema with orchestrator run, workflow, module execution, student preference, and conversation memory tables.
+
+### Modified Components
+
+Database metadata:
+- `app/models/__init__.py` now imports normalized discovery, scheduling, planning, legacy, onboarding, user, and agentic models.
+- This is a material improvement over the earlier state where migration/metadata coverage was incomplete.
+
+Orchestrator:
+- `StudentOrchestrator` now wires graph execution, durable run tracking, workflow events, module execution traces, and memory update hooks.
+- `ModuleSelector` recognizes official planned modules.
+- `IntentRouter` has deterministic rules for Academic Planning, Scheduling, Career, Finance, Academic Success, and College Comparison.
+
+LLM infrastructure:
+- Provider-neutral contracts and prompt registry are present.
+- `OpenRouterProvider` is a tested stub, not a live API client.
+
+Academic Planning:
+- Tool registry and module metadata are present and tested.
+- Normalized planning APIs/services/repositories remain the most complete domain implementation.
+
+Database schema:
+- Career and normalized scheduling tables are now included in migrations, but still not implemented as active product services/routes.
+
+### Deleted Components
+
+No deleted first-party backend components were identified from the current tree. Empty package placeholders still exist for `career`, `finance`, and `academics`.
+
+## Current Domain Inventory
+
+### Auth
 
 Status: Partial.
 
@@ -39,16 +105,20 @@ Repositories:
 Schemas:
 - `student.domains.auth.schemas.auth`
 
+Models/tables:
+- `users`
+- `customers`
+- `email_otps` exists in migration `0003` but active email verification is disabled.
+- `login_history` exists in migration `0005` but is not actively used by login routes.
+
 Findings:
 - Registration and login are implemented.
-- Email verification is explicitly disabled and returns permissive stub responses.
-- The live schema docs mention `email_otps` and `login_history`, but active route behavior does not use them.
+- Email verification remains a permissive disabled stub.
+- Login history persistence is not wired to auth service behavior.
 
 ### Discovery / Catalog
 
-Purpose: Browse universities, programs, courses, prerequisites, and corequisites.
-
-Status: Partial to complete for current catalog browsing.
+Status: Partial to strong for internal catalog browsing.
 
 APIs:
 - `GET /api/universities`
@@ -78,23 +148,20 @@ Schemas:
 - `program.py`
 - `course.py`
 
-Models:
-- `University`
-- `Program`
-- `Course`
-- `CoursePrerequisite`
-- `CourseCorequisite`
+Models/tables:
+- `universities`
+- `programs`
+- `courses`
+- `course_prerequisites`
+- `course_corequisites`
 
 Findings:
-- Internal catalog browsing is implemented and tested.
-- University comparison exists but is closer to catalog comparison than a complete planned College Comparison module.
-- A College Scorecard client exists, but core university repository responses currently appear database-centered and several scorecard-style fields are nullable.
+- Discovery is the primary read interface for academic catalog data.
+- College Scorecard client/repository code exists, but the production comparison endpoint is still a simple university comparison endpoint rather than a full College Comparison module.
 
 ### Academic Planning
 
-Purpose: Manage student education plans, selected plan courses, validation, and graduation audit.
-
-Status: Partial, close to complete for first-version normalized planning.
+Status: Partial, highest-readiness planned module.
 
 APIs:
 - `GET /api/plans`
@@ -109,35 +176,38 @@ APIs:
 - `POST /api/plans/{plan_id}/validate`
 - `POST /api/plans/{plan_id}/validate-course`
 - `GET /api/plans/{plan_id}/audit`
-- Legacy compatibility: `POST /api/users/education-plan`
-- Legacy compatibility: `POST /api/users/education-plan/query`
-- Legacy compatibility: `POST /api/users/education-plan/list`
-- Legacy compatibility: `POST /api/users/education-plan/delete`
+- Legacy: `POST /api/users/education-plan`
+- Legacy: `POST /api/users/education-plan/query`
+- Legacy: `POST /api/users/education-plan/list`
+- Legacy: `POST /api/users/education-plan/delete`
 
 Services:
 - `NormalizedPlanService`
 - `PlanningValidationService`
 - `GraduationAuditService`
-- `education_plan_service` legacy compatibility service
+- `education_plan_service`
 
 Repositories:
 - `NormalizedPlanRepository`
 - `PlanCourseRepository`
 - `PlanningValidationRepository`
 - `GraduationAuditRepository`
-- `plan_repository` legacy compatibility repository
+- `plan_repository`
 - `reschedule_repository`
 
 Schemas:
 - `normalized_plan.py`
 - `planning_validation.py`
 - `graduation_audit.py`
-- `education.py` legacy compatibility schemas
+- `education.py`
 
-Models:
-- `EdPlan`
-- `PlanCourse`
-- Legacy shared models: `EducationPlan`, `ProgramCourse`, `CourseSchedule`, `CourseReschedule`
+Models/tables:
+- `ed_plans`
+- `plan_courses`
+- `education_plans`
+- `program_courses`
+- `course_schedules`
+- `course_reschedules`
 
 Tool layer:
 - `create_plan`
@@ -150,27 +220,26 @@ Tool layer:
 - `validate_plan`
 - `audit_plan`
 
-Implemented features:
-- Normalized plan list/create/read/update/deactivate.
-- Plan-course list/add/update/delete.
-- Course move through plan-course update.
-- Deterministic validation for duplicate courses, prerequisites, corequisites, and 18-credit term limit.
-- Candidate course validation for add/update style checks.
-- Graduation audit against program catalog courses.
-- Legacy JSON plan persistence for existing frontend compatibility.
+Validation:
+- Duplicate course detection.
+- Prerequisite validation by term order.
+- Corequisite same-term validation.
+- Term credit limit check using `MAX_TERM_CREDITS = 18`.
 
-Partial or missing behavior:
+Graduation audit:
+- Calculates planned credits, required credits, remaining credits, missing catalog courses, completion percentages, and readiness flag.
+
+Limitations:
 - Validation reports issues but does not block plan-course writes.
-- `MAX_TERM_CREDITS = 18` is hard-coded.
-- Graduation audit treats planned courses as completed because no transcript or completed-course source of truth exists.
-- No transcript, transfer credit, substitutions, waivers, advisor approval, or persisted audit history.
-- Future planning tools listed in the module README are not implemented: `generate_plan`, `optimize_plan`, `forecast_graduation`.
+- Audit treats planned courses as completed because there is no transcript/completed-course source of truth.
+- No transfer credits, substitutions, waivers, minimum grade rules, grouped prerequisites, advisor overrides, or persisted audit history.
+- Planning tools are not yet wrapped as an official `BaseModule` named `Academic Planning` for orchestrator execution.
 
-### Scheduling Catalog
+Completion estimate: 75%.
 
-Purpose: Expose academic terms, course offerings, sections, and section meetings.
+### Scheduling
 
-Status: Partial. Catalog lookup exists; true scheduling does not.
+Status: Partial.
 
 APIs:
 - `GET /api/terms`
@@ -180,14 +249,14 @@ APIs:
 - `GET /api/offerings/{id}/sections`
 - `GET /api/sections/{id}`
 - `GET /api/sections/{id}/meetings`
-- Legacy compatibility: `POST /api/users/education-plan/reschedule`
+- Legacy: `POST /api/users/education-plan/reschedule`
 
 Services:
 - `TermService`
 - `CourseOfferingService`
 - `SectionService`
 - `SectionMeetingService`
-- Legacy reschedule behavior is routed through `education_plan_service.save_reschedule_for_request`
+- Legacy reschedule behavior through `education_plan_service`
 
 Repositories:
 - `TermRepository`
@@ -200,97 +269,179 @@ Schemas:
 - `scheduling.schemas.catalog`
 - Legacy reschedule schema in `planning.schemas.education`
 
-Models:
-- `AcademicTerm`
-- `CourseOffering`
-- `Section`
-- `SectionMeeting`
-- Legacy `CourseReschedule`
+Models/tables:
+- Active models: `AcademicTerm`, `CourseOffering`, `Section`, `SectionMeeting`, `CourseReschedule`, legacy `CourseSchedule`.
+- Migrated but not modeled/serviced: `plan_sections`, `plan_schedules`.
 
-Findings:
-- Course offerings, sections, and section meetings exist as read-only catalog/reference data.
-- `section_meetings` has a conflict-lookup index, but no conflict-detection service uses it.
-- `plan_sections` and `plan_schedules` are documented in the live schema but have no checked-in SQLAlchemy models, repositories, services, routes, or tests.
-- The scheduling package currently contains catalog data, which is a known boundary mismatch documented in `docs/domain_boundary_review.md`.
+Capability status:
+
+| Capability | Status | Finding |
+| --- | --- | --- |
+| Course Offerings | Implemented | Read-only model/repository/service/API exists. |
+| Sections | Implemented | Read-only model/repository/service/API exists. |
+| Section Meetings | Implemented | Read-only model/repository/service/API exists. |
+| Schedule Models | Partial | Legacy `CourseSchedule` exists; `plan_sections` and `plan_schedules` are migrated but not represented in active models/services/routes. |
+| Conflict Detection | Missing | Only a DB index exists on section meeting time fields. No service/API/tool performs conflict checks. |
+| Schedule Generation | Missing | No timetable generation, section selection, scoring, or persistence workflow. |
+
+Completion estimate: 25%.
+
+### Career
+
+Status: Missing as a product module; partial data model exists in migrations.
+
+APIs: None found.
+
+Services: None found.
+
+Repositories: None found.
+
+Schemas: None found.
+
+Tool layer: None found.
+
+Models/tables:
+- Migrated tables: `careers`, `program_careers`, `course_careers`.
+- No checked-in SQLAlchemy model classes for these tables.
+
+Data sources:
+- Backend has migrated career mapping tables.
+- Frontend static career assets exist outside backend.
+- No backend career API/data-source service is implemented.
+
+Completion estimate: 10%.
+
+### Finance
+
+Status: Missing.
+
+APIs: None found.
+
+Services: None found.
+
+Repositories: None found.
+
+Schemas: None found.
+
+Tool layer: None found.
+
+Capabilities:
+- Scholarships: Missing.
+- Aid data: Missing as a Finance module.
+- Tuition data: Missing.
+- Cost estimation: Missing.
+
+Related data:
+- University/College Scorecard mapping includes some cost/debt-style fields, but no Finance domain exists.
+
+Completion estimate: 0%.
+
+### Academic Success
+
+Status: Missing.
+
+APIs: None found.
+
+Services: None found.
+
+Repositories: None found.
+
+Schemas: None found.
+
+Capabilities:
+- Risk detection: Missing.
+- Intervention logic: Missing.
+- Retention logic: Missing.
+- Success metrics: Missing.
+
+Related data:
+- College Scorecard client maps institution-level retention fields.
+- No student-level success/risk/intervention workflow exists.
+
+Completion estimate: 0%.
+
+### College Comparison
+
+Status: Partial.
+
+Implemented:
+- `POST /api/universities/compare` compares selected universities.
+- College Scorecard client/repository exists.
+- University schema has cost/debt/outcome-style optional fields.
+
+Missing:
+- No official `College Comparison` orchestrator module implementation.
+- No tool registry.
+- No program comparison workflow.
+- No formal outcome comparison service.
+- No formal cost comparison service.
+
+Capability status:
+
+| Capability | Status | Finding |
+| --- | --- | --- |
+| University Comparison | Partial | API exists, but comparison logic is basic and catalog-oriented. |
+| Program Comparison | Missing | No dedicated API/service. |
+| Outcome Comparison | Partial | Scorecard-style fields exist, but no comparison service contract. |
+| Cost Comparison | Partial | Some fields exist, but no Finance/Cost service. |
+
+Completion estimate: 25%.
 
 ### Onboarding
 
-Purpose: Persist intake form submissions.
-
 Status: Partial.
 
-APIs:
+API:
 - `POST /api/intake`
 
-Services:
+Service:
 - `intake_service.save_submission`
 
-Repositories:
+Repository:
 - `intake_repository`
 
-Schemas:
-- No explicit Pydantic request schema; the route accepts raw `dict`.
+Model/table:
+- `intake_submissions`
 
-Models:
-- `IntakeSubmission`
-
-Findings:
-- Intake persistence exists.
-- Contract is loose because request data is untyped.
+Finding:
+- Persistence exists, but request body is raw `dict`; no typed request schema is present.
 
 ### Notifications
 
-Purpose: Notify an advisor by email handoff.
-
 Status: Partial.
 
-APIs:
+API:
 - `POST /api/users/email-advisor`
 
-Services:
+Service:
 - `notification_service.notify_advisor`
 
-Repositories:
-- None found.
-
-Schemas:
-- None found; route accepts raw `dict`.
-
-Findings:
-- Endpoint validates minimal fields and delegates to a notification service.
-- There is no persisted notification record or typed request contract.
+Finding:
+- Minimal advisor notification handoff exists.
+- No typed request schema or persisted notification record.
 
 ### Global Data
 
-Purpose: Country and state lookup.
-
-Status: Complete for current lookup needs.
+Status: Implemented for current lookup needs.
 
 APIs:
 - `GET /api/global/countries`
 - `GET /api/global/states/{country_id}`
 
-Services:
-- `global_service.list_countries`
-- `global_service.list_states`
+Service:
+- `global_service`
 
-Repositories:
-- Direct SQLAlchemy selects in service layer.
+Models/tables:
+- `countries`
+- `states`
 
-Schemas:
-- `global_data.py`
+## Agent Architecture Review
 
-Models:
-- `Country`
-- `State`
+### Implemented Orchestrator Components
 
-### Orchestrator
-
-Purpose: Provide generic student-agent workflow coordination.
-
-Status: Partial framework; production modules not registered/implemented.
-
-Implemented components:
+- `StudentOrchestrator`
+- `StudentGraph`
+- `build_student_graph`
 - `ContextLoader`
 - `IntentRouter`
 - `ModuleSelector`
@@ -299,331 +450,514 @@ Implemented components:
 - `MemoryManager`
 - `RunTracker`
 - `WorkflowTracker`
-- `StudentOrchestrator`
 - `ModuleRegistry`
 - `BaseModule`
 - `ExampleModule`
-- OpenRouter provider abstraction and prompt registry
+- `PromptRegistry`
+- `PromptManager`
+- `BaseLLMProvider`
+- `OpenRouterProvider`
+- LLM request/response/health schemas
 
-Official planned modules:
-- `Academic Planning`
-- `Scheduling`
-- `Career`
-- `Finance`
-- `Academic Success`
-- `College Comparison`
+### Agentic Persistence
 
-Findings:
-- Intent routing recognizes all planned module categories.
-- Module selection validates official names.
-- Missing registry modules are returned as `"Module not yet implemented"`.
-- The implemented planning tool layer is not yet wrapped as an orchestrator `BaseModule`.
+Migration `0009` creates:
+- `agentic.orchestrator_runs`
+- `agentic.workflow_events`
+- `agentic.module_executions`
+- `agentic.student_preferences`
+- `agentic.conversation_memory`
 
-### Career
+Models in `app/models/agentic.py` map these tables.
 
-Purpose: Planned career guidance, career mappings, outcomes, internships, and related recommendations.
+### OpenRouter Integration
 
-Status: Missing as a backend module.
-
-APIs: None found.
-
-Services: None found.
-
-Repositories: None found.
-
-Schemas: None found.
-
-Models:
-- No checked-in SQLAlchemy models in `student.domains.career`.
-- Live schema docs list `careers`, `program_careers`, and `course_careers`.
+Status: Partial.
 
 Findings:
-- Career data structures exist in the live schema documentation only.
-- No career API, service, repository, tool, or orchestrator module is implemented.
+- `BaseLLMProvider` abstraction exists.
+- `OpenRouterProvider` exists.
+- Request payload construction exists.
+- Response parsing exists.
+- Health check exists.
+- Tests cover payload construction and stub responses.
+- Network calls are disabled by design.
+- API key handling/live OpenRouter calls are not implemented.
 
-### Finance
+### Routing and Selection
 
-Purpose: Planned finance guidance, scholarships, financial aid, tuition data, and cost estimation.
-
-Status: Missing.
-
-APIs: None found.
-
-Services: None found.
-
-Repositories: None found.
-
-Schemas: None found.
-
-Models: None found.
+Status: Partial.
 
 Findings:
-- Discovery university schemas include some financial fields such as debt/cost-style values, but this is not a Finance module.
-- No scholarship, financial aid, tuition, or cost-estimation domain exists.
+- Deterministic routing rules exist for all official planned modules.
+- Module selection validates official module names.
+- Module executor returns `"Module not yet implemented"` for unregistered selected modules.
+- Only `ExampleModule` exists as a `BaseModule` implementation.
+- Academic Planning has tools but not a production `BaseModule` wrapper named `Academic Planning`.
 
-### Academic Success
+### Architecture Alignment
 
-Purpose: Planned risk detection, intervention logic, retention logic, and success metrics.
+Modules already matching planned architecture:
+- Orchestrator framework components match the documented workflow.
+- Academic Planning domain has service-backed tools.
+- Discovery/Catalog supports Planning and College Comparison foundations.
+- Scheduling Catalog supports future Scheduling inputs.
 
-Status: Missing.
+Modules requiring refactoring:
+- Academic Planning needs an official `BaseModule` adapter for orchestrator execution.
+- Scheduling package currently owns catalog/reference data and should eventually split true Scheduling from Catalog.
+- Context loading mixes normalized `EdPlan` with legacy `EducationPlan`; this may need simplification before production orchestration.
+- College Comparison should become a first-class service/module instead of only a university endpoint.
 
-APIs: None found.
+Missing planned modules:
+- Scheduling production module.
+- Career module.
+- Finance module.
+- Academic Success module.
+- College Comparison module.
 
-Services: None found.
+Orchestrator readiness: Partial.
 
-Repositories: None found.
+Reason: The framework, durable tracking, prompt scaffolding, memory, routing, and provider contracts exist. Production module implementations, live LLM calls, tool selection/execution over domain tools, and API exposure for orchestrated conversations are still missing.
 
-Schemas: None found.
+## Tool Layer Audit
 
-Models: None found.
+### Academic Planning Tools
 
-Findings:
-- No GPA, grade, attendance, risk, intervention, retention, or success metric workflow exists.
-- College Scorecard retention data may be mapped for universities, but that is institutional comparison data, not student success logic.
+| Tool | Exists | Service Connected | Tested |
+| --- | --- | --- | --- |
+| `create_plan` | Yes | Yes, `NormalizedPlanService.create_plan` | Yes, checked-in delegation test. |
+| `update_plan` | Yes | Yes, `NormalizedPlanService.update_plan` | Yes, checked-in delegation test. |
+| `delete_plan` | Yes | Yes, `NormalizedPlanService.deactivate_plan` | Yes, checked-in delegation test. |
+| `get_plan` | Yes | Yes, `NormalizedPlanService.get_plan_by_id` | Yes, checked-in delegation test. |
+| `add_course` | Yes | Yes, `NormalizedPlanService.add_plan_course` | Yes, checked-in delegation test. |
+| `remove_course` | Yes | Yes, `NormalizedPlanService.delete_plan_course` | Yes, checked-in delegation test. |
+| `move_course` | Yes | Yes, `NormalizedPlanService.update_plan_course` | Yes, checked-in delegation test. |
+| `validate_plan` | Yes | Yes, `PlanningValidationService.validate_plan` | Yes, checked-in delegation test. |
+| `audit_plan` | Yes | Yes, `GraduationAuditService.get_audit` | Yes, checked-in delegation test. |
 
-## Academic Planning Module
+### Other Tool Registries
 
-### Existing Features
+| Module | Tool Registry Exists | Service Connected | Tested |
+| --- | --- | --- | --- |
+| Scheduling | No | No | No |
+| Career | No | No | No |
+| Finance | No | No | No |
+| Academic Success | No | No | No |
+| College Comparison | No | No | No |
 
-Plan CRUD: Partial.
-- Normalized plan list/create/read/update/deactivate exists.
-- Delete is implemented as deactivation.
-- Legacy JSON-backed plan add/query/list/delete still exists.
+Verification note:
+- Attempted selected pytest run using bundled venv.
+- Collection failed because `langgraph` is missing from the local venv, even though `requirements.txt` and `pyproject.toml` declare `langgraph>=0.2.60`.
+- Command attempted: `./venv/bin/python -m pytest tests/orchestrator/test_llm_infrastructure.py tests/student/domains/planning/test_academic_planning_module.py tests/student/domains/scheduling/test_catalog_service.py`.
 
-Plan Courses: Partial.
-- Add/list/update/delete courses in a normalized plan exists.
-- Move course exists through `move_course` tool and `PATCH /api/plans/{plan_id}/courses/{course_id}`.
-- No section-level selection or transcript status source exists.
+## Database Audit (Latest)
 
-Validation: Partial.
-- Implemented checks: duplicates, prerequisites, corequisites, term credit limit.
-- Validation can run for full plan or candidate course.
-- Validation does not enforce writes.
-- No grouped prerequisites, minimum grade rules, transfer rules, substitution/waiver handling, or section meeting conflicts.
+Source: Read-only live database inspection using the configured `DATABASE_URL` from `fastapi_backend/.env`.
 
-Graduation Audit: Partial.
-- Calculates planned credits, required credits, remaining credits, completion percentage, missing courses, and graduation readiness.
-- Treats planned courses as completed.
-- Does not use transcript, transfer credit, substitutions, waivers, or advisor approval state.
+Connection note:
+- The app settings object currently fails to load `.env` because `DEBUG` has a non-boolean value and `OPENROUTER_API_KEY` is not declared on `Settings`.
+- The audit connected by reading only `DATABASE_URL` directly and did not print secrets.
 
-### Existing APIs
+### Schemas
 
-- `GET /api/plans`
-- `POST /api/plans`
-- `GET /api/plans/{plan_id}`
-- `PATCH /api/plans/{plan_id}`
-- `DELETE /api/plans/{plan_id}`
-- `GET /api/plans/{plan_id}/courses`
-- `POST /api/plans/{plan_id}/courses`
-- `PATCH /api/plans/{plan_id}/courses/{course_id}`
-- `DELETE /api/plans/{plan_id}/courses/{course_id}`
-- `POST /api/plans/{plan_id}/validate`
-- `POST /api/plans/{plan_id}/validate-course`
-- `GET /api/plans/{plan_id}/audit`
-- Legacy routes under `/api/users/education-plan`
+Schemas visible in the database:
+- `agentic`
+- `information_schema`
+- `pg_catalog`
+- `public`
 
-### Existing Services
+Application schemas:
+- `public`
+- `agentic`
 
-- `NormalizedPlanService`
-- `PlanningValidationService`
-- `GraduationAuditService`
-- `education_plan_service`
+### Tables And Row Counts
 
-### Existing Repositories
+| Schema | Table | Row Count |
+| --- | --- | ---: |
+| `agentic` | `conversation_memory` | 0 |
+| `agentic` | `module_executions` | 0 |
+| `agentic` | `orchestrator_runs` | 0 |
+| `agentic` | `student_preferences` | 0 |
+| `agentic` | `workflow_events` | 0 |
+| `public` | `academic_terms` | 2 |
+| `public` | `alembic_version` | 1 |
+| `public` | `careers` | 10 |
+| `public` | `countries` | 0 |
+| `public` | `course_careers` | 10 |
+| `public` | `course_corequisites` | 611 |
+| `public` | `course_offerings` | 8 |
+| `public` | `course_prerequisites` | 1169 |
+| `public` | `course_reschedules` | 1 |
+| `public` | `course_schedules` | 0 |
+| `public` | `courses` | 6157 |
+| `public` | `customers` | 0 |
+| `public` | `ed_plans` | 1 |
+| `public` | `education_plans` | 28 |
+| `public` | `email_otps` | 0 |
+| `public` | `intake_submissions` | 65 |
+| `public` | `login_history` | 0 |
+| `public` | `plan_courses` | 1 |
+| `public` | `plan_schedules` | 0 |
+| `public` | `plan_sections` | 0 |
+| `public` | `program_careers` | 10 |
+| `public` | `program_courses` | 750 |
+| `public` | `programs` | 363 |
+| `public` | `section_meetings` | 18 |
+| `public` | `sections` | 10 |
+| `public` | `states` | 0 |
+| `public` | `universities` | 6 |
+| `public` | `users` | 39 |
 
-- `NormalizedPlanRepository`
-- `PlanCourseRepository`
-- `PlanningValidationRepository`
-- `GraduationAuditRepository`
-- `plan_repository`
-- `reschedule_repository`
+### Empty Tables
 
-### Existing Tool Layer
+Completely empty:
+- `agentic.conversation_memory`
+- `agentic.module_executions`
+- `agentic.orchestrator_runs`
+- `agentic.student_preferences`
+- `agentic.workflow_events`
+- `public.countries`
+- `public.course_schedules`
+- `public.customers`
+- `public.email_otps`
+- `public.login_history`
+- `public.plan_schedules`
+- `public.plan_sections`
+- `public.states`
 
-- `create_plan`: Ready.
-- `update_plan`: Ready.
-- `delete_plan`: Ready, implemented as deactivation.
-- `get_plan`: Ready.
-- `add_course`: Ready.
-- `remove_course`: Ready.
-- `move_course`: Ready.
-- `validate_plan`: Ready.
-- `audit_plan`: Ready.
+Nearly empty:
+- `public.ed_plans`: 1 row.
+- `public.plan_courses`: 1 row.
+- `public.course_reschedules`: 1 row.
+- `public.academic_terms`: 2 rows.
+- `public.course_offerings`: 8 rows.
+- `public.sections`: 10 rows.
+- `public.section_meetings`: 18 rows.
 
-### Status
+Likely seeded/demo-only data:
+- Many UUIDs use obvious repeated patterns such as `11111111`, `aaaaaaaa`, `bbbbbbbb`, `cccccccc`, `dddddddd`, `eeeeeeee`, `ffffffff`, and `99999999`.
+- Sample plan name is `Rudra Test Plan`.
+- Scheduling data contains only Fall 2026 and Spring 2027, 8 offerings, 10 sections, and 18 meetings.
+- Career data has 10 broad sample careers and 20 total mapping rows.
 
-Partial.
+### Student Module Data Readiness
 
-Reason: The module has strong first-version CRUD, validation, audit, tests, and tools, but lacks transcript-aware audit, enforcement of validation at write time, generated/optimized plans, forecasting, and advanced degree-rule features.
+Academic Planning: Partial.
+- `ed_plans`: exists, 1 row.
+- `plan_courses`: exists, 1 row.
+- `course_prerequisites`: exists, 1169 rows.
+- `course_corequisites`: exists, 611 rows.
+- `academic_terms`: exists, 2 rows.
+- Catalog foundation is strong, but normalized student plan usage is minimal.
+- Legacy planning has more data: `education_plans` has 28 rows and `program_courses` has 750 rows.
 
-## Scheduling Capabilities
+Scheduling: Partial.
+- `academic_terms`: 2 rows.
+- `course_offerings`: 8 rows.
+- `sections`: 10 rows.
+- `section_meetings`: 18 rows.
+- `plan_sections`: 0 rows.
+- `plan_schedules`: 0 rows.
+- Catalog section data exists only as a small demo slice; student schedule persistence is empty.
 
-| Capability | Finding | Status |
-| --- | --- | --- |
-| Course Offerings | `CourseOffering` model, repository, service, schema, and read APIs exist. | Partial |
-| Sections | `Section` model, repository, service, schema, and read APIs exist. | Partial |
-| Section Meetings | `SectionMeeting` model, repository, service, schema, and read APIs exist. | Partial |
-| Schedule Models | Legacy `CourseSchedule` exists; live schema docs mention `plan_schedules`; no normalized checked-in model or API. | Partial |
-| Conflict Detection | No service or API; only a `section_meetings` conflict lookup index exists. | Missing |
-| Attendance Logic | No attendance, availability, commute, or attendance optimization logic found. | Missing |
+Career: Partial.
+- `careers`: exists, 10 rows.
+- `program_careers`: exists, 10 rows.
+- `course_careers`: exists, 10 rows.
+- Relationships are valid with no detected orphan rows.
+- Data exists but appears sample-scale and is not enough for robust recommendations.
 
-Overall scheduling status: Partial.
+Finance: Missing.
+- No table found for `tuition`.
+- No table found for `financial_aid`.
+- No table found for `scholarships`.
+- No table found for `cost_estimation`.
+- University schemas/code may carry some cost/debt fields from College Scorecard, but the database has no first-class finance domain data.
 
-## Career Capabilities
+Academic Success: Missing.
+- No table found for `grades`.
+- No table found for `gpa`.
+- No table found for `attendance`.
+- No student-level `retention` table found.
+- No `interventions` table found.
+- No `student_risk` table found.
+- Institution-level retention fields may be available through Scorecard integration, but the live database does not contain student success data.
 
-| Capability | Finding | Status |
-| --- | --- | --- |
-| Career Models | Live schema docs list `careers`, `program_careers`, `course_careers`; no checked-in student career models. | Partial |
-| Career APIs | None found. | Missing |
-| Career Services | None found. | Missing |
-| Career Data Sources | Frontend has static career JSON assets; backend has no career data source service. | Missing |
+College Comparison: Partial.
+- University comparison: supported by `universities` with 6 rows.
+- Program comparison: supported by `programs` with 363 rows.
+- Outcome comparison: partial; career mappings exist, but no persisted outcome metrics table was found.
+- Cost comparison: missing in database; no tuition/cost/aid tables found.
 
-Overall career status: Missing.
+### Relationship Summary
 
-## Finance Capabilities
+Primary academic hierarchy:
 
-| Capability | Finding | Status |
-| --- | --- | --- |
-| Scholarships | None found. | Missing |
-| Financial Aid | Some university comparison fields exist, but no finance workflow. | Missing |
-| Tuition Data | No tuition table, API, or service found. | Missing |
-| Cost Estimation | None found. | Missing |
+```text
+University
+  -> Programs
+      -> Courses
+          -> Course prerequisites
+          -> Course corequisites
+          -> Course offerings
+              -> Sections
+                  -> Section meetings
+```
 
-Overall finance status: Missing.
+Planning hierarchy:
 
-## Student Success Capabilities
+```text
+User
+  -> Ed plans
+      -> Plan courses
+      -> Plan sections
+      -> Plan schedules
 
-| Capability | Finding | Status |
-| --- | --- | --- |
-| Risk Detection | None found. | Missing |
-| Intervention Logic | None found. | Missing |
-| Retention Logic | No student-level retention logic; only possible institution retention fields in scorecard mapping. | Missing |
-| Success Metrics | None found. | Missing |
+User
+  -> Legacy education plans
+      -> Legacy program courses
+      -> Legacy course schedules
+```
 
-Overall student success status: Missing.
+Career hierarchy:
 
-## Integration Readiness Review
+```text
+Career
+  -> Program career mappings
+  -> Course career mappings
+```
 
-| Planned Module | Existing Backend Coverage | Required Work |
-| --- | --- | --- |
-| Academic Planning | 75% | Wrap planning tools/services as an orchestrator `BaseModule`; enforce or explicitly separate validation from writes; add transcript/completed-course source; add generated/optimized plan and graduation forecasting only after rules are stable. |
-| Scheduling | 25% | Add normalized `plan_sections` and `plan_schedules` models; build schedule-generation service; implement student availability/constraints; implement conflict detection; expose scheduling APIs and tools. |
-| Career | 25% | Add career SQLAlchemy models for existing live tables; create career APIs/services/repositories/schemas; define career guidance contracts; add data source strategy for internships/jobs/outcomes. |
-| Finance | 0% | Define finance schema and data sources; add scholarships, aid, tuition, and cost-estimation services; expose APIs and tools. |
-| Academic Success | 0% | Define student success data model; add GPA/grade/attendance inputs; implement risk, intervention, retention, and metrics services; expose APIs and tools. |
-| College Comparison | 25% | Expand beyond `POST /api/universities/compare`; define comparison criteria; integrate cost/outcome/admission/retention fields; add stable data-source behavior and a module/tool contract. |
+Agentic hierarchy:
 
-## Tool Layer Readiness
+```text
+User / Ed plan
+  -> Orchestrator runs
+      -> Module executions
+      -> Workflow events
+      -> Conversation memory
+  -> Student preferences
+```
 
-| Tool | Status | Notes |
-| --- | --- | --- |
-| `create_plan` | Ready | Existing normalized planning service. |
-| `update_plan` | Ready | Existing normalized planning service. |
-| `delete_plan` | Ready | Deactivates a plan rather than hard delete. |
-| `get_plan` | Ready | Existing normalized planning service. |
-| `add_course` | Ready | Existing plan-course service; validation is not enforced. |
-| `remove_course` | Ready | Existing plan-course delete service. |
-| `move_course` | Ready | Existing plan-course update service. |
-| `validate_plan` | Ready | Existing validation service. |
-| `audit_plan` | Ready | Existing graduation audit service; transcript-unaware. |
-| `generate_plan` | Missing | Listed as future in planning README. |
-| `optimize_plan` | Missing | Listed as future in planning README. |
-| `forecast_graduation` | Missing | Listed as future in planning README. |
-| `build_schedule` | Missing | No scheduling generation service. |
-| `detect_conflicts` | Missing | No conflict detection service despite section meeting data. |
-| `select_section` | Missing | No normalized plan-section model wired in code. |
-| `internship_search` | Missing | No backend career data source or career API. |
-| `career_match` | Missing | Career mapping tables are not wired to backend code. |
-| `find_scholarships` | Missing | No finance module. |
-| `estimate_cost` | Missing | No tuition/cost model or service. |
-| `detect_risk` | Missing | No academic success module. |
-| `recommend_intervention` | Missing | No intervention model or service. |
-| `compare_colleges` | Partial | `POST /api/universities/compare` exists, but no dedicated tool/module contract. |
+Relationship health checks:
+- Programs without universities: 0.
+- Courses without programs: 0.
+- Offerings without course or term: 0.
+- Sections without offerings: 0.
+- Meetings without sections: 0.
+- Plan courses without plan or course: 0.
+- Plan sections without plan or section: 0.
+- Plan schedules without plan: 0.
+- Program career mappings without parent rows: 0.
+- Course career mappings without parent rows: 0.
 
-## Architecture Review
+Note: the generic FK query showed duplicate-looking lines for the composite `ed_plans(program_id, university_id)` constraint. The effective relationship is `ed_plans(program_id, university_id)` to `programs(program_id, university_id)`.
 
-### Alignment
+### Data Quality Review
 
-- The backend follows a clear route/service/repository/schema/model structure in main domains.
-- Discovery, Planning, Validation, Audit, and Scheduling Catalog are separated at package level.
-- The orchestrator framework matches the documented workflow: context loading, intent routing, module selection, module execution, response composition, and memory update.
-- Official planned module names are defined in `ModuleSelector`.
-- Planning tools are thin wrappers over domain services and do not contain route logic.
-- Tests exist for orchestrator infrastructure, discovery, planning, validation, audit, and scheduling catalog metadata/service/repository behavior.
+Good data:
+- `universities`: 6 New Mexico institutions.
+- `programs`: 363 programs, distributed across 6 universities.
+- `courses`: 6157 catalog courses.
+- `course_prerequisites`: 1169 relationships.
+- `course_corequisites`: 611 relationships.
+- Relationship integrity checks found no orphan rows across the audited academic/catalog/career relationships.
 
-### Gaps
+Sample/demo data:
+- `academic_terms`: only Fall 2026 and Spring 2027.
+- `course_offerings`: 8 rows.
+- `sections`: 10 rows, 8 open and 2 closed.
+- `section_meetings`: 18 rows, 15 class meetings and 3 online async meetings.
+- `careers`: 10 broad careers.
+- `program_careers`: 10 mappings.
+- `course_careers`: 10 mappings.
+- UUID patterns and sample labels strongly indicate seeded/demo data in several tables.
 
-- `development_plan.md` is absent.
-- Production orchestrator modules are not implemented or registered.
-- Academic Planning is not yet an orchestrator `BaseModule`.
-- Scheduling package currently contains catalog/reference data, not true scheduling workflows.
-- Career, Finance, Academic Success, and true College Comparison are missing backend domains.
-- Live schema docs include tables not covered by checked-in models/routes, including career mappings and normalized scheduling tables.
-- Checked-in Alembic migrations stop at `0004`, while live schema docs report Alembic live version `0008`.
+Missing or empty data:
+- All `agentic` tables are empty.
+- `plan_sections` and `plan_schedules` are empty.
+- `course_schedules` is empty.
+- `countries` and `states` are empty despite global lookup APIs.
+- `email_otps` and `login_history` are empty.
+- `customers` is empty.
+- No finance or academic success domain tables were found.
 
-### Refactoring Needs
+Suspicious or incomplete data:
+- Normalized Planning has only 1 plan and 1 planned course, while legacy planning has 28 plans and 750 program-course rows.
+- Scheduling catalog data covers only 8 offerings out of 6157 courses.
+- Career mappings cover only 10 programs and 10 courses out of 363 programs and 6157 courses.
+- Global country/state lookup endpoints are backed by empty tables.
+- Agentic infrastructure tables exist but have no run history, preferences, workflow events, or memory.
 
-- Introduce a dedicated Catalog boundary for universities, programs, courses, prerequisites, corequisites, terms, offerings, sections, and meetings when route stability allows.
-- Keep Discovery as a product experience over Catalog rather than the owner of all catalog persistence.
-- Move scheduling catalog code out of `student.domains.scheduling` before implementing true timetable generation, or clearly isolate the new true scheduling services beside the existing catalog code.
-- Reconcile SQLAlchemy metadata imports and Alembic migration history with the live database.
-- Add typed Pydantic schemas for raw-dict routes in onboarding and notifications.
-- Decide whether validation should block writes or remain advisory, then encode that contract consistently in APIs and tools.
+### Data Distributions
 
-## Risk Assessment
+Programs by university:
+- San Juan College: 137.
+- Santa Fe Community College: 132.
+- Northern New Mexico College: 79.
+- University of New Mexico: 7.
+- New Mexico State University: 6.
+- Central New Mexico Community College: 2.
 
-### Data Risks
+Largest course counts by program:
+- Nursing: 291.
+- Business Administration: 240.
+- Computer Science: 210.
+- Elementary Education: 210.
+- Biology: 146.
+- Psychology: 121.
+- Early Childhood Education: 114.
+- Information Engineering Technology: 108.
+- Mechanical Engineering: 100.
+- Automotive Technology: 87.
 
-- Missing data sources for Finance, Career workflows, Academic Success, and internships/jobs.
-- Live database contains tables not represented in checked-in migrations or models.
-- Local migrations do not appear to recreate the documented live normalized schema.
-- Graduation audit has no transcript or completed-course source of truth.
-- Scheduling depends on offering/section/meeting completeness; no evidence of seed freshness or external sync exists.
-- Career tables may exist live but are not accessible through backend code.
+Offerings by term:
+- Fall 2026: 6.
+- Spring 2027: 2.
 
-### Technical Risks
+Section status:
+- Open: 8.
+- Closed: 2.
 
-- Catalog/reference data is split between Discovery and Scheduling, creating future ownership ambiguity.
-- Legacy planning tables and normalized planning tables both remain active.
-- Validation business rules are duplicated conceptually across docs and services, and not enforced on writes.
-- Hard-coded `MAX_TERM_CREDITS = 18` may not match institutional or program-specific policy.
-- Raw `dict` request bodies reduce contract safety in onboarding and notifications.
-- Alembic metadata appears incomplete relative to live schema, making autogenerate and fresh environment setup risky.
+Career industries:
+- Cybersecurity: 2.
+- Data: 2.
+- Healthcare: 2.
+- Technology: 2.
+- Business: 1.
+- Finance: 1.
 
-### Integration Risks
+### Module Readiness Based On Database
 
-- Orchestrator can route to modules that are not implemented, producing unavailable module results.
-- Planning tools are ready but not connected to a production orchestrator module.
-- Scheduling tools cannot be implemented cleanly until normalized schedule/section selection services exist.
-- Career/Finance/Academic Success tools have no backend contracts.
-- College comparison has a basic university comparison endpoint but no planned module/tool abstraction.
-- Frontend static assets for schedule/career may not align with backend source-of-truth APIs.
+| Module | Database Readiness | Basis |
+| --- | ---: | --- |
+| Academic Planning | 60% | Strong catalog/rule data, but only 1 normalized plan and 1 plan course; legacy plan data is richer but separate. |
+| Scheduling | 20% | Terms/offerings/sections/meetings exist but are tiny sample data; no plan sections or plan schedules. |
+| Career | 25% | Career tables and relationships exist, but only 10 careers and 20 mappings total. |
+| Finance | 0% | No finance-specific tables or rows. |
+| Academic Success | 0% | No student performance, risk, attendance, intervention, or success metric tables. |
+| College Comparison | 45% | Universities/programs/courses exist; cost/outcome comparison data is missing or not persisted. |
+
+### Current Database Bottom Line
+
+The database is ready for catalog browsing, basic program/course discovery, and demo-level Academic Planning validation against prerequisites/corequisites. It is not yet ready for production scheduling, finance, academic success, or robust career guidance. Normalized Planning and agentic infrastructure are structurally present but largely unused in the live data.
+
+## Integration Risk Analysis
+
+### Planning Module Risks
+
+- Validation is advisory and does not block writes.
+- Audit is not transcript-aware.
+- Legacy and normalized planning models both remain in active use.
+- Orchestrator context loading still depends on legacy `EducationPlan` for program/university/course context.
+- Planning tools are not exposed through an official orchestrator `BaseModule`.
+
+### Scheduling Module Risks
+
+- Catalog lookup may be mistaken for schedule generation.
+- `plan_sections` and `plan_schedules` are migrated but not implemented.
+- No conflict detection service exists.
+- No availability constraints or section scoring exist.
+- No scheduling tool layer exists.
+
+### Career Module Risks
+
+- Career tables are migrated but not modeled or routed.
+- No data-source ownership exists for internships, jobs, outcomes, or salaries beyond static/migrated fields.
+- Career routing and prompts can select a module that is unavailable.
+
+### Finance Module Risks
+
+- No finance data model exists.
+- No finance APIs/services/tools exist.
+- College comparison and finance concerns may blur if cost fields remain only in university schemas.
+
+### Academic Success Module Risks
+
+- No student performance data source exists.
+- No risk/intervention contracts exist.
+- Retention data in Scorecard is institution-level, not student success logic.
+
+### College Comparison Module Risks
+
+- Current comparison endpoint is not an orchestrator module.
+- Program/outcome/cost comparison is not contractually defined.
+- External Scorecard data may be partial or nullable.
+
+## July 4 Beta Readiness
+
+### Ready For Beta
+
+Features that can realistically ship with current backend behavior:
+- User registration and login.
+- Disabled email verification compatibility.
+- University/program/course discovery using current live catalog data: 6 universities, 363 programs, and 6157 courses.
+- Course prerequisite/corequisite lookup using current live relationship data: 1169 prerequisite rows and 611 corequisite rows.
+- University comparison at a basic level, limited by available institution fields.
+- Academic terms, offerings, sections, and meetings lookup for demo scheduling data only: 2 terms, 8 offerings, 10 sections, and 18 meetings.
+- Normalized education plan CRUD, with the caveat that live normalized usage currently has only 1 plan.
+- Plan-course add/update/remove, with the caveat that live normalized usage currently has only 1 plan course.
+- Planning validation report against real catalog prerequisite/corequisite data.
+- Graduation audit report with clear limitation that planned courses are treated as completed.
+- Legacy education-plan compatibility routes.
+- Intake submission persistence.
+- Advisor notification handoff.
+- Orchestrator infrastructure demo with `ExampleModule` if dependencies are installed.
+
+### Partial
+
+Features requiring additional work before beta-quality use:
+- Academic Planning through orchestrator.
+- OpenRouter integration beyond stubbed provider behavior.
+- Schedule conflict detection, especially because `plan_sections` and `plan_schedules` are empty.
+- Normalized plan section/schedule persistence.
+- Career guidance from database mappings; career tables have data but only 10 careers and 20 total mapping rows.
+- College comparison beyond basic university/program comparison; cost and outcome tables are missing.
+- Agentic memory and run tracking in a deployed flow; all `agentic` tables are currently empty.
+- Global country/state lookup APIs; `countries` and `states` are currently empty.
+
+### Not Ready
+
+Blocked by missing APIs, services, data, or requirements:
+- Schedule generation.
+- Career guidance module.
+- Internship/job search.
+- Finance guidance.
+- Scholarship search.
+- Tuition/cost estimation.
+- Academic Success/risk detection.
+- Student interventions.
+- Transcript-aware graduation readiness.
+- Production natural-language agent behavior using live LLM calls.
 
 ## Recommendations
 
-### Immediate Priorities: Next 1 Week
+### Work Remaining Before July 2
 
-- Create or restore the missing `development_plan.md`, or declare the existing orchestrator/planning docs as the architecture source of truth.
-- Wrap Academic Planning services/tools in an orchestrator `BaseModule` and register it in a controlled test setup.
-- Reconcile Alembic migrations and SQLAlchemy metadata with the documented live schema.
-- Document the validation contract: advisory-only versus write-blocking.
-- Add typed request schemas for intake and advisor notification endpoints.
-- Preserve current route URLs while documenting the Catalog versus Scheduling boundary.
+- Install/sync backend dependencies so tests can run, especially `langgraph`.
+- Add an official `Academic Planning` orchestrator module that wraps existing planning tools/services.
+- Add an API entrypoint for orchestrated student queries if beta requires agent interaction.
+- Decide whether beta audit language should say “plan completion” instead of “graduation readiness” until transcript data exists.
+- Add minimum conflict detection over selected sections if scheduling is in beta scope.
+- Add SQLAlchemy models for `plan_sections` and `plan_schedules` if those tables will be used before beta.
+- Document which modules are intentionally disabled for beta so routing does not promise unavailable functionality.
 
-### Beta Priorities: Before July 4
+### Work Remaining Before July 4
 
-- Complete first-version Academic Planning integration through the orchestrator.
-- Add transcript/completed-course status model or explicitly mark audit as plan-completion audit rather than graduation completion audit.
-- Implement minimum viable schedule conflict detection over existing `sections` and `section_meetings`.
-- Add normalized scheduling models/services for `plan_sections` and `plan_schedules` if those tables remain part of the live schema.
-- Create minimal Career read APIs if career tables are part of beta scope.
-- Create a dedicated College Comparison service contract if comparison is expected in beta.
+- Run and fix the focused orchestrator/planning/scheduling test suites in a clean environment.
+- Register production-ready modules only; leave missing modules unregistered with clear fallback messaging.
+- Harden Planning API responses and validation behavior for the beta path.
+- Seed or verify catalog data needed by the demo/beta schools, programs, courses, terms, sections, and meetings.
+- Add a basic College Comparison service contract if comparison is part of the beta demo.
+- Confirm OpenRouter strategy: keep stubbed responses out of production agent flows or implement live API calls safely.
 
-### Post-Beta Priorities: After July 4
+### Post-Beta Work
 
-- Refactor Catalog into a first-class domain and let Discovery/Scheduling consume it.
-- Implement full schedule generation with availability, constraints, section scoring, and conflict resolution.
-- Build Finance domain with tuition, aid, scholarship, and cost-estimation data sources.
-- Build Academic Success domain with risk detection, interventions, retention metrics, and student outcome signals.
-- Expand Career with program/course-to-career mapping, internships/jobs data source integration, and career recommendation tools.
-- Add advanced planning rules: transfer credit, substitutions, waivers, minimum grades, grouped prerequisites, advisor overrides, and persisted audit history.
+- Build true Scheduling: availability constraints, conflict detection, section selection, schedule generation, scoring, and persistence.
+- Build Career domain over `careers`, `program_careers`, and `course_careers`, then add internships/jobs/outcomes data sources.
+- Build Finance domain: tuition, aid, scholarships, loans, and cost estimation.
+- Build Academic Success domain: grades/GPA, attendance, risk, interventions, retention, and success metrics.
+- Refactor Catalog ownership so Discovery and Scheduling consume a shared catalog boundary.
+- Reconcile legacy and normalized planning context loading.
+- Implement transcript, transfer credit, substitutions, waivers, minimum grade rules, advisor overrides, and persisted audit history.
+- Replace OpenRouter stub with production provider calls, API key handling, retries, rate limits, structured output validation, and observability.
