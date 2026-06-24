@@ -8,19 +8,23 @@ const client = axios.create({
 const unwrapData = (response) => response.data?.data || [];
 
 export const getCatalogUniversities = async () => {
-	const response = await client.get("/catalog/universities");
+	const response = await client.get("/universities", {
+		params: { per_page: 100 },
+	});
 	return unwrapData(response);
 };
 
 export const getCatalogPrograms = async (universityId) => {
-	const response = await client.get(
-		`/catalog/universities/${universityId}/programs`
-	);
+	const response = await client.get("/programs", {
+		params: {
+			university_id: universityId || undefined,
+		},
+	});
 	return unwrapData(response);
 };
 
 export const getCatalogCourses = async (programId) => {
-	const response = await client.get(`/catalog/programs/${programId}/courses`);
+	const response = await client.get(`/programs/${programId}/courses`);
 	return unwrapData(response);
 };
 
@@ -35,3 +39,4 @@ export default {
 	getCatalogCourses,
 	getCareers,
 };
+

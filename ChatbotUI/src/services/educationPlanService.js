@@ -1,10 +1,10 @@
 import {
 	getCatalogCourses,
 	getCatalogPrograms,
-	getCatalogUniversities,
 } from "./catalogService.js";
 
 let educationCache = null;
+let educationWithCoursesCache = null;
 
 const YEAR_LABELS = {
 	1: "First Year",
@@ -18,8 +18,8 @@ const YEAR_LABELS = {
 };
 
 const UNIVERSITY_DISPLAY_ALIASES = {
-	"new mexico state university": "New Mexico State University-Main Campus",
-	"university of new mexico": "University of New Mexico-Main Campus",
+	"new mexico state university-main campus": "New Mexico State University",
+	"university of new mexico-main campus": "University of New Mexico",
 };
 
 const displayUniversityName = (name = "") => {
@@ -28,20 +28,22 @@ const displayUniversityName = (name = "") => {
 };
 
 const normalizeCourse = (course) => ({
-	id: course.course_id,
-	code: course.course_code,
-	name: course.course_name,
-	courseName: course.course_name,
+	id: course.course_id || course.id,
+	code: course.course_code || course.code,
+	name: course.course_name || course.name || course.courseName,
+	courseName: course.course_name || course.courseName || course.name,
 	credits: course.credits,
 	lecture_hours: course.lecture_hours,
 	lab_hours: course.lab_hours,
-	prerequisite: "",
-	corequisite: "",
+	prerequisite: course.prerequisite || "",
+	corequisite: course.corequisite || "",
 	recommended_year:
 		YEAR_LABELS[course.recommended_year] ||
 		course.recommended_year ||
+		course.year ||
 		"Unassigned Year",
-	recommended_semester: course.recommended_semester || "Unassigned Semester",
+	recommended_semester:
+		course.recommended_semester || course.semester || "Unassigned Semester",
 	description: course.description || "",
 });
 
@@ -74,50 +76,89 @@ const groupCoursesByTerm = (courses = []) => {
 	}));
 };
 
-const loadPrograms = async () => {
-	if (educationCache) return educationCache;
-	const universities = await getCatalogUniversities();
-	const programGroups = await Promise.all(
-		universities.map(async (university) => {
-			const programs = await getCatalogPrograms(university.university_id);
-			const universityName = displayUniversityName(university.university_name);
-			return Promise.all(
-				programs.map(async (program) => {
-					const courses = (await getCatalogCourses(program.program_id)).map(
-						normalizeCourse
-					);
-					return {
-						...program,
-						program: program.program_name,
-						university: universityName,
-						campus: universityName,
-						degree: program.degree,
-						total_credit_hours: program.total_credit_hours,
-						college_profile: {
-							university_name: universityName,
-							city: university.city,
-							state: university.state,
-							website: university.website,
-						},
-						courses,
-						years: groupCoursesByTerm(courses),
-					};
-				})
-			);
-		})
+const getUniversityPayload = (program) =>
+	program.university && typeof program.university === "object"
+		? program.university
+		: {};
+
+const normalizeProgram = (program, courses = []) => {
+	const university = getUniversityPayload(program);
+	const universityName = displayUniversityName(
+		program.university_name ||
+			university.university_name ||
+			program.campus ||
+			(typeof program.university === "string" ? program.university : "")
 	);
-	educationCache = programGroups.flat();
-	return educationCache;
+	const normalizedCourses = courses.map(normalizeCourse);
+
+	return {
+		...program,
+		program_id: program.program_id,
+		program: program.program || program.program_name || "",
+		program_name: program.program_name || program.program || "",
+		university: universityName,
+		campus: universityName,
+		degree: program.degree || "",
+		total_credit_hours: program.total_credit_hours,
+		college_profile: {
+			...(program.college_profile || {}),
+			university_id: university.university_id || program.university_id,
+			university_name: universityName,
+			city: university.city || program.city || program.college_profile?.city,
+			state: university.state || program.state || program.college_profile?.state,
+			website:
+				university.website || program.website || program.college_profile?.website,
+		},
+		courses: normalizedCourses,
+		years: normalizedCourses.length
+			? groupCoursesByTerm(normalizedCourses)
+			: program.years || [],
+	};
+};
+
+const loadPrograms = async ({ includeCourses = false } = {}) => {
+	if (includeCourses && educationWithCoursesCache) return educationWithCoursesCache;
+	if (!includeCourses && educationCache) return educationCache;
+
+	const programs = await getCatalogPrograms();
+	const normalizedPrograms = programs.map((program) => normalizeProgram(program));
+
+	if (!includeCourses) {
+		educationCache = normalizedPrograms;
+		return educationCache;
+	}
+
+	educationWithCoursesCache = await Promise.all(
+		normalizedPrograms.map((program) => getProgramWithCourses(program.program_id))
+	);
+	educationCache = educationCache || educationWithCoursesCache;
+	return educationWithCoursesCache;
+};
+
+export const getProgramCourses = async (programId) => {
+	const courses = await getCatalogCourses(programId);
+	return courses.map(normalizeCourse);
+};
+
+export const getProgramWithCourses = async (programId) => {
+	const programs = educationCache || (await loadPrograms());
+	const program = programs.find((entry) => entry.program_id === programId);
+	if (!program) return null;
+	const courses = await getProgramCourses(programId);
+	return normalizeProgram(program, courses);
 };
 
 export const findProgramPlan = async (programName, universityName) => {
-	const programs = await loadPrograms();
+	const normalizedUniversityName = displayUniversityName(universityName);
+	const programs = await loadPrograms({ includeCourses: true });
 	return (
 		programs.find(
 			(program) =>
-				program.program === programName && program.university === universityName
+				program.program === programName &&
+				program.university === normalizedUniversityName
 		) || null
 	);
 };
 
-export const listPrograms = async () => loadPrograms();
+export const listPrograms = async (options) => loadPrograms(options);
+
