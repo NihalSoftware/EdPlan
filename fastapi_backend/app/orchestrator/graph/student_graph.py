@@ -6,9 +6,14 @@ from inspect import isawaitable
 from typing import TypeVar
 from uuid import UUID
 
-from langgraph.graph import END as LANGGRAPH_END
-from langgraph.graph import START as LANGGRAPH_START
-from langgraph.graph import StateGraph
+try:
+    from langgraph.graph import END as LANGGRAPH_END
+    from langgraph.graph import START as LANGGRAPH_START
+    from langgraph.graph import StateGraph
+except ImportError:  # pragma: no cover - exercised only in minimal local envs.
+    LANGGRAPH_END = "__end__"
+    LANGGRAPH_START = "__start__"
+    StateGraph = None
 
 from app.orchestrator.execution.module_executor import ModuleExecutionResult
 from app.orchestrator.schemas.intent_result import IntentResult
@@ -54,6 +59,9 @@ class StudentGraph:
         return state
 
     def _compile(self, nodes: list[StudentGraphNode]):
+        if StateGraph is None:
+            return _SequentialStudentGraph(nodes)
+
         graph = StateGraph(EdPlanState)
         for node in nodes:
             graph.add_node(node.name, self._build_langgraph_handler(node))
@@ -234,3 +242,17 @@ async def _maybe_await(value: T | Awaitable[T]) -> T:
     if isawaitable(value):
         return await value
     return value
+
+
+class _SequentialStudentGraph:
+    """Small compatibility runner used when LangGraph is unavailable locally."""
+
+    def __init__(self, nodes: list[StudentGraphNode]) -> None:
+        self.nodes = nodes
+
+    async def ainvoke(self, raw_state: EdPlanState | dict) -> dict:
+        state = StudentGraph._coerce_state(raw_state)
+        for node in self.nodes:
+            StudentGraph._record_event(state, node.name)
+            state = await node.handler(state)
+        return state.model_dump(mode="python")

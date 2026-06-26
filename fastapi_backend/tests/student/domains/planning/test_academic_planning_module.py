@@ -1,6 +1,7 @@
 import asyncio
 
 from app.student.domains.planning import module
+from app.student.domains.planning.module import AcademicPlanningModule
 from app.student.domains.planning.schemas.normalized_plan import (
     PlanCourseCreateRequest,
     PlanCourseUpdateRequest,
@@ -13,7 +14,13 @@ from app.student.domains.planning.tools import (
     AuditPlanTool,
     CreatePlanTool,
     DeletePlanTool,
+    GetAvailableTermsTool,
+    GetCorequisitesTool,
+    GetCourseDetailsTool,
     GetPlanTool,
+    GetPrerequisitesTool,
+    GetProgramRequirementsTool,
+    GetRemainingCoursesTool,
     MoveCourseTool,
     RemoveCourseTool,
     UpdatePlanTool,
@@ -32,6 +39,12 @@ EXPECTED_TOOL_NAMES = [
     "move_course",
     "validate_plan",
     "audit_plan",
+    "get_remaining_courses",
+    "get_course_details",
+    "get_prerequisites",
+    "get_corequisites",
+    "get_program_requirements",
+    "get_available_terms",
 ]
 
 
@@ -82,7 +95,49 @@ class _AuditService:
 
     async def get_audit(self, db, plan_id):
         self.calls.append(("get_audit", db, plan_id))
-        return {"tool": "audit_plan"}
+        return {
+            "tool": "audit_plan",
+            "plan_id": plan_id,
+            "graduation_ready": False,
+            "credits": {"remaining": 12},
+            "courses": {"missing": 2},
+            "missing_courses": [{"course_id": "course-2"}],
+        }
+
+
+class _CourseReadService:
+    def __init__(self):
+        self.calls = []
+
+    async def get_course_by_id(self, db, course_id):
+        self.calls.append(("get_course_by_id", db, course_id))
+        return {"course_id": course_id}
+
+    async def list_prerequisites(self, db, course_id):
+        self.calls.append(("list_prerequisites", db, course_id))
+        return [{"course_id": "pre-1"}]
+
+    async def list_corequisites(self, db, course_id):
+        self.calls.append(("list_corequisites", db, course_id))
+        return [{"course_id": "co-1"}]
+
+
+class _ProgramReadService:
+    def __init__(self):
+        self.calls = []
+
+    async def get_program_by_id(self, db, program_id):
+        self.calls.append(("get_program_by_id", db, program_id))
+        return {"program_id": program_id, "courses": []}
+
+
+class _TermReadService:
+    def __init__(self):
+        self.calls = []
+
+    async def list_terms(self, db):
+        self.calls.append(("list_terms", db))
+        return [{"term_id": "term-1"}]
 
 
 def test_planning_tool_registry_matches_development_plan_order():
@@ -95,6 +150,14 @@ def test_academic_planning_module_metadata_exposes_registry():
     assert module.MODULE_NAME == "academic_planning"
     assert module.MODULE_DESCRIPTION == "Manage student education plans and graduation pathways."
     assert module.get_tools() is PLANNING_TOOLS
+
+
+def test_academic_planning_module_implements_orchestrator_contract():
+    planning_module = AcademicPlanningModule(db=object())
+
+    assert planning_module.name == "academic_planning"
+    assert planning_module.description == "Manage student education plans and graduation pathways."
+    assert planning_module.available_tool_names == EXPECTED_TOOL_NAMES
 
 
 def test_plan_tool_execution_delegates_to_existing_plan_service():
@@ -148,9 +211,41 @@ def test_validation_and_audit_tools_delegate_to_existing_services():
     assert isinstance(validation_service.calls[-1][3], PlanValidationRequest)
 
     assert asyncio.run(AuditPlanTool(audit_service).execute(db, "plan-1")) == {
-        "tool": "audit_plan"
+        "tool": "audit_plan",
+        "plan_id": "plan-1",
+        "graduation_ready": False,
+        "credits": {"remaining": 12},
+        "courses": {"missing": 2},
+        "missing_courses": [{"course_id": "course-2"}],
     }
     assert audit_service.calls[-1] == ("get_audit", db, "plan-1")
+
+
+def test_read_only_planning_tools_delegate_to_existing_read_services():
+    db = object()
+    audit_service = _AuditService()
+    course_service = _CourseReadService()
+    program_service = _ProgramReadService()
+    term_service = _TermReadService()
+
+    remaining = asyncio.run(GetRemainingCoursesTool(audit_service).execute(db, "plan-1"))
+    assert remaining["remaining_courses"] == [{"course_id": "course-2"}]
+
+    assert asyncio.run(GetCourseDetailsTool(course_service).execute(db, "course-1")) == {
+        "course_id": "course-1"
+    }
+    assert asyncio.run(GetPrerequisitesTool(course_service).execute(db, "course-1")) == [
+        {"course_id": "pre-1"}
+    ]
+    assert asyncio.run(GetCorequisitesTool(course_service).execute(db, "course-1")) == [
+        {"course_id": "co-1"}
+    ]
+    assert asyncio.run(
+        GetProgramRequirementsTool(program_service).execute(db, "program-1")
+    ) == {"program_id": "program-1", "courses": []}
+    assert asyncio.run(GetAvailableTermsTool(term_service).execute(db)) == [
+        {"term_id": "term-1"}
+    ]
 
 
 def _plan_create_payload():

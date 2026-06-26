@@ -32,6 +32,7 @@ from app.orchestrator.router.module_selector import ModuleSelector
 from app.orchestrator.schemas.module_response import FinalResponse
 from app.orchestrator.schemas.student_context import StudentContext
 from app.orchestrator.state.edplan_state import EdPlanState
+from app.student.domains.planning.module import AcademicPlanningModule, MODULE_NAME
 
 
 class StudentOrchestrator:
@@ -53,6 +54,10 @@ class StudentOrchestrator:
         workflow_tracker: WorkflowTracker | None = None,
     ) -> None:
         self.module_registry = module_registry or ModuleRegistry()
+        if db is not None and not self.module_registry.exists(MODULE_NAME):
+            self.module_registry.register(
+                AcademicPlanningModule(db=db, llm_provider=llm_provider)
+            )
         self.context_loader = context_loader or (ContextLoader(db) if db is not None else None)
         self.intent_router = intent_router or IntentRouter()
         self.module_selector = module_selector or ModuleSelector(registry=self.module_registry)

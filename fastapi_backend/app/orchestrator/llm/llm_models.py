@@ -24,6 +24,14 @@ class LLMUsage(BaseModel):
     total_tokens: int | None = None
 
 
+class LLMToolCall(BaseModel):
+    """Provider-neutral tool call requested by a chat model."""
+
+    id: str | None = None
+    name: str
+    arguments: dict[str, Any] = Field(default_factory=dict)
+
+
 class LLMRequest(BaseModel):
     """Provider-neutral request contract for future LLM calls."""
 
@@ -32,6 +40,8 @@ class LLMRequest(BaseModel):
     system_prompt: str | None = None
     temperature: float | None = Field(default=None, ge=0.0, le=2.0)
     max_tokens: int | None = Field(default=None, gt=0)
+    tools: list[dict[str, Any]] = Field(default_factory=list)
+    tool_choice: str | dict[str, Any] | None = None
     metadata: dict[str, Any] = Field(default_factory=dict)
 
 
@@ -43,6 +53,7 @@ class LLMResponse(BaseModel):
     metadata: dict[str, Any] = Field(default_factory=dict)
     usage: LLMUsage | None = None
     finish_reason: str | None = None
+    tool_calls: list[LLMToolCall] = Field(default_factory=list)
     raw_response: dict[str, Any] | None = None
 
 

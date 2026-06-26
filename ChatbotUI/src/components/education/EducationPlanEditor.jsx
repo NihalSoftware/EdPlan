@@ -6,7 +6,10 @@ import {
 	FaPlus,
 } from "react-icons/fa";
 import { addEducationPlan } from "../../services/authService.js";
-import { listPrograms } from "../../services/educationPlanService.js";
+import {
+	getProgramWithCourses,
+	listPrograms,
+} from "../../services/educationPlanService.js";
 import {
 	load as loadStorage,
 	save as saveStorage,
@@ -18,23 +21,12 @@ const MIN_SEMESTER_CREDITS = 12;
 const MAX_SEMESTER_CREDITS = 20;
 const normalizeRequirement = (value) => (value || "").trim();
 const normalizeDegree = (value = "") => {
-	const raw = value.trim().toLowerCase();
-	const aliases = {
-		certificate: "certificate",
-		certificates: "certificate",
-		certification: "certificate",
-		associate: "associate",
-		associates: "associate",
-		"associate degree": "associate",
-		bachelor: "bachelor",
-		bachelors: "bachelor",
-		"bachelor's": "bachelor",
-		master: "master",
-		masters: "master",
-		"master's": "master",
-	};
-	if (aliases[raw]) return aliases[raw];
-	if (raw.endsWith("s") && raw.length > 4) return raw.slice(0, -1);
+	const raw = String(value || "").trim().toLowerCase();
+	if (!raw) return "";
+	if (raw.includes("certificate")) return "certificate";
+	if (raw.includes("associate")) return "associate";
+	if (raw.includes("bachelor")) return "bachelor";
+	if (raw.includes("master")) return "master";
 	return raw;
 };
 const hasMeaningfulRequirement = (value) => {
@@ -51,6 +43,15 @@ const YEAR_ORDER = [
 	"Fifth Year",
 ];
 const SEMESTER_ORDER = ["Fall", "Spring", "Summer", "Winter"];
+const UNIVERSITY_ALIASES = {
+	"new mexico state university-main campus": "New Mexico State University",
+	"university of new mexico-main campus": "University of New Mexico",
+};
+
+const normalizeUniversityName = (value = "") => {
+	const cleaned = String(value || "").trim();
+	return UNIVERSITY_ALIASES[cleaned.toLowerCase()] || cleaned;
+};
 
 const getYearRank = (year) => {
 	if (!year) return Number.MAX_SAFE_INTEGER;
@@ -174,7 +175,7 @@ const validatePlan = (planCourses, knownCodes) => {
 const EducationPlanEditor = () => {
 	const [programs, setPrograms] = useState([]);
 	const [selectedProgram, setSelectedProgram] = useState("");
-	const selectedUniversity = loadStorage("University") || "";
+	const selectedUniversity = normalizeUniversityName(loadStorage("University") || "");
 	const [selectedDegree, setSelectedDegree] = useState("");
 	const [courses, setCourses] = useState([]);
 	const [availableCourses, setAvailableCourses] = useState([]);
@@ -222,126 +223,168 @@ const EducationPlanEditor = () => {
 		}
 	}, [selectedProgram]);
 
-	// Update availableCourses when a program + university is selected and auto-fill default plan
+	// Update availableCourses when a program + university is selected.
 	useEffect(() => {
-		if (!selectedProgram || !selectedUniversity) {
-			setAvailableCourses((prev) => prev || []);
-			setCourses([]);
-			setDefaultPlan([]);
-			setPlanTerms([]);
-			setActiveTermKey("");
-			return;
-		}
+		let cancelled = false;
 
-		const selectedDegreeNorm = normalizeDegree(selectedDegree);
-		let match = null;
-		if (selectedDegreeNorm) {
-			match = programs.find(
-				(program) =>
-					program.program === selectedProgram &&
-					program.university === selectedUniversity &&
-					normalizeDegree(program.degree) === selectedDegreeNorm
-			);
-		} else {
-			match = programs.find(
-				(program) =>
-					program.program === selectedProgram &&
-					program.university === selectedUniversity
-			);
-		}
-		if (!match) {
+		const resetSelectedProgramData = () => {
 			setAvailableCourses([]);
 			setCourses([]);
 			setDefaultPlan([]);
 			setPlanTerms([]);
 			setActiveTermKey("");
-			// preserve selectedDegree to reflect user's intent even if no data found
-			return;
-		}
-		const uniqueCourses =
-			(match.years || []).flatMap((entry) =>
-				(entry.semesters || []).flatMap((s) =>
-					(s.courses || []).map((course) => ({
-						year: entry.year,
-						semester: s.semester,
+		};
+
+		const loadSelectedProgramCourses = async () => {
+			if (!selectedProgram || !selectedUniversity) {
+				resetSelectedProgramData();
+				return;
+			}
+
+			const selectedDegreeNorm = normalizeDegree(selectedDegree);
+			let match = null;
+			if (selectedDegreeNorm) {
+				match = programs.find(
+					(program) =>
+						program.program === selectedProgram &&
+						program.university === selectedUniversity &&
+						normalizeDegree(program.degree) === selectedDegreeNorm
+				);
+			}
+			if (!match) {
+				match = programs.find(
+					(program) =>
+						program.program === selectedProgram &&
+						program.university === selectedUniversity
+				);
+			}
+			if (!match) {
+				resetSelectedProgramData();
+				return;
+			}
+
+			let hydratedMatch = match;
+			const hasLoadedCourses = (match.years || []).some((entry) =>
+				(entry.semesters || []).some((semester) => (semester.courses || []).length > 0)
+			);
+
+			if (!hasLoadedCourses && match.program_id) {
+				try {
+					hydratedMatch = await getProgramWithCourses(match.program_id);
+					if (cancelled) return;
+					if (!hydratedMatch) {
+						resetSelectedProgramData();
+						return;
+					}
+					setPrograms((prev) =>
+						prev.map((program) =>
+							program.program_id === hydratedMatch.program_id
+								? { ...program, ...hydratedMatch }
+								: program
+						)
+					);
+				} catch (err) {
+					console.error("Unable to load selected program courses", err);
+					if (!cancelled) {
+						setError("Unable to load program courses.");
+						resetSelectedProgramData();
+					}
+					return;
+				}
+			}
+
+			if (cancelled) return;
+			const uniqueCourses =
+				(hydratedMatch.years || []).flatMap((entry) =>
+					(entry.semesters || []).flatMap((semester) =>
+						(semester.courses || []).map((course) => ({
+							year: entry.year,
+							semester: semester.semester,
+							code: course.code,
+							name: course.name,
+							credits: course.credits,
+							prerequisite: course.prerequisite,
+							corequisite: course.corequisite,
+							schedule: course.schedule,
+						}))
+					)
+				) || [];
+
+			const cleanedCourses = dedupeCourses(uniqueCourses);
+			setAvailableCourses(cleanedCourses);
+
+			const builtDefaultPlan = dedupeCourses(
+				cleanedCourses
+					.filter((course) => !course.code?.toUpperCase().startsWith("ELEC"))
+					.map((course) => ({
+						program: selectedProgram,
+						university: selectedUniversity,
+						year: course.year,
+						semester: course.semester,
+						courseName: course.name,
 						code: course.code,
-						name: course.name,
 						credits: course.credits,
 						prerequisite: course.prerequisite,
 						corequisite: course.corequisite,
 						schedule: course.schedule,
 					}))
-				)
-			) || [];
-
-		const cleanedCourses = dedupeCourses(uniqueCourses);
-		setAvailableCourses(cleanedCourses);
-
-		const builtDefaultPlan = dedupeCourses(
-			cleanedCourses
-				.filter((course) => !course.code?.toUpperCase().startsWith("ELEC"))
-				.map((course) => ({
-					program: selectedProgram,
-					university: selectedUniversity,
-					year: course.year,
-					semester: course.semester,
-					courseName: course.name,
-					code: course.code,
-					credits: course.credits,
-					prerequisite: course.prerequisite,
-					corequisite: course.corequisite,
-					schedule: course.schedule,
-				}))
-		);
-		setDefaultPlan(builtDefaultPlan);
-		const degreeToUse = selectedDegree || match.degree || "";
-		setSelectedDegree(degreeToUse);
-		saveStorage("ProgramDegree", degreeToUse);
-
-		const hasEditingCourses = Boolean(editingPlan?.courses?.length);
-		const programMatch =
-			String(editingPlan?.program || "").toLowerCase() ===
-			String(selectedProgram || "").toLowerCase();
-		const universityMatch =
-			String(editingPlan?.university || "").toLowerCase() ===
-			String(selectedUniversity || "").toLowerCase();
-		const degreeMatch =
-			!editingPlan?.degree ||
-			normalizeDegree(editingPlan.degree) === normalizeDegree(degreeToUse);
-		const editingMatch =
-			hasEditingCourses && programMatch && universityMatch && degreeMatch;
-
-		if (editingMatch && !editApplied) {
-			const editingCourses = dedupeCourses(editingPlan.courses);
-			setCourses(editingCourses);
-			const editingTerms = Array.from(
-				new Map(
-					editingCourses.map((course) => [
-						`${course.year}::${course.semester}`,
-						{
-							key: `${course.year}::${course.semester}`,
-							year: course.year,
-							semester: course.semester,
-						},
-					])
-				).values()
 			);
-			setPlanTerms(editingTerms);
-			setActiveTermKey(editingTerms[0]?.key || "");
-			setEditApplied(true);
-			saveStorage("EditingPlanActive", false);
-			return;
-		}
+			setDefaultPlan(builtDefaultPlan);
+			const degreeToUse = selectedDegree || hydratedMatch.degree || "";
+			setSelectedDegree(degreeToUse);
+			saveStorage("ProgramDegree", degreeToUse);
 
-		if (!editingMatch) {
-			setEditApplied(false);
-		}
+			const hasEditingCourses = Boolean(editingPlan?.courses?.length);
+			const programMatch =
+				String(editingPlan?.program || "").toLowerCase() ===
+				String(selectedProgram || "").toLowerCase();
+			const universityMatch =
+				String(normalizeUniversityName(editingPlan?.university || "")).toLowerCase() ===
+				String(selectedUniversity || "").toLowerCase();
+			const degreeMatch =
+				!editingPlan?.degree ||
+				normalizeDegree(editingPlan.degree) === normalizeDegree(degreeToUse);
+			const editingMatch =
+				hasEditingCourses && programMatch && universityMatch && degreeMatch;
 
-		if (!editingMatch || !editApplied) {
-			setCourses([]);
-			setPlanTerms([]);
-			setActiveTermKey("");
-		}
+			if (editingMatch && !editApplied) {
+				const editingCourses = dedupeCourses(editingPlan.courses);
+				setCourses(editingCourses);
+				const editingTerms = Array.from(
+					new Map(
+						editingCourses.map((course) => [
+							`${course.year}::${course.semester}`,
+							{
+								key: `${course.year}::${course.semester}`,
+								year: course.year,
+								semester: course.semester,
+							},
+						])
+					).values()
+				);
+				setPlanTerms(editingTerms);
+				setActiveTermKey(editingTerms[0]?.key || "");
+				setEditApplied(true);
+				saveStorage("EditingPlanActive", false);
+				return;
+			}
+
+			if (!editingMatch) {
+				setEditApplied(false);
+			}
+
+			if (!editingMatch || !editApplied) {
+				setCourses([]);
+				setPlanTerms([]);
+				setActiveTermKey("");
+			}
+		};
+
+		loadSelectedProgramCourses();
+
+		return () => {
+			cancelled = true;
+		};
 	}, [programs, selectedProgram, selectedDegree, selectedUniversity, editingPlan, editApplied]);
 
 	const knownCodes = useMemo(
@@ -1381,3 +1424,4 @@ const EducationPlanEditor = () => {
 };
 
 export default EducationPlanEditor;
+

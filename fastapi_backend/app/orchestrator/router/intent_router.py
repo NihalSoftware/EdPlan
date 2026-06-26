@@ -114,6 +114,16 @@ DEFAULT_INTENT_RULES: tuple[IntentRule, ...] = (
         intent="academic_planning",
         target_modules=(ACADEMIC_PLANNING,),
         keywords=(
+            "create plan",
+            "new education plan",
+            "new academic plan",
+            "update plan",
+            "edit plan",
+            "add course",
+            "remove course",
+            "move course",
+            "validate plan",
+            "graduation audit",
             "what courses should i take",
             "courses should i take",
             "next semester",
@@ -122,7 +132,11 @@ DEFAULT_INTENT_RULES: tuple[IntentRule, ...] = (
             "plan my courses",
             "prerequisite",
         ),
-        patterns=(r"\b(course|class|classes)\b.*\b(take|plan|next)\b",),
+        patterns=(
+            r"\b(create|update|edit|validate)\b.*\b(plan|degree plan|academic plan)\b",
+            r"\b(add|remove|move)\b.*\b(course|class)\b",
+            r"\b(course|class|classes)\b.*\b(take|plan|next)\b",
+        ),
     ),
     IntentRule(
         intent="course_recommendation",
@@ -155,6 +169,7 @@ DEFAULT_INTENT_RULES: tuple[IntentRule, ...] = (
         target_modules=(ACADEMIC_PLANNING,),
         keywords=(
             "graduation check",
+            "graduation audit",
             "graduate on time",
             "degree audit",
             "graduation requirement",
@@ -220,4 +235,3 @@ DEFAULT_INTENT_RULES: tuple[IntentRule, ...] = (
         patterns=(r"\bcompare\b.*\b(and|with|to)\b", r"\b\w+\b\s+vs\s+\b\w+\b"),
     ),
 )
-
