@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 
 from app.student.domains.auth.api import auth, email_verification
+from app.student.domains.comparison.api import comparison
 from app.student.domains.discovery.api import courses, programs, universities
 from app.student.domains.notifications.api import advisors
 from app.student.domains.onboarding.api import intake
@@ -13,6 +14,7 @@ def get_student_router() -> APIRouter:
     router.include_router(auth.router, prefix="/api")
     router.include_router(email_verification.router, prefix="/api")
     router.include_router(catalog.router, prefix="/api")
+    router.include_router(comparison.router, prefix="/api")
     router.include_router(normalized_plans.router, prefix="/api")
     router.include_router(graduation_audit.router, prefix="/api")
     router.include_router(plans.router, prefix="/api")

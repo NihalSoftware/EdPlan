@@ -23,7 +23,6 @@ from app.student.domains.planning.schemas.normalized_plan import (
 logger = logging.getLogger(__name__)
 
 MAX_TERM_CREDITS = 18
-VALID_PLAN_COURSE_STATUSES = {"Planned", "In Progress", "Completed"}
 
 
 def _parse_uuid(value: str, field_name: str) -> uuid.UUID:
@@ -36,7 +35,7 @@ def _parse_uuid(value: str, field_name: str) -> uuid.UUID:
         ) from exc
 
 
-def _integrity_error(detail: str, exc: Exception) -> HTTPException:
+def _integrity_error(detail: str) -> HTTPException:
     return HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=detail)
 
 
@@ -79,7 +78,7 @@ class NormalizedPlanService:
         except IntegrityError as exc:
             await db.rollback()
             logger.exception("Integrity error while creating normalized plan")
-            raise _integrity_error("Plan could not be created", exc) from exc
+            raise _integrity_error("Plan could not be created") from exc
         except SQLAlchemyError as exc:
             await db.rollback()
             logger.exception("Database error while creating normalized plan")
@@ -127,7 +126,7 @@ class NormalizedPlanService:
         except IntegrityError as exc:
             await db.rollback()
             logger.exception("Integrity error while updating normalized plan=%s", plan_id)
-            raise _integrity_error("Plan could not be updated", exc) from exc
+            raise _integrity_error("Plan could not be updated") from exc
         except SQLAlchemyError as exc:
             await db.rollback()
             logger.exception("Database error while updating normalized plan=%s", plan_id)
@@ -176,8 +175,6 @@ class NormalizedPlanService:
         )
         await self._require_plan(db, plan_id)
 
-        # TODO: Integrate future credit-limit table and validation engine.
-        # MAX_TERM_CREDITS is exposed in responses but does not block manual planning yet.
         try:
             await self.course_repository.add_plan_course(
                 db,
@@ -191,7 +188,7 @@ class NormalizedPlanService:
         except IntegrityError as exc:
             await db.rollback()
             logger.exception("Integrity error while adding course to normalized plan=%s", plan_id)
-            raise _integrity_error("Course could not be added to plan", exc) from exc
+            raise _integrity_error("Course could not be added to plan") from exc
         except SQLAlchemyError as exc:
             await db.rollback()
             logger.exception("Database error while adding course to normalized plan=%s", plan_id)
@@ -237,7 +234,6 @@ class NormalizedPlanService:
         if "planned_term_id" in fields and payload.planned_term_id:
             planned_term_id = _parse_uuid(payload.planned_term_id, "planned_term_id")
 
-        # TODO: Recalculate and validate term credits after future validation integration.
         try:
             await self.course_repository.update_plan_course(
                 plan_course,
@@ -251,7 +247,7 @@ class NormalizedPlanService:
         except IntegrityError as exc:
             await db.rollback()
             logger.exception("Integrity error while updating plan course=%s/%s", plan_id, course_id)
-            raise _integrity_error("Plan course could not be updated", exc) from exc
+            raise _integrity_error("Plan course could not be updated") from exc
         except SQLAlchemyError as exc:
             await db.rollback()
             logger.exception("Database error while updating plan course=%s/%s", plan_id, course_id)

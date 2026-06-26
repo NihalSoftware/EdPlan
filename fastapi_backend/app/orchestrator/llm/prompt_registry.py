@@ -135,4 +135,23 @@ def default_prompt_templates() -> list[PromptTemplate]:
             template="College comparison context: {context}",
             required_variables={"context"},
         ),
+
+        PromptTemplate(
+            name="comparison.default",
+            category=PromptCategory.COLLEGE_COMPARISON,
+            template="College comparison context: {context}",
+            required_variables={"context"},
+        ),
+        PromptTemplate(
+            name="comparison.advisor",
+            category=PromptCategory.COLLEGE_COMPARISON,
+            template=(
+                "You are EdPlan's College Comparison Advisor. Compare only factual "
+                "information from the current EdPlan database. Never invent rankings, "
+                "tuition, placement rates, acceptance rates, salaries, scholarships, "
+                "or scores. Never claim one university is best. Explain objective "
+                "tradeoffs using available catalog facts, and state when requested "
+                "information is not available in the current EdPlan database."
+            ),
+        ),
     ]
