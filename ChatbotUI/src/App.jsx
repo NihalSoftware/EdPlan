@@ -12,6 +12,8 @@ import ScheduleGenerator from "./pages/ScheduleGenerator.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import SignupPage from "./pages/SignupPage.jsx";
 import IntakeForm from "./pages/IntakeForm.jsx";
+import EdPlanNexusPage from "./pages/EdPlanNexusPage.jsx";
+import EdPlanNexusWorkspacePage from "./pages/EdPlanNexusWorkspacePage.jsx";
 
 const App = () => (
 	<Routes>
@@ -24,6 +26,8 @@ const App = () => (
 			<Route path="/career" element={<CareerProgramPage />} />
 			<Route path="/schedule-generator" element={<ScheduleGenerator />} />
 			<Route path="/view" element={<ViewEducationPlanPage />} />
+			<Route path="/edplan-nexus" element={<EdPlanNexusPage />} />
+			<Route path="/edplan-nexus/workspace" element={<EdPlanNexusWorkspacePage />} />
 			<Route path="/uni" element={<FindUniversityPage />} />
 			<Route path="/compare" element={<CollegeComparePage />} />
 			<Route path="/college/:unitId" element={<CollegeDetailPage />} />
