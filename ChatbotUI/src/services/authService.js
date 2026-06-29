@@ -1,24 +1,4 @@
-import axios from "axios";
-import { load } from "../utils/storage.js";
-import { API_BASE_URL } from "./apiBaseUrl.js";
-
-const client = axios.create({
-	baseURL: API_BASE_URL,
-	headers: {
-		"Content-Type": "application/json",
-	},
-});
-
-client.interceptors.request.use((config) => {
-	const token = load("AuthToken");
-	if (token) {
-		config.headers = config.headers ?? {};
-		if (!config.headers.Authorization) {
-			config.headers.Authorization = `Bearer ${token}`;
-		}
-	}
-	return config;
-});
+import client from "./apiClient.js";
 
 export const login = ({ email, password }) =>
 	client.post("/users/login", {
