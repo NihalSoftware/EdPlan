@@ -12,3 +12,15 @@ from app.student.domains.scheduling.schemas.catalog import (  # noqa: F401
     SectionMeetingSummary,
     SectionSummary,
 )
+from app.student.domains.scheduling.schemas.schedulepilot import (  # noqa: F401
+    ScheduleCourse,
+    ScheduleCourseOffering,
+    ScheduleMeeting,
+    ScheduleProgram,
+    ScheduleRetrievalContext,
+    ScheduleRetrievalWarnings,
+    ScheduleSection,
+    ScheduleStudentPlan,
+    ScheduleTerm,
+    ScheduleUniversity,
+)

@@ -15,6 +15,7 @@ if PROJECT_ROOT not in sys.path:
 
 from app.core.config import settings  # noqa: E402
 from app.db.base import Base  # noqa: E402
+from app import models  # noqa: E402,F401
 
 config = context.config
 if config.config_file_name is not None:

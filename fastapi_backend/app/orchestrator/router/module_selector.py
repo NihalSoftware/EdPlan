@@ -6,7 +6,7 @@ from app.orchestrator.modules.module_registry import ModuleRegistry
 from app.orchestrator.schemas.intent_result import IntentResult
 
 ACADEMIC_PLANNING = "academic_planning"
-SCHEDULING = "Scheduling"
+SCHEDULING = "scheduling"
 CAREER = "Career"
 FINANCE = "Finance"
 ACADEMIC_SUCCESS = "Academic Success"

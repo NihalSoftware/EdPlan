@@ -15,6 +15,9 @@ from app.student.domains.scheduling.repositories.catalog_repository import (
     SectionRepository,
     TermRepository,
 )
+from app.student.domains.scheduling.repositories.retrieval_repository import (
+    ScheduleRetrievalRepository,
+)
 
 
 class _ScalarResult:
@@ -206,3 +209,76 @@ def test_section_meeting_repository_lists_meetings():
         }
     ]
     assert len(session.statements) == 1
+
+
+def test_schedule_retrieval_repository_uses_batch_offering_lookup():
+    offering = _offering()
+    repository = ScheduleRetrievalRepository()
+    session = _Session([offering])
+
+    result = asyncio.run(
+        repository.get_offerings_for_courses(
+            session,
+            course_ids=[str(offering.course_id), str(offering.course_id)],
+        )
+    )
+
+    assert result == [offering]
+    assert len(session.statements) == 1
+
+
+def test_schedule_retrieval_repository_uses_batch_section_lookup():
+    section = _section()
+    repository = ScheduleRetrievalRepository()
+    session = _Session([section])
+
+    result = asyncio.run(
+        repository.get_sections_for_offerings(
+            session,
+            offering_ids=[str(section.offering_id)],
+        )
+    )
+
+    assert result == [section]
+    assert len(session.statements) == 1
+
+
+def test_schedule_retrieval_repository_uses_batch_meeting_lookup():
+    section = _section()
+    meeting = SectionMeeting(
+        meeting_id=uuid.uuid4(),
+        section_id=section.section_id,
+        weekday=None,
+        start_time=None,
+        end_time=None,
+        building=None,
+        room=None,
+        meeting_type="Online Async",
+        section=section,
+    )
+    repository = ScheduleRetrievalRepository()
+    session = _Session([meeting])
+
+    result = asyncio.run(
+        repository.get_meetings_for_sections(
+            session,
+            section_ids=[str(section.section_id)],
+        )
+    )
+
+    assert result == [meeting]
+    assert len(session.statements) == 1
+
+
+def test_schedule_retrieval_repository_empty_batches_do_not_query():
+    repository = ScheduleRetrievalRepository()
+    session = _Session([])
+
+    offerings = asyncio.run(repository.get_offerings_for_courses(session, course_ids=[]))
+    sections = asyncio.run(repository.get_sections_for_offerings(session, offering_ids=[]))
+    meetings = asyncio.run(repository.get_meetings_for_sections(session, section_ids=[]))
+
+    assert offerings == []
+    assert sections == []
+    assert meetings == []
+    assert session.statements == []
