@@ -14,6 +14,7 @@ import SignupPage from "./pages/SignupPage.jsx";
 import IntakeForm from "./pages/IntakeForm.jsx";
 import EdPlanNexusPage from "./pages/EdPlanNexusPage.jsx";
 import EdPlanNexusWorkspacePage from "./pages/EdPlanNexusWorkspacePage.jsx";
+import PathCrafterPage from "./pages/PathCrafterPage.jsx";
 
 const App = () => (
 	<Routes>
@@ -28,6 +29,7 @@ const App = () => (
 			<Route path="/view" element={<ViewEducationPlanPage />} />
 			<Route path="/edplan-nexus" element={<EdPlanNexusPage />} />
 			<Route path="/edplan-nexus/workspace" element={<EdPlanNexusWorkspacePage />} />
+			<Route path="/edplan-nexus/pathcrafter" element={<PathCrafterPage />} />
 			<Route path="/uni" element={<FindUniversityPage />} />
 			<Route path="/compare" element={<CollegeComparePage />} />
 			<Route path="/college/:unitId" element={<CollegeDetailPage />} />

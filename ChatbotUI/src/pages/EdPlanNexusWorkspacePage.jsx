@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import { Link, useLocation } from "react-router-dom";
 import {
 	FaArrowLeft,
 	FaBell,
@@ -65,6 +66,8 @@ const WorkspaceHeader = () => (
 );
 
 const MasterAgentWorkspace = () => {
+	const location = useLocation();
+	const initialPromptHandledRef = useRef(false);
 	const {
 		messages,
 		inputValue,
@@ -75,6 +78,20 @@ const MasterAgentWorkspace = () => {
 		retryLastMessage,
 		formatMessageTime,
 	} = useNexusChat();
+	const initialPrompt = location.state?.initialPrompt;
+
+	useEffect(() => {
+		if (
+			initialPromptHandledRef.current ||
+			typeof initialPrompt !== "string" ||
+			!initialPrompt.trim()
+		) {
+			return;
+		}
+		initialPromptHandledRef.current = true;
+		setInputValue(initialPrompt);
+		submitMessage(initialPrompt);
+	}, [initialPrompt, setInputValue, submitMessage]);
 
 	return (
 		<section className="min-h-screen bg-[radial-gradient(circle_at_78%_8%,rgba(99,102,241,0.14),transparent_28%),radial-gradient(circle_at_55%_22%,rgba(167,139,250,0.10),transparent_22%),linear-gradient(135deg,#f8fbff_0%,#ffffff_46%,#f7f5ff_100%)] text-slate-950">

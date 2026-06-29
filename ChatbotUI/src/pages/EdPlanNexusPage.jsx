@@ -33,6 +33,7 @@ const agentCards = [
 		icon: FaCircleNodes,
 		accent: "from-violet-500 to-indigo-600",
 		shadow: "shadow-violet-200/70",
+		path: "/edplan-nexus/pathcrafter",
 	},
 	{
 		name: "SchedulePilot",
@@ -117,7 +118,7 @@ const RobotOrbit = () => (
 	</div>
 );
 
-const AgentCard = ({ agent }) => {
+const AgentCard = ({ agent, onLearnMore }) => {
 	const Icon = agent.icon;
 
 	return (
@@ -135,6 +136,7 @@ const AgentCard = ({ agent }) => {
 					</p>
 					<button
 						type="button"
+						onClick={() => onLearnMore(agent)}
 						className="mt-4 text-sm font-bold text-indigo-600 transition group-hover:text-indigo-500"
 					>
 						Learn More &rarr;
@@ -242,7 +244,15 @@ const EdPlanNexusPage = () => {
 
 				<div className="mt-5 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
 					{agentCards.map((agent) => (
-						<AgentCard key={agent.name} agent={agent} />
+						<AgentCard
+							key={agent.name}
+							agent={agent}
+							onLearnMore={(selectedAgent) => {
+								if (selectedAgent.path) {
+									navigate(selectedAgent.path);
+								}
+							}}
+						/>
 					))}
 				</div>
 
