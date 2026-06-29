@@ -5,7 +5,7 @@ from app.student.domains.discovery.api import courses, programs, universities
 from app.student.domains.notifications.api import advisors
 from app.student.domains.onboarding.api import intake
 from app.student.domains.planning.api import graduation_audit, normalized_plans, plans
-from app.student.domains.scheduling.api import catalog, reschedules
+from app.student.domains.scheduling.api import catalog, reschedules, schedulepilot
 
 
 def get_student_router() -> APIRouter:
@@ -13,6 +13,7 @@ def get_student_router() -> APIRouter:
     router.include_router(auth.router, prefix="/api")
     router.include_router(email_verification.router, prefix="/api")
     router.include_router(catalog.router, prefix="/api")
+    router.include_router(schedulepilot.router, prefix="/api")
     router.include_router(normalized_plans.router, prefix="/api")
     router.include_router(graduation_audit.router, prefix="/api")
     router.include_router(plans.router, prefix="/api")

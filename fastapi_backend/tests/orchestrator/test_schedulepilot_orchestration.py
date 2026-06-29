@@ -168,13 +168,18 @@ async def test_student_orchestrator_executes_schedulepilot_for_scheduling_intent
     assert response.metadata["intent"]["target_modules"] == ["scheduling"]
     assert response.metadata["results"][0]["error"] is None
     assert response.module_responses[0].module_name == "scheduling"
-    assert response.module_responses[0].metadata["implementation_phase"] == "Phase 3C"
-    assert response.module_responses[0].metadata["status"] == "options_ranked"
+    assert response.module_responses[0].metadata["implementation_phase"] == "Phase D2"
+    assert response.module_responses[0].metadata["status"] == "ok"
+    assert response.module_responses[0].metadata["next_action"] == "show_results"
+    assert response.module_responses[0].metadata["reason"] == "generation_complete"
+    assert response.module_responses[0].metadata["interaction_session_implemented"] is True
     assert response.module_responses[0].metadata["counts"]["candidates"] == 1
     assert response.module_responses[0].metadata["counts"]["scored_candidates"] == 1
     assert response.module_responses[0].metadata["counts"]["ranked_options"] == 1
     assert response.module_responses[0].metadata["counts"]["feasible_candidates"] == 1
     assert response.module_responses[0].data["plan"]["plan_id"] == str(plan_id)
+    assert response.module_responses[0].data["decision"]["status"] == "ok"
+    assert response.module_responses[0].data["session"]["state"]["lifecycle"] == "active"
     assert response.module_responses[0].data["candidates"][0]["candidate_id"] == (
         "candidate-000001"
     )
