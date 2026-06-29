@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 
 from app.student.domains.auth.api import auth, email_verification
+from app.student.domains.comparison.api import comparison
 from app.student.domains.discovery.api import courses, programs, universities
 from app.student.domains.notifications.api import advisors
 from app.student.domains.onboarding.api import intake

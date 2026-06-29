@@ -2,9 +2,11 @@
 
 ## Purpose
 
-Academic Planning manages student education plans and graduation pathways for the Student Platform.
+Academic Planning manages student education plans, plan-course operations, validation, catalog context, and graduation readiness for the Student Platform.
 
 ## Tools
+
+The tool registry is the public tool surface for the Academic Planning orchestrator module. Tool order is stable and covered by tests.
 
 - `create_plan`
 - `update_plan`
@@ -15,6 +17,12 @@ Academic Planning manages student education plans and graduation pathways for th
 - `move_course`
 - `validate_plan`
 - `audit_plan`
+- `get_remaining_courses`
+- `get_course_details`
+- `get_prerequisites`
+- `get_corequisites`
+- `get_program_requirements`
+- `get_available_terms`
 
 ## Current Capabilities
 
@@ -22,20 +30,11 @@ Academic Planning manages student education plans and graduation pathways for th
 - Add courses to plans, remove courses from plans, and move courses between terms.
 - Validate planned courses for duplicate, prerequisite, corequisite, and credit-limit issues.
 - Audit a plan against graduation requirements.
-
-## Future Capabilities
-
-The Development Plan reserves these future tools. They are not implemented in this module:
-
-- `generate_plan`
-- `optimize_plan`
-- `forecast_graduation`
+- Read catalog course, prerequisite, corequisite, program requirement, and term context for advising workflows.
 
 ## Orchestrator Integration Notes
 
-The tool layer is a thin wrapper over existing planning services. Tools do not contain business logic and do not know about FastAPI routes.
-
-A future Student Orchestrator can load this module with:
+`AcademicPlanningModule` adapts the tool registry to the student orchestrator. The tool layer is a thin wrapper over existing planning, discovery, and scheduling services. Tools do not contain business logic and do not know about FastAPI routes.
 
 ```python
 from app.student.domains.planning.module import get_tools
@@ -47,6 +46,7 @@ Each tool exposes:
 
 - `name`
 - `description`
+- `parameters`
 - `async execute(...)`
 
-The orchestrator remains responsible for providing the database session and validated tool arguments.
+The orchestrator provides the database session and validated tool arguments.

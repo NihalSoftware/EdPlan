@@ -42,7 +42,7 @@ async def list_plans(
         user_id=user_id,
         is_active=is_active,
     )
-    return {"success": True, "data": plans, "metadata": {"count": len(plans)}}
+    return _success(plans, metadata={"count": len(plans)})
 
 
 @router.post("", response_model=PlanDetailResponse)
@@ -51,13 +51,13 @@ async def create_plan(
     db: AsyncSession = Depends(get_db),
 ):
     plan = await normalized_plan_service.create_plan(db, request)
-    return {"success": True, "data": plan}
+    return _success(plan)
 
 
 @router.get("/{plan_id}", response_model=PlanDetailResponse)
 async def get_plan(plan_id: str, db: AsyncSession = Depends(get_db)):
     plan = await normalized_plan_service.get_plan_by_id(db, plan_id)
-    return {"success": True, "data": plan}
+    return _success(plan)
 
 
 @router.patch("/{plan_id}", response_model=PlanDetailResponse)
@@ -67,13 +67,13 @@ async def update_plan(
     db: AsyncSession = Depends(get_db),
 ):
     plan = await normalized_plan_service.update_plan(db, plan_id, request)
-    return {"success": True, "data": plan}
+    return _success(plan)
 
 
 @router.delete("/{plan_id}", response_model=PlanDetailResponse)
 async def deactivate_plan(plan_id: str, db: AsyncSession = Depends(get_db)):
     plan = await normalized_plan_service.deactivate_plan(db, plan_id)
-    return {"success": True, "data": plan}
+    return _success(plan)
 
 
 @router.post("/{plan_id}/validate", response_model=PlanValidationResponse)
@@ -83,7 +83,7 @@ async def validate_plan(
     db: AsyncSession = Depends(get_db),
 ):
     validation = await planning_validation_service.validate_plan(db, plan_id, request)
-    return {"success": True, "data": validation}
+    return _success(validation)
 
 
 @router.post("/{plan_id}/validate-course", response_model=PlanValidationResponse)
@@ -93,21 +93,20 @@ async def validate_plan_course(
     db: AsyncSession = Depends(get_db),
 ):
     validation = await planning_validation_service.validate_course(db, plan_id, request)
-    return {"success": True, "data": validation}
+    return _success(validation)
 
 
 @router.get("/{plan_id}/courses", response_model=PlanCourseListResponse)
 async def list_plan_courses(plan_id: str, db: AsyncSession = Depends(get_db)):
     courses = await normalized_plan_service.list_plan_courses(db, plan_id)
-    return {
-        "success": True,
-        "data": courses,
-        "metadata": {
+    return _success(
+        courses,
+        metadata={
             "count": len(courses),
             "max_term_credits": MAX_TERM_CREDITS,
             "term_credit_totals": _term_credit_totals(courses),
         },
-    }
+    )
 
 
 @router.post("/{plan_id}/courses", response_model=PlanCourseDetailResponse)
@@ -117,11 +116,7 @@ async def add_plan_course(
     db: AsyncSession = Depends(get_db),
 ):
     plan_course = await normalized_plan_service.add_plan_course(db, plan_id, request)
-    return {
-        "success": True,
-        "data": plan_course,
-        "metadata": {"max_term_credits": MAX_TERM_CREDITS},
-    }
+    return _success(plan_course, metadata={"max_term_credits": MAX_TERM_CREDITS})
 
 
 @router.patch("/{plan_id}/courses/{course_id}", response_model=PlanCourseDetailResponse)
@@ -137,11 +132,7 @@ async def update_plan_course(
         course_id,
         request,
     )
-    return {
-        "success": True,
-        "data": plan_course,
-        "metadata": {"max_term_credits": MAX_TERM_CREDITS},
-    }
+    return _success(plan_course, metadata={"max_term_credits": MAX_TERM_CREDITS})
 
 
 @router.delete("/{plan_id}/courses/{course_id}", response_model=PlanCourseDeleteResponse)
@@ -151,11 +142,14 @@ async def delete_plan_course(
     db: AsyncSession = Depends(get_db),
 ):
     await normalized_plan_service.delete_plan_course(db, plan_id, course_id)
-    return {
-        "success": True,
-        "data": None,
-        "metadata": {"plan_id": plan_id, "course_id": course_id},
-    }
+    return _success(None, metadata={"plan_id": plan_id, "course_id": course_id})
+
+
+def _success(data, *, metadata: dict | None = None) -> dict:
+    response = {"success": True, "data": data}
+    if metadata is not None:
+        response["metadata"] = metadata
+    return response
 
 
 def _term_credit_totals(courses: list[dict]) -> list[dict]:

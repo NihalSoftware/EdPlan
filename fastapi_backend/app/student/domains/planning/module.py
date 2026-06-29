@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-import re
 from typing import Any
 
 from fastapi.encoders import jsonable_encoder
@@ -213,7 +212,7 @@ class AcademicPlanningModule(BaseModule):
                 "function": {
                     "name": tool.name,
                     "description": tool.description,
-                    "parameters": getattr(tool, "parameters", _tool_parameters(tool.name)),
+                    "parameters": tool.parameters,
                 },
             }
             for tool in get_tools()
@@ -406,36 +405,6 @@ class AcademicPlanningModule(BaseModule):
 
         raise ValueError(f"Unsupported academic planning tool: {tool_name}")
 
-    def _select_tool(self, query: str) -> str | None:
-        command = self._command_payload(query)
-        explicit_tool = command.get("tool") or command.get("intent")
-        if isinstance(explicit_tool, str):
-            normalized = explicit_tool.strip().lower().replace(" ", "_")
-            if normalized == "graduation_audit":
-                normalized = "audit_plan"
-            if normalized in SUPPORTED_TOOL_NAMES:
-                return normalized
-
-        normalized_query = _normalize(query)
-        ordered_rules: tuple[tuple[str, tuple[str, ...]], ...] = (
-            ("create_plan", ("create plan", "new education plan", "new academic plan")),
-            ("update_plan", ("update plan", "edit plan", "rename plan")),
-            ("delete_plan", ("delete plan", "deactivate plan")),
-            ("get_plan", ("get plan", "show plan", "view plan")),
-            ("add_course", ("add course", "add class")),
-            ("remove_course", ("remove course", "remove class", "drop course")),
-            ("move_course", ("move course", "move class")),
-            ("validate_plan", ("validate plan", "check plan")),
-            (
-                "audit_plan",
-                ("graduation audit", "degree audit", "graduation check", "on track to graduate"),
-            ),
-        )
-        for tool_name, phrases in ordered_rules:
-            if any(phrase in normalized_query for phrase in phrases):
-                return tool_name
-        return None
-
     @staticmethod
     def _command_payload(query: str) -> dict[str, Any]:
         stripped = query.strip()
@@ -553,10 +522,6 @@ class AcademicPlanningModule(BaseModule):
         }
 
 
-def _normalize(query: str) -> str:
-    return re.sub(r"\s+", " ", query.lower().strip())
-
-
 def _sum_credits(courses: list[dict[str, Any]]) -> int:
     total = 0
     for course in courses:
@@ -566,80 +531,3 @@ def _sum_credits(courses: list[dict[str, Any]]) -> int:
         elif isinstance(credits, str) and credits.isdigit():
             total += int(credits)
     return total
-
-
-def _tool_parameters(tool_name: str) -> dict[str, Any]:
-    base: dict[str, Any] = {"type": "object", "properties": {}, "additionalProperties": False}
-    if tool_name == "create_plan":
-        base["properties"] = {
-            "payload": {
-                "type": "object",
-                "properties": {
-                    "user_id": {"type": "integer"},
-                    "university_id": {"type": "string"},
-                    "program_id": {"type": "string"},
-                    "plan_name": {"type": "string"},
-                    "description": {"type": ["string", "null"]},
-                    "is_active": {"type": "boolean"},
-                },
-                "required": ["user_id", "university_id", "program_id", "plan_name"],
-                "additionalProperties": False,
-            }
-        }
-        base["required"] = ["payload"]
-        return base
-
-    if tool_name in {"update_plan", "add_course", "move_course", "validate_plan"}:
-        payload_properties: dict[str, Any] = {}
-        required = ["plan_id"]
-        if tool_name == "update_plan":
-            payload_properties = {
-                "plan_name": {"type": "string"},
-                "description": {"type": ["string", "null"]},
-                "is_active": {"type": "boolean"},
-            }
-        elif tool_name == "add_course":
-            payload_properties = {
-                "course_id": {"type": "string"},
-                "planned_term_id": {"type": ["string", "null"]},
-                "status": {"type": "string", "enum": ["Planned", "In Progress", "Completed"]},
-                "notes": {"type": ["string", "null"]},
-            }
-            required = ["plan_id", "payload"]
-        elif tool_name == "move_course":
-            base["properties"]["course_id"] = {"type": "string"}
-            payload_properties = {
-                "planned_term_id": {"type": ["string", "null"]},
-                "status": {"type": "string", "enum": ["Planned", "In Progress", "Completed"]},
-                "notes": {"type": ["string", "null"]},
-            }
-            required = ["plan_id", "course_id", "payload"]
-        elif tool_name == "validate_plan":
-            payload_properties = {"mode": {"type": "string", "enum": ["save", "draft"]}}
-        base["properties"].update(
-            {
-                "plan_id": {"type": "string"},
-                "payload": {
-                    "type": "object",
-                    "properties": payload_properties,
-                    "additionalProperties": False,
-                },
-            }
-        )
-        base["required"] = required
-        return base
-
-    if tool_name == "remove_course":
-        base["properties"] = {
-            "plan_id": {"type": "string"},
-            "course_id": {"type": "string"},
-        }
-        base["required"] = ["plan_id", "course_id"]
-        return base
-
-    if tool_name in {"delete_plan", "get_plan", "audit_plan"}:
-        base["properties"] = {"plan_id": {"type": "string"}}
-        base["required"] = ["plan_id"]
-        return base
-
-    return base
