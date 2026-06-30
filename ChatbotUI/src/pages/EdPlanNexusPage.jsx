@@ -1,13 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import {
 	FaArrowUpRightFromSquare,
-	FaBell,
 	FaBuildingColumns,
 	FaCalendarDays,
 	FaChartLine,
+	FaChartSimple,
 	FaCircleNodes,
 	FaGraduationCap,
-	FaLightbulb,
 	FaRegCompass,
 	FaRocket,
 	FaShieldHalved,
@@ -20,9 +19,9 @@ const orbitAgents = [
 	{ icon: FaGraduationCap, className: "top-[4%] left-1/2 -translate-x-1/2 text-indigo-600" },
 	{ icon: FaCalendarDays, className: "top-[24%] right-[12%] text-blue-500" },
 	{ icon: FaDollarSign, className: "bottom-[24%] right-[8%] text-emerald-500" },
-	{ icon: FaLightbulb, className: "bottom-[5%] left-1/2 -translate-x-1/2 text-orange-500" },
 	{ icon: FaBuildingColumns, className: "bottom-[24%] left-[12%] text-blue-600" },
 	{ icon: FaUserGraduate, className: "top-[24%] left-[12%] text-slate-700" },
+	{ icon: FaChartSimple, className: "bottom-[5%] left-1/2 -translate-x-1/2 text-emerald-500" },
 ];
 
 const agentCards = [
@@ -42,6 +41,7 @@ const agentCards = [
 		icon: FaCalendarDays,
 		accent: "from-blue-500 to-sky-600",
 		shadow: "shadow-blue-200/70",
+		path: "/edplan-nexus/schedulepilot",
 	},
 	{
 		name: "UniversityAdvisor",
@@ -50,6 +50,7 @@ const agentCards = [
 		icon: FaBuildingColumns,
 		accent: "from-emerald-500 to-green-600",
 		shadow: "shadow-emerald-200/70",
+		path: "/edplan-nexus/universityadvisor",
 	},
 	{
 		name: "FinanceGuide",
@@ -58,6 +59,7 @@ const agentCards = [
 		icon: FaDollarSign,
 		accent: "from-orange-400 to-orange-600",
 		shadow: "shadow-orange-200/70",
+		path: "/edplan-nexus/financeguide",
 	},
 	{
 		name: "CareerNavigator",
@@ -66,14 +68,16 @@ const agentCards = [
 		icon: FaChartLine,
 		accent: "from-cyan-500 to-teal-600",
 		shadow: "shadow-cyan-200/70",
+		path: "/edplan-nexus/careernavigator",
 	},
 	{
-		name: "ScholarshipScout",
+		name: "AcademicSuccess",
 		description:
-			"Finds scholarships and grants you're eligible for to reduce your education costs.",
-		icon: FaLightbulb,
-		accent: "from-violet-500 to-purple-600",
-		shadow: "shadow-purple-200/70",
+			"Helps students monitor academic performance, identify risks early, improve GPA, and stay on track toward graduation.",
+		icon: FaChartSimple,
+		accent: "from-emerald-500 to-teal-600",
+		shadow: "shadow-emerald-200/70",
+		path: "/edplan-nexus/academicsuccess",
 	},
 ];
 
@@ -153,24 +157,7 @@ const EdPlanNexusPage = () => {
 	return (
 		<section className="min-h-screen bg-[radial-gradient(circle_at_82%_8%,rgba(99,102,241,0.11),transparent_30%),linear-gradient(135deg,#f8fbff_0%,#ffffff_45%,#f7f5ff_100%)] text-slate-950">
 			<header className="sticky top-0 z-20 border-b border-slate-200/80 bg-white/80 px-5 py-3 backdrop-blur-xl sm:px-8 lg:px-12">
-				<div className="flex items-center justify-end gap-5">
-					<button
-						type="button"
-						className="flex h-10 w-10 items-center justify-center rounded-full text-slate-700 transition hover:bg-slate-100"
-						aria-label="Notifications"
-					>
-						<FaBell />
-					</button>
-					<button
-						type="button"
-						className="flex items-center gap-3 rounded-full border border-slate-200 bg-white py-2 pl-2 pr-4 text-sm font-bold text-slate-800 shadow-sm transition hover:border-indigo-200 hover:shadow-md"
-					>
-						<span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-violet-600 text-white">
-							V
-						</span>
-						Verify it&apos;s you
-					</button>
-				</div>
+				<div className="h-10" />
 			</header>
 
 			<div className="mx-auto max-w-[1560px] px-5 py-7 sm:px-8 lg:px-12">

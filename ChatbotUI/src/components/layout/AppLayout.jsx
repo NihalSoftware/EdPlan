@@ -1,9 +1,17 @@
-import { Outlet } from "react-router-dom";
-import { useState } from "react";
+import { Outlet, useLocation } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 import Navigation from "./Navigation.jsx";
 
 const AppLayout = () => {
 	const [open, setOpen] = useState(false);
+	const location = useLocation();
+	const mainRef = useRef(null);
+	const isNexusRoute = location.pathname.startsWith("/edplan-nexus");
+
+	useEffect(() => {
+		mainRef.current?.scrollTo({ top: 0, left: 0, behavior: "auto" });
+		window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+	}, [location.pathname]);
 
 	return (
 		<div className="min-h-screen flex flex-col lg:flex-row bg-slate-100 text-slate-900">
@@ -36,8 +44,10 @@ const AppLayout = () => {
 			{/* Backdrop for mobile when menu is open */}
 			{open && <div className="fixed inset-0 bg-black/30 z-40 lg:hidden" onClick={() => setOpen(false)} />}
 
-			<main className="flex-1 w-full min-h-screen overflow-y-auto lg:ml-72">
-				<Outlet />
+			<main ref={mainRef} className="flex-1 w-full min-h-screen overflow-y-auto lg:ml-72">
+				<div className={isNexusRoute ? "edplan-nexus-scaled" : ""}>
+					<Outlet />
+				</div>
 			</main>
 		</div>
 	);

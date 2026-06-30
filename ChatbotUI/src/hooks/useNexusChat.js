@@ -14,6 +14,7 @@ const defaultTelemetry = {
 	currentIntent: null,
 	confidence: null,
 	workflow: [],
+	finalStatus: null,
 };
 
 const formatError = (error) =>
@@ -101,10 +102,12 @@ export const useNexusChat = () => {
 				createdAt: new Date(),
 				workflow: result.workflow || [],
 				metadata: {
-					activatedModules: result.activated_modules || [],
+					activatedModules: result.activated_agents || result.activated_modules || [],
 					executionTime: result.execution_time,
-					currentIntent: result.current_intent,
+					currentIntent: result.intent || result.current_intent,
 					confidence: result.confidence,
+					finalStatus: result.status || result.final_status,
+					warnings: result.warnings || [],
 				},
 			});
 			setMessages((current) => [
@@ -112,11 +115,12 @@ export const useNexusChat = () => {
 				assistantMessage,
 			]);
 			setTelemetry({
-				activatedModules: result.activated_modules || [],
+				activatedModules: result.activated_agents || result.activated_modules || [],
 				executionTime: result.execution_time ?? null,
-				currentIntent: result.current_intent || null,
+				currentIntent: result.intent || result.current_intent || null,
 				confidence: result.confidence ?? null,
 				workflow: result.workflow || [],
+				finalStatus: result.status || result.final_status || null,
 			});
 		} catch (requestError) {
 			const message = formatError(requestError);

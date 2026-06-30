@@ -73,3 +73,20 @@ body {
 .edplan-nexus-glow {
   animation: edplan-nexus-glow 3.6s ease-in-out infinite;
 }
+
+:root {
+  --edplan-nexus-ui-scale: 0.9;
+}
+
+.edplan-nexus-scaled {
+  zoom: var(--edplan-nexus-ui-scale);
+}
+
+@supports not (zoom: 1) {
+  .edplan-nexus-scaled {
+    width: calc(100% / var(--edplan-nexus-ui-scale));
+    min-height: calc(100vh / var(--edplan-nexus-ui-scale));
+    transform: scale(var(--edplan-nexus-ui-scale));
+    transform-origin: top left;
+  }
+}

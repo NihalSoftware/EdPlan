@@ -3,67 +3,66 @@ import {
 	FaChartLine,
 	FaCircleNodes,
 	FaGraduationCap,
+	FaLightbulb,
 } from "react-icons/fa6";
 
 const pillars = [
 	{
 		icon: FaCircleNodes,
-		title: "Personalized Academic Planning",
+		title: "Personalized Planning",
 		description:
-			"Build a semester-wise path tailored to your degree, university requirements, personal goals, transfer status, and preferred pace.",
+			"Tailored plans based on goals and requirements.",
 	},
 	{
 		icon: FaGraduationCap,
 		title: "Smart Course Mapping",
 		description:
-			"Sequence courses with prerequisites, corequisites, availability, and graduation requirements in mind.",
+			"Automatically maps courses and prerequisites.",
 	},
 	{
 		icon: FaBullseye,
-		title: "Goal-Aligned Pathways",
+		title: "Graduation Roadmap",
 		description:
-			"Adapt the plan for early graduation, balanced semesters, career goals, specialization tracks, and academic performance.",
+			"Shows the clearest path to graduate on time.",
 	},
 	{
 		icon: FaChartLine,
-		title: "Continuous Optimization",
+		title: "Progress Tracking",
 		description:
-			"Keep the plan responsive as interests, grades, completed credits, and program requirements evolve.",
+			"Tracks completed credits and remaining work.",
+	},
+	{
+		icon: FaLightbulb,
+		title: "Adaptive Suggestions",
+		description:
+			"Recommends smarter choices as progress changes.",
 	},
 ];
 
 const Overview = () => (
-	<section className="rounded-3xl border border-slate-200 bg-white/80 p-7 shadow-sm backdrop-blur-xl lg:p-9">
+	<section className="rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm backdrop-blur-xl lg:p-8">
 		<h2 className="text-2xl font-black text-slate-950">About PathCrafter</h2>
-		<p className="mt-4 max-w-4xl text-sm font-semibold leading-7 text-slate-700 md:text-base">
-			PathCrafter is EdPlan Nexus&apos;s academic planning specialist. It turns
-			program curriculum, university rules, completed credits, course sequencing,
-			prerequisite dependencies, semester workload, and graduation targets into a
-			clear roadmap students can understand and act on.
+		<p className="mt-4 max-w-5xl text-sm font-semibold leading-7 text-slate-700 md:text-base">
+			PathCrafter helps students build a clear and achievable academic roadmap.
+			It considers program curriculum, prerequisites, completed credits, and
+			career goals to create a personalized semester-by-semester plan.
 		</p>
-		<p className="mt-4 max-w-4xl text-sm font-semibold leading-7 text-slate-700 md:text-base">
-			The experience is designed for long-range clarity: students see what to take,
-			when to take it, why each course belongs in sequence, and how each semester
-			supports progress toward graduation and career readiness.
+		<p className="mt-3 max-w-5xl text-sm font-semibold leading-7 text-slate-700 md:text-base">
+			The result is an easier way to understand what to take next, stay on track,
+			and make confident planning decisions every term.
 		</p>
-		<div className="mt-8 grid gap-5 md:grid-cols-2">
+		<div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
 			{pillars.map(({ icon: Icon, title, description }) => (
-				<div key={title} className="flex gap-5 rounded-2xl bg-slate-50/80 p-5">
-					<div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-indigo-50 text-lg text-indigo-600">
+				<div key={title} className="rounded-2xl bg-slate-50/80 p-4">
+					<div className="flex h-11 w-11 items-center justify-center rounded-full bg-indigo-50 text-lg text-indigo-600">
 						<Icon />
 					</div>
-					<div>
-						<h3 className="font-black text-slate-950">{title}</h3>
-						<p className="mt-2 text-sm font-medium leading-6 text-slate-600">
-							{description}
-						</p>
-					</div>
+					<h3 className="mt-4 text-sm font-black text-slate-950">{title}</h3>
+					<p className="mt-2 text-xs font-semibold leading-5 text-slate-600">
+						{description}
+					</p>
 				</div>
 			))}
-		</div>
-		<div className="mt-8 rounded-2xl border border-indigo-100 bg-indigo-50/70 p-5 text-sm font-black leading-7 text-indigo-700">
-			PathCrafter helps students never miss a requirement, stay on track, and
-			graduate with clarity and confidence.
 		</div>
 	</section>
 );
