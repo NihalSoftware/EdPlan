@@ -7,7 +7,7 @@ import FindUniversityPage from "./pages/FindUniversityPage.jsx";
 import CollegeComparePage from "./pages/CollegeComparePage.jsx";
 import CollegeDetailPage from "./pages/CollegeDetailPage.jsx";
 import CareerProgramPage from "./pages/CareerProgramPage.jsx";
-import ChatbotPage from "./pages/ChatbotPage.jsx";
+import ScheduleGenerator from "./pages/ScheduleGenerator.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import SignupPage from "./pages/SignupPage.jsx";
 import IntakeForm from "./pages/IntakeForm.jsx";
@@ -18,9 +18,9 @@ const App = () => (
 			<Route path="/" element={<Navigate to="/home" replace />} />
 			<Route path="/home" element={<HomePage />} />
 			<Route path="/intake" element={<IntakeForm />} />
-			<Route path="/chatbot" element={<ChatbotPage />} />
 			<Route path="/educationplan" element={<EducationPlanEditPage />} />
 			<Route path="/career" element={<CareerProgramPage />} />
+			<Route path="/schedule-generator" element={<ScheduleGenerator />} />
 			<Route path="/view" element={<ViewEducationPlanPage />} />
 			<Route path="/uni" element={<FindUniversityPage />} />
 			<Route path="/compare" element={<CollegeComparePage />} />

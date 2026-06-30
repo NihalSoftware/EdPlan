@@ -64,9 +64,11 @@ const formatPercent = (value) =>
 const formatCurrency = (value) =>
 	value || value === 0 ? `$${Number(value).toLocaleString()}` : "N/A";
 
+const DEFAULT_STATE_FILTER = "New Mexico";
+
 const allowedCampuses = [
-	"University of New Mexico-Main Campus",
-	"New Mexico State University-Main Campus",
+	"University of New Mexico",
+	"New Mexico State University",
 	"Santa Fe Community College",
 	"Northern New Mexico College",
 	"San Juan College",
@@ -74,15 +76,18 @@ const allowedCampuses = [
 const allowedCampusesLower = new Set(allowedCampuses.map((name) => name.toLowerCase()));
 const normalizeDegree = (value = "") => {
 	const raw = String(value).trim().toLowerCase();
-	const aliases = {
-		certificates: "certificate",
-		associate: "associate",
-		bachelors: "bachelor",
-		masters: "master",
-	};
-	if (aliases[raw]) return aliases[raw];
-	if (raw.endsWith("s") && raw.length > 4) return raw.slice(0, -1);
+	if (!raw) return "";
+	if (raw.includes("certificate")) return "certificate";
+	if (raw.includes("associate")) return "associate";
+	if (raw.includes("bachelor")) return "bachelor";
+	if (raw.includes("master")) return "master";
 	return raw;
+};
+
+const getCompatibleDegreeLabel = (degreeLabelMap, program, degree) => {
+	if (!program || !degree) return "";
+	const degreeNorm = normalizeDegree(degree);
+	return degreeLabelMap.get(program)?.get(degreeNorm) || "";
 };
 
 const FindUniversity = ({ onSelectProgram }) => {
@@ -93,6 +98,8 @@ const FindUniversity = ({ onSelectProgram }) => {
 	const [stateFilter, setStateFilter] = useState("");
 	const [costFilter, setCostFilter] = useState(18000);
 	const [programOptions, setProgramOptions] = useState([]);
+	const [programCatalogLoading, setProgramCatalogLoading] = useState(false);
+	const [programCatalogError, setProgramCatalogError] = useState("");
 	const [selectedProgram, setSelectedProgram] = useState("");
 	const [selectedDegree, setSelectedDegree] = useState("");
 	const [programMap, setProgramMap] = useState(new Map());
@@ -127,6 +134,8 @@ const FindUniversity = ({ onSelectProgram }) => {
 	};
 
 	useEffect(() => {
+		setProgramCatalogLoading(true);
+		setProgramCatalogError("");
 		listPrograms()
 			.then((items) => {
 				const programSet = new Set();
@@ -186,10 +195,13 @@ const FindUniversity = ({ onSelectProgram }) => {
 				setProgramDegreeLabelMap(degreeLabelLookup);
 				setProgramDegreeByUniversity(degreeByUniversity);
 				setCrimeRateMap(crimeLookup);
+				setProgramCatalogLoading(false);
 			})
 			.catch((err) => {
 				console.error("Unable to load program list", err);
 				setProgramOptions([]);
+				setProgramCatalogError("Unable to load academic catalog filters.");
+				setProgramCatalogLoading(false);
 			});
 	}, []);
 
@@ -205,27 +217,41 @@ const FindUniversity = ({ onSelectProgram }) => {
 				setSelectedProgram(fallbackProgram);
 				setSelectedDegree(savedDegree || "");
 			}
-			setStateFilter("NM");
-			fetchUniversities({ state: "NM" });
+			setStateFilter(DEFAULT_STATE_FILTER);
+			fetchUniversities({ state: DEFAULT_STATE_FILTER });
 			return;
 		}
 
 		if (savedProgram && programOptions.includes(savedProgram)) {
 			setSelectedProgram(savedProgram);
-			setSelectedDegree(savedDegree || "");
+			const compatibleDegree = getCompatibleDegreeLabel(
+				programDegreeLabelMap,
+				savedProgram,
+				savedDegree
+			);
+			setSelectedDegree(compatibleDegree);
+			saveStorage("ProgramDegree", compatibleDegree);
+			saveStorage("SelectedDegreeLevel", compatibleDegree);
 			// Save to Programname for persistence and keep SelectedProgram so selections are preserved when navigating back
 			saveStorage("Programname", savedProgram);
 		} else if (persistentProgram && programOptions.includes(persistentProgram)) {
 			// Use persisted program when available and valid
 			setSelectedProgram(persistentProgram);
-			setSelectedDegree(savedDegree || "");
+			const compatibleDegree = getCompatibleDegreeLabel(
+				programDegreeLabelMap,
+				persistentProgram,
+				savedDegree
+			);
+			setSelectedDegree(compatibleDegree);
+			saveStorage("ProgramDegree", compatibleDegree);
+			saveStorage("SelectedDegreeLevel", compatibleDegree);
 		} else {
 			// No valid program was provided (neither temporary nor persistent).
 			setSelectedProgram("");
 			setSelectedDegree("");
 		}
-		setStateFilter("NM");
-		fetchUniversities({ state: "NM" });
+		setStateFilter(DEFAULT_STATE_FILTER);
+		fetchUniversities({ state: DEFAULT_STATE_FILTER });
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [programOptions]);
 
@@ -285,6 +311,7 @@ const FindUniversity = ({ onSelectProgram }) => {
 				const matchesDegree =
 					!selectedProgram ||
 					!degreeNorm ||
+					!degreeSetForProgram ||
 					(degreeSetForProgram
 						?.get(degreeNorm)
 						?.has(university.name) ?? false);
@@ -500,6 +527,16 @@ const FindUniversity = ({ onSelectProgram }) => {
 					{error}
 				</div>
 			)}
+			{programCatalogLoading && (
+				<div className="bg-blue-50 text-blue-700 border border-blue-100 rounded-lg px-4 py-3">
+					Loading academic catalog filters...
+				</div>
+			)}
+			{programCatalogError && (
+				<div className="bg-amber-50 text-amber-700 border border-amber-100 rounded-lg px-4 py-3">
+					{programCatalogError}
+				</div>
+			)}
 
 			{loading ? (
 				<div className="text-center font-semibold text-slate-500">Loading Colleges…</div>
@@ -629,3 +666,4 @@ const FindUniversity = ({ onSelectProgram }) => {
 };
 
 export default FindUniversity;
+

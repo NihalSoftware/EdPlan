@@ -1,0 +1,3890 @@
+{
+  "universityId": "SENMC",
+  "universityName": "Southeast New Mexico College",
+  "semesters": {
+    "FALL_2026": {
+      "courses": {
+        "ACCT2110": {
+          "courseCode": "ACCT2110",
+          "courseName": "Principles of Accounting I (Financial)",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3339",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Jon Strahan",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "14:30",
+              "endTime": "15:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "250",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ANTH1115G": {
+          "courseCode": "ANTH1115G",
+          "courseName": "Introduction to Anthropology",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3293",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "David McIntosh",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "10:00",
+              "endTime": "11:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "202",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ARTH1115G": {
+          "courseCode": "ARTH1115G",
+          "courseName": "Orientation in Art",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3350",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Alexis Clements",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "11:30",
+              "endTime": "12:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "224",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W71",
+              "crn": "3552",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Todd Meier",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ARTS1240": {
+          "courseCode": "ARTS1240",
+          "courseName": "Design I",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3351",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Alexis Clements",
+              "days": [
+                "T"
+              ],
+              "startTime": "13:00",
+              "endTime": "15:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "102",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ASTR1115G": {
+          "courseCode": "ASTR1115G",
+          "courseName": "Introduction to Astronomy (Lec+Laboratory)",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3313",
+              "credits": 4,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Andrew Vanden Heuvel",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BCIS1110": {
+          "courseCode": "BCIS1110",
+          "courseName": "Fundamentals of Information Literacy and Systems",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3697",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Waheeb Al-Sharaabi",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BCIS2212": {
+          "courseCode": "BCIS2212",
+          "courseName": "MS Access",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3630",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Waheeb Al-Sharaabi",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BCIS2215": {
+          "courseCode": "BCIS2215",
+          "courseName": "MS EXCEL",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3627",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Waheeb Al-Sharaabi",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BFIN2110": {
+          "courseCode": "BFIN2110",
+          "courseName": "Introduction to Finance",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3432",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Raymond Dominguez",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BIOL1120G": {
+          "courseCode": "BIOL1120G",
+          "courseName": "Human Biology",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3316",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Autumn Reid",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BIOL1120L": {
+          "courseCode": "BIOL1120L",
+          "courseName": "Human Biology Laboratory",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3318",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Lab",
+              "instructor": "Autumn Reid",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "TBD",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BIOL2110G": {
+          "courseCode": "BIOL2110G",
+          "courseName": "Principles of Biology: Cellular and Molecular Biology",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3319",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Richard Wiedenmann",
+              "days": [
+                "T"
+              ],
+              "startTime": "10:00",
+              "endTime": "12:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "231",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BIOL2110L": {
+          "courseCode": "BIOL2110L",
+          "courseName": "Principles of Biology: Cellular and Molecular Laboratory",
+          "sections": [
+            {
+              "sectionId": "BIO",
+              "crn": "3320",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Lab",
+              "instructor": "Richard Wiedenmann",
+              "days": [
+                "R"
+              ],
+              "startTime": "10:00",
+              "endTime": "12:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "231",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BIOL2210C": {
+          "courseCode": "BIOL2210C",
+          "courseName": "Human Anatomy and Physiology I Lecture & Laboratory",
+          "sections": [
+            {
+              "sectionId": "L01",
+              "crn": "3321",
+              "credits": 4,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Ronald Girmus",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "13:00",
+              "endTime": "15:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "210",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W71",
+              "crn": "3322",
+              "credits": 4,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Ronald Girmus",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W72",
+              "crn": "3820",
+              "credits": 4,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Ronald Girmus",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BIOL2225C": {
+          "courseCode": "BIOL2225C",
+          "courseName": "Human Anatomy and Physiology II Lecture and Laboratory",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3324",
+              "credits": 4,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Ronald Girmus",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BLAW2110": {
+          "courseCode": "BLAW2110",
+          "courseName": "Business Law I",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3341",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Raymond Bratschi",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BLED1110": {
+          "courseCode": "BLED1110",
+          "courseName": "Introduction with Internship in Bilingual Education/ESL",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3276",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Louriz Soto",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BMGT250": {
+          "courseCode": "BMGT250",
+          "courseName": "Diversity in the Workplace",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3798",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Raven Anderson",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "17:30",
+              "endTime": "18:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "202",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BUSA1110": {
+          "courseCode": "BUSA1110",
+          "courseName": "Introduction to Business",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3343",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Raymond Dominguez",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "08:30",
+              "endTime": "09:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "250",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "BUSA2220": {
+          "courseCode": "BUSA2220",
+          "courseName": "Human Resource Management",
+          "sections": [
+            {
+              "sectionId": "H81",
+              "crn": "3799",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Hyflex",
+              "instructor": "Raymond Dominguez",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "17:30",
+              "endTime": "18:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "217",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "CCDS113N": {
+          "courseCode": "CCDS113N",
+          "courseName": "Study Skills for English",
+          "sections": [
+            {
+              "sectionId": "C02",
+              "crn": "3359",
+              "credits": 2,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "John Fry",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "11:16",
+              "endTime": "12:06",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "213",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C04",
+              "crn": "3589",
+              "credits": 2,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "John Fry",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "14:16",
+              "endTime": "15:06",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "217",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C06",
+              "crn": "3361",
+              "credits": 2,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "11:16",
+              "endTime": "12:05",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "213",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C12",
+              "crn": "3360",
+              "credits": 2,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Jonathan Wilson",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "18:46",
+              "endTime": "19:35",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "213",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C05",
+              "crn": "3833",
+              "credits": 2,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "14:16",
+              "endTime": "14:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "213",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "CEPY1120G": {
+          "courseCode": "CEPY1120G",
+          "courseName": "Human Growth and Behavior",
+          "sections": [
+            {
+              "sectionId": "H81",
+              "crn": "3278",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Hybrid",
+              "instructor": "John Vacca",
+              "days": [
+                "M"
+              ],
+              "startTime": "10:00",
+              "endTime": "11:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "250",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W71",
+              "crn": "3277",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "John Vacca",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "CEPY2110": {
+          "courseCode": "CEPY2110",
+          "courseName": "Learning in the Classroom",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3699",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "John Vacca",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "CHEM1120G": {
+          "courseCode": "CHEM1120G",
+          "courseName": "Introduction to Chemistry Lecture and Laboratory (non majors)",
+          "sections": [
+            {
+              "sectionId": "L01",
+              "crn": "3331",
+              "credits": 4,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Yiqun Huang",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "10:00",
+              "endTime": "12:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "230",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "L02",
+              "crn": "3328",
+              "credits": 4,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Lab",
+              "instructor": "Yiqun Huang",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "13:00",
+              "endTime": "15:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "230",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "CHEM1215G": {
+          "courseCode": "CHEM1215G",
+          "courseName": "General Chemistry I Lecture and Laboratory for STEM majors",
+          "sections": [
+            {
+              "sectionId": "L01",
+              "crn": "3821",
+              "credits": 4,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Lab",
+              "instructor": "Yiqun Huang",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "10:00",
+              "endTime": "12:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "230",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "CIST1217": {
+          "courseCode": "CIST1217",
+          "courseName": "Overview of Web Technologies",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3700",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Instructor TBD",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "CIST1411": {
+          "courseCode": "CIST1411",
+          "courseName": "Introduction to Networks",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3702",
+              "credits": 0,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "11:00",
+              "endTime": "12:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "252",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "CIST2620": {
+          "courseCode": "CIST2620",
+          "courseName": "Windows Server Administration",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3703",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Instructor TBD",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "CIST2881": {
+          "courseCode": "CIST2881",
+          "courseName": "Cybersecurity Fundamentals",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3704",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "13:00",
+              "endTime": "14:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "250",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "CJUS1110G": {
+          "courseCode": "CJUS1110G",
+          "courseName": "Introduction to Criminal Justice",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3294",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Karima Mourhat",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "13:00",
+              "endTime": "13:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "201",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "CJUS2220": {
+          "courseCode": "CJUS2220",
+          "courseName": "The American Law Enforcement System",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3297",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Karima Mourhat",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "CJUS2575": {
+          "courseCode": "CJUS2575",
+          "courseName": "Multicultural Law Enforcement",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3810",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Karima Mourhat",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "COMM1115G": {
+          "courseCode": "COMM1115G",
+          "courseName": "Communication",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3377",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Mickey Best",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "13:00",
+              "endTime": "14:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "204",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W72",
+              "crn": "3376",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Karla Flowers",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W73",
+              "crn": "3650",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Karla Flowers",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "COMM1130G": {
+          "courseCode": "COMM1130G",
+          "courseName": "Public Speaking",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3379",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Mickey Best",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "14:30",
+              "endTime": "15:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "106",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "CSCI1220": {
+          "courseCode": "CSCI1220",
+          "courseName": "Computer Programming Fundamentals: Python",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3705",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Waheeb Al-Sharaabi",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "11:00",
+              "endTime": "12:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "216",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "CSCI1240": {
+          "courseCode": "CSCI1240",
+          "courseName": "C++ Programming I",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3599",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Instructor TBD",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ECED1110": {
+          "courseCode": "ECED1110",
+          "courseName": "Child Growth, Development, and Learning",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3280",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Mingyue Wang",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "10:00",
+              "endTime": "11:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "201",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ECED1120": {
+          "courseCode": "ECED1120",
+          "courseName": "Guiding Young Children",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3281",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Mingyue Wang",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ECED2120": {
+          "courseCode": "ECED2120",
+          "courseName": "Curriculum Development through Play Birth through Age 4 (PreK)",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3284",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Mingyue Wang",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ECED2121": {
+          "courseCode": "ECED2121",
+          "courseName": "Curriculum Development through Play Birth through Age 4 (PreK) Practicum",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3285",
+              "credits": 2,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Mingyue Wang",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ECON2110G": {
+          "courseCode": "ECON2110G",
+          "courseName": "Macroeconomic Principles",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3345",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Jon Strahan",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W72",
+              "crn": "3473",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Jon Strahan",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ECON2120G": {
+          "courseCode": "ECON2120G",
+          "courseName": "Microeconomic Principles",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3797",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Raymond Dominguez",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "EDUC2710": {
+          "courseCode": "EDUC2710",
+          "courseName": "Pre-Teacher Preparation",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3286",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Jennifer Hess Martin",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ELTR1110": {
+          "courseCode": "ELTR1110",
+          "courseName": "Basic Electricity and Controls",
+          "sections": [
+            {
+              "sectionId": "H81",
+              "crn": "3709",
+              "credits": 4,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Hybrid",
+              "instructor": "Jasper Rowell",
+              "days": [
+                "T"
+              ],
+              "startTime": "14:30",
+              "endTime": "16:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "227",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ELTR2996": {
+          "courseCode": "ELTR2996",
+          "courseName": "Topics in Electricity",
+          "sections": [
+            {
+              "sectionId": "H81",
+              "crn": "3710",
+              "credits": 0,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Hybrid",
+              "instructor": "Randy Shull",
+              "days": [
+                "T"
+              ],
+              "startTime": "15:00",
+              "endTime": "16:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "227",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "EMSS1116": {
+          "courseCode": "EMSS1116",
+          "courseName": "BLS PC Preparations",
+          "sections": [
+            {
+              "sectionId": "H81",
+              "crn": "3743",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Hybrid",
+              "instructor": "Shaina Campbell",
+              "days": [
+                "R"
+              ],
+              "startTime": "17:00",
+              "endTime": "21:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "251",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "EMSS1120": {
+          "courseCode": "EMSS1120",
+          "courseName": "Emergency Medical Technician Lecture",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3744",
+              "credits": 9,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Anthony Souza",
+              "days": [
+                "T",
+                "W"
+              ],
+              "startTime": "17:00",
+              "endTime": "21:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "251",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "EMSS1120L": {
+          "courseCode": "EMSS1120L",
+          "courseName": "Emergency Medical Technician Laboratory",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3747",
+              "credits": 2,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Lab",
+              "instructor": "Zadoc Campbell",
+              "days": [
+                "R"
+              ],
+              "startTime": "17:00",
+              "endTime": "21:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "251",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "EMSS1121": {
+          "courseCode": "EMSS1121",
+          "courseName": "Emergency Medical Technician PC",
+          "sections": [
+            {
+              "sectionId": "C02",
+              "crn": "3749",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "PC",
+              "instructor": "Shaina Campbell",
+              "days": [
+                "F"
+              ],
+              "startTime": "07:00",
+              "endTime": "19:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "OCI",
+              "room": "WEB",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "EMSS1153": {
+          "courseCode": "EMSS1153",
+          "courseName": "Introduction to Anatomy and Physiology for the EMS Provider",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3750",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Anthony Souza",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ENGL1110G": {
+          "courseCode": "ENGL1110G",
+          "courseName": "Composition I",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3712",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Bonnie Nichols",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "X01",
+              "crn": "3718",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "John Fry",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "10:00",
+              "endTime": "11:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "213",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "X02",
+              "crn": "3714",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "John Fry",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "13:00",
+              "endTime": "14:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "217",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "X03",
+              "crn": "3832",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "13:00",
+              "endTime": "14:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "213",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "X04",
+              "crn": "3717",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "John Fry",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "10:00",
+              "endTime": "11:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "213",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "X05",
+              "crn": "3831",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "13:00",
+              "endTime": "14:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "213",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "X06",
+              "crn": "3724",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "10:00",
+              "endTime": "11:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "213",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "X07",
+              "crn": "3713",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "John Fry",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "13:00",
+              "endTime": "14:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "217",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "X08",
+              "crn": "3711",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "10:00",
+              "endTime": "11:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "213",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "X11",
+              "crn": "3715",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Jonathan Wilson",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "17:30",
+              "endTime": "18:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "213",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "X12",
+              "crn": "3716",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Jonathan Wilson",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "17:30",
+              "endTime": "18:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "213",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ENGL1120G": {
+          "courseCode": "ENGL1120G",
+          "courseName": "Composition II",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3730",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "11:30",
+              "endTime": "12:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "216",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C02",
+              "crn": "3808",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "John Fry",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "13:00",
+              "endTime": "14:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "216",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C11",
+              "crn": "3809",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Jonathan Wilson",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "17:30",
+              "endTime": "18:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "213",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W71",
+              "crn": "3729",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Instructor TBD",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ENGL2520G": {
+          "courseCode": "ENGL2520G",
+          "courseName": "Film as Literature",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3381",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Zane Biebelle",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "14:30",
+              "endTime": "15:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "252",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ENGR100G": {
+          "courseCode": "ENGR100G",
+          "courseName": "Introduction to Engineering (L)",
+          "sections": [
+            {
+              "sectionId": "L01",
+              "crn": "3333",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Jamil Al-Nouman",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "08:00",
+              "endTime": "09:59",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "222",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ENGR120": {
+          "courseCode": "ENGR120",
+          "courseName": "DC Circuit Analysis (L)",
+          "sections": [
+            {
+              "sectionId": "L01",
+              "crn": "3334",
+              "credits": 4,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Jamil Al-Nouman",
+              "days": [
+                "T",
+                "R",
+                "F"
+              ],
+              "startTime": "10:05",
+              "endTime": "12:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "222",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ENGR130": {
+          "courseCode": "ENGR130",
+          "courseName": "Digital Logic",
+          "sections": [
+            {
+              "sectionId": "L01",
+              "crn": "3642",
+              "credits": 4,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Jamil Al-Nouman",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "13:00",
+              "endTime": "15:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "222",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "ENVS1110G": {
+          "courseCode": "ENVS1110G",
+          "courseName": "Environmental Science I (L)",
+          "sections": [
+            {
+              "sectionId": "L01",
+              "crn": "3336",
+              "credits": 4,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Richard Wiedenmann",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "13:00",
+              "endTime": "15:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "232",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "FDMA1210": {
+          "courseCode": "FDMA1210",
+          "courseName": "Digital Video Production I",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3579",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Kristofer Velasquez",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "FDMA1220": {
+          "courseCode": "FDMA1220",
+          "courseName": "Introduction to Digital Video Editing",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3580",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Kristofer Velasquez",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "FDMA2375": {
+          "courseCode": "FDMA2375",
+          "courseName": "Typography",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3828",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Instructor TBD",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "FIRE130": {
+          "courseCode": "FIRE130",
+          "courseName": "Principles of Fire and Emergency Services Safety and Survival",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3839",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Andres Ruiz",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "FYEX1110": {
+          "courseCode": "FYEX1110",
+          "courseName": "First-Year Seminar",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3411",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Luis Anchondo",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "10:00",
+              "endTime": "11:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "106",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "H81",
+              "crn": "3287",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Hybrid",
+              "instructor": "Luz Moreno",
+              "days": [
+                "M"
+              ],
+              "startTime": "17:30",
+              "endTime": "18:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "106",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W71",
+              "crn": "3412",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Erick Dominguez Miranda",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "FYEX1111": {
+          "courseCode": "FYEX1111",
+          "courseName": "Introduction to College Studies",
+          "sections": [
+            {
+              "sectionId": "C03",
+              "crn": "3569",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Rocio Esparza",
+              "days": [
+                "R"
+              ],
+              "startTime": "10:00",
+              "endTime": "10:50",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "106",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C11",
+              "crn": "3468",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Raymond Dominguez",
+              "days": [
+                "T"
+              ],
+              "startTime": "14:30",
+              "endTime": "15:20",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "252",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "GEOG1115": {
+          "courseCode": "GEOG1115",
+          "courseName": "Maps and GIScience",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3834",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "M"
+              ],
+              "startTime": "10:00",
+              "endTime": "12:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "226",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "GEOG1115L": {
+          "courseCode": "GEOG1115L",
+          "courseName": "Maps and GIScience Laboratory",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3835",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Lab",
+              "instructor": "Instructor TBD",
+              "days": [
+                "W"
+              ],
+              "startTime": "10:00",
+              "endTime": "12:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "226",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "GEOG1130G": {
+          "courseCode": "GEOG1130G",
+          "courseName": "Human Geography",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3733",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Faraj Aboargob",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "HIST1110G": {
+          "courseCode": "HIST1110G",
+          "courseName": "United States History I",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3300",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "David McIntosh",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "HIST1120G": {
+          "courseCode": "HIST1120G",
+          "courseName": "United States History II",
+          "sections": [
+            {
+              "sectionId": "H81",
+              "crn": "3301",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Hyflex",
+              "instructor": "David McIntosh",
+              "days": [
+                "T"
+              ],
+              "startTime": "13:00",
+              "endTime": "14:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "202",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "HIST1122G": {
+          "courseCode": "HIST1122G",
+          "courseName": "History of Latino/a/x in the U.S.",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3302",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "David McIntosh",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "13:00",
+              "endTime": "14:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "252",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "HIST1130G": {
+          "courseCode": "HIST1130G",
+          "courseName": "World History I",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3303",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "David McIntosh",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "HITP1120": {
+          "courseCode": "HITP1120",
+          "courseName": "Health Information Introduction to Pharmacology",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3762",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Vishal Kholwadwala",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "HITP2208": {
+          "courseCode": "HITP2208",
+          "courseName": "Medical Office Procedures",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3764",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Kyandra Fox",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "HITP2240": {
+          "courseCode": "HITP2240",
+          "courseName": "Health Information Quality Management",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3765",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Kyandra Fox",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "HITP2248": {
+          "courseCode": "HITP2248",
+          "courseName": "Medical Coding I",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3766",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Kyandra Fox",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "HLSC1510": {
+          "courseCode": "HLSC1510",
+          "courseName": "Medical Terminology",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3691",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Candace Byers",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "08:30",
+              "endTime": "09:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "AH",
+              "room": "453",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W71",
+              "crn": "3690",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Erin Furlong",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W72",
+              "crn": "3692",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Erin Furlong",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "HLSC1520": {
+          "courseCode": "HLSC1520",
+          "courseName": "Anatomy and Physiology for Health Careers",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3817",
+              "credits": 4,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Yvette Franco",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "HLSC1530": {
+          "courseCode": "HLSC1530",
+          "courseName": "Pathophysiology for Health Sciences",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3688",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Erin Furlong",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W72",
+              "crn": "3788",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Yvette Franco",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "INST251": {
+          "courseCode": "INST251",
+          "courseName": "Instrumentation and Measurement",
+          "sections": [
+            {
+              "sectionId": "H81",
+              "crn": "3565",
+              "credits": 5,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Hybrid",
+              "instructor": "Jasper Rowell",
+              "days": [
+                "T"
+              ],
+              "startTime": "13:00",
+              "endTime": "14:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "227",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "MATH1130G": {
+          "courseCode": "MATH1130G",
+          "courseName": "Survey of Mathematics",
+          "sections": [
+            {
+              "sectionId": "H81",
+              "crn": "3262",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Hyflex",
+              "instructor": "April Addington",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "13:00",
+              "endTime": "14:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "252",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "MATH1134": {
+          "courseCode": "MATH1134",
+          "courseName": "Fundamentals of Elementary Mathematics I",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3263",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "April Addington",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "17:30",
+              "endTime": "18:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "101",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "MATH1215": {
+          "courseCode": "MATH1215",
+          "courseName": "Intermediate Algebra",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3264",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "10:00",
+              "endTime": "11:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "204",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C02",
+              "crn": "3265",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Eduardo Chappa",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "13:00",
+              "endTime": "14:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "250",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C11",
+              "crn": "3571",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Yaxi Zhao",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "17:30",
+              "endTime": "18:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "204",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W71",
+              "crn": "3266",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Yaxi Zhao",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W72",
+              "crn": "3543",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Anastasia Verdin",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C03",
+              "crn": "3811",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "08:30",
+              "endTime": "09:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "204",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C04",
+              "crn": "3812",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "13:00",
+              "endTime": "14:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "204",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "MATH1217": {
+          "courseCode": "MATH1217",
+          "courseName": "General Supplemental Instruction I",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3267",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "11:16",
+              "endTime": "11:51",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "204",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C02",
+              "crn": "3268",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Eduardo Chappa",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "14:16",
+              "endTime": "14:51",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "250",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C11",
+              "crn": "3572",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Yaxi Zhao",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "18:46",
+              "endTime": "19:21",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "204",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C03",
+              "crn": "3814",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "09:46",
+              "endTime": "10:21",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "204",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C04",
+              "crn": "3813",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "14:16",
+              "endTime": "14:51",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "204",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W71",
+              "crn": "3818",
+              "credits": 1,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Yaxi Zhao",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W72",
+              "crn": "3819",
+              "credits": 1,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Anastasia Verdin",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "MATH1220G": {
+          "courseCode": "MATH1220G",
+          "courseName": "College Algebra",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3270",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "17:30",
+              "endTime": "18:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "252",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W71",
+              "crn": "3271",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Anastasia Verdin",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "MATH1250G": {
+          "courseCode": "MATH1250G",
+          "courseName": "Trigonometry & Pre-Calculus",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3272",
+              "credits": 4,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Yaxi Zhao",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "MATH1350G": {
+          "courseCode": "MATH1350G",
+          "courseName": "Introduction to Statistics",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3273",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Pradip Aryal",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "MATH1430G": {
+          "courseCode": "MATH1430G",
+          "courseName": "Applications of Calculus I",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3274",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Eduardo Chappa",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "MATH1511G": {
+          "courseCode": "MATH1511G",
+          "courseName": "Calculus and Analytic Geometry I",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3275",
+              "credits": 4,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Eduardo Chappa",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "08:00",
+              "endTime": "09:40",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "204",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "MATH1521G": {
+          "courseCode": "MATH1521G",
+          "courseName": "Calculus and Analytic Geometry II",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3603",
+              "credits": 4,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Eduardo Chappa",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "17:30",
+              "endTime": "19:10",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "250",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "MATH1170": {
+          "courseCode": "MATH1170",
+          "courseName": "Technical Mathematics",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3815",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "April Addington",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "MATH1170L": {
+          "courseCode": "MATH1170L",
+          "courseName": "Technical Math Workshop",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3816",
+              "credits": 1,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "April Addington",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "NURS1120C": {
+          "courseCode": "NURS1120C",
+          "courseName": "Fundamentals of Nursing Lecture and Laboratory",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3771",
+              "credits": 6,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Arlene Nieto",
+              "days": [
+                "M",
+                "T",
+                "W"
+              ],
+              "startTime": "08:30",
+              "endTime": "12:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "AH",
+              "room": "424",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C01",
+              "crn": "3771",
+              "credits": 6,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Arlene Nieto",
+              "days": [
+                "F"
+              ],
+              "startTime": "10:15",
+              "endTime": "12:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "AH",
+              "room": "424",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "NURS1153": {
+          "courseCode": "NURS1153",
+          "courseName": "Medication and Dosage Calculation",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3772",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Kina Chavez",
+              "days": [
+                "F"
+              ],
+              "startTime": "08:30",
+              "endTime": "10:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "AH",
+              "room": "424",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "NURS1154C": {
+          "courseCode": "NURS1154C",
+          "courseName": "Physical Assessment Lab and PC",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3790",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Laurie Galvan",
+              "days": [
+                "R"
+              ],
+              "startTime": "08:30",
+              "endTime": "12:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "AH",
+              "room": "424",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "NURS1193": {
+          "courseCode": "NURS1193",
+          "courseName": "Nursing 1st Year Tutorial",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3843",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Laurie Galvan",
+              "days": [
+                "R"
+              ],
+              "startTime": "13:00",
+              "endTime": "15:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "AH",
+              "room": "424",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "NURS1194": {
+          "courseCode": "NURS1194",
+          "courseName": "Nursing 2nd Year Tutorial",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3844",
+              "credits": 2,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Jessica Johnson",
+              "days": [
+                "R"
+              ],
+              "startTime": "13:30",
+              "endTime": "15:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "AH",
+              "room": "425",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "NURS2214C": {
+          "courseCode": "NURS2214C",
+          "courseName": "Psychiatric Mental Health Nursing Theory and PC",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3256",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Rebecca Jones",
+              "days": [
+                "R"
+              ],
+              "startTime": "09:30",
+              "endTime": "12:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "AH",
+              "room": "425",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "NURS2215": {
+          "courseCode": "NURS2215",
+          "courseName": "Pharmacological Requisites of Simple Health Deviations",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3773",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Rebecca Jones",
+              "days": [
+                "R"
+              ],
+              "startTime": "08:30",
+              "endTime": "09:20",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "AH",
+              "room": "425",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "NURS2246C": {
+          "courseCode": "NURS2246C",
+          "courseName": "Health Deviations I",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3774",
+              "credits": 7,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Gina Zuniga",
+              "days": [
+                "M",
+                "T",
+                "W",
+                "F"
+              ],
+              "startTime": "09:00",
+              "endTime": "12:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "AH",
+              "room": "425",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "NUTR2110": {
+          "courseCode": "NUTR2110",
+          "courseName": "Human Nutrition",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3418",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Erin Furlong",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "PHIL1115G": {
+          "courseCode": "PHIL1115G",
+          "courseName": "Introduction to Philosophy",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3305",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Allaa Salamah",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "PHLB1110C": {
+          "courseCode": "PHLB1110C",
+          "courseName": "Phlebotomy Concepts Lecture & Laboratory",
+          "sections": [
+            {
+              "sectionId": "C02",
+              "crn": "3780",
+              "credits": 6,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "TBD",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "PHLS1110G": {
+          "courseCode": "PHLS1110G",
+          "courseName": "Personal Health & Wellness",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3421",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Erin Furlong",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "PHYS1230G": {
+          "courseCode": "PHYS1230G",
+          "courseName": "Algebra-Based Physics I",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3330",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Logan Antiporda",
+              "days": [
+                "M"
+              ],
+              "startTime": "10:00",
+              "endTime": "12:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "232",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "PHYS1230L": {
+          "courseCode": "PHYS1230L",
+          "courseName": "Algebra-based Physics I Laboratory",
+          "sections": [
+            {
+              "sectionId": "L01",
+              "crn": "3337",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Lab",
+              "instructor": "Logan Antiporda",
+              "days": [
+                "W"
+              ],
+              "startTime": "10:00",
+              "endTime": "12:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "232",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "PHYS1310G": {
+          "courseCode": "PHYS1310G",
+          "courseName": "Calculus -Based Physics I",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3594",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Jamil Al-Nouman",
+              "days": [
+                "T"
+              ],
+              "startTime": "17:00",
+              "endTime": "19:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "232",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "PHYS1310L": {
+          "courseCode": "PHYS1310L",
+          "courseName": "Calculus - Based Physics I Laboratory",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3593",
+              "credits": 1,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Lab",
+              "instructor": "Jamil Al-Nouman",
+              "days": [
+                "R"
+              ],
+              "startTime": "17:00",
+              "endTime": "19:30",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "232",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "POLS1120G": {
+          "courseCode": "POLS1120G",
+          "courseName": "American National Government",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3307",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Juan Armijo",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "PSYC1110G": {
+          "courseCode": "PSYC1110G",
+          "courseName": "Introduction to Psychology",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3310",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Jalal Hamedi",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "11:30",
+              "endTime": "12:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "250",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "W72",
+              "crn": "3308",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Nicholas Armenti",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "SOCI1110G": {
+          "courseCode": "SOCI1110G",
+          "courseName": "Introduction to Sociology",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3311",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Jalal Hamedi",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "10:00",
+              "endTime": "11:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "250",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "SOCI2310G": {
+          "courseCode": "SOCI2310G",
+          "courseName": "Contemporary Social Problems",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3306",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Celina Bryant",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "SOWK1110": {
+          "courseCode": "SOWK1110",
+          "courseName": "Ethics for Social Work and Human Services",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3793",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Celina Bryant",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "SOWK2110G": {
+          "courseCode": "SOWK2110G",
+          "courseName": "Introduction to Human Services and Social Work",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3312",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Celina Bryant",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "SOWK2140": {
+          "courseCode": "SOWK2140",
+          "courseName": "Social Justice and Community Engagement",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3795",
+              "credits": 3,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Shana Aldahl",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "SPAN1110": {
+          "courseCode": "SPAN1110",
+          "courseName": "Spanish I",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3289",
+              "credits": 4,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Luis Anchondo",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "SPAN1120": {
+          "courseCode": "SPAN1120",
+          "courseName": "Spanish II",
+          "sections": [
+            {
+              "sectionId": "W71",
+              "crn": "3290",
+              "credits": 4,
+              "campus": "Online",
+              "instructionMethod": "WEB",
+              "instructor": "Luis Anchondo",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "Online",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "SPAN1210": {
+          "courseCode": "SPAN1210",
+          "courseName": "Elementary Spanish for Heritage Learners I",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3807",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Luis Anchondo",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "10:00",
+              "endTime": "11:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "217",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "SURG1150": {
+          "courseCode": "SURG1150",
+          "courseName": "Surgical Procedures I",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3776",
+              "credits": 5,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Charity Goldsby",
+              "days": [],
+              "startTime": "TBD",
+              "endTime": "TBD",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "TBD",
+              "room": "TBD",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "THEA1110G": {
+          "courseCode": "THEA1110G",
+          "courseName": "Introduction to Theatre",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3581",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "T",
+                "R"
+              ],
+              "startTime": "10:00",
+              "endTime": "11:15",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "202",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "THEA1221": {
+          "courseCode": "THEA1221",
+          "courseName": "Beginning Acting",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3830",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Instructor TBD",
+              "days": [
+                "M",
+                "W"
+              ],
+              "startTime": "11:30",
+              "endTime": "12:45",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "IC",
+              "room": "252",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "WELD1110": {
+          "courseCode": "WELD1110",
+          "courseName": "Introduction to Welding Fundamentals",
+          "sections": [
+            {
+              "sectionId": "C01",
+              "crn": "3585",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Sheena Linney",
+              "days": [
+                "R"
+              ],
+              "startTime": "17:00",
+              "endTime": "20:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "225",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C02",
+              "crn": "3827",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Sheena Linney",
+              "days": [
+                "W"
+              ],
+              "startTime": "13:00",
+              "endTime": "16:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "225",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "WELD1120": {
+          "courseCode": "WELD1120",
+          "courseName": "Print Reading for Welders",
+          "sections": [
+            {
+              "sectionId": "H81",
+              "crn": "3586",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "Hybrid",
+              "instructor": "Sheena Linney",
+              "days": [
+                "M"
+              ],
+              "startTime": "16:00",
+              "endTime": "17:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "225",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C11",
+              "crn": "3825",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Sheena Linney",
+              "days": [
+                "R"
+              ],
+              "startTime": "15:00",
+              "endTime": "17:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "225",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "WELD1130": {
+          "courseCode": "WELD1130",
+          "courseName": "SMAW (Shielded Metal Arc Welding) I",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3584",
+              "credits": 6,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Sheena Linney",
+              "days": [
+                "T"
+              ],
+              "startTime": "12:00",
+              "endTime": "17:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "225",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "WELD1140": {
+          "courseCode": "WELD1140",
+          "courseName": "GMAW (Gas Metal Arc Welding) I",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3590",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Christopher King",
+              "days": [
+                "M"
+              ],
+              "startTime": "17:00",
+              "endTime": "20:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "225",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "WELD1155": {
+          "courseCode": "WELD1155",
+          "courseName": "GTAW (Gas Tungsten Arc Welding) I",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3591",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Christopher King",
+              "days": [
+                "W"
+              ],
+              "startTime": "17:00",
+              "endTime": "20:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "225",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "WELD1171": {
+          "courseCode": "WELD1171",
+          "courseName": "Layout and Fabrication",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3592",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Sheena Linney",
+              "days": [
+                "M"
+              ],
+              "startTime": "17:00",
+              "endTime": "20:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "225",
+              "status": "OPEN"
+            },
+            {
+              "sectionId": "C12",
+              "crn": "3826",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Sheena Linney",
+              "days": [
+                "R"
+              ],
+              "startTime": "11:00",
+              "endTime": "14:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "225",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "WELD1220": {
+          "courseCode": "WELD1220",
+          "courseName": "Pipe Welding I",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3587",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Christopher King",
+              "days": [
+                "T"
+              ],
+              "startTime": "17:00",
+              "endTime": "20:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "225",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "WELD2130": {
+          "courseCode": "WELD2130",
+          "courseName": "SMAW (Shielded Metal Arc Welding) II",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3588",
+              "credits": 6,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Christopher King",
+              "days": [
+                "F"
+              ],
+              "startTime": "15:00",
+              "endTime": "20:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "225",
+              "status": "OPEN"
+            }
+          ]
+        },
+        "WELD2220": {
+          "courseCode": "WELD2220",
+          "courseName": "Pipe Welding II",
+          "sections": [
+            {
+              "sectionId": "C11",
+              "crn": "3824",
+              "credits": 3,
+              "campus": "Southeast New Mexico University",
+              "instructionMethod": "CL",
+              "instructor": "Christopher King",
+              "days": [
+                "T"
+              ],
+              "startTime": "17:00",
+              "endTime": "20:00",
+              "startDate": "TBD",
+              "endDate": "TBD",
+              "building": "MAIN",
+              "room": "225",
+              "status": "OPEN"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

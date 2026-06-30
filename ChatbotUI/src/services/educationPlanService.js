@@ -1,23 +1,164 @@
-let educationCache = null;
+import {
+	getCatalogCourses,
+	getCatalogPrograms,
+} from "./catalogService.js";
 
-const loadPrograms = async () => {
-	if (educationCache) return educationCache;
-	const response = await fetch("/assets/programdetail.json");
-	if (!response.ok) {
-		throw new Error("Unable to load education plans");
+let educationCache = null;
+let educationWithCoursesCache = null;
+
+const YEAR_LABELS = {
+	1: "First Year",
+	2: "Second Year",
+	3: "Third Year",
+	4: "Fourth Year",
+	5: "Fifth Year",
+	6: "Sixth Year",
+	7: "Seventh Year",
+	8: "Eighth Year",
+};
+
+const UNIVERSITY_DISPLAY_ALIASES = {
+	"new mexico state university-main campus": "New Mexico State University",
+	"university of new mexico-main campus": "University of New Mexico",
+};
+
+const displayUniversityName = (name = "") => {
+	const cleaned = String(name || "").trim();
+	return UNIVERSITY_DISPLAY_ALIASES[cleaned.toLowerCase()] || cleaned;
+};
+
+const normalizeCourse = (course) => ({
+	id: course.course_id || course.id,
+	code: course.course_code || course.code,
+	name: course.course_name || course.name || course.courseName,
+	courseName: course.course_name || course.courseName || course.name,
+	credits: course.credits,
+	lecture_hours: course.lecture_hours,
+	lab_hours: course.lab_hours,
+	prerequisite: course.prerequisite || "",
+	corequisite: course.corequisite || "",
+	recommended_year:
+		YEAR_LABELS[course.recommended_year] ||
+		course.recommended_year ||
+		course.year ||
+		"Unassigned Year",
+	recommended_semester:
+		course.recommended_semester || course.semester || "Unassigned Semester",
+	description: course.description || "",
+});
+
+const groupCoursesByTerm = (courses = []) => {
+	const yearMap = new Map();
+
+	courses.forEach((course) => {
+		const year = course.recommended_year || course.year || "Unassigned Year";
+		const semester =
+			course.recommended_semester || course.semester || "Unassigned Semester";
+
+		if (!yearMap.has(year)) {
+			yearMap.set(year, new Map());
+		}
+		const semesterMap = yearMap.get(year);
+		if (!semesterMap.has(semester)) {
+			semesterMap.set(semester, []);
+		}
+		semesterMap.get(semester).push(course);
+	});
+
+	return Array.from(yearMap.entries()).map(([year, semesterMap]) => ({
+		year,
+		semesters: Array.from(semesterMap.entries()).map(
+			([semester, semesterCourses]) => ({
+				semester,
+				courses: semesterCourses,
+			})
+		),
+	}));
+};
+
+const getUniversityPayload = (program) =>
+	program.university && typeof program.university === "object"
+		? program.university
+		: {};
+
+const normalizeProgram = (program, courses = []) => {
+	const university = getUniversityPayload(program);
+	const universityName = displayUniversityName(
+		program.university_name ||
+			university.university_name ||
+			program.campus ||
+			(typeof program.university === "string" ? program.university : "")
+	);
+	const normalizedCourses = courses.map(normalizeCourse);
+
+	return {
+		...program,
+		program_id: program.program_id,
+		program: program.program || program.program_name || "",
+		program_name: program.program_name || program.program || "",
+		university: universityName,
+		campus: universityName,
+		degree: program.degree || "",
+		total_credit_hours: program.total_credit_hours,
+		college_profile: {
+			...(program.college_profile || {}),
+			university_id: university.university_id || program.university_id,
+			university_name: universityName,
+			city: university.city || program.city || program.college_profile?.city,
+			state: university.state || program.state || program.college_profile?.state,
+			website:
+				university.website || program.website || program.college_profile?.website,
+		},
+		courses: normalizedCourses,
+		years: normalizedCourses.length
+			? groupCoursesByTerm(normalizedCourses)
+			: program.years || [],
+	};
+};
+
+const loadPrograms = async ({ includeCourses = false } = {}) => {
+	if (includeCourses && educationWithCoursesCache) return educationWithCoursesCache;
+	if (!includeCourses && educationCache) return educationCache;
+
+	const programs = await getCatalogPrograms();
+	const normalizedPrograms = programs.map((program) => normalizeProgram(program));
+
+	if (!includeCourses) {
+		educationCache = normalizedPrograms;
+		return educationCache;
 	}
-	educationCache = await response.json();
-	return educationCache;
+
+	educationWithCoursesCache = await Promise.all(
+		normalizedPrograms.map((program) => getProgramWithCourses(program.program_id))
+	);
+	educationCache = educationCache || educationWithCoursesCache;
+	return educationWithCoursesCache;
+};
+
+export const getProgramCourses = async (programId) => {
+	const courses = await getCatalogCourses(programId);
+	return courses.map(normalizeCourse);
+};
+
+export const getProgramWithCourses = async (programId) => {
+	const programs = educationCache || (await loadPrograms());
+	const program = programs.find((entry) => entry.program_id === programId);
+	if (!program) return null;
+	const courses = await getProgramCourses(programId);
+	return normalizeProgram(program, courses);
 };
 
 export const findProgramPlan = async (programName, universityName) => {
-	const programs = await loadPrograms();
+	const normalizedUniversityName = displayUniversityName(universityName);
+	const programs = await loadPrograms({ includeCourses: true });
 	return (
 		programs.find(
 			(program) =>
-				program.program === programName && program.university === universityName
+				program.program === programName &&
+				program.university === normalizedUniversityName
 		) || null
 	);
 };
 
-export const listPrograms = async () => loadPrograms();
+export const listPrograms = async (options) => loadPrograms(options);
+

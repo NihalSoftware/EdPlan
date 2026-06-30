@@ -10,12 +10,13 @@ from fastapi.responses import JSONResponse
 from app.api.routes import get_api_router
 from app.core.config import settings
 from app.db.session import engine
+from app.student.api.router import get_student_router
 
 logger = logging.getLogger(__name__)
 
 
 @asynccontextmanager
-async def lifespan(app: FastAPI):
+async def lifespan(_app: FastAPI):
     try:
         yield
     finally:
@@ -59,6 +60,7 @@ def create_application() -> FastAPI:
         allow_headers=["*"],
     )
 
+    app.include_router(get_student_router())
     app.include_router(get_api_router())
     return app
 
