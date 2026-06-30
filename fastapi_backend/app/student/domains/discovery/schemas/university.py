@@ -31,6 +31,9 @@ class University(BaseModel):
     university_id: str | None = None
     university_name: str | None = None
     unit_id: str | None = None
+    scorecard_unit_id: int | None = None
+    scorecard_source_url: str | None = None
+    compare_data_source: str | None = None
     name: str | None = None
     city: str | None = None
     state: str | None = None
@@ -57,6 +60,7 @@ class University(BaseModel):
     first_year_return_rate: float | None = None
     full_time_enrollment: int | None = None
     part_time_enrollment: int | None = None
+    international_students: int | None = None
     student_faculty_ratio: float | None = None
     federal_loan_rate: float | None = None
     median_debt: float | None = None

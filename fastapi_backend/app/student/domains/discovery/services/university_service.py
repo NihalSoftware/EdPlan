@@ -1,10 +1,15 @@
 from __future__ import annotations
 
+import asyncio
 import uuid
 
 from fastapi import HTTPException, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.student.domains.discovery.clients.college_scorecard import (
+    CollegeScorecardClient,
+    client as college_scorecard_client,
+)
 from app.student.domains.discovery.repositories.university_repository import (
     UniversityRepository,
     university_repository,
@@ -34,8 +39,13 @@ def _validate_uuid(value: str, field_name: str) -> None:
 
 
 class UniversityService:
-    def __init__(self, repository: UniversityRepository = university_repository) -> None:
+    def __init__(
+        self,
+        repository: UniversityRepository = university_repository,
+        scorecard_client: CollegeScorecardClient = college_scorecard_client,
+    ) -> None:
         self.repository = repository
+        self.scorecard_client = scorecard_client
 
     async def search_universities(
         self,
@@ -84,7 +94,7 @@ class UniversityService:
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail="University not found",
             )
-        return university
+        return await self._enrich_with_scorecard(university)
 
     async def compare_universities(
         self, db: AsyncSession, university_ids: list[str]
@@ -97,10 +107,50 @@ class UniversityService:
         selected_ids = university_ids[:5]
         for university_id in selected_ids:
             _validate_uuid(university_id, "university_id")
-        return await self.repository.get_universities_by_ids(db, selected_ids)
+        universities = await self.repository.get_universities_by_ids(db, selected_ids)
+        return list(await asyncio.gather(*(self._enrich_with_scorecard(item) for item in universities)))
+
+    async def _enrich_with_scorecard(self, university: dict) -> dict:
+        try:
+            scorecard = await self.scorecard_client.find_school_by_profile(
+                name=university.get("name") or university.get("university_name") or "",
+                city=university.get("city"),
+                state=university.get("state"),
+            )
+        except Exception:
+            return university
+        if not scorecard:
+            return university
+        return _merge_university_data(university, scorecard)
 
 
 university_service = UniversityService()
+
+
+def _merge_university_data(university: dict, scorecard: dict) -> dict:
+    merged = dict(university)
+    preserve_keys = {"unit_id", "university_id", "university_name", "name", "city", "state"}
+
+    for key, value in scorecard.items():
+        if key in preserve_keys:
+            continue
+        if value is not None:
+            merged[key] = value
+
+    merged["scorecard_unit_id"] = scorecard.get("scorecard_unit_id") or scorecard.get("unit_id")
+    merged["scorecard_source_url"] = scorecard.get("scorecard_source_url")
+    merged["compare_data_source"] = "college_scorecard"
+    merged["website"] = university.get("website") or scorecard.get("website")
+
+    scorecard_info = scorecard.get("college_info") or {}
+    university_info = university.get("college_info") or {}
+    merged["college_info"] = {**scorecard_info, **university_info}
+    if scorecard.get("organization_type"):
+        merged["college_info"]["type"] = scorecard.get("organization_type")
+    if scorecard.get("location_type"):
+        merged["college_info"]["setting"] = scorecard.get("location_type")
+
+    return merged
 
 
 async def search_universities(
