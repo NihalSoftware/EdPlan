@@ -16,3 +16,4 @@ class StudentContext(BaseModel):
     preferences: list[dict[str, Any]] = Field(default_factory=list)
     memory: list[dict[str, Any]] = Field(default_factory=list)
     career_goal: str | None = None
+    orchestrator_outputs: dict[str, Any] = Field(default_factory=dict)

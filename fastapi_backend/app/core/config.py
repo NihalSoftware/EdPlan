@@ -43,7 +43,7 @@ class Settings(BaseSettings):
         alias="COLLEGE_SCORECARD_BASE_URL",
     )
     openrouter_api_key: SecretStr | None = Field(None, alias="OPENROUTER_API_KEY")
-    openrouter_model: str = Field("qwen/qwen3-7b-plus", alias="OPENROUTER_MODEL")
+    openrouter_model: str = Field("qwen/qwen3.7-plus", alias="OPENROUTER_MODEL")
     openrouter_fallback_model: str | None = Field(None, alias="OPENROUTER_FALLBACK_MODEL")
     openrouter_base_url: str = Field(
         "https://openrouter.ai/api/v1",

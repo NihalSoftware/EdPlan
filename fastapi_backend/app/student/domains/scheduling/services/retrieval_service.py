@@ -188,6 +188,14 @@ def _plan_course_to_contract(plan_course: PlanCourse) -> ScheduleCourse:
         planned_term=(
             _term_to_contract(plan_course.planned_term) if plan_course.planned_term else None
         ),
+        prerequisite_course_ids=[
+            str(link.prerequisite_course_id)
+            for link in plan_course.course.prerequisite_links or []
+        ],
+        corequisite_course_ids=[
+            str(link.corequisite_course_id)
+            for link in plan_course.course.corequisite_links or []
+        ],
     )
 
 

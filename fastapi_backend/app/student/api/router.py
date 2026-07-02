@@ -23,5 +23,6 @@ def get_student_router() -> APIRouter:
     router.include_router(programs.router, prefix="/api")
     router.include_router(courses.router, prefix="/api")
     router.include_router(universities.router, prefix="/api")
+    router.include_router(comparison.router, prefix="/api")
     router.include_router(intake.router, prefix="/api")
     return router

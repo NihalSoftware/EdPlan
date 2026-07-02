@@ -21,6 +21,7 @@ class EdPlanState(BaseModel):
     student_context: StudentContext | None = None
     intent_result: IntentResult | None = None
     selected_modules: list[str] = Field(default_factory=list)
+    execution_plan: list[dict[str, Any]] = Field(default_factory=list)
     module_results: dict[str, ModuleExecutionResult] = Field(default_factory=dict)
     workflow_events: list[WorkflowEvent] = Field(default_factory=list)
     final_response: FinalResponse | None = None

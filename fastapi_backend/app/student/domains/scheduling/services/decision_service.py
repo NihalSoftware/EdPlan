@@ -128,12 +128,14 @@ class ScheduleDecisionService:
             term_failure.context.normalized_preferences = normalized_preferences
             return term_failure.model_copy(update={"retrieval_context": retrieval_context})
 
-        data_failure = self._validate_scheduling_data(retrieval_context, base_context)
+        generation_context = _context_for_term(retrieval_context, term_id)
+
+        data_failure = self._validate_scheduling_data(generation_context, base_context)
         if data_failure is not None:
             return data_failure
 
-        warnings = _scheduling_warnings(retrieval_context)
-        generation_result = self.candidate_generator.generate(retrieval_context)
+        warnings = _scheduling_warnings(generation_context)
+        generation_result = self.candidate_generator.generate(generation_context)
         validated_candidates, validation_metadata = (
             self.validation_service.validate_generation_result(generation_result)
         )
@@ -160,7 +162,7 @@ class ScheduleDecisionService:
             ),
             reason=reason,
             context=base_context,
-            retrieval_context=retrieval_context,
+            retrieval_context=generation_context,
             warnings=warnings,
             metadata={
                 "preference_count": len(normalized_preferences),
@@ -175,7 +177,7 @@ class ScheduleDecisionService:
             scored_candidates=[
                 candidate.model_dump(mode="json") for candidate in scored_candidates
             ],
-            explanation=_explanation(retrieval_context, term_id),
+            explanation=_explanation(generation_context, term_id),
         )
 
     async def _resolve_plan(
@@ -385,6 +387,48 @@ def _scheduling_warnings(retrieval_context: ScheduleRetrievalContext) -> list[st
     if retrieval_warnings.sections_without_meetings:
         warnings.append("Some sections are missing meeting information.")
     return warnings
+
+
+def _context_for_term(
+    retrieval_context: ScheduleRetrievalContext,
+    term_id: str | None,
+) -> ScheduleRetrievalContext:
+    if term_id is None:
+        return retrieval_context
+
+    courses = [
+        course
+        for course in retrieval_context.courses
+        if course.planned_term_id in {None, term_id}
+        or str(course.status or "").strip().lower() == "completed"
+    ]
+    course_ids = {course.course_id for course in courses}
+    offerings = [
+        offering
+        for offering in retrieval_context.offerings
+        if offering.term_id == term_id and offering.course_id in course_ids
+    ]
+    offering_ids = {offering.offering_id for offering in offerings}
+    sections = [
+        section
+        for section in retrieval_context.sections
+        if section.term_id == term_id and section.offering_id in offering_ids
+    ]
+    section_ids = {section.section_id for section in sections}
+    meetings = [
+        meeting
+        for meeting in retrieval_context.meetings
+        if meeting.section_id in section_ids
+    ]
+    return retrieval_context.model_copy(
+        update={
+            "courses": courses,
+            "offerings": offerings,
+            "sections": sections,
+            "meetings": meetings,
+        },
+        deep=True,
+    )
 
 
 def _explanation(retrieval_context: ScheduleRetrievalContext, term_id: str | None) -> str:

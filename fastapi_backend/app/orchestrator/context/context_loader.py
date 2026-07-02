@@ -56,13 +56,37 @@ class ContextLoader:
 
         plan = await self._load_plan(user_id, plan_id)
         if plan is None:
-            raise PlanNotFoundError(f"Plan not found: {plan_id}")
+            logger.info(
+                "Loaded partial student context without normalized plan user_id=%s plan_id=%s",
+                user_id,
+                plan_id,
+            )
+            return StudentContext(
+                user=self._serialize_user(user),
+            )
 
         operational_plan = await self._load_operational_plan(user_id)
         if operational_plan is None or not operational_plan.program_name:
-            raise ProgramNotFoundError(f"Program not found for user_id={user_id}")
+            logger.info(
+                "Loaded partial student context without operational program user_id=%s",
+                user_id,
+            )
+            return StudentContext(
+                user=self._serialize_user(user),
+                plan=self._serialize_plan(plan, operational_plan),
+                program=self._serialize_program(operational_plan, plan),
+                university=self._serialize_university(operational_plan, plan),
+            )
         if not operational_plan.university_name:
-            raise UniversityNotFoundError(f"University not found for user_id={user_id}")
+            logger.info(
+                "Loaded partial student context without university user_id=%s",
+                user_id,
+            )
+            return StudentContext(
+                user=self._serialize_user(user),
+                plan=self._serialize_plan(plan, operational_plan),
+                program=self._serialize_program(operational_plan, plan),
+            )
 
         schedules = await self._load_course_schedules(operational_plan)
         preferences = await self._load_preferences(user_id)
@@ -72,8 +96,8 @@ class ContextLoader:
         return StudentContext(
             user=self._serialize_user(user),
             plan=self._serialize_plan(plan, operational_plan),
-            program=self._serialize_program(operational_plan),
-            university=self._serialize_university(operational_plan),
+            program=self._serialize_program(operational_plan, plan),
+            university=self._serialize_university(operational_plan, plan),
             completed_courses=self._serialize_courses(operational_plan, schedules),
             preferences=[self._serialize_preference(item) for item in preferences],
             memory=[self._serialize_memory(item) for item in memory],
@@ -86,7 +110,9 @@ class ContextLoader:
 
     async def _load_plan(self, user_id: int, plan_id: UUID) -> EdPlan | None:
         result = await self.db.execute(
-            select(EdPlan).where(EdPlan.plan_id == plan_id, EdPlan.user_id == user_id)
+            select(EdPlan)
+            .options(selectinload(EdPlan.program), selectinload(EdPlan.university))
+            .where(EdPlan.plan_id == plan_id, EdPlan.user_id == user_id)
         )
         return result.scalar_one_or_none()
 
@@ -143,7 +169,14 @@ class ContextLoader:
     def _serialize_plan(
         plan_model: EdPlan, operational_plan: EducationPlan | None
     ) -> dict[str, Any]:
-        plan: dict[str, Any] = {"plan_id": str(plan_model.plan_id)}
+        plan: dict[str, Any] = {
+            "plan_id": str(plan_model.plan_id),
+            "program_id": str(plan_model.program_id),
+            "university_id": str(plan_model.university_id),
+            "plan_name": plan_model.plan_name,
+            "description": plan_model.description,
+            "is_active": plan_model.is_active,
+        }
         if operational_plan is not None:
             plan.update(
                 {
@@ -159,19 +192,50 @@ class ContextLoader:
         return plan
 
     @staticmethod
-    def _serialize_program(operational_plan: EducationPlan | None) -> dict[str, Any] | None:
-        if operational_plan is None:
+    def _serialize_program(
+        operational_plan: EducationPlan | None,
+        plan_model: EdPlan | None = None,
+    ) -> dict[str, Any] | None:
+        if operational_plan is not None and operational_plan.program_name:
+            program = {
+                "name": operational_plan.program_name,
+                "degree": operational_plan.degree,
+            }
+            if plan_model is not None:
+                program["program_id"] = str(plan_model.program_id)
+                program["university_id"] = str(plan_model.university_id)
+            return program
+        if plan_model is None or plan_model.program is None:
             return None
         return {
-            "name": operational_plan.program_name,
-            "degree": operational_plan.degree,
+            "program_id": str(plan_model.program.program_id),
+            "university_id": str(plan_model.program.university_id),
+            "name": plan_model.program.program_name,
+            "program_name": plan_model.program.program_name,
+            "degree": plan_model.program.degree,
+            "total_credit_hours": plan_model.program.total_credit_hours,
         }
 
     @staticmethod
-    def _serialize_university(operational_plan: EducationPlan | None) -> dict[str, Any] | None:
-        if operational_plan is None:
+    def _serialize_university(
+        operational_plan: EducationPlan | None,
+        plan_model: EdPlan | None = None,
+    ) -> dict[str, Any] | None:
+        if operational_plan is not None and operational_plan.university_name:
+            university = {"name": operational_plan.university_name}
+            if plan_model is not None:
+                university["university_id"] = str(plan_model.university_id)
+            return university
+        if plan_model is None or plan_model.university is None:
             return None
-        return {"name": operational_plan.university_name}
+        return {
+            "university_id": str(plan_model.university.university_id),
+            "name": plan_model.university.university_name,
+            "university_name": plan_model.university.university_name,
+            "city": plan_model.university.city,
+            "state": plan_model.university.state,
+            "website": plan_model.university.website,
+        }
 
     @staticmethod
     def _serialize_courses(
