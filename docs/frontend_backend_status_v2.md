@@ -356,4 +356,3 @@ Known runtime failures from HTTP/server output:
 ## Bottom Line
 
 The latest codebase is closer to a full Student beta because normalized planning, graduation audit, discovery, and SchedulePilot backend surfaces exist, and the frontend now has a Nexus UI plus a shared API client. However, the main beta blockers are integration alignment rather than UI polish: planning is not wired to normalized APIs, comparison module routes are not mounted, scheduling frontend/backend URLs diverge, Nexus chat points at a missing route, and the backend still needs a clean startup configuration.
-`
