@@ -48,6 +48,14 @@ class LLMModelConfig(BaseModel):
             raise ValueError("model name cannot be blank")
         return normalized
 
+    @field_validator("api_base_url")
+    @classmethod
+    def normalize_api_base_url(cls, value: str) -> str:
+        normalized = value.strip().rstrip("/")
+        if not normalized:
+            raise ValueError("api_base_url cannot be blank")
+        return normalized
+
 
 def _env_value(dotenv: dict[str, str], key: str, default: str | None = None) -> str | None:
     value = os.getenv(key)
@@ -87,11 +95,3 @@ def _parse_dotenv(path: Path) -> dict[str, str]:
         if key:
             values[key] = value
     return values
-
-    @field_validator("api_base_url")
-    @classmethod
-    def normalize_api_base_url(cls, value: str) -> str:
-        normalized = value.strip().rstrip("/")
-        if not normalized:
-            raise ValueError("api_base_url cannot be blank")
-        return normalized

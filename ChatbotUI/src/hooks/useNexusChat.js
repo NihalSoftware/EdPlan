@@ -15,6 +15,9 @@ const defaultTelemetry = {
 	confidence: null,
 	workflow: [],
 	finalStatus: null,
+	academicPlan: null,
+	schedulePlan: null,
+	comparisonPlan: null,
 };
 
 const formatError = (error) =>
@@ -108,6 +111,10 @@ export const useNexusChat = () => {
 					confidence: result.confidence,
 					finalStatus: result.status || result.final_status,
 					warnings: result.warnings || [],
+					moduleOutputs: result.module_outputs || [],
+					academicPlan: result.academic_plan || null,
+					schedulePlan: result.schedule_plan || null,
+					comparisonPlan: result.comparison_plan || null,
 				},
 			});
 			setMessages((current) => [
@@ -121,6 +128,9 @@ export const useNexusChat = () => {
 				confidence: result.confidence ?? null,
 				workflow: result.workflow || [],
 				finalStatus: result.status || result.final_status || null,
+				academicPlan: result.academic_plan || null,
+				schedulePlan: result.schedule_plan || null,
+				comparisonPlan: result.comparison_plan || null,
 			});
 		} catch (requestError) {
 			const message = formatError(requestError);

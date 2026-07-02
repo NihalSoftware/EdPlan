@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { compareUniversitiesByIds } from "../../services/universityService.js";
+import { compareUniversities } from "../../services/comparisonService.js";
 import { load as loadStorage, save as saveStorage } from "../../utils/storage.js";
 
 const dataNotAvailable = "N/A";
@@ -27,6 +27,12 @@ const formatWebsite = (value) =>
 		"N/A"
 	);
 const hasValue = (value) => value || value === 0;
+const getUniversityKey = (entry = {}) => entry.university_id || entry.unit_id;
+const normalizeComparedSchool = (school = {}) => ({
+	...school,
+	unit_id: school.unit_id || school.university_id,
+	name: school.name || school.university_name,
+});
 const formatSatRange = (school) => {
 	if (!school) return "N/A";
 	const low = school.sat_reading_25th;
@@ -437,9 +443,10 @@ const CollegeCompare = () => {
 			const unique = [];
 			const seen = new Set();
 			stored.forEach((entry) => {
-				if (entry?.unit_id && !seen.has(entry.unit_id)) {
-					seen.add(entry.unit_id);
-					unique.push(entry);
+				const key = getUniversityKey(entry);
+				if (key && !seen.has(key)) {
+					seen.add(key);
+					unique.push(normalizeComparedSchool(entry));
 				}
 			});
 			setSelected(unique.slice(0, 3));
@@ -453,7 +460,7 @@ const CollegeCompare = () => {
 	}, [selected, initializing]);
 
 	const handleRemove = (unitId) => {
-		setSelected((prev) => prev.filter((entry) => entry.unit_id !== unitId));
+		setSelected((prev) => prev.filter((entry) => getUniversityKey(entry) !== unitId));
 		setComparison((prev) => {
 			const next = { ...prev };
 			delete next[unitId];
@@ -470,10 +477,13 @@ const CollegeCompare = () => {
 		const fetchComparison = async () => {
 			setLoadingCompare(true);
 			try {
-				const detail = await compareUniversitiesByIds(selected.map((entry) => entry.unit_id));
-				const mapped = detail.reduce((acc, school) => {
-					if (school?.unit_id) {
-						acc[school.unit_id] = school;
+				const universityIds = selected.map(getUniversityKey).filter(Boolean);
+				const detail = await compareUniversities(universityIds);
+				const mapped = (detail.universities || []).reduce((acc, school) => {
+					const normalized = normalizeComparedSchool(school);
+					const key = getUniversityKey(normalized);
+					if (key) {
+						acc[key] = normalized;
 					}
 					return acc;
 				}, {});
@@ -489,7 +499,7 @@ const CollegeCompare = () => {
 	}, [selected, initializing]);
 
 	const comparisonOrder = useMemo(
-		() => selected.map((entry) => comparison[entry.unit_id] || entry),
+		() => selected.map((entry) => comparison[getUniversityKey(entry)] || entry),
 		[selected, comparison]
 	);
 

@@ -47,6 +47,12 @@ def test_model_configuration_defaults_to_openrouter_target_model():
     assert config.reasoning_enabled is False
 
 
+def test_model_configuration_normalizes_api_base_url():
+    config = LLMModelConfig(api_base_url=" https://openrouter.ai/api/v1/ ")
+
+    assert config.api_base_url == "https://openrouter.ai/api/v1"
+
+
 def test_prompt_manager_renders_registered_prompt():
     registry = PromptRegistry(
         [
