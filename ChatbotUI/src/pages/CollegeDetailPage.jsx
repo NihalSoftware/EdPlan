@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import CollegeDetail from "../components/university/CollegeDetail.jsx";
-import { compareUniversitiesByIds, getUniversityById } from "../services/universityService.js";
+import { getUniversityById } from "../services/universityService.js";
 import { load as loadStorage, save as saveStorage } from "../utils/storage.js";
 
 const CollegeDetailPage = () => {
@@ -18,14 +18,7 @@ const CollegeDetailPage = () => {
       setLoading(true);
       setError("");
       try {
-        // prefer compare endpoint for richer payload; fall back to single fetch
-        const unitIdValue = isNaN(Number(unitId)) ? unitId : Number(unitId);
-        let detail = await compareUniversitiesByIds([unitIdValue]);
-        if (!detail || detail.length === 0) {
-          const single = await getUniversityById(unitIdValue);
-          detail = single ? [single] : [];
-        }
-        const resolved = detail?.[0] || initialCollege || null;
+        const resolved = await getUniversityById(unitId);
         setCollege(resolved);
         if (resolved) {
           saveStorage("LastCollegeDetail", resolved);

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 from typing import Any
 from uuid import UUID
 
@@ -7,7 +8,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.orchestrator.composer.response_composer import ResponseComposer
 from app.orchestrator.context.context_loader import ContextLoader
-from app.orchestrator.execution.module_executor import ModuleExecutor
+from app.orchestrator.execution.module_executor import ModuleExecutionResult, ModuleExecutor
 from app.orchestrator.graph.graph_builder import build_student_graph
 from app.orchestrator.graph.student_graph import StudentGraph
 from app.orchestrator.llm.base_provider import BaseLLMProvider
@@ -28,7 +29,12 @@ from app.orchestrator.observability.workflow_tracker import (
     WorkflowTracker,
 )
 from app.orchestrator.router.intent_router import IntentRouter
-from app.orchestrator.router.module_selector import ModuleSelector
+from app.orchestrator.router.module_selector import (
+    ACADEMIC_PLANNING,
+    COLLEGE_COMPARISON,
+    SCHEDULING,
+    ModuleSelector,
+)
 from app.orchestrator.schemas.module_response import FinalResponse
 from app.orchestrator.schemas.student_context import StudentContext
 from app.orchestrator.state.edplan_state import EdPlanState
@@ -36,10 +42,13 @@ from app.student.domains.planning.module import (
     AcademicPlanningModule,
     MODULE_NAME as ACADEMIC_PLANNING_MODULE_NAME,
 )
+from app.student.domains.comparison.registry import register_module as register_comparison_module
 from app.student.domains.scheduling.module import (
     MODULE_NAME as SCHEDULEPILOT_MODULE_NAME,
     SchedulePilotModule,
 )
+
+logger = logging.getLogger(__name__)
 
 
 class StudentOrchestrator:
@@ -67,6 +76,12 @@ class StudentOrchestrator:
             )
         if db is not None and not self.module_registry.exists(SCHEDULEPILOT_MODULE_NAME):
             self.module_registry.register(SchedulePilotModule(db=db))
+        if db is not None:
+            register_comparison_module(
+                self.module_registry,
+                db=db,
+                llm_provider=llm_provider,
+            )
         self.context_loader = context_loader or (ContextLoader(db) if db is not None else None)
         self.intent_router = intent_router or IntentRouter()
         self.module_selector = module_selector or ModuleSelector(registry=self.module_registry)
@@ -87,6 +102,12 @@ class StudentOrchestrator:
 
     async def run(self, user_id: int, plan_id: UUID, query: str) -> FinalResponse:
         """Run the orchestration stages and persist durable execution trace data."""
+        logger.info(
+            "orchestrator.request_received user_id=%s plan_id=%s query_length=%s",
+            user_id,
+            plan_id,
+            len(query),
+        )
         state = EdPlanState(user_id=user_id, plan_id=plan_id, query=query)
         run = await self.run_tracker.create_run(user_id=user_id, plan_id=plan_id, query=query)
         await self.run_tracker.mark_running(run)
@@ -109,8 +130,20 @@ class StudentOrchestrator:
                 },
             )
 
+            logger.info(
+                "orchestrator.response_returned user_id=%s plan_id=%s status=%s",
+                user_id,
+                plan_id,
+                completed_state.final_response.metadata.get("status"),
+            )
             return completed_state.final_response
         except Exception as exc:
+            logger.exception(
+                "orchestrator.request_failed user_id=%s plan_id=%s stage=%s",
+                user_id,
+                plan_id,
+                stage_tracker["stage"],
+            )
             await self.workflow_tracker.record_event(
                 getattr(run, "run_id", None),
                 FAILURE,
@@ -129,6 +162,7 @@ class StudentOrchestrator:
         stage_tracker: dict[str, str],
     ) -> StudentGraph:
         run_id = getattr(run, "run_id", None)
+        planned_workflow: list[dict[str, object]] = []
 
         async def load_context(user_id: int, plan_id: UUID, query: str) -> StudentContext:
             stage_tracker["stage"] = "context_loading"
@@ -147,6 +181,12 @@ class StudentOrchestrator:
         def route_intent(query: str, context: StudentContext | None):
             stage_tracker["stage"] = "intent_routing"
             intent_result = self.intent_router.route(query, context)
+            logger.info(
+                "orchestrator.intent_detected intent=%s confidence=%s modules=%s",
+                intent_result.intent,
+                intent_result.confidence,
+                intent_result.target_modules,
+            )
             return intent_result
 
         async def record_intent(query: str, context: StudentContext | None):
@@ -161,10 +201,19 @@ class StudentOrchestrator:
 
         def select_modules(intent_result):
             stage_tracker["stage"] = "module_selection"
-            return self.module_selector.select(intent_result)
+            selection = self.module_selector.select(intent_result)
+            logger.info(
+                "orchestrator.modules_selected selected=%s unavailable=%s invalid=%s",
+                selection.selected_modules,
+                selection.unavailable_modules,
+                selection.invalid_modules,
+            )
+            return selection
 
         async def record_module_selection(intent_result):
+            nonlocal planned_workflow
             selection = select_modules(intent_result)
+            planned_workflow = list(selection.execution_plan)
             await self.run_tracker.update_selected_modules(
                 run,
                 list(selection.selected_modules),
@@ -184,33 +233,92 @@ class StudentOrchestrator:
             stage_tracker["stage"] = "module_execution"
             results = {}
             seen_modules: set[str] = set()
-            for module_name in selected_modules:
+            shared_context = context.model_copy(deep=True)
+            for step_index, module_name in enumerate(selected_modules, start=1):
                 if module_name in seen_modules:
                     continue
                 seen_modules.add(module_name)
+                step = _workflow_step(planned_workflow, module_name, step_index)
+                consumed_keys = _available_shared_output_keys(shared_context)
+                logger.info("orchestrator.module_execution_started module=%s", module_name)
                 await self.workflow_tracker.record_event(
                     run_id,
                     MODULE_EXECUTION_STARTED,
-                    {"module_name": module_name},
+                    {
+                        "module_name": module_name,
+                        "step": step,
+                        "consumed_context_keys": consumed_keys,
+                    },
                 )
                 module_execution = await self.run_tracker.record_module_started(run, module_name)
                 try:
-                    result = await self.module_executor.execute_by_name(module_name, context, query)
+                    result = await self.module_executor.execute_by_name(
+                        module_name,
+                        shared_context,
+                        query,
+                    )
                 except Exception as exc:
-                    await self.run_tracker.record_module_failed(module_execution, exc)
-                    raise
+                    logger.exception(
+                        "orchestrator.module_execution_failed module=%s",
+                        module_name,
+                    )
+                    result = ModuleExecutionResult(
+                        module_name=module_name,
+                        success=False,
+                        execution_time_ms=0,
+                        response=None,
+                        error=str(exc),
+                    )
                 results[module_name] = result
+                produced_keys = []
+                if result.success and result.response is not None:
+                    produced_keys = _apply_structured_handoff(
+                        shared_context,
+                        module_name,
+                        result.response.data,
+                    )
+                    result.response.metadata["workflow_step"] = {
+                        **step,
+                        "status": "completed",
+                        "consumed_context_keys": consumed_keys,
+                        "produced_context_keys": produced_keys,
+                    }
+                elif result.response is not None:
+                    result.response.metadata["workflow_step"] = {
+                        **step,
+                        "status": "failed",
+                        "consumed_context_keys": consumed_keys,
+                        "produced_context_keys": [],
+                    }
                 await self.run_tracker.record_module_completed(module_execution, result)
+                logger.info(
+                    "orchestrator.module_execution_completed module=%s success=%s duration_ms=%s",
+                    module_name,
+                    result.success,
+                    result.execution_time_ms,
+                )
                 await self.workflow_tracker.record_event(
                     run_id,
                     MODULE_EXECUTION_COMPLETED,
-                    result.model_dump(mode="json"),
+                    {
+                        **result.model_dump(mode="json"),
+                        "step": step,
+                        "consumed_context_keys": consumed_keys,
+                        "produced_context_keys": produced_keys,
+                    },
                 )
+            context.orchestrator_outputs = dict(shared_context.orchestrator_outputs)
             return results
 
         def compose_response(context, intent_result, module_results):
             stage_tracker["stage"] = "response_composition"
-            return self.response_composer.compose(context, intent_result, module_results)
+            response = self.response_composer.compose(context, intent_result, module_results)
+            logger.info(
+                "orchestrator.response_composed status=%s module_count=%s",
+                response.metadata.get("status"),
+                response.metadata.get("module_count"),
+            )
+            return response
 
         async def record_response(context, intent_result, module_results):
             response = compose_response(context, intent_result, module_results)
@@ -274,4 +382,101 @@ def _context_metadata_from_context(context: StudentContext) -> dict[str, Any]:
         "completed_course_count": len(context.completed_courses),
         "preference_count": len(context.preferences),
         "memory_count": len(context.memory),
+        "shared_output_count": len(context.orchestrator_outputs),
     }
+
+
+def _workflow_step(
+    planned_workflow: list[dict[str, object]],
+    module_name: str,
+    fallback_index: int,
+) -> dict[str, object]:
+    for step in planned_workflow:
+        if step.get("module_name") == module_name:
+            return dict(step)
+    return {
+        "step": fallback_index,
+        "module_name": module_name,
+        "depends_on": [],
+        "consumes": [],
+        "provides": _provides_for_module(module_name),
+        "continue_on_failure": True,
+    }
+
+
+def _available_shared_output_keys(context: StudentContext) -> list[str]:
+    return sorted(key for key, value in context.orchestrator_outputs.items() if value is not None)
+
+
+def _apply_structured_handoff(
+    context: StudentContext,
+    module_name: str,
+    data: dict[str, Any],
+) -> list[str]:
+    produced: list[str] = []
+    for key in ("academic_plan", "schedule_plan", "comparison_plan"):
+        value = data.get(key)
+        if isinstance(value, dict):
+            context.orchestrator_outputs[key] = value
+            context.orchestrator_outputs.setdefault(module_name, {})[key] = value
+            produced.append(key)
+    comparison = data.get("comparison_plan")
+    if isinstance(comparison, dict):
+        recommended = comparison.get("recommended_university")
+        if isinstance(recommended, dict):
+            context.orchestrator_outputs["recommended_university"] = recommended
+            produced.append("recommended_university")
+    academic_plan = data.get("academic_plan")
+    if isinstance(academic_plan, dict):
+        _merge_plan_hints(context, academic_plan)
+    schedule_plan = data.get("schedule_plan")
+    if isinstance(schedule_plan, dict):
+        _merge_schedule_hints(context, schedule_plan)
+    return _unique_strings(produced)
+
+
+def _merge_plan_hints(context: StudentContext, academic_plan: dict[str, Any]) -> None:
+    plan = dict(context.plan or {})
+    for key in (
+        "remaining_credits",
+        "graduation_estimate",
+        "completed_credits",
+        "total_credits",
+    ):
+        if academic_plan.get(key) is not None:
+            plan[key] = academic_plan[key]
+    plan["latest_academic_plan"] = academic_plan
+    context.plan = plan
+
+
+def _merge_schedule_hints(context: StudentContext, schedule_plan: dict[str, Any]) -> None:
+    plan = dict(context.plan or {})
+    plan["latest_schedule_plan"] = schedule_plan
+    summary = schedule_plan.get("summary")
+    if isinstance(summary, dict):
+        for source_key, target_key in (
+            ("term_id", "selected_term_id"),
+            ("term_name", "selected_term_name"),
+            ("recommended_credits", "scheduled_credits"),
+        ):
+            if summary.get(source_key) is not None:
+                plan[target_key] = summary[source_key]
+    context.plan = plan
+
+
+def _provides_for_module(module_name: str) -> list[str]:
+    if module_name == ACADEMIC_PLANNING:
+        return ["academic_plan"]
+    if module_name == SCHEDULING:
+        return ["schedule_plan"]
+    if module_name == COLLEGE_COMPARISON:
+        return ["comparison_plan", "recommended_university"]
+    return []
+
+
+def _unique_strings(values: list[str]) -> list[str]:
+    unique: list[str] = []
+    for value in values:
+        if value not in unique:
+            unique.append(value)
+    return unique

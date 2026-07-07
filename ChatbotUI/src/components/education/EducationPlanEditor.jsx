@@ -5,11 +5,16 @@ import {
 	FaChevronUp,
 	FaPlus,
 } from "react-icons/fa";
-import { addEducationPlan } from "../../services/authService.js";
 import {
 	getProgramWithCourses,
 	listPrograms,
 } from "../../services/educationPlanService.js";
+import {
+	addCourseToPlan,
+	createPlan,
+	updatePlan,
+	validatePlan as validateBackendPlan,
+} from "../../services/planService.js";
 import {
 	load as loadStorage,
 	save as saveStorage,
@@ -194,6 +199,8 @@ const EducationPlanEditor = () => {
 	const profile = loadStorage("UserProfile") || {};
 	const navigate = useNavigate();
 
+	const backendStudentId = profile.student_id || profile.studentId || profile.id || 1;
+
 	useEffect(() => {
 		listPrograms()
 			.then((items) => setPrograms(items))
@@ -298,6 +305,8 @@ const EducationPlanEditor = () => {
 				(hydratedMatch.years || []).flatMap((entry) =>
 					(entry.semesters || []).flatMap((semester) =>
 						(semester.courses || []).map((course) => ({
+							id: course.id || course.course_id,
+							course_id: course.course_id || course.id,
 							year: entry.year,
 							semester: semester.semester,
 							code: course.code,
@@ -317,9 +326,11 @@ const EducationPlanEditor = () => {
 				cleanedCourses
 					.filter((course) => !course.code?.toUpperCase().startsWith("ELEC"))
 					.map((course) => ({
-						program: selectedProgram,
-						university: selectedUniversity,
-						year: course.year,
+				program: selectedProgram,
+				university: selectedUniversity,
+				id: course.id || course.course_id,
+				course_id: course.course_id || course.id,
+				year: course.year,
 						semester: course.semester,
 						courseName: course.name,
 						code: course.code,
@@ -595,6 +606,8 @@ const EducationPlanEditor = () => {
 			const newEntry = {
 				program: selectedProgram,
 				university: selectedUniversity,
+				id: course.id || course.course_id,
+				course_id: course.course_id || course.id,
 				year: activeTerm.year,
 				semester: activeTerm.semester,
 				courseName: course.name,
@@ -837,10 +850,6 @@ const EducationPlanEditor = () => {
 	};
 
 	const savePlan = async () => {
-		if (!userEmail) {
-			savePlanLocally();
-			return;
-		}
 		if (dependencyIssues.some((issue) => issue.blocking)) {
 			toast.error("Fix pre-requisite/co-requisite issues before saving.");
 			return;
@@ -854,10 +863,49 @@ const EducationPlanEditor = () => {
 			return;
 		}
 		try {
-			await addEducationPlan({
-				email: userEmail,
-				program: courses,
+			if (!selectedProgramMeta?.program_id || !selectedProgramMeta?.university_id) {
+				toast.error("Select a catalog-backed university and program before saving.");
+				return;
+			}
+			const existingPlanId = editingPlan?.plan_id || editingPlan?.id;
+			const planName = `${selectedProgram} Plan`;
+			const plan = existingPlanId && !String(existingPlanId).startsWith("local-")
+				? await updatePlan(existingPlanId, {
+					plan_name: planName,
+					description: selectedDegree || undefined,
+					is_active: true,
+				})
+				: await createPlan({
+					userId: backendStudentId,
+					universityId: selectedProgramMeta.university_id,
+					programId: selectedProgramMeta.program_id,
+					planName,
+					description: selectedDegree || undefined,
+					isActive: true,
+				});
+			const planId = plan?.plan_id || existingPlanId;
+			if (!planId) {
+				throw new Error("Backend did not return a plan id.");
+			}
+			const courseIds = courses
+				.map((course) => course.course_id || course.id)
+				.filter(Boolean);
+			await Promise.all(
+				Array.from(new Set(courseIds)).map((courseId) =>
+					addCourseToPlan(planId, { courseId })
+				)
+			);
+			await validateBackendPlan(planId, {});
+			saveStorage("ActivePlanId", planId);
+			saveStorage("SelectedPlanId", planId);
+			saveStorage("CurrentPlanId", planId);
+			saveStorage("EditingPlan", {
+				...(editingPlan || {}),
+				plan_id: planId,
+				university: selectedUniversity,
+				program: selectedProgram,
 				degree: selectedDegree || "",
+				courses,
 			});
 			toast.success("Education plan saved.");
 			saveStorage("EditingPlanActive", false);

@@ -42,7 +42,14 @@ def test_model_configuration_is_centralized_and_configurable():
 def test_model_configuration_defaults_to_openrouter_target_model():
     config = LLMModelConfig()
 
-    assert config.primary_model == "qwen/qwen3-7b-plus"
+    assert config.primary_model == "qwen/qwen3.7-plus"
+    assert config.api_base_url == "https://openrouter.ai/api/v1"
+    assert config.reasoning_enabled is False
+
+
+def test_model_configuration_normalizes_api_base_url():
+    config = LLMModelConfig(api_base_url=" https://openrouter.ai/api/v1/ ")
+
     assert config.api_base_url == "https://openrouter.ai/api/v1"
 
 
@@ -130,6 +137,7 @@ def test_openrouter_provider_builds_request_payload_without_network():
     assert payload["model"] == "configured/model"
     assert payload["messages"][0]["role"] == "system"
     assert payload["messages"][1]["content"] == "Hello"
+    assert payload["reasoning"] == {"enabled": False}
 
 
 def test_openrouter_provider_builds_and_parses_tool_calls():

@@ -9,27 +9,28 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.orchestrator.llm import (
     BaseLLMProvider,
     LLMMessage,
+    LLMProviderError,
     LLMRequest,
-    LLMResponse,
     OpenRouterProvider,
 )
 from app.orchestrator.modules.base_module import BaseModule
 from app.orchestrator.schemas.module_response import ModuleResponse
 from app.orchestrator.schemas.student_context import StudentContext
+from app.student.domains.comparison.services.comparison_service import (
+    ComparisonService,
+    comparison_service,
+)
 from app.student.domains.comparison.tools.registry import COMPARISON_TOOLS
 
 MODULE_NAME = "college_comparison"
 MODULE_DESCRIPTION = "Help students compare universities and academic programs using existing EdPlan data."
 
 COMPARISON_ADVISOR_PROMPT = (
-    "You are EdPlan's College Comparison Advisor. Compare only factual information from "
-    "the current EdPlan database and the exposed college comparison tools. Never invent "
-    "tuition, placement rates, acceptance rates, rankings, salaries, scholarships, or "
-    "university scores. Never claim one university is best. Explain objective tradeoffs "
-    "using available catalog facts such as location, programs, credits, required courses, "
-    "websites, and career mappings. If requested information is unavailable, state that it "
-    "is not available in the current EdPlan database. Ask for additional filters or IDs when "
-    "the request is too broad or ambiguous."
+    "You are EdPlan's UniversityAdvisor. Explain deterministic university and "
+    "program comparison results produced from the EdPlan database. Never invent "
+    "tuition, transfer agreements, rankings, acceptance rates, salaries, or "
+    "university facts. If a field is unavailable, state that it is unavailable. "
+    "Recommend only from the ranked recommendations provided."
 )
 
 SUPPORTED_TOOL_NAMES = {
@@ -46,7 +47,7 @@ def get_tools():
 
 
 class CollegeComparisonModule(BaseModule):
-    """Orchestrator module adapter for college comparison tools."""
+    """Orchestrator module adapter for UniversityAdvisor comparison workflows."""
 
     name = MODULE_NAME
     description = MODULE_DESCRIPTION
@@ -56,6 +57,7 @@ class CollegeComparisonModule(BaseModule):
         db: AsyncSession | None = None,
         tools: list[Any] | None = None,
         llm_provider: BaseLLMProvider | None = None,
+        service: ComparisonService | None = None,
         max_tool_iterations: int = 6,
         max_total_tool_calls: int = 10,
         max_same_tool_calls: int = 3,
@@ -63,121 +65,142 @@ class CollegeComparisonModule(BaseModule):
         self.db = db
         self.tools = {tool.name: tool for tool in tools or get_tools()}
         self.llm_provider = llm_provider or OpenRouterProvider()
+        self.service = service or comparison_service
         self.max_tool_iterations = max_tool_iterations
         self.max_total_tool_calls = max_total_tool_calls
         self.max_same_tool_calls = max_same_tool_calls
 
     async def execute(self, context: StudentContext, query: str) -> ModuleResponse:
-        messages = self._initial_messages(context, query)
-        observations: list[dict[str, Any]] = []
-        final_response: LLMResponse | None = None
-        tool_counts: dict[str, int] = {}
-        stop_reason: str | None = None
+        if self.db is None:
+            return self._clarification_response(["database_session"])
 
-        for _ in range(self.max_tool_iterations):
-            llm_response = await self.llm_provider.generate(
-                LLMRequest(
-                    messages=messages,
-                    system_prompt=COMPARISON_ADVISOR_PROMPT,
-                    tools=self.tool_schemas,
-                    tool_choice="auto",
-                    metadata={"module": self.name},
-                )
-            )
-            final_response = llm_response
-            tool_calls = self._tool_calls_from_response(llm_response)
-            if not tool_calls:
-                break
-
-            allowed_tool_calls = self._budgeted_tool_calls(tool_calls, tool_counts)
-            if not allowed_tool_calls:
-                stop_reason = "tool_budget_exhausted"
-                break
-
-            messages.append(
-                LLMMessage(
-                    role="assistant",
-                    content=llm_response.content or "Requesting college comparison tools.",
-                    metadata={
-                        "tool_calls": [
-                            {
-                                "id": tool_call.get("id"),
-                                "name": tool_call["name"],
-                                "arguments": tool_call["arguments"],
-                            }
-                            for tool_call in allowed_tool_calls
-                        ]
-                    },
-                )
-            )
-            for tool_call in allowed_tool_calls:
-                tool_counts[tool_call["name"]] = tool_counts.get(tool_call["name"], 0) + 1
-                observation = await self._execute_tool_call(tool_call)
-                observations.append(observation)
-                messages.append(
-                    LLMMessage(
-                        role="tool",
-                        content=json.dumps(jsonable_encoder(observation)),
-                        metadata={
-                            "tool_call_id": tool_call.get("id"),
-                            "tool_name": tool_call["name"],
-                        },
-                    )
-                )
-            if len(observations) >= self.max_total_tool_calls:
-                stop_reason = "max_total_tool_calls_reached"
-                break
-        else:
-            stop_reason = "max_tool_iterations_reached"
-
-        if stop_reason is not None:
-            messages.append(
-                LLMMessage(
-                    role="user",
-                    content=(
-                        f"Tool execution stopped because {stop_reason}. Provide the best factual "
-                        "comparison from the observations already gathered. If critical information "
-                        "is missing, say it is not available in the current EdPlan database or ask "
-                        "for the missing filters."
-                    ),
-                )
-            )
-            final_response = await self.llm_provider.generate(
-                LLMRequest(
-                    messages=messages,
-                    system_prompt=COMPARISON_ADVISOR_PROMPT,
-                    tools=[],
-                    metadata={"module": self.name, "tool_loop_exhausted": True},
-                )
-            )
-
-        content = (
-            final_response.content
-            if final_response is not None and final_response.content
-            else "I need more college comparison information before I can answer factually."
+        student_context = self._student_context_payload(context)
+        comparison = await self.service.build_advising_comparison(
+            self.db,
+            student_context=student_context,
+            query=query,
         )
+        if comparison["summary"]["status"] == "needs_context":
+            return self._needs_context_response(comparison)
+
+        advisor_content, llm_status = await self._advisor_response(comparison, query)
+        content = advisor_content or _fallback_response(comparison)
         return ModuleResponse(
             module_name=self.name,
             content=content,
             data={
-                "observations": jsonable_encoder(observations),
-                "tool_call_count": len(observations),
+                "comparison_plan": jsonable_encoder(comparison),
+                "comparison_summary": comparison["summary"],
             },
-            confidence=0.85 if final_response is not None else 0.45,
+            confidence=0.82 if comparison["validation"]["status"] == "valid" else 0.68,
             metadata={
                 "description": self.description,
                 "advisor_prompt": "comparison.advisor",
+                "llm_status": llm_status,
+                "status": (
+                    "completed_with_warnings"
+                    if comparison["warnings"]
+                    else "completed"
+                ),
+                "warnings": comparison["warnings"],
                 "available_tools": self.available_tool_names,
-                "tool_invoked": observations[-1]["tool"] if observations else None,
-                "tools_invoked": [observation["tool"] for observation in observations],
-                "tool_budget": {
-                    "max_tool_iterations": self.max_tool_iterations,
-                    "max_total_tool_calls": self.max_total_tool_calls,
-                    "max_same_tool_calls": self.max_same_tool_calls,
-                    "stop_reason": stop_reason,
-                },
+                "deterministic_comparison": True,
             },
         )
+
+    def _clarification_response(self, missing: list[str]) -> ModuleResponse:
+        readable = ", ".join(item.replace("_", " ") for item in missing)
+        return ModuleResponse(
+            module_name=self.name,
+            content=(
+                "I can compare universities once the required comparison context is "
+                f"available. I still need: {readable}."
+            ),
+            data={"missing_context": missing},
+            confidence=0.35,
+            metadata={
+                "description": self.description,
+                "status": "needs_context",
+                "warnings": [],
+                "deterministic_comparison": True,
+            },
+        )
+
+    def _needs_context_response(self, comparison: dict[str, Any]) -> ModuleResponse:
+        return ModuleResponse(
+            module_name=self.name,
+            content=(
+                "I can compare universities, but I need at least two universities or "
+                "a specific program focus first. For example: compare NNMC vs Santa "
+                "Fe Community College for Computer Science."
+            ),
+            data={"comparison_plan": comparison, "missing_context": comparison["validation"].get("missing", [])},
+            confidence=0.4,
+            metadata={
+                "description": self.description,
+                "status": "needs_context",
+                "warnings": comparison["warnings"],
+                "deterministic_comparison": True,
+            },
+        )
+
+    async def _advisor_response(
+        self,
+        comparison: dict[str, Any],
+        query: str,
+    ) -> tuple[str | None, str]:
+        payload = {
+            "student_context": comparison["student_context"],
+            "comparison_results": {
+                "summary": comparison["summary"],
+                "recommended_university": comparison["recommended_university"],
+                "comparison_table": comparison["comparison_table"],
+                "ranked_recommendations": comparison["ranked_recommendations"],
+                "validation": comparison["validation"],
+                "warnings": comparison["warnings"],
+            },
+            "student_query": query,
+        }
+        try:
+            response = await self.llm_provider.generate(
+                LLMRequest(
+                    messages=[
+                        LLMMessage(
+                            role="user",
+                            content=(
+                                "Explain this UniversityAdvisor recommendation using only "
+                                "the structured comparison results. Do not invent facts.\n\n"
+                                f"{json.dumps(jsonable_encoder(payload))}"
+                            ),
+                        )
+                    ],
+                    system_prompt=COMPARISON_ADVISOR_PROMPT,
+                    tools=[],
+                    temperature=0.2,
+                    max_tokens=1200,
+                    metadata={"module": self.name, "mode": "structured_comparison"},
+                )
+            )
+        except LLMProviderError:
+            return None, "unavailable"
+        except Exception:
+            return None, "failed"
+        if not response.content:
+            return None, "empty"
+        return response.content, "ok"
+
+    @staticmethod
+    def _student_context_payload(context: StudentContext) -> dict[str, Any]:
+        return {
+            "user": context.user,
+            "plan": context.plan,
+            "program": context.program,
+            "university": context.university,
+            "completed_courses": context.completed_courses,
+            "preferences": context.preferences,
+            "career_goal": context.career_goal,
+            "orchestrator_outputs": context.orchestrator_outputs,
+        }
 
     @property
     def available_tool_names(self) -> list[str]:
@@ -198,126 +221,25 @@ class CollegeComparisonModule(BaseModule):
             if tool.name in SUPPORTED_TOOL_NAMES
         ]
 
-    def _initial_messages(self, context: StudentContext, query: str) -> list[LLMMessage]:
-        context_payload = {
-            "user": context.user,
-            "program": context.program,
-            "university": context.university,
-            "preferences": context.preferences,
-            "memory": context.memory,
-            "career_goal": context.career_goal,
-            "available_tools": self.available_tool_names,
-        }
-        return [
-            LLMMessage(
-                role="user",
-                content=(
-                    f"Student query:\n{query}\n\n"
-                    "Known student context:\n"
-                    f"{json.dumps(jsonable_encoder(context_payload))}"
-                ),
-            )
-        ]
 
-    def _budgeted_tool_calls(
-        self,
-        tool_calls: list[dict[str, Any]],
-        tool_counts: dict[str, int],
-    ) -> list[dict[str, Any]]:
-        allowed: list[dict[str, Any]] = []
-        total_used = sum(tool_counts.values())
-        for tool_call in tool_calls:
-            if total_used + len(allowed) >= self.max_total_tool_calls:
-                break
-            tool_name = tool_call["name"]
-            used_for_tool = tool_counts.get(tool_name, 0) + sum(
-                1 for item in allowed if item["name"] == tool_name
-            )
-            if used_for_tool >= self.max_same_tool_calls:
-                continue
-            allowed.append(tool_call)
-        return allowed
-
-    async def _execute_tool_call(self, tool_call: dict[str, Any]) -> dict[str, Any]:
-        tool_name = tool_call["name"]
-        if tool_name not in self.tools or tool_name not in SUPPORTED_TOOL_NAMES:
-            return {"tool": tool_name, "success": False, "error": "Tool is not exposed to college comparison."}
-        if self.db is None:
-            return {"tool": tool_name, "success": False, "error": "CollegeComparisonModule requires a database session."}
-
-        command = dict(tool_call["arguments"])
-        try:
-            result = await self._execute_tool(tool_name, command)
-        except Exception as exc:
-            return {
-                "tool": tool_name,
-                "success": False,
-                "arguments": jsonable_encoder(command),
-                "error": str(exc),
-            }
-        return {
-            "tool": tool_name,
-            "success": True,
-            "arguments": jsonable_encoder(command),
-            "result": jsonable_encoder(result),
-        }
-
-    def _tool_calls_from_response(self, response: LLMResponse) -> list[dict[str, Any]]:
-        if response.tool_calls:
-            return [
-                {"id": tool_call.id, "name": tool_call.name, "arguments": tool_call.arguments}
-                for tool_call in response.tool_calls
-            ]
-
-        parsed = _command_payload(response.content)
-        raw_calls = parsed.get("tool_calls")
-        if not isinstance(raw_calls, list):
-            return []
-
-        tool_calls = []
-        for item in raw_calls:
-            if not isinstance(item, dict):
-                continue
-            name = item.get("name") or item.get("tool")
-            arguments = item.get("arguments") or item.get("payload") or {}
-            if isinstance(name, str) and isinstance(arguments, dict):
-                tool_calls.append({"id": item.get("id"), "name": name, "arguments": arguments})
-        return tool_calls
-
-    async def _execute_tool(self, tool_name: str, command: dict[str, Any]) -> Any:
-        tool = self.tools[tool_name]
-        payload = _payload(command)
-        if tool_name == "search_universities":
-            return await tool.execute(self.db, payload)
-        if tool_name == "compare_universities":
-            return await tool.execute(self.db, command.get("university_ids") or payload)
-        if tool_name == "search_programs":
-            return await tool.execute(self.db, payload)
-        if tool_name == "compare_programs":
-            return await tool.execute(self.db, command.get("program_ids") or payload)
-        if tool_name == "compare_career_paths":
-            return await tool.execute(self.db, command.get("program_ids") or payload)
-        raise ValueError(f"Unsupported college comparison tool: {tool_name}")
-
-
-def _command_payload(query: str) -> dict[str, Any]:
-    stripped = query.strip()
-    if not stripped:
-        return {}
-    try:
-        parsed = json.loads(stripped)
-    except json.JSONDecodeError:
-        start = stripped.find("{")
-        end = stripped.rfind("}")
-        if start == -1 or end <= start:
-            return {}
-        try:
-            parsed = json.loads(stripped[start : end + 1])
-        except json.JSONDecodeError:
-            return {}
-    return parsed if isinstance(parsed, dict) else {}
-
-
-def _payload(command: dict[str, Any]) -> dict[str, Any]:
-    payload = command.get("payload", command)
-    return payload if isinstance(payload, dict) else {}
+def _fallback_response(comparison: dict[str, Any]) -> str:
+    recommended = comparison.get("recommended_university") or {}
+    summary = comparison["summary"]
+    lines = [
+        (
+            f"I compared {summary['university_count']} universities"
+            f"{' for ' + summary['program_focus'] if summary.get('program_focus') else ''}."
+        )
+    ]
+    if recommended:
+        lines.append(
+            f"Recommended option: {recommended['university_name']} "
+            f"(score {recommended['score']})."
+        )
+        if recommended.get("reasons"):
+            lines.append("Why: " + "; ".join(recommended["reasons"][:3]) + ".")
+    if comparison.get("warnings"):
+        lines.append("Warnings: " + " ".join(comparison["warnings"][:2]))
+    if comparison.get("recommendations"):
+        lines.append("Next step: " + comparison["recommendations"][0])
+    return "\n".join(lines)

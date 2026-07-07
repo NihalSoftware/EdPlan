@@ -43,7 +43,7 @@ class Settings(BaseSettings):
         alias="COLLEGE_SCORECARD_BASE_URL",
     )
     openrouter_api_key: SecretStr | None = Field(None, alias="OPENROUTER_API_KEY")
-    openrouter_model: str = Field("qwen/qwen3-7b-plus", alias="OPENROUTER_MODEL")
+    openrouter_model: str = Field("qwen/qwen3.7-plus", alias="OPENROUTER_MODEL")
     openrouter_fallback_model: str | None = Field(None, alias="OPENROUTER_FALLBACK_MODEL")
     openrouter_base_url: str = Field(
         "https://openrouter.ai/api/v1",
@@ -60,6 +60,17 @@ class Settings(BaseSettings):
     def split_origins(cls, value: Union[str, List[AnyHttpUrl], List[str]]) -> Union[List[AnyHttpUrl], List[str]]:  # type: ignore[override]
         if isinstance(value, str):
             return [origin.strip() for origin in value.split(",") if origin.strip()]
+        return value
+
+    @field_validator("debug", mode="before")
+    @classmethod
+    def normalize_debug(cls, value: object) -> object:
+        if isinstance(value, str):
+            normalized = value.strip().lower()
+            if normalized in {"release", "production", "prod"}:
+                return False
+            if normalized in {"development", "dev"}:
+                return True
         return value
 
     @field_validator("database_url", mode="before")

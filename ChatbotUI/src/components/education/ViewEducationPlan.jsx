@@ -3,9 +3,12 @@ import { useNavigate } from "react-router-dom";
 import { jsPDF } from "jspdf";
 import { FaDownload } from "react-icons/fa6";
 import {
-	deleteEducationPlan,
-	getEducationPlanList,
-} from "../../services/authService.js";
+	deletePlan,
+	getGraduationAudit,
+	getPlan,
+	listPlans,
+	validatePlan,
+} from "../../services/planService.js";
 import { listPrograms } from "../../services/educationPlanService.js";
 import {
 	load as loadStorage,
@@ -64,9 +67,11 @@ const ViewEducationPlan = () => {
 	const [expandedPlanId, setExpandedPlanId] = useState(null);
 	const [deletingPlanId, setDeletingPlanId] = useState(null);
 	const [deleteTarget, setDeleteTarget] = useState(null);
-	const storedEmail = loadStorage("UserEmail");
-	const userEmail =
-		typeof storedEmail === "string" ? storedEmail : storedEmail?.email;
+	const [validatingPlanId, setValidatingPlanId] = useState(null);
+	const [auditingPlanId, setAuditingPlanId] = useState(null);
+	const [planFeedback, setPlanFeedback] = useState({});
+	const profile = loadStorage("UserProfile") || {};
+	const studentId = profile.student_id || profile.studentId || profile.id || 1;
 	const navigate = useNavigate();
 
 	const resolveDegree = (plan) => {
@@ -133,61 +138,69 @@ const ViewEducationPlan = () => {
 		}));
 	};
 
+	const normalizeBackendPlan = (entry) => {
+		const university = entry.university || {};
+		const program = entry.program || {};
+		const courses = (entry.courses || []).map((planCourse) => {
+			const course = planCourse.course || planCourse;
+			const term = planCourse.planned_term || {};
+			return {
+				id: course.course_id || planCourse.course_id,
+				course_id: course.course_id || planCourse.course_id,
+				code: course.course_code || course.code,
+				name: course.course_name || course.name,
+				courseName: course.course_name || course.name,
+				credits: course.credits,
+				year: course.recommended_year ? `Year ${course.recommended_year}` : term.term_name || "Unassigned Year",
+				semester: course.recommended_semester || term.term_name || "Unassigned Semester",
+				prerequisite: course.prerequisite || "",
+				corequisite: course.corequisite || "",
+				status: planCourse.status,
+			};
+		});
+		return {
+			id: entry.plan_id,
+			plan_id: entry.plan_id,
+			university_id: entry.university_id,
+			program_id: entry.program_id,
+			university:
+				university.university_name ||
+				university.name ||
+				entry.university_name ||
+				"University",
+			program:
+				program.program_name ||
+				program.name ||
+				entry.plan_name ||
+				"Program",
+			degree: program.degree || entry.description || "",
+			savedDate: entry.updated_at || entry.created_at || new Date().toISOString(),
+			courses,
+			source: "backend",
+			is_active: entry.is_active,
+		};
+	};
+
 	const loadPlans = async () => {
 		const localPlans = loadLocalPlans();
-		if (!userEmail) {
-			setSavedPlans(localPlans);
-			return;
-		}
 		setError("");
 		try {
-			const response = await getEducationPlanList(userEmail);
-			const payload = response.data?.data || [];
-
-			const remotePlans = payload.map((entry, index) => {
-				const courses = entry.program || entry.courses || [];
-				const firstCourse = courses.find(Boolean);
-				return {
-					id: `remote-${index}`,
-					university:
-						entry.university ||
-						entry.university_name ||
-						firstCourse?.university ||
-						"University",
-					program:
-						entry.program_name ||
-						entry.programTitle ||
-						firstCourse?.program ||
-						"Program",
-					degree:
-						entry.program_meta?.degree ||
-						entry.program_degree ||
-						entry.degree ||
-						"",
-					savedDate:
-						entry.created_at || entry.savedDate || new Date().toISOString(),
-					courses,
-					averageAnnualCost:
-						entry.average_annual_cost ||
-						entry.averageAnnualCost ||
-						entry.college_profile?.average_annual_cost ||
-						"",
-					source: "remote",
-				};
-			});
+			const summaries = await listPlans({ userId: studentId });
+			const remotePlans = await Promise.all(
+				summaries.map(async (summary) => {
+					try {
+						return normalizeBackendPlan(await getPlan(summary.plan_id));
+					} catch (err) {
+						console.error("Unable to load plan detail", err);
+						return normalizeBackendPlan(summary);
+					}
+				})
+			);
 
 			setSavedPlans([...remotePlans, ...localPlans]);
 		} catch (err) {
 			console.error(err);
-			if (err.response?.status === 401) {
-				setError(
-					"Your session has expired. Please login again to view saved plans."
-				);
-			} else if (err.response?.status === 422) {
-				setError("Unable to load saved plans. Please login again and retry.");
-			} else {
-				setError("Unable to fetch education plans at the moment.");
-			}
+			setError("Unable to fetch education plans at the moment.");
 			setSavedPlans(localPlans);
 		}
 	};
@@ -195,7 +208,7 @@ const ViewEducationPlan = () => {
 	useEffect(() => {
 		loadPlans();
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [userEmail]);
+	}, [studentId]);
 
 	useEffect(() => {
 		listPrograms()
@@ -258,20 +271,10 @@ const ViewEducationPlan = () => {
 			return;
 		}
 
-		if (!userEmail) {
-			setError("Please login again to delete saved plans.");
-			setDeleteTarget(null);
-			return;
-		}
-
 		setError("");
 		setDeletingPlanId(plan.id);
 		try {
-			await deleteEducationPlan({
-				email: userEmail,
-				programName: plan.program,
-				universityName: plan.university,
-			});
+			await deletePlan(plan.plan_id || plan.id);
 			setSavedPlans((prev) => prev.filter((item) => item.id !== plan.id));
 		} catch (err) {
 			console.error(err);
@@ -287,6 +290,66 @@ const ViewEducationPlan = () => {
 		} finally {
 			setDeletingPlanId(null);
 			setDeleteTarget(null);
+		}
+	};
+
+	const handleValidatePlan = async (plan) => {
+		const planId = plan.plan_id || plan.id;
+		setValidatingPlanId(planId);
+		setError("");
+		try {
+			const result = await validatePlan(planId, {});
+			setPlanFeedback((prev) => ({
+				...prev,
+				[planId]: {
+					type: result?.is_valid === false ? "warning" : "success",
+					message: result?.is_valid === false
+						? "Validation completed with warnings."
+						: "Validation completed successfully.",
+					detail: result,
+				},
+			}));
+		} catch (err) {
+			console.error(err);
+			setPlanFeedback((prev) => ({
+				...prev,
+				[planId]: {
+					type: "error",
+					message: "Unable to validate this plan.",
+				},
+			}));
+		} finally {
+			setValidatingPlanId(null);
+		}
+	};
+
+	const handleGraduationAudit = async (plan) => {
+		const planId = plan.plan_id || plan.id;
+		setAuditingPlanId(planId);
+		setError("");
+		try {
+			const result = await getGraduationAudit(planId);
+			setPlanFeedback((prev) => ({
+				...prev,
+				[planId]: {
+					type: result?.graduation_ready ? "success" : "warning",
+					message: result?.graduation_ready
+						? "Graduation audit: ready to graduate."
+						: `Graduation audit: ${result?.credits?.remaining ?? "some"} credits remaining.`,
+					detail: result,
+				},
+			}));
+		} catch (err) {
+			console.error(err);
+			setPlanFeedback((prev) => ({
+				...prev,
+				[planId]: {
+					type: "error",
+					message: "Unable to run graduation audit.",
+				},
+			}));
+		} finally {
+			setAuditingPlanId(null);
 		}
 	};
 
@@ -523,6 +586,26 @@ const ViewEducationPlan = () => {
 													</button>
 													<button
 														type="button"
+														onClick={() => handleValidatePlan(plan)}
+														disabled={validatingPlanId === (plan.plan_id || plan.id)}
+														className="px-4 py-1.5 rounded-lg bg-sky-100 text-sky-700 text-sm font-medium hover:bg-sky-200 transition disabled:cursor-not-allowed disabled:text-sky-400"
+													>
+														{validatingPlanId === (plan.plan_id || plan.id)
+															? "Validating..."
+															: "Validate"}
+													</button>
+													<button
+														type="button"
+														onClick={() => handleGraduationAudit(plan)}
+														disabled={auditingPlanId === (plan.plan_id || plan.id)}
+														className="px-4 py-1.5 rounded-lg bg-violet-100 text-violet-700 text-sm font-medium hover:bg-violet-200 transition disabled:cursor-not-allowed disabled:text-violet-400"
+													>
+														{auditingPlanId === (plan.plan_id || plan.id)
+															? "Auditing..."
+															: "Audit"}
+													</button>
+													<button
+														type="button"
 														className="px-4 py-1.5 rounded-lg bg-emerald-100 text-emerald-700 text-sm font-medium hover:bg-emerald-200 transition"
 													>
 														Send to Advisor
@@ -584,6 +667,19 @@ const ViewEducationPlan = () => {
 														</div>
 
 														<div className="space-y-6">
+															{planFeedback[plan.plan_id || plan.id] && (
+																<div
+																	className={`rounded-lg border px-4 py-3 text-sm font-semibold ${
+																		planFeedback[plan.plan_id || plan.id].type === "error"
+																			? "border-rose-100 bg-rose-50 text-rose-700"
+																			: planFeedback[plan.plan_id || plan.id].type === "warning"
+																			? "border-amber-100 bg-amber-50 text-amber-800"
+																			: "border-emerald-100 bg-emerald-50 text-emerald-700"
+																	}`}
+																>
+																	{planFeedback[plan.plan_id || plan.id].message}
+																</div>
+															)}
 															{Object.entries(
 																groupCoursesByYearAndSemester(plan.courses)
 															).map(([year, semesters]) => (

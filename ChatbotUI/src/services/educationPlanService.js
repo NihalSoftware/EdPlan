@@ -94,6 +94,7 @@ const normalizeProgram = (program, courses = []) => {
 	return {
 		...program,
 		program_id: program.program_id,
+		university_id: university.university_id || program.university_id,
 		program: program.program || program.program_name || "",
 		program_name: program.program_name || program.program || "",
 		university: universityName,

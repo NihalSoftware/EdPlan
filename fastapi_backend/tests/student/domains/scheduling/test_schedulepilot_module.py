@@ -103,7 +103,7 @@ class _RetrievalService:
 def test_schedulepilot_module_metadata():
     assert module.MODULE_NAME == "scheduling"
     assert module.MODULE_DESCRIPTION == "Build and explain student course schedules."
-    assert module.IMPLEMENTATION_PHASE == "Phase 3C"
+    assert module.IMPLEMENTATION_PHASE == "Phase D2"
 
 
 @pytest.mark.asyncio
@@ -124,11 +124,12 @@ async def test_schedulepilot_module_returns_phase_3c_ranked_options_response():
     )
 
     assert response.module_name == "scheduling"
-    assert "generated, validated, scored, and ranked" in response.content
-    assert "Persistence and schedule activation" in response.content
+    assert "Generated schedules for Fall 2026" in response.content
     assert response.metadata["module_version"] == module.MODULE_VERSION
-    assert response.metadata["implementation_phase"] == "Phase 3C"
-    assert response.metadata["status"] == "options_ranked"
+    assert response.metadata["implementation_phase"] == "Phase D2"
+    assert response.metadata["status"] == "ok"
+    assert response.metadata["next_action"] == "show_results"
+    assert response.metadata["reason"] == "generation_complete"
     assert response.metadata["counts"]["courses"] == 1
     assert response.metadata["counts"]["candidates"] == 1
     assert response.metadata["counts"]["scored_candidates"] == 1
@@ -141,7 +142,16 @@ async def test_schedulepilot_module_returns_phase_3c_ranked_options_response():
     assert response.metadata["metrics_implemented"] is True
     assert response.metadata["scoring_implemented"] is True
     assert response.metadata["ranking_implemented"] is True
+    assert response.metadata["decision_engine_implemented"] is True
+    assert response.metadata["interaction_session_implemented"] is True
     assert response.data["plan"]["plan_id"] == "plan-1"
+    assert response.data["decision"]["status"] == "ok"
+    assert response.data["decision"]["context"]["resolved_plan_id"] == "plan-1"
+    assert response.data["decision"]["context"]["resolved_term_id"] == "term-1"
+    assert response.data["session"]["state"]["lifecycle"] == "active"
+    assert response.data["session"]["state"]["generated"]["ranking_order"] == [
+        "schedule-option-000001"
+    ]
     assert response.data["candidates"][0]["candidate_id"] == "candidate-000001"
     assert response.data["candidates"][0]["is_feasible"] is True
     assert response.data["candidates"][0]["metrics"]["total_credits"] == 3
@@ -184,7 +194,7 @@ async def test_schedulepilot_module_requires_database_session():
         "Build my Spring schedule.",
     )
 
-    assert response.metadata["status"] == "error"
+    assert response.metadata["status"] == "failed"
     assert response.metadata["error"] == "database_session_required"
 
 
@@ -195,7 +205,7 @@ async def test_schedulepilot_module_requires_loaded_student_context():
         "Build my Spring schedule.",
     )
 
-    assert response.metadata["status"] == "error"
+    assert response.metadata["status"] == "failed"
     assert response.metadata["error"] == "student_context_required"
 
 
@@ -214,4 +224,4 @@ async def test_module_executor_executes_schedulepilot_without_not_implemented_er
     assert result.error is None
     assert result.response is not None
     assert result.response.module_name == "scheduling"
-    assert result.response.metadata["status"] == "options_ranked"
+    assert result.response.metadata["status"] == "ok"

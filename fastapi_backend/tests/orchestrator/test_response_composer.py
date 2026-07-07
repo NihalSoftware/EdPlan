@@ -37,10 +37,11 @@ def test_response_composer_composes_successful_response():
         {ACADEMIC_PLANNING: success_result(ACADEMIC_PLANNING)},
     )
 
-    assert final_response.message == "success"
+    assert final_response.message == "ok"
     assert final_response.module_responses[0].module_name == ACADEMIC_PLANNING
     assert final_response.metadata["status"] == "success"
     assert final_response.metadata["successful_module_count"] == 1
+    assert final_response.metadata["execution_plan"][0]["module_name"] == ACADEMIC_PLANNING
 
 
 def test_response_composer_composes_partial_success():
@@ -53,9 +54,10 @@ def test_response_composer_composes_partial_success():
         },
     )
 
-    assert final_response.message == "partial_success"
+    assert final_response.message == "ok"
     assert [response.module_name for response in final_response.module_responses] == [CAREER]
     assert final_response.metadata["failed_module_count"] == 1
+    assert final_response.metadata["status"] == "partial_success"
 
 
 def test_response_composer_composes_full_failure():
@@ -68,6 +70,7 @@ def test_response_composer_composes_full_failure():
         },
     )
 
-    assert final_response.message == "failure"
+    assert "selected specialist is not available yet" in final_response.message
     assert final_response.module_responses == []
     assert final_response.metadata["failed_module_count"] == 2
+    assert final_response.metadata["status"] == "failure"

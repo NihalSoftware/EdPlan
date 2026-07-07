@@ -3,7 +3,13 @@ from __future__ import annotations
 from app.orchestrator.modules.base_module import BaseModule
 from app.orchestrator.modules.module_registry import ModuleRegistry
 from app.orchestrator.modules.example_module import EXAMPLE_MODULE
-from app.orchestrator.router.module_selector import ACADEMIC_PLANNING, CAREER, ModuleSelector
+from app.orchestrator.router.module_selector import (
+    ACADEMIC_PLANNING,
+    CAREER,
+    COLLEGE_COMPARISON,
+    SCHEDULING,
+    ModuleSelector,
+)
 from app.orchestrator.schemas.intent_result import IntentResult
 from app.orchestrator.schemas.module_response import ModuleResponse
 from app.orchestrator.schemas.student_context import StudentContext
@@ -40,6 +46,20 @@ def test_module_selector_supports_multi_module_routing():
     )
 
     assert result.selected_modules == [CAREER, ACADEMIC_PLANNING]
+
+
+def test_module_selector_orders_dependent_core_agents():
+    result = ModuleSelector().select(
+        IntentResult(
+            intent="multi_module",
+            confidence=0.95,
+            target_modules=[COLLEGE_COMPARISON, SCHEDULING, ACADEMIC_PLANNING],
+        )
+    )
+
+    assert result.selected_modules == [ACADEMIC_PLANNING, SCHEDULING, COLLEGE_COMPARISON]
+    assert result.execution_plan[1]["depends_on"] == [ACADEMIC_PLANNING]
+    assert result.execution_plan[2]["depends_on"] == [ACADEMIC_PLANNING, SCHEDULING]
 
 
 def test_module_selector_tracks_registry_availability():

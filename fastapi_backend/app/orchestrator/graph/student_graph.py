@@ -159,8 +159,11 @@ def build_module_selector_node(
         selection = await _maybe_await(selector(state.intent_result))
         selected_modules = getattr(selection, "selected_modules", [])
         state.selected_modules = list(selected_modules)
+        execution_plan = getattr(selection, "execution_plan", [])
+        state.execution_plan = list(execution_plan)
         if hasattr(selection, "model_dump"):
             state.metadata["module_selection"] = selection.model_dump(mode="json")
+            state.metadata["execution_plan"] = state.execution_plan
         return state
 
     return module_selector_node

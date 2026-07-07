@@ -344,6 +344,7 @@ const FindUniversity = ({ onSelectProgram }) => {
 			"";
 		saveStorage("University", university.name);
 		saveStorage("UniversityUnitId", university.unit_id);
+		saveStorage("UniversityId", university.university_id || university.unit_id);
 		saveStorage("UniversityState", university.state);
 		saveStorage("Programname", programToSave || university.name);
 		saveStorage("Programnameview", programToSave || university.name);
@@ -359,10 +360,16 @@ const FindUniversity = ({ onSelectProgram }) => {
 	};
 
 	const handleToggleCompare = (university) => {
+		const universityKey = university.university_id || university.unit_id;
+		const normalizedUniversity = {
+			...university,
+			unit_id: university.unit_id || university.university_id,
+			university_id: university.university_id || university.unit_id,
+		};
 		setCompareSelection((prev) => {
-			const exists = prev.find((entry) => entry.unit_id === university.unit_id);
+			const exists = prev.find((entry) => (entry.university_id || entry.unit_id) === universityKey);
 			if (exists) {
-				const next = prev.filter((entry) => entry.unit_id !== university.unit_id);
+				const next = prev.filter((entry) => (entry.university_id || entry.unit_id) !== universityKey);
 				saveStorage("CompareQueue", next);
 				toast.success("Removed from the Comparison list!");
 				return next;
@@ -371,7 +378,7 @@ const FindUniversity = ({ onSelectProgram }) => {
 				toast.error("You can only compare upto 3 universities at a time.");
 				return prev;
 			}
-			const next = [...prev, university];
+			const next = [...prev, normalizedUniversity];
 			saveStorage("CompareQueue", next);
 			toast.success("Added to the Comparison list!");
 			return next;
@@ -646,7 +653,7 @@ const FindUniversity = ({ onSelectProgram }) => {
 										onClick={() => handleToggleCompare(university)}
 										className="text-sm font-medium text-indigo-700 hover:text-indigo-600 bg-indigo-100 hover:opacity-90 px-3 py-1 rounded-lg"
 									>
-										{compareSelection.some((entry) => entry.unit_id === university.unit_id)
+										{compareSelection.some((entry) => (entry.university_id || entry.unit_id) === (university.university_id || university.unit_id))
 											? "Remove"
 											: "Add to Compare"}
 									</button>

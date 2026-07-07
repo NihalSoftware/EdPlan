@@ -48,3 +48,25 @@ def test_intent_router_general_question_has_low_confidence():
     assert result.confidence == 0.35
     assert result.target_modules == []
 
+
+@pytest.mark.parametrize(
+    ("query", "expected_modules"),
+    [
+        ("Create my academic plan and build my schedule.", [ACADEMIC_PLANNING, SCHEDULING]),
+        ("Compare NNMC and Santa Fe, then recommend the better one.", [COLLEGE_COMPARISON]),
+        (
+            "Generate an academic plan and compare transfer options.",
+            [ACADEMIC_PLANNING, COLLEGE_COMPARISON],
+        ),
+        ("I want the fastest path to graduation.", [ACADEMIC_PLANNING]),
+        ("I want to transfer after two years.", [ACADEMIC_PLANNING, COLLEGE_COMPARISON]),
+    ],
+)
+def test_intent_router_supports_phase_five_validation_scenarios(
+    query: str,
+    expected_modules: list[str],
+):
+    result = IntentRouter().route(query, StudentContext())
+
+    assert result.target_modules == expected_modules
+

@@ -16,6 +16,8 @@ class ConflictDetector:
         conflicts: list[ScheduleConflict] = []
         conflicts.extend(self._duplicate_sections(candidate, len(conflicts)))
         conflicts.extend(self._duplicate_courses(candidate, len(conflicts)))
+        conflicts.extend(self._missing_prerequisites(candidate, len(conflicts)))
+        conflicts.extend(self._missing_corequisites(candidate, len(conflicts)))
         conflicts.extend(self._invalid_meetings(candidate, len(conflicts)))
         conflicts.extend(self._time_overlaps(candidate, len(conflicts)))
         return conflicts
@@ -101,6 +103,60 @@ class ConflictDetector:
                         overlap_end_time=meeting.end_time,
                         message=f"Meeting {meeting.meeting_id} has an invalid time range.",
                         metadata={"meeting_id": meeting.meeting_id},
+                    )
+                )
+        return conflicts
+
+    @staticmethod
+    def _missing_prerequisites(
+        candidate: ScheduleCandidate,
+        offset: int,
+    ) -> list[ScheduleConflict]:
+        conflicts: list[ScheduleConflict] = []
+        completed_course_ids = set(candidate.metadata.get("completed_course_ids") or [])
+        for course in sorted(candidate.courses, key=lambda item: item.course_id):
+            for prerequisite_id in course.prerequisite_course_ids:
+                if prerequisite_id in completed_course_ids:
+                    continue
+                conflicts.append(
+                    ScheduleConflict(
+                        conflict_id=_conflict_id(offset + len(conflicts) + 1),
+                        type="missing_prerequisite",
+                        course_a_id=course.course_id,
+                        course_b_id=prerequisite_id,
+                        message=(
+                            f"Course {course.course_id} is missing prerequisite "
+                            f"{prerequisite_id}."
+                        ),
+                        metadata={"prerequisite_course_id": prerequisite_id},
+                    )
+                )
+        return conflicts
+
+    @staticmethod
+    def _missing_corequisites(
+        candidate: ScheduleCandidate,
+        offset: int,
+    ) -> list[ScheduleConflict]:
+        conflicts: list[ScheduleConflict] = []
+        selected_course_ids = {course.course_id for course in candidate.courses}
+        completed_course_ids = set(candidate.metadata.get("completed_course_ids") or [])
+        available_course_ids = selected_course_ids | completed_course_ids
+        for course in sorted(candidate.courses, key=lambda item: item.course_id):
+            for corequisite_id in course.corequisite_course_ids:
+                if corequisite_id in available_course_ids:
+                    continue
+                conflicts.append(
+                    ScheduleConflict(
+                        conflict_id=_conflict_id(offset + len(conflicts) + 1),
+                        type="missing_corequisite",
+                        course_a_id=course.course_id,
+                        course_b_id=corequisite_id,
+                        message=(
+                            f"Course {course.course_id} is missing corequisite "
+                            f"{corequisite_id}."
+                        ),
+                        metadata={"corequisite_course_id": corequisite_id},
                     )
                 )
         return conflicts

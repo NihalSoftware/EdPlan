@@ -2,7 +2,7 @@ import asyncio
 
 import pytest
 
-from app.orchestrator.llm import LLMHealthCheck, LLMRequest, LLMResponse, LLMToolCall
+from app.orchestrator.llm import LLMHealthCheck, LLMRequest, LLMResponse
 from app.orchestrator.llm.base_provider import BaseLLMProvider
 from app.orchestrator.llm.prompt_registry import PromptRegistry
 from app.orchestrator.modules.module_registry import ModuleRegistry
@@ -45,6 +45,118 @@ PROGRAM_B = "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"
 
 
 class _Repository:
+    def __init__(self):
+        self.calls = []
+
+    async def search_universities(self, db, **filters):
+        self.calls.append(("search_universities", db, filters))
+        alpha = {
+            "university_id": UNIVERSITY_A,
+            "university_name": "Alpha University",
+            "city": "Albuquerque",
+            "state": "NM",
+            "website": "https://alpha.example.edu",
+            "available_programs": [{"program_id": PROGRAM_A, "program_name": "Computer Science"}],
+            "program_count": 1,
+            "public_private": None,
+        }
+        beta = {
+            "university_id": UNIVERSITY_B,
+            "university_name": "Beta University",
+            "city": "Santa Fe",
+            "state": "NM",
+            "website": "https://beta.example.edu",
+            "available_programs": [{"program_id": PROGRAM_B, "program_name": "Computer Science"}],
+            "program_count": 1,
+            "public_private": None,
+        }
+        name = (filters.get("name") or "").lower()
+        if "beta" in name:
+            return [beta]
+        if "alpha" in name:
+            return [alpha]
+        return [alpha, beta]
+
+    async def get_universities_by_ids(self, db, university_ids):
+        self.calls.append(("get_universities_by_ids", db, university_ids))
+        universities = {
+            UNIVERSITY_A: {
+                "university_id": UNIVERSITY_A,
+                "university_name": "Alpha University",
+                "program_count": 1,
+                "city": "Albuquerque",
+                "state": "NM",
+            },
+            UNIVERSITY_B: {
+                "university_id": UNIVERSITY_B,
+                "university_name": "Beta University",
+                "program_count": 2,
+                "city": "Santa Fe",
+                "state": "NM",
+            },
+        }
+        return [universities[item] for item in university_ids if item in universities]
+
+    async def search_programs(self, db, **filters):
+        self.calls.append(("search_programs", db, filters))
+        university_id = filters.get("university_id")
+        if university_id == UNIVERSITY_B:
+            return [{"program_id": PROGRAM_B, "program_name": "Computer Science", "degree": "BS"}]
+        return [{"program_id": PROGRAM_A, "program_name": "Computer Science", "degree": "BS"}]
+
+    async def get_programs_by_ids(self, db, program_ids):
+        self.calls.append(("get_programs_by_ids", db, program_ids))
+        programs = {
+            PROGRAM_A: {
+                "program_id": PROGRAM_A,
+                "program_name": "Computer Science",
+                "degree": "BS",
+                "total_credit_hours": 120,
+                "required_courses": [{"course_code": "CS101", "credits": 3}],
+                "course_count": 1,
+                "duration": None,
+                "description": None,
+                "university": {
+                    "university_id": UNIVERSITY_A,
+                    "university_name": "Alpha University",
+                    "city": "Albuquerque",
+                    "state": "NM",
+                },
+            },
+            PROGRAM_B: {
+                "program_id": PROGRAM_B,
+                "program_name": "Computer Science",
+                "degree": "BS",
+                "total_credit_hours": 124,
+                "required_courses": [{"course_code": "DS101", "credits": 3}],
+                "course_count": 1,
+                "duration": None,
+                "description": None,
+                "university": {
+                    "university_id": UNIVERSITY_B,
+                    "university_name": "Beta University",
+                    "city": "Santa Fe",
+                    "state": "NM",
+                },
+            },
+        }
+        return [programs[item] for item in program_ids if item in programs]
+
+    async def get_careers_for_programs(self, db, program_ids):
+        self.calls.append(("get_careers_for_programs", db, program_ids))
+        return {
+            PROGRAM_A: [
+                {"career_id": "career-shared", "career_name": "Software Engineer"},
+                {"career_id": "career-a", "career_name": "Systems Analyst"},
+            ],
+            PROGRAM_B: [
+                {"career_id": "career-shared", "career_name": "Software Engineer"},
+                {"career_id": "career-b", "career_name": "Data Analyst"},
+            ],
+        }
+
+
+class _LegacyRepository:
     def __init__(self):
         self.calls = []
 
@@ -126,20 +238,6 @@ class _Provider(BaseLLMProvider):
         return LLMHealthCheck(provider=self.provider_name, ok=True, message="ok")
 
 
-class _RecordingTool:
-    description = "recording comparison tool"
-    parameters = {"type": "object", "properties": {}, "additionalProperties": True}
-
-    def __init__(self, name, result=None):
-        self.name = name
-        self.result = result or {"ok": True}
-        self.calls = []
-
-    async def execute(self, db, *args):
-        self.calls.append((db, *args))
-        return self.result
-
-
 def test_comparison_tool_registry_matches_beta_v1_order():
     assert [tool.name for tool in COMPARISON_TOOLS] == EXPECTED_TOOL_NAMES
     assert all(isinstance(tool.description, str) and tool.description for tool in COMPARISON_TOOLS)
@@ -189,7 +287,7 @@ def test_comparison_api_routes_are_registered():
 
 
 def test_comparison_service_searches_universities_with_existing_data():
-    repository = _Repository()
+    repository = _LegacyRepository()
     service = ComparisonService(repository)
     db = object()
 
@@ -205,7 +303,7 @@ def test_comparison_service_searches_universities_with_existing_data():
 
 
 def test_comparison_service_compares_universities_without_rankings():
-    service = ComparisonService(_Repository())
+    service = ComparisonService(_LegacyRepository())
 
     result = asyncio.run(service.compare_universities(object(), [UNIVERSITY_A, UNIVERSITY_B]))
 
@@ -215,7 +313,7 @@ def test_comparison_service_compares_universities_without_rankings():
 
 
 def test_comparison_service_searches_programs():
-    repository = _Repository()
+    repository = _LegacyRepository()
     service = ComparisonService(repository)
 
     result = asyncio.run(service.search_programs(object(), university_id=UNIVERSITY_A, degree="BS", name="Computer"))
@@ -225,7 +323,7 @@ def test_comparison_service_searches_programs():
 
 
 def test_comparison_service_compares_programs_and_attaches_careers():
-    service = ComparisonService(_Repository())
+    service = ComparisonService(_LegacyRepository())
 
     result = asyncio.run(service.compare_programs(object(), [PROGRAM_A, PROGRAM_B]))
 
@@ -235,7 +333,7 @@ def test_comparison_service_compares_programs_and_attaches_careers():
 
 
 def test_comparison_service_compares_career_paths():
-    service = ComparisonService(_Repository())
+    service = ComparisonService(_LegacyRepository())
 
     result = asyncio.run(service.compare_career_paths(object(), [PROGRAM_A, PROGRAM_B]))
 
@@ -245,7 +343,7 @@ def test_comparison_service_compares_career_paths():
 
 
 def test_comparison_tools_delegate_to_service():
-    service = ComparisonService(_Repository())
+    service = ComparisonService(_LegacyRepository())
     db = object()
 
     assert isinstance(
@@ -261,29 +359,115 @@ def test_comparison_tools_delegate_to_service():
     assert "mapped_careers" in asyncio.run(CompareCareerPathsTool(service).execute(db, [PROGRAM_A, PROGRAM_B]))
 
 
+def test_comparison_service_builds_deterministic_advising_comparison():
+    service = ComparisonService(_Repository())
+
+    result = asyncio.run(
+        service.build_advising_comparison(
+            object(),
+            student_context={"program": {"program_name": "Computer Science"}},
+            query="Compare Alpha and Beta for computer science.",
+        )
+    )
+
+    assert result["summary"]["status"] == "ready"
+    assert result["summary"]["recommended_university"] == "Alpha University"
+    assert [row["university_name"] for row in result["comparison_table"]] == [
+        "Alpha University",
+        "Beta University",
+    ]
+    assert result["ranked_recommendations"][0]["score"] >= result["ranked_recommendations"][1]["score"]
+
+
+def test_comparison_service_asks_for_context_when_request_is_underspecified():
+    service = ComparisonService(_Repository())
+
+    result = asyncio.run(
+        service.build_advising_comparison(
+            object(),
+            student_context={},
+            query="Which university is best?",
+        )
+    )
+
+    assert result["summary"]["status"] == "needs_context"
+    assert result["validation"]["missing"] == ["universities_or_programs_to_compare"]
+    assert result["recommendations"][0].startswith("Please name at least two universities")
+
+
 @pytest.mark.asyncio
-async def test_college_comparison_advisor_runs_multiple_comparison_tools():
-    compare_universities = _RecordingTool("compare_universities", {"universities": ["Alpha", "Beta"]})
-    compare_programs = _RecordingTool("compare_programs", {"programs": ["CS", "DS"]})
-    compare_careers = _RecordingTool("compare_career_paths", {"overlapping_careers": ["Software Engineer"]})
+async def test_college_comparison_advisor_explains_deterministic_comparison():
+    class _AdvisingService:
+        def __init__(self):
+            self.calls = []
+
+        async def build_advising_comparison(self, db, *, student_context, query):
+            self.calls.append((db, student_context, query))
+            return {
+                "summary": {
+                    "status": "ready",
+                    "query": query,
+                    "university_count": 2,
+                    "program_count": 2,
+                    "recommended_university": "Alpha University",
+                    "program_focus": "Computer Science",
+                },
+                "student_context": student_context,
+                "universities": [
+                    {"university_id": UNIVERSITY_A, "university_name": "Alpha University"},
+                    {"university_id": UNIVERSITY_B, "university_name": "Beta University"},
+                ],
+                "programs": [],
+                "recommended_university": {
+                    "rank": 1,
+                    "university_id": UNIVERSITY_A,
+                    "university_name": "Alpha University",
+                    "score": 85,
+                    "reasons": ["offers matching program data"],
+                    "programs": [],
+                    "unavailable_fields": ["tuition"],
+                },
+                "comparison_table": [
+                    {
+                        "university_id": UNIVERSITY_A,
+                        "university_name": "Alpha University",
+                        "matching_programs": [],
+                    },
+                    {
+                        "university_id": UNIVERSITY_B,
+                        "university_name": "Beta University",
+                        "matching_programs": [],
+                    },
+                ],
+                "ranked_recommendations": [
+                    {
+                        "rank": 1,
+                        "university_id": UNIVERSITY_A,
+                        "university_name": "Alpha University",
+                        "score": 85,
+                        "reasons": ["offers matching program data"],
+                    }
+                ],
+                "pros": [],
+                "cons": [],
+                "advisor_notes": [],
+                "recommendations": ["Review transfer rules with an advisor."],
+                "validation": {"status": "valid", "warnings": []},
+                "warnings": [],
+                "career_paths": {},
+                "multi_agent_context": {},
+            }
+
+    service = _AdvisingService()
     provider = _Provider(
         [
-            LLMResponse(
-                model="test",
-                content="",
-                tool_calls=[
-                    LLMToolCall(name="compare_universities", arguments={"university_ids": [UNIVERSITY_A, UNIVERSITY_B]}),
-                    LLMToolCall(name="compare_programs", arguments={"program_ids": [PROGRAM_A, PROGRAM_B]}),
-                    LLMToolCall(name="compare_career_paths", arguments={"program_ids": [PROGRAM_A, PROGRAM_B]}),
-                ],
-            ),
             LLMResponse(model="test", content="Alpha and Beta differ by catalog programs; career overlap is Software Engineer."),
         ]
     )
     comparison_module = CollegeComparisonModule(
         db=object(),
-        tools=[compare_universities, compare_programs, compare_careers],
         llm_provider=provider,
+        service=service,
     )
 
     response = await comparison_module.execute(
@@ -292,13 +476,11 @@ async def test_college_comparison_advisor_runs_multiple_comparison_tools():
     )
 
     assert response.content.startswith("Alpha and Beta")
-    assert response.metadata["tools_invoked"] == [
-        "compare_universities",
-        "compare_programs",
-        "compare_career_paths",
-    ]
+    assert response.data["comparison_plan"]["summary"]["recommended_university"] == "Alpha University"
+    assert response.metadata["deterministic_comparison"] is True
     assert response.metadata["advisor_prompt"] == "comparison.advisor"
-    assert provider.requests[0].tools[0]["function"]["name"] == "search_universities"
+    assert provider.requests[0].tools == []
+    assert service.calls[0][2] == "Compare Alpha and Beta for computer science."
 
 
 def test_comparison_request_schemas_accept_beta_v1_payloads():

@@ -1,9 +1,4 @@
-import axios from "axios";
-import { API_BASE_URL } from "./apiBaseUrl.js";
-
-const client = axios.create({
-	baseURL: API_BASE_URL,
-});
+import client from "./apiClient.js";
 
 const unwrapData = (response) => response.data?.data || [];
 

@@ -49,7 +49,13 @@ class CandidateGenerator:
                 if signature in seen_signatures:
                     continue
                 seen_signatures.add(signature)
-                candidates.append(self._candidate(len(candidates) + 1, option_set))
+                candidates.append(
+                    self._candidate(
+                        len(candidates) + 1,
+                        option_set,
+                        completed_course_ids=_completed_course_ids(context),
+                    )
+                )
                 if len(candidates) >= self.config.max_candidate_count:
                     truncated = True
                     break
@@ -79,7 +85,13 @@ class CandidateGenerator:
             meetings_by_section_id.setdefault(meeting.section_id, []).append(meeting)
 
         all_course_options: list[list[_CourseOption]] = []
-        for course in context.courses:
+        schedulable_courses = [
+            course
+            for course in context.courses
+            if str(course.status or "").strip().lower() != "completed"
+        ]
+
+        for course in schedulable_courses:
             course_offerings = [
                 offering for offering in context.offerings if offering.course_id == course.course_id
             ]
@@ -126,7 +138,12 @@ class CandidateGenerator:
         return all_course_options
 
     @staticmethod
-    def _candidate(index: int, option_set: tuple[_CourseOption, ...]) -> ScheduleCandidate:
+    def _candidate(
+        index: int,
+        option_set: tuple[_CourseOption, ...],
+        *,
+        completed_course_ids: set[str],
+    ) -> ScheduleCandidate:
         courses = [option.course for option in option_set]
         sections = [section for option in option_set for section in option.sections]
         meetings = [meeting for option in option_set for meeting in option.meetings]
@@ -142,6 +159,7 @@ class CandidateGenerator:
                 "section_count": len(sections),
                 "meeting_count": len(meetings),
                 "component_count": sum(len(option.component_keys) for option in option_set),
+                "completed_course_ids": sorted(completed_course_ids),
             },
         )
 
@@ -152,3 +170,11 @@ def _component_keys(offerings: list[ScheduleCourseOffering]) -> list[str]:
         if offering.offering_type not in keys:
             keys.append(offering.offering_type)
     return keys
+
+
+def _completed_course_ids(context: ScheduleRetrievalContext) -> set[str]:
+    return {
+        course.course_id
+        for course in context.courses
+        if str(course.status or "").strip().lower() == "completed"
+    }

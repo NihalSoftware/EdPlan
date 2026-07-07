@@ -1,4 +1,5 @@
-import { searchUniversities, compareUniversitiesByIds } from './universityService.js';
+import { compareUniversities as compareUniversitiesByBackend } from "./comparisonService.js";
+import { searchUniversities } from "./universityService.js";
 
 const resolveUniversityByName = async (query) => {
   if (!query) return null;
@@ -26,8 +27,12 @@ export const compareUniversities = async (nameA, nameB) => {
     throw new Error('Please select two valid universities to compare.');
   }
 
-  const compare = await compareUniversitiesByIds([uniA.unit_id, uniB.unit_id]);
-  const [detailA, detailB] = compare.length >= 2 ? compare : [uniA, uniB];
+  const compare = await compareUniversitiesByBackend([
+    uniA.university_id || uniA.unit_id,
+    uniB.university_id || uniB.unit_id
+  ]);
+  const [detailA, detailB] =
+    (compare.universities || []).length >= 2 ? compare.universities : [uniA, uniB];
   const describe = (label, accessor, formatter = (v) => v ?? 'N/A') => {
     const valueA = accessor(detailA);
     const valueB = accessor(detailB);
