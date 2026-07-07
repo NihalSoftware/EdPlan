@@ -105,33 +105,6 @@ const Navigation = ({ open, setOpen }) => {
 				<NavItem to="/view" label="Saved Plans" icon={FaRegBookmark} onClick={closeMenu} />
 				<NavItem to="/edplan-nexus" label="EdPlan Nexus" icon={FaWandMagicSparkles} badge="NEW" onClick={closeMenu} />
 			</nav>
-
-			<div className="mx-5 mt-auto rounded-2xl border border-indigo-100 bg-gradient-to-br from-violet-50 via-white to-indigo-50 p-5 shadow-sm">
-				<div className="mx-auto mb-4 flex h-20 w-24 items-end justify-center">
-					<div className="relative h-14 w-20 rounded-xl bg-gradient-to-br from-indigo-100 to-violet-200 shadow-xl shadow-indigo-100">
-						<div className="absolute -top-5 left-4 h-7 w-12 rounded-sm bg-indigo-500 shadow-md shadow-indigo-200 [clip-path:polygon(50%_0,100%_35%,50%_70%,0_35%)]" />
-						<div className="absolute left-5 top-3 h-2 w-10 rounded-full bg-white/70" />
-						<div className="absolute left-4 top-7 h-2 w-12 rounded-full bg-white/60" />
-						<div className="absolute -right-4 bottom-0 h-8 w-3 rounded-full bg-emerald-200" />
-						<div className="absolute -right-2 bottom-0 h-12 w-3 rounded-full bg-emerald-300" />
-					</div>
-				</div>
-				<h2 className="text-center text-base font-black leading-6 text-slate-950">
-					Your AI-powered education companion
-				</h2>
-				<p className="mt-3 text-center text-sm font-medium leading-6 text-slate-600">
-					Get personalized guidance from our network of specialized agents.
-				</p>
-				<NavLink
-					to="/edplan-nexus"
-					onClick={closeMenu}
-					className="mt-5 flex items-center justify-between rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-indigo-600 shadow-sm transition hover:border-indigo-200 hover:shadow-md"
-				>
-					Start Your Journey
-					<FaArrowRight />
-				</NavLink>
-			</div>
-
 			<footer className="border-t border-slate-50 p-6">
 				<div className="flex items-center justify-between gap-3">
 					{isAuthenticated && firstName && (
