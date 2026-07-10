@@ -64,16 +64,8 @@ const formatPercent = (value) =>
 const formatCurrency = (value) =>
 	value || value === 0 ? `$${Number(value).toLocaleString()}` : "N/A";
 
-const DEFAULT_STATE_FILTER = "New Mexico";
+const DEFAULT_STATE_FILTER = "";
 
-const allowedCampuses = [
-	"University of New Mexico",
-	"New Mexico State University",
-	"Santa Fe Community College",
-	"Northern New Mexico College",
-	"San Juan College",
-];
-const allowedCampusesLower = new Set(allowedCampuses.map((name) => name.toLowerCase()));
 const normalizeDegree = (value = "") => {
 	const raw = String(value).trim().toLowerCase();
 	if (!raw) return "";
@@ -96,7 +88,7 @@ const FindUniversity = ({ onSelectProgram }) => {
 	const [error, setError] = useState("");
 	const [searchTerm, setSearchTerm] = useState("");
 	const [stateFilter, setStateFilter] = useState("");
-	const [costFilter, setCostFilter] = useState(18000);
+	const [costFilter, setCostFilter] = useState(30000);
 	const [programOptions, setProgramOptions] = useState([]);
 	const [programCatalogLoading, setProgramCatalogLoading] = useState(false);
 	const [programCatalogError, setProgramCatalogError] = useState("");
@@ -118,12 +110,9 @@ const FindUniversity = ({ onSelectProgram }) => {
 			const payload = await searchUniversities({
 				search: overrides.search ?? searchTerm,
 				state: overrides.state ?? stateFilter,
-				perPage: 16,
+				perPage: 100,
 			});
-			const allowedOnly = (payload.data || []).filter((uni) =>
-				allowedCampusesLower.has((uni.name || "").toLowerCase())
-			);
-			setUniversities(allowedOnly);
+			setUniversities(payload.data || []);
 			setError("");
 		} catch (err) {
 			console.error(err);
@@ -146,7 +135,6 @@ const FindUniversity = ({ onSelectProgram }) => {
 				const crimeLookup = new Map();
 				items.forEach((entry) => {
 					const uniName = entry.university || entry.campus || "";
-					if (!allowedCampusesLower.has(uniName.toLowerCase())) return;
 					if (entry.program) {
 						programSet.add(entry.program);
 						if (!map.has(entry.program)) {
