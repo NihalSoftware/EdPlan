@@ -4,6 +4,7 @@ import {
 	FaChevronDown,
 	FaChevronUp,
 	FaPlus,
+	FaTrash,
 } from "react-icons/fa";
 import { addEducationPlan } from "../../services/authService.js";
 import {
@@ -19,6 +20,7 @@ import toast from "react-hot-toast";
 const LOCAL_PLAN_KEY = "LocalSavedPlans";
 const MIN_SEMESTER_CREDITS = 6;
 const MAX_SEMESTER_CREDITS = 20;
+const MAX_SEMESTERS = 10;
 const normalizeRequirement = (value) => (value || "").trim();
 const normalizeDegree = (value = "") => {
 	const raw = String(value || "").trim().toLowerCase();
@@ -567,6 +569,10 @@ const EducationPlanEditor = () => {
 			toast.error("Select a university and program first.");
 			return;
 		}
+		if (planTerms.length >= MAX_SEMESTERS) {
+			toast.error(`You can add a maximum of ${MAX_SEMESTERS} semesters.`);
+			return;
+		}
 		const existing = new Set(planTerms.map((term) => term.key));
 		const nextRecommended = recommendedTerms.find((term) => !existing.has(term.key));
 		const fallbackIndex = planTerms.length + 1;
@@ -583,6 +589,35 @@ const EducationPlanEditor = () => {
 		});
 		setActiveTermKey(nextTerm.key);
 		setExpandedTerms((prev) => ({ ...prev, [nextTerm.key]: true }));
+	};
+
+	const deleteSemester = (term) => {
+		const termCourses = courses.filter((course) => isSameTerm(course, term));
+		const termLabel = `${term.year} - ${term.semester}`;
+
+		if (
+			termCourses.length > 0 &&
+			!window.confirm(
+				`Delete ${termLabel}? This will also remove ${termCourses.length} course${
+					termCourses.length === 1 ? "" : "s"
+				} from your plan.`
+			)
+		) {
+			return;
+		}
+
+		setPlanTerms((prev) => prev.filter((entry) => entry.key !== term.key));
+		setCourses((prev) => prev.filter((course) => !isSameTerm(course, term)));
+		setExpandedTerms((prev) => {
+			const next = { ...prev };
+			delete next[term.key];
+			return next;
+		});
+		setActiveTermKey((prev) => {
+			if (prev !== term.key) return prev;
+			return planTerms.find((entry) => entry.key !== term.key)?.key || "";
+		});
+		toast.success(`${termLabel} deleted.`);
 	};
 
 	const addCourse = (course) => {
@@ -1119,14 +1154,23 @@ const EducationPlanEditor = () => {
 											))
 										)}
 									</select>
-									<button
-										type="button"
-										onClick={addSemester}
-										className="inline-flex h-11 items-center gap-2 rounded-lg bg-blue-700 px-4 text-sm font-extrabold text-white shadow-sm hover:bg-blue-800"
-									>
-										<FaPlus className="h-3 w-3" />
-										Add Semester
-									</button>
+					<button
+						type="button"
+						onClick={addSemester}
+						disabled={planTerms.length >= MAX_SEMESTERS}
+						title={
+							planTerms.length >= MAX_SEMESTERS
+								? `Maximum of ${MAX_SEMESTERS} semesters reached`
+								: "Add a semester"
+						}
+						className="inline-flex h-11 items-center gap-2 rounded-lg bg-blue-700 px-4 text-sm font-extrabold text-white shadow-sm hover:bg-blue-800 disabled:cursor-not-allowed disabled:bg-slate-300"
+					>
+						<FaPlus className="h-3 w-3" />
+						Add Semester
+						<span className="text-xs font-bold opacity-80">
+							({planTerms.length}/{MAX_SEMESTERS})
+						</span>
+					</button>
 								</div>
 							</div>
 
@@ -1216,19 +1260,22 @@ const EducationPlanEditor = () => {
 											isExpanded ? "border-emerald-100" : "border-slate-200"
 										}`}
 									>
-										<button
-											type="button"
-											onClick={() => {
-												setActiveTermKey(groupKey);
-												setExpandedTerms((prev) => ({
-													...prev,
-													[groupKey]: !prev[groupKey],
-												}));
-											}}
-											className={`flex w-full items-center gap-3 px-4 py-4 text-left ${
-												activeTermKey === groupKey ? "bg-blue-50/70" : ""
-											}`}
-										>
+						<div
+							className={`flex w-full items-center gap-3 px-4 py-4 ${
+								activeTermKey === groupKey ? "bg-blue-50/70" : ""
+							}`}
+						>
+						<button
+							type="button"
+							onClick={() => {
+								setActiveTermKey(groupKey);
+								setExpandedTerms((prev) => ({
+									...prev,
+									[groupKey]: !prev[groupKey],
+								}));
+							}}
+							className="flex min-w-0 flex-1 items-center gap-3 text-left"
+						>
 											<span
 												className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-sm font-extrabold text-white ${
 													activeTermKey === groupKey ? "bg-blue-700" : "bg-slate-400"
@@ -1241,18 +1288,48 @@ const EducationPlanEditor = () => {
 													Sem {index + 1}: {courseSemester}
 												</h3>
 												<p className="text-xs font-medium text-slate-500">
-													{courseList.length} courses - {semesterCredits} credits - {courseYear}
-												</p>
-											</div>
-											<span className={`rounded-md px-3 py-1 text-xs font-extrabold uppercase ${statusClass}`}>
-												{status}
-											</span>
-											{isExpanded ? (
-												<FaChevronUp className="h-3 w-3 text-slate-400" />
-											) : (
-												<FaChevronDown className="h-3 w-3 text-slate-400" />
-											)}
-										</button>
+									{courseList.length} courses - {semesterCredits} credits - {courseYear}
+								</p>
+							</div>
+						</button>
+						<button
+							type="button"
+							onClick={() =>
+								deleteSemester({
+									key: groupKey,
+									year: courseYear,
+									semester: courseSemester,
+								})
+							}
+							className="inline-flex shrink-0 items-center gap-1 rounded-md px-2 py-1 text-xs font-extrabold text-rose-500 hover:bg-rose-50 hover:text-rose-700"
+							aria-label={`Delete semester ${index + 1}: ${courseSemester}`}
+							title="Delete semester"
+						>
+							<FaTrash className="h-3 w-3" />
+							<span className="hidden sm:inline">Delete</span>
+						</button>
+							<span className={`rounded-md px-3 py-1 text-xs font-extrabold uppercase ${statusClass}`}>
+								{status}
+							</span>
+						<button
+							type="button"
+							onClick={() => {
+								setActiveTermKey(groupKey);
+								setExpandedTerms((prev) => ({
+									...prev,
+									[groupKey]: !prev[groupKey],
+								}));
+							}}
+							className="shrink-0 rounded p-1"
+							aria-label={`${isExpanded ? "Collapse" : "Expand"} semester ${index + 1}`}
+						>
+							{isExpanded ? (
+								<FaChevronUp className="h-3 w-3 text-slate-400" />
+							) : (
+								<FaChevronDown className="h-3 w-3 text-slate-400" />
+							)}
+						</button>
+						</div>
 
 										{isExpanded && (
 											<div className="space-y-2 border-t border-slate-100 px-4 pb-4 pt-3">
