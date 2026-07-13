@@ -17,7 +17,7 @@ import {
 import toast from "react-hot-toast";
 
 const LOCAL_PLAN_KEY = "LocalSavedPlans";
-const MIN_SEMESTER_CREDITS = 12;
+const MIN_SEMESTER_CREDITS = 6;
 const MAX_SEMESTER_CREDITS = 20;
 const normalizeRequirement = (value) => (value || "").trim();
 const normalizeDegree = (value = "") => {

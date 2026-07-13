@@ -143,12 +143,14 @@ def _course_to_dict(course: Course, *, include_dependencies: bool = False) -> di
 
 
 def _course_summary_to_dict(course: Course) -> dict:
+    metadata = course.metadata_json or {}
     return {
         "course_id": str(course.course_id),
         "program_id": str(course.program_id),
         "course_code": course.course_code,
         "code": course.course_code,
         "course_name": course.course_name,
+        "name": course.course_name,
         "credits": course.credits,
         "lecture_hours": course.lecture_hours,
         "lab_hours": course.lab_hours,
@@ -156,7 +158,11 @@ def _course_summary_to_dict(course: Course) -> dict:
         "year": course.recommended_year,
         "recommended_semester": course.recommended_semester,
         "semester": course.recommended_semester,
+        "prerequisite": metadata.get("prerequisite"),
+        "corequisite": metadata.get("corequisite"),
         "description": course.description,
+        "metadata_json": metadata,
+        "source_sequence": course.source_sequence,
     }
 
 

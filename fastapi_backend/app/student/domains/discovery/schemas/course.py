@@ -11,6 +11,7 @@ class CourseSummary(BaseModel):
     course_code: str
     code: str | None = None
     course_name: str
+    name: str | None = None
     credits: int
     lecture_hours: int = 0
     lab_hours: int = 0
@@ -18,7 +19,11 @@ class CourseSummary(BaseModel):
     year: int | str | None = None
     recommended_semester: str | None = None
     semester: str | None = None
+    prerequisite: str | None = None
+    corequisite: str | None = None
     description: str | None = None
+    metadata_json: dict | None = None
+    source_sequence: int | None = None
 
 
 class CoursePrerequisiteResponse(BaseModel):

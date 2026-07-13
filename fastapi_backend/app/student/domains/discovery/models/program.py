@@ -14,6 +14,7 @@ from sqlalchemy import (
     Uuid,
     text,
 )
+from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.base import Base
@@ -39,6 +40,7 @@ class University(Base):
     city: Mapped[str] = mapped_column(String(120), nullable=False)
     state: Mapped[str] = mapped_column(String(120), nullable=False)
     website: Mapped[str | None] = mapped_column(String(255))
+    college_profile: Mapped[dict | None] = mapped_column(JSONB)
 
     programs: Mapped[List["Program"]] = relationship(back_populates="university")
 
@@ -70,6 +72,7 @@ class Program(Base):
     program_name: Mapped[str] = mapped_column(String(255), nullable=False)
     degree: Mapped[str] = mapped_column(String(120), nullable=False)
     total_credit_hours: Mapped[int] = mapped_column(Integer, nullable=False)
+    metadata_json: Mapped[dict | None] = mapped_column(JSONB)
 
     university: Mapped[University] = relationship(back_populates="programs")
     courses: Mapped[List["Course"]] = relationship(back_populates="program")
@@ -111,6 +114,8 @@ class Course(Base):
     recommended_year: Mapped[int | None] = mapped_column(Integer)
     recommended_semester: Mapped[str | None] = mapped_column(String(20))
     description: Mapped[str | None] = mapped_column(Text)
+    metadata_json: Mapped[dict | None] = mapped_column(JSONB)
+    source_sequence: Mapped[int | None] = mapped_column(Integer)
 
     program: Mapped[Program] = relationship(back_populates="courses")
     prerequisite_links: Mapped[List["CoursePrerequisite"]] = relationship(
