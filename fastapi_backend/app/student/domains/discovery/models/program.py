@@ -117,6 +117,31 @@ class Course(Base):
     metadata_json: Mapped[dict | None] = mapped_column(JSONB)
     source_sequence: Mapped[int | None] = mapped_column(Integer)
 
+    @property
+    def is_elective(self) -> bool:
+        metadata = self.metadata_json or {}
+        explicit_value = metadata.get("is_elective")
+        if isinstance(explicit_value, bool):
+            return explicit_value
+        if explicit_value is not None:
+            normalized_value = str(explicit_value).strip().lower()
+            if normalized_value in {"true", "1", "yes"}:
+                return True
+            if normalized_value in {"false", "0", "no"}:
+                return False
+
+        code = (self.course_code or "").strip().upper()
+        name = (self.course_name or "").strip().lower()
+        return code.startswith("ELEC") or "elective" in name
+
+    @property
+    def default_plan_eligible(self) -> bool:
+        return (
+            not self.is_elective
+            and self.recommended_year is not None
+            and bool(self.recommended_semester)
+        )
+
     program: Mapped[Program] = relationship(back_populates="courses")
     prerequisite_links: Mapped[List["CoursePrerequisite"]] = relationship(
         back_populates="course",

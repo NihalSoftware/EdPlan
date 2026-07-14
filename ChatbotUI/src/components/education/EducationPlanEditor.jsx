@@ -43,6 +43,9 @@ const YEAR_ORDER = [
 	"Third Year",
 	"Fourth Year",
 	"Fifth Year",
+	"Sixth Year",
+	"Seventh Year",
+	"Eighth Year",
 ];
 const SEMESTER_ORDER = ["Fall", "Spring", "Summer", "Winter"];
 const UNIVERSITY_ALIASES = {
@@ -300,11 +303,16 @@ const EducationPlanEditor = () => {
 				(hydratedMatch.years || []).flatMap((entry) =>
 					(entry.semesters || []).flatMap((semester) =>
 						(semester.courses || []).map((course) => ({
-							year: entry.year,
-							semester: semester.semester,
+							recommended_year: course.recommended_year || entry.year,
+							recommended_semester:
+								course.recommended_semester || semester.semester,
+							year: course.recommended_year || entry.year,
+							semester: course.recommended_semester || semester.semester,
 							code: course.code,
 							name: course.name,
 							credits: course.credits,
+							is_elective: course.is_elective,
+							default_plan_eligible: course.default_plan_eligible,
 							prerequisite: course.prerequisite,
 							corequisite: course.corequisite,
 							schedule: course.schedule,
@@ -317,7 +325,7 @@ const EducationPlanEditor = () => {
 
 			const builtDefaultPlan = dedupeCourses(
 				cleanedCourses
-					.filter((course) => !course.code?.toUpperCase().startsWith("ELEC"))
+					.filter((course) => course.default_plan_eligible)
 					.map((course) => ({
 						program: selectedProgram,
 						university: selectedUniversity,
@@ -330,6 +338,28 @@ const EducationPlanEditor = () => {
 						corequisite: course.corequisite,
 						schedule: course.schedule,
 					}))
+			);
+			const defaultTerms = Array.from(
+				new Map(
+					builtDefaultPlan.map((course) => [
+						`${course.year}::${course.semester}`,
+						{
+							key: `${course.year}::${course.semester}`,
+							year: course.year,
+							semester: course.semester,
+						},
+					])
+				).values()
+			)
+				.sort((a, b) => {
+					const yearDiff = getYearRank(a.year) - getYearRank(b.year);
+					if (yearDiff !== 0) return yearDiff;
+					return getSemesterRank(a.semester) - getSemesterRank(b.semester);
+				})
+				.slice(0, MAX_SEMESTERS);
+			const defaultTermKeys = new Set(defaultTerms.map((term) => term.key));
+			const placedDefaultPlan = builtDefaultPlan.filter((course) =>
+				defaultTermKeys.has(`${course.year}::${course.semester}`)
 			);
 			setDefaultPlan(builtDefaultPlan);
 			const degreeToUse = selectedDegree || hydratedMatch.degree || "";
@@ -376,9 +406,14 @@ const EducationPlanEditor = () => {
 			}
 
 			if (!editingMatch || !editApplied) {
-				setCourses([]);
-				setPlanTerms([]);
-				setActiveTermKey("");
+				setCourses(placedDefaultPlan);
+				setPlanTerms(defaultTerms);
+				setActiveTermKey(defaultTerms[0]?.key || "");
+				setExpandedTerms(
+					Object.fromEntries(
+						defaultTerms.map((term, index) => [term.key, index < 2])
+					)
+				);
 			}
 		};
 

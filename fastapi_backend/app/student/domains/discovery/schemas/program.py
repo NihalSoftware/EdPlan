@@ -30,6 +30,8 @@ class CourseSummary(BaseModel):
     year: int | str | None = None
     recommended_semester: str | None = None
     semester: str | None = None
+    is_elective: bool = False
+    default_plan_eligible: bool = False
     description: str | None = None
 
 

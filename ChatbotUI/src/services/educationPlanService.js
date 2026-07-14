@@ -44,6 +44,8 @@ const normalizeCourse = (course) => ({
 		"Unassigned Year",
 	recommended_semester:
 		course.recommended_semester || course.semester || "Unassigned Semester",
+	is_elective: course.is_elective === true,
+	default_plan_eligible: course.default_plan_eligible === true,
 	description: course.description || "",
 });
 

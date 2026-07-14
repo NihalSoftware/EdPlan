@@ -158,6 +158,8 @@ def _course_summary_to_dict(course: Course) -> dict:
         "year": course.recommended_year,
         "recommended_semester": course.recommended_semester,
         "semester": course.recommended_semester,
+        "is_elective": course.is_elective,
+        "default_plan_eligible": course.default_plan_eligible,
         "prerequisite": metadata.get("prerequisite"),
         "corequisite": metadata.get("corequisite"),
         "description": course.description,
