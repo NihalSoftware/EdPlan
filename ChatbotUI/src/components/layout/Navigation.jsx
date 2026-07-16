@@ -1,6 +1,6 @@
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import clsx from "clsx";
-import { load, remove } from "../../utils/storage.js";
+import { clearUserData, load } from "../../utils/storage.js";
 
 const NavItem = ({ to, label, onClick }) => (
 	<NavLink
@@ -39,10 +39,8 @@ const Navigation = ({ open, setOpen }) => {
 
 	const handleAuthClick = () => {
 		if (isAuthenticated) {
-			remove("AuthToken");
-			remove("UserEmail");
-			remove("UserProfile");
-			navigate("/login");
+			clearUserData();
+			navigate("/login", { replace: true });
 			return;
 		}
 		navigate(location.pathname === "/login" ? "/signup" : "/login");
