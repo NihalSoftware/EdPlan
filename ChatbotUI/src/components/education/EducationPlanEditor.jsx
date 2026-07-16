@@ -127,6 +127,7 @@ const validatePlan = (planCourses, knownCodes) => {
 	const issues = [];
 	(planCourses || []).forEach((course) => {
 		const { prereqCodes, coreqCodes } = getDependencies(course, knownCodes);
+		const courseCode = course.code || course.courseName || "Unknown course";
 
 		prereqCodes.forEach((code) => {
 			const prereqCourse = planCourses.find((item) => item.code === code);
@@ -135,7 +136,7 @@ const validatePlan = (planCourses, knownCodes) => {
 					courseCode: course.code,
 					type: "prereq-missing",
 					relatedCode: code,
-					message: `${course.courseName} requires ${code} in a prior term.`,
+					message: `${courseCode} requires ${code} in a prior term.`,
 					blocking: true,
 				});
 				return;
@@ -145,7 +146,7 @@ const validatePlan = (planCourses, knownCodes) => {
 					courseCode: course.code,
 					type: "prereq-order",
 					relatedCode: code,
-					message: `${code} must be scheduled before ${course.courseName}.`,
+					message: `${code} must be scheduled before ${courseCode}.`,
 					blocking: true,
 				});
 			}
@@ -158,7 +159,7 @@ const validatePlan = (planCourses, knownCodes) => {
 					courseCode: course.code,
 					type: "coreq-missing",
 					relatedCode: code,
-					message: `${course.courseName} requires co-requisite ${code} in the same term.`,
+					message: `${courseCode} requires co-requisite ${code} in the same term.`,
 					blocking: true,
 				});
 				return;
@@ -168,7 +169,7 @@ const validatePlan = (planCourses, knownCodes) => {
 					courseCode: course.code,
 					type: "coreq-term",
 					relatedCode: code,
-					message: `${code} must be taken in the same term as ${course.courseName}.`,
+					message: `${code} must be taken in the same term as ${courseCode}.`,
 					blocking: true,
 				});
 			}
@@ -227,6 +228,11 @@ const EducationPlanEditor = () => {
 			setAvailableCourses([]);
 		}
 	}, [selectedProgram]);
+
+	useEffect(() => {
+		setYearFilter("");
+		setSemesterFilter("");
+	}, [selectedProgram, selectedUniversity]);
 
 	// Update availableCourses when a program + university is selected.
 	useEffect(() => {
@@ -481,6 +487,18 @@ const EducationPlanEditor = () => {
 		});
 	}, [courses, yearFilter, semesterFilter]);
 
+	const filteredPlanTerms = useMemo(
+		() =>
+			planTerms.filter((term) => {
+				const yearOk = yearFilter ? term.year === yearFilter : true;
+				const semesterOk = semesterFilter
+					? term.semester === semesterFilter
+					: true;
+				return yearOk && semesterOk;
+			}),
+		[planTerms, yearFilter, semesterFilter]
+	);
+
 	const groupedCourses = useMemo(() => {
 		return filteredPlanCourses.reduce((acc, course) => {
 			const key = `${course.year}::${course.semester}`;
@@ -511,11 +529,23 @@ const EducationPlanEditor = () => {
 
 	const groupedCourseEntries = useMemo(
 		() => {
+			const termNumberByKey = new Map(
+				planTerms.map((term, index) => [term.key, index + 1])
+			);
 			const entries = new Map(
-				planTerms.map((term) => [term.key, [term.key, groupedCourses[term.key] || []]])
+				filteredPlanTerms.map((term) => [
+					term.key,
+					[
+						term.key,
+						groupedCourses[term.key] || [],
+						termNumberByKey.get(term.key),
+					],
+				])
 			);
 			Object.entries(groupedCourses).forEach(([key, list]) => {
-				if (!entries.has(key)) entries.set(key, [key, list]);
+				if (!entries.has(key)) {
+					entries.set(key, [key, list, termNumberByKey.get(key) || entries.size + 1]);
+				}
 			});
 			return Array.from(entries.values()).sort(([a], [b]) => {
 				const [yearA, semesterA] = a.split("::");
@@ -525,7 +555,7 @@ const EducationPlanEditor = () => {
 				return getSemesterRank(semesterA) - getSemesterRank(semesterB);
 			});
 		},
-		[groupedCourses, planTerms]
+		[filteredPlanTerms, groupedCourses, planTerms]
 	);
 
 	useEffect(() => {
@@ -550,11 +580,30 @@ const EducationPlanEditor = () => {
 
 	const yearOptions = useMemo(
 		() =>
-			[...new Set(availableCourses.map((course) => course.year))].filter(
-				Boolean
+			[...new Set(planTerms.map((term) => term.year).filter(Boolean))].sort(
+				(a, b) => getYearRank(a) - getYearRank(b)
 			),
-		[availableCourses]
+		[planTerms]
 	);
+
+	const semesterOptions = useMemo(
+		() =>
+			[
+				...new Set(
+					planTerms
+						.filter((term) => !yearFilter || term.year === yearFilter)
+						.map((term) => term.semester)
+						.filter(Boolean)
+				),
+			].sort((a, b) => getSemesterRank(a) - getSemesterRank(b)),
+		[planTerms, yearFilter]
+	);
+
+	useEffect(() => {
+		if (semesterFilter && !semesterOptions.includes(semesterFilter)) {
+			setSemesterFilter("");
+		}
+	}, [semesterFilter, semesterOptions]);
 
 	const selectedProgramMeta = useMemo(() => {
 		if (!selectedProgram || !selectedUniversity) return null;
@@ -698,18 +747,19 @@ const EducationPlanEditor = () => {
 			}
 
 			const { prereqCodes, coreqCodes } = getDependencies(newEntry, knownCodes);
+			const newCourseCode = newEntry.code || newEntry.courseName || "Unknown course";
 
 			for (const prereqCode of prereqCodes) {
 				const prereqCourse = prev.find((item) => item.code === prereqCode);
 				if (!prereqCourse) {
 					toast(
-						`${newEntry.courseName} requires ${prereqCode} in a prior term. Add the pre-requisite first.`
+						`${newCourseCode} requires ${prereqCode} in a prior term. Add the pre-requisite first.`
 					);
 					return prev;
 				}
 				if (!isBefore(prereqCourse, newEntry)) {
 					toast(
-						`${prereqCode} must be scheduled before ${newEntry.courseName}. Move the pre-requisite to an earlier term.`
+						`${prereqCode} must be scheduled before ${newCourseCode}. Move the pre-requisite to an earlier term.`
 					);
 					return prev;
 				}
@@ -724,7 +774,7 @@ const EducationPlanEditor = () => {
 				}
 				if (!isSameTerm(match, newEntry)) {
 					toast(
-						`${code} must be scheduled in ${newEntry.year} - ${newEntry.semester} with ${newEntry.courseName}. Move the co-requisite to the same term.`
+						`${code} must be scheduled in ${newEntry.year} - ${newEntry.semester} with ${newCourseCode}. Move the co-requisite to the same term.`
 					);
 					return prev;
 				}
@@ -765,7 +815,7 @@ const EducationPlanEditor = () => {
 					} else {
 						toast(
 							`Co-requisite ${missingCoreqs.join(", ")} must be taken with ${
-								newEntry.courseName
+								newCourseCode
 							}.`
 						);
 						return prev;
@@ -773,7 +823,7 @@ const EducationPlanEditor = () => {
 				} else {
 				toast(
 					`Co-requisite ${missingCoreqs.join(", ")} must be taken with ${
-						newEntry.courseName
+						newCourseCode
 					} in the same term.`
 				);
 				return dedupeCourses(prev);
@@ -1228,7 +1278,7 @@ const EducationPlanEditor = () => {
 									className="rounded-md border border-slate-200 px-3 py-2 text-sm font-bold text-slate-700"
 								>
 									<option value="">All Semesters</option>
-									{[...new Set(courses.map((c) => c.semester).filter(Boolean))].map((sem) => (
+									{semesterOptions.map((sem) => (
 										<option key={sem} value={sem}>
 											{sem}
 										</option>
@@ -1275,7 +1325,7 @@ const EducationPlanEditor = () => {
 						)}
 
 						<div className="space-y-2">
-							{groupedCourseEntries.map(([groupKey, courseList], index) => {
+							{groupedCourseEntries.map(([groupKey, courseList, termNumber]) => {
 								const [courseYear, courseSemester] = groupKey.split("::");
 								const semesterCredits = courseList.reduce((sum, course) => {
 									const value = Number(course.credits);
@@ -1316,11 +1366,11 @@ const EducationPlanEditor = () => {
 													activeTermKey === groupKey ? "bg-blue-700" : "bg-slate-400"
 												}`}
 											>
-												{index + 1}
+												{termNumber}
 											</span>
 											<div className="min-w-0 flex-1">
 												<h3 className="truncate text-sm font-extrabold text-slate-900">
-													Sem {index + 1}: {courseSemester}
+													Sem {termNumber}: {courseSemester}
 												</h3>
 												<p className="text-xs font-medium text-slate-500">
 									{courseList.length} courses - {semesterCredits} credits - {courseYear}
@@ -1337,7 +1387,7 @@ const EducationPlanEditor = () => {
 								})
 							}
 							className="inline-flex shrink-0 items-center gap-1 rounded-md px-2 py-1 text-xs font-extrabold text-rose-500 hover:bg-rose-50 hover:text-rose-700"
-							aria-label={`Delete semester ${index + 1}: ${courseSemester}`}
+							aria-label={`Delete semester ${termNumber}: ${courseSemester}`}
 							title="Delete semester"
 						>
 							<FaTrash className="h-3 w-3" />
@@ -1356,7 +1406,7 @@ const EducationPlanEditor = () => {
 								}));
 							}}
 							className="shrink-0 rounded p-1"
-							aria-label={`${isExpanded ? "Collapse" : "Expand"} semester ${index + 1}`}
+							aria-label={`${isExpanded ? "Collapse" : "Expand"} semester ${termNumber}`}
 						>
 							{isExpanded ? (
 								<FaChevronUp className="h-3 w-3 text-slate-400" />
@@ -1431,10 +1481,12 @@ const EducationPlanEditor = () => {
 								);
 							})}
 
-							{selectedProgram && selectedUniversity && groupedCourseEntries.length === 0 && (
-								<div className="rounded-lg border border-slate-200 bg-white p-8 text-center text-sm font-semibold text-slate-500 shadow-sm">
-									Click Add Semester to start building Jack&apos;s plan.
-								</div>
+			{selectedProgram && selectedUniversity && groupedCourseEntries.length === 0 && (
+				<div className="rounded-lg border border-slate-200 bg-white p-8 text-center text-sm font-semibold text-slate-500 shadow-sm">
+					{yearFilter || semesterFilter
+						? "No semesters match the selected filters."
+						: "Click Add Semester to start building education plan."}
+				</div>
 							)}
 
 							{(!selectedProgram || !selectedUniversity) && (
