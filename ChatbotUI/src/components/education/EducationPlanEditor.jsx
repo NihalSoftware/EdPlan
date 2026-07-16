@@ -108,6 +108,42 @@ const getDependencies = (course, knownCodes) => {
 	};
 };
 
+const normalizeCourseCode = (value) => String(value || "").trim().toUpperCase();
+
+const getCorequisiteRemovalCodes = (planCourses, targetCode, knownCodes) => {
+	const removalCodes = new Set([normalizeCourseCode(targetCode)]);
+	let changed = true;
+
+	while (changed) {
+		changed = false;
+		(planCourses || []).forEach((course) => {
+			const courseCode = normalizeCourseCode(course.code);
+			if (!courseCode) return;
+
+			const coreqCodes = getDependencies(course, knownCodes).coreqCodes.map(
+				normalizeCourseCode
+			);
+			const isConnected =
+				removalCodes.has(courseCode) ||
+				coreqCodes.some((code) => removalCodes.has(code));
+			if (!isConnected) return;
+
+			if (!removalCodes.has(courseCode)) {
+				removalCodes.add(courseCode);
+				changed = true;
+			}
+			coreqCodes.forEach((code) => {
+				if (code && !removalCodes.has(code)) {
+					removalCodes.add(code);
+					changed = true;
+				}
+			});
+		});
+	}
+
+	return removalCodes;
+};
+
 const formatSchedule = (schedule) => {
 	if (!schedule) return "";
 	if (typeof schedule === "string") return schedule;
@@ -854,41 +890,64 @@ const EducationPlanEditor = () => {
 		});
 	};
 
-		const removeCourse = (code) => {
-			setCourses((prev) => {
-				const target = prev.find((course) => course.code === code);
-				if (!target) return prev;
+	const removeCourse = (code) => {
+		setCourses((prev) => {
+			const targetCode = normalizeCourseCode(code);
+			const target = prev.find(
+				(course) => normalizeCourseCode(course.code) === targetCode
+			);
+			if (!target) return prev;
 
-				const dependents = prev.filter((course) =>
-					getDependencies(course, knownCodes).coreqCodes.includes(code)
+			const removalCodes = getCorequisiteRemovalCodes(
+				prev,
+				targetCode,
+				knownCodes
+			);
+			const coursesToRemove = prev.filter((course) =>
+				removalCodes.has(normalizeCourseCode(course.code))
+			);
+			const removedPlanCodes = new Set(
+				coursesToRemove.map((course) => normalizeCourseCode(course.code))
+			);
+
+			const prerequisiteDependents = prev.filter((course) => {
+				const courseCode = normalizeCourseCode(course.code);
+				if (removedPlanCodes.has(courseCode)) return false;
+				return getDependencies(course, knownCodes).prereqCodes.some((prereqCode) =>
+					removedPlanCodes.has(normalizeCourseCode(prereqCode))
 				);
-				const prereqDependents = prev.filter((course) =>
-					getDependencies(course, knownCodes).prereqCodes.includes(code)
-				);
-
-				// Block removal when other courses depend on this one and show a single toast message.
-				if (dependents.length > 0 || prereqDependents.length > 0) {
-					const parts = [];
-					
-					if (dependents.length > 0) {
-						parts.push(
-							`${target.courseName} is tied to a co-requisite course.\n\n`
-						);
-					}
-					if (prereqDependents.length > 0) {
-						parts.push(
-							`Can't Remove ${target.courseName} because it is a pre-requisite course.`
-						);
-					}
-					toast.error(parts.join(" "));
-					return prev;
-				}
-
-				// Safe to remove only the selected course
-				toast.success("Successfully Removed");
-				return dedupeCourses(prev.filter((course) => course.code !== code));
 			});
-		};
+
+			if (prerequisiteDependents.length > 0) {
+				const dependentCodes = prerequisiteDependents
+					.map((course) => course.code)
+					.filter(Boolean)
+					.join(", ");
+				toast.error(
+					`Can't remove ${target.code} and its co-requisites because ${dependentCodes} depends on them as a pre-requisite.`
+				);
+				return prev;
+			}
+
+			const corequisiteCodes = coursesToRemove
+				.map((course) => course.code)
+				.filter(
+					(courseCode) => normalizeCourseCode(courseCode) !== targetCode
+				);
+			toast.success(
+				corequisiteCodes.length > 0
+					? `Removed ${target.code} with co-requisite${
+							corequisiteCodes.length === 1 ? "" : "s"
+						}: ${corequisiteCodes.join(", ")}.`
+					: `Removed ${target.code}.`
+			);
+			return dedupeCourses(
+				prev.filter(
+					(course) => !removedPlanCodes.has(normalizeCourseCode(course.code))
+				)
+			);
+		});
+	};
 
 	const getSemesterCreditIssues = () =>
 		planTerms
