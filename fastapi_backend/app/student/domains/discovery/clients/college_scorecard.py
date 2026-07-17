@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-
+import asyncio
 import re
 from typing import Any
 
@@ -16,11 +16,20 @@ BASE_FIELDS = [
     "school.school_url",
     "school.ownership",
     "school.locale",
+    "school.accreditor",
+    "school.open_admissions_policy",
+    "school.degrees_awarded.predominant",
+    "school.degrees_awarded.highest",
+    "school.main_campus",
+    "school.branches",
     "latest.student.size",
     "latest.student.part_time_share",
-    "latest.academic_year",
     "latest.completion.consumer_rate",
     "latest.cost.avg_net_price.overall",
+    "latest.cost.tuition.in_state",
+    "latest.cost.tuition.out_of_state",
+    "latest.cost.roomboard.oncampus",
+    "latest.cost.booksupply",
     "latest.earnings.10_yrs_after_entry.median",
     "latest.aid.median_debt.completers.overall",
     "latest.aid.median_debt.completers.monthly_payments",
@@ -63,6 +72,22 @@ BASE_FIELDS = [
 ]
 
 OWNERSHIP_MAP = {1: "Public", 2: "Private nonprofit", 3: "Private for-profit"}
+
+HIGHEST_DEGREE_MAP = {
+    0: "Non-degree-granting",
+    1: "Certificate",
+    2: "Associate degree",
+    3: "Bachelor's degree",
+    4: "Graduate degree",
+}
+
+PREDOMINANT_DEGREE_MAP = {
+    0: "Not classified",
+    1: "Predominantly certificate",
+    2: "Predominantly associate degree",
+    3: "Predominantly bachelor's degree",
+    4: "Entirely graduate degree",
+}
 
 LOCALE_MAP = {
     11: "City",
@@ -138,6 +163,7 @@ class CollegeScorecardClient:
     def __init__(self) -> None:
         self.base_url = settings.college_scorecard_base_url.rstrip("/")
         self.api_key = settings.college_scorecard_api_key
+        self._profile_cache: dict[tuple[str, str, str], dict[str, Any] | None] = {}
 
     async def _get(self, path: str, params: dict[str, Any]) -> dict[str, Any]:
         query = {"api_key": self.api_key, "per_page": 25}
@@ -177,6 +203,81 @@ class CollegeScorecardClient:
             return None
         return self._map_school(payload["results"][0])
 
+    async def find_schools_by_profiles(
+        self,
+        profiles: list[dict[str, Any]],
+    ) -> list[dict[str, Any] | None]:
+        if not profiles:
+            return []
+
+        matches: list[dict[str, Any] | None] = [None] * len(profiles)
+        uncached_by_state: dict[str, list[int]] = {}
+
+        for index, profile in enumerate(profiles):
+            cache_key = _profile_cache_key(
+                profile.get("name") or profile.get("university_name") or "",
+                profile.get("city"),
+                profile.get("state"),
+            )
+            if cache_key in self._profile_cache:
+                matches[index] = self._profile_cache[cache_key]
+                continue
+            if cache_key[2]:
+                uncached_by_state.setdefault(cache_key[2], []).append(index)
+
+        state_codes = list(uncached_by_state)
+        state_payloads = await asyncio.gather(
+            *(
+                self.search_schools(state=state_code, per_page=100)
+                for state_code in state_codes
+            ),
+            return_exceptions=True,
+        )
+        candidates_by_state = {
+            state_code: (
+                payload.get("results", []) if isinstance(payload, dict) else []
+            )
+            for state_code, payload in zip(state_codes, state_payloads, strict=True)
+        }
+
+        fallback_indices: list[int] = []
+        for index, profile in enumerate(profiles):
+            cache_key = _profile_cache_key(
+                profile.get("name") or profile.get("university_name") or "",
+                profile.get("city"),
+                profile.get("state"),
+            )
+            if cache_key in self._profile_cache:
+                matches[index] = self._profile_cache[cache_key]
+                continue
+
+            candidate = _match_mapped_school(
+                profile,
+                candidates_by_state.get(cache_key[2], []),
+            )
+            if candidate is not None:
+                matches[index] = candidate
+                self._cache_profile(cache_key, candidate)
+            else:
+                fallback_indices.append(index)
+
+        fallback_matches = await asyncio.gather(
+            *(
+                self.find_school_by_profile(
+                    name=profiles[index].get("name")
+                    or profiles[index].get("university_name")
+                    or "",
+                    city=profiles[index].get("city"),
+                    state=profiles[index].get("state"),
+                )
+                for index in fallback_indices
+            )
+        )
+        for index, match in zip(fallback_indices, fallback_matches, strict=True):
+            matches[index] = match
+
+        return matches
+
     async def find_school_by_profile(
         self,
         *,
@@ -188,6 +289,10 @@ class CollegeScorecardClient:
             return None
 
         state_code = _state_code(state)
+        cache_key = _profile_cache_key(name, city, state_code)
+        if cache_key in self._profile_cache:
+            return self._profile_cache[cache_key]
+
         params: dict[str, Any] = {
             "page": 0,
             "per_page": 25,
@@ -205,6 +310,7 @@ class CollegeScorecardClient:
             payload = await self._get("/schools", params)
             records = payload.get("results", [])
         if not records:
+            self._cache_profile(cache_key, None)
             return None
 
         desired_name = _normalize_school_name(name)
@@ -231,8 +337,20 @@ class CollegeScorecardClient:
         scored.sort(key=lambda item: (item[0], item[1]), reverse=True)
         best_score, _, best_record = scored[0]
         if best_score < 70:
+            self._cache_profile(cache_key, None)
             return None
-        return self._map_school(best_record)
+        school = self._map_school(best_record)
+        self._cache_profile(cache_key, school)
+        return school
+
+    def _cache_profile(
+        self,
+        key: tuple[str, str, str],
+        school: dict[str, Any] | None,
+    ) -> None:
+        if len(self._profile_cache) >= 500:
+            self._profile_cache.pop(next(iter(self._profile_cache)))
+        self._profile_cache[key] = school
 
     def _map_school(self, record: dict[str, Any]) -> dict[str, Any]:
         ownership_code = record.get("school.ownership")
@@ -249,6 +367,7 @@ class CollegeScorecardClient:
         act_score_25th = record.get("latest.admissions.act_scores.25th_percentile.cumulative")
         act_score_75th = record.get("latest.admissions.act_scores.75th_percentile.cumulative")
         acceptance_rate = record.get("latest.admissions.admission_rate.overall")
+        open_admissions = record.get("school.open_admissions_policy")
         part_time_share = record.get("latest.student.part_time_share")
         size = record.get("latest.student.size") or 0
         full_time_enrollment = None
@@ -348,12 +467,31 @@ class CollegeScorecardClient:
             "city": school_city,
             "state": school_state,
             "website": school_url,
-            "year": record.get("latest.academic_year"),
             "organization_type": OWNERSHIP_MAP.get(ownership_code, "Other"),
             "size": record.get("latest.student.size"),
             "location_type": LOCALE_MAP.get(locale_code, "Other"),
+            "accreditor": record.get("school.accreditor"),
+            "open_admissions_policy": (
+                open_admissions == 1 if open_admissions in (1, 2) else None
+            ),
+            "predominant_degree": PREDOMINANT_DEGREE_MAP.get(
+                record.get("school.degrees_awarded.predominant")
+            ),
+            "highest_degree": HIGHEST_DEGREE_MAP.get(
+                record.get("school.degrees_awarded.highest")
+            ),
+            "main_campus": (
+                bool(record.get("school.main_campus"))
+                if record.get("school.main_campus") is not None
+                else None
+            ),
+            "branch_count": record.get("school.branches"),
             "graduation_rate": graduation_rate,
             "average_annual_cost": avg_cost,
+            "in_state_tuition": record.get("latest.cost.tuition.in_state"),
+            "out_of_state_tuition": record.get("latest.cost.tuition.out_of_state"),
+            "on_campus_room_and_board": record.get("latest.cost.roomboard.oncampus"),
+            "books_and_supplies": record.get("latest.cost.booksupply"),
             "median_earnings": median_earnings,
             "financial_aid_debt": record.get("latest.aid.median_debt.completers.overall"),
             "typical_earnings": median_earnings,
@@ -406,6 +544,51 @@ def _state_code(value: str | None) -> str | None:
     if len(cleaned) == 2:
         return cleaned.upper()
     return STATE_ABBREVIATIONS.get(cleaned.lower())
+
+
+def _profile_cache_key(
+    name: str,
+    city: str | None,
+    state: str | None,
+) -> tuple[str, str, str]:
+    return (
+        _normalize_school_name(name),
+        _normalize_simple(city),
+        _state_code(state) or "",
+    )
+
+
+def _match_mapped_school(
+    profile: dict[str, Any],
+    candidates: list[dict[str, Any]],
+) -> dict[str, Any] | None:
+    desired_name = _normalize_school_name(
+        profile.get("name") or profile.get("university_name")
+    )
+    desired_city = _normalize_simple(profile.get("city"))
+    desired_state = _state_code(profile.get("state"))
+    scored: list[tuple[int, int, dict[str, Any]]] = []
+
+    for candidate in candidates:
+        candidate_name = _normalize_school_name(candidate.get("name"))
+        candidate_city = _normalize_simple(candidate.get("city"))
+        candidate_state = _state_code(candidate.get("state"))
+        score = 0
+        if candidate_name == desired_name:
+            score += 100
+        elif candidate_name.startswith(desired_name) or desired_name in candidate_name:
+            score += 70
+        if desired_city and candidate_city == desired_city:
+            score += 25
+        if desired_state and candidate_state == desired_state:
+            score += 15
+        scored.append((score, candidate.get("size") or 0, candidate))
+
+    if not scored:
+        return None
+    scored.sort(key=lambda item: (item[0], item[1]), reverse=True)
+    best_score, _, best_match = scored[0]
+    return best_match if best_score >= 70 else None
 
 
 def _normalize_school_name(value: Any) -> str:

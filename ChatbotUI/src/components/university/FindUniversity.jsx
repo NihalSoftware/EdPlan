@@ -59,10 +59,20 @@ import toast from 'react-hot-toast';
 // 	"WY",
 // ];
 
+const hasValue = (value) =>
+	value !== undefined && value !== null && value !== "";
 const formatPercent = (value) =>
-	value || value === 0 ? `${Math.round(value * 100)}%` : "N/A";
+	hasValue(value) ? `${Math.round(value * 100)}%` : "Not reported";
 const formatCurrency = (value) =>
-	value || value === 0 ? `$${Number(value).toLocaleString()}` : "N/A";
+	hasValue(value) ? `$${Number(value).toLocaleString()}` : "Not reported";
+const formatAcceptance = (university) => {
+	if (hasValue(university.acceptance_rate)) {
+		return formatPercent(university.acceptance_rate);
+	}
+	return university.open_admissions_policy
+		? "Open admission"
+		: "Not reported";
+};
 
 const DEFAULT_STATE_FILTER = "";
 
@@ -90,7 +100,7 @@ const FindUniversity = ({ onSelectProgram }) => {
 	const [stateFilter, setStateFilter] = useState("");
 	const [costFilter, setCostFilter] = useState(30000);
 	const [programOptions, setProgramOptions] = useState([]);
-	const [programCatalogLoading, setProgramCatalogLoading] = useState(false);
+	const [programCatalogLoading, setProgramCatalogLoading] = useState(true);
 	const [programCatalogError, setProgramCatalogError] = useState("");
 	const [selectedProgram, setSelectedProgram] = useState("");
 	const [selectedDegree, setSelectedDegree] = useState("");
@@ -194,6 +204,8 @@ const FindUniversity = ({ onSelectProgram }) => {
 	}, []);
 
 	useEffect(() => {
+		if (programCatalogLoading) return;
+
 		const savedProgram = loadStorage("SelectedProgram", "");
 		const persistentProgram = loadStorage("Programname", "");
 		const savedDegree =
@@ -241,7 +253,7 @@ const FindUniversity = ({ onSelectProgram }) => {
 		setStateFilter(DEFAULT_STATE_FILTER);
 		fetchUniversities({ state: DEFAULT_STATE_FILTER });
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [programOptions]);
+	}, [programOptions, programCatalogLoading]);
 
 	const degreeOptionsForProgram = useMemo(() => {
 		if (!programDegreeLabelMap.size) return [];
@@ -540,8 +552,7 @@ const FindUniversity = ({ onSelectProgram }) => {
 							crimeRateMap.get(university.name) ??
 							university.college_profile?.crime_rate_overall ??
 							university.crime_rate_overall ??
-							university.crime_rate ??
-							2.5;
+							university.crime_rate;
 						return (
 							<article
 								key={university.unit_id}
@@ -564,41 +575,36 @@ const FindUniversity = ({ onSelectProgram }) => {
 								<ul className="text-sm text-slate-600 space-y-2">
 									<li>
 										<span className="font-semibold">Size:{" "}</span>
-										{university.size ? university.size.toLocaleString() : "N/A"}{" "}
+										{hasValue(university.size)
+											? Number(university.size).toLocaleString()
+											: "Not reported"}{" "}
 										students
 									</li>
 									<li>
 										<span className="font-semibold">Graduation Rate:{" "}</span>
-										{university.graduation_rate
-											? `${Math.round(university.graduation_rate * 100)}%`
-											: "N/A"}
+										{formatPercent(university.graduation_rate)}
 									</li>
 									<li>
 										<span className="font-semibold">Acceptance Rate:{" "}</span>
-										{university.acceptance_rate ? formatPercent(university.acceptance_rate): "100%"}
+										{formatAcceptance(university)}
 									</li>
 									<li>
 										<span className="font-semibold">Average Annual Cost:{" "}</span>
-										{university.average_annual_cost
-											? `$${Number(
-													university.average_annual_cost
-											  ).toLocaleString()}`
-											: "N/A"}
+										{formatCurrency(university.average_annual_cost)}
 									</li>
 									<li>
-										<span className="font-semibold">Median Earnings After Graduation: </span>
+										<span className="font-semibold">Median Earnings 10 Years After Entry: </span>
 										{formatCurrency(university.typical_earnings)}
 									</li>
 									<li>
 										<span className="font-semibold">Median Total Debt of Student After Graduation:{" "}</span>
-										{formatCurrency(university.financial_aid_debt) ||
-										"Data unavailable"}
+										{formatCurrency(university.financial_aid_debt)}
 									</li>
 									<li>
 										<span className="font-semibold">Crime Rate:{" "}</span>
-										{crimeRateValue
+										{hasValue(crimeRateValue)
 											? `About ${Number(crimeRateValue).toFixed(1)} incidents per 1,000 students`
-											: "About 2.5 incidents per 1,000 students"}
+											: "Not reported"}
 									</li>
 								</ul>
 								{websiteUrl && (
