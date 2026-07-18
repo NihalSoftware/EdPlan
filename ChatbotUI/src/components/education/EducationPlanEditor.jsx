@@ -18,7 +18,7 @@ import {
 import toast from "react-hot-toast";
 
 const LOCAL_PLAN_KEY = "LocalSavedPlans";
-const MIN_SEMESTER_CREDITS = 6;
+const MIN_SEMESTER_CREDITS = 3;
 const MAX_SEMESTER_CREDITS = 20;
 const MAX_SEMESTERS = 10;
 const normalizeRequirement = (value) => (value || "").trim();
@@ -924,7 +924,8 @@ const EducationPlanEditor = () => {
 					.filter(Boolean)
 					.join(", ");
 				toast.error(
-					`Can't remove ${target.code} and its co-requisites because ${dependentCodes} depends on them as a pre-requisite.`
+					`${target.code} and its co-requisite courses cannot be removed because they are prerequisites for ${dependentCodes}.` ,{duration: 60 * 1000,}
+
 				);
 				return prev;
 			}
@@ -1170,9 +1171,9 @@ const EducationPlanEditor = () => {
 
 						<div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
 							<div className="mb-3 flex items-center justify-between">
-								<h3 className="text-xs font-extrabold uppercase tracking-wide text-slate-500">
-									Course Catalog
-								</h3>
+								<h4 className="text-xs font-extrabold uppercase tracking-wide text-slate-500">
+									Program Course list
+								</h4>
 								<div className="flex items-center gap-2">
 									<span className="rounded bg-slate-50 px-2 py-1 text-xs font-extrabold text-slate-500">
 										{remainingCourses.length}
@@ -1365,7 +1366,8 @@ const EducationPlanEditor = () => {
 
 						{dependencyIssues.length > 0 && (
 							<div className="rounded-lg border border-rose-200 bg-rose-50 p-4 text-sm text-rose-700 shadow-sm">
-								<p className="font-extrabold">Resolve these before saving:</p>
+								<p className="font-extrabold"> These prerequisite courses must be passed in a previous semester before you can enroll in the main course.
+								</p>
 								<ul className="mt-2 list-inside list-disc space-y-1">
 									{dependencyIssues.map((issue) => (
 										<li key={`${issue.type}-${issue.courseCode}-${issue.relatedCode || ""}`}>
