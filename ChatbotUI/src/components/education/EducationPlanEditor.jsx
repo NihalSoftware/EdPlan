@@ -1228,7 +1228,7 @@ const EducationPlanEditor = () => {
 							My Education Plan
 						</h2>
 						<div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-							<div className="grid gap-4 lg:grid-cols-[1fr_auto]">
+							<div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,18rem),1fr))] gap-4">
 								<div className="space-y-3">
 									<label className="block text-xs font-extrabold uppercase tracking-wide text-slate-400">
 										University
@@ -1243,104 +1243,53 @@ const EducationPlanEditor = () => {
 											</span>
 										)}
 									</label>
-
-									<label className="block text-xs font-extrabold uppercase tracking-wide text-slate-400">
-										Program
-										<select
-											value={selectedProgram}
-											onChange={(event) => {
-												setSelectedProgram(event.target.value);
-												saveStorage("Programname", event.target.value);
-												const found = programs.find(
-													(p) =>
-														p.program === event.target.value &&
-														p.university === selectedUniversity
-												);
-												if (found) {
-													setSelectedDegree(found.degree || "");
-													saveStorage("ProgramDegree", found.degree || "");
-												} else {
-													setSelectedDegree("");
-													saveStorage("ProgramDegree", "");
-												}
-											}}
-											className="mt-2 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-bold normal-case tracking-normal text-slate-700 outline-none focus:border-blue-500"
-										>
-											<option value="">Select Program</option>
-											{uniqueProgramOptions.map((program) => (
-												<option
-													key={`${program.university}-${program.program}`}
-													value={program.program}
-												>
-													{program.program}
-												</option>
-											))}
-										</select>
-									</label>
 								</div>
 
-								<div className="flex flex-wrap items-start gap-2 lg:justify-end">
+								<label className="block text-xs font-extrabold uppercase tracking-wide text-slate-400">
+									Program
 									<select
-										value={activeTermOption?.key || ""}
+										value={selectedProgram}
 										onChange={(event) => {
-											const nextKey = event.target.value;
-											setActiveTermKey(nextKey);
-											setExpandedTerms((prev) => ({ ...prev, [nextKey]: true }));
+											setSelectedProgram(event.target.value);
+											saveStorage("Programname", event.target.value);
+											const found = programs.find(
+												(p) =>
+													p.program === event.target.value &&
+													p.university === selectedUniversity
+											);
+											if (found) {
+												setSelectedDegree(found.degree || "");
+												saveStorage("ProgramDegree", found.degree || "");
+											} else {
+												setSelectedDegree("");
+												saveStorage("ProgramDegree", "");
+											}
 										}}
-										className="h-11 rounded-lg border-2 border-blue-700 bg-white px-3 text-sm font-extrabold text-slate-800 outline-none"
+										className="mt-2 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-bold normal-case tracking-normal text-slate-700 outline-none focus:border-blue-500"
 									>
-										{termOptions.length === 0 ? (
-											<option value="">No terms</option>
-										) : (
-											termOptions.map((term) => (
-												<option key={term.key} value={term.key}>
-													{term.label}
-												</option>
-											))
-										)}
+										<option value="">Select Program</option>
+										{uniqueProgramOptions.map((program) => (
+											<option
+												key={`${program.university}-${program.program}`}
+												value={program.program}
+											>
+												{program.program}
+											</option>
+										))}
 									</select>
-					<button
-						type="button"
-						onClick={addSemester}
-						disabled={planTerms.length >= MAX_SEMESTERS}
-						title={
-							planTerms.length >= MAX_SEMESTERS
-								? `Maximum of ${MAX_SEMESTERS} semesters reached`
-								: "Add a semester"
-						}
-						className="inline-flex h-11 items-center gap-2 rounded-lg bg-blue-700 px-4 text-sm font-extrabold text-white shadow-sm hover:bg-blue-800 disabled:cursor-not-allowed disabled:bg-slate-300"
-					>
-						<FaPlus className="h-3 w-3" />
-						Add Semester
-						<span className="text-xs font-bold opacity-80">
-							({planTerms.length}/{MAX_SEMESTERS})
-						</span>
-					</button>
-								</div>
+								</label>
 							</div>
 
-							<div className="mt-4 flex flex-wrap gap-3 border-t border-slate-100 pt-4">
+							<div className="mt-4 flex flex-wrap items-center gap-2 border-t border-slate-100 pt-4">
 								<select
 									value={yearFilter}
 									onChange={(e) => setYearFilter(e.target.value)}
 									className="rounded-md border border-slate-200 px-3 py-2 text-sm font-bold text-slate-700"
 								>
-									<option value="">All Years</option>
+									<option value="">View by year</option>
 									{yearOptions.map((yr) => (
 										<option key={yr} value={yr}>
 											{yr}
-										</option>
-									))}
-								</select>
-								<select
-									value={semesterFilter}
-									onChange={(e) => setSemesterFilter(e.target.value)}
-									className="rounded-md border border-slate-200 px-3 py-2 text-sm font-bold text-slate-700"
-								>
-									<option value="">All Semesters</option>
-									{semesterOptions.map((sem) => (
-										<option key={sem} value={sem}>
-											{sem}
 										</option>
 									))}
 								</select>
@@ -1353,14 +1302,44 @@ const EducationPlanEditor = () => {
 								<span className="rounded-md bg-slate-50 px-3 py-2 text-sm font-bold text-slate-600">
 									Pre: {prereqProgramCount} / Co: {coreqProgramCount}
 								</span>
-								<span className="rounded-md bg-amber-50 px-3 py-2 text-sm font-bold text-amber-700">
-									Semester limit: {MIN_SEMESTER_CREDITS}-{MAX_SEMESTER_CREDITS} credits
-								</span>
-								{averageAnnualCost && (
-									<span className="rounded-md bg-slate-50 px-3 py-2 text-sm font-bold text-slate-600">
-										Avg. Annual Cost: {averageAnnualCost}
-									</span>
-								)}
+								<div className="flex items-center gap-2">
+									<select
+										value={activeTermOption?.key || ""}
+										onChange={(event) => {
+											const nextKey = event.target.value;
+											setActiveTermKey(nextKey);
+											setExpandedTerms((prev) => ({ ...prev, [nextKey]: true }));
+										}}
+										className="h-10 rounded-lg border-2 border-blue-700 bg-white px-2 text-xs font-extrabold text-slate-800 outline-none"
+									>
+										{termOptions.length === 0 ? (
+											<option value="">No terms</option>
+										) : (
+											termOptions.map((term) => (
+												<option key={term.key} value={term.key}>
+													{term.label}
+												</option>
+											))
+										)}
+									</select>
+									<button
+										type="button"
+										onClick={addSemester}
+										disabled={planTerms.length >= MAX_SEMESTERS}
+										title={
+											planTerms.length >= MAX_SEMESTERS
+												? `Maximum of ${MAX_SEMESTERS} semesters reached`
+												: "Add a semester"
+										}
+										className="inline-flex h-10 items-center gap-1.5 whitespace-nowrap rounded-lg bg-blue-700 px-3 text-xs font-extrabold text-white shadow-sm hover:bg-blue-800 disabled:cursor-not-allowed disabled:bg-slate-300"
+									>
+										<FaPlus className="h-3 w-3" />
+										Add Semester
+										<span className="font-bold opacity-80">
+											({planTerms.length}/{MAX_SEMESTERS})
+										</span>
+									</button>
+								</div>
 							</div>
 						</div>
 
