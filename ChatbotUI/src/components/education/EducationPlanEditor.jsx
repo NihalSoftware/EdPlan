@@ -76,6 +76,21 @@ const getSemesterRank = (semester) => {
 	return idx >= 0 ? idx + 1 : Number.MAX_SAFE_INTEGER;
 };
 
+const buildGeneratedTerm = (termNumber) => {
+	const normalizedTermNumber = Math.max(1, Number(termNumber) || 1);
+	const yearIndex = Math.floor((normalizedTermNumber - 1) / 2);
+	const year = YEAR_ORDER[yearIndex] || `Year ${yearIndex + 1}`;
+	const semester = normalizedTermNumber % 2 === 1 ? "Fall" : "Spring";
+	return { key: `${year}::${semester}`, year, semester };
+};
+
+const getDisplaySemester = (semester, termNumber) => {
+	const normalized = normalizeRequirement(semester);
+	return /^semester\s+\d+$/i.test(normalized)
+		? buildGeneratedTerm(termNumber).semester
+		: normalized || "Term";
+};
+
 const isSameTerm = (a, b) =>
 	normalizeRequirement(a.year) === normalizeRequirement(b.year) &&
 	normalizeRequirement(a.semester) === normalizeRequirement(b.semester);
@@ -695,13 +710,14 @@ const EducationPlanEditor = () => {
 		}
 		const existing = new Set(planTerms.map((term) => term.key));
 		const nextRecommended = recommendedTerms.find((term) => !existing.has(term.key));
-		const fallbackIndex = planTerms.length + 1;
+		let fallbackIndex = planTerms.length + 1;
+		let fallbackTerm = buildGeneratedTerm(fallbackIndex);
+		while (existing.has(fallbackTerm.key) && fallbackIndex < MAX_SEMESTERS) {
+			fallbackIndex += 1;
+			fallbackTerm = buildGeneratedTerm(fallbackIndex);
+		}
 		const nextTerm =
-			nextRecommended || {
-				key: `Custom Year::Semester ${fallbackIndex}`,
-				year: "Custom Year",
-				semester: `Semester ${fallbackIndex}`,
-			};
+			nextRecommended || fallbackTerm;
 
 		setPlanTerms((prev) => {
 			if (prev.some((term) => term.key === nextTerm.key)) return prev;
@@ -1099,8 +1115,10 @@ const EducationPlanEditor = () => {
 	const studentId =
 		profile.student_id || profile.studentId || profile.id || userEmail || "Local profile";
 	const termOptions = planTerms.map((term, index) => {
-		const [, semester] = term.key.split("::");
-		return { key: term.key, label: `Sem ${index + 1}: ${semester || "Term"}` };
+		return {
+			key: term.key,
+			label: `Sem ${index + 1}: ${getDisplaySemester(term.semester, index + 1)}`,
+		};
 	});
 	const activeTermOption =
 		termOptions.find((term) => term.key === activeTermKey) || termOptions[0];
@@ -1182,9 +1200,9 @@ const EducationPlanEditor = () => {
 										type="button"
 										onClick={savePlan}
 										disabled={dependencyIssues.some((issue) => issue.blocking)}
-										className="rounded-md bg-indigo-600 px-3 py-1.5 text-xs font-extrabold text-white hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-60"
+										className="rounded-md bg-indigo-600 px-4 py-3 text-m font-extrabold text-white hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-60"
 									>
-										Save Plan
+										Save Your Plan
 									</button>
 								</div>
 							</div>
@@ -1333,7 +1351,6 @@ const EducationPlanEditor = () => {
 										}
 										className="inline-flex h-10 items-center gap-1.5 whitespace-nowrap rounded-lg bg-blue-700 px-3 text-xs font-extrabold text-white shadow-sm hover:bg-blue-800 disabled:cursor-not-allowed disabled:bg-slate-300"
 									>
-										<FaPlus className="h-3 w-3" />
 										Add Semester
 										<span className="font-bold opacity-80">
 											({planTerms.length}/{MAX_SEMESTERS})
@@ -1367,6 +1384,7 @@ const EducationPlanEditor = () => {
 						<div className="space-y-2">
 							{groupedCourseEntries.map(([groupKey, courseList, termNumber]) => {
 								const [courseYear, courseSemester] = groupKey.split("::");
+								const displaySemester = getDisplaySemester(courseSemester, termNumber);
 								const semesterCredits = courseList.reduce((sum, course) => {
 									const value = Number(course.credits);
 									return sum + (Number.isFinite(value) ? value : 0);
@@ -1410,7 +1428,7 @@ const EducationPlanEditor = () => {
 											</span>
 											<div className="min-w-0 flex-1">
 												<h3 className="truncate text-sm font-extrabold text-slate-900">
-													Sem {termNumber}: {courseSemester}
+													Sem {termNumber}: {displaySemester}
 												</h3>
 												<p className="text-xs font-medium text-slate-500">
 									{courseList.length} courses - {semesterCredits} credits - {courseYear}
@@ -1427,7 +1445,7 @@ const EducationPlanEditor = () => {
 								})
 							}
 							className="inline-flex shrink-0 items-center gap-1 rounded-md px-2 py-1 text-xs font-extrabold text-rose-500 hover:bg-rose-50 hover:text-rose-700"
-							aria-label={`Delete semester ${termNumber}: ${courseSemester}`}
+							aria-label={`Delete semester ${termNumber}: ${displaySemester}`}
 							title="Delete semester"
 						>
 							<FaTrash className="h-3 w-3" />
