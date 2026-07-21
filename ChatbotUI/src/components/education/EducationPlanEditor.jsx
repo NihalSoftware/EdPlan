@@ -1449,7 +1449,7 @@ const EducationPlanEditor = () => {
 							title="Delete semester"
 						>
 							<FaTrash className="h-3 w-3" />
-							<span className="hidden sm:inline">Delete</span>
+							<span className="hidden sm:inline">Delete Semester</span>
 						</button>
 							<span className={`rounded-md px-3 py-1 text-xs font-extrabold uppercase ${statusClass}`}>
 								{status}

@@ -487,7 +487,7 @@ const FindUniversity = ({ onSelectProgram }) => {
 
 			<div className="flex items-center gap-6 w-full flex-nowrap">
 				<label className="flex flex-col gap-1 w-44 text-sm text-slate-600 font-semibold">
-					Max. Annual Cost
+					Total annual cost
 					<input
 						type="range"
 						min="1000"
