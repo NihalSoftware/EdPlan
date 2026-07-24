@@ -6,6 +6,10 @@ from sqlalchemy import or_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.student.domains.discovery.models import University
+from app.shared.constants.institution import (
+    NORTHERN_NEW_MEXICO_COLLEGE_NAME,
+    state_filter_aliases,
+)
 
 
 class UniversityRepository:
@@ -18,7 +22,9 @@ class UniversityRepository:
         offset: int = 0,
         limit: int = 20,
     ) -> list[dict]:
-        statement = select(University)
+        statement = select(University).where(
+            University.university_name.ilike(NORTHERN_NEW_MEXICO_COLLEGE_NAME)
+        )
         if search:
             term = f"%{search.strip()}%"
             statement = statement.where(
@@ -29,7 +35,10 @@ class UniversityRepository:
                 )
             )
         if state:
-            statement = statement.where(University.state.ilike(state.strip()))
+            aliases = state_filter_aliases(state)
+            statement = statement.where(
+                or_(*(University.state.ilike(alias) for alias in aliases))
+            )
 
         statement = statement.order_by(University.university_name).offset(offset).limit(limit)
         result = await db.execute(statement)
@@ -42,7 +51,10 @@ class UniversityRepository:
         if parsed_university_id is None:
             return None
         result = await db.execute(
-            select(University).where(University.university_id == parsed_university_id)
+            select(University).where(
+                University.university_id == parsed_university_id,
+                University.university_name.ilike(NORTHERN_NEW_MEXICO_COLLEGE_NAME),
+            )
         )
         university = result.scalar_one_or_none()
         return _university_to_dict(university) if university else None
@@ -56,7 +68,10 @@ class UniversityRepository:
             return []
 
         result = await db.execute(
-            select(University).where(University.university_id.in_(parsed_ids))
+            select(University).where(
+                University.university_id.in_(parsed_ids),
+                University.university_name.ilike(NORTHERN_NEW_MEXICO_COLLEGE_NAME),
+            )
         )
         universities = {
             university.university_id: _university_to_dict(university)

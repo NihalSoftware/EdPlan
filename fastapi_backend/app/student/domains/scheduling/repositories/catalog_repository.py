@@ -6,7 +6,8 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import joinedload
 
-from app.student.domains.discovery.models import Course
+from app.student.domains.discovery.models import Course, Program, University
+from app.shared.constants.institution import NORTHERN_NEW_MEXICO_COLLEGE_NAME
 from app.student.domains.scheduling.models import (
     AcademicTerm,
     CourseOffering,
@@ -97,7 +98,22 @@ class SectionMeetingRepository:
             return None
         result = await db.execute(
             select(SectionMeeting)
-            .where(SectionMeeting.section_id == parsed_section_id)
+            .where(
+                SectionMeeting.section_id == parsed_section_id,
+                SectionMeeting.section.has(
+                    Section.offering.has(
+                        CourseOffering.course.has(
+                            Course.program.has(
+                                Program.university.has(
+                                    University.university_name.ilike(
+                                        NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                                    )
+                                )
+                            )
+                        )
+                    )
+                ),
+            )
             .order_by(
                 SectionMeeting.weekday,
                 SectionMeeting.start_time,
@@ -108,16 +124,46 @@ class SectionMeetingRepository:
 
 
 def _offering_query():
-    return select(CourseOffering).options(
-        joinedload(CourseOffering.course),
-        joinedload(CourseOffering.term),
+    return (
+        select(CourseOffering)
+        .options(
+            joinedload(CourseOffering.course),
+            joinedload(CourseOffering.term),
+        )
+        .where(
+            CourseOffering.course.has(
+                Course.program.has(
+                    Program.university.has(
+                        University.university_name.ilike(
+                            NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                        )
+                    )
+                )
+            )
+        )
     )
 
 
 def _section_query():
-    return select(Section).options(
-        joinedload(Section.offering).joinedload(CourseOffering.term),
-        joinedload(Section.offering).joinedload(CourseOffering.course),
+    return (
+        select(Section)
+        .options(
+            joinedload(Section.offering).joinedload(CourseOffering.term),
+            joinedload(Section.offering).joinedload(CourseOffering.course),
+        )
+        .where(
+            Section.offering.has(
+                CourseOffering.course.has(
+                    Course.program.has(
+                        Program.university.has(
+                            University.university_name.ilike(
+                                NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                            )
+                        )
+                    )
+                )
+            )
+        )
     )
 
 

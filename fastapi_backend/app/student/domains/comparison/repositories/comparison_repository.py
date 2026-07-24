@@ -9,6 +9,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
 
 from app.student.domains.discovery.models import Course, Program, University
+from app.shared.constants.institution import NORTHERN_NEW_MEXICO_COLLEGE_NAME
 
 
 class ComparisonRepository:
@@ -160,14 +161,26 @@ class ComparisonRepository:
 
 
 def _university_query():
-    return select(University).options(selectinload(University.programs))
+    return (
+        select(University)
+        .options(selectinload(University.programs))
+        .where(University.university_name.ilike(NORTHERN_NEW_MEXICO_COLLEGE_NAME))
+    )
 
 
 def _program_query(*, include_courses: bool):
     options = [selectinload(Program.university)]
     if include_courses:
         options.append(selectinload(Program.courses))
-    return select(Program).options(*options)
+    return (
+        select(Program)
+        .options(*options)
+        .where(
+            Program.university.has(
+                University.university_name.ilike(NORTHERN_NEW_MEXICO_COLLEGE_NAME)
+            )
+        )
+    )
 
 
 def _parse_uuid(value: str | uuid.UUID) -> uuid.UUID | None:

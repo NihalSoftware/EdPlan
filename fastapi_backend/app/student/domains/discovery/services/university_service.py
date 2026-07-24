@@ -16,6 +16,10 @@ from app.student.domains.discovery.repositories.university_repository import (
     UniversityRepository,
     university_repository,
 )
+from app.shared.constants.institution import (
+    NORTHERN_NEW_MEXICO_COLLEGE_NAME,
+    NORTHERN_NEW_MEXICO_COLLEGE_SCORECARD_ID,
+)
 
 
 def _clean_filter(value: str | None, field_name: str) -> str | None:
@@ -85,7 +89,7 @@ class UniversityService:
                 "count": len(enriched_universities),
                 "page": page,
                 "per_page": per_page,
-                "source": "live_database",
+                "source": "Northern New Mexico College catalog and College Scorecard",
             },
         }
 
@@ -102,27 +106,18 @@ class UniversityService:
     async def compare_universities(
         self, db: AsyncSession, university_ids: list[str]
     ) -> list[dict]:
-        if len(university_ids) < 2:
-            raise HTTPException(
-                status_code=status.HTTP_400_BAD_REQUEST,
-                detail="At least two universities are required",
-            )
-        selected_ids = university_ids[:5]
-        for university_id in selected_ids:
-            _validate_uuid(university_id, "university_id")
-        universities = await self.repository.get_universities_by_ids(db, selected_ids)
-        return list(
-            await asyncio.gather(
-                *(self._enrich_with_scorecard(item) for item in universities)
-            )
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=(
+                f"College comparison is not available in the dedicated "
+                f"{NORTHERN_NEW_MEXICO_COLLEGE_NAME} site"
+            ),
         )
 
     async def _enrich_with_scorecard(self, university: dict) -> dict:
         try:
-            scorecard = await self.scorecard_client.find_school_by_profile(
-                name=university.get("name") or university.get("university_name") or "",
-                city=university.get("city"),
-                state=university.get("state"),
+            scorecard = await self.scorecard_client.get_school(
+                NORTHERN_NEW_MEXICO_COLLEGE_SCORECARD_ID
             )
         except Exception:
             return university
@@ -137,9 +132,10 @@ class UniversityService:
         if not universities:
             return []
         try:
-            scorecards = await self.scorecard_client.find_schools_by_profiles(
-                universities
+            scorecard = await self.scorecard_client.get_school(
+                NORTHERN_NEW_MEXICO_COLLEGE_SCORECARD_ID
             )
+            scorecards = [scorecard for _ in universities]
         except Exception:
             return list(
                 await asyncio.gather(

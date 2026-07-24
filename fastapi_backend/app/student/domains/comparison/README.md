@@ -1,8 +1,8 @@
-# College Comparison
+# NNMC Program Comparison
 
 ## Purpose
 
-College Comparison helps students compare universities, academic programs, and mapped career paths using only existing EdPlan database information.
+NNMC Program Comparison helps students compare Northern New Mexico College academic programs and mapped career paths using only existing catalog information.
 
 ## Architecture
 
@@ -24,7 +24,7 @@ College Comparison helps students compare universities, academic programs, and m
 
 ## Data Sources
 
-Beta V1 uses existing EdPlan data only:
+Beta V1 uses existing NNMC catalog data only:
 
 - `universities`
 - `programs`
@@ -35,7 +35,7 @@ Beta V1 uses existing EdPlan data only:
 
 ## Safety Rules
 
-The advisor and services do not invent rankings, tuition, placement rates, acceptance rates, salaries, scholarships, or scores. If a field is unavailable in the EdPlan database, responses state that it is unavailable.
+The advisor and services do not invent rankings, tuition, placement rates, acceptance rates, salaries, scholarships, or scores. If a field is unavailable in the NNMC catalog, responses state that it is unavailable.
 
 ## Beta V1 Limitations
 

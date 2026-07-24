@@ -32,7 +32,7 @@ class ComparisonService:
             name=_clean_optional(name),
             limit=_limit(limit),
         )
-        return {"results": universities, "metadata": {"count": len(universities), "source": "edplan_database"}}
+        return {"results": universities, "metadata": {"count": len(universities), "source": "nnmc_catalog"}}
 
     async def compare_universities(self, db: AsyncSession, university_ids: list[str]) -> dict:
         ids = _validate_id_list(university_ids, "university_ids", minimum=2, maximum=5)
@@ -66,7 +66,7 @@ class ComparisonService:
             name=_clean_optional(name),
             limit=_limit(limit),
         )
-        return {"results": programs, "metadata": {"count": len(programs), "source": "edplan_database"}}
+        return {"results": programs, "metadata": {"count": len(programs), "source": "nnmc_catalog"}}
 
     async def compare_programs(self, db: AsyncSession, program_ids: list[str]) -> dict:
         ids = _validate_id_list(program_ids, "program_ids", minimum=2, maximum=6)
@@ -106,7 +106,7 @@ class ComparisonService:
             "unique_careers": unique_by_program,
             "metadata": {
                 "source_tables": ["careers", "program_careers", "course_careers"],
-                "message": None if any(careers_by_program.values()) else "Career mapping information is not available in the current EdPlan database.",
+                "message": None if any(careers_by_program.values()) else "Career mapping information is not available in the current NNMC catalog.",
             },
         }
 

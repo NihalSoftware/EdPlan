@@ -3,13 +3,28 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/png" href="/assets/logo.jpeg" />
-		<title>EdPlan.ai</title>
+		<link rel="icon" type="image/svg+xml" href="https://nnmc.edu/_resources/images/assets/logo.svg" />
+		<meta name="description" content="Northern New Mexico College student planning hub for programs, degree plans, careers, and schedules." />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Northern New Mexico College Student Hub" />
+		<meta property="og:description" content="Explore Northern New Mexico College programs, build degree plans, and connect studies with careers." />
+		<meta property="og:image" content="/og.png" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content="Northern New Mexico College — Find Your Future @Northern" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Northern New Mexico College Student Hub" />
+		<meta name="twitter:description" content="Explore Northern New Mexico College programs, build degree plans, and connect studies with careers." />
+		<meta name="twitter:image" content="/og.png" />
+		<title>Northern New Mexico College Student Hub</title>
+		<script>
+			const socialImageUrl = new URL("/og.png", window.location.origin).href;
+			document.querySelector('meta[property="og:image"]').content = socialImageUrl;
+			document.querySelector('meta[name="twitter:image"]').content = socialImageUrl;
+		</script>
 	</head>
 	<body>
 		<div id="root"></div>
 		<script type="module" src="/src/main.jsx"></script>
-		<script> window.chtlConfig = { chatbotId: "3545275429" } </script>
-		<script async data-id="3545275429" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 	</body>
 </html>

@@ -12,6 +12,7 @@ from app.db.base import Base as _Base  # noqa: F401
 from app.student.domains.discovery.models import Course, Program, University
 from app.student.domains.planning.models import EdPlan, PlanCourse
 from app.student.domains.scheduling.models import AcademicTerm
+from app.shared.constants.institution import NORTHERN_NEW_MEXICO_COLLEGE_NAME
 
 
 class NormalizedPlanRepository:
@@ -60,6 +61,19 @@ class NormalizedPlanRepository:
         description: str | None,
         is_active: bool,
     ) -> EdPlan:
+        selection = await db.execute(
+            select(Program.program_id).where(
+                Program.program_id == program_id,
+                Program.university_id == university_id,
+                Program.university.has(
+                    University.university_name.ilike(
+                        NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                    )
+                ),
+            )
+        )
+        if selection.scalar_one_or_none() is None:
+            raise ValueError("Plan must use a Northern New Mexico College program.")
         plan = EdPlan(
             user_id=user_id,
             university_id=university_id,
@@ -197,7 +211,15 @@ def _plan_query(*, include_courses: bool = False):
             .joinedload(Program.university)
         )
         options.append(selectinload(EdPlan.courses).joinedload(PlanCourse.planned_term))
-    return select(EdPlan).options(*options)
+    return (
+        select(EdPlan)
+        .options(*options)
+        .where(
+            EdPlan.university.has(
+                University.university_name.ilike(NORTHERN_NEW_MEXICO_COLLEGE_NAME)
+            )
+        )
+    )
 
 
 def _plan_course_query():
@@ -211,6 +233,15 @@ def _plan_course_query():
         )
         .outerjoin(PlanCourse.planned_term)
         .join(PlanCourse.course)
+        .where(
+            PlanCourse.plan.has(
+                EdPlan.university.has(
+                    University.university_name.ilike(
+                        NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                    )
+                )
+            )
+        )
     )
 
 

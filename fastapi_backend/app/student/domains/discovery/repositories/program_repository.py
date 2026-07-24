@@ -7,6 +7,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import joinedload, selectinload
 
 from app.student.domains.discovery.models import Course, Program, University
+from app.shared.constants.institution import NORTHERN_NEW_MEXICO_COLLEGE_NAME
 
 
 class ProgramRepository:
@@ -28,11 +29,11 @@ class ProgramRepository:
             statement = statement.where(Program.degree.ilike(degree.strip()))
         if search:
             term = f"%{search.strip()}%"
-            statement = statement.join(Program.university).where(
+            statement = statement.where(
                 or_(
                     Program.program_name.ilike(term),
                     Program.degree.ilike(term),
-                    University.university_name.ilike(term),
+                    Program.university.has(University.university_name.ilike(term)),
                 )
             )
 
@@ -64,7 +65,15 @@ def _program_query(*, include_courses: bool = False):
     options = [joinedload(Program.university)]
     if include_courses:
         options.append(selectinload(Program.courses))
-    return select(Program).options(*options)
+    return (
+        select(Program)
+        .options(*options)
+        .where(
+            Program.university.has(
+                University.university_name.ilike(NORTHERN_NEW_MEXICO_COLLEGE_NAME)
+            )
+        )
+    )
 
 
 def _parse_uuid(value: str | uuid.UUID) -> uuid.UUID | None:

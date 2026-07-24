@@ -35,7 +35,7 @@ def create_application() -> FastAPI:
     async def root():
         return {
             "success": True,
-            "message": "EduPlan API is running",
+            "message": "Northern New Mexico College Student Hub API is running",
             "data": {"name": settings.app_name, "version": "1.0.0"},
         }
 

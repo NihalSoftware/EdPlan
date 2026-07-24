@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { login, register } from "../services/authService.js";
 import { save as saveStorage } from "../utils/storage.js";
 import toast from "react-hot-toast";
+import { INSTITUTION } from "../config/institution.js";
 
 const LoginPage = ({ initialMode = "login" }) => {
 	const [isLogin, setIsLogin] = useState(initialMode !== "signup");
@@ -49,7 +50,7 @@ const LoginPage = ({ initialMode = "login" }) => {
 						saveStorage("UserProfile", data);
 					}
 					saveStorage("UserEmail", form.email);
-					navigate("/eduai");
+					navigate("/home");
 				} else {
 					setError(message || "Login failed. Please check your credentials.");
 				}
@@ -93,13 +94,18 @@ const LoginPage = ({ initialMode = "login" }) => {
 		<section className="min-h-screen w-full flex items-center justify-center bg-slate-100">
 			<div className="max-w-md w-full bg-white border border-slate-200 rounded-xl shadow-lg p-8 space-y-6">
 				<header className="space-y-2 text-center">
+					<img
+						src={INSTITUTION.logoUrl}
+						alt="Northern New Mexico College"
+						className="mx-auto h-16 w-auto"
+					/>
 					<h1 className="text-2xl font-semibold text-slate-900">
 						{isLogin ? "Welcome Back" : "Create your Account"}
 					</h1>
 					<p className="text-sm text-slate-600">
 						{isLogin
-							? "Sign in to continue planning your academic journey."
-							: "Register to build personalized education plans."}
+							? "Sign in to continue your NNMC academic plan."
+							: "Register to build a Northern New Mexico College education plan."}
 					</p>
 				</header>
 

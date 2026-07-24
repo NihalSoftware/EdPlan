@@ -17,7 +17,7 @@ const AppLayout = () => {
 						className="p-2 rounded-md bg-white shadow"
 					>
 						{open ? (
-							<span className="text-2xl text-slate-800">✕</span>
+							<span className="text-2xl text-slate-800">&times;</span>
 						) : (
 							<span className="flex flex-col gap-1">
 								<span className="block w-6 h-0.5 bg-slate-800" />
@@ -26,7 +26,7 @@ const AppLayout = () => {
 							</span>
 						)}
 					</button>
-					<h1 className="text-2xl font-semibold text-slate-900">EdPlan.ai</h1>
+					<h1 className="text-xl font-bold text-slate-900">NNMC Student Hub</h1>
 					<div style={{ width: 40 }} />
 				</div>
 			</header>

@@ -62,10 +62,10 @@ def _term():
 def _course():
     university = University(
         university_id=uuid.uuid4(),
-        university_name="University of New Mexico-Main Campus",
-        city="Albuquerque",
-        state="NM",
-        website="https://www.unm.edu",
+        university_name="Northern New Mexico College",
+        city="Espanola",
+        state="New Mexico",
+        website="https://www.nnmc.edu/",
     )
     program = Program(
         program_id=uuid.uuid4(),

@@ -7,6 +7,10 @@ from typing import Any
 import httpx
 
 from app.core.config import settings
+from app.shared.constants.institution import (
+    NORTHERN_NEW_MEXICO_COLLEGE_SCORECARD_ID,
+    is_northern_new_mexico_college,
+)
 
 BASE_FIELDS = [
     "id",
@@ -182,22 +186,23 @@ class CollegeScorecardClient:
         per_page: int = 25,
     ) -> dict[str, Any]:
         params: dict[str, Any] = {
-            "page": page,
-            "per_page": per_page,
+            "id": NORTHERN_NEW_MEXICO_COLLEGE_SCORECARD_ID,
+            "page": 0,
+            "per_page": 1,
             "fields": ",".join(BASE_FIELDS),
             "sort": "latest.student.size:desc",
         }
-        if search:
-            params["school.name"] = search
-        state_code = _state_code(state)
-        if state_code:
-            params["school.state"] = state_code
         payload = await self._get("/schools", params)
         schools = [self._map_school(result) for result in payload.get("results", [])]
         return {"results": schools, "metadata": payload.get("metadata", {})}
 
     async def get_school(self, unit_id: str) -> dict[str, Any] | None:
-        params = {"id": unit_id, "fields": ",".join(BASE_FIELDS)}
+        if str(unit_id) != NORTHERN_NEW_MEXICO_COLLEGE_SCORECARD_ID:
+            return None
+        params = {
+            "id": NORTHERN_NEW_MEXICO_COLLEGE_SCORECARD_ID,
+            "fields": ",".join(BASE_FIELDS),
+        }
         payload = await self._get("/schools", params)
         if not payload.get("results"):
             return None
@@ -285,63 +290,10 @@ class CollegeScorecardClient:
         city: str | None = None,
         state: str | None = None,
     ) -> dict[str, Any] | None:
-        if not name:
+        if not is_northern_new_mexico_college(name):
             return None
 
-        state_code = _state_code(state)
-        cache_key = _profile_cache_key(name, city, state_code)
-        if cache_key in self._profile_cache:
-            return self._profile_cache[cache_key]
-
-        params: dict[str, Any] = {
-            "page": 0,
-            "per_page": 25,
-            "fields": ",".join(BASE_FIELDS),
-            "sort": "latest.student.size:desc",
-            "school.name": name,
-        }
-        if state_code:
-            params["school.state"] = state_code
-
-        payload = await self._get("/schools", params)
-        records = payload.get("results", [])
-        if not records and state_code:
-            params.pop("school.state", None)
-            payload = await self._get("/schools", params)
-            records = payload.get("results", [])
-        if not records:
-            self._cache_profile(cache_key, None)
-            return None
-
-        desired_name = _normalize_school_name(name)
-        desired_city = _normalize_simple(city)
-        scored = []
-        for record in records:
-            scorecard_name = _normalize_school_name(record.get("school.name"))
-            scorecard_city = _normalize_simple(record.get("school.city"))
-            scorecard_state = str(record.get("school.state") or "").upper()
-            score = 0
-            if scorecard_name == desired_name:
-                score += 100
-            elif scorecard_name.startswith(desired_name) or desired_name in scorecard_name:
-                score += 70
-            elif desired_name in scorecard_name.replace(" main campus", ""):
-                score += 60
-            if desired_city and scorecard_city == desired_city:
-                score += 25
-            if state_code and scorecard_state == state_code:
-                score += 15
-            size = record.get("latest.student.size") or 0
-            scored.append((score, size, record))
-
-        scored.sort(key=lambda item: (item[0], item[1]), reverse=True)
-        best_score, _, best_record = scored[0]
-        if best_score < 70:
-            self._cache_profile(cache_key, None)
-            return None
-        school = self._map_school(best_record)
-        self._cache_profile(cache_key, school)
-        return school
+        return await self.get_school(NORTHERN_NEW_MEXICO_COLLEGE_SCORECARD_ID)
 
     def _cache_profile(
         self,

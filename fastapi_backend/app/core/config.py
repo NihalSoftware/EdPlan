@@ -10,7 +10,7 @@ class Settings(BaseSettings):
         env_file=".env", env_file_encoding="utf-8", case_sensitive=False
     )
 
-    app_name: str = Field("EduPlan API", alias="APP_NAME")
+    app_name: str = Field("Northern New Mexico College Student Hub API", alias="APP_NAME")
     api_prefix: str = Field("/api", alias="API_V1_PREFIX")
     environment: str = Field("development", alias="ENVIRONMENT")
     debug: bool = Field(True, alias="DEBUG")

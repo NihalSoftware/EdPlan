@@ -5,6 +5,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.models.education_plan import EducationPlan, ProgramCourse
 from app.student.domains.planning.schemas.education import ProgramCoursePayload
+from app.shared.constants.institution import NORTHERN_NEW_MEXICO_COLLEGE_NAME
 
 
 async def get_plan(
@@ -16,7 +17,7 @@ async def get_plan(
 ) -> Sequence[EducationPlan]:
     conditions = [
         EducationPlan.program_name == program_name,
-        EducationPlan.university_name == university_name,
+        EducationPlan.university_name.ilike(NORTHERN_NEW_MEXICO_COLLEGE_NAME),
     ]
     if user_id is not None:
         conditions.append(EducationPlan.user_id == user_id)
@@ -25,7 +26,12 @@ async def get_plan(
 
 
 async def list_plans(db: AsyncSession, *, email: str) -> Sequence[EducationPlan]:
-    result = await db.execute(select(EducationPlan).where(EducationPlan.user.has(email=email)))
+    result = await db.execute(
+        select(EducationPlan).where(
+            EducationPlan.user.has(email=email),
+            EducationPlan.university_name.ilike(NORTHERN_NEW_MEXICO_COLLEGE_NAME),
+        )
+    )
     return result.scalars().all()
 
 

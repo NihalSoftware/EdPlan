@@ -75,6 +75,12 @@ class NormalizedPlanService:
                 is_active=payload.is_active,
             )
             await db.commit()
+        except ValueError as exc:
+            await db.rollback()
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail=str(exc),
+            ) from exc
         except IntegrityError as exc:
             await db.rollback()
             logger.exception("Integrity error while creating normalized plan")

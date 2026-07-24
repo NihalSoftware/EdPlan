@@ -1,6 +1,7 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import { INSTITUTION } from "../config/institution.js";
 
 const API_BASE_URL =
 	import.meta.env.VITE_API_BASE_URL || `${window.location.origin}/api`;
@@ -107,10 +108,10 @@ const IntakeForm = () => {
 					<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
 						<div className="flex flex-col">
 							<h1 className="text-xl sm:text-2xl font-semibold">
-								Tell us about yourself to get started
+								Plan your path at Northern
 							</h1>
 							<p className="text-xs sm:text-sm text-slate-200 mt-1">
-								Filling this form will help us make you a better education plan.
+								Tell us about your goals so we can tailor your NNMC education plan.
 							</p>
 						</div>
 
@@ -470,18 +471,17 @@ const IntakeForm = () => {
 					<section className="border-t border-slate-200 pt-6">
 						<div className="flex items-center justify-between gap-2 mb-4">
 							<h2 className="text-lg sm:text-xl font-semibold text-slate-900">
-								Financial Readiness (US Study Costs)
+								Financial Readiness for NNMC
 							</h2>
 							<span className="text-xs font-medium text-amber-700 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-100">
-								Used to match realistic options
+								Used to plan a realistic NNMC pathway
 							</span>
 						</div>
 
 						<p className="text-sm sm:text-[14px] font-semibold text-slate-600 mb-4">
-							US colleges and the student visa process usually expect proof that
-							you can cover at least one year of tuition and living expenses.
-							This helps EdPlan AI suggest colleges that truly fit your
-							situation.
+							These details help compare your available resources with Northern New
+							Mexico College tuition and living costs. International applicants
+							should also review NNMC&apos;s current admissions requirements.
 						</p>
 
 						<div className="grid gap-4 md:grid-cols-2">
@@ -527,7 +527,7 @@ const IntakeForm = () => {
 									/>
 								</div>
 								<span className="text-[13px] text-slate-500">
-									Helps us filter out unaffordable options.
+								Helps you assess an affordable NNMC plan.
 								</span>
 							</label>
 						</div>
@@ -623,8 +623,8 @@ const IntakeForm = () => {
 							/>
 							<span>
 								I confirm that the information provided is accurate to the best
-								of my knowledge. EdPlan AI will use this only to estimate my fit
-								and suggest US colleges and pathways.
+								of my knowledge. This site will use it only to help build my
+								{INSTITUTION.shortName} education pathway.
 							</span>
 						</label>
 

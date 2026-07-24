@@ -150,7 +150,7 @@ def test_college_comparison_module_metadata_and_tools():
     comparison_module = CollegeComparisonModule(db=object())
 
     assert module.MODULE_NAME == "college_comparison"
-    assert module.MODULE_DESCRIPTION == "Help students compare universities and academic programs using existing EdPlan data."
+    assert module.MODULE_DESCRIPTION == "Help students compare Northern New Mexico College academic programs using existing NNMC data."
     assert comparison_module.name == "college_comparison"
     assert comparison_module.available_tool_names == EXPECTED_TOOL_NAMES
     assert [schema["function"]["name"] for schema in comparison_module.tool_schemas] == EXPECTED_TOOL_NAMES
@@ -175,10 +175,10 @@ def test_register_module_uses_existing_selector_alias_without_changing_intrinsic
 def test_comparison_prompts_are_registered():
     prompt_registry = PromptRegistry()
 
-    assert prompt_registry.get("comparison.default").template == "College comparison context: {context}"
+    assert prompt_registry.get("comparison.default").template == "NNMC program comparison context: {context}"
     advisor = prompt_registry.get("comparison.advisor")
     assert "Never invent rankings" in advisor.template
-    assert "current EdPlan database" in advisor.template
+    assert "current NNMC catalog" in advisor.template
 
 
 def test_comparison_api_routes_are_registered():
@@ -195,7 +195,7 @@ def test_comparison_service_searches_universities_with_existing_data():
 
     result = asyncio.run(service.search_universities(db, state="NM", name="Alpha"))
 
-    assert result["metadata"] == {"count": 1, "source": "edplan_database"}
+    assert result["metadata"] == {"count": 1, "source": "nnmc_catalog"}
     assert result["results"][0]["available_programs"][0]["program_name"] == "Computer Science"
     assert repository.calls[-1] == (
         "search_universities",

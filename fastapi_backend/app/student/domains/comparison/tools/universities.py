@@ -24,7 +24,7 @@ def _default_service():
 class SearchUniversitiesTool:
     name = "search_universities"
     description = (
-        "Search universities in the EdPlan database by state, city, or university name. "
+        "Return Northern New Mexico College from the NNMC catalog. "
         "Output includes university id, name, location, website, and available programs."
     )
     parameters = {
@@ -67,7 +67,7 @@ class SearchUniversitiesTool:
 class CompareUniversitiesTool:
     name = "compare_universities"
     description = (
-        "Compare multiple universities using only EdPlan database facts. Input: "
+        "Institution comparison is retained for API compatibility but the NNMC catalog contains only Northern New Mexico College. Input: "
         "university_ids. Output compares location, available programs, program count, "
         "public/private when available, website, and catalog information."
     )

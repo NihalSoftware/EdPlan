@@ -34,13 +34,13 @@ class _Session:
         return _Result(self.values)
 
 
-def _university(university_id=None, name="University of New Mexico-Main Campus"):
+def _university(university_id=None, name="Northern New Mexico College"):
     return University(
         university_id=university_id or uuid.uuid4(),
         university_name=name,
-        city="Albuquerque",
-        state="NM",
-        website="https://www.unm.edu",
+        city="Espanola",
+        state="New Mexico",
+        website="https://www.nnmc.edu/",
     )
 
 
@@ -55,14 +55,14 @@ def test_list_universities_returns_uuid_and_compatibility_aliases():
         {
             "university_id": str(university.university_id),
             "unit_id": str(university.university_id),
-            "university_name": "University of New Mexico-Main Campus",
-            "name": "University of New Mexico-Main Campus",
-            "city": "Albuquerque",
-            "state": "NM",
-            "website": "https://www.unm.edu",
+            "university_name": "Northern New Mexico College",
+            "name": "Northern New Mexico College",
+            "city": "Espanola",
+            "state": "New Mexico",
+            "website": "https://www.nnmc.edu/",
             "college_info": {
-                "website": "https://www.unm.edu",
-                "location": "Albuquerque, NM",
+                "website": "https://www.nnmc.edu/",
+                "location": "Espanola, New Mexico",
             },
             "organization_type": "University",
             "location_type": None,
@@ -87,7 +87,7 @@ def test_get_university_by_id_returns_one_university():
     result = asyncio.run(repository.get_university_by_id(session, str(university_id)))
 
     assert result["university_id"] == str(university_id)
-    assert result["name"] == "University of New Mexico-Main Campus"
+    assert result["name"] == "Northern New Mexico College"
 
 
 def test_get_university_by_id_rejects_invalid_uuid_without_query():
@@ -103,8 +103,8 @@ def test_get_university_by_id_rejects_invalid_uuid_without_query():
 def test_get_universities_by_ids_preserves_requested_order():
     first_id = uuid.uuid4()
     second_id = uuid.uuid4()
-    first = _university(university_id=first_id, name="First University")
-    second = _university(university_id=second_id, name="Second University")
+    first = _university(university_id=first_id, name="Northern New Mexico College")
+    second = _university(university_id=second_id, name="Northern New Mexico College")
     repository = UniversityRepository()
     session = _Session([second, first])
 

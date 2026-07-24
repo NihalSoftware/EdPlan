@@ -16,6 +16,10 @@ from app.student.domains.planning.schemas.education import (
     ProgramCoursePayload,
     RescheduleRequest,
 )
+from app.shared.constants.institution import (
+    NORTHERN_NEW_MEXICO_COLLEGE_NAME,
+    is_northern_new_mexico_college,
+)
 
 
 def _normalize_degree(value: str | None) -> str:
@@ -33,7 +37,12 @@ def _infer_program(payload: Sequence[ProgramCoursePayload]) -> tuple[str, str]:
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Program and university are required in at least one course entry.",
         )
-    return program_name, university_name
+    if not is_northern_new_mexico_college(university_name):
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"Education plans must use {NORTHERN_NEW_MEXICO_COLLEGE_NAME}.",
+        )
+    return program_name, NORTHERN_NEW_MEXICO_COLLEGE_NAME
 
 
 def _plan_payload(plan: EducationPlan) -> dict:

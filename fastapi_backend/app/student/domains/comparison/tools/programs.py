@@ -25,7 +25,7 @@ def _default_service():
 class SearchProgramsTool:
     name = "search_programs"
     description = (
-        "Search academic programs in the EdPlan database by university_id, degree, or "
+        "Search academic programs in the NNMC catalog by university_id, degree, or "
         "program name. Output includes matching program facts."
     )
     parameters = {
@@ -68,7 +68,7 @@ class SearchProgramsTool:
 class CompareProgramsTool:
     name = "compare_programs"
     description = (
-        "Compare academic programs using only EdPlan database facts. Input: program_ids. "
+        "Compare NNMC academic programs using only catalog facts. Input: program_ids. "
         "Output compares credits, duration when available, required courses, mapped careers "
         "when available, and program description when available."
     )
@@ -102,7 +102,7 @@ class CompareProgramsTool:
 class CompareCareerPathsTool:
     name = "compare_career_paths"
     description = (
-        "Compare career mappings associated with programs using EdPlan careers, "
+        "Compare career mappings associated with NNMC programs using catalog careers, "
         "program_careers, and course_careers tables when available. Output includes "
         "mapped, overlapping, and unique careers."
     )

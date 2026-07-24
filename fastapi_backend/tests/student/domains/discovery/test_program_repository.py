@@ -43,10 +43,10 @@ def _program(
 ):
     university = University(
         university_id=university_id or uuid.uuid4(),
-        university_name="University of New Mexico-Main Campus",
-        city="Albuquerque",
-        state="NM",
-        website="https://www.unm.edu",
+        university_name="Northern New Mexico College",
+        city="Espanola",
+        state="New Mexico",
+        website="https://www.nnmc.edu/",
     )
     return Program(
         program_id=program_id or uuid.uuid4(),
@@ -73,10 +73,10 @@ def test_get_programs_returns_program_summaries():
             "total_credit_hours": 120,
             "university": {
                 "university_id": str(program.university.university_id),
-                "university_name": "University of New Mexico-Main Campus",
-                "city": "Albuquerque",
-                "state": "NM",
-                "website": "https://www.unm.edu",
+                "university_name": "Northern New Mexico College",
+                "city": "Espanola",
+                "state": "New Mexico",
+                "website": "https://www.nnmc.edu/",
             },
         }
     ]

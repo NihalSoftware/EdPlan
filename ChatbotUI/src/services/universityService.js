@@ -1,41 +1,42 @@
 import axios from "axios";
 import { API_BASE_URL } from "./apiBaseUrl.js";
+import {
+	INSTITUTION,
+	isNorthernNewMexicoCollege,
+} from "../config/institution.js";
 
 const client = axios.create({
 	baseURL: API_BASE_URL,
 });
 
 export const searchUniversities = async ({
-	search,
-	state,
+	search = INSTITUTION.name,
 	page = 0,
 	perPage = 20,
 } = {}) => {
 	const response = await client.get("/universities", {
 		params: {
-			search: search || undefined,
-			state: state || undefined,
+			search: search || INSTITUTION.name,
 			page,
 			per_page: perPage,
 		},
 	});
-	return response.data;
+	const data = (response.data?.data || []).filter((college) =>
+		isNorthernNewMexicoCollege(college.name || college.university_name)
+	);
+	return { ...response.data, data };
 };
 
 export const getUniversityById = async (unitId) => {
 	const response = await client.get(`/universities/${unitId}`);
-	return response.data?.data || null;
-};
-
-export const compareUniversitiesByIds = async (unitIds) => {
-	const response = await client.post("/universities/compare", {
-		unit_ids: unitIds,
-	});
-	return response.data?.data || [];
+	const college = response.data?.data || null;
+	return college &&
+		isNorthernNewMexicoCollege(college.name || college.university_name)
+		? college
+		: null;
 };
 
 export default {
 	searchUniversities,
 	getUniversityById,
-	compareUniversitiesByIds,
 };

@@ -26,7 +26,7 @@ from app.orchestrator.schemas.student_context import StudentContext
         ("What careers align with AI and Machine Learning?", "career_guidance", [CAREER]),
         ("Find scholarships for computer science students", "finance_assistance", [FINANCE]),
         ("My GPA is falling", "academic_success", [ACADEMIC_SUCCESS]),
-        ("Compare UNM and NMSU", "college_comparison", [COLLEGE_COMPARISON]),
+        ("Compare two NNMC programs", "college_comparison", [COLLEGE_COMPARISON]),
         ("Recommend careers and scholarships", "multi_module", [CAREER, FINANCE]),
         ("Can you explain how EdPlan works?", "general_question", []),
     ],

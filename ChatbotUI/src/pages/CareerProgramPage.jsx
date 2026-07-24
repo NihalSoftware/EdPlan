@@ -4,6 +4,7 @@ import toast from "react-hot-toast";
 import { save as saveStorage } from "../utils/storage.js";
 import { getCareers } from "../services/catalogService.js";
 import { listPrograms } from "../services/educationPlanService.js";
+import { INSTITUTION } from "../config/institution.js";
 
 const CAREER_CATALOG_URL = "/assets/career_program_data.json";
 const CAREER_EMPLOYERS_URL = "/assets/career_employers.json";
@@ -45,7 +46,7 @@ const normalizeDegreeName = (value = "") => {
 };
 
 const salaryLabel = (value) =>
-	value || value === 0 ? `$${Number(value).toLocaleString()}` : "N/A";
+	value || value === 0 ? `$${Number(value).toLocaleString()}` : "Not reported";
 
 const buildCareerProgramData = (programs = [], careers = []) => {
 	const careersForDisplay = careers.map((career) => ({
@@ -84,6 +85,38 @@ const buildCareerProgramData = (programs = [], careers = []) => {
 	};
 };
 
+const buildNorthernCareerData = (programs, staticCatalog) => {
+	const staticPrograms = new Map();
+	(staticCatalog.data.degrees || []).forEach((degree) => {
+		(degree.programs || []).forEach((program) => {
+			staticPrograms.set(program.name.trim().toLowerCase(), program);
+		});
+	});
+
+	const degreeMap = new Map();
+	programs.forEach((program) => {
+		const degreeName = normalizeDegreeName(program.degree);
+		if (!degreeMap.has(degreeName)) {
+			degreeMap.set(degreeName, { name: degreeName, programs: [] });
+		}
+		const staticProgram = staticPrograms.get(program.program.trim().toLowerCase());
+		degreeMap.get(degreeName).programs.push(
+			staticProgram || {
+				name: program.program,
+				description: `${program.program} at ${INSTITUTION.name}`,
+				careers: [],
+			}
+		);
+	});
+
+	return {
+		degrees: Array.from(degreeMap.values()).sort((a, b) =>
+			a.name.localeCompare(b.name)
+		),
+		competencies: staticCatalog.data.competencies || {},
+	};
+};
+
 const CareerProgramPage = () => {
 	const [data, setData] = useState(null);
 	const [selectedDegree, setSelectedDegree] = useState("");
@@ -98,10 +131,13 @@ const CareerProgramPage = () => {
 			setLoading(true);
 			setError("");
 			try {
-				const staticCatalog = await loadStaticCareerCatalog();
-				setData(staticCatalog.data);
+				const [programs, staticCatalog] = await Promise.all([
+					listPrograms(),
+					loadStaticCareerCatalog(),
+				]);
+				setData(buildNorthernCareerData(programs, staticCatalog));
 				setEmployers(staticCatalog.employers);
-			} catch (staticError) {
+			} catch (catalogError) {
 				try {
 					const [programs, careers] = await Promise.all([
 						listPrograms(),
@@ -111,7 +147,7 @@ const CareerProgramPage = () => {
 					setEmployers({});
 				} catch (backendError) {
 					console.error("Unable to load career catalog", {
-						staticError,
+						catalogError,
 						backendError,
 					});
 					setData({ degrees: [] });
@@ -220,11 +256,11 @@ const CareerProgramPage = () => {
 			<div className="relative z-10">
 				<header>
 					<h1 className="text-[40px] -mt-2 font-semibold">
-						Discover <span className="text-[#0069e0]">Careers</span> and{" "}
-						<span className="text-[#0069e0]">Programs</span> that fit you
+						Discover <span className="text-[#0069e0]">NNMC Careers</span> and{" "}
+						<span className="text-[#0069e0]">Programs</span>
 					</h1>
 					<p className="text-[20px] font-medium text-slate-600 mb-5">
-						Connect your program to real careers and the competencies you need.
+						Connect a Northern New Mexico College program to career paths and the competencies you need.
 					</p>
 				</header>
 				{loading && (

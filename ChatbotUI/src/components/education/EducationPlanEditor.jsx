@@ -16,6 +16,10 @@ import {
 	save as saveStorage,
 } from "../../utils/storage.js";
 import toast from "react-hot-toast";
+import {
+	INSTITUTION,
+	isNorthernNewMexicoCollege,
+} from "../../config/institution.js";
 
 const LOCAL_PLAN_KEY = "LocalSavedPlans";
 const MIN_SEMESTER_CREDITS = 3;
@@ -48,16 +52,6 @@ const YEAR_ORDER = [
 	"Eighth Year",
 ];
 const SEMESTER_ORDER = ["Fall", "Spring", "Summer", "Winter"];
-const UNIVERSITY_ALIASES = {
-	"new mexico state university-main campus": "New Mexico State University",
-	"university of new mexico-main campus": "University of New Mexico",
-};
-
-const normalizeUniversityName = (value = "") => {
-	const cleaned = String(value || "").trim();
-	return UNIVERSITY_ALIASES[cleaned.toLowerCase()] || cleaned;
-};
-
 const getYearRank = (year) => {
 	if (!year) return Number.MAX_SAFE_INTEGER;
 	const idx = YEAR_ORDER.findIndex(
@@ -232,7 +226,7 @@ const validatePlan = (planCourses, knownCodes) => {
 const EducationPlanEditor = () => {
 	const [programs, setPrograms] = useState([]);
 	const [selectedProgram, setSelectedProgram] = useState("");
-	const selectedUniversity = normalizeUniversityName(loadStorage("University") || "");
+	const selectedUniversity = INSTITUTION.name;
 	const [selectedDegree, setSelectedDegree] = useState("");
 	const [courses, setCourses] = useState([]);
 	const [availableCourses, setAvailableCourses] = useState([]);
@@ -252,6 +246,9 @@ const EducationPlanEditor = () => {
 	const navigate = useNavigate();
 
 	useEffect(() => {
+		saveStorage("University", INSTITUTION.name);
+		saveStorage("UniversityState", INSTITUTION.state);
+		saveStorage("universityview", INSTITUTION.name);
 		listPrograms()
 			.then((items) => setPrograms(items))
 			.catch((err) => {
@@ -268,8 +265,14 @@ const EducationPlanEditor = () => {
 		}
 		const storedEditingPlan = loadStorage("EditingPlan", null);
 		const editingActive = loadStorage("EditingPlanActive", false);
-		if (editingActive && storedEditingPlan) {
+		if (
+			editingActive &&
+			storedEditingPlan &&
+			isNorthernNewMexicoCollege(storedEditingPlan.university)
+		) {
 			setEditingPlan(storedEditingPlan);
+		} else if (editingActive) {
+			saveStorage("EditingPlanActive", false);
 		}
 	}, []);
 
@@ -427,9 +430,9 @@ const EducationPlanEditor = () => {
 			const programMatch =
 				String(editingPlan?.program || "").toLowerCase() ===
 				String(selectedProgram || "").toLowerCase();
-			const universityMatch =
-				String(normalizeUniversityName(editingPlan?.university || "")).toLowerCase() ===
-				String(selectedUniversity || "").toLowerCase();
+			const universityMatch = isNorthernNewMexicoCollege(
+				editingPlan?.university
+			);
 			const degreeMatch =
 				!editingPlan?.degree ||
 				normalizeDegree(editingPlan.degree) === normalizeDegree(degreeToUse);
@@ -678,11 +681,6 @@ const EducationPlanEditor = () => {
 		);
 	}, [programs, selectedProgram, selectedUniversity, selectedDegree]);
 
-	const averageAnnualCost =
-		selectedProgramMeta?.average_annual_cost ||
-		selectedProgramMeta?.averageAnnualCost ||
-		selectedProgramMeta?.college_profile?.average_annual_cost ||
-		null;
 	const eligibilityCriteria =
 		selectedProgramMeta?.eligibility_criteria ||
 		selectedProgramMeta?.eligibility ||
@@ -701,7 +699,7 @@ const EducationPlanEditor = () => {
 
 	const addSemester = () => {
 		if (!selectedProgram || !selectedUniversity) {
-			toast.error("Select a university and program first.");
+			toast.error("Select an NNMC program first.");
 			return;
 		}
 		if (planTerms.length >= MAX_SEMESTERS) {
@@ -993,7 +991,7 @@ const EducationPlanEditor = () => {
 
 	const savePlanLocally = () => {
 		if (!selectedUniversity || !selectedProgram) {
-			toast.error("Select a university and program before saving.");
+			toast.error("Select an NNMC program before saving.");
 			return;
 		}
 		if (dependencyIssues.some((issue) => issue.blocking)) {
@@ -1102,7 +1100,9 @@ const EducationPlanEditor = () => {
 		[defaultPlan]
 	);
 	const requiredCredits = Number(programTotalCredits) || defaultPlanCredits || totalCredits || 0;
-	const creditsProgressText = `${totalCredits}/${requiredCredits || "N/A"} credits`;
+	const creditsProgressText = requiredCredits
+		? `${totalCredits}/${requiredCredits} credits`
+		: `${totalCredits} credits earned; program requirement not reported`;
 	const progressPercent =
 		requiredCredits > 0 ? Math.min(100, Math.round((totalCredits / requiredCredits) * 100)) : 0;
 	const studentName = "Jack";
@@ -1158,11 +1158,11 @@ const EducationPlanEditor = () => {
 							<div className="mt-4 grid grid-cols-2 gap-2">
 								<div className="rounded-md bg-slate-50 p-3">
 									<p className="text-xs font-extrabold uppercase text-slate-400">UG GPA</p>
-									<p className="text-lg font-extrabold text-blue-700">{profile.gpa || "N/A"}</p>
+									<p className="text-lg font-extrabold text-blue-700">{profile.gpa || "Not provided"}</p>
 								</div>
 								<div className="rounded-md bg-slate-50 p-3">
 									<p className="text-xs font-extrabold uppercase text-slate-400">PG GPA</p>
-									<p className="text-lg font-extrabold text-slate-500">N/A</p>
+									<p className="text-lg font-extrabold text-slate-500">Not applicable</p>
 								</div>
 							</div>
 
@@ -1182,7 +1182,9 @@ const EducationPlanEditor = () => {
 									<div className="h-2 rounded-full bg-blue-700" style={{ width: `${progressPercent}%` }} />
 								</div>
 								<p className="mt-2 text-center text-xs font-extrabold text-emerald-700">
-									{totalCredits}/{requiredCredits || "N/A"} Credits
+									{requiredCredits
+										? `${totalCredits}/${requiredCredits} Credits`
+										: `${totalCredits} Credits · Requirement not reported`}
 								</p>
 							</div>
 						</div>
@@ -1230,7 +1232,7 @@ const EducationPlanEditor = () => {
 													{course.name}
 												</p>
 												<p className="mt-1 text-xs font-semibold text-slate-500">
-													{course.code} - {course.credits ?? "N/A"}CR
+											{course.code} - {course.credits == null ? "Credits not reported" : `${course.credits} CR`}
 												</p>
 											</div>
 											<FaPlus className="mt-1 h-3 w-3 text-blue-700" />
@@ -1249,7 +1251,7 @@ const EducationPlanEditor = () => {
 							<div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,18rem),1fr))] gap-4">
 								<div className="space-y-3">
 									<label className="block text-xs font-extrabold uppercase tracking-wide text-slate-400">
-										University
+									Institution
 										{selectedUniversity ? (
 											<span className="mt-2 block rounded-md border border-blue-100 bg-blue-50 px-3 py-2 text-sm font-bold normal-case tracking-normal text-blue-800">
 												{selectedUniversity}
@@ -1257,7 +1259,7 @@ const EducationPlanEditor = () => {
 											</span>
 										) : (
 											<span className="mt-2 block rounded-md border border-rose-100 bg-rose-50 px-3 py-2 text-sm font-bold normal-case tracking-normal text-rose-700">
-												Select a University/College from the Find University Page.
+											Return to the NNMC Overview to select a Northern program.
 											</span>
 										)}
 									</label>
@@ -1503,7 +1505,7 @@ const EducationPlanEditor = () => {
 																	</p>
 																	<div className="mt-1 flex flex-wrap gap-x-5 gap-y-1 text-xs font-medium text-slate-600">
 																		<span>Code: <span className="font-semibold text-slate-800">{course.code}</span></span>
-																		<span>Credits: <span className="font-semibold text-slate-800">{course.credits ?? "N/A"}</span></span>
+																						<span>Credits: <span className="font-semibold text-slate-800">{course.credits ?? "Not reported"}</span></span>
 																		{hasMeaningfulRequirement(prereqText) && (
 																			<span className="text-sky-700">
 																				Pre-requisite: <span className="text-orange-500">{prereqText}</span>
@@ -1549,7 +1551,7 @@ const EducationPlanEditor = () => {
 
 							{(!selectedProgram || !selectedUniversity) && (
 								<div className="rounded-lg border border-slate-200 bg-white p-8 text-center text-sm font-semibold text-slate-500 shadow-sm">
-									Select a university and program to build your semester plan.
+					Select an NNMC program to build your semester plan.
 								</div>
 							)}
 						</div>

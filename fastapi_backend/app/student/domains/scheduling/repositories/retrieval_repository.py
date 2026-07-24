@@ -8,6 +8,8 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import joinedload, selectinload
 
 from app.student.domains.planning.models import EdPlan, PlanCourse
+from app.student.domains.discovery.models import University
+from app.shared.constants.institution import NORTHERN_NEW_MEXICO_COLLEGE_NAME
 from app.student.domains.scheduling.models import (
     AcademicTerm,
     CourseOffering,
@@ -35,7 +37,15 @@ class ScheduleRetrievalRepository:
                 joinedload(EdPlan.university),
                 joinedload(EdPlan.program),
             )
-            .where(EdPlan.plan_id == parsed_plan_id, EdPlan.user_id == user_id)
+            .where(
+                EdPlan.plan_id == parsed_plan_id,
+                EdPlan.user_id == user_id,
+                EdPlan.university.has(
+                    University.university_name.ilike(
+                        NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                    )
+                ),
+            )
         )
         return result.scalar_one_or_none()
 

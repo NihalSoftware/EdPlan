@@ -6,6 +6,8 @@ from sqlalchemy import delete, select, update
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.student.domains.planning.models import EdPlan
+from app.student.domains.discovery.models import University
+from app.shared.constants.institution import NORTHERN_NEW_MEXICO_COLLEGE_NAME
 from app.student.domains.scheduling.models import (
     CourseOffering,
     PlanSchedule,
@@ -26,7 +28,16 @@ class SchedulePersistenceRepository:
         parsed_plan_id = _parse_uuid(plan_id)
         if parsed_plan_id is None:
             return None
-        result = await db.execute(select(EdPlan).where(EdPlan.plan_id == parsed_plan_id))
+        result = await db.execute(
+            select(EdPlan).where(
+                EdPlan.plan_id == parsed_plan_id,
+                EdPlan.university.has(
+                    University.university_name.ilike(
+                        NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                    )
+                ),
+            )
+        )
         return result.scalar_one_or_none()
 
     async def get_sections_by_ids(

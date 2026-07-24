@@ -15,6 +15,7 @@ import {
   outcomeMetrics,
   overviewMetrics,
 } from "./collegeMetrics.jsx";
+import { INSTITUTION } from "../../config/institution.js";
 
 const SectionCard = ({ title, children, note }) => (
   <div className="bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-lg p-5 space-y-3">
@@ -104,7 +105,7 @@ const CollegeDetail = ({ college }) => {
   if (!college) {
     return (
       <div className="bg-white border border-slate-200 rounded-xl shadow-sm p-5 text-sm text-slate-600">
-        No College/University selected.
+        Northern New Mexico College details are not available yet.
       </div>
     );
   }
@@ -135,11 +136,28 @@ const CollegeDetail = ({ college }) => {
         onClick={handleBackToFind}
         className="mt-2 inline-flex items-center gap-2 px-3 py-2 rounded-md bg-indigo-50 text-indigo-700 hover:bg-indigo-100 text-sm font-medium"
       >
-        ← Back to Find University
+        ← Back to NNMC Overview
       </button>
 
+      <div className="rounded-xl border border-blue-100 bg-blue-50 px-4 py-3 text-sm text-blue-900">
+        Federal metrics are shown exactly as reported by the U.S. Department of
+        Education College Scorecard. Missing values are not estimated. Visit the{" "}
+        <a
+          href={
+            college.scorecard_source_url ||
+            `https://collegescorecard.ed.gov/school/?${INSTITUTION.scorecardUnitId}`
+          }
+          target="_blank"
+          rel="noreferrer"
+          className="font-semibold underline"
+        >
+          NNMC College Scorecard record
+        </a>{" "}
+        for the source data.
+      </div>
+
       <ComparisonTable
-        title="College Overview"
+        title="Northern Overview"
         metrics={overviewMetrics}
         schools={schools}
       />

@@ -381,7 +381,6 @@
       "Meta Data Center (Los Lunas)"
     ],
     "Registered Nurse (RN)": [
-      "UNM Hospital (Albuquerque)",
       "Presbyterian Healthcare Services (Statewide)",
       "Lovelace Health System (Albuquerque)",
       "Christus St. Vincent (Santa Fe)",
@@ -430,7 +429,6 @@
       "MountainView Regional Medical Center (Las Cruces)"
     ],
     "Psychiatric Aide": [
-      "UNM Health Behavioral Health",
       "Presbyterian Behavioral Health",
       "Turquoise Lodge Hospital",
       "New Mexico VA Health Care System",
@@ -509,7 +507,6 @@
       "Array Technologies (Albuquerque)"
     ],
     "Genetic Counselor": [
-      "UNM Health Behavioral Health",
       "Presbyterian Behavioral Health",
       "Turquoise Lodge Hospital",
       "New Mexico VA Health Care System",
@@ -722,15 +719,12 @@
       "Albuquerque Public Schools",
       "Las Cruces Public Schools",
       "Rio Rancho Public Schools",
-      "Santa Fe Public Schools",
-      "New Mexico State University"
+      "Santa Fe Public Schools"
     ],
     "Special Education Teacher": [
       "Las Cruces Public Schools",
       "Rio Rancho Public Schools",
-      "Santa Fe Public Schools",
-      "New Mexico State University",
-      "University of New Mexico"
+      "Santa Fe Public Schools"
     ],
     "Curriculum Developer": [
       "Pattern Energy (Albuquerque)",
@@ -748,10 +742,7 @@
     ],
     "Educational Consultant": [
       "Rio Rancho Public Schools",
-      "Santa Fe Public Schools",
-      "New Mexico State University",
-      "University of New Mexico",
-      "Central New Mexico CC"
+      "Santa Fe Public Schools"
     ],
     "Literacy Specialist": [
       "Meta Data Center (Los Lunas)",
@@ -768,11 +759,7 @@
       "Santa Fe Recovery Center"
     ],
     "Educational Technology Specialist": [
-      "Santa Fe Public Schools",
-      "New Mexico State University",
-      "University of New Mexico",
-      "Central New Mexico CC",
-      "Santa Fe Community College"
+      "Santa Fe Public Schools"
     ],
     "After-School Program Coordinator": [
       "Bank of Albuquerque",
@@ -992,7 +979,6 @@
       "Pattern Energy (Albuquerque)"
     ],
     "Registered Nurse (RN)": [
-      "UNM Hospital (Albuquerque)",
       "Presbyterian Healthcare Services (Statewide)",
       "Lovelace Health System (Albuquerque)",
       "Christus St. Vincent (Santa Fe)",
@@ -1037,20 +1023,17 @@
       "Memorial Medical Center (Las Cruces)",
       "Mimbres Memorial Hospital (Deming)",
       "MountainView Regional Medical Center (Las Cruces)",
-      "Taos Health Systems / Holy Cross Hospital",
-      "UNM Hospital (Albuquerque)"
+      "Taos Health Systems / Holy Cross Hospital"
     ],
     "Nurse Educator": [
       "Mimbres Memorial Hospital (Deming)",
       "MountainView Regional Medical Center (Las Cruces)",
       "Taos Health Systems / Holy Cross Hospital",
-      "UNM Hospital (Albuquerque)",
       "Presbyterian Healthcare Services (Statewide)"
     ],
     "Critical Care Nurse": [
       "MountainView Regional Medical Center (Las Cruces)",
       "Taos Health Systems / Holy Cross Hospital",
-      "UNM Hospital (Albuquerque)",
       "Presbyterian Healthcare Services (Statewide)",
       "Lovelace Health System (Albuquerque)"
     ],
@@ -1086,12 +1069,10 @@
       "Peak Behavioral Health (Santa Teresa)",
       "Haven Behavioral Hospital (Albuquerque)",
       "Gerald Champion Behavioral Health (Alamogordo)",
-      "San Juan Behavioral Health (Farmington)",
-      "UNM Health Behavioral Health"
+      "San Juan Behavioral Health (Farmington)"
     ],
     "Health Psychologist": [
       "Taos Health Systems / Holy Cross Hospital",
-      "UNM Hospital (Albuquerque)",
       "Presbyterian Healthcare Services (Statewide)",
       "Lovelace Health System (Albuquerque)",
       "Christus St. Vincent (Santa Fe)"
@@ -1100,13 +1081,11 @@
       "Haven Behavioral Hospital (Albuquerque)",
       "Gerald Champion Behavioral Health (Alamogordo)",
       "San Juan Behavioral Health (Farmington)",
-      "UNM Health Behavioral Health",
       "Presbyterian Behavioral Health"
     ],
     "Sports Psychologist": [
       "Gerald Champion Behavioral Health (Alamogordo)",
       "San Juan Behavioral Health (Farmington)",
-      "UNM Health Behavioral Health",
       "Presbyterian Behavioral Health",
       "Turquoise Lodge Hospital"
     ]
@@ -1302,7 +1281,6 @@
       "Bank of Albuquerque"
     ],
     "Nurse Practitioner": [
-      "UNM Hospital (Albuquerque)",
       "Presbyterian Healthcare Services (Statewide)",
       "Lovelace Health System (Albuquerque)",
       "Christus St. Vincent (Santa Fe)",
@@ -1347,32 +1325,27 @@
       "Memorial Medical Center (Las Cruces)",
       "Mimbres Memorial Hospital (Deming)",
       "MountainView Regional Medical Center (Las Cruces)",
-      "Taos Health Systems / Holy Cross Hospital",
-      "UNM Hospital (Albuquerque)"
+      "Taos Health Systems / Holy Cross Hospital"
     ],
     "Clinical Nurse Leader": [
       "Mimbres Memorial Hospital (Deming)",
       "MountainView Regional Medical Center (Las Cruces)",
       "Taos Health Systems / Holy Cross Hospital",
-      "UNM Hospital (Albuquerque)",
       "Presbyterian Healthcare Services (Statewide)"
     ],
     "Nurse Researcher": [
       "MountainView Regional Medical Center (Las Cruces)",
       "Taos Health Systems / Holy Cross Hospital",
-      "UNM Hospital (Albuquerque)",
       "Presbyterian Healthcare Services (Statewide)",
       "Lovelace Health System (Albuquerque)"
     ],
     "Nurse Informatics Specialist": [
       "Taos Health Systems / Holy Cross Hospital",
-      "UNM Hospital (Albuquerque)",
       "Presbyterian Healthcare Services (Statewide)",
       "Lovelace Health System (Albuquerque)",
       "Christus St. Vincent (Santa Fe)"
     ],
     "Clinical Psychologist": [
-      "UNM Health Behavioral Health",
       "Presbyterian Behavioral Health",
       "Turquoise Lodge Hospital",
       "New Mexico VA Health Care System",
@@ -1417,11 +1390,9 @@
       "Peak Behavioral Health (Santa Teresa)",
       "Haven Behavioral Hospital (Albuquerque)",
       "Gerald Champion Behavioral Health (Alamogordo)",
-      "San Juan Behavioral Health (Farmington)",
-      "UNM Health Behavioral Health"
+      "San Juan Behavioral Health (Farmington)"
     ],
     "Health Psychologist": [
-      "UNM Hospital (Albuquerque)",
       "Presbyterian Healthcare Services (Statewide)",
       "Lovelace Health System (Albuquerque)",
       "Christus St. Vincent (Santa Fe)",
@@ -1431,7 +1402,6 @@
       "Haven Behavioral Hospital (Albuquerque)",
       "Gerald Champion Behavioral Health (Alamogordo)",
       "San Juan Behavioral Health (Farmington)",
-      "UNM Health Behavioral Health",
       "Presbyterian Behavioral Health"
     ]
   }

@@ -225,6 +225,8 @@ DEFAULT_INTENT_RULES: tuple[IntentRule, ...] = (
         keywords=(
             "compare colleges",
             "compare universities",
+            "compare programs",
+            "program comparison",
             "college comparison",
             "university comparison",
             "versus",
@@ -232,6 +234,10 @@ DEFAULT_INTENT_RULES: tuple[IntentRule, ...] = (
             "better school",
             "better college",
         ),
-        patterns=(r"\bcompare\b.*\b(and|with|to)\b", r"\b\w+\b\s+vs\s+\b\w+\b"),
+        patterns=(
+            r"\bcompare\b.*\b(and|with|to)\b",
+            r"\bcompare\b.*\bprograms?\b",
+            r"\b\w+\b\s+vs\s+\b\w+\b",
+        ),
     ),
 )

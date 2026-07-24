@@ -3,11 +3,17 @@ import { useLocation, useParams } from "react-router-dom";
 import CollegeDetail from "../components/university/CollegeDetail.jsx";
 import { getUniversityById } from "../services/universityService.js";
 import { load as loadStorage, save as saveStorage } from "../utils/storage.js";
+import { INSTITUTION, isNorthernNewMexicoCollege } from "../config/institution.js";
 
 const CollegeDetailPage = () => {
   const { unitId } = useParams();
   const location = useLocation();
-  const initialCollege = location.state?.college || loadStorage("LastCollegeDetail", null);
+  const storedCollege = location.state?.college || loadStorage("LastCollegeDetail", null);
+  const initialCollege =
+    storedCollege &&
+    isNorthernNewMexicoCollege(storedCollege.name || storedCollege.university_name)
+      ? storedCollege
+      : null;
   const [college, setCollege] = useState(initialCollege);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(!initialCollege);
@@ -19,15 +25,27 @@ const CollegeDetailPage = () => {
       setError("");
       try {
         const detail = await getUniversityById(unitId);
-        const resolved = detail || initialCollege || null;
+        const candidate = detail || initialCollege || null;
+        const resolved =
+          candidate &&
+          isNorthernNewMexicoCollege(candidate.name || candidate.university_name)
+            ? candidate
+            : null;
         setCollege(resolved);
         if (resolved) {
           saveStorage("LastCollegeDetail", resolved);
         }
       } catch (err) {
         console.error(err);
-        setError("Unable to load college details.");
-        setCollege(initialCollege || null);
+        setError("Unable to refresh NNMC details from College Scorecard.");
+        setCollege(
+          initialCollege &&
+            isNorthernNewMexicoCollege(
+              initialCollege.name || initialCollege.university_name
+            )
+            ? initialCollege
+            : null
+        );
       } finally {
         setLoading(false);
       }
@@ -41,16 +59,16 @@ const CollegeDetailPage = () => {
       <header className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-semibold text-slate-900">
-            College <span className="text-[#0069e0]">Details</span>
+            NNMC <span className="text-[#0069e0]">College Details</span>
           </h1>
           {college ? (
             <p className="text-lg mt-2 font-semibold text-slate-600">
-              {college.name || college.university} · {college.city},{" "}
+              {INSTITUTION.name} · {college.city},{" "}
               {college.state}
             </p>
           ) : (
             <p className="text-sm text-slate-600">
-              Loading College/University information…
+              Loading Northern New Mexico College information…
             </p>
           )}
         </div>
@@ -64,13 +82,13 @@ const CollegeDetailPage = () => {
 
       {loading ? (
         <div className="text-sm text-slate-600 bg-white border border-slate-200 rounded-xl p-4">
-          Loading College/University information…
+          Loading Northern New Mexico College information…
         </div>
       ) : college ? (
         <CollegeDetail college={college} />
       ) : (
         <div className="text-sm text-slate-600 bg-white border border-slate-200 rounded-xl p-4">
-          College not found.
+          Northern New Mexico College data could not be loaded. Return to the NNMC Overview and try again.
         </div>
       )}
     </section>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { load } from "../utils/storage.js";
+import { INSTITUTION } from "../config/institution.js";
 
 const HomePage = () => {
 	const profile = load("UserProfile");
@@ -11,27 +12,25 @@ const HomePage = () => {
 			: "";
 
 	return (
-		<section className="w-full h-full flex flex-col items-center justify-center py-12 px-6 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+		<section className="w-full min-h-screen flex flex-col items-center justify-center py-12 px-6 bg-gradient-to-br from-sky-50 via-white to-amber-50">
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="max-w-4xl mx-auto text-center space-y-8">
-					{/* Main Heading */}
 					<img
-						src="/assets/logo.jpeg"
-						alt="EdPlan.ai"
-						className="w-28 h-28 object-contain mx-auto rounded-full shadow-md"
+						src={INSTITUTION.logoUrl}
+						alt="Northern New Mexico College"
+						className="h-24 w-auto object-contain mx-auto"
 					/>
 					<h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground">
-						Find Your Perfect <span className="text-[#0069e0]">College</span>
+						Find Your Future <span className="text-[#0069e0]">@Northern</span>
 					</h1>
 
 					<h2 className="text-4xl font-bold text-slate-900">
-						Plan your educational path.
+						Small community. Great opportunity.
 					</h2>
 
 					<p className="text-lg text-slate-600">
-						Discover and compare colleges, explore programs, and create
-						personalized education plans. Make informed decisions about your
-						future with comprehensive data and expert guidance.
+						Explore Northern New Mexico College programs, connect them to career
+						goals, and build a personalized path toward graduation.
 					</p>
 				</div>
 			</div>
@@ -54,19 +53,19 @@ const HomePage = () => {
 						to="/career"
 						className="px-6 py-3 rounded-lg bg-[#0069e0] hover:bg-[#1977e3] text-white font-semibold shadow"
 					>
-						Start Now
+						Explore NNMC Programs
 					</Link>
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-slate-600">
 					<div className="bg-white rounded-lg shadow p-4">
-						Help me find the best education plan tailored to my goals.
+						Build an NNMC degree plan tailored to your goals.
 					</div>
 					<div className="bg-white rounded-lg shadow p-4">
-						Estimate the total tuition and living expenses by university.
+						Review official NNMC cost and financial-aid information.
 					</div>
 					<div className="bg-white rounded-lg shadow p-4">
-						Learn how to apply for scholarships and financial aid.
+						Connect programs with career paths and practical next steps.
 					</div>
 				</div>
 			</div>

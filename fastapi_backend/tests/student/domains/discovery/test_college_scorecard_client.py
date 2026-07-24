@@ -50,8 +50,8 @@ def test_map_school_exposes_shared_detail_and_compare_metrics():
 
     selective_school = CollegeScorecardClient()._map_school(
         {
-            "id": 187648,
-            "school.name": "Eastern New Mexico University-Main Campus",
+            "id": 188058,
+            "school.name": "Northern New Mexico College",
             "school.open_admissions_policy": 2,
         }
     )

@@ -2,6 +2,10 @@ import {
 	getCatalogCourses,
 	getCatalogPrograms,
 } from "./catalogService.js";
+import {
+	INSTITUTION,
+	isNorthernNewMexicoCollege,
+} from "../config/institution.js";
 
 let educationCache = null;
 let educationWithCoursesCache = null;
@@ -17,14 +21,9 @@ const YEAR_LABELS = {
 	8: "Eighth Year",
 };
 
-const UNIVERSITY_DISPLAY_ALIASES = {
-	"new mexico state university-main campus": "New Mexico State University",
-	"university of new mexico-main campus": "University of New Mexico",
-};
-
 const displayUniversityName = (name = "") => {
 	const cleaned = String(name || "").trim();
-	return UNIVERSITY_DISPLAY_ALIASES[cleaned.toLowerCase()] || cleaned;
+	return isNorthernNewMexicoCollege(cleaned) ? INSTITUTION.name : cleaned;
 };
 
 const normalizeCourse = (course) => ({
@@ -123,7 +122,9 @@ const loadPrograms = async ({ includeCourses = false } = {}) => {
 	if (!includeCourses && educationCache) return educationCache;
 
 	const programs = await getCatalogPrograms();
-	const normalizedPrograms = programs.map((program) => normalizeProgram(program));
+	const normalizedPrograms = programs
+		.map((program) => normalizeProgram(program))
+		.filter((program) => isNorthernNewMexicoCollege(program.university));
 
 	if (!includeCourses) {
 		educationCache = normalizedPrograms;
@@ -151,7 +152,10 @@ export const getProgramWithCourses = async (programId) => {
 };
 
 export const findProgramPlan = async (programName, universityName) => {
-	const normalizedUniversityName = displayUniversityName(universityName);
+	const normalizedUniversityName = isNorthernNewMexicoCollege(universityName)
+		? INSTITUTION.name
+		: "";
+	if (!normalizedUniversityName) return null;
 	const programs = await loadPrograms({ includeCourses: true });
 	return (
 		programs.find(

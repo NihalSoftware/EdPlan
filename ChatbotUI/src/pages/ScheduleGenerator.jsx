@@ -132,11 +132,11 @@ const ScheduleGenerator = () => {
 				<header className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
 					<div>
 						<h1 className="text-3xl font-semibold text-slate-900">
-							Schedule Generator
+							NNMC Schedule Generator
 						</h1>
 						<p className="mt-2 max-w-2xl text-sm text-slate-600">
-							Inspect generated schedules for a normalized academic plan before
-							choosing one.
+							Inspect generated schedules for your Northern New Mexico College
+							academic plan before choosing one.
 						</p>
 					</div>
 

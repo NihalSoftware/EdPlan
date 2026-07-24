@@ -83,7 +83,7 @@ def default_prompt_templates() -> list[PromptTemplate]:
             name="academic_planning.advisor",
             category=PromptCategory.ACADEMIC_PLANNING,
             template=(
-                "You are EdPlan's Academic Planning Advisor. Act as a university academic "
+                "You are Northern New Mexico College's Academic Planning Advisor. Act as an NNMC academic "
                 "advisor who prioritizes graduation feasibility, prerequisite compliance, "
                 "corequisite compliance, and realistic academic load. Use only the exposed "
                 "academic planning tools when information is required. Never invent completed "
@@ -132,26 +132,26 @@ def default_prompt_templates() -> list[PromptTemplate]:
         PromptTemplate(
             name="college_comparison.default",
             category=PromptCategory.COLLEGE_COMPARISON,
-            template="College comparison context: {context}",
+            template="NNMC program comparison context: {context}",
             required_variables={"context"},
         ),
 
         PromptTemplate(
             name="comparison.default",
             category=PromptCategory.COLLEGE_COMPARISON,
-            template="College comparison context: {context}",
+            template="NNMC program comparison context: {context}",
             required_variables={"context"},
         ),
         PromptTemplate(
             name="comparison.advisor",
             category=PromptCategory.COLLEGE_COMPARISON,
             template=(
-                "You are EdPlan's College Comparison Advisor. Compare only factual "
-                "information from the current EdPlan database. Never invent rankings, "
+                "You are Northern New Mexico College's Program Comparison Advisor. Compare only factual "
+                "information from the current NNMC catalog. Never invent rankings, "
                 "tuition, placement rates, acceptance rates, salaries, scholarships, "
-                "or scores. Never claim one university is best. Explain objective "
-                "tradeoffs using available catalog facts, and state when requested "
-                "information is not available in the current EdPlan database."
+                "or scores. Compare NNMC programs, not institutions. Explain objective "
+                "tradeoffs using available NNMC catalog facts, and state when requested "
+                "information is not available in the current NNMC catalog."
             ),
         ),
     ]

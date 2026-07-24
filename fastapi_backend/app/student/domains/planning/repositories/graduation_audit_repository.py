@@ -8,8 +8,9 @@ from sqlalchemy.orm import joinedload, selectinload
 
 # Initialize Base metadata before importing model packages from a cold route import.
 from app.db.base import Base as _Base  # noqa: F401
-from app.student.domains.discovery.models import Course
+from app.student.domains.discovery.models import Course, Program, University
 from app.student.domains.planning.models import EdPlan, PlanCourse
+from app.shared.constants.institution import NORTHERN_NEW_MEXICO_COLLEGE_NAME
 
 
 class GraduationAuditRepository:
@@ -20,7 +21,14 @@ class GraduationAuditRepository:
                 joinedload(EdPlan.program),
                 selectinload(EdPlan.courses).joinedload(PlanCourse.course),
             )
-            .where(EdPlan.plan_id == plan_id)
+            .where(
+                EdPlan.plan_id == plan_id,
+                EdPlan.university.has(
+                    University.university_name.ilike(
+                        NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                    )
+                ),
+            )
         )
         return result.scalar_one_or_none()
 
@@ -31,7 +39,16 @@ class GraduationAuditRepository:
     ) -> list[Course]:
         result = await db.execute(
             select(Course)
-            .where(Course.program_id == program_id)
+            .where(
+                Course.program_id == program_id,
+                Course.program.has(
+                    Program.university.has(
+                        University.university_name.ilike(
+                            NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                        )
+                    )
+                ),
+            )
             .order_by(
                 Course.recommended_year,
                 Course.recommended_semester,

@@ -1,7 +1,6 @@
 import { Fragment, useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { jsPDF } from "jspdf";
-import { FaDownload } from "react-icons/fa6";
 import {
 	deleteEducationPlan,
 	getEducationPlanList,
@@ -11,6 +10,10 @@ import {
 	load as loadStorage,
 	save as saveStorage,
 } from "../../utils/storage.js";
+import {
+	INSTITUTION,
+	isNorthernNewMexicoCollege,
+} from "../../config/institution.js";
 
 const normalizeRequirement = (value) => (value || "").trim();
 const hasMeaningfulRequirement = (value) => {
@@ -33,7 +36,7 @@ const CourseMeta = ({ course }) => {
 			<span className="inline-flex items-center gap-1 whitespace-nowrap">
 				<span className="text-slate-500">Credits:</span>
 				<span className="font-medium text-slate-800">
-					{course.credits ?? "N/A"}
+					{course.credits ?? "Not reported"}
 				</span>
 			</span>
 			<span className="inline-flex items-center gap-1 whitespace-nowrap">
@@ -43,7 +46,7 @@ const CourseMeta = ({ course }) => {
 						showPrereq ? "text-orange-500 font-medium" : "text-slate-500"
 					}
 				>
-					{prereqText || "N/A"}
+					{prereqText || "None reported"}
 				</span>
 			</span>
 			{showCoreq && (
@@ -88,13 +91,13 @@ const ViewEducationPlan = () => {
 	};
 	const handleEdit = (plan) => {
 		const degree = resolveDegree(plan);
-		saveStorage("University", plan.university || "");
+		saveStorage("University", INSTITUTION.name);
 		saveStorage("Programname", plan.program || "");
 		saveStorage("ProgramDegree", degree || "");
 		saveStorage("SelectedProgram", plan.program || "");
 		saveStorage("SelectedDegreeLevel", degree || "");
 		saveStorage("EditingPlan", {
-			university: plan.university || "",
+			university: INSTITUTION.name,
 			program: plan.program || "",
 			degree: degree || "",
 			courses: plan.courses || [],
@@ -118,7 +121,7 @@ const ViewEducationPlan = () => {
 		const stored = loadStorage("LocalSavedPlans", []);
 		return stored.map((entry, index) => ({
 			id: `local-${index}`,
-			university: entry.university || "University",
+			university: entry.university || "",
 			program: entry.program || "Program",
 			degree:
 				entry.degree ||
@@ -130,7 +133,7 @@ const ViewEducationPlan = () => {
 			courses: entry.courses || [],
 			averageAnnualCost: entry.averageAnnualCost || "",
 			source: "local",
-		}));
+		})).filter((plan) => isNorthernNewMexicoCollege(plan.university));
 	};
 
 	const loadPlans = async () => {
@@ -153,7 +156,7 @@ const ViewEducationPlan = () => {
 						entry.university ||
 						entry.university_name ||
 						firstCourse?.university ||
-						"University",
+						"",
 					program:
 						entry.program_name ||
 						entry.programTitle ||
@@ -174,7 +177,7 @@ const ViewEducationPlan = () => {
 						"",
 					source: "remote",
 				};
-			});
+			}).filter((plan) => isNorthernNewMexicoCollege(plan.university));
 
 			setSavedPlans([...remotePlans, ...localPlans]);
 		} catch (err) {
@@ -343,7 +346,7 @@ const ViewEducationPlan = () => {
 		doc.setFontSize(14);
 		addLine(`Education Plan: ${plan.program || "Program"}`);
 		doc.setFontSize(11);
-		addLine(`University: ${plan.university || "University"}`);
+		addLine(`Institution: ${INSTITUTION.name}`);
 		if (degree) addLine(`Degree: ${degree}`);
 		addLine(`Total Credits: ${totalCredits}`);
 		addLine(`Total Courses: ${totalCourses}`);
@@ -367,7 +370,7 @@ const ViewEducationPlan = () => {
 							addLine(
 								`    • ${course.code || ""} — ${
 									course.courseName || course.name || "Course"
-								} (${course.credits ?? "N/A"} credits)`
+								} (${course.credits ?? "credits not reported"}${course.credits == null ? "" : " credits"})`
 							);
 							if (hasMeaningfulRequirement(prereq)) {
 								addLine(`      Prerequisite: ${prereq}`);
@@ -449,7 +452,7 @@ const ViewEducationPlan = () => {
 							value={filter}
 							onChange={(event) => setFilter(event.target.value)}
 							className="flex-1 min-w-[200px] px-3 py-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-							placeholder="View a Saved Education Plan by University or Program
+							placeholder="Find a saved NNMC plan by program
 "
 						/>
 					</div>
@@ -466,7 +469,7 @@ const ViewEducationPlan = () => {
 							<thead>
 								<tr className="text-left text-xs uppercase tracking-wide text-slate-500 border-b border-slate-200 bg-slate-50">
 									<th className="px-2 py-3 font-semibold text-center">No.</th>
-									<th className="px-2 py-3 font-semibold">University</th>
+									<th className="px-2 py-3 font-semibold">Institution</th>
 									<th className="px-2 py-3 font-semibold">Program (Degree)</th>
 									<th className="px-2 py-3 font-semibold">Courses</th>
 									<th className="px-2 py-3 font-semibold">Total Credits</th>
@@ -567,7 +570,7 @@ const ViewEducationPlan = () => {
 																<span className="text-slate-600">
 																	Avg. annual cost:{" "}
 																	<span className="font-bold text-emerald-700">
-																		{findAverageAnnualCost(plan) || "N/A"}
+																							{findAverageAnnualCost(plan) || "Not reported by College Scorecard"}
 																	</span>
 																</span>
 																<span className="text-slate-600">

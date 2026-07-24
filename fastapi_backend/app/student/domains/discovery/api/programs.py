@@ -18,8 +18,8 @@ router = APIRouter(prefix="/programs", tags=["programs"])
     response_model=ProgramListResponse,
     summary="List academic programs",
     description=(
-        "Browse the temporary EdPlan program catalog. Results can be filtered "
-        "by university, degree, and search text."
+        "Browse the Northern New Mexico College program catalog. Results can "
+        "be filtered by degree and search text."
     ),
 )
 async def list_programs(
@@ -71,7 +71,7 @@ async def list_program_courses(program_id: str, db: AsyncSession = Depends(get_d
     "/{program_id}",
     response_model=ProgramDetailResponse,
     summary="Get academic program details",
-    description="Return one program from the temporary EdPlan program catalog.",
+    description="Return one Northern New Mexico College program.",
     responses={404: {"description": "Program not found"}},
 )
 async def get_program(program_id: str, db: AsyncSession = Depends(get_db)):

@@ -791,13 +791,9 @@ Suspicious or incomplete data:
 
 ### Data Distributions
 
-Programs by university:
-- San Juan College: 137.
-- Santa Fe Community College: 132.
-- Northern New Mexico College: 79.
-- University of New Mexico: 7.
-- New Mexico State University: 6.
-- Central New Mexico Community College: 2.
+Application catalog scope:
+- Northern New Mexico College: 79 programs exposed by the dedicated site.
+- Legacy records outside NNMC are excluded by repository and service filters.
 
 Largest course counts by program:
 - Nursing: 291.

@@ -4,7 +4,6 @@ import HomePage from "./pages/HomePage.jsx";
 import EducationPlanEditPage from "./pages/EducationPlanEditPage.jsx";
 import ViewEducationPlanPage from "./pages/ViewEducationPlanPage.jsx";
 import FindUniversityPage from "./pages/FindUniversityPage.jsx";
-import CollegeComparePage from "./pages/CollegeComparePage.jsx";
 import CollegeDetailPage from "./pages/CollegeDetailPage.jsx";
 import CareerProgramPage from "./pages/CareerProgramPage.jsx";
 import ScheduleGenerator from "./pages/ScheduleGenerator.jsx";
@@ -23,7 +22,7 @@ const App = () => (
 			<Route path="/schedule-generator" element={<ScheduleGenerator />} />
 			<Route path="/view" element={<ViewEducationPlanPage />} />
 			<Route path="/uni" element={<FindUniversityPage />} />
-			<Route path="/compare" element={<CollegeComparePage />} />
+			<Route path="/compare" element={<Navigate to="/uni" replace />} />
 			<Route path="/college/:unitId" element={<CollegeDetailPage />} />
 		</Route>
 		<Route path="/login" element={<LoginPage />} />

@@ -1,4 +1,4 @@
-export const NOT_REPORTED = "Not reported";
+export const NOT_REPORTED = "Not reported by College Scorecard";
 
 export const hasValue = (value) =>
   value !== undefined && value !== null && value !== "";

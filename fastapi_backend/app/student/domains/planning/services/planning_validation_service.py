@@ -17,6 +17,8 @@ from app.student.domains.discovery.models import (
     Course,
     CourseCorequisite,
     CoursePrerequisite,
+    Program,
+    University,
 )
 from app.student.domains.planning.models import EdPlan, PlanCourse
 from app.student.domains.planning.schemas.planning_validation import (
@@ -25,6 +27,7 @@ from app.student.domains.planning.schemas.planning_validation import (
 )
 from app.student.domains.planning.services.normalized_plan_service import MAX_TERM_CREDITS
 from app.student.domains.scheduling.models import AcademicTerm
+from app.shared.constants.institution import NORTHERN_NEW_MEXICO_COLLEGE_NAME
 
 
 def _parse_uuid(value: str, field_name: str) -> uuid.UUID:
@@ -56,12 +59,30 @@ class PlanningValidationRepository:
                 selectinload(EdPlan.courses).joinedload(PlanCourse.course),
                 selectinload(EdPlan.courses).joinedload(PlanCourse.planned_term),
             )
-            .where(EdPlan.plan_id == plan_id)
+            .where(
+                EdPlan.plan_id == plan_id,
+                EdPlan.university.has(
+                    University.university_name.ilike(
+                        NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                    )
+                ),
+            )
         )
         return result.scalar_one_or_none()
 
     async def get_course(self, db: AsyncSession, course_id: uuid.UUID) -> Course | None:
-        result = await db.execute(select(Course).where(Course.course_id == course_id))
+        result = await db.execute(
+            select(Course).where(
+                Course.course_id == course_id,
+                Course.program.has(
+                    Program.university.has(
+                        University.university_name.ilike(
+                            NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                        )
+                    )
+                ),
+            )
+        )
         return result.scalar_one_or_none()
 
     async def get_term(self, db: AsyncSession, term_id: uuid.UUID) -> AcademicTerm | None:

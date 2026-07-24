@@ -13,7 +13,7 @@ class _Repository:
         self.university = {
             "university_id": str(uuid.uuid4()),
             "unit_id": str(uuid.uuid4()),
-            "name": "University of New Mexico-Main Campus",
+            "name": "Northern New Mexico College",
         }
 
     async def list_universities(self, db, *, search=None, state=None, offset=0, limit=20):
@@ -38,6 +38,9 @@ class _Repository:
 
 
 class _NoMatchScorecard:
+    async def get_school(self, unit_id):
+        return None
+
     async def find_schools_by_profiles(self, profiles):
         return [None] * len(profiles)
 
@@ -46,6 +49,9 @@ class _NoMatchScorecard:
 
 
 class _MatchingScorecard:
+    async def get_school(self, unit_id):
+        return await self.find_school_by_profile()
+
     async def find_schools_by_profiles(self, profiles):
         return [await self.find_school_by_profile() for _ in profiles]
 
@@ -69,7 +75,7 @@ def test_search_universities_returns_results_and_metadata():
     result = asyncio.run(
         service.search_universities(
             object(),
-            search=" unm ",
+            search=" Northern New Mexico College ",
             state=" NM ",
             page=2,
             per_page=10,
@@ -81,12 +87,12 @@ def test_search_universities_returns_results_and_metadata():
         "count": 1,
         "page": 2,
         "per_page": 10,
-        "source": "live_database",
+        "source": "Northern New Mexico College catalog and College Scorecard",
     }
     assert repository.calls == [
         {
             "method": "list_universities",
-            "search": "unm",
+            "search": "Northern New Mexico College",
             "state": "NM",
             "offset": 20,
             "limit": 10,
@@ -150,14 +156,14 @@ def test_compare_universities_requires_two_valid_uuid_values():
     assert repository.calls == []
 
 
-def test_compare_universities_delegates_up_to_five_ids():
+def test_compare_universities_is_disabled_for_single_institution_site():
     repository = _Repository()
     service = UniversityService(repository, _NoMatchScorecard())
     ids = [str(uuid.uuid4()) for _ in range(6)]
 
-    result = asyncio.run(service.compare_universities(object(), ids))
+    with pytest.raises(HTTPException) as exc_info:
+        asyncio.run(service.compare_universities(object(), ids))
 
-    assert result == [repository.university]
-    assert repository.calls == [
-        {"method": "get_universities_by_ids", "university_ids": ids[:5]}
-    ]
+    assert exc_info.value.status_code == 400
+    assert "Northern New Mexico College" in exc_info.value.detail
+    assert repository.calls == []

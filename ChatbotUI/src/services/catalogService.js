@@ -1,5 +1,9 @@
 import axios from "axios";
 import { API_BASE_URL } from "./apiBaseUrl.js";
+import {
+	INSTITUTION,
+	isNorthernNewMexicoCollege,
+} from "../config/institution.js";
 
 const client = axios.create({
 	baseURL: API_BASE_URL,
@@ -9,9 +13,11 @@ const unwrapData = (response) => response.data?.data || [];
 
 export const getCatalogUniversities = async () => {
 	const response = await client.get("/universities", {
-		params: { per_page: 100 },
+		params: { search: INSTITUTION.name, per_page: 10 },
 	});
-	return unwrapData(response);
+	return unwrapData(response).filter((college) =>
+		isNorthernNewMexicoCollege(college.name || college.university_name)
+	);
 };
 
 export const getCatalogPrograms = async (universityId) => {
@@ -20,7 +26,13 @@ export const getCatalogPrograms = async (universityId) => {
 			university_id: universityId || undefined,
 		},
 	});
-	return unwrapData(response);
+	return unwrapData(response).filter((program) =>
+		isNorthernNewMexicoCollege(
+			program.university_name ||
+				program.university?.university_name ||
+				program.university
+		)
+	);
 };
 
 export const getCatalogCourses = async (programId) => {

@@ -13,6 +13,8 @@ from app.models.education_plan import CourseSchedule, EducationPlan
 from app.models.user import User
 from app.orchestrator.schemas.student_context import StudentContext
 from app.student.domains.planning.models import EdPlan
+from app.student.domains.discovery.models import University
+from app.shared.constants.institution import NORTHERN_NEW_MEXICO_COLLEGE_NAME
 
 logger = logging.getLogger(__name__)
 
@@ -86,14 +88,27 @@ class ContextLoader:
 
     async def _load_plan(self, user_id: int, plan_id: UUID) -> EdPlan | None:
         result = await self.db.execute(
-            select(EdPlan).where(EdPlan.plan_id == plan_id, EdPlan.user_id == user_id)
+            select(EdPlan).where(
+                EdPlan.plan_id == plan_id,
+                EdPlan.user_id == user_id,
+                EdPlan.university.has(
+                    University.university_name.ilike(
+                        NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                    )
+                ),
+            )
         )
         return result.scalar_one_or_none()
 
     async def _load_operational_plan(self, user_id: int) -> EducationPlan | None:
         result = await self.db.execute(
             select(EducationPlan)
-            .where(EducationPlan.user_id == user_id)
+            .where(
+                EducationPlan.user_id == user_id,
+                EducationPlan.university_name.ilike(
+                    NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                ),
+            )
             .options(selectinload(EducationPlan.courses))
             .order_by(EducationPlan.updated_at.desc(), EducationPlan.created_at.desc())
             .limit(1)

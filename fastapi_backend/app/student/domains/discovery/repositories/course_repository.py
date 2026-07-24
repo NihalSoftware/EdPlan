@@ -11,7 +11,9 @@ from app.student.domains.discovery.models import (
     CourseCorequisite,
     CoursePrerequisite,
     Program,
+    University,
 )
+from app.shared.constants.institution import NORTHERN_NEW_MEXICO_COLLEGE_NAME
 
 
 class CourseRepository:
@@ -67,7 +69,18 @@ class CourseRepository:
         result = await db.execute(
             select(CoursePrerequisite)
             .options(joinedload(CoursePrerequisite.prerequisite_course))
-            .where(CoursePrerequisite.course_id == parsed_course_id)
+            .where(
+                CoursePrerequisite.course_id == parsed_course_id,
+                CoursePrerequisite.course.has(
+                    Course.program.has(
+                        Program.university.has(
+                            University.university_name.ilike(
+                                NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                            )
+                        )
+                    )
+                ),
+            )
         )
         return [
             _prerequisite_to_dict(link)
@@ -83,7 +96,18 @@ class CourseRepository:
         result = await db.execute(
             select(CourseCorequisite)
             .options(joinedload(CourseCorequisite.corequisite_course))
-            .where(CourseCorequisite.course_id == parsed_course_id)
+            .where(
+                CourseCorequisite.course_id == parsed_course_id,
+                CourseCorequisite.course.has(
+                    Course.program.has(
+                        Program.university.has(
+                            University.university_name.ilike(
+                                NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                            )
+                        )
+                    )
+                ),
+            )
         )
         return [
             _corequisite_to_dict(link)
@@ -104,7 +128,19 @@ def _course_query(*, include_dependencies: bool = False):
                 ),
             ]
         )
-    return select(Course).options(*options)
+    return (
+        select(Course)
+        .options(*options)
+        .where(
+            Course.program.has(
+                Program.university.has(
+                    University.university_name.ilike(
+                        NORTHERN_NEW_MEXICO_COLLEGE_NAME
+                    )
+                )
+            )
+        )
+    )
 
 
 def _parse_uuid(value: str | uuid.UUID) -> uuid.UUID | None:
