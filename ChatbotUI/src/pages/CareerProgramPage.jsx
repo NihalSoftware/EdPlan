@@ -238,10 +238,11 @@ const CareerProgramPage = () => {
 					</div>
 				)}
 
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+				<section className="career-filter-panel">
 					<div>
-						<label className="block font-medium mb-1">Program</label>
+						<label htmlFor="career-program" className="block font-medium mb-1">Program</label>
 						<select
+							id="career-program"
 							className="w-full border rounded-md p-2"
 							value={selectedProgram}
 							onChange={(event) => setSelectedProgram(event.target.value)}
@@ -256,8 +257,9 @@ const CareerProgramPage = () => {
 					</div>
 
 					<div>
-						<label className="block font-medium mb-1">Degree</label>
+						<label htmlFor="career-degree" className="block font-medium mb-1">Degree</label>
 						<select
+							id="career-degree"
 							className="w-full border rounded-md p-2"
 							value={selectedDegree}
 							onChange={(event) => setSelectedDegree(event.target.value)}
@@ -281,12 +283,12 @@ const CareerProgramPage = () => {
 								saveStorage("SelectedDegreeLevel", selectedDegree);
 							}
 						}}
-						className="px-4 mt-7 py-2 rounded-lg text-center h-fit bg-[#281ed5] hover:bg-[#1977e3] text-white font-medium md:w-[200px]"
+						className="career-continue"
 					>
 						Continue
 					</Link>
 
-					<div className="md:col-span-3">
+					<div className={selectedProgramObj ? "career-program-summary" : "hidden"}>
 						{selectedProgramObj && (
 							<div className="mt-4">
 								<h3 className="text-xl font-medium">Program Summary</h3>
@@ -296,7 +298,7 @@ const CareerProgramPage = () => {
 							</div>
 						)}
 					</div>
-				</div>
+				</section>
 
 				<section>
 					{selectedProgramObj && selectedProgramObj.careers.length > 0 && (

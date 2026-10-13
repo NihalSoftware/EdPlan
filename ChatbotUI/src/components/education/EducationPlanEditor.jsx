@@ -230,6 +230,7 @@ const validatePlan = (planCourses, knownCodes) => {
 };
 
 const EducationPlanEditor = () => {
+	const [catalogOpen, setCatalogOpen] = useState(false);
 	const [programs, setPrograms] = useState([]);
 	const [selectedProgram, setSelectedProgram] = useState("");
 	const selectedUniversity = normalizeUniversityName(loadStorage("University") || "");
@@ -678,11 +679,6 @@ const EducationPlanEditor = () => {
 		);
 	}, [programs, selectedProgram, selectedUniversity, selectedDegree]);
 
-	const averageAnnualCost =
-		selectedProgramMeta?.average_annual_cost ||
-		selectedProgramMeta?.averageAnnualCost ||
-		selectedProgramMeta?.college_profile?.average_annual_cost ||
-		null;
 	const eligibilityCriteria =
 		selectedProgramMeta?.eligibility_criteria ||
 		selectedProgramMeta?.eligibility ||
@@ -1124,11 +1120,11 @@ const EducationPlanEditor = () => {
 		termOptions.find((term) => term.key === activeTermKey) || termOptions[0];
 	const activeTermLabel = activeTermOption?.label || "No semester selected";
 	const dashboardContent = (
-		<div className="min-h-screen bg-slate-100 px-4 py-4 text-slate-900 sm:px-6 lg:px-8">
+		<div className="compact-planner">
 			<div className="mx-auto max-w-none">
-				<header className="mb-4">
+				<header className="compact-planner-heading">
 					<h1 className="text-2xl font-semibold text-slate-950">
-						Customize Your Education <span className="text-blue-600">Plan</span>
+						Build Your Semester-by-Semester <span className="text-blue-600">Plan</span>
 					</h1>
 				</header>
 
@@ -1138,8 +1134,8 @@ const EducationPlanEditor = () => {
 					</div>
 				)}
 
-				<div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_430px]">
-					<aside className="space-y-4 xl:order-2">
+				<div className={`compact-planner-layout ${catalogOpen ? "catalog-is-open" : ""}`}>
+					<aside id="program-course-list" className="compact-planner-catalog" aria-label="Available program courses">
 						<div className="hidden rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
 							<div className="flex items-center gap-3">
 								<div className="flex h-11 w-11 items-center justify-center rounded-lg bg-blue-700 text-sm font-extrabold text-white">
@@ -1187,25 +1183,12 @@ const EducationPlanEditor = () => {
 							</div>
 						</div>
 
-						<div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-							<div className="mb-3 flex items-center justify-between">
-								<h4 className="text-xs font-extrabold uppercase tracking-wide text-slate-500">
-									Program Course list
-								</h4>
-								<div className="flex items-center gap-2">
-									<span className="rounded bg-slate-50 px-2 py-1 text-xs font-extrabold text-slate-500">
-										{remainingCourses.length}
-									</span>
-									<button
-										type="button"
-										onClick={savePlan}
-										disabled={dependencyIssues.some((issue) => issue.blocking)}
-										className="rounded-md bg-indigo-600 px-4 py-3 text-m font-extrabold text-white hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-60"
-									>
-										Save Your Plan
-									</button>
-								</div>
-							</div>
+						<div className="compact-catalog-panel">
+							<button type="button" className="compact-catalog-toggle" aria-expanded={catalogOpen} aria-controls="program-course-list-content" onClick={() => setCatalogOpen(value => !value)}>
+								<span>Program course list <span className="text-slate-500">({remainingCourses.length})</span></span>
+								{catalogOpen ? <FaChevronUp aria-hidden="true" /> : <FaChevronDown aria-hidden="true" />}
+							</button>
+							<div id="program-course-list-content" className="compact-catalog-content" hidden={!catalogOpen}>
 							<p className="mb-3 rounded-md bg-blue-50 px-3 py-2 text-xs font-bold text-blue-700">
 								Adding to: {activeTermLabel}
 							</p>
@@ -1238,15 +1221,14 @@ const EducationPlanEditor = () => {
 									</button>
 								))}
 							</div>
+							</div>
 						</div>
 					</aside>
 
-					<main className="space-y-4 xl:order-1">
-						<h2 className="text-xl font-semibold text-slate-800">
-							My Education Plan
-						</h2>
-						<div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-							<div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,18rem),1fr))] gap-4">
+					<section className="compact-planner-plan" aria-label="My education plan">
+						<p className="compact-planner-description">Review the recommended courses and customize your plan based on your academic needs, preferences, and goals.</p>
+						<div className="compact-planner-controls">
+							<div className="compact-planner-fields">
 								<div className="space-y-3">
 									<label className="block text-xs font-extrabold uppercase tracking-wide text-slate-400">
 										University
@@ -1266,6 +1248,7 @@ const EducationPlanEditor = () => {
 								<label className="block text-xs font-extrabold uppercase tracking-wide text-slate-400">
 									Program
 									<select
+										aria-label="Program"
 										value={selectedProgram}
 										onChange={(event) => {
 											setSelectedProgram(event.target.value);
@@ -1296,10 +1279,12 @@ const EducationPlanEditor = () => {
 										))}
 									</select>
 								</label>
+								<button type="button" onClick={savePlan} disabled={dependencyIssues.some(issue => issue.blocking)} className="compact-planner-save">Save Your Plan</button>
 							</div>
 
-							<div className="mt-4 flex flex-wrap items-center gap-2 border-t border-slate-100 pt-4">
+							<div className="compact-planner-toolbar">
 								<select
+									aria-label="Filter plan by year"
 									value={yearFilter}
 									onChange={(e) => setYearFilter(e.target.value)}
 									className="rounded-md border border-slate-200 px-3 py-2 text-sm font-bold text-slate-700"
@@ -1322,6 +1307,7 @@ const EducationPlanEditor = () => {
 								</span>
 								<div className="flex items-center gap-2">
 									<select
+										aria-label="Select semester"
 										value={activeTermOption?.key || ""}
 										onChange={(event) => {
 											const nextKey = event.target.value;
@@ -1381,7 +1367,7 @@ const EducationPlanEditor = () => {
 							</div>
 						)}
 
-						<div className="space-y-2">
+						<div className="compact-semester-grid">
 							{groupedCourseEntries.map(([groupKey, courseList, termNumber]) => {
 								const [courseYear, courseSemester] = groupKey.split("::");
 								const displaySemester = getDisplaySemester(courseSemester, termNumber);
@@ -1399,17 +1385,19 @@ const EducationPlanEditor = () => {
 								return (
 									<div
 										key={groupKey}
-										className={`rounded-lg border bg-white shadow-sm ${
-											isExpanded ? "border-emerald-100" : "border-slate-200"
+										className={`compact-semester-card rounded-lg border bg-white shadow-sm ${
+											activeTermKey === groupKey ? "border-blue-600 ring-1 ring-blue-600" : "border-slate-200"
 										}`}
 									>
 						<div
-							className={`flex w-full items-center gap-3 px-4 py-4 ${
+							className={`compact-semester-header flex w-full items-center gap-2 px-3 py-3 ${
 								activeTermKey === groupKey ? "bg-blue-50/70" : ""
 							}`}
 						>
 						<button
 							type="button"
+							aria-expanded={isExpanded}
+							aria-pressed={activeTermKey === groupKey}
 							onClick={() => {
 								setActiveTermKey(groupKey);
 								setExpandedTerms((prev) => ({
@@ -1435,6 +1423,11 @@ const EducationPlanEditor = () => {
 								</p>
 							</div>
 						</button>
+						<button type="button" className="compact-add-course" aria-label={`Add course to semester ${termNumber}: ${displaySemester}`} onClick={() => {
+							setActiveTermKey(groupKey);
+							setCatalogOpen(true);
+							requestAnimationFrame(() => document.getElementById("program-course-list")?.scrollIntoView({ block: "nearest" }));
+						}}><FaPlus aria-hidden="true" /><span>Add Course</span></button>
 						<button
 							type="button"
 							onClick={() =>
@@ -1449,7 +1442,7 @@ const EducationPlanEditor = () => {
 							title="Delete semester"
 						>
 							<FaTrash className="h-3 w-3" />
-							<span className="hidden sm:inline">Delete Semester</span>
+							<span className="hidden sm:inline">Semester</span>
 						</button>
 							<span className={`rounded-md px-3 py-1 text-xs font-extrabold uppercase ${statusClass}`}>
 								{status}
@@ -1475,7 +1468,7 @@ const EducationPlanEditor = () => {
 						</div>
 
 										{isExpanded && (
-											<div className="space-y-2 border-t border-slate-100 px-4 pb-4 pt-3">
+											<div className="compact-semester-courses space-y-2 border-t border-slate-100 p-3">
 												{courseList.length === 0 && (
 													<div className="rounded-md border border-dashed border-slate-200 bg-slate-50 p-4 text-sm font-semibold text-slate-500">
 														Select this semester, then add subjects from the course catalog.
@@ -1498,7 +1491,7 @@ const EducationPlanEditor = () => {
 														>
 															<div className="flex items-center gap-3">
 																<div className="min-w-0 flex-1">
-																	<p className="truncate text-sm font-semibold text-slate-900">
+																	<p className="text-sm font-semibold text-slate-900">
 																		{course.courseName}
 																	</p>
 																	<div className="mt-1 flex flex-wrap gap-x-5 gap-y-1 text-xs font-medium text-slate-600">
@@ -1506,12 +1499,12 @@ const EducationPlanEditor = () => {
 																		<span>Credits: <span className="font-semibold text-slate-800">{course.credits ?? "N/A"}</span></span>
 																		{hasMeaningfulRequirement(prereqText) && (
 																			<span className="text-sky-700">
-																				Pre-requisite: <span className="text-orange-500">{prereqText}</span>
+																		Pre-requisite: <span className="text-orange-700">{prereqText}</span>
 																			</span>
 																		)}
 																		{hasMeaningfulRequirement(coreqText) && (
 																			<span className="text-sky-700">
-																				Corequisite: <span className="text-yellow-500">{coreqText}</span>
+																		Corequisite: <span className="text-amber-700">{coreqText}</span>
 																			</span>
 																		)}
 																	</div>
@@ -1553,7 +1546,7 @@ const EducationPlanEditor = () => {
 								</div>
 							)}
 						</div>
-					</main>
+					</section>
 				</div>
 			</div>
 		</div>
