@@ -16,3 +16,85 @@ body {
 #root {
   min-height: 100vh;
 }
+
+/* Compact education planner, based on the public StudentSpace planner layout. */
+.compact-planner-page { padding: 24px 32px; min-width: 0; }
+.compact-planner { color: #071a38; }
+.compact-planner-heading { margin-bottom: 16px; }
+.compact-planner-heading h1 { font-size: 24px; line-height: 1.35; }
+.compact-planner-layout { display: grid; grid-template-columns: minmax(0, 1fr) 48px; gap: 20px; align-items: start; }
+.compact-planner-layout.catalog-is-open { grid-template-columns: minmax(0, 1fr) 300px; }
+.compact-planner-plan { order: 1; min-width: 0; display: grid; gap: 14px; container-type: inline-size; }
+.compact-planner-description { font-size: 15px; line-height: 1.6; font-weight: 500; margin-bottom: 2px; }
+.compact-planner-catalog { order: 2; min-width: 0; position: sticky; top: 20px; }
+.compact-catalog-panel { border: 1px solid #dce5f0; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgb(7 26 56 / 5%); overflow: hidden; }
+.compact-catalog-toggle { display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; min-height: 46px; padding: 12px; font-size: 13px; font-weight: 800; text-align: left; }
+.compact-planner-layout:not(.catalog-is-open) .compact-catalog-toggle { writing-mode: vertical-rl; min-height: 280px; padding: 16px 12px; }
+.compact-catalog-content { padding: 0 12px 12px; }
+.compact-catalog-content button { box-shadow: none; min-height: 48px; }
+.compact-catalog-content button p:first-child { white-space: normal; line-height: 1.4; }
+.compact-planner-controls { background: white; border: 1px solid #dce5f0; border-radius: 8px; padding: 16px; box-shadow: 0 1px 3px rgb(7 26 56 / 5%); min-width: 0; }
+.compact-planner-fields { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) auto; gap: 12px; align-items: end; }
+.compact-planner-fields label { font-size: 10px; letter-spacing: .04em; line-height: 1.4; }
+.compact-planner-fields label>span { font-size: 12px; margin-top: 6px; line-height: 1.4; }
+.compact-planner :is(select, button) { font-family: inherit; }
+.compact-planner select { min-height: 40px; min-width: 0; max-width: 100%; font-size: 12px; }
+.compact-planner-fields select { margin-top: 6px; }
+.compact-planner-save { border-radius: 8px; background: #4f46e5; color: white; min-height: 40px; padding: 10px 16px; font-size: 12px; font-weight: 800; white-space: nowrap; }
+.compact-planner-save:hover { background: #4338ca; }
+.compact-planner-save:disabled { opacity: .5; cursor: not-allowed; }
+.compact-planner-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 14px; padding-top: 14px; border-top: 1px solid #edf1f7; }
+.compact-planner-toolbar>span { font-size: 12px; padding: 9px 10px; white-space: nowrap; }
+.compact-planner-toolbar>div { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.compact-semester-grid { display: grid; grid-template-columns: minmax(0, 1fr); align-items: start; gap: 12px; min-width: 0; }
+@container (min-width: 720px) { .compact-semester-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.compact-semester-card { min-width: 0; overflow: hidden; box-shadow: 0 1px 3px rgb(7 26 56 / 4%); }
+.compact-semester-header { flex-wrap: wrap; }
+.compact-semester-header>button:first-child { gap: 0; min-height: 36px; }
+.compact-semester-header>button:first-child>span { display: none; }
+.compact-semester-header>button:first-child h3 { font-size: 13px; }
+.compact-semester-header>button:first-child p { font-size: 11px; }
+.compact-semester-header>span { display: none; }
+.compact-semester-header>button:last-child { min-width: 24px; min-height: 24px; }
+.compact-add-course { display: inline-flex; align-items: center; justify-content: center; gap: 5px; padding: 5px 7px; min-height: 28px; border-radius: 6px; color: white; background: #1d4ed8; font-size: 11px; font-weight: 700; }
+.compact-semester-courses>div { box-shadow: none; }
+.compact-semester-courses p { overflow-wrap: anywhere; }
+.compact-semester-courses>div>div { align-items: flex-start; }
+.compact-planner :focus-visible, .career-filter-panel :focus-visible { outline: 2px solid #1759df; outline-offset: 3px; }
+.compact-semester-grid>div:only-child { max-width: 100%; }
+.career-filter-panel { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; gap: 12px; align-items: end; padding: 14px 16px; margin-bottom: 18px; background: white; border: 1px solid #dce5f0; border-radius: 10px; }
+.career-filter-panel>div { min-width: 0; }
+.career-filter-panel label { font-size: 12px; color: #52647e; margin-bottom: 5px; }
+.career-filter-panel select { min-height: 40px; font-size: 13px; border: 1px solid #cfdbea; border-radius: 8px; }
+.career-continue { display: inline-flex; justify-content: center; align-items: center; min-height: 40px; padding: 9px 18px; border-radius: 8px; background: #1759df; color: white; font-size: 13px; font-weight: 700; }
+.career-continue:hover { background: #0e47c4; }
+.career-program-summary { grid-column: 1 / -1; }
+.career-program-summary>div { margin-top: 0; }
+.career-program-summary h3 { font-size: 15px; }
+.career-program-summary p { font-size: 13px; margin-bottom: 0; }
+@media (max-width: 1279px) {
+  .compact-planner-layout.catalog-is-open { grid-template-columns: minmax(0, 1fr) 260px; }
+  .compact-planner-layout.catalog-is-open .compact-planner-fields { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 1023px) {
+  .compact-planner-layout, .compact-planner-layout.catalog-is-open { grid-template-columns: minmax(0, 1fr); }
+  .compact-planner-catalog { order: 0; position: static; }
+  .compact-planner-layout:not(.catalog-is-open) .compact-catalog-toggle { writing-mode: horizontal-tb; min-height: 46px; padding: 12px; }
+  .compact-planner-layout.catalog-is-open .compact-planner-fields { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) auto; }
+}
+@media (max-width: 767px) {
+  .compact-planner-page { padding: 18px 16px; }
+  .compact-planner-heading h1 { font-size: 22px; }
+  .compact-planner-layout { gap: 14px; }
+  .compact-planner-fields, .compact-planner-layout.catalog-is-open .compact-planner-fields { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .compact-planner-fields label { font-size: 11px; }
+  .compact-planner-toolbar { gap: 6px; }
+  .compact-planner-controls { padding: 14px; }
+  .compact-planner-save { min-height: 44px; width: 100%; }
+  .compact-semester-grid { grid-template-columns: minmax(0, 1fr); }
+  .compact-semester-courses button { min-height: 28px; }
+  .compact-semester-header>button[title="Delete semester"] { min-width: 28px; min-height: 28px; }
+  .compact-catalog-content>div { max-height: 340px; }
+  .career-filter-panel { grid-template-columns: minmax(0, 1fr); padding: 12px; gap: 10px; }
+  .career-filter-panel select, .career-continue { min-height: 44px; }
+}

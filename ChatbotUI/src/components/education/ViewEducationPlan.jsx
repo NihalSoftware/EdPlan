@@ -1,7 +1,6 @@
 import { Fragment, useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { jsPDF } from "jspdf";
-import { FaDownload } from "react-icons/fa6";
 import {
 	deleteEducationPlan,
 	getEducationPlanList,
