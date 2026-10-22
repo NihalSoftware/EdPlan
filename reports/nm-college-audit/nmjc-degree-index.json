@@ -1,0 +1,25 @@
+{
+  "institution_key": "nmjc",
+  "catalog_year": "2026-2027",
+  "source_url": "https://catalog.nmjc.edu/associate-degrees-and-certificates",
+  "retrieved_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+  "source_location": "Associate Degrees section, AA/AS/AAS lists",
+  "scope": "15 named associate entries on this page only; certificate inventory not enumerated here; not a full institution inventory",
+  "entries": [
+    {"name": "General Studies", "credential": "Associate of Arts"},
+    {"name": "Early Childhood Education", "credential": "Associate of Arts"},
+    {"name": "General Studies", "credential": "Associate of Science"},
+    {"name": "Animal Science", "credential": "Associate of Applied Science"},
+    {"name": "Automotive Technology: ASSET", "credential": "Associate of Applied Science"},
+    {"name": "Barbering", "credential": "Associate of Applied Science"},
+    {"name": "Business", "credential": "Associate of Applied Science"},
+    {"name": "Computer Information Systems", "credential": "Associate of Applied Science"},
+    {"name": "Cosmetology", "credential": "Associate of Applied Science"},
+    {"name": "Criminal Justice", "credential": "Associate of Applied Science"},
+    {"name": "Entertainment & Music Technology", "credential": "Associate of Applied Science"},
+    {"name": "Equine Studies - Industry & Training", "credential": "Associate of Applied Science"},
+    {"name": "Farm & Ranch Management", "credential": "Associate of Applied Science"},
+    {"name": "Nursing", "credential": "Associate of Applied Science"},
+    {"name": "Welding", "credential": "Associate of Applied Science"}
+  ]
+}

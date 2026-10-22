@@ -52,8 +52,8 @@ class ScheduleCourse(BaseModel):
     course_code: str
     course_name: str
     credits: int
-    lecture_hours: int
-    lab_hours: int
+    lecture_hours: float | None = None
+    lab_hours: float | None = None
     recommended_year: int | None = None
     recommended_semester: str | None = None
     planned_term: ScheduleTerm | None = None

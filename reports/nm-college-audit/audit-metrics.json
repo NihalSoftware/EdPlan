@@ -1,0 +1,75 @@
+{
+  "course_findings": {
+    "POSSIBLE_DUPLICATE_WITHIN_PROGRAM_CODE": 398,
+    "SOURCE_OR_CATALOG_YEAR_UNRECORDED": 12505
+  },
+  "courses_explicitly_partial_import": 764,
+  "courses_without_any_recorded_source_url": 12448,
+  "courses_without_catalog_year": 11741,
+  "courses_without_official_source_url": 12448,
+  "cycle_components": {
+    "corequisite": 149,
+    "prerequisite": 0
+  },
+  "dangling_dependency_edges": 0,
+  "database_counts": {
+    "catalog_departments": 53,
+    "course_corequisites": 321,
+    "course_departments": 0,
+    "course_prerequisites": 600,
+    "courses": 13706,
+    "program_departments": 1,
+    "programs": 944,
+    "universities": 31
+  },
+  "database_mutations": 0,
+  "department_bridge_issues": [],
+  "dependency_findings": {
+    "COMPLEX_NARRATIVE_REQUIRES_RULE_REVIEW": 1370,
+    "CONCURRENT_GROUP_REVIEW": 149,
+    "OFFICIAL_SOURCE_INTERNAL_CODE_CONFLICT": 1,
+    "SOURCE_ALTERNATIVE_NOT_FLAT_ALL_REQUIRED": 1,
+    "SOURCE_RULES_NOT_FULLY_RETRIEVED": 16
+  },
+  "dine_center_rows": 2,
+  "duplicate_parent_keys": [
+    "unm"
+  ],
+  "excluded_branch_rows": 9,
+  "expected": 20,
+  "extra_related_records": 11,
+  "fractional_course_credit_rows": 14,
+  "full_curriculum_verifications": 0,
+  "missing_parent_keys": [
+    "dine"
+  ],
+  "nmt_program_credit_distribution": {
+    "120": 159
+  },
+  "orphan_course_rows": 0,
+  "orphan_program_rows": 0,
+  "parent_keys_with_candidates": 19,
+  "program_findings": {
+    "CANDIDATE_PROGRAM_VERSION_TITLE_CREDIT_REVIEW": 1,
+    "NMJC_ASSOCIATE_ENTRY_YEAR_CREDENTIAL_REVIEW": 15,
+    "NO_LINKED_CATALOG_COURSES": 179,
+    "OFFICIAL_ID_NOT_MATCHED_CACHED_PROGRAM_INDEX": 233,
+    "OFFICIAL_SOURCE_INTERNAL_CREDIT_CONFLICT": 1,
+    "PUBLISHED_CREDENTIAL_WITHOUT_MATCHING_PROGRAM": 1,
+    "SOURCE_OR_CATALOG_YEAR_UNRECORDED": 877,
+    "SUSPICIOUS_UNIFORM_CREDIT_DEFAULT": 122
+  },
+  "programs_explicitly_partial_import": 71,
+  "programs_without_any_recorded_source_url": 877,
+  "programs_without_catalog_year": 806,
+  "programs_without_official_source_url": 877,
+  "selected_field_verifications": 5,
+  "source_status_counts": {
+    "PARTIAL": 14,
+    "SOURCE_BLOCKED": 5,
+    "SOURCE_UNVERIFIED": 1
+  },
+  "student_row_contents_accessed": false,
+  "unambiguous_parent_keys": 18,
+  "zero_credit_course_rows_review_not_automatically_invalid": 264
+}

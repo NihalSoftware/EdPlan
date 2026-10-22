@@ -1,0 +1,12 @@
+﻿institution_key,university_id,university_name,city,state,website,classification
+enmu,13684e08-6253-4349-ab31-b2515e2ea98b,Eastern New Mexico University - Ruidoso,Ruidoso,New Mexico,https://www.ruidoso.enmu.edu,EXCLUDED_BRANCH_NOT_PARENT
+enmu,1f29f77e-269f-4d25-be66-06e7bb5002f3,Eastern New Mexico University - Roswell,Roswell,New Mexico,https://www.roswell.enmu.edu,EXCLUDED_BRANCH_NOT_PARENT
+nmsu,110e6117-d7f5-496a-a502-2ef734f09663,New Mexico State University - Alamogordo,Alamogordo,New Mexico,https://alamogordo.nmsu.edu,EXCLUDED_BRANCH_NOT_PARENT
+nmsu,79f807a2-7b4f-493a-9264-e2779a034a5b,New Mexico State University - Doña Ana,Las Cruces,New Mexico,https://donaana.nmsu.edu,EXCLUDED_BRANCH_NOT_PARENT
+nmsu,b31b8841-e58b-458e-b7f9-345de2fea586,New Mexico State University - Grants,Grants,New Mexico,https://grants.nmsu.edu,EXCLUDED_BRANCH_NOT_PARENT
+unm,1da2c7fb-5236-460f-86d1-4cab76d276a5,University of New Mexico - Valencia,Los Lunas,New Mexico,https://valencia.unm.edu,EXCLUDED_BRANCH_NOT_PARENT
+unm,b03c8c75-4309-4524-bf6f-2abccfcc78c3,University of New Mexico - Los Alamos,Los Alamos,New Mexico,https://losalamos.unm.edu,EXCLUDED_BRANCH_NOT_PARENT
+unm,cd4b231d-ef4a-4ec5-8713-c30a3cb5607d,University of New Mexico - Taos,Ranchos de Taos,New Mexico,https://taos.unm.edu,EXCLUDED_BRANCH_NOT_PARENT
+unm,ef561e7a-61a8-4d7f-bf21-b1cacb5d3b6d,University of New Mexico - Gallup,Gallup,New Mexico,https://www.gallup.unm.edu,EXCLUDED_BRANCH_NOT_PARENT
+dine,968e59f1-fa7b-4dda-bf0a-adc9f0de1fe5,Diné College - Crownpoint Center,Crownpoint,New Mexico,https://www.dinecollege.edu,DINE_CENTER_NOT_PARENT
+dine,dd99ea19-c24f-4d0a-92b6-cc6cb239ff00,Diné College - Shiprock,Shiprock,New Mexico,https://www.dinecollege.edu,DINE_CENTER_NOT_PARENT

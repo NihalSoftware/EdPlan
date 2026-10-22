@@ -1,0 +1,854 @@
+[
+  {
+    "aliases": [
+      "Eastern New Mexico University-Portales"
+    ],
+    "category": "public_four_year",
+    "city": "Portales",
+    "domains": [
+      "enmu.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "enmu",
+    "landing_url": "https://www.enmu.edu/academics/academic-resources-services/catalogs-schedules-calendars/catalogs",
+    "name": "Eastern New Mexico University",
+    "parents": [
+      {
+        "city": "Portales",
+        "state": "New Mexico",
+        "university_id": "1af4ff58-5823-49d5-97f7-bab076fe0db8",
+        "university_name": "Eastern New Mexico University",
+        "website": "https://www.enmu.edu"
+      }
+    ],
+    "related": [
+      {
+        "city": "Ruidoso",
+        "state": "New Mexico",
+        "university_id": "13684e08-6253-4349-ab31-b2515e2ea98b",
+        "university_name": "Eastern New Mexico University - Ruidoso",
+        "website": "https://www.ruidoso.enmu.edu"
+      },
+      {
+        "city": "Roswell",
+        "state": "New Mexico",
+        "university_id": "1f29f77e-269f-4d25-be66-06e7bb5002f3",
+        "university_name": "Eastern New Mexico University - Roswell",
+        "website": "https://www.roswell.enmu.edu"
+      }
+    ],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {
+        "UNSPECIFIED": 741
+      },
+      "courses": 741,
+      "courses_with_source_url": 0,
+      "prerequisites": 0,
+      "program_catalog_years": {
+        "UNSPECIFIED": 64
+      },
+      "programs": 64,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 9,
+      "unique_course_codes": 514
+    }
+  },
+  {
+    "aliases": [],
+    "category": "public_four_year",
+    "city": "Las Vegas",
+    "domains": [
+      "nmhu.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "nmhu",
+    "landing_url": "https://www.nmhu.edu/catalog/",
+    "name": "New Mexico Highlands University",
+    "parents": [
+      {
+        "city": "Las Vegas",
+        "state": "New Mexico",
+        "university_id": "419d8174-a927-493f-946a-57ed883b3ca6",
+        "university_name": "New Mexico Highlands University",
+        "website": "https://www.nmhu.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {
+        "UNSPECIFIED": 439
+      },
+      "courses": 439,
+      "courses_with_source_url": 0,
+      "prerequisites": 0,
+      "program_catalog_years": {
+        "UNSPECIFIED": 17
+      },
+      "programs": 17,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 0,
+      "unique_course_codes": 301
+    }
+  },
+  {
+    "aliases": [
+      "New Mexico Tech",
+      "NM Tech"
+    ],
+    "category": "public_four_year",
+    "city": "Socorro",
+    "domains": [
+      "nmt.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "nmt",
+    "landing_url": "https://catalog.nmt.edu/",
+    "name": "New Mexico Institute of Mining and Technology",
+    "parents": [
+      {
+        "city": "Socorro",
+        "state": "New Mexico",
+        "university_id": "82e747e1-7543-43b4-88e1-983fe859a082",
+        "university_name": "New Mexico Institute of Mining and Technology",
+        "website": "https://www.nmt.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {
+        "UNSPECIFIED": 693
+      },
+      "courses": 693,
+      "courses_with_source_url": 0,
+      "prerequisites": 0,
+      "program_catalog_years": {
+        "UNSPECIFIED": 159
+      },
+      "programs": 159,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 126,
+      "unique_course_codes": 302
+    }
+  },
+  {
+    "aliases": [
+      "New Mexico State University-Las Cruces"
+    ],
+    "category": "public_four_year",
+    "city": "Las Cruces",
+    "domains": [
+      "nmsu.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "nmsu",
+    "landing_url": "https://catalogs.nmsu.edu/nmsu/",
+    "name": "New Mexico State University",
+    "parents": [
+      {
+        "city": "Las Cruces",
+        "state": "New Mexico",
+        "university_id": "11111111-1111-1111-1111-111111111111",
+        "university_name": "New Mexico State University",
+        "website": "https://www.nmsu.edu"
+      }
+    ],
+    "related": [
+      {
+        "city": "Alamogordo",
+        "state": "New Mexico",
+        "university_id": "110e6117-d7f5-496a-a502-2ef734f09663",
+        "university_name": "New Mexico State University - Alamogordo",
+        "website": "https://alamogordo.nmsu.edu"
+      },
+      {
+        "city": "Las Cruces",
+        "state": "New Mexico",
+        "university_id": "79f807a2-7b4f-493a-9264-e2779a034a5b",
+        "university_name": "New Mexico State University - Doña Ana",
+        "website": "https://donaana.nmsu.edu"
+      },
+      {
+        "city": "Grants",
+        "state": "New Mexico",
+        "university_id": "b31b8841-e58b-458e-b7f9-345de2fea586",
+        "university_name": "New Mexico State University - Grants",
+        "website": "https://grants.nmsu.edu"
+      }
+    ],
+    "stats": {
+      "corequisites": 44,
+      "course_catalog_years": {
+        "UNSPECIFIED": 245
+      },
+      "courses": 245,
+      "courses_with_source_url": 0,
+      "prerequisites": 97,
+      "program_catalog_years": {
+        "UNSPECIFIED": 6
+      },
+      "programs": 6,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 0,
+      "unique_course_codes": 187
+    }
+  },
+  {
+    "aliases": [],
+    "category": "public_four_year",
+    "city": "Española",
+    "domains": [
+      "nnmc.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "nnmc",
+    "landing_url": "https://catalog.nnmc.edu/",
+    "name": "Northern New Mexico College",
+    "parents": [
+      {
+        "city": "Española",
+        "state": "New Mexico",
+        "university_id": "ec4d6722-705e-4c34-aaef-f25f95ebfa19",
+        "university_name": "Northern New Mexico College",
+        "website": "https://nnmc.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {
+        "2025-2026": 1185,
+        "UNSPECIFIED": 337
+      },
+      "courses": 1522,
+      "courses_with_source_url": 1242,
+      "prerequisites": 0,
+      "program_catalog_years": {
+        "2025-2026": 66,
+        "UNSPECIFIED": 1
+      },
+      "programs": 67,
+      "programs_with_source_url": 66,
+      "programs_without_courses": 0,
+      "unique_course_codes": 568
+    }
+  },
+  {
+    "aliases": [
+      "University of New Mexico-Main Campus",
+      "University of New Mexico-Albuquerque"
+    ],
+    "category": "public_four_year",
+    "city": "Albuquerque",
+    "domains": [
+      "unm.edu"
+    ],
+    "institution_status": "POSSIBLE_DUPLICATE",
+    "key": "unm",
+    "landing_url": "https://catalog.unm.edu/",
+    "name": "University of New Mexico",
+    "parents": [
+      {
+        "city": "Albuquerque",
+        "state": "New Mexico",
+        "university_id": "22222222-2222-2222-2222-222222222222",
+        "university_name": "University of New Mexico",
+        "website": "https://www.unm.edu"
+      },
+      {
+        "city": "Albuquerque",
+        "state": "New Mexico",
+        "university_id": "41903b1e-0f31-4260-b0c0-1fa0f0edaa29",
+        "university_name": "University of New Mexico-Main Campus",
+        "website": "https://www.unm.edu"
+      }
+    ],
+    "related": [
+      {
+        "city": "Los Lunas",
+        "state": "New Mexico",
+        "university_id": "1da2c7fb-5236-460f-86d1-4cab76d276a5",
+        "university_name": "University of New Mexico - Valencia",
+        "website": "https://valencia.unm.edu"
+      },
+      {
+        "city": "Los Alamos",
+        "state": "New Mexico",
+        "university_id": "b03c8c75-4309-4524-bf6f-2abccfcc78c3",
+        "university_name": "University of New Mexico - Los Alamos",
+        "website": "https://losalamos.unm.edu"
+      },
+      {
+        "city": "Ranchos de Taos",
+        "state": "New Mexico",
+        "university_id": "cd4b231d-ef4a-4ec5-8713-c30a3cb5607d",
+        "university_name": "University of New Mexico - Taos",
+        "website": "https://taos.unm.edu"
+      },
+      {
+        "city": "Gallup",
+        "state": "New Mexico",
+        "university_id": "ef561e7a-61a8-4d7f-bf21-b1cacb5d3b6d",
+        "university_name": "University of New Mexico - Gallup",
+        "website": "https://www.gallup.unm.edu"
+      }
+    ],
+    "stats": {
+      "corequisites": 44,
+      "course_catalog_years": {
+        "UNSPECIFIED": 490
+      },
+      "courses": 490,
+      "courses_with_source_url": 0,
+      "prerequisites": 99,
+      "program_catalog_years": {
+        "UNSPECIFIED": 12
+      },
+      "programs": 12,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 0,
+      "unique_course_codes": 190
+    }
+  },
+  {
+    "aliases": [],
+    "category": "public_four_year",
+    "city": "Silver City",
+    "domains": [
+      "wnmu.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "wnmu",
+    "landing_url": "https://registrar.wnmu.edu/university-catalogs/",
+    "name": "Western New Mexico University",
+    "parents": [
+      {
+        "city": "Silver City",
+        "state": "New Mexico",
+        "university_id": "a98d490e-bd5e-4ba9-973a-e5ea7ad53ed5",
+        "university_name": "Western New Mexico University",
+        "website": "https://wnmu.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {
+        "2025-2026": 16
+      },
+      "courses": 16,
+      "courses_with_source_url": 16,
+      "prerequisites": 0,
+      "program_catalog_years": {
+        "2025-2026": 1
+      },
+      "programs": 1,
+      "programs_with_source_url": 1,
+      "programs_without_courses": 0,
+      "unique_course_codes": 16
+    }
+  },
+  {
+    "aliases": [],
+    "category": "independent_public",
+    "city": "Albuquerque",
+    "domains": [
+      "cnm.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "cnm",
+    "landing_url": "https://www.cnm.edu/students/services/catalog-resources",
+    "name": "Central New Mexico Community College",
+    "parents": [
+      {
+        "city": "Albuquerque",
+        "state": "New Mexico",
+        "university_id": "33333333-3333-3333-3333-333333333333",
+        "university_name": "Central New Mexico Community College",
+        "website": "https://www.cnm.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {
+        "UNSPECIFIED": 8
+      },
+      "courses": 8,
+      "courses_with_source_url": 0,
+      "prerequisites": 4,
+      "program_catalog_years": {
+        "UNSPECIFIED": 2
+      },
+      "programs": 2,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 0,
+      "unique_course_codes": 8
+    }
+  },
+  {
+    "aliases": [],
+    "category": "independent_public",
+    "city": "Clovis",
+    "domains": [
+      "clovis.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "ccc",
+    "landing_url": "https://clovis.edu/publications/index.aspx",
+    "name": "Clovis Community College",
+    "parents": [
+      {
+        "city": "Clovis",
+        "state": "New Mexico",
+        "university_id": "6ec3a40e-8767-4928-91c6-98cd05336d81",
+        "university_name": "Clovis Community College",
+        "website": "https://www.clovis.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {
+        "UNSPECIFIED": 675
+      },
+      "courses": 675,
+      "courses_with_source_url": 0,
+      "prerequisites": 0,
+      "program_catalog_years": {
+        "UNSPECIFIED": 40
+      },
+      "programs": 40,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 0,
+      "unique_course_codes": 320
+    }
+  },
+  {
+    "aliases": [],
+    "category": "independent_public",
+    "city": "Las Vegas",
+    "domains": [
+      "luna.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "luna",
+    "landing_url": "https://luna.edu/resources/catalogs.php",
+    "name": "Luna Community College",
+    "parents": [
+      {
+        "city": "Las Vegas",
+        "state": "New Mexico",
+        "university_id": "97931f6d-d856-414d-bfae-5aa535026e28",
+        "university_name": "Luna Community College",
+        "website": "https://www.luna.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {
+        "UNSPECIFIED": 920
+      },
+      "courses": 920,
+      "courses_with_source_url": 0,
+      "prerequisites": 0,
+      "program_catalog_years": {
+        "UNSPECIFIED": 30
+      },
+      "programs": 30,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 0,
+      "unique_course_codes": 353
+    }
+  },
+  {
+    "aliases": [],
+    "category": "independent_public",
+    "city": "Tucumcari",
+    "domains": [
+      "mesalands.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "mesalands",
+    "landing_url": "https://www.mesalands.edu/o/mcc/page/catalog-schedules",
+    "name": "Mesalands Community College",
+    "parents": [
+      {
+        "city": "Tucumcari",
+        "state": "New Mexico",
+        "university_id": "e9580b21-f16b-471a-8ad9-ecf7b0fec09b",
+        "university_name": "Mesalands Community College",
+        "website": "https://www.mesalands.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {
+        "2025-2026": 258
+      },
+      "courses": 258,
+      "courses_with_source_url": 0,
+      "prerequisites": 0,
+      "program_catalog_years": {
+        "2025-2026": 26
+      },
+      "programs": 26,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 0,
+      "unique_course_codes": 119
+    }
+  },
+  {
+    "aliases": [],
+    "category": "independent_public",
+    "city": "Hobbs",
+    "domains": [
+      "nmjc.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "nmjc",
+    "landing_url": "https://www.nmjc.edu/resource_service/catalog/index.aspx",
+    "name": "New Mexico Junior College",
+    "parents": [
+      {
+        "city": "Hobbs",
+        "state": "New Mexico",
+        "university_id": "ada47f59-3a3d-44e5-b7bf-5c4cb5e62a79",
+        "university_name": "New Mexico Junior College",
+        "website": "https://www.nmjc.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {
+        "UNSPECIFIED": 330
+      },
+      "courses": 330,
+      "courses_with_source_url": 0,
+      "prerequisites": 0,
+      "program_catalog_years": {
+        "UNSPECIFIED": 33
+      },
+      "programs": 33,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 0,
+      "unique_course_codes": 203
+    }
+  },
+  {
+    "aliases": [],
+    "category": "independent_public",
+    "city": "Roswell",
+    "domains": [
+      "nmmi.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "nmmi",
+    "landing_url": "https://www.nmmi.edu/academics/registrars-office/",
+    "name": "New Mexico Military Institute",
+    "parents": [
+      {
+        "city": "Roswell",
+        "state": "New Mexico",
+        "university_id": "d1cb699c-5d75-4055-8334-e042c99557a2",
+        "university_name": "New Mexico Military Institute",
+        "website": "https://www.nmmi.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {},
+      "courses": 0,
+      "courses_with_source_url": 0,
+      "prerequisites": 0,
+      "program_catalog_years": {
+        "2026-2027": 2
+      },
+      "programs": 2,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 2,
+      "unique_course_codes": 0
+    }
+  },
+  {
+    "aliases": [],
+    "category": "independent_public",
+    "city": "Farmington",
+    "domains": [
+      "sanjuancollege.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "sjc",
+    "landing_url": "https://catalog.sanjuancollege.edu/",
+    "name": "San Juan College",
+    "parents": [
+      {
+        "city": "Farmington",
+        "state": "New Mexico",
+        "university_id": "d8f9629f-0f0c-496c-a747-63b93b78506f",
+        "university_name": "San Juan College",
+        "website": "https://www.sanjuancollege.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 4,
+      "course_catalog_years": {
+        "UNSPECIFIED": 2460
+      },
+      "courses": 2460,
+      "courses_with_source_url": 0,
+      "prerequisites": 34,
+      "program_catalog_years": {
+        "UNSPECIFIED": 137
+      },
+      "programs": 137,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 4,
+      "unique_course_codes": 858
+    }
+  },
+  {
+    "aliases": [],
+    "category": "independent_public",
+    "city": "Santa Fe",
+    "domains": [
+      "sfcc.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "sfcc",
+    "landing_url": "https://www.sfcc.edu/college-catalog/",
+    "name": "Santa Fe Community College",
+    "parents": [
+      {
+        "city": "Santa Fe",
+        "state": "New Mexico",
+        "university_id": "baa19f35-58f3-4650-a9e6-a17b7b06aa96",
+        "university_name": "Santa Fe Community College",
+        "website": "https://www.sfcc.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 229,
+      "course_catalog_years": {
+        "UNSPECIFIED": 1735
+      },
+      "courses": 1735,
+      "courses_with_source_url": 0,
+      "prerequisites": 366,
+      "program_catalog_years": {
+        "UNSPECIFIED": 132
+      },
+      "programs": 132,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 0,
+      "unique_course_codes": 652
+    }
+  },
+  {
+    "aliases": [],
+    "category": "independent_public",
+    "city": "Carlsbad",
+    "domains": [
+      "senmc.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "senmc",
+    "landing_url": "https://catalog.senmc.edu/",
+    "name": "Southeast New Mexico College",
+    "parents": [
+      {
+        "city": "Carlsbad",
+        "state": "New Mexico",
+        "university_id": "2e2ea45d-8be4-4b44-ad8c-c1bca1f3fef8",
+        "university_name": "Southeast New Mexico College",
+        "website": "https://senmc.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {
+        "UNSPECIFIED": 1090
+      },
+      "courses": 1090,
+      "courses_with_source_url": 0,
+      "prerequisites": 0,
+      "program_catalog_years": {
+        "UNSPECIFIED": 110
+      },
+      "programs": 110,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 37,
+      "unique_course_codes": 335
+    }
+  },
+  {
+    "aliases": [
+      "Dine College"
+    ],
+    "category": "tribal",
+    "city": "Tsaile",
+    "domains": [
+      "dinecollege.edu"
+    ],
+    "institution_status": "MISSING_IN_DB",
+    "key": "dine",
+    "landing_url": "https://www.dinecollege.edu/admissions/course-catalog/",
+    "name": "Diné College",
+    "nm_service_location": "Shiprock",
+    "parents": [],
+    "related": [
+      {
+        "city": "Crownpoint",
+        "state": "New Mexico",
+        "university_id": "968e59f1-fa7b-4dda-bf0a-adc9f0de1fe5",
+        "university_name": "Diné College - Crownpoint Center",
+        "website": "https://www.dinecollege.edu"
+      },
+      {
+        "city": "Shiprock",
+        "state": "New Mexico",
+        "university_id": "dd99ea19-c24f-4d0a-92b6-cc6cb239ff00",
+        "university_name": "Diné College - Shiprock",
+        "website": "https://www.dinecollege.edu"
+      }
+    ],
+    "state": "Arizona",
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {},
+      "courses": 0,
+      "courses_with_source_url": 0,
+      "prerequisites": 0,
+      "program_catalog_years": {},
+      "programs": 0,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 0,
+      "unique_course_codes": 0
+    }
+  },
+  {
+    "aliases": [],
+    "category": "tribal",
+    "city": "Santa Fe",
+    "domains": [
+      "iaia.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "iaia",
+    "landing_url": "https://iaia.edu/admissions/college-catalog/",
+    "name": "Institute of American Indian Arts",
+    "parents": [
+      {
+        "city": "Santa Fe",
+        "state": "New Mexico",
+        "university_id": "5ff13af3-5716-4a52-9355-b88131da5580",
+        "university_name": "Institute of American Indian Arts",
+        "website": "https://iaia.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {
+        "2025-2026": 319
+      },
+      "courses": 319,
+      "courses_with_source_url": 0,
+      "prerequisites": 0,
+      "program_catalog_years": {
+        "2025-2026": 28
+      },
+      "programs": 28,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 1,
+      "unique_course_codes": 156
+    }
+  },
+  {
+    "aliases": [],
+    "category": "tribal",
+    "city": "Crownpoint",
+    "domains": [
+      "navajotech.edu"
+    ],
+    "institution_status": "VERIFIED",
+    "key": "ntu",
+    "landing_url": "https://www.navajotech.edu/faculty-staff/policies-docs/",
+    "name": "Navajo Technical University",
+    "parents": [
+      {
+        "city": "Crownpoint",
+        "state": "New Mexico",
+        "university_id": "865cac73-3537-4df5-9d9e-f0c755c11a55",
+        "university_name": "Navajo Technical University",
+        "website": "https://www.navajotech.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {
+        "UNSPECIFIED": 1578
+      },
+      "courses": 1578,
+      "courses_with_source_url": 0,
+      "prerequisites": 0,
+      "program_catalog_years": {
+        "UNSPECIFIED": 63
+      },
+      "programs": 63,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 0,
+      "unique_course_codes": 769
+    }
+  },
+  {
+    "aliases": [
+      "Southwest Indian Polytechnic Institute"
+    ],
+    "category": "tribal",
+    "city": "Albuquerque",
+    "domains": [
+      "sipi.edu"
+    ],
+    "institution_status": "MISMATCH",
+    "key": "sipi",
+    "landing_url": "https://www.sipi.edu/apps/pages/Catalog",
+    "name": "Southwestern Indian Polytechnic Institute",
+    "parents": [
+      {
+        "city": "Albuquerque",
+        "state": "New Mexico",
+        "university_id": "2ccda41e-a690-401b-8442-34b19df9aa23",
+        "university_name": "Southwest Indian Polytechnic Institute",
+        "website": "https://www.sipi.edu"
+      }
+    ],
+    "related": [],
+    "stats": {
+      "corequisites": 0,
+      "course_catalog_years": {
+        "2026-2027": 187
+      },
+      "courses": 187,
+      "courses_with_source_url": 0,
+      "prerequisites": 0,
+      "program_catalog_years": {
+        "2026-2027": 15
+      },
+      "programs": 15,
+      "programs_with_source_url": 0,
+      "programs_without_courses": 0,
+      "unique_course_codes": 111
+    }
+  }
+]

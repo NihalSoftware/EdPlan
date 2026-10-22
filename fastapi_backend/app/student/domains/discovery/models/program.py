@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import uuid
+from decimal import Decimal
 from typing import List
 
 from sqlalchemy import (
@@ -8,6 +9,7 @@ from sqlalchemy import (
     ForeignKey,
     Index,
     Integer,
+    Numeric,
     String,
     Text,
     UniqueConstraint,
@@ -109,8 +111,8 @@ class Course(Base):
     course_code: Mapped[str] = mapped_column(String(40), nullable=False)
     course_name: Mapped[str] = mapped_column(String(255), nullable=False)
     credits: Mapped[int] = mapped_column(Integer, nullable=False)
-    lecture_hours: Mapped[int] = mapped_column(Integer, nullable=False, server_default=text("0"))
-    lab_hours: Mapped[int] = mapped_column(Integer, nullable=False, server_default=text("0"))
+    lecture_hours: Mapped[Decimal | None] = mapped_column(Numeric, nullable=True)
+    lab_hours: Mapped[Decimal | None] = mapped_column(Numeric, nullable=True)
     recommended_year: Mapped[int | None] = mapped_column(Integer)
     recommended_semester: Mapped[str | None] = mapped_column(String(20))
     description: Mapped[str | None] = mapped_column(Text)

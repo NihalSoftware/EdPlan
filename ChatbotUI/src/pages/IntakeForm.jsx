@@ -102,7 +102,7 @@ const IntakeForm = () => {
 
 	return (
 		<section className="bg-slate-100 min-h-screen flex items-center justify-center p-4">
-			<div className="w-full max-w-6xl bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+			<div className="w-full max-w-7xl bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
 				<header className="px-6 sm:px-10 py-6 border-b border-slate-200 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white">
 					<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
 						<div className="flex flex-col">

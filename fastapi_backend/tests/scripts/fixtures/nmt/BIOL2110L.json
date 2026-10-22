@@ -1,0 +1,104 @@
+{
+  "catalog_year": "2026-2027",
+  "kind": "course",
+  "record": {
+    "_id": "BIOL2110L-2024-06-10",
+    "code": "BIOL2110L",
+    "courseEquivalencies": [],
+    "courseGroupId": "BIOL2110L",
+    "courseLevel": [
+      "Undergraduate"
+    ],
+    "courseNumber": "2110L",
+    "credits": {
+      "billingHours": {
+        "min": 1,
+        "operator": ""
+      },
+      "contactHours": {
+        "min": 1,
+        "operator": ""
+      },
+      "creditHours": {
+        "min": 1,
+        "operator": ""
+      },
+      "labHours": {
+        "min": 1,
+        "operator": ""
+      },
+      "lectureHours": {
+        "operator": ""
+      },
+      "otherHours": {
+        "operator": ""
+      }
+    },
+    "crossListedCourses": [],
+    "departments": [
+      {
+        "displayName": "Biology",
+        "id": "BIOL",
+        "name": "Biology",
+        "subjectCodes": [
+          "BIOL",
+          "BMST"
+        ]
+      }
+    ],
+    "description": "Corequisite: BIOL 2110. This course introduces students to major topics in general biology. This course focuses on the principles of structure and function of living things at the molecular, cellular and organismic levels of organization. Major topics included are introduction to the scientific process, chemistry of cells, organization of cells, cellular respiration, photosynthesis, cell division, genetics, DNA replication, transcription, and translation.",
+    "effectiveEndDate": null,
+    "effectiveStartDate": "2024-06-10",
+    "equivalent": [
+      "BIOL111L"
+    ],
+    "id": "BIOL2110L-2024-06-10",
+    "longName": "Pinciples of Biology: Cellular & Molecular Lab",
+    "name": "Prin of Bio: Cell & Molec Lab",
+    "requisites": {
+      "requisitesFreeform": {
+        "showInCatalog": false,
+        "value": "<strong>PREREQUISITES</strong><br/>Course Number 2110, Subject Code BIOL, Level UG, Grade UG [Concurrent]"
+      },
+      "requisitesSimple": [
+        {
+          "id": "Kx3EXesU",
+          "name": "Corequisite",
+          "requirementLevel": "generalRequirements",
+          "rules": [
+            {
+              "condition": "enrolledIn",
+              "id": "bIiiQV4O",
+              "name": "Corequisites",
+              "value": {
+                "condition": "courses",
+                "id": "TCHhcMlV",
+                "subSelections": [],
+                "values": [
+                  {
+                    "logic": "and",
+                    "value": [
+                      "BIOL2110"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "showInCatalog": true,
+          "sisId": "",
+          "type": "Corequisite"
+        }
+      ]
+    },
+    "subjectCode": "BIOL"
+  },
+  "source": {
+    "resolved_url": "https://catalog.nmt.edu/courses/BIOL2110L",
+    "retrieved_at": "2026-10-15T11:52:38.994290+00:00",
+    "sha256": "cac8ac6e604b37e02a9a493bec579f2105f7915e251a6135b7b9de01c67fd9b8",
+    "source_type": "official_html",
+    "status": 200,
+    "url": "https://catalog.nmt.edu/courses/BIOL2110L"
+  }
+}

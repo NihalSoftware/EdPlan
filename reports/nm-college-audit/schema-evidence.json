@@ -1,0 +1,1154 @@
+{
+  "columns": [
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "audit_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "catalog_change_audit"
+    },
+    {
+      "column_default": null,
+      "column_name": "import_run_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "catalog_change_audit"
+    },
+    {
+      "column_default": null,
+      "column_name": "table_name",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "catalog_change_audit"
+    },
+    {
+      "column_default": null,
+      "column_name": "record_id",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "table_name": "catalog_change_audit"
+    },
+    {
+      "column_default": null,
+      "column_name": "action",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "catalog_change_audit"
+    },
+    {
+      "column_default": "'{}'::jsonb",
+      "column_name": "old_values",
+      "data_type": "jsonb",
+      "is_nullable": "NO",
+      "table_name": "catalog_change_audit"
+    },
+    {
+      "column_default": "'{}'::jsonb",
+      "column_name": "proposed_new_values",
+      "data_type": "jsonb",
+      "is_nullable": "NO",
+      "table_name": "catalog_change_audit"
+    },
+    {
+      "column_default": null,
+      "column_name": "source_url",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "catalog_change_audit"
+    },
+    {
+      "column_default": null,
+      "column_name": "match_method",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "catalog_change_audit"
+    },
+    {
+      "column_default": null,
+      "column_name": "confidence_level",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "catalog_change_audit"
+    },
+    {
+      "column_default": null,
+      "column_name": "notes",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "table_name": "catalog_change_audit"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "table_name": "catalog_change_audit"
+    },
+    {
+      "column_default": null,
+      "column_name": "applied_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "table_name": "catalog_change_audit"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "department_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "catalog_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "university_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "catalog_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "official_source_id",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "catalog_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "department_name",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "catalog_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "official_source_url",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "catalog_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "source_retrieved_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "table_name": "catalog_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "officially_active",
+      "data_type": "boolean",
+      "is_nullable": "YES",
+      "table_name": "catalog_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "active_evidence_url",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "table_name": "catalog_departments"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "import_run_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "catalog_import_runs"
+    },
+    {
+      "column_default": null,
+      "column_name": "university_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "catalog_import_runs"
+    },
+    {
+      "column_default": null,
+      "column_name": "catalog_name",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "catalog_import_runs"
+    },
+    {
+      "column_default": null,
+      "column_name": "source_root_url",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "catalog_import_runs"
+    },
+    {
+      "column_default": "'dry_run'::character varying",
+      "column_name": "mode",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "catalog_import_runs"
+    },
+    {
+      "column_default": "'running'::character varying",
+      "column_name": "status",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "catalog_import_runs"
+    },
+    {
+      "column_default": null,
+      "column_name": "retrieved_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "table_name": "catalog_import_runs"
+    },
+    {
+      "column_default": "now()",
+      "column_name": "started_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "table_name": "catalog_import_runs"
+    },
+    {
+      "column_default": null,
+      "column_name": "completed_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "table_name": "catalog_import_runs"
+    },
+    {
+      "column_default": "'{}'::jsonb",
+      "column_name": "summary_json",
+      "data_type": "jsonb",
+      "is_nullable": "NO",
+      "table_name": "catalog_import_runs"
+    },
+    {
+      "column_default": "'{}'::jsonb",
+      "column_name": "error_json",
+      "data_type": "jsonb",
+      "is_nullable": "NO",
+      "table_name": "catalog_import_runs"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "course_corequisites"
+    },
+    {
+      "column_default": null,
+      "column_name": "course_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "course_corequisites"
+    },
+    {
+      "column_default": null,
+      "column_name": "corequisite_course_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "course_corequisites"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "course_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "course_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "course_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "department_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "course_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "official_source_url",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "course_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "source_retrieved_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "table_name": "course_departments"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "course_prerequisites"
+    },
+    {
+      "column_default": null,
+      "column_name": "course_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "course_prerequisites"
+    },
+    {
+      "column_default": null,
+      "column_name": "prerequisite_course_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "course_prerequisites"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "course_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "program_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "course_code",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "course_name",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "credits",
+      "data_type": "numeric",
+      "is_nullable": "NO",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "lecture_hours",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "lab_hours",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "recommended_year",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "recommended_semester",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "description",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "metadata_json",
+      "data_type": "jsonb",
+      "is_nullable": "YES",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "source_sequence",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "official_source_id",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "official_source_url",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "source_retrieved_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "semester_number",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "nnmc_semester",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "table_name": "courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "recommended_term_number",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "table_name": "courses"
+    },
+    {
+      "column_default": "nextval('program_courses_id_seq'::regclass)",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "table_name": "program_courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "education_plan_id",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "table_name": "program_courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "year_label",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "table_name": "program_courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "semester_label",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "table_name": "program_courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "course_code",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "table_name": "program_courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "course_name",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "table_name": "program_courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "credits",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "table_name": "program_courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "prerequisite",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "table_name": "program_courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "corequisite",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "table_name": "program_courses"
+    },
+    {
+      "column_default": null,
+      "column_name": "schedule",
+      "data_type": "json",
+      "is_nullable": "YES",
+      "table_name": "program_courses"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "program_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "program_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "program_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "department_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "program_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "official_source_url",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "program_departments"
+    },
+    {
+      "column_default": null,
+      "column_name": "source_retrieved_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "table_name": "program_departments"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "program_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "programs"
+    },
+    {
+      "column_default": null,
+      "column_name": "university_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "programs"
+    },
+    {
+      "column_default": null,
+      "column_name": "program_name",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "programs"
+    },
+    {
+      "column_default": null,
+      "column_name": "degree",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "programs"
+    },
+    {
+      "column_default": null,
+      "column_name": "total_credit_hours",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "table_name": "programs"
+    },
+    {
+      "column_default": null,
+      "column_name": "metadata_json",
+      "data_type": "jsonb",
+      "is_nullable": "YES",
+      "table_name": "programs"
+    },
+    {
+      "column_default": null,
+      "column_name": "official_source_id",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "table_name": "programs"
+    },
+    {
+      "column_default": null,
+      "column_name": "official_source_url",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "table_name": "programs"
+    },
+    {
+      "column_default": null,
+      "column_name": "source_retrieved_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "table_name": "programs"
+    },
+    {
+      "column_default": "gen_random_uuid()",
+      "column_name": "university_id",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "table_name": "universities"
+    },
+    {
+      "column_default": null,
+      "column_name": "university_name",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "universities"
+    },
+    {
+      "column_default": null,
+      "column_name": "city",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "universities"
+    },
+    {
+      "column_default": null,
+      "column_name": "state",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "table_name": "universities"
+    },
+    {
+      "column_default": null,
+      "column_name": "website",
+      "data_type": "character varying",
+      "is_nullable": "YES",
+      "table_name": "universities"
+    },
+    {
+      "column_default": null,
+      "column_name": "college_profile",
+      "data_type": "jsonb",
+      "is_nullable": "YES",
+      "table_name": "universities"
+    }
+  ],
+  "constraints": [
+    {
+      "conname": "catalog_departments_department_id_not_null",
+      "definition": "NOT NULL department_id",
+      "table_name": "catalog_departments"
+    },
+    {
+      "conname": "catalog_departments_department_name_not_null",
+      "definition": "NOT NULL department_name",
+      "table_name": "catalog_departments"
+    },
+    {
+      "conname": "catalog_departments_official_source_id_not_null",
+      "definition": "NOT NULL official_source_id",
+      "table_name": "catalog_departments"
+    },
+    {
+      "conname": "catalog_departments_official_source_url_not_null",
+      "definition": "NOT NULL official_source_url",
+      "table_name": "catalog_departments"
+    },
+    {
+      "conname": "catalog_departments_pkey",
+      "definition": "PRIMARY KEY (department_id)",
+      "table_name": "catalog_departments"
+    },
+    {
+      "conname": "catalog_departments_source_retrieved_at_not_null",
+      "definition": "NOT NULL source_retrieved_at",
+      "table_name": "catalog_departments"
+    },
+    {
+      "conname": "catalog_departments_university_fk",
+      "definition": "FOREIGN KEY (university_id) REFERENCES universities(university_id) ON UPDATE CASCADE ON DELETE RESTRICT",
+      "table_name": "catalog_departments"
+    },
+    {
+      "conname": "catalog_departments_university_id_not_null",
+      "definition": "NOT NULL university_id",
+      "table_name": "catalog_departments"
+    },
+    {
+      "conname": "catalog_departments_university_source_uk",
+      "definition": "UNIQUE (university_id, official_source_id)",
+      "table_name": "catalog_departments"
+    },
+    {
+      "conname": "course_corequisites_corequisite_course_id_not_null",
+      "definition": "NOT NULL corequisite_course_id",
+      "table_name": "course_corequisites"
+    },
+    {
+      "conname": "course_corequisites_corequisite_fk",
+      "definition": "FOREIGN KEY (corequisite_course_id) REFERENCES courses(course_id) ON UPDATE CASCADE ON DELETE RESTRICT",
+      "table_name": "course_corequisites"
+    },
+    {
+      "conname": "course_corequisites_course_fk",
+      "definition": "FOREIGN KEY (course_id) REFERENCES courses(course_id) ON UPDATE CASCADE ON DELETE CASCADE",
+      "table_name": "course_corequisites"
+    },
+    {
+      "conname": "course_corequisites_course_id_not_null",
+      "definition": "NOT NULL course_id",
+      "table_name": "course_corequisites"
+    },
+    {
+      "conname": "course_corequisites_id_not_null",
+      "definition": "NOT NULL id",
+      "table_name": "course_corequisites"
+    },
+    {
+      "conname": "course_corequisites_not_self_chk",
+      "definition": "CHECK ((course_id <> corequisite_course_id))",
+      "table_name": "course_corequisites"
+    },
+    {
+      "conname": "course_corequisites_pair_uk",
+      "definition": "UNIQUE (course_id, corequisite_course_id)",
+      "table_name": "course_corequisites"
+    },
+    {
+      "conname": "course_corequisites_pkey",
+      "definition": "PRIMARY KEY (id)",
+      "table_name": "course_corequisites"
+    },
+    {
+      "conname": "course_departments_course_fk",
+      "definition": "FOREIGN KEY (course_id) REFERENCES courses(course_id) ON UPDATE CASCADE ON DELETE CASCADE",
+      "table_name": "course_departments"
+    },
+    {
+      "conname": "course_departments_course_id_not_null",
+      "definition": "NOT NULL course_id",
+      "table_name": "course_departments"
+    },
+    {
+      "conname": "course_departments_department_fk",
+      "definition": "FOREIGN KEY (department_id) REFERENCES catalog_departments(department_id) ON UPDATE CASCADE ON DELETE CASCADE",
+      "table_name": "course_departments"
+    },
+    {
+      "conname": "course_departments_department_id_not_null",
+      "definition": "NOT NULL department_id",
+      "table_name": "course_departments"
+    },
+    {
+      "conname": "course_departments_id_not_null",
+      "definition": "NOT NULL id",
+      "table_name": "course_departments"
+    },
+    {
+      "conname": "course_departments_official_source_url_not_null",
+      "definition": "NOT NULL official_source_url",
+      "table_name": "course_departments"
+    },
+    {
+      "conname": "course_departments_pair_uk",
+      "definition": "UNIQUE (course_id, department_id)",
+      "table_name": "course_departments"
+    },
+    {
+      "conname": "course_departments_pkey",
+      "definition": "PRIMARY KEY (id)",
+      "table_name": "course_departments"
+    },
+    {
+      "conname": "course_departments_source_retrieved_at_not_null",
+      "definition": "NOT NULL source_retrieved_at",
+      "table_name": "course_departments"
+    },
+    {
+      "conname": "course_prerequisites_course_fk",
+      "definition": "FOREIGN KEY (course_id) REFERENCES courses(course_id) ON UPDATE CASCADE ON DELETE CASCADE",
+      "table_name": "course_prerequisites"
+    },
+    {
+      "conname": "course_prerequisites_course_id_not_null",
+      "definition": "NOT NULL course_id",
+      "table_name": "course_prerequisites"
+    },
+    {
+      "conname": "course_prerequisites_id_not_null",
+      "definition": "NOT NULL id",
+      "table_name": "course_prerequisites"
+    },
+    {
+      "conname": "course_prerequisites_not_self_chk",
+      "definition": "CHECK ((course_id <> prerequisite_course_id))",
+      "table_name": "course_prerequisites"
+    },
+    {
+      "conname": "course_prerequisites_pair_uk",
+      "definition": "UNIQUE (course_id, prerequisite_course_id)",
+      "table_name": "course_prerequisites"
+    },
+    {
+      "conname": "course_prerequisites_pkey",
+      "definition": "PRIMARY KEY (id)",
+      "table_name": "course_prerequisites"
+    },
+    {
+      "conname": "course_prerequisites_prerequisite_course_id_not_null",
+      "definition": "NOT NULL prerequisite_course_id",
+      "table_name": "course_prerequisites"
+    },
+    {
+      "conname": "course_prerequisites_prerequisite_fk",
+      "definition": "FOREIGN KEY (prerequisite_course_id) REFERENCES courses(course_id) ON UPDATE CASCADE ON DELETE RESTRICT",
+      "table_name": "course_prerequisites"
+    },
+    {
+      "conname": "courses_course_code_not_null",
+      "definition": "NOT NULL course_code",
+      "table_name": "courses"
+    },
+    {
+      "conname": "courses_course_id_not_null",
+      "definition": "NOT NULL course_id",
+      "table_name": "courses"
+    },
+    {
+      "conname": "courses_course_name_not_null",
+      "definition": "NOT NULL course_name",
+      "table_name": "courses"
+    },
+    {
+      "conname": "courses_credits_chk",
+      "definition": "CHECK ((credits >= (0)::numeric))",
+      "table_name": "courses"
+    },
+    {
+      "conname": "courses_credits_not_null",
+      "definition": "NOT NULL credits",
+      "table_name": "courses"
+    },
+    {
+      "conname": "courses_hours_chk",
+      "definition": "CHECK (((lecture_hours >= (0)::numeric) AND (lab_hours >= (0)::numeric)))",
+      "table_name": "courses"
+    },
+    {
+      "conname": "courses_pkey",
+      "definition": "PRIMARY KEY (course_id)",
+      "table_name": "courses"
+    },
+    {
+      "conname": "courses_program_fk",
+      "definition": "FOREIGN KEY (program_id) REFERENCES programs(program_id) ON DELETE CASCADE",
+      "table_name": "courses"
+    },
+    {
+      "conname": "courses_program_id_not_null",
+      "definition": "NOT NULL program_id",
+      "table_name": "courses"
+    },
+    {
+      "conname": "courses_recommended_semester_chk",
+      "definition": "CHECK (((recommended_semester IS NULL) OR ((recommended_semester)::text = ANY ((ARRAY['Fall'::character varying, 'Spring'::character varying, 'Summer'::character varying, 'Winter'::character varying])::text[]))))",
+      "table_name": "courses"
+    },
+    {
+      "conname": "courses_recommended_year_chk",
+      "definition": "CHECK (((recommended_year IS NULL) OR ((recommended_year >= 1) AND (recommended_year <= 8))))",
+      "table_name": "courses"
+    },
+    {
+      "conname": "program_departments_department_fk",
+      "definition": "FOREIGN KEY (department_id) REFERENCES catalog_departments(department_id) ON UPDATE CASCADE ON DELETE CASCADE",
+      "table_name": "program_departments"
+    },
+    {
+      "conname": "program_departments_department_id_not_null",
+      "definition": "NOT NULL department_id",
+      "table_name": "program_departments"
+    },
+    {
+      "conname": "program_departments_id_not_null",
+      "definition": "NOT NULL id",
+      "table_name": "program_departments"
+    },
+    {
+      "conname": "program_departments_official_source_url_not_null",
+      "definition": "NOT NULL official_source_url",
+      "table_name": "program_departments"
+    },
+    {
+      "conname": "program_departments_pair_uk",
+      "definition": "UNIQUE (program_id, department_id)",
+      "table_name": "program_departments"
+    },
+    {
+      "conname": "program_departments_pkey",
+      "definition": "PRIMARY KEY (id)",
+      "table_name": "program_departments"
+    },
+    {
+      "conname": "program_departments_program_fk",
+      "definition": "FOREIGN KEY (program_id) REFERENCES programs(program_id) ON UPDATE CASCADE ON DELETE CASCADE",
+      "table_name": "program_departments"
+    },
+    {
+      "conname": "program_departments_program_id_not_null",
+      "definition": "NOT NULL program_id",
+      "table_name": "program_departments"
+    },
+    {
+      "conname": "program_departments_source_retrieved_at_not_null",
+      "definition": "NOT NULL source_retrieved_at",
+      "table_name": "program_departments"
+    },
+    {
+      "conname": "programs_degree_not_null",
+      "definition": "NOT NULL degree",
+      "table_name": "programs"
+    },
+    {
+      "conname": "programs_pkey",
+      "definition": "PRIMARY KEY (program_id)",
+      "table_name": "programs"
+    },
+    {
+      "conname": "programs_program_id_not_null",
+      "definition": "NOT NULL program_id",
+      "table_name": "programs"
+    },
+    {
+      "conname": "programs_program_name_not_null",
+      "definition": "NOT NULL program_name",
+      "table_name": "programs"
+    },
+    {
+      "conname": "programs_program_university_uk",
+      "definition": "UNIQUE (program_id, university_id)",
+      "table_name": "programs"
+    },
+    {
+      "conname": "programs_total_credit_hours_chk",
+      "definition": "CHECK ((total_credit_hours > 0))",
+      "table_name": "programs"
+    },
+    {
+      "conname": "programs_total_credit_hours_not_null",
+      "definition": "NOT NULL total_credit_hours",
+      "table_name": "programs"
+    },
+    {
+      "conname": "programs_university_fk",
+      "definition": "FOREIGN KEY (university_id) REFERENCES universities(university_id) ON UPDATE CASCADE ON DELETE RESTRICT",
+      "table_name": "programs"
+    },
+    {
+      "conname": "programs_university_id_not_null",
+      "definition": "NOT NULL university_id",
+      "table_name": "programs"
+    },
+    {
+      "conname": "programs_university_name_degree_uk",
+      "definition": "UNIQUE (university_id, program_name, degree)",
+      "table_name": "programs"
+    },
+    {
+      "conname": "universities_city_not_null",
+      "definition": "NOT NULL city",
+      "table_name": "universities"
+    },
+    {
+      "conname": "universities_name_city_state_uk",
+      "definition": "UNIQUE (university_name, city, state)",
+      "table_name": "universities"
+    },
+    {
+      "conname": "universities_pkey",
+      "definition": "PRIMARY KEY (university_id)",
+      "table_name": "universities"
+    },
+    {
+      "conname": "universities_state_not_null",
+      "definition": "NOT NULL state",
+      "table_name": "universities"
+    },
+    {
+      "conname": "universities_university_id_not_null",
+      "definition": "NOT NULL university_id",
+      "table_name": "universities"
+    },
+    {
+      "conname": "universities_university_name_not_null",
+      "definition": "NOT NULL university_name",
+      "table_name": "universities"
+    }
+  ],
+  "indexes": [
+    {
+      "indexdef": "CREATE UNIQUE INDEX catalog_departments_pkey ON public.catalog_departments USING btree (department_id)",
+      "indexname": "catalog_departments_pkey",
+      "tablename": "catalog_departments"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX catalog_departments_university_source_uk ON public.catalog_departments USING btree (university_id, official_source_id)",
+      "indexname": "catalog_departments_university_source_uk",
+      "tablename": "catalog_departments"
+    },
+    {
+      "indexdef": "CREATE INDEX idx_catalog_departments_university_id ON public.catalog_departments USING btree (university_id)",
+      "indexname": "idx_catalog_departments_university_id",
+      "tablename": "catalog_departments"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX course_corequisites_pair_uk ON public.course_corequisites USING btree (course_id, corequisite_course_id)",
+      "indexname": "course_corequisites_pair_uk",
+      "tablename": "course_corequisites"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX course_corequisites_pkey ON public.course_corequisites USING btree (id)",
+      "indexname": "course_corequisites_pkey",
+      "tablename": "course_corequisites"
+    },
+    {
+      "indexdef": "CREATE INDEX idx_course_corequisites_corequisite_course_id ON public.course_corequisites USING btree (corequisite_course_id)",
+      "indexname": "idx_course_corequisites_corequisite_course_id",
+      "tablename": "course_corequisites"
+    },
+    {
+      "indexdef": "CREATE INDEX idx_course_corequisites_course_id ON public.course_corequisites USING btree (course_id)",
+      "indexname": "idx_course_corequisites_course_id",
+      "tablename": "course_corequisites"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX course_departments_pair_uk ON public.course_departments USING btree (course_id, department_id)",
+      "indexname": "course_departments_pair_uk",
+      "tablename": "course_departments"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX course_departments_pkey ON public.course_departments USING btree (id)",
+      "indexname": "course_departments_pkey",
+      "tablename": "course_departments"
+    },
+    {
+      "indexdef": "CREATE INDEX idx_course_departments_department_id ON public.course_departments USING btree (department_id)",
+      "indexname": "idx_course_departments_department_id",
+      "tablename": "course_departments"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX course_prerequisites_pair_uk ON public.course_prerequisites USING btree (course_id, prerequisite_course_id)",
+      "indexname": "course_prerequisites_pair_uk",
+      "tablename": "course_prerequisites"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX course_prerequisites_pkey ON public.course_prerequisites USING btree (id)",
+      "indexname": "course_prerequisites_pkey",
+      "tablename": "course_prerequisites"
+    },
+    {
+      "indexdef": "CREATE INDEX idx_course_prerequisites_course_id ON public.course_prerequisites USING btree (course_id)",
+      "indexname": "idx_course_prerequisites_course_id",
+      "tablename": "course_prerequisites"
+    },
+    {
+      "indexdef": "CREATE INDEX idx_course_prerequisites_prerequisite_course_id ON public.course_prerequisites USING btree (prerequisite_course_id)",
+      "indexname": "idx_course_prerequisites_prerequisite_course_id",
+      "tablename": "course_prerequisites"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX courses_pkey ON public.courses USING btree (course_id)",
+      "indexname": "courses_pkey",
+      "tablename": "courses"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX courses_program_official_source_uk ON public.courses USING btree (program_id, official_source_id) WHERE (official_source_id IS NOT NULL)",
+      "indexname": "courses_program_official_source_uk",
+      "tablename": "courses"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX courses_program_source_sequence_uk ON public.courses USING btree (program_id, source_sequence) WHERE (source_sequence IS NOT NULL)",
+      "indexname": "courses_program_source_sequence_uk",
+      "tablename": "courses"
+    },
+    {
+      "indexdef": "CREATE INDEX idx_courses_course_code ON public.courses USING btree (course_code)",
+      "indexname": "idx_courses_course_code",
+      "tablename": "courses"
+    },
+    {
+      "indexdef": "CREATE INDEX idx_courses_program_id ON public.courses USING btree (program_id)",
+      "indexname": "idx_courses_program_id",
+      "tablename": "courses"
+    },
+    {
+      "indexdef": "CREATE INDEX idx_program_departments_department_id ON public.program_departments USING btree (department_id)",
+      "indexname": "idx_program_departments_department_id",
+      "tablename": "program_departments"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX program_departments_pair_uk ON public.program_departments USING btree (program_id, department_id)",
+      "indexname": "program_departments_pair_uk",
+      "tablename": "program_departments"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX program_departments_pkey ON public.program_departments USING btree (id)",
+      "indexname": "program_departments_pkey",
+      "tablename": "program_departments"
+    },
+    {
+      "indexdef": "CREATE INDEX idx_programs_university_id ON public.programs USING btree (university_id)",
+      "indexname": "idx_programs_university_id",
+      "tablename": "programs"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX programs_pkey ON public.programs USING btree (program_id)",
+      "indexname": "programs_pkey",
+      "tablename": "programs"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX programs_program_university_uk ON public.programs USING btree (program_id, university_id)",
+      "indexname": "programs_program_university_uk",
+      "tablename": "programs"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX programs_university_name_degree_uk ON public.programs USING btree (university_id, program_name, degree)",
+      "indexname": "programs_university_name_degree_uk",
+      "tablename": "programs"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX programs_university_official_source_uk ON public.programs USING btree (university_id, official_source_id) WHERE (official_source_id IS NOT NULL)",
+      "indexname": "programs_university_official_source_uk",
+      "tablename": "programs"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX universities_name_city_state_uk ON public.universities USING btree (university_name, city, state)",
+      "indexname": "universities_name_city_state_uk",
+      "tablename": "universities"
+    },
+    {
+      "indexdef": "CREATE UNIQUE INDEX universities_pkey ON public.universities USING btree (university_id)",
+      "indexname": "universities_pkey",
+      "tablename": "universities"
+    }
+  ],
+  "triggers": [],
+  "database_revision": "0014",
+  "local_migration_revisions": [
+    "0001",
+    "0002",
+    "0003",
+    "0004",
+    "0005",
+    "0006",
+    "0007",
+    "0008",
+    "0009",
+    "0010"
+  ]
+}

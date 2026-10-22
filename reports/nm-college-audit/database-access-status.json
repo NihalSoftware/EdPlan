@@ -1,0 +1,9 @@
+{
+  "status": "VERIFIED_READ_ONLY_SNAPSHOT",
+  "captured_at": "2026-10-22T06:15:08.307171+00:00",
+  "details": "Initial sandbox network access failed; approved read-only collection then succeeded. Offline reports use that snapshot.",
+  "transaction_read_only_at_start": "on",
+  "transaction_read_only_at_end": "on",
+  "database_mutations": 0,
+  "student_row_contents_accessed": false
+}

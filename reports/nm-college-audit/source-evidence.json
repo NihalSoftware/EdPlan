@@ -1,0 +1,223 @@
+{
+  "ccc": {
+    "additional_urls": [],
+    "catalog_year": "2026-2027",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "PDF cover and PDF page 3 state 2026-2027; landing current download link",
+    "notes": "Old PDF metadata title says 2013-2015 but document content establishes 2026-2027. Full curriculum not parsed.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://clovis.edu/publications/2026%20-%202027%20Course%20Catalog%20-%20August%2018%20Addendums.pdf",
+    "status": "PARTIAL"
+  },
+  "cnm": {
+    "additional_urls": [],
+    "catalog_year": "2026-2027",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Official catalog resources 2026-2027 PDF link; Volume 58 PDF",
+    "notes": "449-page PDF accessible. Selected program/course evidence checked; no exhaustive inventory reconciliation.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://www.cnm.edu/students/services/catalog-resources/documents/2026-2027-cnm-catalog-volume-58.pdf",
+    "status": "PARTIAL"
+  },
+  "dine": {
+    "additional_urls": [],
+    "catalog_year": "2026-2027",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Official Course Catalog landing current link; Tsaile/Shiprock institutional relationship text",
+    "notes": "Officially linked PDF filename includes MasterDraft: approval/finality needs human review. Tsaile is the administrative center; Shiprock is not a separate parent institution.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://www.dinecollege.edu/wp-content/uploads/2026/10/2026-27DC-Catalog_MasterDraft-9.10.26.pdf",
+    "status": "PARTIAL"
+  },
+  "enmu": {
+    "additional_urls": [
+      "https://www.enmu.edu/images/academics/catalogs/graduate-catalog.pdf"
+    ],
+    "catalog_year": "UG 2025-2027; graduate 2026-2028",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "UG PDF page 1/header; graduate PDF page 32/header",
+    "notes": "Both editions established from document contents. Old-looking UG filename is not the edition. Full program/course comparison not performed.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://www.enmu.edu/images/academics/catalogs/undergrad-catalog-19-21.pdf",
+    "status": "PARTIAL"
+  },
+  "iaia": {
+    "additional_urls": [],
+    "catalog_year": "2026-2027 (landing label)",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Current IAIA Catalog: NEW 2026-2027 link",
+    "notes": "Current edition explicitly listed. PDF retrieval failed; content comparison remains unverified.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://iaia.edu/admissions/college-catalog/",
+    "status": "PARTIAL"
+  },
+  "luna": {
+    "additional_urls": [],
+    "catalog_year": "2026-2027 (landing label)",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Luna Community College Catalogs list: Catalog 2026 2027",
+    "notes": "Year label established; dynamic document link/content not extracted, so full catalog remains unverified.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://luna.edu/resources/catalogs.php",
+    "status": "PARTIAL"
+  },
+  "mesalands": {
+    "additional_urls": [
+      "https://www.mesalands.edu/wp-content/uploads/MCC-Catalog-2025-2026-03-COM.pdf"
+    ],
+    "catalog_year": "2025-2026 indexed; current unverified",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Official-domain search index suggests 2025-2026 PDF; direct PDF fetch returns 404",
+    "notes": "Landing extraction lacks catalog body. Search-index evidence alone is not fresh source verification. Request current permitted PDF/export.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://www.mesalands.edu/o/mcc/page/catalog-schedules",
+    "status": "SOURCE_UNVERIFIED"
+  },
+  "nmhu": {
+    "additional_urls": [
+      "https://its.nmhu.edu/includes/onlinedocs/display.html?quicklink=8806"
+    ],
+    "catalog_year": "UG and graduate 2025-2026",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Official landing page University Catalogs, 2025-2026 heading and UG/graduate PDF links",
+    "notes": "Latest editions listed on the checked landing page. Both PDFs accessible; not exhaustively parsed.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://its.nmhu.edu/includes/onlinedocs/display.html?quicklink=8805",
+    "status": "PARTIAL"
+  },
+  "nmjc": {
+    "additional_urls": [],
+    "catalog_year": "2026-2027",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Current catalog homepage heading, linked from official college catalog landing",
+    "notes": "Online program/course catalog navigation is accessible. Full curriculum not enumerated.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://catalog.nmjc.edu/",
+    "status": "PARTIAL"
+  },
+  "nmmi": {
+    "additional_urls": [
+      "https://nmmi.catalog.acalog.com/"
+    ],
+    "catalog_year": "UNVERIFIED",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Registrar Course Catalog link to nmmi.catalog.acalog.com",
+    "notes": "Official registrar identity/location established; catalog host retrieval failed. DB records label 2026-2027 but this is not independent source-year verification.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://www.nmmi.edu/academics/registrars-office/",
+    "status": "SOURCE_BLOCKED"
+  },
+  "nmsu": {
+    "additional_urls": [],
+    "catalog_year": "UNVERIFIED",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Requested Las Cruces catalog root",
+    "notes": "Automated response requires JavaScript robot verification. Not bypassed. Main-campus year/content not established in this audit.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://catalogs.nmsu.edu/nmsu/",
+    "status": "SOURCE_BLOCKED"
+  },
+  "nmt": {
+    "additional_urls": [
+      "https://catalog.nmt.edu/institute-reqs/nmt-degrees"
+    ],
+    "catalog_year": "2026-2027",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Catalog homepage edition heading; Degrees Offered page",
+    "notes": "Programs page uses dynamic labels. Official homepage also warns about transcription/errata; do not resolve conflicts by ignoring that notice.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://catalog.nmt.edu/",
+    "status": "PARTIAL"
+  },
+  "nnmc": {
+    "additional_urls": [],
+    "catalog_year": "UNVERIFIED",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Requested catalog root",
+    "notes": "HTTP 403. Existing DB source years are reported separately; not used to invent latest official edition.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://catalog.nnmc.edu/",
+    "status": "SOURCE_BLOCKED"
+  },
+  "ntu": {
+    "additional_urls": [
+      "https://www.navajotech.edu/wp-content/uploads/2026/01/2025-2026_Graduate-Catalog-Update_4-18-2025.pdf"
+    ],
+    "catalog_year": "UG 2026-2027; graduate 2025-2026",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Official Policies+Docs catalog links; UG contents academic-year line",
+    "notes": "UG and graduate editions differ and must not be silently combined. Full inventory comparison not performed.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://www.navajotech.edu/wp-content/uploads/2026/08/2026-27-UndergraduateCatalog-080326.pdf",
+    "status": "PARTIAL"
+  },
+  "senmc": {
+    "additional_urls": [
+      "https://catalog.senmc.edu/programs"
+    ],
+    "catalog_year": "2026-2027",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Current catalog homepage edition; Programs page",
+    "notes": "Institution is independent, not NMSU-Carlsbad. Dynamic Programs extraction has no inventory rows; not evidence of zero programs.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://catalog.senmc.edu/",
+    "status": "PARTIAL"
+  },
+  "sfcc": {
+    "additional_urls": [
+      "https://catalog.sfcc.edu/"
+    ],
+    "catalog_year": "UNVERIFIED",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Official college catalog landing",
+    "notes": "HTTP 403. Historical project data is not treated as latest catalog evidence.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://www.sfcc.edu/college-catalog/",
+    "status": "SOURCE_BLOCKED"
+  },
+  "sipi": {
+    "additional_urls": [
+      "https://4.files.edl.io/7ff9/03/31/23/211213-e5d9e017-643b-4826-af53-95d0faae23c6.pdf"
+    ],
+    "catalog_year": "2026-2027",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Official page navigation Academic Catalog link; current PDF pages 2 and 4",
+    "notes": "Body still links 2023-2024, but navigation links 2026-2027 PDF. Current PDF explicitly effective July 1 2026 to June 30 2027. Official name is Southwestern, not stored Southwest.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://4.files.edl.io/5a02/08/05/26/202024-20015adf-0052-4850-bffb-b464a67a8f78.pdf",
+    "status": "PARTIAL"
+  },
+  "sjc": {
+    "additional_urls": [],
+    "catalog_year": "UNVERIFIED",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Catalog root",
+    "notes": "HTTP 403. No claim about official program absence or current edition.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://catalog.sanjuancollege.edu/",
+    "status": "SOURCE_BLOCKED"
+  },
+  "unm": {
+    "additional_urls": [],
+    "catalog_year": "2026-2027",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "UNM 2026-2027 Catalog homepage heading",
+    "notes": "Edition established; rendered extraction lacks complete program navigation. No full curriculum comparison.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://catalog.unm.edu/",
+    "status": "PARTIAL"
+  },
+  "wnmu": {
+    "additional_urls": [
+      "https://catalog.wnmu.edu/content.php?catoid=8&navoid=612",
+      "https://catalog.wnmu.edu/preview_program.php?catoid=8&poid=2776&returnto=612"
+    ],
+    "catalog_year": "2025-2026",
+    "collection_method": "bounded official public web-tool reads; cached WNMU fixtures separately dated",
+    "location": "Registrar landing current catalog label; cached 2026-10-16 public DOM index and pharmacy curriculum",
+    "notes": "Registrar still labels 2025-2026 current. Cached 234-entry index and 16-course Pharmacy roster compared with explicit capture dates; not newly recrawled course rules. Existing robots delay 120 seconds, no bulk crawl.",
+    "observed_at": "2026-10-22; exact HTTP retrieval time not exposed by web tool",
+    "resolved_url": "https://registrar.wnmu.edu/university-catalogs/",
+    "status": "PARTIAL"
+  }
+}

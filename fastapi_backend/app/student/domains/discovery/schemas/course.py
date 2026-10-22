@@ -13,8 +13,8 @@ class CourseSummary(BaseModel):
     course_name: str
     name: str | None = None
     credits: int
-    lecture_hours: int = 0
-    lab_hours: int = 0
+    lecture_hours: float | None = None
+    lab_hours: float | None = None
     recommended_year: int | None = None
     year: int | str | None = None
     recommended_semester: str | None = None

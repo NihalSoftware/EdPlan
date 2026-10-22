@@ -39,3 +39,4 @@ target/
 .DS_Store
 intake_submissions.json
 ChatbotUI/artifacts/
+fastapi_backend/artifacts/

@@ -1,0 +1,97 @@
+{
+  "source_url": "https://catalog.wnmu.edu/content.php?catoid=8&navoid=612",
+  "retrieved_at": "2026-10-16T08:12:00+00:00",
+  "capture_method": "visible_public_browser_dom_projection",
+  "catalog": "2025-2026 Catalog",
+  "observed_link_count": 234,
+  "observed_unique_program_ids": 234,
+  "link_template": "https://catalog.wnmu.edu/preview_program.php?catoid=8&poid={poid}&returnto=612",
+  "all_links_conform_to_template": true,
+  "units": [
+    ["ent299", "Academic Affairs", []],
+    ["ent300", "Department of Extended University and Online Learning", []],
+    ["ent301", "Department of Community & Workforce Development", [
+      ["Fast Track Certificate", [["2796", "Arboriculture and Urban Forestry Fast Track Certificate (Pending Approval)"], ["2785", "Construction Technology Framing & Drywall Basics Fast Track Certificate"], ["2546", "Electrical Technology Fast Track Certificate"], ["2784", "Electrical Technology Introduction to Basics Fast Track Certificate"], ["2554", "Welding Technology Fast Track Certificate"]]],
+      ["Certificate", [["2544", "Construction Technology Certificate"], ["2547", "Electrical Technology Certificate"], ["2776", "Pharmacy Technician Certificate"], ["2555", "Welding Technology Certificate"]]],
+      ["Associate", [["2545", "Construction Technology, A.A.S."], ["2548", "Electrical Technology, A.A.S."], ["2556", "Welding Technology, A.A.S."]]]
+    ]],
+    ["ent302", "Department of Expressive Arts", [
+      ["Associate", [["2752", "Graphic Design, A.A."], ["2558", "Graphic Design, A.A.S."]]],
+      ["Bachelor", [["2561", "Art, B.A."], ["2562", "Art, B.S."], ["2557", "Fine Arts, B.F.A."]]],
+      ["Minors", [["2559", "Art Minor"], ["2560", "Music Minor"]]]
+    ]],
+    ["ent303", "Department of Humanities", [
+      ["Bachelor", [["2563", "English, B.A."], ["2564", "English, B.S."], ["2565", "Sustainable Development, B.A."], ["2566", "Sustainable Development, B.S."]]],
+      ["Graduate Certificate", [["2790", "Philosophy Graduate Certificate"]]],
+      ["Minors", [["2568", "Communication Studies Minor"], ["2569", "English Minor"], ["2570", "Philosophy Minor"], ["2571", "Sustainable Development Minor"]]],
+      ["Other Programs", [["2567", "Teacher Licensure"]]]
+    ]],
+    ["ent304", "Department of Interdisciplinary Studies", [
+      ["Certificate", [["2691", "New Mexico Transfer-Ready Certificate"]]],
+      ["Associate", [["2690", "Applied Liberal Arts and Sciences, A.A."]]],
+      ["Bachelor", [["2689", "Interdisciplinary Studies, B.I.S."]]],
+      ["Master", [["2721", "Interdisciplinary Studies, M.A."]]],
+      ["Graduate Certificate", [["2722", "Art, Graduate Certificate"], ["2723", "Biology, Graduate Certificate"], ["2724", "Chemical Dependency Counseling, Graduate Certificate"], ["2746", "Criminal Justice, Graduate Certificate"], ["2726", "English, Graduate Certificate"], ["2728", "Kinesiology, Graduate Certificate"], ["2729", "Mathematics, Graduate Certificate"], ["2730", "Political Science, Graduate Certificate"], ["2731", "Psychology, Graduate Certificate"], ["2732", "Writing Graduate Certificate"]]]
+    ]],
+    ["ent305", "Department of Math & Computer Science", [
+      ["Associate", [["2574", "Mathematics - Pre-Engineering, A.S."]]],
+      ["Bachelor", [["2572", "Mathematics, B.A."], ["2573", "Mathematics, B.S."]]],
+      ["Minors", [["2575", "Computer Science Minor"], ["2576", "Mathematics Minor"]]]
+    ]],
+    ["ent306", "Department of Natural Sciences", [
+      ["Fast Track Certificate", [["2787", "Outdoor Leadership Fast Track Certificate"], ["2761", "Wildland Fire Science, Fast Track Certificate"]]],
+      ["Certificate", [["2767", "Geographic Information System Science, Certificate"], ["2762", "Wildland Fire Science, Certificate"]]],
+      ["Associate", [["2764", "Wildland Fire Science, A.A."], ["2763", "Wildland Fire Science, A.S."]]],
+      ["Bachelor", [["2577", "Biology, B.A."], ["2578", "Biology, B.S."], ["2579", "Botany, B.A."], ["2580", "Botany, B.S."], ["2581", "Cell and Molecular Biology, B.A."], ["2582", "Cell and Molecular Biology, B.S."], ["2583", "Chemistry, B.A."], ["2584", "Chemistry, B.S."], ["2587", "Forest Wildlife Law Enforcement, B.A.S"], ["2585", "Forest Wildlife, B.A."], ["2586", "Forest Wildlife, B.S."], ["2588", "General Science, B.A."], ["2589", "General Science, B.S."], ["2590", "Medical Technology (Laboratory Science), B.S."], ["2591", "Science Education, B.A."], ["2592", "Science Education, B.S."], ["2593", "Sustainable Development, B.A."], ["2594", "Sustainable Development, B.S."], ["2595", "Zoology, B.A."], ["2596", "Zoology, B.S."]]],
+      ["Graduate Certificate", [["2788", "Geographic Information System Science, Graduate Certificate"]]],
+      ["Minors", [["2597", "Biology Minor"], ["2598", "Botany Minor"], ["2599", "Cell and Molecular Biology Minor"], ["2600", "Chemistry Minor"], ["2753", "Earth and Environmental Science, Minor"], ["2601", "Geographic Informations Systems Minor"], ["2603", "Outdoor Leadership Studies Minor"], ["2604", "Sustainable Development Minor"], ["2605", "Zoology Minor"]]]
+    ]],
+    ["ent307", "Department of Social Science & Cultural Studies", [
+      ["Bachelor", [["2608", "History, B.A."], ["2609", "History, B.S."], ["2754", "Political Science, BA"], ["2755", "Political Science, BS"], ["2610", "Social Science, B.A."], ["2611", "Social Science, B.S."], ["2612", "Sociology, B.A."], ["2613", "Sociology, B.S."], ["2606", "Sustainable Development, B.A."], ["2607", "Sustainable Development, B.S."]]],
+      ["Master", [["2756", "History, M.A."]]],
+      ["Graduate Certificate", [["2727", "History, Graduate Certificate"], ["2783", "Latin American and Latinx (LALS) and Ethnic Studies, Graduate Certificate"], ["2780", "Sociology Graduate Certificate"]]],
+      ["Minors", [["2614", "American Indian Studies Minor"], ["2619", "Ethnic Studies Minor"], ["2616", "Geography Minor"], ["2617", "History Minor"], ["2618", "Latin American Studies Minor"], ["2620", "Political Science Minor"], ["2748", "Social Justice, Minor"], ["2621", "Sociology Minor"], ["2615", "Sustainable Development Minor"], ["2622", "Women, Gender and Sexuality Studies Minor"]]]
+    ]],
+    ["ent292", "College of Education", [
+      ["Fast Track Certificate", [["2789", "Yoga Teacher Training Fast-Track Certificate Program"]]],
+      ["Certificate", [["2772", "Chemical Dependency Counseling, Certificate"]]],
+      ["Associate", [["2658", "Early Childhood Education and Family Support, A.A."], ["2656", "Teacher Education in Elementary/Special, A.S."], ["2657", "Teacher Education Secondary, A.A."]]],
+      ["Bachelor", [["2637", "Career and Technical Education, B.A.S"], ["2638", "Early Childhood Care and Education, B.A. (Non-licensure)"], ["2639", "Early Childhood Care and Education, B.S. - (Non-Licensure)"], ["2640", "Early Childhood Education, B.S."], ["2641", "Elementary Education, B.S."], ["2778", "Elementary Education/Bilingual Education, B.S. (3/2 Program)"], ["2642", "Instructional Technology Design, B.A."], ["2643", "Instructional Technology Design, B.S."], ["2644", "Physical Education, B.S."], ["2660", "Rehabilitation Services, B.A.S"], ["2653", "Secondary Education and Science Education, B.A."], ["2654", "Secondary Education and Science Education, B.S."], ["2645", "Secondary Education, B.A."], ["2646", "Secondary Education, B.S."], ["2647", "Special Education, B.S."], ["2765", "Special Education, B.S. (3/2 Program)"], ["2648", "Teaching and Learning, B.A."], ["2649", "Teaching and Learning, B.S."]]],
+      ["Master", [["2694", "Counseling, M.C."], ["2760", "Early Childhood Education: Trauma-Informed Practices, M.A."], ["2695", "Educational Leadership, M.A."], ["2696", "Teaching - Elementary Education, M.A.T. (Initial Licensure)"], ["2699", "Teaching - Reading Education, M.A.T."], ["2697", "Teaching - Secondary Education, M.A.T. (Initial Licensure)"], ["2766", "Teaching - Special Education M.A.T./B.S. 3+2"], ["2698", "Teaching - Special Education, M.A.T. (Initial Licensure)"], ["2700", "Teaching - Special Education, M.A.T. (Specialization)"], ["2701", "Teaching - Specialization, M.A.T."]]],
+      ["Graduate Alternative Licensure", [["2702", "New Mexico Alternative Teaching - Early Childhood Graduate Certificate"], ["2703", "New Mexico Alternative Teaching - Elementary Graduate Certificate"], ["2704", "New Mexico Alternative Teaching - Secondary Graduate Certificate"], ["2705", "New Mexico Alternative Teaching - Special Education Graduate Certificate"]]],
+      ["Graduate Certificate", [["2758", "Bilingual Education, Graduate Certificate"], ["2771", "Dyslexia Graduate Certificate"], ["2706", "Educational Leadership Graduate Certificate"], ["2745", "Gifted Education, Graduate Certificate"], ["2791", "Infant and Early Childhood Mental Health, Graduate Certificate"], ["2707", "Instructional Design Graduate Certificate"], ["2708", "Instructional Technology Coach Graduate Certificate"], ["2759", "Rehabilitation Counseling, Graduate Certificate"], ["2757", "Special Education, Graduate Certificate"], ["2711", "Teaching English to Speakers of Other Languages TESOL Graduate Certificate"], ["2709", "Teaching Online Graduate Certificate"], ["2710", "Technology Coordinator Graduate Certificate"]]],
+      ["Concentrations", [["2655", "Art Education - Teaching Field (Elementary Only)"], ["2733", "Art Education Teaching Field - (Secondary Only)"], ["2734", "Bilingual Education - Teaching Field"], ["2735", "Business Administration - Teaching Field"], ["2741", "General Science - Teaching Field"], ["2736", "Health Science Education - Teaching Field"], ["2737", "Language Arts - Teaching Field"], ["2738", "Mathematics - Teaching Field"], ["2739", "Psychology - Teaching Field"], ["2740", "Reading - Teaching Field"], ["2743", "Teaching English to Speakers of Other Languages TESOL - Teaching Field"]]],
+      ["Minors", [["2661", "Applied Spanish Minor"], ["2664", "Behavioral Health Minor"], ["2674", "Chemical Dependency Counseling Minor"], ["2663", "Coaching Minor"], ["2662", "Early Childhood Education and Family Support Minor"], ["2769", "Education Minor"], ["2770", "Health Science Education Minor"], ["2665", "Rehabilitation Services Minor"], ["2749", "Special Education Minor"], ["2666", "TESOL Minor"]]],
+      ["Vocational Certificate", [["2659", "Early Childhood Education and Family Support Vocational Certificate"]]],
+      ["Teaching Fields", [["2747", "Gifted Education, Teaching Field"], ["2742", "Social Studies - Teaching Field"], ["2744", "Technical Studies - Teaching Field"]]]
+    ]],
+    ["ent308", "Department of Behavioral Sciences", [
+      ["Certificate", [["2673", "Law Enforcement Training Certificate"]]],
+      ["Associate", [["2672", "Criminal Justice, A.S."]]],
+      ["Bachelor", [["2669", "Criminal Justice, B.S."], ["2670", "Psychology, B.A."], ["2671", "Psychology, B.S."]]],
+      ["Graduate Certificate", [["2714", "Border Security Graduate Certificate"], ["2715", "Digital Forensics Graduate Certificate"]]],
+      ["Minors", [["2675", "Criminal Justice Minor"], ["2676", "Criminal Psychology Minor"], ["2677", "Digital Forensics Minor"], ["2678", "Pre-Law Minor"], ["2679", "Psychology Minor"]]]
+    ]],
+    ["ent293", "School of Business", [
+      ["Fast Track Certificate", [["2775", "International Commerce and Trade Undergraduate Fast Track Certificate"]]],
+      ["Associate", [["2629", "Business Administration, A.S."]]],
+      ["Bachelor", [["2623", "Accounting, B.B.A."], ["2626", "General Business, B.A.S"], ["2624", "Management, B.B.A."], ["2625", "Marketing, B.B.A."], ["2627", "Sustainable Development, B.A."], ["2628", "Sustainable Development, B.S."]]],
+      ["Master", [["2692", "Business Administration, M.B.A."]]],
+      ["Graduate Certificate", [["2693", "Management Information Systems Graduate Certificate"], ["2782", "Marketing Graduate Certificate"]]],
+      ["Minors", [["2630", "Accounting Minor"], ["2631", "Business Administration Minor"], ["2632", "Economics Minor"], ["2633", "Entrepreneurship Minor"], ["2773", "Finance Minor"], ["2751", "Human Resource Management, Minor"], ["2774", "International Commerce and Trade Minor"], ["2634", "Marketing Minor"], ["2635", "Public Administration Minor"], ["2636", "Sustainable Development Minor"]]]
+    ]],
+    ["ent294", "School of Nursing & Kinesiology", [
+      ["Bachelor", [["2680", "Kinesiology, B.A."], ["2681", "Kinesiology, B.S."], ["2686", "Pre-Licensure, B.S.N."], ["2685", "Pre-Licensure, B.S.N. (NMNEC Curriculum)"] , ["2684", "RN to BSN, B.S.N."]]],
+      ["Master", [["2712", "Community & Rural/Frontier Health, M.S.N."]]],
+      ["Graduate Certificate", [["2713", "Family Nurse Practitioner Graduate Certificate"]]],
+      ["Minors", [["2750", "Gerontology Minor"], ["2682", "Kinesiology Minor"], ["2683", "Sports Management Minor"]]]
+    ]],
+    ["ent309", "School of Social Work", [
+      ["Associate", [["2688", "Human Services, A.A."]]],
+      ["Bachelor", [["2687", "Social Work, B.S.W"]]],
+      ["Master", [["2716", "Social Work - Advanced Standing, M.S.W."], ["2717", "Social Work - Non-Advanced Standing, M.S.W."]]],
+      ["Graduate Certificate", [["2768", "Ecotherapy, Graduate Certificate"], ["2718", "Rural Community Social Work Services Graduate Certificate"], ["2719", "School Social Work, Graduate Certificate"], ["2720", "Social Work Services to Military Families Graduate Certificate"]]]
+    ]]
+  ],
+  "universityPrograms": [["2543", "General Education"]]
+}

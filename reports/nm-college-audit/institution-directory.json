@@ -1,0 +1,22 @@
+[
+  {"key":"enmu","name":"Eastern New Mexico University","aliases":["Eastern New Mexico University-Portales"],"domains":["enmu.edu"],"city":"Portales","category":"public_four_year","landing_url":"https://www.enmu.edu/academics/academic-resources-services/catalogs-schedules-calendars/catalogs"},
+  {"key":"nmhu","name":"New Mexico Highlands University","aliases":[],"domains":["nmhu.edu"],"city":"Las Vegas","category":"public_four_year","landing_url":"https://www.nmhu.edu/catalog/"},
+  {"key":"nmt","name":"New Mexico Institute of Mining and Technology","aliases":["New Mexico Tech","NM Tech"],"domains":["nmt.edu"],"city":"Socorro","category":"public_four_year","landing_url":"https://catalog.nmt.edu/"},
+  {"key":"nmsu","name":"New Mexico State University","aliases":["New Mexico State University-Las Cruces"],"domains":["nmsu.edu"],"city":"Las Cruces","category":"public_four_year","landing_url":"https://catalogs.nmsu.edu/nmsu/"},
+  {"key":"nnmc","name":"Northern New Mexico College","aliases":[],"domains":["nnmc.edu"],"city":"Española","category":"public_four_year","landing_url":"https://catalog.nnmc.edu/"},
+  {"key":"unm","name":"University of New Mexico","aliases":["University of New Mexico-Main Campus","University of New Mexico-Albuquerque"],"domains":["unm.edu"],"city":"Albuquerque","category":"public_four_year","landing_url":"https://catalog.unm.edu/"},
+  {"key":"wnmu","name":"Western New Mexico University","aliases":[],"domains":["wnmu.edu"],"city":"Silver City","category":"public_four_year","landing_url":"https://registrar.wnmu.edu/university-catalogs/"},
+  {"key":"cnm","name":"Central New Mexico Community College","aliases":[],"domains":["cnm.edu"],"city":"Albuquerque","category":"independent_public","landing_url":"https://www.cnm.edu/students/services/catalog-resources"},
+  {"key":"ccc","name":"Clovis Community College","aliases":[],"domains":["clovis.edu"],"city":"Clovis","category":"independent_public","landing_url":"https://clovis.edu/publications/index.aspx"},
+  {"key":"luna","name":"Luna Community College","aliases":[],"domains":["luna.edu"],"city":"Las Vegas","category":"independent_public","landing_url":"https://luna.edu/resources/catalogs.php"},
+  {"key":"mesalands","name":"Mesalands Community College","aliases":[],"domains":["mesalands.edu"],"city":"Tucumcari","category":"independent_public","landing_url":"https://www.mesalands.edu/o/mcc/page/catalog-schedules"},
+  {"key":"nmjc","name":"New Mexico Junior College","aliases":[],"domains":["nmjc.edu"],"city":"Hobbs","category":"independent_public","landing_url":"https://www.nmjc.edu/resource_service/catalog/index.aspx"},
+  {"key":"nmmi","name":"New Mexico Military Institute","aliases":[],"domains":["nmmi.edu"],"city":"Roswell","category":"independent_public","landing_url":"https://www.nmmi.edu/academics/registrars-office/"},
+  {"key":"sjc","name":"San Juan College","aliases":[],"domains":["sanjuancollege.edu"],"city":"Farmington","category":"independent_public","landing_url":"https://catalog.sanjuancollege.edu/"},
+  {"key":"sfcc","name":"Santa Fe Community College","aliases":[],"domains":["sfcc.edu"],"city":"Santa Fe","category":"independent_public","landing_url":"https://www.sfcc.edu/college-catalog/"},
+  {"key":"senmc","name":"Southeast New Mexico College","aliases":[],"domains":["senmc.edu"],"city":"Carlsbad","category":"independent_public","landing_url":"https://catalog.senmc.edu/"},
+  {"key":"dine","name":"Diné College","aliases":["Dine College"],"domains":["dinecollege.edu"],"city":"Tsaile","state":"Arizona","nm_service_location":"Shiprock","category":"tribal","landing_url":"https://www.dinecollege.edu/admissions/course-catalog/"},
+  {"key":"iaia","name":"Institute of American Indian Arts","aliases":[],"domains":["iaia.edu"],"city":"Santa Fe","category":"tribal","landing_url":"https://iaia.edu/admissions/college-catalog/"},
+  {"key":"ntu","name":"Navajo Technical University","aliases":[],"domains":["navajotech.edu"],"city":"Crownpoint","category":"tribal","landing_url":"https://www.navajotech.edu/faculty-staff/policies-docs/"},
+  {"key":"sipi","name":"Southwestern Indian Polytechnic Institute","aliases":["Southwest Indian Polytechnic Institute"],"domains":["sipi.edu"],"city":"Albuquerque","category":"tribal","landing_url":"https://www.sipi.edu/apps/pages/Catalog"}
+]

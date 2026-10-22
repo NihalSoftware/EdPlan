@@ -1,0 +1,144 @@
+{
+  "catalog_year": "2026-2027",
+  "kind": "program",
+  "record": {
+    "_id": "MS-BIOLOGY-2026-06-08",
+    "catalogDescription": "",
+    "catalogDisplayName": "M.S. in Biology",
+    "catalogFullDescription": "",
+    "code": "MS-BIOLOGY",
+    "degreeDesignation": "Master of Science",
+    "degreeDesignations": [],
+    "degreeMaps": [],
+    "departments": [
+      "BIOL"
+    ],
+    "description": "",
+    "effectiveEndDate": null,
+    "effectiveStartDate": "2026-06-08",
+    "id": "MS-BIOLOGY-2026-06-08",
+    "information": "<p>The master’s candidate must demonstrate competence in mathematics, chemistry, and physics comparable to New Mexico Tech’s Bachelor of Science in Biology.   In addition to the general degree requirements for the Master of Science degree at New Mexico Tech, all Biology MS students must take BIOL 5079 and BIOL 5082 during the first year of graduate study.  For courses listed at both the 4000 and 5000 level, graduate students should enroll in the 5000 level course.</p>",
+    "learningOutcomes": [
+      {
+        "activity": "",
+        "assessment": "",
+        "justification": "",
+        "name": "",
+        "objective": "1. Use basic principles and advanced knowledge of science to analyze, explain, and apply biological information and concepts.",
+        "tags": []
+      },
+      {
+        "activity": "",
+        "assessment": "",
+        "justification": "",
+        "name": "",
+        "objective": "2.  Design and implement a biological research project",
+        "tags": []
+      },
+      {
+        "activity": "",
+        "assessment": "",
+        "justification": "",
+        "name": "",
+        "objective": "3.  Effectively communicate scientific findings orally and in writing",
+        "tags": []
+      }
+    ],
+    "level": "Graduate",
+    "longName": "Master of Science in Biology",
+    "name": "MS-Biology",
+    "notes": "",
+    "programGroupId": "MS-BIOLOGY",
+    "requirementLevels": [],
+    "requisites": {
+      "requisitesAdvanced": [],
+      "requisitesFreeform": {},
+      "requisitesSimple": [
+        {
+          "id": "pcfZELJb",
+          "name": "Narrative Text",
+          "notes": "<h3>Master of Science in Biology </h3><p></p><p>The master’s candidate must demonstrate competence in mathematics, chemistry, and physics comparable to New Mexico Tech’s Bachelor of Science in Biology.    In addition to the general degree requirements for the Master of Science degree at New Mexico Tech, all Biology MS students must take BIOL 5079 and BIOL 5082 during the first year of graduate study.  For courses listed at both the 4000 and 5000 level, graduate students should enroll in the 5000 level course.</p><p>In addition, the following option-specific requirements must be met:</p>",
+          "position": 0,
+          "requirementLevel": "subplan",
+          "rules": [],
+          "showInCatalog": true,
+          "sisId": "",
+          "type": "Narrative Text"
+        },
+        {
+          "id": "HN2jqiFr",
+          "name": "Master of Science in Biology Options :",
+          "planCode": "MS-Biology-BCHM",
+          "position": 1,
+          "requirementLevel": "subplan",
+          "rules": [
+            {
+              "condition": "freeformText",
+              "description": "<p>● Completion of at least 6 credit hours of 5000-level biology coursework other than thesis, directed study, independent study, or seminar.</p><p>● Completion of 1 credit hour of BIOL 5001, Graduate Seminar.</p>",
+              "id": "hj5ToSfx",
+              "name": "Thesis Option:"
+            },
+            {
+              "condition": "freeformText",
+              "description": "<p>●Completion of at least 12 additional credit hours of 5000-level Biology coursework other than thesis, directed study, independent study, or seminar. </p><p>●Completion of 1 credit hour of BIOL 5001, Graduate seminar in Biology. </p><p>●Completion of 3 credit hours of BIOL 5090, Independent study.</p>",
+              "id": "cV1jKTRR",
+              "name": "Independent Study Option"
+            }
+          ],
+          "showInCatalog": true,
+          "sisId": "",
+          "type": "Completion Requirement"
+        },
+        {
+          "id": "PqCX5Srm",
+          "name": "Master of Science General Requirements",
+          "notes": "<p>See the Master of Science information found in the Graduate section of the catalog at <strong><u><a href=\"/pages/WFOTDxMelvcGqZm50od2\" class=\"custom-link\" data-page-id=\"WFOTDxMelvcGqZm50od2\" data-sub-page-id=\"3\" data-catalog-id=\"hiB9GCiWYjvczmaaoHvX\">Master of Science Degree</a>.</u></strong></p>",
+          "requirementLevel": "instituteGeneralEducationRequirements",
+          "rules": [],
+          "showInCatalog": true,
+          "sisId": "",
+          "type": "Completion Requirement"
+        },
+        {
+          "id": "tsU6nPWT",
+          "name": "Narrative Text",
+          "notes": "<p>Most Master Degrees at NMT require some out of department course electives, see the Graduate Office or an Academic Advisor for clarification or for additional information.</p>",
+          "requirementLevel": "instituteGeneralEducationRequirements",
+          "rules": [],
+          "showInCatalog": true,
+          "sisId": "",
+          "type": "Narrative Text"
+        }
+      ]
+    },
+    "specializations": [
+      {
+        "cipCode": "",
+        "code": "MS-Biology-BCHM",
+        "defaultOfRequirementTerm": "",
+        "diplomaDescription": "",
+        "effectiveStartDate": "2023-06-05",
+        "firstTermValid": "",
+        "hegisCode": "",
+        "lastAdmitTerm": "",
+        "lastProspectDate": "",
+        "longName": "Master of Science in Biology with Specialization in Biochemistry",
+        "name": "Specialization in Biochemistry",
+        "showInCatalog": true,
+        "status": "Active",
+        "transcriptDescription": "",
+        "transcriptLevel": "",
+        "type": "Specialization"
+      }
+    ],
+    "type": ""
+  },
+  "source": {
+    "resolved_url": "https://catalog.nmt.edu/programs/MS-BIOLOGY",
+    "retrieved_at": "2026-10-15T12:00:38.801398+00:00",
+    "sha256": "a79b542967ce44627ca8f306b5751d9455d4b9f934748868861873791a338ec8",
+    "source_type": "official_html",
+    "status": 200,
+    "url": "https://catalog.nmt.edu/programs/MS-BIOLOGY"
+  }
+}

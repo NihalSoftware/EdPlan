@@ -1,0 +1,33 @@
+{
+  "capture_method": "visible_public_browser_dom_projection",
+  "retrieved_at": "2026-10-16T09:05:30+00:00",
+  "source_url": "https://catalog.wnmu.edu/preview_program.php?catoid=8&poid=2776&returnto=612",
+  "catalog_year": "2025-2026",
+  "official_source_id": "catoid=8:poid=2776",
+  "official_name": "Pharmacy Technician Certificate",
+  "degree": "Certificate",
+  "department_source_id": "catoid=8:ent301",
+  "total_credit_hours": 46,
+  "supporting_credit_hours": 13,
+  "core_credit_hours": 33,
+  "course_details_complete": false,
+  "requirements_structure": "all_listed_courses_required_no_alternatives_in_program_page",
+  "courses": [
+    {"coid": "20808", "code": "ENGL 1110", "name": "Composition I", "credits": 3, "section": "Supporting Coursework (13 credit hours)"},
+    {"coid": "21028", "code": "MATH 1130", "name": "Survey of Mathematics", "credits": 3, "section": "Supporting Coursework (13 credit hours)"},
+    {"coid": "20536", "code": "CHEM 1120", "name": "Introduction to Chemistry", "credits": 3, "section": "Supporting Coursework (13 credit hours)"},
+    {"coid": "20540", "code": "CHEM 1120L", "name": "Introduction to Chemistry Laboratory", "credits": 1, "section": "Supporting Coursework (13 credit hours)"},
+    {"coid": "20662", "code": "COMM 1130", "name": "Public Speaking", "credits": 3, "section": "Supporting Coursework (13 credit hours)"},
+    {"coid": "22113", "code": "PT 2010", "name": "Pharmacy Tech Professionalism", "credits": 3, "section": "Pharmacy Technician Core Requirements"},
+    {"coid": "22114", "code": "PT 1011", "name": "Intro to Pharmacy Technician", "credits": 3, "section": "Pharmacy Technician Core Requirements", "level_of_study": "UG", "description": "Introduces the work of pharmacy technicians and the context in which a technician’s work is performed emphasizing the history of pharmacy, roles within the pharmacy, professional organizations, state and federal laws, ethics, and professional standards of practice."},
+    {"coid": "22120", "code": "PT 1130", "name": "Billing & Inventory for Pharmacy Technicians", "credits": 3, "section": "Pharmacy Technician Core Requirements"},
+    {"coid": "22119", "code": "PT 1792", "name": "Compounding Basics for Pharmacy Technicians", "credits": 3, "section": "Pharmacy Technician Core Requirements"},
+    {"coid": "22122", "code": "PT 1316", "name": "Pharmacology for Technicians I", "credits": 3, "section": "Pharmacy Technician Core Requirements"},
+    {"coid": "22123", "code": "PT 1716", "name": "Pharmacology for Technicians II", "credits": 3, "section": "Pharmacy Technician Core Requirements"},
+    {"coid": "22115", "code": "PT 2016", "name": "Pharmacology for Technicians III", "credits": 3, "section": "Pharmacy Technician Core Requirements"},
+    {"coid": "22121", "code": "PT 2515", "name": "Medication Safety and Interactions", "credits": 3, "section": "Pharmacy Technician Core Requirements"},
+    {"coid": "22117", "code": "PT 1003", "name": "Pharmacy Calculations", "credits": 3, "section": "Pharmacy Technician Core Requirements"},
+    {"coid": "22118", "code": "PT 1710", "name": "Intermediate Pharmacy Technician", "credits": 3, "section": "Pharmacy Technician Core Requirements"},
+    {"coid": "22116", "code": "PT 2090", "name": "Pharmacy Technician Internship", "credits": 3, "section": "Pharmacy Technician Core Requirements"}
+  ]
+}

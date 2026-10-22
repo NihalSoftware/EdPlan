@@ -28,6 +28,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+catalog = ["pypdf>=5.0.0"]
 dev = [
   "black>=24.10.0",
   "ruff>=0.7.3",

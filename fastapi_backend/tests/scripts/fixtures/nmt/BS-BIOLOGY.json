@@ -1,0 +1,1296 @@
+{
+  "catalog_year": "2026-2027",
+  "kind": "program",
+  "record": {
+    "_id": "BS-BIOLOGY-2026-06-08",
+    "catalogDescription": "The Biology program prepares undergraduate students for graduate education in the allied health professions and in specialized fields of the biological sciences.",
+    "catalogDisplayName": "B.S. in Biology",
+    "catalogFullDescription": "<p><strong>B.S. in Biology</strong></p><p>Program Description:</p><p>Bachelor of Science in Biology Minimum credit hours required—120</p><p>The Biology program prepares undergraduate students for graduate education in the allied health professions and in specialized fields of the biological sciences.</p><p><br>A wide variety of career opportunities is currently available for those individuals possessing advanced knowledge and skills, particularly in the areas of biochemistry, molecular biology, microbiology, ecology, genetics, endocrinology, and immunology.</p><p></p><p><br></p>",
+    "code": "BS-BIOLOGY",
+    "degreeDesignation": "Bachelor of Science",
+    "degreeDesignations": [],
+    "degreeMaps": [
+      {
+        "defaultDegreeMap": true,
+        "degreeMapName": "Sample Curriculum for the Bachelor of Science in Biology",
+        "degreeMapNarrative": "",
+        "displayedInCatalog": true,
+        "id": "bVBkUXE7b8",
+        "isActive": false,
+        "semesters": [
+          {
+            "id": "H8Xxt1wWHC",
+            "requirements": [
+              {
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "xTLcMZwFka",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": "BIOL1131"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "vggAMS7YOs",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courseSets",
+                    "value": "59ofiFEiVqcstwszEIAu"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "eDPiibAyh0",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courseSets",
+                    "value": "q5jGrhhMY9RPgk2g96HH"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "JNfaPuzADr",
+                "minimumGpa": "",
+                "minimumGrade": "C",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": "ENGL1110"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "UMxOANWHLT",
+                "minimumGpa": "",
+                "minimumGrade": "C-",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courseSets",
+                    "value": "G1vzHKABHc9FcP1EMiWT"
+                  }
+                ],
+                "sisId": ""
+              }
+            ],
+            "semester": "Fall",
+            "sequence": 1,
+            "sisId": "",
+            "year": "Year 1"
+          },
+          {
+            "id": "LH8qnnBfRJ",
+            "requirements": [
+              {
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "iRnaqBMEt7",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courseSets",
+                    "value": "WuzaKWG7rJLnQYoeoFnE"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "IatsvGX5pl",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courseSets",
+                    "value": "Lyagpm2h58yhB0aZzNQX"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "P0HXU3281w",
+                "minimumGpa": "",
+                "minimumGrade": "C",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": "ENGL1120"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "JaVdUy91oN",
+                "minimumGpa": "",
+                "minimumGrade": "C-",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": "MATH1520"
+                  }
+                ],
+                "sisId": ""
+              }
+            ],
+            "semester": "Spring",
+            "sequence": 1,
+            "sisId": "",
+            "year": "Year 1"
+          },
+          {
+            "id": "lBfbGQJLvc",
+            "requirements": [
+              {
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "P8j2B3DqHf",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": "BIOL3031"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "min": 3
+                },
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "v5rEvX7KS4",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Social Sciences (Area 4)"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "qM0uH2YdAx",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": "CHEM3033"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "max": 5,
+                  "min": 5
+                },
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "iPlBKAjBfu",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": [
+                      "PHYS1310",
+                      "PHYS1310L"
+                    ]
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "max": 1,
+                  "min": 1
+                },
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "PobUxyR1FP",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Physical Recreation or Fine Arts"
+                  }
+                ],
+                "sisId": ""
+              }
+            ],
+            "semester": "Fall",
+            "sequence": 1,
+            "sisId": "",
+            "year": "Year 2"
+          },
+          {
+            "id": "ZiZlnIvtkw",
+            "requirements": [
+              {
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "ugWxFoygqI",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": "BIOL3045"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "min": 4
+                },
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "nKz4x4Hmbn",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Biology Elective"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "max": 5,
+                  "min": 5
+                },
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "Ooa89MFl9i",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": [
+                      "PHYS1320",
+                      "PHYS1320L"
+                    ]
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "min": 3
+                },
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "iXkr1LflF8",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Chemistry Electives "
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "min": 1
+                },
+                "area": "",
+                "courseRequirementGroupFreeText": "",
+                "id": "vCnBn1M1YG",
+                "minimumGpa": "",
+                "minimumGrade": "",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Physical Recreation"
+                  }
+                ],
+                "sisId": ""
+              }
+            ],
+            "semester": "Spring",
+            "sequence": 1,
+            "sisId": "",
+            "year": "Year 2"
+          },
+          {
+            "id": "llNvedMOvi",
+            "requirements": [
+              {
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "ulKT3tPNjH",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": [
+                      "BIOL3044",
+                      "BIOL3044L"
+                    ]
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "OQdaZPgcWs",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": "ENGL3041"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "min": 3
+                },
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "KvnMlYJI76",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Chemistry Electives"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "max": 3,
+                  "min": 3
+                },
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "mKvG4DFQf2",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Social Sciences (Area 4)"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "max": 2,
+                  "min": 2
+                },
+                "area": "",
+                "courseRequirementGroupFreeText": "",
+                "id": "JaDFA6qL0u",
+                "minimumGpa": "",
+                "minimumGrade": "",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Physical Recreation or Fine Arts"
+                  }
+                ],
+                "sisId": ""
+              }
+            ],
+            "semester": "Fall",
+            "sequence": 1,
+            "sisId": "",
+            "year": "Year 3"
+          },
+          {
+            "id": "ihfrUtlSLC",
+            "requirements": [
+              {
+                "actualCredits": {
+                  "max": 4,
+                  "min": 4
+                },
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "EThMx9Nbx8",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": [
+                      "BIOL3011",
+                      "BIOL3011L"
+                    ]
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "min": 3
+                },
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "ol6OhiUG3k",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Biology Elective"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "CuTc5s0gO3",
+                "minimumGpa": "",
+                "minimumGrade": "C",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courseSets",
+                    "value": "VEMjXEw0QMcqA2QeJaI0"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "max": 3,
+                  "min": 3
+                },
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "nPQpUDs8ps",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Humanities (Area 5)"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "max": 2,
+                  "min": 2
+                },
+                "area": "",
+                "courseRequirementGroupFreeText": "",
+                "id": "nSTC4sr3r3",
+                "minimumGpa": "",
+                "minimumGrade": "",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Generic Elective"
+                  }
+                ],
+                "sisId": ""
+              }
+            ],
+            "semester": "Spring",
+            "sequence": 1,
+            "sisId": "",
+            "year": "Year 3"
+          },
+          {
+            "id": "z70PEDcgZx",
+            "requirements": [
+              {
+                "actualCredits": {
+                  "max": 4,
+                  "min": 4
+                },
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "cSlXZBkidy",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": [
+                      "BIOL3041",
+                      "BIOL3041L"
+                    ]
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "min": 3
+                },
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "Omc1DhlGc5",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Biology Elective"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "max": 4,
+                  "min": 3
+                },
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "Mvj8xAzJJQ",
+                "minimumGpa": "",
+                "minimumGrade": "C-",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": "MATH2350"
+                  },
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": [
+                      "CSCI1220",
+                      "CSCI1220L"
+                    ]
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "max": 3,
+                  "min": 3
+                },
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "Mm0WcQoQMc",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Humanities (Area 5)"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "max": 2,
+                  "min": 1
+                },
+                "area": "",
+                "courseRequirementGroupFreeText": "",
+                "id": "JqAl0Pdkxa",
+                "minimumGpa": "",
+                "minimumGrade": "",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Physical Recreation or Fine Arts"
+                  }
+                ],
+                "sisId": ""
+              }
+            ],
+            "semester": "Fall",
+            "sequence": 1,
+            "sisId": "",
+            "year": "Year 4"
+          },
+          {
+            "id": "vHj5OCY0FF",
+            "requirements": [
+              {
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "qjLiS5tbbQ",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": "BIOL4071"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "min": 4
+                },
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "H3TiR51H6U",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "courses",
+                    "value": [
+                      "BIOL4043",
+                      "BIOL4043L"
+                    ]
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "min": 3
+                },
+                "area": "major",
+                "courseRequirementGroupFreeText": "",
+                "id": "yr9uq1m82P",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Biology Elective"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "min": 3
+                },
+                "area": "generalEducation",
+                "courseRequirementGroupFreeText": "",
+                "id": "gMMSSiqYRC",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Social Science/Humanities (Area 7)"
+                  }
+                ],
+                "sisId": ""
+              },
+              {
+                "actualCredits": {
+                  "min": 4
+                },
+                "area": "elective",
+                "courseRequirementGroupFreeText": "",
+                "id": "IGkxZVdxWt",
+                "minimumGpa": "",
+                "minimumGrade": "D",
+                "name": "",
+                "requirementSelect": [
+                  {
+                    "code": "",
+                    "type": "generic",
+                    "value": "Electives"
+                  }
+                ],
+                "sisId": ""
+              }
+            ],
+            "semester": "Spring",
+            "sequence": 1,
+            "sisId": "",
+            "year": "Year 4"
+          }
+        ],
+        "sisId": "",
+        "termScheme": ""
+      }
+    ],
+    "departments": [
+      "BIOL"
+    ],
+    "description": " The Biology program prepares undergraduate students for graduate education in the allied health professions and in specialized fields of the biological sciences. Students who are interested in pre-medical, pre-dental, and pre-veterinary science programs should discuss appropriate course electives with their advisor.  \n\n\n\n",
+    "effectiveEndDate": null,
+    "effectiveStartDate": "2026-06-08",
+    "id": "BS-BIOLOGY-2026-06-08",
+    "information": "<p><strong>Bachelor of Science in Biology Minimum credit hours required—120;</strong></p><p>Biology laboratory classes are required for biology lecture courses that offer an associated laboratory if credit for the lecture course is used to meet the required number of biology credits for a B.S. degree in Biology.&nbsp; Students pursuing a B.S. in Biology must take Biology and Chemistry courses for a letter grade, except for those only offered S/U.&nbsp; Prerequisites for a particular course may be waived only with the written permission of the course instructor and chair of the department.</p>",
+    "learningOutcomes": [
+      {
+        "activity": "",
+        "assessment": "",
+        "justification": "",
+        "name": "",
+        "objective": "● Demonstrate understanding of biological concepts",
+        "tags": []
+      },
+      {
+        "activity": "",
+        "assessment": "",
+        "justification": "",
+        "name": "",
+        "objective": "● Be able to interpret biologically-relevant data",
+        "tags": []
+      },
+      {
+        "activity": "",
+        "assessment": "",
+        "justification": "",
+        "name": "",
+        "objective": "● Demonstrate proficiency in lab techniques",
+        "tags": []
+      },
+      {
+        "activity": "",
+        "assessment": "",
+        "justification": "",
+        "name": "",
+        "objective": "● Effectively communicate scientific information",
+        "tags": []
+      }
+    ],
+    "level": "Undergraduate",
+    "longName": "Bachelor of Science in Biology",
+    "name": "BS-Biology",
+    "notes": "",
+    "policies": "Bachelor of Science in Biology Minimum credit hours required—120;\n\nBiology laboratory classes are required for biology lecture courses that offer an associated laboratory if credit for the lecture course is used to meet the required number of biology credits for a degree in biology.  \n\nStudents pursuing a B.S. in Biology must take Biology and Chemistry courses for a letter grade, except for BIOL 1131 and BIOL 1141.  \n\nPrerequisites for a particular course may be waived only with the written permission of the course instructor and chair of the department.\n\n\n\n",
+    "programGroupId": "BS-BIOLOGY",
+    "requirementLevels": [
+      {
+        "editorEnabled": false,
+        "key": "subplan",
+        "label": "Program Requirements",
+        "notes": "<p>Minimum credit hours required - 120</p>"
+      },
+      {
+        "editorEnabled": false,
+        "key": "instituteGeneralEducationRequirements",
+        "label": "Institute General Requirements"
+      }
+    ],
+    "requisites": {
+      "requisitesAdvanced": [],
+      "requisitesFreeform": {},
+      "requisitesSimple": [
+        {
+          "id": "Q8IRdjvF",
+          "name": "Bachelor of Science General Education Degree Requirements",
+          "position": 0,
+          "requirementLevel": "instituteGeneralEducationRequirements",
+          "rules": [
+            {
+              "condition": "completedAllOf",
+              "id": "vfQKD0yh",
+              "name": "Area 1: English Requirements for Bachelor of Science",
+              "value": {
+                "condition": "courseSets",
+                "id": "R1URLtCa",
+                "subSelections": [],
+                "values": [
+                  {
+                    "logic": "and",
+                    "value": [
+                      "xz4IkV1Uf9pSBelr5p4G"
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "completedAllOf",
+              "id": "ig9AOR4b",
+              "name": "Area 2: Math Requirements for Bachelor of Science",
+              "value": {
+                "condition": "courseSets",
+                "id": "LH8gVFub",
+                "subSelections": [],
+                "values": [
+                  {
+                    "logic": "and",
+                    "value": [
+                      "4ReaMvWHsovIIMp7jG84"
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "completedAllOf",
+              "id": "nf9eKDJn",
+              "name": "Area 3: Science Requirements for a Bachelor of Science",
+              "value": {
+                "condition": "courseSets",
+                "id": "O3z1KOZH",
+                "subSelections": [],
+                "values": [
+                  {
+                    "logic": "and",
+                    "value": [
+                      "QhJS7iGZHOjqxSML1kbF"
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "minimumCredits",
+              "credits": 6,
+              "id": "8a0IM2f9",
+              "name": "Area 4: Social Science Requirements for a Bachelor of Science",
+              "value": {
+                "condition": "courseSets",
+                "id": "QVr7aF2Q",
+                "subSelections": [],
+                "values": [
+                  {
+                    "logic": "and",
+                    "value": [
+                      "8jiDcxi0MCbDCVbrqD0L"
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "minimumCredits",
+              "credits": 6,
+              "id": "oyR1lTXC",
+              "name": "Area 5: Humanities Course Requirements for a Bachelor of Science ",
+              "value": {
+                "condition": "courseSets",
+                "id": "qUiKKhtY",
+                "subSelections": [],
+                "values": [
+                  {
+                    "logic": "and",
+                    "value": [
+                      "xxiGaxR6CzeBb3e0uNkN"
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "minimumCredits",
+              "credits": 3,
+              "id": "ITIzmQrv",
+              "name": "Area 6: Fine & Creative Art Course Requirement for a Bachelor of Science",
+              "value": {
+                "condition": "courseSets",
+                "id": "PhRRVCTi",
+                "subSelections": [],
+                "values": [
+                  {
+                    "logic": "and",
+                    "value": [
+                      "VEMjXEw0QMcqA2QeJaI0"
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "minimumCredits",
+              "credits": 3,
+              "id": "YqxkauY2",
+              "name": "Area 7: Additional Humanities/Social Science Requirement for a Bachelor of Science",
+              "restriction": 3,
+              "value": {
+                "condition": "courseSets",
+                "id": "CKC1jlgv",
+                "subSelections": [],
+                "values": [
+                  {
+                    "logic": "and",
+                    "value": [
+                      "3FoRMK8H4VPPbztcRv9c"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "showInCatalog": true,
+          "sisId": "",
+          "type": "Completion Requirement"
+        },
+        {
+          "id": "pwd6sLsD",
+          "name": "BS in BIOLOGY",
+          "position": 0,
+          "requirementLevel": "subplan",
+          "rules": [
+            {
+              "condition": "completedAllOf",
+              "id": "iHedZ4H4",
+              "name": "Biology Core Courses",
+              "value": {
+                "condition": "courses",
+                "id": "H9R3Hucv",
+                "subSelections": [],
+                "values": [
+                  {
+                    "logic": "and",
+                    "value": [
+                      "BIOL1131"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "BIOL2110"
+                    ]
+                  },
+                  {
+                    "logic": "or",
+                    "value": [
+                      "BIOL2110L",
+                      "BIOL2141"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "BIOL2610"
+                    ]
+                  },
+                  {
+                    "logic": "or",
+                    "value": [
+                      "BIOL2610L",
+                      "BIOL2142"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "BIOL3011",
+                      "BIOL3011L"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "BIOL3031"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "BIOL3041",
+                      "BIOL3041L"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "BIOL3044",
+                      "BIOL3044L"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "BIOL3045"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "BIOL4043",
+                      "BIOL4043L"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "BIOL4071"
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "freeformText",
+              "credits": 12,
+              "description": "<p><strong>Biology courses numbered 2000 &amp; above.</strong></p><p data-indent=\"1\"></p><p></p>",
+              "id": "1NnWXtwO",
+              "minCredits": 12,
+              "name": "Additional Biology Courses",
+              "notes": "<p><strong>Choose courses from Biology listed on the following page:</strong></p><ul><li><p><a href=\"https://catalog.nmt.edu/departments/BIOL/courses\" class=\"open_in_new_tab\" rel=\"noopener noreferrer nofollow\">https://catalog.nmt.edu/departments/BIOL/courses</a></p></li></ul><p><strong>Additionally, the following courses may be applied to biology electives if not fulfilling the chemistry elective requirement:</strong></p><ul><li><p><u> <a href=\"/courses/CHEM4041\" class=\"custom-link\" data-course-id=\"CHEM4041\">course</a> </u></p></li></ul><ul><li><p><u> <a href=\"/courses/CHEM4042\" class=\"custom-link\" data-course-id=\"CHEM4042\">course</a></u></p></li></ul>",
+              "value": "Minimum of 13 credits in additional Biology courses"
+            },
+            {
+              "condition": "completedAllOf",
+              "id": "EHPaPuXq",
+              "name": "Chemistry Requirement",
+              "value": {
+                "condition": "courses",
+                "id": "044UF2Sm",
+                "subSelections": [],
+                "values": [
+                  {
+                    "logic": "and",
+                    "value": [
+                      "CHEM3033"
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "minimumCredits",
+              "credits": 6,
+              "id": "zwxpdaRp",
+              "name": "Additional Chemistry Course Electives",
+              "value": {
+                "condition": "courses",
+                "id": "OomztcVv",
+                "subSelections": [],
+                "values": [
+                  {
+                    "logic": "and",
+                    "value": [
+                      "CHEM3011"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "CHEM3011L"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "CHEM3031"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "CHEM3033L"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "CHEM3034"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "CHEM3034L"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "CHEM4041"
+                    ]
+                  },
+                  {
+                    "logic": "and",
+                    "value": [
+                      "CHEM4041L"
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "completedAtLeastXOf",
+              "id": "9yWBE1Ik",
+              "name": "Computer Science or Math Elective",
+              "restriction": 1,
+              "value": {
+                "condition": "courses",
+                "id": "mH3wJgVE",
+                "subSelections": [],
+                "values": [
+                  {
+                    "logic": "or",
+                    "value": [
+                      "MATH2350",
+                      "CSCI1220"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "showInCatalog": true,
+          "sisId": "",
+          "type": "Completion Requirement"
+        },
+        {
+          "id": "ZYgXRRNq",
+          "name": "Electives to Complete 120 credit hours",
+          "requirementLevel": "subplan",
+          "rules": [
+            {
+              "condition": "freeformText",
+              "description": "<p>Generally students in the B.S. in Biology program will have 10 free elective credits to complete to meet the minimum degree hour requirements.  These electives can be fulfilled with any extra credit courses.</p>",
+              "id": "d05IaDt8",
+              "name": "General Electives",
+              "value": "Complete electives to meet 120 degree credit hours"
+            }
+          ],
+          "showInCatalog": true,
+          "sisId": "",
+          "type": "Completion Requirement"
+        }
+      ]
+    },
+    "specializations": [
+      {
+        "cipCode": "",
+        "code": "BS-BIOLOGY-BIOE",
+        "defaultOfRequirementTerm": "",
+        "diplomaDescription": "",
+        "effectiveStartDate": "2023-06-01",
+        "evaluateSubplan": true,
+        "firstTermValid": "",
+        "hegisCode": "",
+        "lastAdmitTerm": "",
+        "lastProspectDate": "",
+        "longName": "B.S. in Biology with Environmental Science Option",
+        "name": "Environmental Science Option",
+        "showInCatalog": true,
+        "status": "",
+        "transcriptDescription": "",
+        "transcriptLevel": "",
+        "type": "Concentration"
+      }
+    ],
+    "type": "Major"
+  },
+  "source": {
+    "resolved_url": "https://catalog.nmt.edu/programs/BS-BIOLOGY",
+    "retrieved_at": "2026-10-15T11:52:38.326265+00:00",
+    "sha256": "83555da8425af2cb26a8d60e770718fd2eb66ba414fcef444ca4472c02d22a90",
+    "source_type": "official_html",
+    "status": 200,
+    "url": "https://catalog.nmt.edu/programs/BS-BIOLOGY"
+  }
+}

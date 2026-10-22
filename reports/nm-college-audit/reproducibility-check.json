@@ -1,0 +1,87 @@
+{
+  "method": "SHA256 comparison before and after a repeated offline --report run; no DB connection",
+  "unchanged": true,
+  "changed_files": [],
+  "hashes": [
+    {
+      "file": "audit-metrics.json",
+      "Hash": "52D9063A24D9BD469AB2892D998C74EF1253109E59D8FE42559FDA5592461D17"
+    },
+    {
+      "file": "audit-summary.md",
+      "Hash": "1D1FC9C824DD7E9A7CBB9BE0DA6AD2C30B9398D4195B7AB45334DFFBA04D7027"
+    },
+    {
+      "file": "course-differences.csv",
+      "Hash": "6CD7D55FBE8AE3E920EA76C2ACB96F58E5C7C4BC4A2B840A6591430712CA04E9"
+    },
+    {
+      "file": "database-access-status.json",
+      "Hash": "22F0DC0852ADDBE964837A5C3A8B2AF4958B4A1803CE6D66036C43DE170C8874"
+    },
+    {
+      "file": "database-snapshot.json",
+      "Hash": "ACB148B9044548DAB9EE9BBDE8F81BDCDA1295CB3CAADBCD079E7D7BF7F83B3B"
+    },
+    {
+      "file": "dependency-differences.csv",
+      "Hash": "FD3A756D0A22938297F8A5DAE615399A27F7FAE83EEA811B7D5354F38A58F832"
+    },
+    {
+      "file": "extra-institution-records.csv",
+      "Hash": "36564EE0327435DE405AD2A959430352C02C01562E68797CC5BF307465A50008"
+    },
+    {
+      "file": "identity-differences.csv",
+      "Hash": "023EA40EBE8CF16569B3E9A9F2916CCDECB08B6DB207DD4F57934FAD74B80E12"
+    },
+    {
+      "file": "institution-directory.json",
+      "Hash": "DCE574188FF93F44B8EDE59E1E89FC8710D8B36C13A14E8839D519A762CB68B0"
+    },
+    {
+      "file": "institution-reconciliation.json",
+      "Hash": "F1867F01364A42632EE9A7F80D7C278D84E5854E800E4DEB5BB3DC2586D0EABF"
+    },
+    {
+      "file": "institutions.csv",
+      "Hash": "2FA274F414BED3DFE47D70173A2D45AC2854DB6AA468F97E3C1142FBC65DF7EF"
+    },
+    {
+      "file": "nmjc-degree-index.json",
+      "Hash": "0DBAAA38B97CEC83F87BA7D8CDC7B100BF454D1550CC322DAFFD46B36D6EDEB9"
+    },
+    {
+      "file": "program-differences.csv",
+      "Hash": "6C892AB725C6F9C48C8BDEF580F672E197D4EF476C062EC0DD8B6DCB421524EB"
+    },
+    {
+      "file": "quality-verification.md",
+      "Hash": "096086AF776CC37A0AE79DE7B90607C92D7E0C8C8377B35DC0DE90548F837B38"
+    },
+    {
+      "file": "remediation-plan.md",
+      "Hash": "BDC3EB371A28D387531499BA147E83C4689C126CF2D2DB0601DDB3A82BC5BF42"
+    },
+    {
+      "file": "repository-review.md",
+      "Hash": "9B0BC32CB6C607B9A51E9E6AAB732EA300F1F292181F33C9703CBFD9FDC13AEB"
+    },
+    {
+      "file": "schema-evidence.json",
+      "Hash": "CD908D6709ECF25BF0D7E0F31A5609BD1313630DD094B7EAE42C5B783872A18A"
+    },
+    {
+      "file": "source-evidence.json",
+      "Hash": "4108BA7119D16E618161C06B8FBE0666D46ED654EE3D1DFBA38AF4B5AAF2E4A8"
+    },
+    {
+      "file": "source-log.md",
+      "Hash": "F351D0A5746D0AD73ECF01D20B69156A82AA29D3C13559F18DF5FCEAD6182F11"
+    },
+    {
+      "file": "verified-samples.csv",
+      "Hash": "FC0565A777316BEC8DC7EB45F7EE6F7A439DBA69829757E43E94A9FD9646BF18"
+    }
+  ]
+}
