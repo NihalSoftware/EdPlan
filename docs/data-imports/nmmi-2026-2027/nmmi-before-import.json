@@ -1,0 +1,16 @@
+{
+  "universities": [
+    {
+      "university_id": "d1cb699c-5d75-4055-8334-e042c99557a2",
+      "university_name": "New Mexico Military Institute",
+      "city": "Roswell",
+      "state": "New Mexico",
+      "website": "https://www.nmmi.edu",
+      "college_profile": {
+        "source": "New Mexico college list"
+      }
+    }
+  ],
+  "programs": [],
+  "courses": []
+}

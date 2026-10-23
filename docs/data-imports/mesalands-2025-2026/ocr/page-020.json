@@ -1,0 +1,1706 @@
+﻿{
+    "pdf_page":  20,
+    "lines":  [
+                  {
+                      "text":  "HUMAN SERVICES",
+                      "x":  126,
+                      "y":  85,
+                      "words":  [
+                                    {
+                                        "text":  "HUMAN",
+                                        "x":  126,
+                                        "y":  85,
+                                        "width":  220,
+                                        "height":  39
+                                    },
+                                    {
+                                        "text":  "SERVICES",
+                                        "x":  360,
+                                        "y":  85,
+                                        "width":  258,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SOCIAL SERVICES CERTIFICATE",
+                      "x":  125,
+                      "y":  170,
+                      "words":  [
+                                    {
+                                        "text":  "SOCIAL",
+                                        "x":  125,
+                                        "y":  170,
+                                        "width":  120,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "SERVICES",
+                                        "x":  253,
+                                        "y":  170,
+                                        "width":  151,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  414,
+                                        "y":  170,
+                                        "width":  213,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Human Services/ Social Services certificate",
+                      "x":  124,
+                      "y":  251,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  124,
+                                        "y":  251,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Human",
+                                        "x":  172,
+                                        "y":  252,
+                                        "width":  78,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Services/",
+                                        "x":  258,
+                                        "y":  252,
+                                        "width":  87,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Social",
+                                        "x":  354,
+                                        "y":  251,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Services",
+                                        "x":  421,
+                                        "y":  252,
+                                        "width":  79,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "certificate",
+                                        "x":  508,
+                                        "y":  251,
+                                        "width":  99,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "program provides foundational knowledge and skills",
+                      "x":  125,
+                      "y":  281,
+                      "words":  [
+                                    {
+                                        "text":  "program",
+                                        "x":  125,
+                                        "y":  289,
+                                        "width":  85,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "provides",
+                                        "x":  217,
+                                        "y":  282,
+                                        "width":  83,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "foundational",
+                                        "x":  308,
+                                        "y":  281,
+                                        "width":  128,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "knowledge",
+                                        "x":  444,
+                                        "y":  281,
+                                        "width":  107,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  558,
+                                        "y":  281,
+                                        "width":  37,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "skills",
+                                        "x":  603,
+                                        "y":  281,
+                                        "width":  50,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "for entry-level positions in human services organiza-",
+                      "x":  125,
+                      "y":  312,
+                      "words":  [
+                                    {
+                                        "text":  "for",
+                                        "x":  125,
+                                        "y":  312,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "entry-level",
+                                        "x":  160,
+                                        "y":  312,
+                                        "width":  104,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "positions",
+                                        "x":  271,
+                                        "y":  314,
+                                        "width":  89,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  368,
+                                        "y":  314,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "human",
+                                        "x":  395,
+                                        "y":  312,
+                                        "width":  70,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "services",
+                                        "x":  473,
+                                        "y":  314,
+                                        "width":  75,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "organiza-",
+                                        "x":  556,
+                                        "y":  314,
+                                        "width":  93,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "tions, preparing individuals for careers in areas like",
+                      "x":  125,
+                      "y":  342,
+                      "words":  [
+                                    {
+                                        "text":  "tions,",
+                                        "x":  125,
+                                        "y":  345,
+                                        "width":  54,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "preparing",
+                                        "x":  187,
+                                        "y":  345,
+                                        "width":  97,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "individuals",
+                                        "x":  291,
+                                        "y":  342,
+                                        "width":  110,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  409,
+                                        "y":  342,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "careers",
+                                        "x":  444,
+                                        "y":  350,
+                                        "width":  68,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  520,
+                                        "y":  345,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "areas",
+                                        "x":  547,
+                                        "y":  350,
+                                        "width":  48,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "like",
+                                        "x":  603,
+                                        "y":  342,
+                                        "width":  36,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "social work, community support, and advocacy.",
+                      "x":  125,
+                      "y":  373,
+                      "words":  [
+                                    {
+                                        "text":  "social",
+                                        "x":  125,
+                                        "y":  373,
+                                        "width":  55,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "work,",
+                                        "x":  187,
+                                        "y":  373,
+                                        "width":  55,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "community",
+                                        "x":  251,
+                                        "y":  375,
+                                        "width":  117,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "support,",
+                                        "x":  375,
+                                        "y":  379,
+                                        "width":  81,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  465,
+                                        "y":  373,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "advocacy.",
+                                        "x":  509,
+                                        "y":  373,
+                                        "width":  94,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "It is easier toll",
+                      "x":  258,
+                      "y":  468,
+                      "words":  [
+                                    {
+                                        "text":  "It",
+                                        "x":  258,
+                                        "y":  474,
+                                        "width":  53,
+                                        "height":  54
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  329,
+                                        "y":  474,
+                                        "width":  37,
+                                        "height":  52
+                                    },
+                                    {
+                                        "text":  "easier",
+                                        "x":  384,
+                                        "y":  474,
+                                        "width":  166,
+                                        "height":  53
+                                    },
+                                    {
+                                        "text":  "toll",
+                                        "x":  563,
+                                        "y":  468,
+                                        "width":  89,
+                                        "height":  62
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "build strong",
+                      "x":  275,
+                      "y":  539,
+                      "words":  [
+                                    {
+                                        "text":  "build",
+                                        "x":  275,
+                                        "y":  539,
+                                        "width":  136,
+                                        "height":  57
+                                    },
+                                    {
+                                        "text":  "strong",
+                                        "x":  428,
+                                        "y":  543,
+                                        "width":  179,
+                                        "height":  72
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "children than to",
+                      "x":  217,
+                      "y":  607,
+                      "words":  [
+                                    {
+                                        "text":  "children",
+                                        "x":  217,
+                                        "y":  607,
+                                        "width":  227,
+                                        "height":  58
+                                    },
+                                    {
+                                        "text":  "than",
+                                        "x":  459,
+                                        "y":  610,
+                                        "width":  130,
+                                        "height":  55
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  605,
+                                        "y":  611,
+                                        "width":  59,
+                                        "height":  54
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "repair broken",
+                      "x":  248,
+                      "y":  678,
+                      "words":  [
+                                    {
+                                        "text":  "repair",
+                                        "x":  248,
+                                        "y":  680,
+                                        "width":  177,
+                                        "height":  71
+                                    },
+                                    {
+                                        "text":  "broken",
+                                        "x":  442,
+                                        "y":  678,
+                                        "width":  192,
+                                        "height":  55
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "men.",
+                      "x":  381,
+                      "y":  758,
+                      "words":  [
+                                    {
+                                        "text":  "men.",
+                                        "x":  381,
+                                        "y":  758,
+                                        "width":  121,
+                                        "height":  44
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FREDERICK DOUGLASS",
+                      "x":  402,
+                      "y":  839,
+                      "words":  [
+                                    {
+                                        "text":  "FREDERICK",
+                                        "x":  402,
+                                        "y":  839,
+                                        "width":  120,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "DOUGLASS",
+                                        "x":  534,
+                                        "y":  839,
+                                        "width":  119,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CERTIFICATE PROGRAM",
+                      "x":  853,
+                      "y":  94,
+                      "words":  [
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  853,
+                                        "y":  94,
+                                        "width":  162,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "PROGRAM",
+                                        "x":  1025,
+                                        "y":  94,
+                                        "width":  128,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "One Semester",
+                      "x":  727,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "One",
+                                        "x":  727,
+                                        "y":  145,
+                                        "width":  44,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Semester",
+                                        "x":  779,
+                                        "y":  145,
+                                        "width":  108,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  145,
+                                        "width":  98,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "soci 1110",
+                      "x":  726,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "soci",
+                                        "x":  726,
+                                        "y":  179,
+                                        "width":  45,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  780,
+                                        "y":  180,
+                                        "width":  34,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PSYC 1110",
+                      "x":  727,
+                      "y":  213,
+                      "words":  [
+                                    {
+                                        "text":  "PSYC",
+                                        "x":  727,
+                                        "y":  213,
+                                        "width":  49,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  783,
+                                        "y":  213,
+                                        "width":  35,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PSYC 2120",
+                      "x":  727,
+                      "y":  280,
+                      "words":  [
+                                    {
+                                        "text":  "PSYC",
+                                        "x":  727,
+                                        "y":  280,
+                                        "width":  49,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "2120",
+                                        "x":  784,
+                                        "y":  281,
+                                        "width":  42,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BIOL IIIOC",
+                      "x":  727,
+                      "y":  348,
+                      "words":  [
+                                    {
+                                        "text":  "BIOL",
+                                        "x":  727,
+                                        "y":  348,
+                                        "width":  46,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "IIIOC",
+                                        "x":  779,
+                                        "y":  348,
+                                        "width":  49,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Sociology (Area IV) 3",
+                      "x":  875,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  179,
+                                        "width":  118,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1001,
+                                        "y":  181,
+                                        "width":  18,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Sociology",
+                                        "x":  1027,
+                                        "y":  179,
+                                        "width":  96,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1130,
+                                        "y":  179,
+                                        "width":  51,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "IV)",
+                                        "x":  1190,
+                                        "y":  179,
+                                        "width":  25,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  180,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to",
+                      "x":  875,
+                      "y":  212,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  212,
+                                        "width":  118,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1001,
+                                        "y":  214,
+                                        "width":  18,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Psychology (Area IV)",
+                      "x":  875,
+                      "y":  246,
+                      "words":  [
+                                    {
+                                        "text":  "Psychology",
+                                        "x":  875,
+                                        "y":  246,
+                                        "width":  112,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  994,
+                                        "y":  246,
+                                        "width":  50,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "IV)",
+                                        "x":  1054,
+                                        "y":  246,
+                                        "width":  25,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Developmental",
+                      "x":  875,
+                      "y":  280,
+                      "words":  [
+                                    {
+                                        "text":  "Developmental",
+                                        "x":  875,
+                                        "y":  280,
+                                        "width":  145,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Psychology (Area IV)",
+                      "x":  875,
+                      "y":  313,
+                      "words":  [
+                                    {
+                                        "text":  "Psychology",
+                                        "x":  875,
+                                        "y":  314,
+                                        "width":  111,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  994,
+                                        "y":  314,
+                                        "width":  50,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "IV)",
+                                        "x":  1054,
+                                        "y":  313,
+                                        "width":  25,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "General Biology",
+                      "x":  874,
+                      "y":  347,
+                      "words":  [
+                                    {
+                                        "text":  "General",
+                                        "x":  874,
+                                        "y":  347,
+                                        "width":  75,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Biology",
+                                        "x":  958,
+                                        "y":  347,
+                                        "width":  72,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Lecture and Lab (Area Ill)",
+                      "x":  875,
+                      "y":  381,
+                      "words":  [
+                                    {
+                                        "text":  "Lecture",
+                                        "x":  875,
+                                        "y":  382,
+                                        "width":  73,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  956,
+                                        "y":  381,
+                                        "width":  35,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Lab",
+                                        "x":  1001,
+                                        "y":  381,
+                                        "width":  34,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1043,
+                                        "y":  381,
+                                        "width":  50,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "Ill)",
+                                        "x":  1103,
+                                        "y":  381,
+                                        "width":  22,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  874,
+                      "y":  415,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  874,
+                                        "y":  415,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  990,
+                                        "y":  415,
+                                        "width":  81,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ELECTIVES (select one)",
+                      "x":  859,
+                      "y":  511,
+                      "words":  [
+                                    {
+                                        "text":  "ELECTIVES",
+                                        "x":  859,
+                                        "y":  512,
+                                        "width":  136,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "(select",
+                                        "x":  1004,
+                                        "y":  511,
+                                        "width":  83,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "one)",
+                                        "x":  1095,
+                                        "y":  512,
+                                        "width":  53,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ONE SEMESTER",
+                      "x":  727,
+                      "y":  564,
+                      "words":  [
+                                    {
+                                        "text":  "ONE",
+                                        "x":  727,
+                                        "y":  564,
+                                        "width":  47,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "SEMESTER",
+                                        "x":  782,
+                                        "y":  564,
+                                        "width":  122,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  247,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  247,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  315,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  315,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  382,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  382,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "13",
+                      "x":  1220,
+                      "y":  416,
+                      "words":  [
+                                    {
+                                        "text":  "13",
+                                        "x":  1220,
+                                        "y":  416,
+                                        "width":  21,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  564,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  564,
+                                        "width":  98,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "COUN 1110",
+                      "x":  727,
+                      "y":  597,
+                      "words":  [
+                                    {
+                                        "text":  "COUN",
+                                        "x":  727,
+                                        "y":  597,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  792,
+                                        "y":  598,
+                                        "width":  34,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "COUN 1120",
+                      "x":  727,
+                      "y":  631,
+                      "words":  [
+                                    {
+                                        "text":  "COUN",
+                                        "x":  727,
+                                        "y":  631,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1120",
+                                        "x":  792,
+                                        "y":  632,
+                                        "width":  38,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "COUN 2110",
+                      "x":  727,
+                      "y":  699,
+                      "words":  [
+                                    {
+                                        "text":  "COUN",
+                                        "x":  727,
+                                        "y":  699,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2110",
+                                        "x":  792,
+                                        "y":  699,
+                                        "width":  39,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PSYC 2110",
+                      "x":  727,
+                      "y":  732,
+                      "words":  [
+                                    {
+                                        "text":  "PSYC",
+                                        "x":  727,
+                                        "y":  732,
+                                        "width":  49,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2110",
+                                        "x":  784,
+                                        "y":  733,
+                                        "width":  38,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "soci 2225",
+                      "x":  726,
+                      "y":  766,
+                      "words":  [
+                                    {
+                                        "text":  "soci",
+                                        "x":  726,
+                                        "y":  766,
+                                        "width":  45,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2225",
+                                        "x":  780,
+                                        "y":  767,
+                                        "width":  47,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "soci 2260",
+                      "x":  726,
+                      "y":  800,
+                      "words":  [
+                                    {
+                                        "text":  "soci",
+                                        "x":  726,
+                                        "y":  800,
+                                        "width":  45,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2260",
+                                        "x":  780,
+                                        "y":  800,
+                                        "width":  48,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "soci 2310",
+                      "x":  726,
+                      "y":  833,
+                      "words":  [
+                                    {
+                                        "text":  "soci",
+                                        "x":  726,
+                                        "y":  833,
+                                        "width":  45,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "2310",
+                                        "x":  780,
+                                        "y":  834,
+                                        "width":  43,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SOWK 2110",
+                      "x":  726,
+                      "y":  901,
+                      "words":  [
+                                    {
+                                        "text":  "SOWK",
+                                        "x":  726,
+                                        "y":  901,
+                                        "width":  62,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2110",
+                                        "x":  794,
+                                        "y":  901,
+                                        "width":  39,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CEPY 2140",
+                      "x":  727,
+                      "y":  965,
+                      "words":  [
+                                    {
+                                        "text":  "CEPY",
+                                        "x":  727,
+                                        "y":  965,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2140",
+                                        "x":  785,
+                                        "y":  966,
+                                        "width":  43,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Human Services",
+                      "x":  875,
+                      "y":  597,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  597,
+                                        "width":  118,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1001,
+                                        "y":  599,
+                                        "width":  18,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Human",
+                                        "x":  1028,
+                                        "y":  598,
+                                        "width":  69,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Services",
+                                        "x":  1105,
+                                        "y":  597,
+                                        "width":  83,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to",
+                      "x":  875,
+                      "y":  631,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  631,
+                                        "width":  118,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1001,
+                                        "y":  633,
+                                        "width":  18,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Psychology (Area IV)",
+                      "x":  875,
+                      "y":  664,
+                      "words":  [
+                                    {
+                                        "text":  "Psychology",
+                                        "x":  875,
+                                        "y":  664,
+                                        "width":  111,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  994,
+                                        "y":  664,
+                                        "width":  50,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "IV)",
+                                        "x":  1054,
+                                        "y":  664,
+                                        "width":  25,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Group Dynamics",
+                      "x":  875,
+                      "y":  698,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  698,
+                                        "width":  118,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1001,
+                                        "y":  700,
+                                        "width":  18,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Group",
+                                        "x":  1027,
+                                        "y":  699,
+                                        "width":  59,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Dynamics",
+                                        "x":  1095,
+                                        "y":  698,
+                                        "width":  96,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Social Psychology",
+                      "x":  874,
+                      "y":  732,
+                      "words":  [
+                                    {
+                                        "text":  "Social",
+                                        "x":  874,
+                                        "y":  732,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Psychology",
+                                        "x":  941,
+                                        "y":  732,
+                                        "width":  112,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Women\u0027s Studies",
+                      "x":  875,
+                      "y":  765,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  765,
+                                        "width":  118,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1001,
+                                        "y":  767,
+                                        "width":  18,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Women\u0027s",
+                                        "x":  1027,
+                                        "y":  765,
+                                        "width":  89,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Studies",
+                                        "x":  1124,
+                                        "y":  765,
+                                        "width":  72,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Sociology of Aging",
+                      "x":  874,
+                      "y":  799,
+                      "words":  [
+                                    {
+                                        "text":  "Sociology",
+                                        "x":  874,
+                                        "y":  799,
+                                        "width":  96,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  977,
+                                        "y":  799,
+                                        "width":  19,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Aging",
+                                        "x":  1001,
+                                        "y":  799,
+                                        "width":  56,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Contemporary Social",
+                      "x":  874,
+                      "y":  833,
+                      "words":  [
+                                    {
+                                        "text":  "Contemporary",
+                                        "x":  874,
+                                        "y":  833,
+                                        "width":  141,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Social",
+                                        "x":  1022,
+                                        "y":  833,
+                                        "width":  57,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Problems (Area I V)",
+                      "x":  875,
+                      "y":  866,
+                      "words":  [
+                                    {
+                                        "text":  "Problems",
+                                        "x":  875,
+                                        "y":  866,
+                                        "width":  91,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  974,
+                                        "y":  866,
+                                        "width":  51,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  1034,
+                                        "y":  867,
+                                        "width":  2,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "V)",
+                                        "x":  1039,
+                                        "y":  866,
+                                        "width":  20,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  598,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  598,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  665,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  665,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  699,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  699,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  733,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  733,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  767,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  767,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  800,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  800,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  868,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  868,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Human Services and",
+                      "x":  875,
+                      "y":  900,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  900,
+                                        "width":  118,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1001,
+                                        "y":  902,
+                                        "width":  18,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Human",
+                                        "x":  1028,
+                                        "y":  901,
+                                        "width":  69,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Services",
+                                        "x":  1105,
+                                        "y":  900,
+                                        "width":  83,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  1196,
+                                        "y":  900,
+                                        "width":  35,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Social Work",
+                      "x":  895,
+                      "y":  931,
+                      "words":  [
+                                    {
+                                        "text":  "Social",
+                                        "x":  895,
+                                        "y":  931,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Work",
+                                        "x":  961,
+                                        "y":  931,
+                                        "width":  51,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  932,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  932,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Explorations of Counseling \u0026 Community",
+                      "x":  875,
+                      "y":  964,
+                      "words":  [
+                                    {
+                                        "text":  "Explorations",
+                                        "x":  875,
+                                        "y":  964,
+                                        "width":  120,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  1003,
+                                        "y":  964,
+                                        "width":  18,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Counseling",
+                                        "x":  1028,
+                                        "y":  964,
+                                        "width":  108,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  1145,
+                                        "y":  965,
+                                        "width":  15,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Community",
+                                        "x":  1168,
+                                        "y":  964,
+                                        "width":  112,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Psychology",
+                      "x":  896,
+                      "y":  995,
+                      "words":  [
+                                    {
+                                        "text":  "Psychology",
+                                        "x":  896,
+                                        "y":  995,
+                                        "width":  111,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  996,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  996,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Total Credits Completed for Certificate",
+                      "x":  726,
+                      "y":  1062,
+                      "words":  [
+                                    {
+                                        "text":  "Total",
+                                        "x":  726,
+                                        "y":  1062,
+                                        "width":  54,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  789,
+                                        "y":  1062,
+                                        "width":  81,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Completed",
+                                        "x":  878,
+                                        "y":  1062,
+                                        "width":  122,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  1008,
+                                        "y":  1062,
+                                        "width":  32,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  1047,
+                                        "y":  1062,
+                                        "width":  119,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "16",
+                      "x":  1220,
+                      "y":  1063,
+                      "words":  [
+                                    {
+                                        "text":  "16",
+                                        "x":  1220,
+                                        "y":  1063,
+                                        "width":  21,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "69",
+                      "x":  691,
+                      "y":  1769,
+                      "words":  [
+                                    {
+                                        "text":  "69",
+                                        "x":  691,
+                                        "y":  1769,
+                                        "width":  27,
+                                        "height":  19
+                                    }
+                                ]
+                  }
+              ]
+}

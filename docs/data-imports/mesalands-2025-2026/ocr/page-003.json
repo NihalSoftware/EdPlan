@@ -1,0 +1,1818 @@
+﻿{
+    "pdf_page":  3,
+    "lines":  [
+                  {
+                      "text":  "General Education classes solidify the proficiencies and",
+                      "x":  125,
+                      "y":  83,
+                      "words":  [
+                                    {
+                                        "text":  "General",
+                                        "x":  125,
+                                        "y":  83,
+                                        "width":  78,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Education",
+                                        "x":  211,
+                                        "y":  83,
+                                        "width":  102,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "classes",
+                                        "x":  321,
+                                        "y":  83,
+                                        "width":  64,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "solidify",
+                                        "x":  392,
+                                        "y":  83,
+                                        "width":  75,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  474,
+                                        "y":  83,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "proficiencies",
+                                        "x":  512,
+                                        "y":  83,
+                                        "width":  125,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  645,
+                                        "y":  83,
+                                        "width":  36,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "competencies that are essential for all college-educated",
+                      "x":  125,
+                      "y":  113,
+                      "words":  [
+                                    {
+                                        "text":  "competencies",
+                                        "x":  125,
+                                        "y":  115,
+                                        "width":  133,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  266,
+                                        "y":  113,
+                                        "width":  39,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  313,
+                                        "y":  121,
+                                        "width":  29,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "essential",
+                                        "x":  349,
+                                        "y":  113,
+                                        "width":  83,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  440,
+                                        "y":  113,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "all",
+                                        "x":  475,
+                                        "y":  113,
+                                        "width":  24,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "college-educated",
+                                        "x":  506,
+                                        "y":  113,
+                                        "width":  166,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "adults. Offerings include the following:",
+                      "x":  125,
+                      "y":  144,
+                      "words":  [
+                                    {
+                                        "text":  "adults.",
+                                        "x":  125,
+                                        "y":  144,
+                                        "width":  64,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Offerings",
+                                        "x":  199,
+                                        "y":  144,
+                                        "width":  94,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "include",
+                                        "x":  302,
+                                        "y":  144,
+                                        "width":  72,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  382,
+                                        "y":  144,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "following:",
+                                        "x":  420,
+                                        "y":  144,
+                                        "width":  100,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Art/Music, Communications, Computers,",
+                      "x":  167,
+                      "y":  205,
+                      "words":  [
+                                    {
+                                        "text":  "Art/Music,",
+                                        "x":  167,
+                                        "y":  205,
+                                        "width":  112,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Communications,",
+                                        "x":  287,
+                                        "y":  205,
+                                        "width":  180,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Computers,",
+                                        "x":  476,
+                                        "y":  205,
+                                        "width":  116,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "English, History, Philosophy, Foreign Language,",
+                      "x":  169,
+                      "y":  235,
+                      "words":  [
+                                    {
+                                        "text":  "English,",
+                                        "x":  169,
+                                        "y":  235,
+                                        "width":  81,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "History,",
+                                        "x":  258,
+                                        "y":  236,
+                                        "width":  80,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "Philosophy,",
+                                        "x":  347,
+                                        "y":  235,
+                                        "width":  114,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Foreign",
+                                        "x":  470,
+                                        "y":  236,
+                                        "width":  75,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "Language,",
+                                        "x":  553,
+                                        "y":  236,
+                                        "width":  103,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Natural and Physical Science, Mathematics,",
+                      "x":  169,
+                      "y":  265,
+                      "words":  [
+                                    {
+                                        "text":  "Natural",
+                                        "x":  169,
+                                        "y":  265,
+                                        "width":  77,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  254,
+                                        "y":  265,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Physical",
+                                        "x":  298,
+                                        "y":  265,
+                                        "width":  81,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Science,",
+                                        "x":  387,
+                                        "y":  266,
+                                        "width":  79,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Mathematics,",
+                                        "x":  474,
+                                        "y":  265,
+                                        "width":  136,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Anthropology, Economics, Sociology, Psychology,",
+                      "x":  167,
+                      "y":  296,
+                      "words":  [
+                                    {
+                                        "text":  "Anthropology,",
+                                        "x":  167,
+                                        "y":  296,
+                                        "width":  146,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Economics,",
+                                        "x":  321,
+                                        "y":  297,
+                                        "width":  116,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Sociology,",
+                                        "x":  445,
+                                        "y":  296,
+                                        "width":  100,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Psychology,",
+                                        "x":  554,
+                                        "y":  296,
+                                        "width":  115,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Political Science and Religious Studies.",
+                      "x":  169,
+                      "y":  326,
+                      "words":  [
+                                    {
+                                        "text":  "Political",
+                                        "x":  169,
+                                        "y":  326,
+                                        "width":  81,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  258,
+                                        "y":  327,
+                                        "width":  73,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  338,
+                                        "y":  326,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Religious",
+                                        "x":  383,
+                                        "y":  326,
+                                        "width":  92,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Studies.",
+                                        "x":  483,
+                                        "y":  326,
+                                        "width":  77,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mesalands Community College recognizes General",
+                      "x":  125,
+                      "y":  399,
+                      "words":  [
+                                    {
+                                        "text":  "Mesalands",
+                                        "x":  125,
+                                        "y":  399,
+                                        "width":  105,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Community",
+                                        "x":  238,
+                                        "y":  400,
+                                        "width":  125,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "College",
+                                        "x":  370,
+                                        "y":  399,
+                                        "width":  75,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "recognizes",
+                                        "x":  452,
+                                        "y":  401,
+                                        "width":  103,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "General",
+                                        "x":  564,
+                                        "y":  399,
+                                        "width":  78,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Education as the foundation for higher education and",
+                      "x":  125,
+                      "y":  430,
+                      "words":  [
+                                    {
+                                        "text":  "Education",
+                                        "x":  125,
+                                        "y":  430,
+                                        "width":  102,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  235,
+                                        "y":  437,
+                                        "width":  18,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  261,
+                                        "y":  430,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "foundation",
+                                        "x":  300,
+                                        "y":  430,
+                                        "width":  110,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  418,
+                                        "y":  430,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "higher",
+                                        "x":  452,
+                                        "y":  430,
+                                        "width":  65,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "education",
+                                        "x":  524,
+                                        "y":  430,
+                                        "width":  97,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  629,
+                                        "y":  430,
+                                        "width":  37,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "is committed to its full integration in all of its degree",
+                      "x":  125,
+                      "y":  460,
+                      "words":  [
+                                    {
+                                        "text":  "is",
+                                        "x":  125,
+                                        "y":  462,
+                                        "width":  14,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "committed",
+                                        "x":  147,
+                                        "y":  460,
+                                        "width":  109,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  264,
+                                        "y":  467,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "its",
+                                        "x":  291,
+                                        "y":  462,
+                                        "width":  22,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "full",
+                                        "x":  320,
+                                        "y":  460,
+                                        "width":  35,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "integration",
+                                        "x":  363,
+                                        "y":  462,
+                                        "width":  109,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  480,
+                                        "y":  462,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "all",
+                                        "x":  507,
+                                        "y":  460,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  538,
+                                        "y":  460,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "its",
+                                        "x":  565,
+                                        "y":  462,
+                                        "width":  21,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  594,
+                                        "y":  460,
+                                        "width":  64,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and Applied Science certificate programs. Mesalands",
+                      "x":  125,
+                      "y":  490,
+                      "words":  [
+                                    {
+                                        "text":  "and",
+                                        "x":  125,
+                                        "y":  491,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Applied",
+                                        "x":  167,
+                                        "y":  491,
+                                        "width":  80,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  255,
+                                        "y":  491,
+                                        "width":  73,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "certificate",
+                                        "x":  335,
+                                        "y":  490,
+                                        "width":  100,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "programs.",
+                                        "x":  442,
+                                        "y":  498,
+                                        "width":  99,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Mesalands",
+                                        "x":  550,
+                                        "y":  491,
+                                        "width":  106,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Community College\u0027s degree programs are designed to",
+                      "x":  125,
+                      "y":  521,
+                      "words":  [
+                                    {
+                                        "text":  "Community",
+                                        "x":  125,
+                                        "y":  522,
+                                        "width":  125,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "College\u0027s",
+                                        "x":  256,
+                                        "y":  521,
+                                        "width":  88,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  352,
+                                        "y":  521,
+                                        "width":  64,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "programs",
+                                        "x":  423,
+                                        "y":  528,
+                                        "width":  94,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  525,
+                                        "y":  528,
+                                        "width":  29,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "designed",
+                                        "x":  561,
+                                        "y":  521,
+                                        "width":  87,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  656,
+                                        "y":  527,
+                                        "width":  19,
+                                        "height":  13
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "develop competencies in broad areas of general educa-",
+                      "x":  125,
+                      "y":  551,
+                      "words":  [
+                                    {
+                                        "text":  "develop",
+                                        "x":  125,
+                                        "y":  551,
+                                        "width":  75,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "competencies",
+                                        "x":  208,
+                                        "y":  553,
+                                        "width":  133,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  349,
+                                        "y":  553,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "broad",
+                                        "x":  376,
+                                        "y":  551,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "areas",
+                                        "x":  440,
+                                        "y":  559,
+                                        "width":  49,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  496,
+                                        "y":  551,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "general",
+                                        "x":  523,
+                                        "y":  551,
+                                        "width":  71,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "educa-",
+                                        "x":  602,
+                                        "y":  552,
+                                        "width":  64,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "tion complemented by a concentration in career and",
+                      "x":  125,
+                      "y":  582,
+                      "words":  [
+                                    {
+                                        "text":  "tion",
+                                        "x":  125,
+                                        "y":  584,
+                                        "width":  39,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "complemented",
+                                        "x":  172,
+                                        "y":  582,
+                                        "width":  146,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "by",
+                                        "x":  326,
+                                        "y":  582,
+                                        "width":  24,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  357,
+                                        "y":  589,
+                                        "width":  9,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "concentration",
+                                        "x":  373,
+                                        "y":  584,
+                                        "width":  138,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  519,
+                                        "y":  584,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "career",
+                                        "x":  546,
+                                        "y":  589,
+                                        "width":  59,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  612,
+                                        "y":  582,
+                                        "width":  37,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "applied science courses. Upon successful completion of",
+                      "x":  125,
+                      "y":  612,
+                      "words":  [
+                                    {
+                                        "text":  "applied",
+                                        "x":  125,
+                                        "y":  612,
+                                        "width":  72,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "science",
+                                        "x":  204,
+                                        "y":  614,
+                                        "width":  70,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "courses.",
+                                        "x":  281,
+                                        "y":  620,
+                                        "width":  77,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "Upon",
+                                        "x":  368,
+                                        "y":  613,
+                                        "width":  56,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "successful",
+                                        "x":  431,
+                                        "y":  612,
+                                        "width":  99,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "completion",
+                                        "x":  538,
+                                        "y":  612,
+                                        "width":  112,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  657,
+                                        "y":  612,
+                                        "width":  23,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "any degree at Mesalands Community College, a",
+                      "x":  125,
+                      "y":  643,
+                      "words":  [
+                                    {
+                                        "text":  "any",
+                                        "x":  125,
+                                        "y":  650,
+                                        "width":  35,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  167,
+                                        "y":  643,
+                                        "width":  64,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "at",
+                                        "x":  238,
+                                        "y":  649,
+                                        "width":  18,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Mesalands",
+                                        "x":  263,
+                                        "y":  643,
+                                        "width":  106,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Community",
+                                        "x":  377,
+                                        "y":  643,
+                                        "width":  124,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "College,",
+                                        "x":  508,
+                                        "y":  643,
+                                        "width":  81,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  598,
+                                        "y":  650,
+                                        "width":  10,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "student should be able to:",
+                      "x":  125,
+                      "y":  673,
+                      "words":  [
+                                    {
+                                        "text":  "student",
+                                        "x":  125,
+                                        "y":  673,
+                                        "width":  73,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "should",
+                                        "x":  206,
+                                        "y":  673,
+                                        "width":  66,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  279,
+                                        "y":  673,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "able",
+                                        "x":  310,
+                                        "y":  673,
+                                        "width":  38,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to:",
+                                        "x":  356,
+                                        "y":  679,
+                                        "width":  24,
+                                        "height":  13
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Communicate effectively, including:",
+                      "x":  727,
+                      "y":  83,
+                      "words":  [
+                                    {
+                                        "text":  "Communicate",
+                                        "x":  727,
+                                        "y":  84,
+                                        "width":  143,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "effectively,",
+                                        "x":  877,
+                                        "y":  83,
+                                        "width":  105,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "including:",
+                                        "x":  991,
+                                        "y":  83,
+                                        "width":  100,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "present ideas orally according to standard usage",
+                      "x":  772,
+                      "y":  113,
+                      "words":  [
+                                    {
+                                        "text":  "present",
+                                        "x":  772,
+                                        "y":  120,
+                                        "width":  71,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "ideas",
+                                        "x":  851,
+                                        "y":  113,
+                                        "width":  48,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "orally",
+                                        "x":  907,
+                                        "y":  113,
+                                        "width":  57,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "according",
+                                        "x":  971,
+                                        "y":  113,
+                                        "width":  98,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1076,
+                                        "y":  120,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "standard",
+                                        "x":  1103,
+                                        "y":  113,
+                                        "width":  87,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "usage",
+                                        "x":  1198,
+                                        "y":  121,
+                                        "width":  54,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "present ideas in writing",
+                      "x":  772,
+                      "y":  144,
+                      "words":  [
+                                    {
+                                        "text":  "present",
+                                        "x":  772,
+                                        "y":  150,
+                                        "width":  71,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "ideas",
+                                        "x":  851,
+                                        "y":  144,
+                                        "width":  48,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  907,
+                                        "y":  146,
+                                        "width":  20,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "writing",
+                                        "x":  934,
+                                        "y":  146,
+                                        "width":  73,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• demonstrate application of information technology",
+                      "x":  745,
+                      "y":  174,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  745,
+                                        "y":  180,
+                                        "width":  8,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "demonstrate",
+                                        "x":  772,
+                                        "y":  174,
+                                        "width":  123,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "application",
+                                        "x":  903,
+                                        "y":  174,
+                                        "width":  110,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  1021,
+                                        "y":  174,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "information",
+                                        "x":  1048,
+                                        "y":  174,
+                                        "width":  119,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "technology",
+                                        "x":  1175,
+                                        "y":  174,
+                                        "width":  111,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Scientific and mathematical reasoning, including:",
+                      "x":  727,
+                      "y":  235,
+                      "words":  [
+                                    {
+                                        "text":  "Scientific",
+                                        "x":  727,
+                                        "y":  235,
+                                        "width":  93,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  827,
+                                        "y":  235,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "mathematical",
+                                        "x":  871,
+                                        "y":  235,
+                                        "width":  136,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "reasoning,",
+                                        "x":  1015,
+                                        "y":  237,
+                                        "width":  102,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "including:",
+                                        "x":  1126,
+                                        "y":  235,
+                                        "width":  100,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• demonstrate mathematical principles",
+                      "x":  745,
+                      "y":  265,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  745,
+                                        "y":  271,
+                                        "width":  8,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "demonstrate",
+                                        "x":  772,
+                                        "y":  265,
+                                        "width":  123,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "mathematical",
+                                        "x":  903,
+                                        "y":  265,
+                                        "width":  136,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "principles",
+                                        "x":  1046,
+                                        "y":  265,
+                                        "width":  96,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• demonstrate scientific reasoning",
+                      "x":  745,
+                      "y":  296,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  745,
+                                        "y":  302,
+                                        "width":  8,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "demonstrate",
+                                        "x":  772,
+                                        "y":  296,
+                                        "width":  123,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "scientific",
+                                        "x":  903,
+                                        "y":  296,
+                                        "width":  89,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "reasoning",
+                                        "x":  999,
+                                        "y":  298,
+                                        "width":  97,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• apply scientific methods to the inquiry process",
+                      "x":  745,
+                      "y":  326,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  745,
+                                        "y":  332,
+                                        "width":  8,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "apply",
+                                        "x":  772,
+                                        "y":  326,
+                                        "width":  54,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "scientific",
+                                        "x":  833,
+                                        "y":  326,
+                                        "width":  89,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "methods",
+                                        "x":  929,
+                                        "y":  326,
+                                        "width":  86,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1023,
+                                        "y":  333,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1050,
+                                        "y":  326,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "inquiry",
+                                        "x":  1088,
+                                        "y":  328,
+                                        "width":  75,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "process",
+                                        "x":  1169,
+                                        "y":  333,
+                                        "width":  71,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Think critically, including:",
+                      "x":  726,
+                      "y":  387,
+                      "words":  [
+                                    {
+                                        "text":  "Think",
+                                        "x":  726,
+                                        "y":  387,
+                                        "width":  65,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "critically,",
+                                        "x":  798,
+                                        "y":  387,
+                                        "width":  90,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "including:",
+                                        "x":  897,
+                                        "y":  387,
+                                        "width":  100,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• read and analyze complex ideas",
+                      "x":  745,
+                      "y":  417,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  745,
+                                        "y":  423,
+                                        "width":  8,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "read",
+                                        "x":  773,
+                                        "y":  417,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  822,
+                                        "y":  417,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "analyze",
+                                        "x":  866,
+                                        "y":  417,
+                                        "width":  74,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "complex",
+                                        "x":  948,
+                                        "y":  417,
+                                        "width":  83,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "ideas",
+                                        "x":  1038,
+                                        "y":  417,
+                                        "width":  49,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• locate, evaluate, and apply research information",
+                      "x":  745,
+                      "y":  448,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  745,
+                                        "y":  454,
+                                        "width":  8,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "locate,",
+                                        "x":  772,
+                                        "y":  448,
+                                        "width":  64,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "evaluate,",
+                                        "x":  844,
+                                        "y":  448,
+                                        "width":  86,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  939,
+                                        "y":  448,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "apply",
+                                        "x":  983,
+                                        "y":  448,
+                                        "width":  54,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "research",
+                                        "x":  1044,
+                                        "y":  448,
+                                        "width":  80,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "information",
+                                        "x":  1132,
+                                        "y":  448,
+                                        "width":  120,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• evaluate and present well-reasoned arguments",
+                      "x":  745,
+                      "y":  478,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  745,
+                                        "y":  484,
+                                        "width":  8,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "evaluate",
+                                        "x":  772,
+                                        "y":  478,
+                                        "width":  81,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  861,
+                                        "y":  478,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "present",
+                                        "x":  905,
+                                        "y":  484,
+                                        "width":  71,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "well-reasoned",
+                                        "x":  982,
+                                        "y":  478,
+                                        "width":  137,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "arguments",
+                                        "x":  1126,
+                                        "y":  484,
+                                        "width":  105,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PROGRAM OBJECTIVES",
+                      "x":  727,
+                      "y":  543,
+                      "words":  [
+                                    {
+                                        "text":  "PROGRAM",
+                                        "x":  727,
+                                        "y":  544,
+                                        "width":  165,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "OBJECTIVES",
+                                        "x":  901,
+                                        "y":  543,
+                                        "width":  195,
+                                        "height":  29
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "All degree and certificate programs of study have identi-",
+                      "x":  725,
+                      "y":  594,
+                      "words":  [
+                                    {
+                                        "text":  "All",
+                                        "x":  725,
+                                        "y":  594,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  761,
+                                        "y":  594,
+                                        "width":  62,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  829,
+                                        "y":  594,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "certificate",
+                                        "x":  871,
+                                        "y":  594,
+                                        "width":  95,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "programs",
+                                        "x":  972,
+                                        "y":  601,
+                                        "width":  90,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  1069,
+                                        "y":  594,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "study",
+                                        "x":  1094,
+                                        "y":  594,
+                                        "width":  52,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "have",
+                                        "x":  1152,
+                                        "y":  594,
+                                        "width":  43,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "identi-",
+                                        "x":  1201,
+                                        "y":  594,
+                                        "width":  62,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "fied program objectives. Program objectives measure the",
+                      "x":  726,
+                      "y":  624,
+                      "words":  [
+                                    {
+                                        "text":  "fied",
+                                        "x":  726,
+                                        "y":  624,
+                                        "width":  37,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "program",
+                                        "x":  769,
+                                        "y":  632,
+                                        "width":  82,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "objectives.",
+                                        "x":  858,
+                                        "y":  625,
+                                        "width":  97,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Program",
+                                        "x":  963,
+                                        "y":  626,
+                                        "width":  82,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "objectives",
+                                        "x":  1052,
+                                        "y":  625,
+                                        "width":  92,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "measure",
+                                        "x":  1151,
+                                        "y":  632,
+                                        "width":  78,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1236,
+                                        "y":  625,
+                                        "width":  30,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "competencies that students will possess and demonstrate",
+                      "x":  726,
+                      "y":  655,
+                      "words":  [
+                                    {
+                                        "text":  "competencies",
+                                        "x":  726,
+                                        "y":  657,
+                                        "width":  128,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  861,
+                                        "y":  655,
+                                        "width":  38,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  905,
+                                        "y":  655,
+                                        "width":  79,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "will",
+                                        "x":  990,
+                                        "y":  655,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "possess",
+                                        "x":  1032,
+                                        "y":  662,
+                                        "width":  67,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  1106,
+                                        "y":  655,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "demonstrate",
+                                        "x":  1148,
+                                        "y":  655,
+                                        "width":  118,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "upon graduation. These program objectives/competencies",
+                      "x":  727,
+                      "y":  685,
+                      "words":  [
+                                    {
+                                        "text":  "upon",
+                                        "x":  727,
+                                        "y":  693,
+                                        "width":  49,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "graduation.",
+                                        "x":  782,
+                                        "y":  686,
+                                        "width":  109,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "These",
+                                        "x":  898,
+                                        "y":  685,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "program",
+                                        "x":  962,
+                                        "y":  693,
+                                        "width":  82,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "objectives/competencies",
+                                        "x":  1050,
+                                        "y":  686,
+                                        "width":  227,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "reflect the knowledge, skills, and professional dispositions",
+                      "x":  726,
+                      "y":  716,
+                      "words":  [
+                                    {
+                                        "text":  "reflect",
+                                        "x":  726,
+                                        "y":  716,
+                                        "width":  61,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  793,
+                                        "y":  716,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "knowledge,",
+                                        "x":  829,
+                                        "y":  716,
+                                        "width":  108,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "skills,",
+                                        "x":  945,
+                                        "y":  716,
+                                        "width":  53,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  1005,
+                                        "y":  716,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "professional",
+                                        "x":  1047,
+                                        "y":  716,
+                                        "width":  113,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "dispositions",
+                                        "x":  1167,
+                                        "y":  716,
+                                        "width":  111,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "valued by workplace employers and other stakeholders.",
+                      "x":  726,
+                      "y":  746,
+                      "words":  [
+                                    {
+                                        "text":  "valued",
+                                        "x":  726,
+                                        "y":  746,
+                                        "width":  62,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "by",
+                                        "x":  795,
+                                        "y":  746,
+                                        "width":  23,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "workplace",
+                                        "x":  823,
+                                        "y":  746,
+                                        "width":  97,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "employers",
+                                        "x":  927,
+                                        "y":  746,
+                                        "width":  95,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  1029,
+                                        "y":  746,
+                                        "width":  35,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "other",
+                                        "x":  1071,
+                                        "y":  746,
+                                        "width":  50,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "stakeholders.",
+                                        "x":  1127,
+                                        "y":  746,
+                                        "width":  122,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "52",
+                      "x":  692,
+                      "y":  1768,
+                      "words":  [
+                                    {
+                                        "text":  "52",
+                                        "x":  692,
+                                        "y":  1768,
+                                        "width":  26,
+                                        "height":  20
+                                    }
+                                ]
+                  }
+              ]
+}

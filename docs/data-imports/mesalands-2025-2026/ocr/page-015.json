@@ -1,0 +1,1664 @@
+﻿{
+    "pdf_page":  15,
+    "lines":  [
+                  {
+                      "text":  "FINE ARTS",
+                      "x":  126,
+                      "y":  85,
+                      "words":  [
+                                    {
+                                        "text":  "FINE",
+                                        "x":  126,
+                                        "y":  86,
+                                        "width":  129,
+                                        "height":  38
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  267,
+                                        "y":  85,
+                                        "width":  139,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "STUDIO ART PROFICIENCY",
+                      "x":  125,
+                      "y":  170,
+                      "words":  [
+                                    {
+                                        "text":  "STUDIO",
+                                        "x":  125,
+                                        "y":  170,
+                                        "width":  125,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "ART",
+                                        "x":  258,
+                                        "y":  170,
+                                        "width":  66,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "PROFICIENCY",
+                                        "x":  332,
+                                        "y":  170,
+                                        "width":  220,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Certificate in Art Studio Proficiency allows",
+                      "x":  124,
+                      "y":  220,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  124,
+                                        "y":  221,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  172,
+                                        "y":  220,
+                                        "width":  107,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  287,
+                                        "y":  223,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "Art",
+                                        "x":  312,
+                                        "y":  222,
+                                        "width":  35,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Studio",
+                                        "x":  355,
+                                        "y":  221,
+                                        "width":  65,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Proficiency",
+                                        "x":  428,
+                                        "y":  220,
+                                        "width":  113,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "allows",
+                                        "x":  547,
+                                        "y":  221,
+                                        "width":  62,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "students from across campus, regardless of their major",
+                      "x":  125,
+                      "y":  251,
+                      "words":  [
+                                    {
+                                        "text":  "students",
+                                        "x":  125,
+                                        "y":  251,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "from",
+                                        "x":  215,
+                                        "y":  251,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "across",
+                                        "x":  270,
+                                        "y":  258,
+                                        "width":  58,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "campus,",
+                                        "x":  336,
+                                        "y":  258,
+                                        "width":  82,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "regardless",
+                                        "x":  427,
+                                        "y":  251,
+                                        "width":  96,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  531,
+                                        "y":  251,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "their",
+                                        "x":  558,
+                                        "y":  251,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "major",
+                                        "x":  612,
+                                        "y":  253,
+                                        "width":  57,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "or degree program, to engage in a structured, meaning-",
+                      "x":  125,
+                      "y":  281,
+                      "words":  [
+                                    {
+                                        "text":  "or",
+                                        "x":  125,
+                                        "y":  289,
+                                        "width":  20,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  152,
+                                        "y":  281,
+                                        "width":  64,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "program,",
+                                        "x":  224,
+                                        "y":  289,
+                                        "width":  90,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  323,
+                                        "y":  288,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "engage",
+                                        "x":  350,
+                                        "y":  289,
+                                        "width":  67,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  425,
+                                        "y":  284,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  452,
+                                        "y":  289,
+                                        "width":  10,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "structured,",
+                                        "x":  469,
+                                        "y":  281,
+                                        "width":  109,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "meaning-",
+                                        "x":  587,
+                                        "y":  284,
+                                        "width":  94,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ful art studio experience. This certificate designed for",
+                      "x":  125,
+                      "y":  312,
+                      "words":  [
+                                    {
+                                        "text":  "ful",
+                                        "x":  125,
+                                        "y":  312,
+                                        "width":  27,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "art",
+                                        "x":  160,
+                                        "y":  318,
+                                        "width":  27,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "studio",
+                                        "x":  195,
+                                        "y":  312,
+                                        "width":  61,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "experience.",
+                                        "x":  264,
+                                        "y":  314,
+                                        "width":  110,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "This",
+                                        "x":  382,
+                                        "y":  312,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "certificate",
+                                        "x":  436,
+                                        "y":  312,
+                                        "width":  99,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "designed",
+                                        "x":  543,
+                                        "y":  312,
+                                        "width":  87,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  637,
+                                        "y":  312,
+                                        "width":  28,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "students who may not have professional ambitions in",
+                      "x":  125,
+                      "y":  342,
+                      "words":  [
+                                    {
+                                        "text":  "students",
+                                        "x":  125,
+                                        "y":  342,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "who",
+                                        "x":  214,
+                                        "y":  342,
+                                        "width":  42,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "may",
+                                        "x":  264,
+                                        "y":  350,
+                                        "width":  42,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "not",
+                                        "x":  313,
+                                        "y":  349,
+                                        "width":  33,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "have",
+                                        "x":  353,
+                                        "y":  342,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "professional",
+                                        "x":  404,
+                                        "y":  342,
+                                        "width":  119,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "ambitions",
+                                        "x":  530,
+                                        "y":  342,
+                                        "width":  98,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  637,
+                                        "y":  345,
+                                        "width":  19,
+                                        "height":  16
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the arts, but still have an interest in a special discipline",
+                      "x":  125,
+                      "y":  373,
+                      "words":  [
+                                    {
+                                        "text":  "the",
+                                        "x":  125,
+                                        "y":  373,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "arts,",
+                                        "x":  163,
+                                        "y":  379,
+                                        "width":  42,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "but",
+                                        "x":  214,
+                                        "y":  373,
+                                        "width":  33,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "still",
+                                        "x":  254,
+                                        "y":  373,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "have",
+                                        "x":  298,
+                                        "y":  373,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "an",
+                                        "x":  350,
+                                        "y":  380,
+                                        "width":  23,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "interest",
+                                        "x":  381,
+                                        "y":  375,
+                                        "width":  73,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  462,
+                                        "y":  375,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  489,
+                                        "y":  380,
+                                        "width":  10,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "special",
+                                        "x":  506,
+                                        "y":  373,
+                                        "width":  66,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "discipline",
+                                        "x":  580,
+                                        "y":  373,
+                                        "width":  95,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and want to develop their talents; previous coursework",
+                      "x":  125,
+                      "y":  403,
+                      "words":  [
+                                    {
+                                        "text":  "and",
+                                        "x":  125,
+                                        "y":  403,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "want",
+                                        "x":  168,
+                                        "y":  409,
+                                        "width":  49,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  225,
+                                        "y":  409,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "develop",
+                                        "x":  252,
+                                        "y":  403,
+                                        "width":  75,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "their",
+                                        "x":  335,
+                                        "y":  403,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "talents;",
+                                        "x":  390,
+                                        "y":  403,
+                                        "width":  70,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "previous",
+                                        "x":  468,
+                                        "y":  405,
+                                        "width":  84,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "coursework",
+                                        "x":  560,
+                                        "y":  403,
+                                        "width":  114,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "in art is not required.",
+                      "x":  125,
+                      "y":  433,
+                      "words":  [
+                                    {
+                                        "text":  "in",
+                                        "x":  125,
+                                        "y":  436,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "art",
+                                        "x":  152,
+                                        "y":  440,
+                                        "width":  27,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  187,
+                                        "y":  436,
+                                        "width":  14,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "not",
+                                        "x":  209,
+                                        "y":  440,
+                                        "width":  33,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "required.",
+                                        "x":  249,
+                                        "y":  433,
+                                        "width":  89,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The program provides a course of study in four focus",
+                      "x":  124,
+                      "y":  494,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  124,
+                                        "y":  494,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "program",
+                                        "x":  172,
+                                        "y":  502,
+                                        "width":  85,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "provides",
+                                        "x":  264,
+                                        "y":  494,
+                                        "width":  83,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  355,
+                                        "y":  502,
+                                        "width":  10,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "course",
+                                        "x":  372,
+                                        "y":  502,
+                                        "width":  64,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  443,
+                                        "y":  494,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "study",
+                                        "x":  470,
+                                        "y":  494,
+                                        "width":  54,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  531,
+                                        "y":  497,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "four",
+                                        "x":  558,
+                                        "y":  494,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "focus",
+                                        "x":  607,
+                                        "y":  494,
+                                        "width":  51,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "areas: 2D, 3D, 4D, or Photography. Students select one",
+                      "x":  125,
+                      "y":  525,
+                      "words":  [
+                                    {
+                                        "text":  "areas:",
+                                        "x":  125,
+                                        "y":  532,
+                                        "width":  54,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "2D,",
+                                        "x":  187,
+                                        "y":  526,
+                                        "width":  37,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "3D,",
+                                        "x":  233,
+                                        "y":  526,
+                                        "width":  36,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "4D,",
+                                        "x":  277,
+                                        "y":  525,
+                                        "width":  37,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  323,
+                                        "y":  532,
+                                        "width":  20,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "Photography.",
+                                        "x":  351,
+                                        "y":  525,
+                                        "width":  130,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Students",
+                                        "x":  490,
+                                        "y":  525,
+                                        "width":  86,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "select",
+                                        "x":  584,
+                                        "y":  525,
+                                        "width":  53,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "one",
+                                        "x":  645,
+                                        "y":  532,
+                                        "width":  34,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of these tracks and complete the courses required of",
+                      "x":  125,
+                      "y":  555,
+                      "words":  [
+                                    {
+                                        "text":  "of",
+                                        "x":  125,
+                                        "y":  555,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "these",
+                                        "x":  151,
+                                        "y":  555,
+                                        "width":  50,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "tracks",
+                                        "x":  209,
+                                        "y":  555,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  276,
+                                        "y":  555,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "complete",
+                                        "x":  320,
+                                        "y":  555,
+                                        "width":  89,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  417,
+                                        "y":  555,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  455,
+                                        "y":  562,
+                                        "width":  73,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "required",
+                                        "x":  536,
+                                        "y":  555,
+                                        "width":  83,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  626,
+                                        "y":  555,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "this area of study. For each option, certificate students",
+                      "x":  125,
+                      "y":  585,
+                      "words":  [
+                                    {
+                                        "text":  "this",
+                                        "x":  125,
+                                        "y":  585,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "area",
+                                        "x":  169,
+                                        "y":  593,
+                                        "width":  40,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  216,
+                                        "y":  585,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "study.",
+                                        "x":  243,
+                                        "y":  585,
+                                        "width":  57,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "For",
+                                        "x":  309,
+                                        "y":  587,
+                                        "width":  34,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "each",
+                                        "x":  350,
+                                        "y":  586,
+                                        "width":  44,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "option,",
+                                        "x":  402,
+                                        "y":  588,
+                                        "width":  70,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "certificate",
+                                        "x":  480,
+                                        "y":  585,
+                                        "width":  100,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  587,
+                                        "y":  585,
+                                        "width":  82,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "complete one course focusing on the historical context",
+                      "x":  125,
+                      "y":  616,
+                      "words":  [
+                                    {
+                                        "text":  "complete",
+                                        "x":  125,
+                                        "y":  616,
+                                        "width":  89,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "one",
+                                        "x":  222,
+                                        "y":  623,
+                                        "width":  35,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "course",
+                                        "x":  264,
+                                        "y":  623,
+                                        "width":  64,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "focusing",
+                                        "x":  335,
+                                        "y":  616,
+                                        "width":  85,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "on",
+                                        "x":  427,
+                                        "y":  623,
+                                        "width":  24,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  460,
+                                        "y":  616,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "historical",
+                                        "x":  498,
+                                        "y":  616,
+                                        "width":  92,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "context",
+                                        "x":  598,
+                                        "y":  622,
+                                        "width":  73,
+                                        "height":  13
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of art, one or two courses that provide a foundation for",
+                      "x":  125,
+                      "y":  646,
+                      "words":  [
+                                    {
+                                        "text":  "of",
+                                        "x":  125,
+                                        "y":  646,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "art,",
+                                        "x":  151,
+                                        "y":  653,
+                                        "width":  33,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "one",
+                                        "x":  193,
+                                        "y":  654,
+                                        "width":  35,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  235,
+                                        "y":  654,
+                                        "width":  21,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "two",
+                                        "x":  263,
+                                        "y":  653,
+                                        "width":  37,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  308,
+                                        "y":  654,
+                                        "width":  72,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  388,
+                                        "y":  646,
+                                        "width":  39,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "provide",
+                                        "x":  434,
+                                        "y":  646,
+                                        "width":  75,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  516,
+                                        "y":  654,
+                                        "width":  10,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "foundation",
+                                        "x":  533,
+                                        "y":  646,
+                                        "width":  111,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  652,
+                                        "y":  646,
+                                        "width":  27,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "their chosen area, and two related electives that allow",
+                      "x":  125,
+                      "y":  677,
+                      "words":  [
+                                    {
+                                        "text":  "their",
+                                        "x":  125,
+                                        "y":  677,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "chosen",
+                                        "x":  179,
+                                        "y":  677,
+                                        "width":  67,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "area,",
+                                        "x":  254,
+                                        "y":  684,
+                                        "width":  46,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  308,
+                                        "y":  677,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "two",
+                                        "x":  353,
+                                        "y":  683,
+                                        "width":  36,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "related",
+                                        "x":  398,
+                                        "y":  677,
+                                        "width":  66,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "electives",
+                                        "x":  472,
+                                        "y":  677,
+                                        "width":  81,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  561,
+                                        "y":  677,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "allow",
+                                        "x":  609,
+                                        "y":  677,
+                                        "width":  53,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "for the exploration and development of their skills.",
+                      "x":  125,
+                      "y":  707,
+                      "words":  [
+                                    {
+                                        "text":  "for",
+                                        "x":  125,
+                                        "y":  707,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  160,
+                                        "y":  707,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "exploration",
+                                        "x":  198,
+                                        "y":  707,
+                                        "width":  112,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  318,
+                                        "y":  707,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "development",
+                                        "x":  362,
+                                        "y":  707,
+                                        "width":  127,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  497,
+                                        "y":  707,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "their",
+                                        "x":  523,
+                                        "y":  707,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "skills.",
+                                        "x":  577,
+                                        "y":  707,
+                                        "width":  56,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "OCCUPATIONAL CERTIFICATE",
+                      "x":  818,
+                      "y":  94,
+                      "words":  [
+                                    {
+                                        "text":  "OCCUPATIONAL",
+                                        "x":  818,
+                                        "y":  94,
+                                        "width":  200,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  1026,
+                                        "y":  94,
+                                        "width":  163,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ONE SEMESTER",
+                      "x":  727,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "ONE",
+                                        "x":  727,
+                                        "y":  145,
+                                        "width":  47,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "SEMESTER",
+                                        "x":  782,
+                                        "y":  146,
+                                        "width":  122,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  145,
+                                        "width":  98,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTH 1110 or MUSC 1130 Art or Music",
+                      "x":  874,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "ARTH",
+                                        "x":  874,
+                                        "y":  179,
+                                        "width":  52,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  934,
+                                        "y":  180,
+                                        "width":  34,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  976,
+                                        "y":  184,
+                                        "width":  20,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "MUSC",
+                                        "x":  1004,
+                                        "y":  179,
+                                        "width":  58,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1130",
+                                        "x":  1069,
+                                        "y":  180,
+                                        "width":  39,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Art",
+                                        "x":  1115,
+                                        "y":  179,
+                                        "width":  29,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  1151,
+                                        "y":  184,
+                                        "width":  20,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Music",
+                                        "x":  1179,
+                                        "y":  179,
+                                        "width":  57,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTH 2110",
+                      "x":  726,
+                      "y":  244,
+                      "words":  [
+                                    {
+                                        "text":  "ARTH",
+                                        "x":  726,
+                                        "y":  244,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "2110",
+                                        "x":  787,
+                                        "y":  244,
+                                        "width":  38,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTH 2120",
+                      "x":  726,
+                      "y":  277,
+                      "words":  [
+                                    {
+                                        "text":  "ARTH",
+                                        "x":  726,
+                                        "y":  277,
+                                        "width":  52,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2120",
+                                        "x":  787,
+                                        "y":  278,
+                                        "width":  42,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTS 1610",
+                      "x":  726,
+                      "y":  311,
+                      "words":  [
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  726,
+                                        "y":  311,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1610",
+                                        "x":  784,
+                                        "y":  311,
+                                        "width":  40,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTS 1610",
+                      "x":  726,
+                      "y":  344,
+                      "words":  [
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  726,
+                                        "y":  344,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1610",
+                                        "x":  784,
+                                        "y":  345,
+                                        "width":  40,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTS 1616",
+                      "x":  726,
+                      "y":  378,
+                      "words":  [
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  726,
+                                        "y":  378,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1616",
+                                        "x":  784,
+                                        "y":  379,
+                                        "width":  40,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Appreciation",
+                      "x":  894,
+                      "y":  209,
+                      "words":  [
+                                    {
+                                        "text":  "Appreciation",
+                                        "x":  894,
+                                        "y":  209,
+                                        "width":  125,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "History of Art I",
+                      "x":  875,
+                      "y":  243,
+                      "words":  [
+                                    {
+                                        "text":  "History",
+                                        "x":  875,
+                                        "y":  243,
+                                        "width":  68,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  951,
+                                        "y":  243,
+                                        "width":  18,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Art",
+                                        "x":  975,
+                                        "y":  244,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  1012,
+                                        "y":  244,
+                                        "width":  2,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "History of Art 11",
+                      "x":  875,
+                      "y":  276,
+                      "words":  [
+                                    {
+                                        "text":  "History",
+                                        "x":  875,
+                                        "y":  276,
+                                        "width":  68,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  951,
+                                        "y":  276,
+                                        "width":  18,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Art",
+                                        "x":  975,
+                                        "y":  277,
+                                        "width":  28,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  1012,
+                                        "y":  277,
+                                        "width":  8,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Drawing I",
+                      "x":  875,
+                      "y":  310,
+                      "words":  [
+                                    {
+                                        "text":  "Drawing",
+                                        "x":  875,
+                                        "y":  310,
+                                        "width":  80,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  965,
+                                        "y":  311,
+                                        "width":  2,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Drawing 11",
+                      "x":  875,
+                      "y":  344,
+                      "words":  [
+                                    {
+                                        "text":  "Drawing",
+                                        "x":  875,
+                                        "y":  344,
+                                        "width":  80,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  965,
+                                        "y":  345,
+                                        "width":  8,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Drawing Comics",
+                      "x":  875,
+                      "y":  378,
+                      "words":  [
+                                    {
+                                        "text":  "Drawing",
+                                        "x":  875,
+                                        "y":  378,
+                                        "width":  80,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Comics",
+                                        "x":  964,
+                                        "y":  378,
+                                        "width":  72,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and SequentialArt",
+                      "x":  874,
+                      "y":  411,
+                      "words":  [
+                                    {
+                                        "text":  "and",
+                                        "x":  874,
+                                        "y":  411,
+                                        "width":  35,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "SequentialArt",
+                                        "x":  918,
+                                        "y":  411,
+                                        "width":  134,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Total Credits Completedfor Certificate",
+                      "x":  726,
+                      "y":  512,
+                      "words":  [
+                                    {
+                                        "text":  "Total",
+                                        "x":  726,
+                                        "y":  513,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  789,
+                                        "y":  513,
+                                        "width":  81,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Completedfor",
+                                        "x":  878,
+                                        "y":  512,
+                                        "width":  155,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  1041,
+                                        "y":  512,
+                                        "width":  119,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  210,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  210,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  244,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  244,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  278,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  278,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  311,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  311,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  345,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  345,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  412,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  412,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "18",
+                      "x":  1219,
+                      "y":  514,
+                      "words":  [
+                                    {
+                                        "text":  "18",
+                                        "x":  1219,
+                                        "y":  514,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "64",
+                      "x":  691,
+                      "y":  1769,
+                      "words":  [
+                                    {
+                                        "text":  "64",
+                                        "x":  691,
+                                        "y":  1769,
+                                        "width":  27,
+                                        "height":  19
+                                    }
+                                ]
+                  }
+              ]
+}

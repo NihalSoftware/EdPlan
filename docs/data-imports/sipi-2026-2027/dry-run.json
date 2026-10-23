@@ -1,0 +1,44 @@
+{
+  "mode": "dry-run-rolled-back",
+  "database": "edplan_db",
+  "university_id": "2ccda41e-a690-401b-8442-34b19df9aa23",
+  "program_count": 15,
+  "course_row_count": 187,
+  "held_program_count": 5,
+  "inserted_program_ids": [],
+  "inserted_course_ids": [],
+  "program_ids": {
+    "Accounting | Certificate": "97e39509-3e54-468d-adc4-fbba9d021319",
+    "Business Administration | Associate of Science": "2641548b-c08e-492d-98df-d027b09b7acd",
+    "Business Administration | Associate of Applied Science": "e2f111c0-146e-4480-9d87-b048cd13b5f3",
+    "Business Administration | Certificate": "fc0244bf-b03d-4634-b365-ce66b4d9e285",
+    "Computer Aided Drafting and Design | Certificate": "6008e2e1-7787-4d7e-a7ae-f7b90c4c955a",
+    "Conservation and Resource Protection | Certificate of Achievement": "b6614022-8043-4b41-abcd-c890d515558e",
+    "Culinary Arts & Sciences | Associate of Applied Science": "2d34da58-b7c6-49c6-b7c8-1c6392c1b427",
+    "Early Childhood Education | Associate of Arts": "76c846ad-02be-4099-8df8-2d7b1096f281",
+    "Early Childhood Education | Certificate of Achievement": "5a7fd99d-188f-4788-a2ef-c92164013fa0",
+    "Geospatial Information Technology | Associate of Applied Science": "26a98cb8-82a5-4132-a679-1e885cde3047",
+    "Geospatial Information Technology | Certificate": "e4bc2651-0d0d-48e6-9882-d16fb10ff554",
+    "Natural Resources Management | Associate of Applied Science": "f18610bd-bc10-4e80-9287-6fad21a8fad4",
+    "Network Management | Associate of Applied Science": "cdbe51db-2331-4eda-9b1c-14dc8be516b4",
+    "Pre-Engineering | Associate of Science": "f47e2ae5-1ebd-4259-941d-9bd5b42c589a",
+    "Optical Laboratory Technology | Certificate of Completion": "3c4f1a46-8eaa-442d-bb27-6a6d4f163a79"
+  },
+  "other_colleges_unchanged": true,
+  "other_college_fingerprints": {
+    "universities": [
+      30,
+      "814a2011da782f413808e03e80362864"
+    ],
+    "programs": [
+      929,
+      "04b9e0f6273b27476d10d22c8b3d267e"
+    ],
+    "courses": [
+      13519,
+      "c5a2f1d9288c61fdb46b342a93b94f0f"
+    ]
+  },
+  "original_college_profile_preserved": true,
+  "source_sha256": "6eaf3f400e5424ff5dfd9414a3b36f7304b932f0915d18b20041f08af938a205"
+}

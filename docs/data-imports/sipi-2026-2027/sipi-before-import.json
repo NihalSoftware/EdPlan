@@ -1,0 +1,16 @@
+{
+  "universities": [
+    {
+      "university_id": "2ccda41e-a690-401b-8442-34b19df9aa23",
+      "university_name": "Southwest Indian Polytechnic Institute",
+      "city": "Albuquerque",
+      "state": "New Mexico",
+      "website": "https://www.sipi.edu",
+      "college_profile": {
+        "source": "New Mexico college list"
+      }
+    }
+  ],
+  "programs": [],
+  "courses": []
+}

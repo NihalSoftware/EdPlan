@@ -1,0 +1,1853 @@
+﻿{
+    "pdf_page":  30,
+    "lines":  [
+                  {
+                      "text":  "COWBOY ARTS/",
+                      "x":  127,
+                      "y":  85,
+                      "words":  [
+                                    {
+                                        "text":  "COWBOY",
+                                        "x":  127,
+                                        "y":  85,
+                                        "width":  249,
+                                        "height":  39
+                                    },
+                                    {
+                                        "text":  "ARTS/",
+                                        "x":  385,
+                                        "y":  85,
+                                        "width":  158,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "WESTERN ARTISTIC",
+                      "x":  122,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "WESTERN",
+                                        "x":  122,
+                                        "y":  145,
+                                        "width":  276,
+                                        "height":  39
+                                    },
+                                    {
+                                        "text":  "ARTISTIC",
+                                        "x":  410,
+                                        "y":  145,
+                                        "width":  259,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SILVERSMITHING",
+                      "x":  126,
+                      "y":  204,
+                      "words":  [
+                                    {
+                                        "text":  "SILVERSMITHING",
+                                        "x":  126,
+                                        "y":  204,
+                                        "width":  479,
+                                        "height":  40
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "AND FABRICATION",
+                      "x":  123,
+                      "y":  264,
+                      "words":  [
+                                    {
+                                        "text":  "AND",
+                                        "x":  123,
+                                        "y":  265,
+                                        "width":  124,
+                                        "height":  39
+                                    },
+                                    {
+                                        "text":  "FABRICATION",
+                                        "x":  264,
+                                        "y":  264,
+                                        "width":  377,
+                                        "height":  40
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTISTIC SILVERSMITHING",
+                      "x":  123,
+                      "y":  349,
+                      "words":  [
+                                    {
+                                        "text":  "ARTISTIC",
+                                        "x":  123,
+                                        "y":  349,
+                                        "width":  152,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "SILVERSMITHING",
+                                        "x":  284,
+                                        "y":  349,
+                                        "width":  281,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CERTIFICATES",
+                      "x":  125,
+                      "y":  388,
+                      "words":  [
+                                    {
+                                        "text":  "CERTIFICATES",
+                                        "x":  125,
+                                        "y":  388,
+                                        "width":  231,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Artistic Silversmithing Certificate program is",
+                      "x":  124,
+                      "y":  439,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  124,
+                                        "y":  439,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Artistic",
+                                        "x":  171,
+                                        "y":  440,
+                                        "width":  76,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Silversmithing",
+                                        "x":  254,
+                                        "y":  439,
+                                        "width":  145,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  407,
+                                        "y":  439,
+                                        "width":  106,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "program",
+                                        "x":  521,
+                                        "y":  446,
+                                        "width":  85,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  614,
+                                        "y":  441,
+                                        "width":  14,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "designed to enable students in the acquisition of skills",
+                      "x":  125,
+                      "y":  469,
+                      "words":  [
+                                    {
+                                        "text":  "designed",
+                                        "x":  125,
+                                        "y":  469,
+                                        "width":  87,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  219,
+                                        "y":  476,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "enable",
+                                        "x":  246,
+                                        "y":  469,
+                                        "width":  63,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  316,
+                                        "y":  469,
+                                        "width":  83,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  406,
+                                        "y":  472,
+                                        "width":  20,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  434,
+                                        "y":  469,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "acquisition",
+                                        "x":  472,
+                                        "y":  472,
+                                        "width":  109,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  589,
+                                        "y":  469,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "skills",
+                                        "x":  615,
+                                        "y":  469,
+                                        "width":  50,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "necessary for self-employment or employment with a",
+                      "x":  125,
+                      "y":  500,
+                      "words":  [
+                                    {
+                                        "text":  "necessary",
+                                        "x":  125,
+                                        "y":  507,
+                                        "width":  94,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  226,
+                                        "y":  500,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "self-employment",
+                                        "x":  261,
+                                        "y":  500,
+                                        "width":  165,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  433,
+                                        "y":  507,
+                                        "width":  21,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "employment",
+                                        "x":  461,
+                                        "y":  500,
+                                        "width":  124,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "with",
+                                        "x":  591,
+                                        "y":  500,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  644,
+                                        "y":  508,
+                                        "width":  11,
+                                        "height":  11
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "major manufacturer in the field of traditional western",
+                      "x":  125,
+                      "y":  530,
+                      "words":  [
+                                    {
+                                        "text":  "major",
+                                        "x":  125,
+                                        "y":  532,
+                                        "width":  57,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "manufacturer",
+                                        "x":  190,
+                                        "y":  530,
+                                        "width":  136,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  333,
+                                        "y":  532,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  360,
+                                        "y":  530,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "field",
+                                        "x":  399,
+                                        "y":  530,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  450,
+                                        "y":  530,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "traditional",
+                                        "x":  477,
+                                        "y":  530,
+                                        "width":  105,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "western",
+                                        "x":  589,
+                                        "y":  537,
+                                        "width":  76,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "culture arts. Western culture arts include custom",
+                      "x":  125,
+                      "y":  561,
+                      "words":  [
+                                    {
+                                        "text":  "culture",
+                                        "x":  125,
+                                        "y":  561,
+                                        "width":  70,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "arts.",
+                                        "x":  203,
+                                        "y":  567,
+                                        "width":  41,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Western",
+                                        "x":  252,
+                                        "y":  562,
+                                        "width":  83,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "culture",
+                                        "x":  343,
+                                        "y":  561,
+                                        "width":  70,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "arts",
+                                        "x":  420,
+                                        "y":  567,
+                                        "width":  36,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "include",
+                                        "x":  464,
+                                        "y":  561,
+                                        "width":  73,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "custom",
+                                        "x":  544,
+                                        "y":  567,
+                                        "width":  72,
+                                        "height":  13
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "designing, fabricating, and the engraving of bits, spurs,",
+                      "x":  125,
+                      "y":  591,
+                      "words":  [
+                                    {
+                                        "text":  "designing,",
+                                        "x":  125,
+                                        "y":  591,
+                                        "width":  102,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "fabricating,",
+                                        "x":  236,
+                                        "y":  591,
+                                        "width":  113,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  357,
+                                        "y":  591,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  402,
+                                        "y":  591,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "engraving",
+                                        "x":  440,
+                                        "y":  593,
+                                        "width":  98,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  545,
+                                        "y":  591,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "bits,",
+                                        "x":  572,
+                                        "y":  591,
+                                        "width":  40,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "spurs,",
+                                        "x":  621,
+                                        "y":  598,
+                                        "width":  57,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "various buckles, bracelets and pendants worn and used",
+                      "x":  124,
+                      "y":  621,
+                      "words":  [
+                                    {
+                                        "text":  "various",
+                                        "x":  124,
+                                        "y":  624,
+                                        "width":  72,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "buckles,",
+                                        "x":  204,
+                                        "y":  621,
+                                        "width":  79,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "bracelets",
+                                        "x":  292,
+                                        "y":  621,
+                                        "width":  85,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  385,
+                                        "y":  621,
+                                        "width":  37,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "pendants",
+                                        "x":  429,
+                                        "y":  621,
+                                        "width":  90,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "worn",
+                                        "x":  527,
+                                        "y":  629,
+                                        "width":  51,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  585,
+                                        "y":  621,
+                                        "width":  37,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "used",
+                                        "x":  630,
+                                        "y":  621,
+                                        "width":  44,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "in traditional western culture.",
+                      "x":  125,
+                      "y":  652,
+                      "words":  [
+                                    {
+                                        "text":  "in",
+                                        "x":  125,
+                                        "y":  654,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "traditional",
+                                        "x":  152,
+                                        "y":  652,
+                                        "width":  105,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "western",
+                                        "x":  264,
+                                        "y":  658,
+                                        "width":  76,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "culture.",
+                                        "x":  348,
+                                        "y":  652,
+                                        "width":  76,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Zo",
+                      "x":  125,
+                      "y":  739,
+                      "words":  [
+                                    {
+                                        "text":  "Zo",
+                                        "x":  125,
+                                        "y":  739,
+                                        "width":  168,
+                                        "height":  111
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "APPLIED SCIENCE CERTIFICATE (One Year)",
+                      "x":  756,
+                      "y":  94,
+                      "words":  [
+                                    {
+                                        "text":  "APPLIED",
+                                        "x":  756,
+                                        "y":  95,
+                                        "width":  99,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "SCIENCE",
+                                        "x":  864,
+                                        "y":  95,
+                                        "width":  102,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  974,
+                                        "y":  95,
+                                        "width":  150,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "(One",
+                                        "x":  1132,
+                                        "y":  94,
+                                        "width":  53,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "Year)",
+                                        "x":  1192,
+                                        "y":  94,
+                                        "width":  57,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FALL",
+                      "x":  727,
+                      "y":  146,
+                      "words":  [
+                                    {
+                                        "text":  "FALL",
+                                        "x":  727,
+                                        "y":  146,
+                                        "width":  54,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "WELD 1110",
+                      "x":  726,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "WELD",
+                                        "x":  726,
+                                        "y":  179,
+                                        "width":  59,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  792,
+                                        "y":  180,
+                                        "width":  35,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTS 1870",
+                      "x":  726,
+                      "y":  213,
+                      "words":  [
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  726,
+                                        "y":  213,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1870",
+                                        "x":  784,
+                                        "y":  213,
+                                        "width":  42,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTS 1810",
+                      "x":  726,
+                      "y":  247,
+                      "words":  [
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  726,
+                                        "y":  247,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1810",
+                                        "x":  784,
+                                        "y":  247,
+                                        "width":  39,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "AEEC 1110",
+                      "x":  726,
+                      "y":  311,
+                      "words":  [
+                                    {
+                                        "text":  "AEEC",
+                                        "x":  726,
+                                        "y":  311,
+                                        "width":  52,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  785,
+                                        "y":  311,
+                                        "width":  34,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "WELD",
+                      "x":  726,
+                      "y":  345,
+                      "words":  [
+                                    {
+                                        "text":  "WELD",
+                                        "x":  726,
+                                        "y":  345,
+                                        "width":  59,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SPRING",
+                      "x":  726,
+                      "y":  446,
+                      "words":  [
+                                    {
+                                        "text":  "SPRING",
+                                        "x":  726,
+                                        "y":  446,
+                                        "width":  86,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTS 2870",
+                      "x":  726,
+                      "y":  513,
+                      "words":  [
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  726,
+                                        "y":  513,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2870",
+                                        "x":  784,
+                                        "y":  514,
+                                        "width":  46,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTS 1854",
+                      "x":  726,
+                      "y":  547,
+                      "words":  [
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  726,
+                                        "y":  547,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1854",
+                                        "x":  784,
+                                        "y":  547,
+                                        "width":  45,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "WELD",
+                      "x":  726,
+                      "y":  614,
+                      "words":  [
+                                    {
+                                        "text":  "WELD",
+                                        "x":  726,
+                                        "y":  614,
+                                        "width":  59,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Composition I (Area l)",
+                      "x":  874,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "Composition",
+                                        "x":  874,
+                                        "y":  179,
+                                        "width":  122,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  1006,
+                                        "y":  179,
+                                        "width":  2,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1017,
+                                        "y":  179,
+                                        "width":  51,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "l)",
+                                        "x":  1078,
+                                        "y":  179,
+                                        "width":  10,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Engraving",
+                      "x":  875,
+                      "y":  212,
+                      "words":  [
+                                    {
+                                        "text":  "Engraving",
+                                        "x":  875,
+                                        "y":  212,
+                                        "width":  97,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jewelry Making and",
+                      "x":  873,
+                      "y":  246,
+                      "words":  [
+                                    {
+                                        "text":  "Jewelry",
+                                        "x":  873,
+                                        "y":  246,
+                                        "width":  73,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Making",
+                                        "x":  954,
+                                        "y":  246,
+                                        "width":  70,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  1033,
+                                        "y":  246,
+                                        "width":  35,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Small Metal Construction",
+                      "x":  895,
+                      "y":  276,
+                      "words":  [
+                                    {
+                                        "text":  "Small",
+                                        "x":  895,
+                                        "y":  277,
+                                        "width":  52,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Metal",
+                                        "x":  957,
+                                        "y":  277,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Construction",
+                                        "x":  1017,
+                                        "y":  276,
+                                        "width":  125,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Cowboy Arts Elective",
+                      "x":  874,
+                      "y":  310,
+                      "words":  [
+                                    {
+                                        "text":  "Cowboy",
+                                        "x":  874,
+                                        "y":  310,
+                                        "width":  79,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  959,
+                                        "y":  311,
+                                        "width":  39,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  1007,
+                                        "y":  310,
+                                        "width":  74,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "WELD Elective",
+                      "x":  873,
+                      "y":  344,
+                      "words":  [
+                                    {
+                                        "text":  "WELD",
+                                        "x":  873,
+                                        "y":  345,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  941,
+                                        "y":  344,
+                                        "width":  75,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  874,
+                      "y":  378,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  874,
+                                        "y":  378,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  990,
+                                        "y":  378,
+                                        "width":  81,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Cowboy Arts Elective",
+                      "x":  874,
+                      "y":  479,
+                      "words":  [
+                                    {
+                                        "text":  "Cowboy",
+                                        "x":  874,
+                                        "y":  479,
+                                        "width":  79,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  959,
+                                        "y":  480,
+                                        "width":  39,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  1007,
+                                        "y":  479,
+                                        "width":  75,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Engraving 11",
+                      "x":  875,
+                      "y":  513,
+                      "words":  [
+                                    {
+                                        "text":  "Engraving",
+                                        "x":  875,
+                                        "y":  513,
+                                        "width":  97,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  981,
+                                        "y":  513,
+                                        "width":  9,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Artistic Blacksmithing",
+                      "x":  874,
+                      "y":  546,
+                      "words":  [
+                                    {
+                                        "text":  "Artistic",
+                                        "x":  874,
+                                        "y":  546,
+                                        "width":  68,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Blacksmithing",
+                                        "x":  951,
+                                        "y":  546,
+                                        "width":  137,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Cowboy Arts Elective",
+                      "x":  874,
+                      "y":  580,
+                      "words":  [
+                                    {
+                                        "text":  "Cowboy",
+                                        "x":  874,
+                                        "y":  580,
+                                        "width":  79,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  959,
+                                        "y":  581,
+                                        "width":  39,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  1007,
+                                        "y":  580,
+                                        "width":  74,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "WELD Elective",
+                      "x":  874,
+                      "y":  614,
+                      "words":  [
+                                    {
+                                        "text":  "WELD",
+                                        "x":  874,
+                                        "y":  615,
+                                        "width":  58,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  941,
+                                        "y":  614,
+                                        "width":  75,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BCIS 1110 or BUSA Elective",
+                      "x":  875,
+                      "y":  647,
+                      "words":  [
+                                    {
+                                        "text":  "BCIS",
+                                        "x":  875,
+                                        "y":  648,
+                                        "width":  44,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  926,
+                                        "y":  649,
+                                        "width":  35,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  969,
+                                        "y":  653,
+                                        "width":  19,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "BUSA",
+                                        "x":  996,
+                                        "y":  648,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  1058,
+                                        "y":  647,
+                                        "width":  74,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  874,
+                      "y":  681,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  874,
+                                        "y":  682,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  990,
+                                        "y":  681,
+                                        "width":  81,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Total Certificate Credits",
+                      "x":  873,
+                      "y":  748,
+                      "words":  [
+                                    {
+                                        "text":  "Total",
+                                        "x":  873,
+                                        "y":  749,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  936,
+                                        "y":  748,
+                                        "width":  119,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  1063,
+                                        "y":  749,
+                                        "width":  81,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  145,
+                                        "width":  98,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  180,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  180,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  213,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  213,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  278,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  278,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  311,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  311,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  345,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  345,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "15",
+                      "x":  1219,
+                      "y":  379,
+                      "words":  [
+                                    {
+                                        "text":  "15",
+                                        "x":  1219,
+                                        "y":  379,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  446,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  446,
+                                        "width":  98,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  480,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  480,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  514,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  514,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  547,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  547,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  581,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  581,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  615,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  615,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  648,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  648,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "18",
+                      "x":  1219,
+                      "y":  683,
+                      "words":  [
+                                    {
+                                        "text":  "18",
+                                        "x":  1219,
+                                        "y":  683,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "33",
+                      "x":  1217,
+                      "y":  750,
+                      "words":  [
+                                    {
+                                        "text":  "33",
+                                        "x":  1217,
+                                        "y":  750,
+                                        "width":  27,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "OCCUPATIONAL CERTIFICATE (One Semester)",
+                      "x":  742,
+                      "y":  846,
+                      "words":  [
+                                    {
+                                        "text":  "OCCUPATIONAL",
+                                        "x":  742,
+                                        "y":  847,
+                                        "width":  183,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  933,
+                                        "y":  847,
+                                        "width":  148,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "(One",
+                                        "x":  1089,
+                                        "y":  846,
+                                        "width":  53,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "Semester)",
+                                        "x":  1149,
+                                        "y":  846,
+                                        "width":  115,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ONE SEMESTER",
+                      "x":  727,
+                      "y":  898,
+                      "words":  [
+                                    {
+                                        "text":  "ONE",
+                                        "x":  727,
+                                        "y":  898,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "SEMESTER",
+                                        "x":  782,
+                                        "y":  898,
+                                        "width":  122,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "WELD 1110",
+                      "x":  726,
+                      "y":  932,
+                      "words":  [
+                                    {
+                                        "text":  "WELD",
+                                        "x":  726,
+                                        "y":  932,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  792,
+                                        "y":  932,
+                                        "width":  35,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTS 1870",
+                      "x":  726,
+                      "y":  999,
+                      "words":  [
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  726,
+                                        "y":  999,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1870",
+                                        "x":  784,
+                                        "y":  999,
+                                        "width":  42,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTS 1810",
+                      "x":  726,
+                      "y":  1032,
+                      "words":  [
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  726,
+                                        "y":  1032,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1810",
+                                        "x":  784,
+                                        "y":  1033,
+                                        "width":  39,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "WELD",
+                      "x":  726,
+                      "y":  1131,
+                      "words":  [
+                                    {
+                                        "text":  "WELD",
+                                        "x":  726,
+                                        "y":  1131,
+                                        "width":  59,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Welding",
+                      "x":  875,
+                      "y":  931,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  931,
+                                        "width":  118,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1001,
+                                        "y":  933,
+                                        "width":  18,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Welding",
+                                        "x":  1026,
+                                        "y":  931,
+                                        "width":  80,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Fundamentals",
+                      "x":  875,
+                      "y":  964,
+                      "words":  [
+                                    {
+                                        "text":  "Fundamentals",
+                                        "x":  875,
+                                        "y":  964,
+                                        "width":  138,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Engraving",
+                      "x":  875,
+                      "y":  998,
+                      "words":  [
+                                    {
+                                        "text":  "Engraving",
+                                        "x":  875,
+                                        "y":  998,
+                                        "width":  97,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Jewelry Making and",
+                      "x":  873,
+                      "y":  1032,
+                      "words":  [
+                                    {
+                                        "text":  "Jewelry",
+                                        "x":  873,
+                                        "y":  1032,
+                                        "width":  73,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Making",
+                                        "x":  954,
+                                        "y":  1032,
+                                        "width":  70,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  1033,
+                                        "y":  1032,
+                                        "width":  35,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Small Metal Construction",
+                      "x":  895,
+                      "y":  1062,
+                      "words":  [
+                                    {
+                                        "text":  "Small",
+                                        "x":  895,
+                                        "y":  1062,
+                                        "width":  52,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Metal",
+                                        "x":  957,
+                                        "y":  1062,
+                                        "width":  51,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Construction",
+                                        "x":  1017,
+                                        "y":  1062,
+                                        "width":  125,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Cowboy Arts Elective",
+                      "x":  874,
+                      "y":  1096,
+                      "words":  [
+                                    {
+                                        "text":  "Cowboy",
+                                        "x":  874,
+                                        "y":  1096,
+                                        "width":  79,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  959,
+                                        "y":  1097,
+                                        "width":  39,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  1007,
+                                        "y":  1096,
+                                        "width":  74,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "WELD Elective",
+                      "x":  874,
+                      "y":  1130,
+                      "words":  [
+                                    {
+                                        "text":  "WELD",
+                                        "x":  874,
+                                        "y":  1131,
+                                        "width":  58,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  941,
+                                        "y":  1130,
+                                        "width":  75,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Total Certificate Credits",
+                      "x":  873,
+                      "y":  1163,
+                      "words":  [
+                                    {
+                                        "text":  "Total",
+                                        "x":  873,
+                                        "y":  1164,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  936,
+                                        "y":  1163,
+                                        "width":  119,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  1063,
+                                        "y":  1163,
+                                        "width":  81,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  898,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  898,
+                                        "width":  98,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  966,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  966,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  999,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  999,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  1063,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  1063,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  1097,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  1097,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  1131,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  1131,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "15",
+                      "x":  1219,
+                      "y":  1165,
+                      "words":  [
+                                    {
+                                        "text":  "15",
+                                        "x":  1219,
+                                        "y":  1165,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "79",
+                      "x":  692,
+                      "y":  1769,
+                      "words":  [
+                                    {
+                                        "text":  "79",
+                                        "x":  692,
+                                        "y":  1769,
+                                        "width":  26,
+                                        "height":  19
+                                    }
+                                ]
+                  }
+              ]
+}

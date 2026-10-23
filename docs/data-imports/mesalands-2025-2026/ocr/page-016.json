@@ -1,0 +1,1398 @@
+﻿{
+    "pdf_page":  16,
+    "lines":  [
+                  {
+                      "text":  "FINE ARTS",
+                      "x":  126,
+                      "y":  85,
+                      "words":  [
+                                    {
+                                        "text":  "FINE",
+                                        "x":  126,
+                                        "y":  86,
+                                        "width":  129,
+                                        "height":  38
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  267,
+                                        "y":  85,
+                                        "width":  139,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "DIGITAL MEDIA ARTS TRACK:",
+                      "x":  125,
+                      "y":  170,
+                      "words":  [
+                                    {
+                                        "text":  "DIGITAL",
+                                        "x":  125,
+                                        "y":  170,
+                                        "width":  135,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "MEDIA",
+                                        "x":  268,
+                                        "y":  170,
+                                        "width":  111,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  385,
+                                        "y":  170,
+                                        "width":  81,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "TRACK:",
+                                        "x":  475,
+                                        "y":  170,
+                                        "width":  120,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "COMIC ILLUSTRATION AND",
+                      "x":  125,
+                      "y":  208,
+                      "words":  [
+                                    {
+                                        "text":  "COMIC",
+                                        "x":  125,
+                                        "y":  208,
+                                        "width":  111,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "ILLUSTRATION",
+                                        "x":  246,
+                                        "y":  208,
+                                        "width":  241,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "AND",
+                                        "x":  494,
+                                        "y":  209,
+                                        "width":  73,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CHARACTER DESIGN",
+                      "x":  125,
+                      "y":  247,
+                      "words":  [
+                                    {
+                                        "text":  "CHARACTER",
+                                        "x":  125,
+                                        "y":  247,
+                                        "width":  203,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "DESIGN",
+                                        "x":  336,
+                                        "y":  247,
+                                        "width":  122,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Illustrators and cartoonists are communicators. Illus-",
+                      "x":  125,
+                      "y":  328,
+                      "words":  [
+                                    {
+                                        "text":  "Illustrators",
+                                        "x":  125,
+                                        "y":  328,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  241,
+                                        "y":  328,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "cartoonists",
+                                        "x":  285,
+                                        "y":  331,
+                                        "width":  109,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  402,
+                                        "y":  336,
+                                        "width":  29,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "communicators.",
+                                        "x":  438,
+                                        "y":  331,
+                                        "width":  161,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "Illus-",
+                                        "x":  608,
+                                        "y":  328,
+                                        "width":  51,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "trators often use imagery to interpret texts or ideas,",
+                      "x":  125,
+                      "y":  359,
+                      "words":  [
+                                    {
+                                        "text":  "trators",
+                                        "x":  125,
+                                        "y":  365,
+                                        "width":  64,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "often",
+                                        "x":  196,
+                                        "y":  359,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "use",
+                                        "x":  256,
+                                        "y":  367,
+                                        "width":  31,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "imagery",
+                                        "x":  295,
+                                        "y":  361,
+                                        "width":  81,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  383,
+                                        "y":  365,
+                                        "width":  18,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "interpret",
+                                        "x":  410,
+                                        "y":  361,
+                                        "width":  86,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "texts",
+                                        "x":  503,
+                                        "y":  365,
+                                        "width":  46,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  557,
+                                        "y":  366,
+                                        "width":  20,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "ideas,",
+                                        "x":  584,
+                                        "y":  359,
+                                        "width":  55,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "while cartoonists use image and text together to tell a",
+                      "x":  124,
+                      "y":  389,
+                      "words":  [
+                                    {
+                                        "text":  "while",
+                                        "x":  124,
+                                        "y":  389,
+                                        "width":  54,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "cartoonists",
+                                        "x":  186,
+                                        "y":  391,
+                                        "width":  109,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "use",
+                                        "x":  303,
+                                        "y":  397,
+                                        "width":  31,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "image",
+                                        "x":  342,
+                                        "y":  392,
+                                        "width":  59,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  409,
+                                        "y":  389,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "text",
+                                        "x":  453,
+                                        "y":  396,
+                                        "width":  37,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "together",
+                                        "x":  498,
+                                        "y":  389,
+                                        "width":  82,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  587,
+                                        "y":  395,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "tell",
+                                        "x":  614,
+                                        "y":  389,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  653,
+                                        "y":  397,
+                                        "width":  10,
+                                        "height":  11
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "story. Students have the opportunity to explore tradi-",
+                      "x":  125,
+                      "y":  420,
+                      "words":  [
+                                    {
+                                        "text":  "story.",
+                                        "x":  125,
+                                        "y":  426,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Students",
+                                        "x":  186,
+                                        "y":  420,
+                                        "width":  86,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "have",
+                                        "x":  280,
+                                        "y":  420,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  332,
+                                        "y":  420,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "opportunity",
+                                        "x":  370,
+                                        "y":  422,
+                                        "width":  122,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  499,
+                                        "y":  426,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "explore",
+                                        "x":  526,
+                                        "y":  420,
+                                        "width":  71,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "tradi-",
+                                        "x":  605,
+                                        "y":  420,
+                                        "width":  54,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "tional illustration techniques including drawing with",
+                      "x":  125,
+                      "y":  450,
+                      "words":  [
+                                    {
+                                        "text":  "tional",
+                                        "x":  125,
+                                        "y":  450,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "illustration",
+                                        "x":  190,
+                                        "y":  450,
+                                        "width":  109,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "techniques",
+                                        "x":  308,
+                                        "y":  450,
+                                        "width":  106,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "including",
+                                        "x":  422,
+                                        "y":  450,
+                                        "width":  95,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "drawing",
+                                        "x":  524,
+                                        "y":  450,
+                                        "width":  82,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "with",
+                                        "x":  613,
+                                        "y":  450,
+                                        "width":  45,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ink, brush, watercolor, collage, etching and beyond.",
+                      "x":  125,
+                      "y":  480,
+                      "words":  [
+                                    {
+                                        "text":  "ink,",
+                                        "x":  125,
+                                        "y":  481,
+                                        "width":  38,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "brush,",
+                                        "x":  172,
+                                        "y":  480,
+                                        "width":  61,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "watercolor,",
+                                        "x":  241,
+                                        "y":  480,
+                                        "width":  108,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "collage,",
+                                        "x":  358,
+                                        "y":  481,
+                                        "width":  74,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "etching",
+                                        "x":  441,
+                                        "y":  480,
+                                        "width":  74,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  522,
+                                        "y":  480,
+                                        "width":  37,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "beyond.",
+                                        "x":  567,
+                                        "y":  480,
+                                        "width":  77,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "We teach the basics of comics, covering the principles",
+                      "x":  124,
+                      "y":  541,
+                      "words":  [
+                                    {
+                                        "text":  "We",
+                                        "x":  124,
+                                        "y":  542,
+                                        "width":  33,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "teach",
+                                        "x":  165,
+                                        "y":  541,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  224,
+                                        "y":  541,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "basics",
+                                        "x":  263,
+                                        "y":  541,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  328,
+                                        "y":  541,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "comics,",
+                                        "x":  354,
+                                        "y":  544,
+                                        "width":  74,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "covering",
+                                        "x":  437,
+                                        "y":  544,
+                                        "width":  85,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  529,
+                                        "y":  541,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "principles",
+                                        "x":  567,
+                                        "y":  541,
+                                        "width":  96,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of narrative and sequential visual storytelling as we",
+                      "x":  125,
+                      "y":  571,
+                      "words":  [
+                                    {
+                                        "text":  "of",
+                                        "x":  125,
+                                        "y":  571,
+                                        "width":  22,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "narrative",
+                                        "x":  151,
+                                        "y":  574,
+                                        "width":  89,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  247,
+                                        "y":  572,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "sequential",
+                                        "x":  291,
+                                        "y":  572,
+                                        "width":  100,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "visual",
+                                        "x":  398,
+                                        "y":  572,
+                                        "width":  58,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "storytelling",
+                                        "x":  464,
+                                        "y":  572,
+                                        "width":  114,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  585,
+                                        "y":  579,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "we",
+                                        "x":  610,
+                                        "y":  579,
+                                        "width":  28,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "explore writing, panel layout, composition, inking and",
+                      "x":  125,
+                      "y":  602,
+                      "words":  [
+                                    {
+                                        "text":  "explore",
+                                        "x":  125,
+                                        "y":  602,
+                                        "width":  71,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "writing,",
+                                        "x":  203,
+                                        "y":  604,
+                                        "width":  79,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "panel",
+                                        "x":  290,
+                                        "y":  602,
+                                        "width":  53,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "layout,",
+                                        "x":  351,
+                                        "y":  602,
+                                        "width":  67,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "composition,",
+                                        "x":  426,
+                                        "y":  604,
+                                        "width":  128,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "inking",
+                                        "x":  563,
+                                        "y":  602,
+                                        "width":  66,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  636,
+                                        "y":  602,
+                                        "width":  37,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "coloring, and digital application. Students will gain",
+                      "x":  125,
+                      "y":  632,
+                      "words":  [
+                                    {
+                                        "text":  "coloring,",
+                                        "x":  125,
+                                        "y":  633,
+                                        "width":  87,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  221,
+                                        "y":  632,
+                                        "width":  37,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "digital",
+                                        "x":  265,
+                                        "y":  632,
+                                        "width":  64,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "application.",
+                                        "x":  337,
+                                        "y":  633,
+                                        "width":  115,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Students",
+                                        "x":  461,
+                                        "y":  633,
+                                        "width":  86,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "will",
+                                        "x":  554,
+                                        "y":  632,
+                                        "width":  38,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "gain",
+                                        "x":  599,
+                                        "y":  635,
+                                        "width":  43,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "insight into the business of illustration, including",
+                      "x":  125,
+                      "y":  663,
+                      "words":  [
+                                    {
+                                        "text":  "insight",
+                                        "x":  125,
+                                        "y":  663,
+                                        "width":  68,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "into",
+                                        "x":  201,
+                                        "y":  665,
+                                        "width":  38,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  248,
+                                        "y":  663,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "business",
+                                        "x":  286,
+                                        "y":  663,
+                                        "width":  81,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  375,
+                                        "y":  663,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "illustration,",
+                                        "x":  402,
+                                        "y":  663,
+                                        "width":  115,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "including",
+                                        "x":  526,
+                                        "y":  663,
+                                        "width":  95,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "where to look for assignments and how to promote",
+                      "x":  124,
+                      "y":  693,
+                      "words":  [
+                                    {
+                                        "text":  "where",
+                                        "x":  124,
+                                        "y":  693,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  191,
+                                        "y":  700,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "look",
+                                        "x":  217,
+                                        "y":  693,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  268,
+                                        "y":  693,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "assignments",
+                                        "x":  303,
+                                        "y":  696,
+                                        "width":  120,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  430,
+                                        "y":  693,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "how",
+                                        "x":  474,
+                                        "y":  693,
+                                        "width":  43,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  524,
+                                        "y":  700,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "promote",
+                                        "x":  550,
+                                        "y":  700,
+                                        "width":  84,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(and price) your work, and best to develop a",
+                      "x":  126,
+                      "y":  724,
+                      "words":  [
+                                    {
+                                        "text":  "(and",
+                                        "x":  126,
+                                        "y":  724,
+                                        "width":  43,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "price)",
+                                        "x":  176,
+                                        "y":  724,
+                                        "width":  54,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "your",
+                                        "x":  239,
+                                        "y":  731,
+                                        "width":  46,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "work,",
+                                        "x":  291,
+                                        "y":  724,
+                                        "width":  56,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  355,
+                                        "y":  724,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "best",
+                                        "x":  399,
+                                        "y":  724,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  446,
+                                        "y":  730,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "develop",
+                                        "x":  473,
+                                        "y":  724,
+                                        "width":  76,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  557,
+                                        "y":  731,
+                                        "width":  10,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "professional portfolio.",
+                      "x":  125,
+                      "y":  754,
+                      "words":  [
+                                    {
+                                        "text":  "professional",
+                                        "x":  125,
+                                        "y":  754,
+                                        "width":  118,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "portfolio.",
+                                        "x":  250,
+                                        "y":  754,
+                                        "width":  93,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "OCCUPATIONAL CERTIFICATE",
+                      "x":  818,
+                      "y":  94,
+                      "words":  [
+                                    {
+                                        "text":  "OCCUPATIONAL",
+                                        "x":  818,
+                                        "y":  94,
+                                        "width":  200,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  1026,
+                                        "y":  94,
+                                        "width":  163,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ONE SEMESTER",
+                      "x":  727,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "ONE",
+                                        "x":  727,
+                                        "y":  145,
+                                        "width":  47,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "SEMESTER",
+                                        "x":  782,
+                                        "y":  146,
+                                        "width":  122,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTS 1610",
+                      "x":  726,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  726,
+                                        "y":  179,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1610",
+                                        "x":  784,
+                                        "y":  180,
+                                        "width":  40,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTS 1616",
+                      "x":  726,
+                      "y":  213,
+                      "words":  [
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  726,
+                                        "y":  213,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1616",
+                                        "x":  784,
+                                        "y":  213,
+                                        "width":  40,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FDMA 1720",
+                      "x":  727,
+                      "y":  277,
+                      "words":  [
+                                    {
+                                        "text":  "FDMA",
+                                        "x":  727,
+                                        "y":  277,
+                                        "width":  58,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1720",
+                                        "x":  791,
+                                        "y":  278,
+                                        "width":  42,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTH",
+                      "x":  726,
+                      "y":  311,
+                      "words":  [
+                                    {
+                                        "text":  "ARTH",
+                                        "x":  726,
+                                        "y":  311,
+                                        "width":  52,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ENGL 1110",
+                      "x":  727,
+                      "y":  375,
+                      "words":  [
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  727,
+                                        "y":  375,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  787,
+                                        "y":  375,
+                                        "width":  35,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Drawing I (Area VI)",
+                      "x":  875,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "Drawing",
+                                        "x":  875,
+                                        "y":  179,
+                                        "width":  80,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  965,
+                                        "y":  179,
+                                        "width":  2,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  976,
+                                        "y":  179,
+                                        "width":  51,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "VI)",
+                                        "x":  1035,
+                                        "y":  179,
+                                        "width":  25,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Drawing Comics and",
+                      "x":  875,
+                      "y":  212,
+                      "words":  [
+                                    {
+                                        "text":  "Drawing",
+                                        "x":  875,
+                                        "y":  212,
+                                        "width":  80,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Comics",
+                                        "x":  964,
+                                        "y":  212,
+                                        "width":  72,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  1044,
+                                        "y":  212,
+                                        "width":  35,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Sequential Art",
+                      "x":  895,
+                      "y":  243,
+                      "words":  [
+                                    {
+                                        "text":  "Sequential",
+                                        "x":  895,
+                                        "y":  243,
+                                        "width":  103,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Art",
+                                        "x":  1006,
+                                        "y":  244,
+                                        "width":  28,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3D Character Design",
+                      "x":  874,
+                      "y":  276,
+                      "words":  [
+                                    {
+                                        "text":  "3D",
+                                        "x":  874,
+                                        "y":  277,
+                                        "width":  25,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Character",
+                                        "x":  907,
+                                        "y":  277,
+                                        "width":  97,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Design",
+                                        "x":  1012,
+                                        "y":  276,
+                                        "width":  65,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Elective from ARTH 1110,",
+                      "x":  875,
+                      "y":  310,
+                      "words":  [
+                                    {
+                                        "text":  "Elective",
+                                        "x":  875,
+                                        "y":  310,
+                                        "width":  74,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "from",
+                                        "x":  956,
+                                        "y":  310,
+                                        "width":  44,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "ARTH",
+                                        "x":  1009,
+                                        "y":  311,
+                                        "width":  52,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110,",
+                                        "x":  1069,
+                                        "y":  311,
+                                        "width":  39,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1141 or 2110",
+                      "x":  894,
+                      "y":  342,
+                      "words":  [
+                                    {
+                                        "text":  "1141",
+                                        "x":  894,
+                                        "y":  342,
+                                        "width":  33,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  936,
+                                        "y":  346,
+                                        "width":  19,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "2110",
+                                        "x":  962,
+                                        "y":  342,
+                                        "width":  38,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Composition I (Area l)",
+                      "x":  874,
+                      "y":  374,
+                      "words":  [
+                                    {
+                                        "text":  "Composition",
+                                        "x":  874,
+                                        "y":  374,
+                                        "width":  122,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  1006,
+                                        "y":  375,
+                                        "width":  2,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1018,
+                                        "y":  374,
+                                        "width":  50,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "l)",
+                                        "x":  1078,
+                                        "y":  374,
+                                        "width":  10,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Total Credits Completed",
+                      "x":  873,
+                      "y":  442,
+                      "words":  [
+                                    {
+                                        "text":  "Total",
+                                        "x":  873,
+                                        "y":  442,
+                                        "width":  54,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  936,
+                                        "y":  442,
+                                        "width":  81,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Completed",
+                                        "x":  1025,
+                                        "y":  442,
+                                        "width":  123,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "for Certificate",
+                      "x":  894,
+                      "y":  472,
+                      "words":  [
+                                    {
+                                        "text":  "for",
+                                        "x":  894,
+                                        "y":  472,
+                                        "width":  32,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  933,
+                                        "y":  472,
+                                        "width":  119,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  145,
+                                        "width":  98,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "15",
+                      "x":  1220,
+                      "y":  474,
+                      "words":  [
+                                    {
+                                        "text":  "15",
+                                        "x":  1220,
+                                        "y":  474,
+                                        "width":  21,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "25, zon",
+                      "x":  1230,
+                      "y":  1657,
+                      "words":  [
+                                    {
+                                        "text":  "25,",
+                                        "x":  1230,
+                                        "y":  1660,
+                                        "width":  19,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "zon",
+                                        "x":  1254,
+                                        "y":  1657,
+                                        "width":  29,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "65",
+                      "x":  691,
+                      "y":  1768,
+                      "words":  [
+                                    {
+                                        "text":  "65",
+                                        "x":  691,
+                                        "y":  1768,
+                                        "width":  27,
+                                        "height":  20
+                                    }
+                                ]
+                  }
+              ]
+}

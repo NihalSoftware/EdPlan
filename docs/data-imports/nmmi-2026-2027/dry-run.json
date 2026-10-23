@@ -1,0 +1,30 @@
+{
+  "mode": "dry-run-rolled-back",
+  "database": "edplan_db",
+  "university_id": "d1cb699c-5d75-4055-8334-e042c99557a2",
+  "program_count": 2,
+  "concentration_count": 19,
+  "course_row_count": 0,
+  "inserted_program_ids": [],
+  "program_ids": [
+    "f08dd4e5-8c67-4a08-83c3-085692c8e7d6",
+    "ca2c346f-0b1a-4391-9594-335b1f84dbc2"
+  ],
+  "other_colleges_unchanged": true,
+  "other_college_fingerprints": {
+    "universities": [
+      30,
+      "a0d750ec70a7bfb3751bd9d49d191493"
+    ],
+    "programs": [
+      927,
+      "259b86b0fa4bd381283228e688036835"
+    ],
+    "courses": [
+      13519,
+      "c5a2f1d9288c61fdb46b342a93b94f0f"
+    ]
+  },
+  "original_college_profile_preserved": true,
+  "source_sha256": "a3e1f115ca7318e3a9966147a3d6824689c59b6637eae4052420eaa32a56ac3e"
+}

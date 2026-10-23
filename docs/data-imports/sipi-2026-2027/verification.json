@@ -1,0 +1,44 @@
+{
+  "database": "edplan_db",
+  "verified_program_count": 15,
+  "verified_course_row_count": 187,
+  "exact_program_and_course_metadata_match": true,
+  "original_college_record_preserved": true,
+  "other_colleges_unchanged": true,
+  "unknown_hours_and_schedules_remain_null": true,
+  "previous_import_counts": [
+    [
+      "Institute of American Indian Arts",
+      28,
+      319
+    ],
+    [
+      "Mesalands Community College",
+      26,
+      258
+    ],
+    [
+      "New Mexico Military Institute",
+      2,
+      0
+    ]
+  ],
+  "per_program_course_counts": {
+    "Computer Aided Drafting and Design | Certificate": 10,
+    "Accounting | Certificate": 8,
+    "Business Administration | Associate of Science": 20,
+    "Business Administration | Associate of Applied Science": 19,
+    "Business Administration | Certificate": 7,
+    "Conservation and Resource Protection | Certificate of Achievement": 4,
+    "Culinary Arts & Sciences | Associate of Applied Science": 23,
+    "Early Childhood Education | Associate of Arts": 18,
+    "Early Childhood Education | Certificate of Achievement": 10,
+    "Geospatial Information Technology | Associate of Applied Science": 15,
+    "Geospatial Information Technology | Certificate": 7,
+    "Natural Resources Management | Associate of Applied Science": 12,
+    "Network Management | Associate of Applied Science": 12,
+    "Pre-Engineering | Associate of Science": 13,
+    "Optical Laboratory Technology | Certificate of Completion": 9
+  },
+  "source_sha256": "6eaf3f400e5424ff5dfd9414a3b36f7304b932f0915d18b20041f08af938a205"
+}

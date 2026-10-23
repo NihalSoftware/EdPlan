@@ -1,0 +1,1230 @@
+﻿{
+    "pdf_page":  27,
+    "lines":  [
+                  {
+                      "text":  "NURSE\u0027S ASSISTANT",
+                      "x":  125,
+                      "y":  84,
+                      "words":  [
+                                    {
+                                        "text":  "NURSE\u0027S",
+                                        "x":  125,
+                                        "y":  84,
+                                        "width":  227,
+                                        "height":  40
+                                    },
+                                    {
+                                        "text":  "ASSISTANT",
+                                        "x":  366,
+                                        "y":  85,
+                                        "width":  298,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CERTIFICATE",
+                      "x":  126,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  126,
+                                        "y":  145,
+                                        "width":  365,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This program prepares students to enter the nursing",
+                      "x":  124,
+                      "y":  225,
+                      "words":  [
+                                    {
+                                        "text":  "This",
+                                        "x":  124,
+                                        "y":  225,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "program",
+                                        "x":  178,
+                                        "y":  233,
+                                        "width":  85,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "prepares",
+                                        "x":  270,
+                                        "y":  233,
+                                        "width":  83,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  360,
+                                        "y":  225,
+                                        "width":  83,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  451,
+                                        "y":  232,
+                                        "width":  18,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "enter",
+                                        "x":  478,
+                                        "y":  232,
+                                        "width":  49,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  534,
+                                        "y":  225,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "nursing",
+                                        "x":  573,
+                                        "y":  227,
+                                        "width":  76,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "profession as an entry level nursing assistant. Upon",
+                      "x":  125,
+                      "y":  256,
+                      "words":  [
+                                    {
+                                        "text":  "profession",
+                                        "x":  125,
+                                        "y":  256,
+                                        "width":  100,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  233,
+                                        "y":  263,
+                                        "width":  18,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "an",
+                                        "x":  259,
+                                        "y":  263,
+                                        "width":  23,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "entry",
+                                        "x":  290,
+                                        "y":  262,
+                                        "width":  53,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "level",
+                                        "x":  349,
+                                        "y":  256,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "nursing",
+                                        "x":  401,
+                                        "y":  258,
+                                        "width":  75,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "assistant.",
+                                        "x":  483,
+                                        "y":  258,
+                                        "width":  89,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Upon",
+                                        "x":  581,
+                                        "y":  257,
+                                        "width":  56,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "successful completion of this certificate, the student",
+                      "x":  125,
+                      "y":  286,
+                      "words":  [
+                                    {
+                                        "text":  "successful",
+                                        "x":  125,
+                                        "y":  286,
+                                        "width":  98,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "completion",
+                                        "x":  231,
+                                        "y":  286,
+                                        "width":  112,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  350,
+                                        "y":  286,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "this",
+                                        "x":  377,
+                                        "y":  286,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "certificate,",
+                                        "x":  421,
+                                        "y":  286,
+                                        "width":  105,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  535,
+                                        "y":  286,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "student",
+                                        "x":  573,
+                                        "y":  286,
+                                        "width":  74,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "will meet all federal certification standards for a nurs-",
+                      "x":  124,
+                      "y":  316,
+                      "words":  [
+                                    {
+                                        "text":  "will",
+                                        "x":  124,
+                                        "y":  316,
+                                        "width":  38,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "meet",
+                                        "x":  169,
+                                        "y":  323,
+                                        "width":  49,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "all",
+                                        "x":  225,
+                                        "y":  316,
+                                        "width":  24,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "federal",
+                                        "x":  256,
+                                        "y":  316,
+                                        "width":  67,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "certification",
+                                        "x":  331,
+                                        "y":  316,
+                                        "width":  121,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "standards",
+                                        "x":  460,
+                                        "y":  316,
+                                        "width":  95,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  563,
+                                        "y":  316,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  598,
+                                        "y":  324,
+                                        "width":  10,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "nurs-",
+                                        "x":  616,
+                                        "y":  324,
+                                        "width":  51,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ing assistant and be prepared to sit for the New Mexico",
+                      "x":  125,
+                      "y":  347,
+                      "words":  [
+                                    {
+                                        "text":  "ing",
+                                        "x":  125,
+                                        "y":  349,
+                                        "width":  32,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "assistant",
+                                        "x":  164,
+                                        "y":  349,
+                                        "width":  83,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  254,
+                                        "y":  347,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  299,
+                                        "y":  347,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "prepared",
+                                        "x":  328,
+                                        "y":  347,
+                                        "width":  88,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  423,
+                                        "y":  353,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "sit",
+                                        "x":  450,
+                                        "y":  349,
+                                        "width":  22,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  480,
+                                        "y":  347,
+                                        "width":  27,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  515,
+                                        "y":  347,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  553,
+                                        "y":  348,
+                                        "width":  47,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  607,
+                                        "y":  348,
+                                        "width":  74,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Nurse\u0027s Aide Registry exam.",
+                      "x":  125,
+                      "y":  377,
+                      "words":  [
+                                    {
+                                        "text":  "Nurse\u0027s",
+                                        "x":  125,
+                                        "y":  378,
+                                        "width":  72,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Aide",
+                                        "x":  204,
+                                        "y":  377,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Registry",
+                                        "x":  259,
+                                        "y":  378,
+                                        "width":  84,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "exam.",
+                                        "x":  349,
+                                        "y":  385,
+                                        "width":  58,
+                                        "height":  11
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Prospective students who have been convicted of a",
+                      "x":  125,
+                      "y":  438,
+                      "words":  [
+                                    {
+                                        "text":  "Prospective",
+                                        "x":  125,
+                                        "y":  439,
+                                        "width":  113,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  245,
+                                        "y":  438,
+                                        "width":  83,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "who",
+                                        "x":  335,
+                                        "y":  438,
+                                        "width":  42,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "have",
+                                        "x":  385,
+                                        "y":  438,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "been",
+                                        "x":  437,
+                                        "y":  438,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "convicted",
+                                        "x":  490,
+                                        "y":  438,
+                                        "width":  96,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  594,
+                                        "y":  438,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  620,
+                                        "y":  446,
+                                        "width":  10,
+                                        "height":  11
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "felony are advised to contact the appropriate state",
+                      "x":  125,
+                      "y":  468,
+                      "words":  [
+                                    {
+                                        "text":  "felony",
+                                        "x":  125,
+                                        "y":  468,
+                                        "width":  61,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  192,
+                                        "y":  476,
+                                        "width":  29,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "advised",
+                                        "x":  229,
+                                        "y":  468,
+                                        "width":  73,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  310,
+                                        "y":  475,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "contact",
+                                        "x":  337,
+                                        "y":  475,
+                                        "width":  73,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  417,
+                                        "y":  469,
+                                        "width":  31,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "appropriate",
+                                        "x":  456,
+                                        "y":  471,
+                                        "width":  113,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "state",
+                                        "x":  576,
+                                        "y":  475,
+                                        "width":  45,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "board of nursing prior to admission to determine their",
+                      "x":  125,
+                      "y":  499,
+                      "words":  [
+                                    {
+                                        "text":  "board",
+                                        "x":  125,
+                                        "y":  499,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  190,
+                                        "y":  499,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "nursing",
+                                        "x":  216,
+                                        "y":  501,
+                                        "width":  76,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "prior",
+                                        "x":  299,
+                                        "y":  501,
+                                        "width":  48,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  355,
+                                        "y":  505,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "admission",
+                                        "x":  382,
+                                        "y":  499,
+                                        "width":  99,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  489,
+                                        "y":  505,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "determine",
+                                        "x":  516,
+                                        "y":  499,
+                                        "width":  101,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "their",
+                                        "x":  625,
+                                        "y":  499,
+                                        "width":  47,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "eligibility for licensure. Fingerprinting for background",
+                      "x":  125,
+                      "y":  529,
+                      "words":  [
+                                    {
+                                        "text":  "eligibility",
+                                        "x":  125,
+                                        "y":  529,
+                                        "width":  95,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  227,
+                                        "y":  529,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "licensure.",
+                                        "x":  262,
+                                        "y":  529,
+                                        "width":  93,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Fingerprinting",
+                                        "x":  364,
+                                        "y":  530,
+                                        "width":  147,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  518,
+                                        "y":  529,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "background",
+                                        "x":  553,
+                                        "y":  529,
+                                        "width":  119,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "checks, drug testing, and proof of recommended vacci-",
+                      "x":  125,
+                      "y":  560,
+                      "words":  [
+                                    {
+                                        "text":  "checks,",
+                                        "x":  125,
+                                        "y":  560,
+                                        "width":  71,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "drug",
+                                        "x":  204,
+                                        "y":  560,
+                                        "width":  48,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "testing,",
+                                        "x":  259,
+                                        "y":  562,
+                                        "width":  73,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  340,
+                                        "y":  560,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "proof",
+                                        "x":  384,
+                                        "y":  560,
+                                        "width":  57,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  445,
+                                        "y":  560,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "recommended",
+                                        "x":  472,
+                                        "y":  560,
+                                        "width":  141,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "vacci-",
+                                        "x":  620,
+                                        "y":  562,
+                                        "width":  57,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "nations are required for the Nurse Aide class. All",
+                      "x":  125,
+                      "y":  590,
+                      "words":  [
+                                    {
+                                        "text":  "nations",
+                                        "x":  125,
+                                        "y":  592,
+                                        "width":  72,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  205,
+                                        "y":  598,
+                                        "width":  29,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "required",
+                                        "x":  242,
+                                        "y":  590,
+                                        "width":  83,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  332,
+                                        "y":  590,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  368,
+                                        "y":  590,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Nurse",
+                                        "x":  406,
+                                        "y":  591,
+                                        "width":  60,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Aide",
+                                        "x":  472,
+                                        "y":  590,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "class.",
+                                        "x":  527,
+                                        "y":  590,
+                                        "width":  50,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "All",
+                                        "x":  584,
+                                        "y":  590,
+                                        "width":  31,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "students must meet the state requirements for each",
+                      "x":  125,
+                      "y":  620,
+                      "words":  [
+                                    {
+                                        "text":  "students",
+                                        "x":  125,
+                                        "y":  621,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "must",
+                                        "x":  215,
+                                        "y":  627,
+                                        "width":  49,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "meet",
+                                        "x":  271,
+                                        "y":  627,
+                                        "width":  48,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  327,
+                                        "y":  620,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "state",
+                                        "x":  365,
+                                        "y":  627,
+                                        "width":  45,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "requirements",
+                                        "x":  418,
+                                        "y":  623,
+                                        "width":  129,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  555,
+                                        "y":  620,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "each",
+                                        "x":  590,
+                                        "y":  620,
+                                        "width":  44,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "assigned clinical site to qualify for placement.",
+                      "x":  125,
+                      "y":  651,
+                      "words":  [
+                                    {
+                                        "text":  "assigned",
+                                        "x":  125,
+                                        "y":  651,
+                                        "width":  83,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "clinical",
+                                        "x":  215,
+                                        "y":  651,
+                                        "width":  72,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "site",
+                                        "x":  295,
+                                        "y":  653,
+                                        "width":  32,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  335,
+                                        "y":  657,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "qualify",
+                                        "x":  362,
+                                        "y":  651,
+                                        "width":  71,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  440,
+                                        "y":  651,
+                                        "width":  27,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "placement.",
+                                        "x":  475,
+                                        "y":  651,
+                                        "width":  106,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "76",
+                      "x":  692,
+                      "y":  1769,
+                      "words":  [
+                                    {
+                                        "text":  "76",
+                                        "x":  692,
+                                        "y":  1769,
+                                        "width":  26,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CERTIFICATE PROGRAM",
+                      "x":  853,
+                      "y":  94,
+                      "words":  [
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  853,
+                                        "y":  94,
+                                        "width":  162,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "PROGRAM",
+                                        "x":  1025,
+                                        "y":  94,
+                                        "width":  128,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "One Semester",
+                      "x":  727,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "One",
+                                        "x":  727,
+                                        "y":  145,
+                                        "width":  44,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Semester",
+                                        "x":  778,
+                                        "y":  145,
+                                        "width":  109,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "HLED 1110",
+                      "x":  727,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "HLED",
+                                        "x":  727,
+                                        "y":  179,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  787,
+                                        "y":  180,
+                                        "width":  35,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "HLCR 125",
+                      "x":  727,
+                      "y":  243,
+                      "words":  [
+                                    {
+                                        "text":  "HLCR",
+                                        "x":  727,
+                                        "y":  243,
+                                        "width":  52,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "125",
+                                        "x":  787,
+                                        "y":  244,
+                                        "width":  30,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "HLCR 126",
+                      "x":  727,
+                      "y":  277,
+                      "words":  [
+                                    {
+                                        "text":  "HLCR",
+                                        "x":  727,
+                                        "y":  277,
+                                        "width":  52,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "126",
+                                        "x":  787,
+                                        "y":  278,
+                                        "width":  31,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "AHA Heartsaver First Aid",
+                      "x":  873,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "AHA",
+                                        "x":  873,
+                                        "y":  179,
+                                        "width":  43,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Heartsaver",
+                                        "x":  924,
+                                        "y":  179,
+                                        "width":  106,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "First",
+                                        "x":  1038,
+                                        "y":  179,
+                                        "width":  41,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Aid",
+                                        "x":  1085,
+                                        "y":  179,
+                                        "width":  31,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\u0026 CPR/AED",
+                      "x":  895,
+                      "y":  210,
+                      "words":  [
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  895,
+                                        "y":  210,
+                                        "width":  14,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "CPR/AED",
+                                        "x":  917,
+                                        "y":  210,
+                                        "width":  89,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Nurse Assistant",
+                      "x":  875,
+                      "y":  243,
+                      "words":  [
+                                    {
+                                        "text":  "Nurse",
+                                        "x":  875,
+                                        "y":  244,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Assistant",
+                                        "x":  939,
+                                        "y":  243,
+                                        "width":  90,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Nurse Assistant Clinical",
+                      "x":  875,
+                      "y":  276,
+                      "words":  [
+                                    {
+                                        "text":  "Nurse",
+                                        "x":  875,
+                                        "y":  277,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Assistant",
+                                        "x":  939,
+                                        "y":  276,
+                                        "width":  90,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Clinical",
+                                        "x":  1036,
+                                        "y":  276,
+                                        "width":  70,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Total Certificate Credits",
+                      "x":  873,
+                      "y":  310,
+                      "words":  [
+                                    {
+                                        "text":  "Total",
+                                        "x":  873,
+                                        "y":  311,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  936,
+                                        "y":  310,
+                                        "width":  119,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  1063,
+                                        "y":  310,
+                                        "width":  81,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  146,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  146,
+                                        "width":  98,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".5",
+                      "x":  1223,
+                      "y":  210,
+                      "words":  [
+                                    {
+                                        "text":  ".5",
+                                        "x":  1223,
+                                        "y":  210,
+                                        "width":  15,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  244,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  244,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2",
+                      "x":  1225,
+                      "y":  278,
+                      "words":  [
+                                    {
+                                        "text":  "2",
+                                        "x":  1225,
+                                        "y":  278,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.5",
+                      "x":  1214,
+                      "y":  312,
+                      "words":  [
+                                    {
+                                        "text":  "5.5",
+                                        "x":  1214,
+                                        "y":  312,
+                                        "width":  33,
+                                        "height":  19
+                                    }
+                                ]
+                  }
+              ]
+}

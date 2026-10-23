@@ -1,0 +1,492 @@
+{
+  "source": {
+    "filename": "NMMI catalog.pdf",
+    "sha256": "a3e1f115ca7318e3a9966147a3d6824689c59b6637eae4052420eaa32a56ac3e",
+    "pdf_page_count": 20,
+    "printed_page_range": [
+      19,
+      38
+    ],
+    "catalog_year": "2026-2027",
+    "catalog_title": "New Mexico Military Institute Academic Catalog 2026-27 (provided excerpt)",
+    "is_current_catalog": true,
+    "source_scope": "Junior-college academic requirements; no individual course-credit listings in the supplied excerpt."
+  },
+  "institution": {
+    "university_name": "New Mexico Military Institute",
+    "city": "Roswell",
+    "state": "New Mexico"
+  },
+  "graduation_requirements": {
+    "minimum_credit_hours": 60,
+    "minimum_institution_credit_hours": 24,
+    "minimum_residence_semesters": 2,
+    "minimum_institution_gpa": 2,
+    "maximum_physical_education_credit_hours": 4,
+    "maximum_music_credit_hours": 8,
+    "source_pdf_page": 13,
+    "source_printed_page": 31
+  },
+  "general_education": {
+    "total_credit_hours": 31,
+    "institutional_flex_credit_hours": 9,
+    "areas": [
+      [
+        "Communication",
+        6
+      ],
+      [
+        "Mathematics",
+        3
+      ],
+      [
+        "Science",
+        4
+      ],
+      [
+        "Social & Behavioral Science",
+        3
+      ],
+      [
+        "Humanities",
+        3
+      ],
+      [
+        "Creative & Fine Arts",
+        3
+      ]
+    ],
+    "source_pdf_page": 13,
+    "source_printed_page": 31
+  },
+  "programs": [
+    {
+      "program_name": "Associate in Arts",
+      "degree": "Associate of Arts",
+      "abbreviation": "AA",
+      "total_credit_hours": 60,
+      "core_regions": [
+        [
+          14,
+          "L",
+          459,
+          1660
+        ],
+        [
+          14,
+          "R",
+          100,
+          1660
+        ],
+        [
+          15,
+          "L",
+          100,
+          1660
+        ]
+      ],
+      "core_credit_requirements": [
+        [
+          "Communications",
+          9,
+          9
+        ],
+        [
+          "History",
+          6,
+          6
+        ],
+        [
+          "Humanities or Modern Language",
+          6,
+          6
+        ],
+        [
+          "Laboratory Science",
+          8,
+          8
+        ],
+        [
+          "Mathematics",
+          3,
+          3
+        ],
+        [
+          "Social & Behavioral Sciences",
+          6,
+          6
+        ],
+        [
+          "Creative & Fine Arts",
+          3,
+          3
+        ],
+        [
+          "Military Science/Leadership",
+          2,
+          12
+        ]
+      ],
+      "concentrations": [
+        [
+          "Art",
+          [
+            [
+              15,
+              "R",
+              137,
+              468
+            ]
+          ]
+        ],
+        [
+          "Aviation Technical Management",
+          [
+            [
+              15,
+              "R",
+              468,
+              828
+            ]
+          ]
+        ],
+        [
+          "Business Administration",
+          [
+            [
+              15,
+              "R",
+              828,
+              1307
+            ]
+          ]
+        ],
+        [
+          "Communications",
+          [
+            [
+              15,
+              "R",
+              1307,
+              1660
+            ]
+          ]
+        ],
+        [
+          "Criminal Justice",
+          [
+            [
+              16,
+              "L",
+              100,
+              379
+            ]
+          ]
+        ],
+        [
+          "English",
+          [
+            [
+              16,
+              "L",
+              379,
+              710
+            ]
+          ]
+        ],
+        [
+          "History",
+          [
+            [
+              16,
+              "L",
+              710,
+              1099
+            ]
+          ]
+        ],
+        [
+          "Philosophy",
+          [
+            [
+              16,
+              "L",
+              1099,
+              1370
+            ]
+          ]
+        ],
+        [
+          "Political Science",
+          [
+            [
+              16,
+              "L",
+              1370,
+              1660
+            ],
+            [
+              16,
+              "R",
+              100,
+              347
+            ]
+          ]
+        ],
+        [
+          "Social Science",
+          [
+            [
+              16,
+              "R",
+              347,
+              678
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "program_name": "Associate in Science",
+      "degree": "Associate of Science",
+      "abbreviation": "AS",
+      "total_credit_hours": 60,
+      "core_regions": [
+        [
+          16,
+          "R",
+          678,
+          1660
+        ],
+        [
+          17,
+          "L",
+          100,
+          1660
+        ],
+        [
+          17,
+          "R",
+          100,
+          1660
+        ],
+        [
+          18,
+          "L",
+          100,
+          659
+        ]
+      ],
+      "core_credit_requirements": [
+        [
+          "Communications",
+          9,
+          9
+        ],
+        [
+          "History",
+          3,
+          3
+        ],
+        [
+          "Humanities or Modern Language",
+          6,
+          6
+        ],
+        [
+          "Laboratory Science",
+          12,
+          12
+        ],
+        [
+          "Mathematics",
+          6,
+          6
+        ],
+        [
+          "Social & Behavioral Sciences",
+          3,
+          3
+        ],
+        [
+          "Creative & Fine Arts",
+          3,
+          3
+        ],
+        [
+          "Military Science/Leadership",
+          2,
+          12
+        ]
+      ],
+      "concentrations": [
+        [
+          "Athletic Training",
+          [
+            [
+              18,
+              "L",
+              691,
+              1079
+            ]
+          ]
+        ],
+        [
+          "Biological Sciences",
+          [
+            [
+              18,
+              "L",
+              1079,
+              1499
+            ]
+          ]
+        ],
+        [
+          "Computer Science",
+          [
+            [
+              18,
+              "L",
+              1499,
+              1660
+            ],
+            [
+              18,
+              "R",
+              100,
+              316
+            ]
+          ]
+        ],
+        [
+          "Mathematics",
+          [
+            [
+              18,
+              "R",
+              316,
+              647
+            ]
+          ]
+        ],
+        [
+          "Physical Sciences",
+          [
+            [
+              18,
+              "R",
+              647,
+              1185
+            ]
+          ]
+        ],
+        [
+          "Pre-Engineering",
+          [
+            [
+              18,
+              "R",
+              1185,
+              1660
+            ],
+            [
+              19,
+              "L",
+              100,
+              138
+            ]
+          ]
+        ],
+        [
+          "Pre-Kinesiology",
+          [
+            [
+              19,
+              "L",
+              138,
+              468
+            ]
+          ]
+        ],
+        [
+          "Pre-Medicine/Dental/Veterinary",
+          [
+            [
+              19,
+              "L",
+              468,
+              947
+            ]
+          ]
+        ],
+        [
+          "Pre-Nursing",
+          [
+            [
+              19,
+              "L",
+              947,
+              1660
+            ],
+            [
+              19,
+              "R",
+              100,
+              285
+            ]
+          ]
+        ]
+      ]
+    }
+  ],
+  "needs_clarification": [
+    {
+      "issue": "Individual course credit hours are absent from this excerpt.",
+      "question": "Provide the 2026-27 course-description or course-credit pages before inserting credit-bearing course records.",
+      "source_printed_pages": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "action": "Keep all course references in program metadata; insert no courses and create no semester plans."
+    },
+    {
+      "issue": "COMM 1130 is printed as both Introduction to Communication and Public Speaking.",
+      "question": "Which code/title pairing is correct for each course?",
+      "source_printed_pages": [
+        32,
+        34
+      ],
+      "action": "Preserve the source text without selecting a canonical title."
+    },
+    {
+      "issue": "Forensic Science I appears as PHSC 1120 in the AA list and PHYS 1120 in the AS list.",
+      "question": "What is the authoritative department prefix for Forensic Science I?",
+      "source_printed_pages": [
+        32,
+        35
+      ],
+      "action": "Preserve both references; no course records inserted."
+    },
+    {
+      "issue": "Social Science concentration says to select at least four required courses but names only three.",
+      "question": "Which required course or selection rule is missing?",
+      "source_printed_pages": [
+        34
+      ],
+      "action": "Store concentration as source metadata with planning blocked."
+    },
+    {
+      "issue": "Pre-Nursing explicitly may exceed the 60-credit AS minimum; exact total depends on the receiving university.",
+      "question": "Which receiving-university pathway and full credit requirement should apply?",
+      "source_printed_pages": [
+        37
+      ],
+      "action": "Keep Pre-Nursing within AS concentration metadata; do not create a separate 60-credit Pre-Nursing program."
+    }
+  ]
+}

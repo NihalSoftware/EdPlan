@@ -1,0 +1,2686 @@
+﻿{
+    "pdf_page":  7,
+    "lines":  [
+                  {
+                      "text":  "• SPAN 1110 - Spanish 1 3 credit hour(s)",
+                      "x":  144,
+                      "y":  83,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  89,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "SPAN",
+                                        "x":  171,
+                                        "y":  84,
+                                        "width":  61,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  242,
+                                        "y":  85,
+                                        "width":  43,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  293,
+                                        "y":  95,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Spanish",
+                                        "x":  308,
+                                        "y":  83,
+                                        "width":  78,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  394,
+                                        "y":  84,
+                                        "width":  7,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  410,
+                                        "y":  85,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  429,
+                                        "y":  83,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  493,
+                                        "y":  83,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• SPAN 1120 - Spanish 11 3 credit hour(s)",
+                      "x":  144,
+                      "y":  126,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  132,
+                                        "width":  8,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "SPAN",
+                                        "x":  171,
+                                        "y":  126,
+                                        "width":  61,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1120",
+                                        "x":  242,
+                                        "y":  128,
+                                        "width":  46,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  296,
+                                        "y":  137,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Spanish",
+                                        "x":  311,
+                                        "y":  126,
+                                        "width":  78,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  397,
+                                        "y":  127,
+                                        "width":  16,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  421,
+                                        "y":  127,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  441,
+                                        "y":  126,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  504,
+                                        "y":  126,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREATIVE AND FINE ARTS REQUIREMENT (AREA VI)",
+                      "x":  125,
+                      "y":  239,
+                      "words":  [
+                                    {
+                                        "text":  "CREATIVE",
+                                        "x":  125,
+                                        "y":  242,
+                                        "width":  164,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "AND",
+                                        "x":  296,
+                                        "y":  242,
+                                        "width":  73,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "FINE",
+                                        "x":  379,
+                                        "y":  242,
+                                        "width":  75,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  461,
+                                        "y":  242,
+                                        "width":  82,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "REQUIREMENT",
+                                        "x":  553,
+                                        "y":  242,
+                                        "width":  245,
+                                        "height":  30
+                                    },
+                                    {
+                                        "text":  "(AREA",
+                                        "x":  809,
+                                        "y":  239,
+                                        "width":  97,
+                                        "height":  29
+                                    },
+                                    {
+                                        "text":  "VI)",
+                                        "x":  912,
+                                        "y":  239,
+                                        "width":  44,
+                                        "height":  29
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Art Appreciation 3 credit hour(s)",
+                      "x":  302,
+                      "y":  293,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  302,
+                                        "y":  305,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Art",
+                                        "x":  316,
+                                        "y":  294,
+                                        "width":  35,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Appreciation",
+                                        "x":  357,
+                                        "y":  294,
+                                        "width":  129,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  494,
+                                        "y":  295,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  514,
+                                        "y":  293,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  577,
+                                        "y":  293,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTH 1110",
+                      "x":  144,
+                      "y":  294,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  299,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ARTH",
+                                        "x":  170,
+                                        "y":  294,
+                                        "width":  71,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  251,
+                                        "y":  295,
+                                        "width":  43,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTH 2110",
+                      "x":  144,
+                      "y":  336,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  342,
+                                        "width":  8,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ARTH",
+                                        "x":  170,
+                                        "y":  336,
+                                        "width":  71,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "2110",
+                                        "x":  249,
+                                        "y":  338,
+                                        "width":  46,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- History of Art 1 3 credit hour(s)",
+                      "x":  303,
+                      "y":  336,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  303,
+                                        "y":  348,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "History",
+                                        "x":  318,
+                                        "y":  337,
+                                        "width":  77,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  402,
+                                        "y":  336,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Art",
+                                        "x":  427,
+                                        "y":  337,
+                                        "width":  35,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  469,
+                                        "y":  337,
+                                        "width":  8,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  485,
+                                        "y":  338,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  504,
+                                        "y":  336,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  568,
+                                        "y":  336,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- History of Art 11 3 credit hour(s)",
+                      "x":  306,
+                      "y":  378,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  306,
+                                        "y":  390,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "History",
+                                        "x":  321,
+                                        "y":  380,
+                                        "width":  77,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  405,
+                                        "y":  378,
+                                        "width":  22,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Art",
+                                        "x":  430,
+                                        "y":  380,
+                                        "width":  35,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  472,
+                                        "y":  380,
+                                        "width":  16,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  497,
+                                        "y":  380,
+                                        "width":  10,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  516,
+                                        "y":  379,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  580,
+                                        "y":  379,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTH 2120",
+                      "x":  144,
+                      "y":  379,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  385,
+                                        "width":  8,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ARTH",
+                                        "x":  170,
+                                        "y":  379,
+                                        "width":  71,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2120",
+                                        "x":  249,
+                                        "y":  380,
+                                        "width":  48,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Art of the American Southwest 3 credit hour(s)",
+                      "x":  305,
+                      "y":  421,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  305,
+                                        "y":  433,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Art",
+                                        "x":  318,
+                                        "y":  422,
+                                        "width":  35,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  360,
+                                        "y":  421,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  387,
+                                        "y":  421,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "American",
+                                        "x":  424,
+                                        "y":  422,
+                                        "width":  99,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Southwest",
+                                        "x":  530,
+                                        "y":  422,
+                                        "width":  103,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  641,
+                                        "y":  423,
+                                        "width":  10,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  660,
+                                        "y":  421,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  724,
+                                        "y":  421,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTH 2140",
+                      "x":  144,
+                      "y":  422,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  427,
+                                        "width":  8,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ARTH",
+                                        "x":  170,
+                                        "y":  422,
+                                        "width":  71,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2140",
+                                        "x":  249,
+                                        "y":  422,
+                                        "width":  48,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTS 1240",
+                      "x":  144,
+                      "y":  464,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  470,
+                                        "width":  8,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  169,
+                                        "y":  465,
+                                        "width":  63,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1240",
+                                        "x":  243,
+                                        "y":  464,
+                                        "width":  47,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Design 1 3 credit hour(s)",
+                      "x":  298,
+                      "y":  464,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  298,
+                                        "y":  476,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Design",
+                                        "x":  313,
+                                        "y":  465,
+                                        "width":  70,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  391,
+                                        "y":  465,
+                                        "width":  7,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  407,
+                                        "y":  466,
+                                        "width":  10,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  426,
+                                        "y":  464,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  490,
+                                        "y":  464,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Design 11 3 credit hour(s)",
+                      "x":  297,
+                      "y":  507,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  297,
+                                        "y":  519,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Design",
+                                        "x":  312,
+                                        "y":  508,
+                                        "width":  70,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  390,
+                                        "y":  508,
+                                        "width":  16,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  415,
+                                        "y":  509,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  434,
+                                        "y":  507,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  498,
+                                        "y":  507,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTS 1250",
+                      "x":  144,
+                      "y":  508,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  513,
+                                        "width":  8,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  170,
+                                        "y":  508,
+                                        "width":  62,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1250",
+                                        "x":  243,
+                                        "y":  509,
+                                        "width":  46,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Drawing 1 3 credit hour(s)",
+                      "x":  294,
+                      "y":  550,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  294,
+                                        "y":  562,
+                                        "width":  8,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Drawing",
+                                        "x":  310,
+                                        "y":  551,
+                                        "width":  88,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  405,
+                                        "y":  551,
+                                        "width":  7,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  421,
+                                        "y":  552,
+                                        "width":  10,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  440,
+                                        "y":  550,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  504,
+                                        "y":  550,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTS 1610",
+                      "x":  144,
+                      "y":  551,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  556,
+                                        "width":  8,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  170,
+                                        "y":  551,
+                                        "width":  62,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1610",
+                                        "x":  243,
+                                        "y":  551,
+                                        "width":  43,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTS 1320-",
+                      "x":  144,
+                      "y":  593,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  599,
+                                        "width":  8,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  170,
+                                        "y":  593,
+                                        "width":  62,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1320-",
+                                        "x":  243,
+                                        "y":  595,
+                                        "width":  56,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Ceramics 1 3 credit hour(s)",
+                      "x":  307,
+                      "y":  593,
+                      "words":  [
+                                    {
+                                        "text":  "Ceramics",
+                                        "x":  307,
+                                        "y":  593,
+                                        "width":  93,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  408,
+                                        "y":  594,
+                                        "width":  7,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  424,
+                                        "y":  595,
+                                        "width":  10,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  443,
+                                        "y":  593,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  507,
+                                        "y":  593,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTS 1410",
+                      "x":  144,
+                      "y":  636,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  642,
+                                        "width":  8,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  170,
+                                        "y":  636,
+                                        "width":  62,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1410",
+                                        "x":  243,
+                                        "y":  636,
+                                        "width":  44,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Introduction to Photography 3 credit hour(s)",
+                      "x":  295,
+                      "y":  636,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  295,
+                                        "y":  647,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  310,
+                                        "y":  636,
+                                        "width":  128,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  445,
+                                        "y":  642,
+                                        "width":  20,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Photography",
+                                        "x":  473,
+                                        "y":  636,
+                                        "width":  127,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  607,
+                                        "y":  637,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  626,
+                                        "y":  636,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  690,
+                                        "y":  636,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Digital Media 1 3 credit hour(s)",
+                      "x":  311,
+                      "y":  678,
+                      "words":  [
+                                    {
+                                        "text":  "Digital",
+                                        "x":  311,
+                                        "y":  679,
+                                        "width":  69,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Media",
+                                        "x":  388,
+                                        "y":  678,
+                                        "width":  64,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  459,
+                                        "y":  680,
+                                        "width":  7,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  475,
+                                        "y":  680,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  494,
+                                        "y":  679,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  558,
+                                        "y":  679,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTS 1520 -",
+                      "x":  144,
+                      "y":  679,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  684,
+                                        "width":  8,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  170,
+                                        "y":  679,
+                                        "width":  62,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1520",
+                                        "x":  243,
+                                        "y":  680,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  295,
+                                        "y":  690,
+                                        "width":  7,
+                                        "height":  3
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Painting 1 3 credit hour(s)",
+                      "x":  297,
+                      "y":  721,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  297,
+                                        "y":  733,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Painting",
+                                        "x":  312,
+                                        "y":  723,
+                                        "width":  85,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  404,
+                                        "y":  723,
+                                        "width":  7,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  419,
+                                        "y":  723,
+                                        "width":  12,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  439,
+                                        "y":  721,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  502,
+                                        "y":  721,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTS 1630",
+                      "x":  144,
+                      "y":  722,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  727,
+                                        "width":  8,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  170,
+                                        "y":  722,
+                                        "width":  62,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1630",
+                                        "x":  243,
+                                        "y":  722,
+                                        "width":  46,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Introduction to Printmaking 3 credit hour(s)",
+                      "x":  295,
+                      "y":  764,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  295,
+                                        "y":  776,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  310,
+                                        "y":  764,
+                                        "width":  128,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  446,
+                                        "y":  771,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "Printmaking",
+                                        "x":  473,
+                                        "y":  764,
+                                        "width":  128,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  608,
+                                        "y":  766,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  627,
+                                        "y":  764,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  691,
+                                        "y":  764,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTS 1710",
+                      "x":  144,
+                      "y":  765,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  770,
+                                        "width":  8,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  170,
+                                        "y":  765,
+                                        "width":  62,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1710",
+                                        "x":  243,
+                                        "y":  766,
+                                        "width":  44,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTS 1840",
+                      "x":  144,
+                      "y":  807,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  813,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  170,
+                                        "y":  808,
+                                        "width":  62,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1840",
+                                        "x":  243,
+                                        "y":  807,
+                                        "width":  46,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Sculpture 1 3 credit hour(s)",
+                      "x":  298,
+                      "y":  807,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  298,
+                                        "y":  819,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Sculpture",
+                                        "x":  313,
+                                        "y":  807,
+                                        "width":  96,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  417,
+                                        "y":  808,
+                                        "width":  6,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  432,
+                                        "y":  809,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  451,
+                                        "y":  807,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  515,
+                                        "y":  807,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTS 2310",
+                      "x":  144,
+                      "y":  850,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  856,
+                                        "width":  8,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  170,
+                                        "y":  850,
+                                        "width":  62,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "2310",
+                                        "x":  241,
+                                        "y":  852,
+                                        "width":  47,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Ceramics 11 3 credit hour(s)",
+                      "x":  296,
+                      "y":  850,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  296,
+                                        "y":  862,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Ceramics",
+                                        "x":  311,
+                                        "y":  851,
+                                        "width":  94,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  413,
+                                        "y":  851,
+                                        "width":  16,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  437,
+                                        "y":  852,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  456,
+                                        "y":  850,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  520,
+                                        "y":  850,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ARTS 2850",
+                      "x":  144,
+                      "y":  893,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  899,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  170,
+                                        "y":  893,
+                                        "width":  62,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "2850",
+                                        "x":  240,
+                                        "y":  894,
+                                        "width":  50,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Ceramics 11 3 credit hour(s)",
+                      "x":  298,
+                      "y":  893,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  298,
+                                        "y":  904,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Ceramics",
+                                        "x":  313,
+                                        "y":  893,
+                                        "width":  93,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  415,
+                                        "y":  894,
+                                        "width":  16,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  439,
+                                        "y":  895,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  458,
+                                        "y":  893,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  522,
+                                        "y":  893,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• MUSC 1130",
+                      "x":  144,
+                      "y":  936,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  941,
+                                        "width":  8,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "MUSC",
+                                        "x":  171,
+                                        "y":  936,
+                                        "width":  72,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1130",
+                                        "x":  253,
+                                        "y":  937,
+                                        "width":  45,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Music Appreciation: Western Music 3 credit hour(s)",
+                      "x":  307,
+                      "y":  936,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  307,
+                                        "y":  947,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Music",
+                                        "x":  321,
+                                        "y":  937,
+                                        "width":  61,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Appreciation:",
+                                        "x":  388,
+                                        "y":  936,
+                                        "width":  135,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Western",
+                                        "x":  531,
+                                        "y":  937,
+                                        "width":  83,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Music",
+                                        "x":  622,
+                                        "y":  937,
+                                        "width":  61,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  690,
+                                        "y":  937,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  710,
+                                        "y":  936,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  773,
+                                        "y":  936,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "MESALANDS COMMUNITY COLLEGE CURRICULUM REQUIREMENTS",
+                      "x":  125,
+                      "y":  1074,
+                      "words":  [
+                                    {
+                                        "text":  "MESALANDS",
+                                        "x":  125,
+                                        "y":  1074,
+                                        "width":  199,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "COMMUNITY",
+                                        "x":  334,
+                                        "y":  1074,
+                                        "width":  215,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "COLLEGE",
+                                        "x":  556,
+                                        "y":  1074,
+                                        "width":  150,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "CURRICULUM",
+                                        "x":  715,
+                                        "y":  1074,
+                                        "width":  226,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "REQUIREMENTS",
+                                        "x":  950,
+                                        "y":  1074,
+                                        "width":  262,
+                                        "height":  30
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Degrees and",
+                      "x":  136,
+                      "y":  1132,
+                      "words":  [
+                                    {
+                                        "text":  "Degrees",
+                                        "x":  136,
+                                        "y":  1134,
+                                        "width":  91,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  236,
+                                        "y":  1132,
+                                        "width":  43,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Certificates",
+                      "x":  136,
+                      "y":  1165,
+                      "words":  [
+                                    {
+                                        "text":  "Certificates",
+                                        "x":  136,
+                                        "y":  1165,
+                                        "width":  134,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Associate of Arts",
+                      "x":  134,
+                      "y":  1204,
+                      "words":  [
+                                    {
+                                        "text":  "Associate",
+                                        "x":  134,
+                                        "y":  1205,
+                                        "width":  93,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  235,
+                                        "y":  1204,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  260,
+                                        "y":  1205,
+                                        "width":  43,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Degree",
+                      "x":  136,
+                      "y":  1235,
+                      "words":  [
+                                    {
+                                        "text":  "Degree",
+                                        "x":  136,
+                                        "y":  1235,
+                                        "width":  70,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Associate of Applied",
+                      "x":  134,
+                      "y":  1271,
+                      "words":  [
+                                    {
+                                        "text":  "Associate",
+                                        "x":  134,
+                                        "y":  1272,
+                                        "width":  93,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  235,
+                                        "y":  1271,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Applied",
+                                        "x":  260,
+                                        "y":  1271,
+                                        "width":  79,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Science Degree",
+                      "x":  135,
+                      "y":  1302,
+                      "words":  [
+                                    {
+                                        "text":  "Science",
+                                        "x":  135,
+                                        "y":  1302,
+                                        "width":  74,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Degree",
+                                        "x":  217,
+                                        "y":  1302,
+                                        "width":  70,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Applied Science",
+                      "x":  134,
+                      "y":  1337,
+                      "words":  [
+                                    {
+                                        "text":  "Applied",
+                                        "x":  134,
+                                        "y":  1337,
+                                        "width":  79,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  221,
+                                        "y":  1338,
+                                        "width":  73,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Certificate",
+                      "x":  136,
+                      "y":  1367,
+                      "words":  [
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  136,
+                                        "y":  1367,
+                                        "width":  106,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Occupational",
+                      "x":  136,
+                      "y":  1404,
+                      "words":  [
+                                    {
+                                        "text":  "Occupational",
+                                        "x":  136,
+                                        "y":  1404,
+                                        "width":  135,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Certificate",
+                      "x":  136,
+                      "y":  1434,
+                      "words":  [
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  136,
+                                        "y":  1434,
+                                        "width":  106,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Program",
+                      "x":  397,
+                      "y":  1134,
+                      "words":  [
+                                    {
+                                        "text":  "Program",
+                                        "x":  397,
+                                        "y":  1134,
+                                        "width":  101,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Len th",
+                      "x":  397,
+                      "y":  1166,
+                      "words":  [
+                                    {
+                                        "text":  "Len",
+                                        "x":  397,
+                                        "y":  1167,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "th",
+                                        "x":  456,
+                                        "y":  1166,
+                                        "width":  25,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2 Years or",
+                      "x":  397,
+                      "y":  1205,
+                      "words":  [
+                                    {
+                                        "text":  "2",
+                                        "x":  397,
+                                        "y":  1206,
+                                        "width":  12,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Years",
+                                        "x":  416,
+                                        "y":  1205,
+                                        "width":  52,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  475,
+                                        "y":  1212,
+                                        "width":  21,
+                                        "height":  11
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4 Semesters",
+                      "x":  397,
+                      "y":  1234,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  397,
+                                        "y":  1234,
+                                        "width":  12,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Semesters",
+                                        "x":  417,
+                                        "y":  1235,
+                                        "width":  96,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2 Years or",
+                      "x":  397,
+                      "y":  1272,
+                      "words":  [
+                                    {
+                                        "text":  "2",
+                                        "x":  397,
+                                        "y":  1273,
+                                        "width":  12,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "Years",
+                                        "x":  416,
+                                        "y":  1272,
+                                        "width":  52,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  475,
+                                        "y":  1278,
+                                        "width":  21,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4 Semesters",
+                      "x":  397,
+                      "y":  1301,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  397,
+                                        "y":  1301,
+                                        "width":  12,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Semesters",
+                                        "x":  417,
+                                        "y":  1302,
+                                        "width":  96,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1 Year or",
+                      "x":  400,
+                      "y":  1339,
+                      "words":  [
+                                    {
+                                        "text":  "1",
+                                        "x":  400,
+                                        "y":  1339,
+                                        "width":  7,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Year",
+                                        "x":  416,
+                                        "y":  1339,
+                                        "width":  44,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  467,
+                                        "y":  1345,
+                                        "width":  20,
+                                        "height":  11
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2 Semesters",
+                      "x":  397,
+                      "y":  1368,
+                      "words":  [
+                                    {
+                                        "text":  "2",
+                                        "x":  397,
+                                        "y":  1369,
+                                        "width":  12,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Semesters",
+                                        "x":  417,
+                                        "y":  1368,
+                                        "width":  96,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1 Semester",
+                      "x":  400,
+                      "y":  1405,
+                      "words":  [
+                                    {
+                                        "text":  "1",
+                                        "x":  400,
+                                        "y":  1406,
+                                        "width":  7,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Semester",
+                                        "x":  417,
+                                        "y":  1405,
+                                        "width":  88,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "General",
+                      "x":  576,
+                      "y":  1132,
+                      "words":  [
+                                    {
+                                        "text":  "General",
+                                        "x":  576,
+                                        "y":  1132,
+                                        "width":  91,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Education Credits",
+                      "x":  576,
+                      "y":  1166,
+                      "words":  [
+                                    {
+                                        "text":  "Education",
+                                        "x":  576,
+                                        "y":  1166,
+                                        "width":  118,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  703,
+                                        "y":  1166,
+                                        "width":  84,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "31",
+                      "x":  609,
+                      "y":  1206,
+                      "words":  [
+                                    {
+                                        "text":  "31",
+                                        "x":  609,
+                                        "y":  1206,
+                                        "width":  21,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "15",
+                      "x":  611,
+                      "y":  1272,
+                      "words":  [
+                                    {
+                                        "text":  "15",
+                                        "x":  611,
+                                        "y":  1272,
+                                        "width":  19,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "9-13",
+                      "x":  609,
+                      "y":  1339,
+                      "words":  [
+                                    {
+                                        "text":  "9-13",
+                                        "x":  609,
+                                        "y":  1339,
+                                        "width":  43,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "0",
+                      "x":  609,
+                      "y":  1406,
+                      "words":  [
+                                    {
+                                        "text":  "0",
+                                        "x":  609,
+                                        "y":  1406,
+                                        "width":  12,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Field of Study",
+                      "x":  844,
+                      "y":  1132,
+                      "words":  [
+                                    {
+                                        "text":  "Field",
+                                        "x":  844,
+                                        "y":  1133,
+                                        "width":  58,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  909,
+                                        "y":  1132,
+                                        "width":  26,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Study",
+                                        "x":  939,
+                                        "y":  1133,
+                                        "width":  68,
+                                        "height":  27
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Credits",
+                      "x":  844,
+                      "y":  1166,
+                      "words":  [
+                                    {
+                                        "text":  "Credits",
+                                        "x":  844,
+                                        "y":  1166,
+                                        "width":  85,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "27-30",
+                      "x":  844,
+                      "y":  1206,
+                      "words":  [
+                                    {
+                                        "text":  "27-30",
+                                        "x":  844,
+                                        "y":  1206,
+                                        "width":  56,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "45",
+                      "x":  844,
+                      "y":  1271,
+                      "words":  [
+                                    {
+                                        "text":  "45",
+                                        "x":  844,
+                                        "y":  1271,
+                                        "width":  23,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "23-31",
+                      "x":  844,
+                      "y":  1339,
+                      "words":  [
+                                    {
+                                        "text":  "23-31",
+                                        "x":  844,
+                                        "y":  1339,
+                                        "width":  55,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11-19",
+                      "x":  847,
+                      "y":  1406,
+                      "words":  [
+                                    {
+                                        "text":  "11-19",
+                                        "x":  847,
+                                        "y":  1406,
+                                        "width":  49,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Total",
+                      "x":  1080,
+                      "y":  1132,
+                      "words":  [
+                                    {
+                                        "text":  "Total",
+                                        "x":  1080,
+                                        "y":  1132,
+                                        "width":  61,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Credits",
+                      "x":  1081,
+                      "y":  1166,
+                      "words":  [
+                                    {
+                                        "text":  "Credits",
+                                        "x":  1081,
+                                        "y":  1166,
+                                        "width":  84,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "60-63",
+                      "x":  1081,
+                      "y":  1205,
+                      "words":  [
+                                    {
+                                        "text":  "60-63",
+                                        "x":  1081,
+                                        "y":  1205,
+                                        "width":  59,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "60",
+                      "x":  1081,
+                      "y":  1271,
+                      "words":  [
+                                    {
+                                        "text":  "60",
+                                        "x":  1081,
+                                        "y":  1271,
+                                        "width":  24,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "— 44",
+                      "x":  1106,
+                      "y":  1338,
+                      "words":  [
+                                    {
+                                        "text":  "—",
+                                        "x":  1106,
+                                        "y":  1349,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "44",
+                                        "x":  1115,
+                                        "y":  1338,
+                                        "width":  25,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11-19",
+                      "x":  1083,
+                      "y":  1406,
+                      "words":  [
+                                    {
+                                        "text":  "11-19",
+                                        "x":  1083,
+                                        "y":  1406,
+                                        "width":  49,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "EDUCATIONAL PROGRAMS",
+                      "x":  125,
+                      "y":  1533,
+                      "words":  [
+                                    {
+                                        "text":  "EDUCATIONAL",
+                                        "x":  125,
+                                        "y":  1533,
+                                        "width":  237,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "PROGRAMS",
+                                        "x":  371,
+                                        "y":  1533,
+                                        "width":  181,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mesalands Community College is authorized by the New Mexico Higher Education Department to offer programs",
+                      "x":  125,
+                      "y":  1584,
+                      "words":  [
+                                    {
+                                        "text":  "Mesalands",
+                                        "x":  125,
+                                        "y":  1584,
+                                        "width":  105,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Community",
+                                        "x":  238,
+                                        "y":  1585,
+                                        "width":  125,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "College",
+                                        "x":  370,
+                                        "y":  1584,
+                                        "width":  75,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  453,
+                                        "y":  1586,
+                                        "width":  13,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "authorized",
+                                        "x":  474,
+                                        "y":  1584,
+                                        "width":  106,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "by",
+                                        "x":  588,
+                                        "y":  1584,
+                                        "width":  24,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  619,
+                                        "y":  1584,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  657,
+                                        "y":  1585,
+                                        "width":  47,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  711,
+                                        "y":  1585,
+                                        "width":  74,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Higher",
+                                        "x":  793,
+                                        "y":  1584,
+                                        "width":  71,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Education",
+                                        "x":  871,
+                                        "y":  1584,
+                                        "width":  102,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Department",
+                                        "x":  982,
+                                        "y":  1585,
+                                        "width":  122,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1111,
+                                        "y":  1590,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "offer",
+                                        "x":  1138,
+                                        "y":  1584,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "programs",
+                                        "x":  1192,
+                                        "y":  1591,
+                                        "width":  93,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "leading to Associate of Arts and Associate of Applied Science degrees.",
+                      "x":  125,
+                      "y":  1614,
+                      "words":  [
+                                    {
+                                        "text":  "leading",
+                                        "x":  125,
+                                        "y":  1614,
+                                        "width":  73,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  205,
+                                        "y":  1621,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "Associate",
+                                        "x":  230,
+                                        "y":  1615,
+                                        "width":  94,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  331,
+                                        "y":  1614,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  356,
+                                        "y":  1615,
+                                        "width":  44,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  407,
+                                        "y":  1614,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Associate",
+                                        "x":  450,
+                                        "y":  1615,
+                                        "width":  93,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  551,
+                                        "y":  1614,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Applied",
+                                        "x":  576,
+                                        "y":  1614,
+                                        "width":  79,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  663,
+                                        "y":  1615,
+                                        "width":  73,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "degrees.",
+                                        "x":  744,
+                                        "y":  1614,
+                                        "width":  78,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The College also offers programming that leads to certificates. The educational goals emphasize preparing students",
+                      "x":  124,
+                      "y":  1675,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  124,
+                                        "y":  1675,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "College",
+                                        "x":  172,
+                                        "y":  1675,
+                                        "width":  75,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "also",
+                                        "x":  255,
+                                        "y":  1675,
+                                        "width":  38,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "offers",
+                                        "x":  301,
+                                        "y":  1675,
+                                        "width":  54,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "programming",
+                                        "x":  363,
+                                        "y":  1677,
+                                        "width":  139,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  509,
+                                        "y":  1675,
+                                        "width":  39,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "leads",
+                                        "x":  556,
+                                        "y":  1675,
+                                        "width":  48,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  612,
+                                        "y":  1681,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "certificates.",
+                                        "x":  639,
+                                        "y":  1675,
+                                        "width":  113,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "The",
+                                        "x":  761,
+                                        "y":  1675,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "educational",
+                                        "x":  809,
+                                        "y":  1675,
+                                        "width":  115,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "goals",
+                                        "x":  932,
+                                        "y":  1675,
+                                        "width":  49,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "emphasize",
+                                        "x":  989,
+                                        "y":  1675,
+                                        "width":  102,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "preparing",
+                                        "x":  1099,
+                                        "y":  1677,
+                                        "width":  97,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  1203,
+                                        "y":  1675,
+                                        "width":  82,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "for transfer to a four-year, degree-granting institution, gainful employment, and to allow them to upgrade their",
+                      "x":  125,
+                      "y":  1705,
+                      "words":  [
+                                    {
+                                        "text":  "for",
+                                        "x":  125,
+                                        "y":  1705,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "transfer",
+                                        "x":  160,
+                                        "y":  1705,
+                                        "width":  77,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  244,
+                                        "y":  1712,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  271,
+                                        "y":  1713,
+                                        "width":  10,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "four-year,",
+                                        "x":  288,
+                                        "y":  1705,
+                                        "width":  94,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "degree-granting",
+                                        "x":  390,
+                                        "y":  1705,
+                                        "width":  159,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "institution,",
+                                        "x":  556,
+                                        "y":  1707,
+                                        "width":  110,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "gainful",
+                                        "x":  675,
+                                        "y":  1705,
+                                        "width":  71,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "employment,",
+                                        "x":  754,
+                                        "y":  1705,
+                                        "width":  129,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  892,
+                                        "y":  1705,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  936,
+                                        "y":  1712,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "allow",
+                                        "x":  963,
+                                        "y":  1705,
+                                        "width":  53,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "them",
+                                        "x":  1023,
+                                        "y":  1705,
+                                        "width":  51,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1082,
+                                        "y":  1712,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "upgrade",
+                                        "x":  1110,
+                                        "y":  1705,
+                                        "width":  79,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "their",
+                                        "x":  1197,
+                                        "y":  1705,
+                                        "width":  46,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "56",
+                      "x":  692,
+                      "y":  1769,
+                      "words":  [
+                                    {
+                                        "text":  "56",
+                                        "x":  692,
+                                        "y":  1769,
+                                        "width":  26,
+                                        "height":  19
+                                    }
+                                ]
+                  }
+              ]
+}

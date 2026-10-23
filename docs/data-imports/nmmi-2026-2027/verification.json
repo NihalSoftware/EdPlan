@@ -1,0 +1,22 @@
+{
+  "database": "edplan_db",
+  "verified_program_count": 2,
+  "verified_concentration_count": 19,
+  "course_rows": 0,
+  "exact_program_metadata_match": true,
+  "college_record_preserved": true,
+  "other_colleges_unchanged": true,
+  "previous_import_counts": [
+    [
+      "Institute of American Indian Arts",
+      28,
+      319
+    ],
+    [
+      "Mesalands Community College",
+      26,
+      258
+    ]
+  ],
+  "source_sha256": "a3e1f115ca7318e3a9966147a3d6824689c59b6637eae4052420eaa32a56ac3e"
+}

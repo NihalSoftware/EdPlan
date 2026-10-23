@@ -1,0 +1,11 @@
+{
+  "mode": "dry-run-rolled-back",
+  "database": "edplan_db",
+  "university_id": "5ff13af3-5716-4a52-9355-b88131da5580",
+  "program_count": 28,
+  "course_row_count": 319,
+  "inserted_program_ids": [],
+  "inserted_course_ids": [],
+  "other_colleges_unchanged": true,
+  "source_sha256": "3c91c00c3836d1186de580f5b0257904e2eb777427d5c71ac328eb5365bedba7"
+}

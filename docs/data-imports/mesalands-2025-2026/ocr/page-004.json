@@ -1,0 +1,3757 @@
+﻿{
+    "pdf_page":  4,
+    "lines":  [
+                  {
+                      "text":  "GENERAL EDUCATION CORE CURRICULUM REQUIREMENTS",
+                      "x":  224,
+                      "y":  84,
+                      "words":  [
+                                    {
+                                        "text":  "GENERAL",
+                                        "x":  224,
+                                        "y":  84,
+                                        "width":  154,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "EDUCATION",
+                                        "x":  386,
+                                        "y":  84,
+                                        "width":  196,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "CORE",
+                                        "x":  591,
+                                        "y":  84,
+                                        "width":  90,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "CURRICULUM",
+                                        "x":  690,
+                                        "y":  84,
+                                        "width":  225,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "REQUIREMENTS",
+                                        "x":  925,
+                                        "y":  84,
+                                        "width":  261,
+                                        "height":  29
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FOR THE ASSOCIATE OF ARTS (AA), AND",
+                      "x":  390,
+                      "y":  120,
+                      "words":  [
+                                    {
+                                        "text":  "FOR",
+                                        "x":  390,
+                                        "y":  123,
+                                        "width":  65,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "THE",
+                                        "x":  462,
+                                        "y":  123,
+                                        "width":  68,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "ASSOCIATE",
+                                        "x":  537,
+                                        "y":  123,
+                                        "width":  180,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "OF",
+                                        "x":  726,
+                                        "y":  123,
+                                        "width":  42,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  775,
+                                        "y":  123,
+                                        "width":  82,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "(AA),",
+                                        "x":  868,
+                                        "y":  120,
+                                        "width":  71,
+                                        "height":  29
+                                    },
+                                    {
+                                        "text":  "AND",
+                                        "x":  947,
+                                        "y":  123,
+                                        "width":  73,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ASSOCIATE OF APPLIED SCIENCE (AAS) DEGREES",
+                      "x":  317,
+                      "y":  159,
+                      "words":  [
+                                    {
+                                        "text":  "ASSOCIATE",
+                                        "x":  317,
+                                        "y":  161,
+                                        "width":  180,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "OF",
+                                        "x":  507,
+                                        "y":  162,
+                                        "width":  41,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "APPLIED",
+                                        "x":  555,
+                                        "y":  162,
+                                        "width":  139,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "SCIENCE",
+                                        "x":  704,
+                                        "y":  162,
+                                        "width":  138,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "(AAS)",
+                                        "x":  853,
+                                        "y":  159,
+                                        "width":  79,
+                                        "height":  28
+                                    },
+                                    {
+                                        "text":  "DEGREES",
+                                        "x":  943,
+                                        "y":  161,
+                                        "width":  148,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NM Higher Education (HED) General",
+                      "x":  125,
+                      "y":  215,
+                      "words":  [
+                                    {
+                                        "text":  "NM",
+                                        "x":  125,
+                                        "y":  216,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Higher",
+                                        "x":  179,
+                                        "y":  215,
+                                        "width":  82,
+                                        "height":  27
+                                    },
+                                    {
+                                        "text":  "Education",
+                                        "x":  268,
+                                        "y":  215,
+                                        "width":  119,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "(HED)",
+                                        "x":  396,
+                                        "y":  215,
+                                        "width":  77,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "General",
+                                        "x":  483,
+                                        "y":  215,
+                                        "width":  91,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Education Core Model",
+                      "x":  124,
+                      "y":  248,
+                      "words":  [
+                                    {
+                                        "text":  "Education",
+                                        "x":  124,
+                                        "y":  248,
+                                        "width":  120,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Core",
+                                        "x":  252,
+                                        "y":  249,
+                                        "width":  55,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Model",
+                                        "x":  314,
+                                        "y":  248,
+                                        "width":  74,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The New Mexico General Education Core Curriculum",
+                      "x":  124,
+                      "y":  297,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  124,
+                                        "y":  297,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  172,
+                                        "y":  298,
+                                        "width":  48,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  226,
+                                        "y":  298,
+                                        "width":  74,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "General",
+                                        "x":  308,
+                                        "y":  297,
+                                        "width":  79,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Education",
+                                        "x":  395,
+                                        "y":  297,
+                                        "width":  102,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Core",
+                                        "x":  505,
+                                        "y":  297,
+                                        "width":  48,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Curriculum",
+                                        "x":  561,
+                                        "y":  297,
+                                        "width":  119,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "includes designated general education courses that are",
+                      "x":  125,
+                      "y":  327,
+                      "words":  [
+                                    {
+                                        "text":  "includes",
+                                        "x":  125,
+                                        "y":  327,
+                                        "width":  81,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "designated",
+                                        "x":  214,
+                                        "y":  327,
+                                        "width":  105,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "general",
+                                        "x":  327,
+                                        "y":  327,
+                                        "width":  71,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "education",
+                                        "x":  406,
+                                        "y":  327,
+                                        "width":  97,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  511,
+                                        "y":  335,
+                                        "width":  71,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  590,
+                                        "y":  327,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  637,
+                                        "y":  335,
+                                        "width":  29,
+                                        "height":  11
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "focused on the essential skills that all college graduates",
+                      "x":  125,
+                      "y":  357,
+                      "words":  [
+                                    {
+                                        "text":  "focused",
+                                        "x":  125,
+                                        "y":  357,
+                                        "width":  76,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "on",
+                                        "x":  208,
+                                        "y":  365,
+                                        "width":  25,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  241,
+                                        "y":  357,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "essential",
+                                        "x":  279,
+                                        "y":  357,
+                                        "width":  83,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "skills",
+                                        "x":  370,
+                                        "y":  357,
+                                        "width":  50,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  428,
+                                        "y":  357,
+                                        "width":  39,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "all",
+                                        "x":  475,
+                                        "y":  357,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "college",
+                                        "x":  506,
+                                        "y":  358,
+                                        "width":  67,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "graduates",
+                                        "x":  581,
+                                        "y":  357,
+                                        "width":  94,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "need for success and are guaranteed to transfer to any",
+                      "x":  125,
+                      "y":  388,
+                      "words":  [
+                                    {
+                                        "text":  "need",
+                                        "x":  125,
+                                        "y":  388,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  179,
+                                        "y":  388,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "success",
+                                        "x":  214,
+                                        "y":  396,
+                                        "width":  69,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  291,
+                                        "y":  388,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  336,
+                                        "y":  395,
+                                        "width":  28,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "guaranteed",
+                                        "x":  372,
+                                        "y":  388,
+                                        "width":  111,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  491,
+                                        "y":  394,
+                                        "width":  18,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "transfer",
+                                        "x":  518,
+                                        "y":  388,
+                                        "width":  76,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  602,
+                                        "y":  394,
+                                        "width":  18,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "any",
+                                        "x":  628,
+                                        "y":  395,
+                                        "width":  36,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "New Mexico public college or university. The current",
+                      "x":  125,
+                      "y":  418,
+                      "words":  [
+                                    {
+                                        "text":  "New",
+                                        "x":  125,
+                                        "y":  419,
+                                        "width":  47,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  179,
+                                        "y":  419,
+                                        "width":  74,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "public",
+                                        "x":  261,
+                                        "y":  418,
+                                        "width":  62,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "college",
+                                        "x":  330,
+                                        "y":  418,
+                                        "width":  67,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  405,
+                                        "y":  426,
+                                        "width":  20,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "university.",
+                                        "x":  433,
+                                        "y":  421,
+                                        "width":  101,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "The",
+                                        "x":  542,
+                                        "y":  418,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "current",
+                                        "x":  591,
+                                        "y":  425,
+                                        "width":  72,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "approved MCC courses are listed below under each of",
+                      "x":  125,
+                      "y":  448,
+                      "words":  [
+                                    {
+                                        "text":  "approved",
+                                        "x":  125,
+                                        "y":  449,
+                                        "width":  91,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "MCC",
+                                        "x":  223,
+                                        "y":  450,
+                                        "width":  58,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  289,
+                                        "y":  456,
+                                        "width":  71,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  368,
+                                        "y":  456,
+                                        "width":  29,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "listed",
+                                        "x":  405,
+                                        "y":  449,
+                                        "width":  53,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "below",
+                                        "x":  465,
+                                        "y":  449,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "under",
+                                        "x":  531,
+                                        "y":  449,
+                                        "width":  58,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "each",
+                                        "x":  596,
+                                        "y":  449,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  648,
+                                        "y":  448,
+                                        "width":  22,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the six General Education Content Areas and the",
+                      "x":  125,
+                      "y":  479,
+                      "words":  [
+                                    {
+                                        "text":  "the",
+                                        "x":  125,
+                                        "y":  479,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "six",
+                                        "x":  163,
+                                        "y":  481,
+                                        "width":  27,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "General",
+                                        "x":  197,
+                                        "y":  479,
+                                        "width":  78,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Education",
+                                        "x":  283,
+                                        "y":  479,
+                                        "width":  102,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Content",
+                                        "x":  394,
+                                        "y":  480,
+                                        "width":  81,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Areas",
+                                        "x":  482,
+                                        "y":  480,
+                                        "width":  55,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  545,
+                                        "y":  479,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  589,
+                                        "y":  479,
+                                        "width":  31,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "additional Multi-Discipline Area.",
+                      "x":  125,
+                      "y":  509,
+                      "words":  [
+                                    {
+                                        "text":  "additional",
+                                        "x":  125,
+                                        "y":  509,
+                                        "width":  101,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Multi-Discipline",
+                                        "x":  234,
+                                        "y":  509,
+                                        "width":  167,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Area.",
+                                        "x":  407,
+                                        "y":  510,
+                                        "width":  53,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Associate of Arts (AA) degrees require 22 cred-",
+                      "x":  124,
+                      "y":  570,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  124,
+                                        "y":  570,
+                                        "width":  42,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Associate",
+                                        "x":  173,
+                                        "y":  571,
+                                        "width":  97,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  279,
+                                        "y":  570,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  305,
+                                        "y":  571,
+                                        "width":  45,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "(AA)",
+                                        "x":  360,
+                                        "y":  571,
+                                        "width":  49,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "degrees",
+                                        "x":  419,
+                                        "y":  570,
+                                        "width":  75,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "require",
+                                        "x":  503,
+                                        "y":  573,
+                                        "width":  73,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "22",
+                                        "x":  585,
+                                        "y":  572,
+                                        "width":  25,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "cred-",
+                                        "x":  619,
+                                        "y":  570,
+                                        "width":  51,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "its distributed among the six General Education",
+                      "x":  125,
+                      "y":  601,
+                      "words":  [
+                                    {
+                                        "text":  "its",
+                                        "x":  125,
+                                        "y":  603,
+                                        "width":  23,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "distributed",
+                                        "x":  157,
+                                        "y":  601,
+                                        "width":  114,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "among",
+                                        "x":  279,
+                                        "y":  608,
+                                        "width":  71,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  358,
+                                        "y":  601,
+                                        "width":  32,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "six",
+                                        "x":  398,
+                                        "y":  603,
+                                        "width":  27,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "General",
+                                        "x":  434,
+                                        "y":  601,
+                                        "width":  81,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Education",
+                                        "x":  524,
+                                        "y":  601,
+                                        "width":  107,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Content Areas and an additional nine credits may",
+                      "x":  125,
+                      "y":  631,
+                      "words":  [
+                                    {
+                                        "text":  "Content",
+                                        "x":  125,
+                                        "y":  632,
+                                        "width":  85,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Areas",
+                                        "x":  217,
+                                        "y":  632,
+                                        "width":  58,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  284,
+                                        "y":  631,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "an",
+                                        "x":  330,
+                                        "y":  639,
+                                        "width":  24,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "additional",
+                                        "x":  363,
+                                        "y":  631,
+                                        "width":  105,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "nine",
+                                        "x":  477,
+                                        "y":  633,
+                                        "width":  45,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "credits",
+                                        "x":  531,
+                                        "y":  631,
+                                        "width":  68,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "may",
+                                        "x":  608,
+                                        "y":  639,
+                                        "width":  42,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "be selected from the Content Areas and/ or the",
+                      "x":  726,
+                      "y":  215,
+                      "words":  [
+                                    {
+                                        "text":  "be",
+                                        "x":  726,
+                                        "y":  215,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "selected",
+                                        "x":  758,
+                                        "y":  215,
+                                        "width":  81,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "from",
+                                        "x":  847,
+                                        "y":  215,
+                                        "width":  49,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  905,
+                                        "y":  215,
+                                        "width":  32,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Content",
+                                        "x":  946,
+                                        "y":  216,
+                                        "width":  85,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Areas",
+                                        "x":  1038,
+                                        "y":  216,
+                                        "width":  57,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and/",
+                                        "x":  1104,
+                                        "y":  215,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  1160,
+                                        "y":  222,
+                                        "width":  21,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1189,
+                                        "y":  215,
+                                        "width":  32,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Multi-Discipline Area.",
+                      "x":  726,
+                      "y":  245,
+                      "words":  [
+                                    {
+                                        "text":  "Multi-Discipline",
+                                        "x":  726,
+                                        "y":  245,
+                                        "width":  175,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Area.",
+                                        "x":  908,
+                                        "y":  246,
+                                        "width":  55,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Associate of Applied Science (AAS) degree",
+                      "x":  726,
+                      "y":  306,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  726,
+                                        "y":  306,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Associate",
+                                        "x":  773,
+                                        "y":  307,
+                                        "width":  96,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  876,
+                                        "y":  306,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Applied",
+                                        "x":  903,
+                                        "y":  306,
+                                        "width":  80,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  992,
+                                        "y":  307,
+                                        "width":  74,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "(AAS)",
+                                        "x":  1075,
+                                        "y":  306,
+                                        "width":  62,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  1146,
+                                        "y":  306,
+                                        "width":  65,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "requires 12 credit hours distributed among the six",
+                      "x":  727,
+                      "y":  336,
+                      "words":  [
+                                    {
+                                        "text":  "requires",
+                                        "x":  727,
+                                        "y":  339,
+                                        "width":  80,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "12",
+                                        "x":  817,
+                                        "y":  338,
+                                        "width":  22,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  848,
+                                        "y":  336,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "hours",
+                                        "x":  913,
+                                        "y":  336,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "distributed",
+                                        "x":  978,
+                                        "y":  336,
+                                        "width":  111,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "among",
+                                        "x":  1097,
+                                        "y":  344,
+                                        "width":  69,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1174,
+                                        "y":  336,
+                                        "width":  32,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "six",
+                                        "x":  1213,
+                                        "y":  339,
+                                        "width":  27,
+                                        "height":  16
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "General Education Content Areas and an additional",
+                      "x":  727,
+                      "y":  367,
+                      "words":  [
+                                    {
+                                        "text":  "General",
+                                        "x":  727,
+                                        "y":  367,
+                                        "width":  79,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Education",
+                                        "x":  815,
+                                        "y":  367,
+                                        "width":  104,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Content",
+                                        "x":  928,
+                                        "y":  368,
+                                        "width":  83,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Areas",
+                                        "x":  1018,
+                                        "y":  368,
+                                        "width":  56,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  1083,
+                                        "y":  367,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "an",
+                                        "x":  1128,
+                                        "y":  374,
+                                        "width":  24,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "additional",
+                                        "x":  1160,
+                                        "y":  367,
+                                        "width":  103,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3 credit hours may be selected from the six General",
+                      "x":  727,
+                      "y":  397,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  727,
+                                        "y":  399,
+                                        "width":  10,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  746,
+                                        "y":  397,
+                                        "width":  58,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hours",
+                                        "x":  812,
+                                        "y":  397,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "may",
+                                        "x":  876,
+                                        "y":  405,
+                                        "width":  43,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  926,
+                                        "y":  397,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "selected",
+                                        "x":  957,
+                                        "y":  397,
+                                        "width":  79,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "from",
+                                        "x":  1044,
+                                        "y":  397,
+                                        "width":  48,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1100,
+                                        "y":  397,
+                                        "width":  32,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "six",
+                                        "x":  1140,
+                                        "y":  400,
+                                        "width":  27,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "General",
+                                        "x":  1175,
+                                        "y":  397,
+                                        "width":  80,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Education Content Areas or the Multi-Discipline",
+                      "x":  726,
+                      "y":  428,
+                      "words":  [
+                                    {
+                                        "text":  "Education",
+                                        "x":  726,
+                                        "y":  428,
+                                        "width":  105,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Content",
+                                        "x":  839,
+                                        "y":  428,
+                                        "width":  84,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Areas",
+                                        "x":  929,
+                                        "y":  429,
+                                        "width":  57,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  994,
+                                        "y":  435,
+                                        "width":  21,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1023,
+                                        "y":  428,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Multi-Discipline",
+                                        "x":  1062,
+                                        "y":  428,
+                                        "width":  171,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Content Area.",
+                      "x":  727,
+                      "y":  459,
+                      "words":  [
+                                    {
+                                        "text":  "Content",
+                                        "x":  727,
+                                        "y":  459,
+                                        "width":  83,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Area.",
+                                        "x":  817,
+                                        "y":  459,
+                                        "width":  53,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Individual programs may require that students",
+                      "x":  726,
+                      "y":  519,
+                      "words":  [
+                                    {
+                                        "text":  "Individual",
+                                        "x":  726,
+                                        "y":  519,
+                                        "width":  106,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "programs",
+                                        "x":  840,
+                                        "y":  526,
+                                        "width":  96,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "may",
+                                        "x":  944,
+                                        "y":  526,
+                                        "width":  43,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "require",
+                                        "x":  994,
+                                        "y":  521,
+                                        "width":  71,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  1074,
+                                        "y":  519,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  1122,
+                                        "y":  519,
+                                        "width":  84,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "take specific courses within the General Education",
+                      "x":  726,
+                      "y":  549,
+                      "words":  [
+                                    {
+                                        "text":  "take",
+                                        "x":  726,
+                                        "y":  549,
+                                        "width":  43,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "specific",
+                                        "x":  777,
+                                        "y":  549,
+                                        "width":  76,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  861,
+                                        "y":  557,
+                                        "width":  73,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "within",
+                                        "x":  942,
+                                        "y":  549,
+                                        "width":  67,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1017,
+                                        "y":  549,
+                                        "width":  32,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "General",
+                                        "x":  1057,
+                                        "y":  549,
+                                        "width":  80,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Education",
+                                        "x":  1145,
+                                        "y":  549,
+                                        "width":  105,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "requirements for the purpose of transfer or for meet-",
+                      "x":  727,
+                      "y":  579,
+                      "words":  [
+                                    {
+                                        "text":  "requirements",
+                                        "x":  727,
+                                        "y":  582,
+                                        "width":  132,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  867,
+                                        "y":  579,
+                                        "width":  29,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  904,
+                                        "y":  580,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "purpose",
+                                        "x":  943,
+                                        "y":  587,
+                                        "width":  81,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  1032,
+                                        "y":  579,
+                                        "width":  22,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "transfer",
+                                        "x":  1059,
+                                        "y":  579,
+                                        "width":  78,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  1145,
+                                        "y":  587,
+                                        "width":  21,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  1173,
+                                        "y":  579,
+                                        "width":  29,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "meet-",
+                                        "x":  1209,
+                                        "y":  586,
+                                        "width":  56,
+                                        "height":  13
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ing industry standards and accreditation guidelines.",
+                      "x":  727,
+                      "y":  610,
+                      "words":  [
+                                    {
+                                        "text":  "ing",
+                                        "x":  727,
+                                        "y":  612,
+                                        "width":  32,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "industry",
+                                        "x":  766,
+                                        "y":  610,
+                                        "width":  87,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "standards",
+                                        "x":  860,
+                                        "y":  610,
+                                        "width":  97,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  965,
+                                        "y":  610,
+                                        "width":  38,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "accreditation",
+                                        "x":  1011,
+                                        "y":  610,
+                                        "width":  131,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "guidelines.",
+                                        "x":  1151,
+                                        "y":  610,
+                                        "width":  109,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GENERAL EDUCATION CORE OFFERINGS",
+                      "x":  382,
+                      "y":  737,
+                      "words":  [
+                                    {
+                                        "text":  "GENERAL",
+                                        "x":  382,
+                                        "y":  737,
+                                        "width":  154,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "EDUCATION",
+                                        "x":  544,
+                                        "y":  737,
+                                        "width":  195,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "CORE",
+                                        "x":  748,
+                                        "y":  737,
+                                        "width":  90,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "OFFERINGS",
+                                        "x":  847,
+                                        "y":  737,
+                                        "width":  182,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FOR THE ASSOCIATE OF ARTS DEGREE*",
+                      "x":  395,
+                      "y":  775,
+                      "words":  [
+                                    {
+                                        "text":  "FOR",
+                                        "x":  395,
+                                        "y":  775,
+                                        "width":  65,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "THE",
+                                        "x":  467,
+                                        "y":  775,
+                                        "width":  68,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "ASSOCIATE",
+                                        "x":  542,
+                                        "y":  775,
+                                        "width":  180,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "OF",
+                                        "x":  731,
+                                        "y":  775,
+                                        "width":  42,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  781,
+                                        "y":  775,
+                                        "width":  81,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "DEGREE*",
+                                        "x":  871,
+                                        "y":  775,
+                                        "width":  144,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Fixed 22+",
+                      "x":  125,
+                      "y":  823,
+                      "words":  [
+                                    {
+                                        "text":  "Fixed",
+                                        "x":  125,
+                                        "y":  823,
+                                        "width":  63,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "22+",
+                                        "x":  196,
+                                        "y":  825,
+                                        "width":  42,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "At least 22 credit hours of courses in each of the",
+                      "x":  123,
+                      "y":  855,
+                      "words":  [
+                                    {
+                                        "text":  "At",
+                                        "x":  123,
+                                        "y":  856,
+                                        "width":  25,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "least",
+                                        "x":  156,
+                                        "y":  856,
+                                        "width":  43,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "22",
+                                        "x":  207,
+                                        "y":  857,
+                                        "width":  24,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  239,
+                                        "y":  855,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hours",
+                                        "x":  303,
+                                        "y":  855,
+                                        "width":  55,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  366,
+                                        "y":  855,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  393,
+                                        "y":  863,
+                                        "width":  71,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  472,
+                                        "y":  858,
+                                        "width":  20,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "each",
+                                        "x":  500,
+                                        "y":  855,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  551,
+                                        "y":  855,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  578,
+                                        "y":  855,
+                                        "width":  31,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "following six content areas:",
+                      "x":  125,
+                      "y":  886,
+                      "words":  [
+                                    {
+                                        "text":  "following",
+                                        "x":  125,
+                                        "y":  886,
+                                        "width":  94,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "six",
+                                        "x":  226,
+                                        "y":  888,
+                                        "width":  27,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "content",
+                                        "x":  260,
+                                        "y":  892,
+                                        "width":  75,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "areas:",
+                                        "x":  342,
+                                        "y":  893,
+                                        "width":  54,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Area",
+                      "x":  134,
+                      "y":  941,
+                      "words":  [
+                                    {
+                                        "text":  "Area",
+                                        "x":  134,
+                                        "y":  941,
+                                        "width":  55,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "l.",
+                      "x":  170,
+                      "y":  979,
+                      "words":  [
+                                    {
+                                        "text":  "l.",
+                                        "x":  170,
+                                        "y":  979,
+                                        "width":  15,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11.",
+                      "x":  160,
+                      "y":  1016,
+                      "words":  [
+                                    {
+                                        "text":  "11.",
+                                        "x":  160,
+                                        "y":  1016,
+                                        "width":  25,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "111.",
+                      "x":  154,
+                      "y":  1053,
+                      "words":  [
+                                    {
+                                        "text":  "111.",
+                                        "x":  154,
+                                        "y":  1053,
+                                        "width":  35,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "V.",
+                      "x":  164,
+                      "y":  1126,
+                      "words":  [
+                                    {
+                                        "text":  "V.",
+                                        "x":  164,
+                                        "y":  1126,
+                                        "width":  21,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "VI.",
+                      "x":  153,
+                      "y":  1163,
+                      "words":  [
+                                    {
+                                        "text":  "VI.",
+                                        "x":  153,
+                                        "y":  1163,
+                                        "width":  34,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Communications (6 credits)",
+                      "x":  212,
+                      "y":  978,
+                      "words":  [
+                                    {
+                                        "text":  "Communications",
+                                        "x":  212,
+                                        "y":  979,
+                                        "width":  174,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "(6",
+                                        "x":  395,
+                                        "y":  978,
+                                        "width":  18,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "credits)",
+                                        "x":  421,
+                                        "y":  978,
+                                        "width":  71,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mathematics (3-4 credits)",
+                      "x":  212,
+                      "y":  1015,
+                      "words":  [
+                                    {
+                                        "text":  "Mathematics",
+                                        "x":  212,
+                                        "y":  1015,
+                                        "width":  130,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "(3-4",
+                                        "x":  351,
+                                        "y":  1015,
+                                        "width":  40,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "credits)",
+                                        "x":  399,
+                                        "y":  1015,
+                                        "width":  71,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Science (4 credits)",
+                      "x":  212,
+                      "y":  1052,
+                      "words":  [
+                                    {
+                                        "text":  "Science",
+                                        "x":  212,
+                                        "y":  1052,
+                                        "width":  73,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "(4",
+                                        "x":  294,
+                                        "y":  1052,
+                                        "width":  18,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "credits)",
+                                        "x":  320,
+                                        "y":  1052,
+                                        "width":  71,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Social and Behavioral Science (3 credits)",
+                      "x":  212,
+                      "y":  1088,
+                      "words":  [
+                                    {
+                                        "text":  "Social",
+                                        "x":  212,
+                                        "y":  1088,
+                                        "width":  60,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  279,
+                                        "y":  1088,
+                                        "width":  37,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Behavioral",
+                                        "x":  324,
+                                        "y":  1088,
+                                        "width":  105,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  437,
+                                        "y":  1089,
+                                        "width":  73,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "(3",
+                                        "x":  519,
+                                        "y":  1089,
+                                        "width":  18,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "credits)",
+                                        "x":  545,
+                                        "y":  1088,
+                                        "width":  71,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Humanities (3 credits)",
+                      "x":  213,
+                      "y":  1125,
+                      "words":  [
+                                    {
+                                        "text":  "Humanities",
+                                        "x":  213,
+                                        "y":  1126,
+                                        "width":  117,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "(3",
+                                        "x":  339,
+                                        "y":  1126,
+                                        "width":  18,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "credits)",
+                                        "x":  365,
+                                        "y":  1125,
+                                        "width":  71,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Creative and Fine Arts (3 credits)",
+                      "x":  212,
+                      "y":  1162,
+                      "words":  [
+                                    {
+                                        "text":  "Creative",
+                                        "x":  212,
+                                        "y":  1163,
+                                        "width":  83,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  302,
+                                        "y":  1162,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Fine",
+                                        "x":  347,
+                                        "y":  1163,
+                                        "width":  43,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  396,
+                                        "y":  1163,
+                                        "width":  43,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "(3",
+                                        "x":  448,
+                                        "y":  1162,
+                                        "width":  18,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "credits)",
+                                        "x":  474,
+                                        "y":  1162,
+                                        "width":  71,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Flexible 9+",
+                      "x":  727,
+                      "y":  823,
+                      "words":  [
+                                    {
+                                        "text":  "Flexible",
+                                        "x":  727,
+                                        "y":  823,
+                                        "width":  91,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "9+",
+                                        "x":  825,
+                                        "y":  825,
+                                        "width":  27,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Nine credits from the content areas listed above or",
+                      "x":  727,
+                      "y":  855,
+                      "words":  [
+                                    {
+                                        "text":  "Nine",
+                                        "x":  727,
+                                        "y":  856,
+                                        "width":  49,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credits",
+                                        "x":  784,
+                                        "y":  856,
+                                        "width":  65,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "from",
+                                        "x":  856,
+                                        "y":  855,
+                                        "width":  48,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  912,
+                                        "y":  855,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "content",
+                                        "x":  951,
+                                        "y":  862,
+                                        "width":  74,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "areas",
+                                        "x":  1032,
+                                        "y":  863,
+                                        "width":  49,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "listed",
+                                        "x":  1089,
+                                        "y":  855,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "above",
+                                        "x":  1149,
+                                        "y":  855,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  1213,
+                                        "y":  863,
+                                        "width":  20,
+                                        "height":  11
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "other content areas that the institution deems appropri-",
+                      "x":  727,
+                      "y":  886,
+                      "words":  [
+                                    {
+                                        "text":  "other",
+                                        "x":  727,
+                                        "y":  886,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "content",
+                                        "x":  786,
+                                        "y":  892,
+                                        "width":  75,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "areas",
+                                        "x":  868,
+                                        "y":  893,
+                                        "width":  49,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  925,
+                                        "y":  886,
+                                        "width":  39,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  972,
+                                        "y":  886,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "institution",
+                                        "x":  1010,
+                                        "y":  888,
+                                        "width":  105,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "deems",
+                                        "x":  1123,
+                                        "y":  886,
+                                        "width":  61,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "appropri-",
+                                        "x":  1192,
+                                        "y":  888,
+                                        "width":  92,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ate. Courses that are part of the \"other\" area must be",
+                      "x":  727,
+                      "y":  916,
+                      "words":  [
+                                    {
+                                        "text":  "ate.",
+                                        "x":  727,
+                                        "y":  923,
+                                        "width":  33,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "Courses",
+                                        "x":  769,
+                                        "y":  917,
+                                        "width":  79,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  856,
+                                        "y":  916,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  903,
+                                        "y":  924,
+                                        "width":  29,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "part",
+                                        "x":  940,
+                                        "y":  923,
+                                        "width":  40,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  988,
+                                        "y":  916,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1014,
+                                        "y":  916,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "\"other\"",
+                                        "x":  1053,
+                                        "y":  916,
+                                        "width":  71,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "area",
+                                        "x":  1132,
+                                        "y":  924,
+                                        "width":  40,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "must",
+                                        "x":  1180,
+                                        "y":  923,
+                                        "width":  48,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  1236,
+                                        "y":  916,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "certified as meeting the essential skills chosen by the",
+                      "x":  727,
+                      "y":  946,
+                      "words":  [
+                                    {
+                                        "text":  "certified",
+                                        "x":  727,
+                                        "y":  946,
+                                        "width":  83,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  818,
+                                        "y":  954,
+                                        "width":  18,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "meeting",
+                                        "x":  844,
+                                        "y":  949,
+                                        "width":  81,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  932,
+                                        "y":  947,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "essential",
+                                        "x":  971,
+                                        "y":  947,
+                                        "width":  83,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "skills",
+                                        "x":  1061,
+                                        "y":  947,
+                                        "width":  50,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "chosen",
+                                        "x":  1119,
+                                        "y":  947,
+                                        "width":  68,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "by",
+                                        "x":  1195,
+                                        "y":  947,
+                                        "width":  23,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1225,
+                                        "y":  947,
+                                        "width":  31,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "higher education institution offering the course.",
+                      "x":  727,
+                      "y":  977,
+                      "words":  [
+                                    {
+                                        "text":  "higher",
+                                        "x":  727,
+                                        "y":  977,
+                                        "width":  64,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "education",
+                                        "x":  798,
+                                        "y":  977,
+                                        "width":  97,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "institution",
+                                        "x":  903,
+                                        "y":  979,
+                                        "width":  105,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "offering",
+                                        "x":  1016,
+                                        "y":  977,
+                                        "width":  79,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1102,
+                                        "y":  977,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "course.",
+                                        "x":  1140,
+                                        "y":  984,
+                                        "width":  69,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*The 31 credit general education model does not apply",
+                      "x":  727,
+                      "y":  1038,
+                      "words":  [
+                                    {
+                                        "text":  "*The",
+                                        "x":  727,
+                                        "y":  1038,
+                                        "width":  51,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "31",
+                                        "x":  785,
+                                        "y":  1040,
+                                        "width":  21,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  816,
+                                        "y":  1038,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "general",
+                                        "x":  880,
+                                        "y":  1038,
+                                        "width":  71,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "education",
+                                        "x":  959,
+                                        "y":  1038,
+                                        "width":  97,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "model",
+                                        "x":  1064,
+                                        "y":  1038,
+                                        "width":  61,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "does",
+                                        "x":  1133,
+                                        "y":  1038,
+                                        "width":  43,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "not",
+                                        "x":  1184,
+                                        "y":  1044,
+                                        "width":  33,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "apply",
+                                        "x":  1224,
+                                        "y":  1038,
+                                        "width":  54,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to Applied Associates Degrees, please see the Applied",
+                      "x":  727,
+                      "y":  1068,
+                      "words":  [
+                                    {
+                                        "text":  "to",
+                                        "x":  727,
+                                        "y":  1075,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "Applied",
+                                        "x":  753,
+                                        "y":  1068,
+                                        "width":  79,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Associates",
+                                        "x":  838,
+                                        "y":  1069,
+                                        "width":  102,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Degrees,",
+                                        "x":  948,
+                                        "y":  1069,
+                                        "width":  85,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "please",
+                                        "x":  1041,
+                                        "y":  1068,
+                                        "width":  59,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "see",
+                                        "x":  1107,
+                                        "y":  1076,
+                                        "width":  29,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1144,
+                                        "y":  1068,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Applied",
+                                        "x":  1181,
+                                        "y":  1068,
+                                        "width":  79,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Associates Degree General Education model below.",
+                      "x":  726,
+                      "y":  1099,
+                      "words":  [
+                                    {
+                                        "text":  "Associates",
+                                        "x":  726,
+                                        "y":  1099,
+                                        "width":  101,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Degree",
+                                        "x":  835,
+                                        "y":  1100,
+                                        "width":  71,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "General",
+                                        "x":  914,
+                                        "y":  1099,
+                                        "width":  78,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Education",
+                                        "x":  1000,
+                                        "y":  1099,
+                                        "width":  102,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "model",
+                                        "x":  1110,
+                                        "y":  1099,
+                                        "width":  61,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "below.",
+                                        "x":  1179,
+                                        "y":  1099,
+                                        "width":  62,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Refer to degree plans for specific General Education",
+                      "x":  727,
+                      "y":  1129,
+                      "words":  [
+                                    {
+                                        "text":  "*Refer",
+                                        "x":  727,
+                                        "y":  1129,
+                                        "width":  63,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  797,
+                                        "y":  1135,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  824,
+                                        "y":  1129,
+                                        "width":  64,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "plans",
+                                        "x":  896,
+                                        "y":  1129,
+                                        "width":  51,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  955,
+                                        "y":  1129,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "specific",
+                                        "x":  990,
+                                        "y":  1129,
+                                        "width":  74,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "General",
+                                        "x":  1072,
+                                        "y":  1129,
+                                        "width":  78,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Education",
+                                        "x":  1158,
+                                        "y":  1129,
+                                        "width":  102,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "requirements",
+                      "x":  727,
+                      "y":  1162,
+                      "words":  [
+                                    {
+                                        "text":  "requirements",
+                                        "x":  727,
+                                        "y":  1162,
+                                        "width":  130,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Computer competency assessment required",
+                      "x":  727,
+                      "y":  1190,
+                      "words":  [
+                                    {
+                                        "text":  "*Computer",
+                                        "x":  727,
+                                        "y":  1191,
+                                        "width":  113,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "competency",
+                                        "x":  847,
+                                        "y":  1196,
+                                        "width":  120,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "assessment",
+                                        "x":  974,
+                                        "y":  1196,
+                                        "width":  107,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "required",
+                                        "x":  1088,
+                                        "y":  1190,
+                                        "width":  83,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GENERAL EDUCATION CORE OFFERINGS",
+                      "x":  382,
+                      "y":  1271,
+                      "words":  [
+                                    {
+                                        "text":  "GENERAL",
+                                        "x":  382,
+                                        "y":  1271,
+                                        "width":  154,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "EDUCATION",
+                                        "x":  544,
+                                        "y":  1271,
+                                        "width":  196,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "CORE",
+                                        "x":  749,
+                                        "y":  1271,
+                                        "width":  90,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "OFFERINGS",
+                                        "x":  848,
+                                        "y":  1271,
+                                        "width":  181,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FOR THE ASSOCIATE OF APPLIED SCIENCE DEGREE*",
+                      "x":  293,
+                      "y":  1309,
+                      "words":  [
+                                    {
+                                        "text":  "FOR",
+                                        "x":  293,
+                                        "y":  1310,
+                                        "width":  65,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "THE",
+                                        "x":  366,
+                                        "y":  1309,
+                                        "width":  68,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "ASSOCIATE",
+                                        "x":  441,
+                                        "y":  1310,
+                                        "width":  180,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "OF",
+                                        "x":  630,
+                                        "y":  1310,
+                                        "width":  41,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "APPLIED",
+                                        "x":  679,
+                                        "y":  1310,
+                                        "width":  138,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "SCIENCE",
+                                        "x":  827,
+                                        "y":  1310,
+                                        "width":  139,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "DEGREE*",
+                                        "x":  974,
+                                        "y":  1310,
+                                        "width":  144,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Fixed 12+",
+                      "x":  125,
+                      "y":  1353,
+                      "words":  [
+                                    {
+                                        "text":  "Fixed",
+                                        "x":  125,
+                                        "y":  1353,
+                                        "width":  63,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "12+",
+                                        "x":  198,
+                                        "y":  1355,
+                                        "width":  39,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "At least 12 credit hours of courses from four of the",
+                      "x":  124,
+                      "y":  1385,
+                      "words":  [
+                                    {
+                                        "text":  "At",
+                                        "x":  124,
+                                        "y":  1386,
+                                        "width":  24,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "least",
+                                        "x":  156,
+                                        "y":  1385,
+                                        "width":  43,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "12",
+                                        "x":  209,
+                                        "y":  1387,
+                                        "width":  21,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  239,
+                                        "y":  1385,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hours",
+                                        "x":  302,
+                                        "y":  1385,
+                                        "width":  55,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  365,
+                                        "y":  1385,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  392,
+                                        "y":  1393,
+                                        "width":  72,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "from",
+                                        "x":  472,
+                                        "y":  1385,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "four",
+                                        "x":  527,
+                                        "y":  1385,
+                                        "width":  45,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  579,
+                                        "y":  1385,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  606,
+                                        "y":  1385,
+                                        "width":  31,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "following six content areas (at least one course from",
+                      "x":  125,
+                      "y":  1415,
+                      "words":  [
+                                    {
+                                        "text":  "following",
+                                        "x":  125,
+                                        "y":  1415,
+                                        "width":  95,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "six",
+                                        "x":  226,
+                                        "y":  1417,
+                                        "width":  30,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "content",
+                                        "x":  263,
+                                        "y":  1422,
+                                        "width":  74,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "areas",
+                                        "x":  344,
+                                        "y":  1423,
+                                        "width":  49,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "(at",
+                                        "x":  402,
+                                        "y":  1416,
+                                        "width":  24,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "least",
+                                        "x":  433,
+                                        "y":  1415,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "one",
+                                        "x":  484,
+                                        "y":  1423,
+                                        "width":  35,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "course",
+                                        "x":  527,
+                                        "y":  1423,
+                                        "width":  63,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "from",
+                                        "x":  598,
+                                        "y":  1415,
+                                        "width":  47,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "four different areas):",
+                      "x":  125,
+                      "y":  1446,
+                      "words":  [
+                                    {
+                                        "text":  "four",
+                                        "x":  125,
+                                        "y":  1446,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "different",
+                                        "x":  174,
+                                        "y":  1446,
+                                        "width":  85,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "areas):",
+                                        "x":  267,
+                                        "y":  1446,
+                                        "width":  61,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Area",
+                      "x":  134,
+                      "y":  1485,
+                      "words":  [
+                                    {
+                                        "text":  "Area",
+                                        "x":  134,
+                                        "y":  1485,
+                                        "width":  55,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "I.",
+                      "x":  170,
+                      "y":  1522,
+                      "words":  [
+                                    {
+                                        "text":  "I.",
+                                        "x":  170,
+                                        "y":  1522,
+                                        "width":  15,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11.",
+                      "x":  160,
+                      "y":  1559,
+                      "words":  [
+                                    {
+                                        "text":  "11.",
+                                        "x":  160,
+                                        "y":  1559,
+                                        "width":  25,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "111.",
+                      "x":  154,
+                      "y":  1596,
+                      "words":  [
+                                    {
+                                        "text":  "111.",
+                                        "x":  154,
+                                        "y":  1596,
+                                        "width":  35,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "V.",
+                      "x":  164,
+                      "y":  1669,
+                      "words":  [
+                                    {
+                                        "text":  "V.",
+                                        "x":  164,
+                                        "y":  1669,
+                                        "width":  21,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "VI.",
+                      "x":  153,
+                      "y":  1706,
+                      "words":  [
+                                    {
+                                        "text":  "VI.",
+                                        "x":  153,
+                                        "y":  1706,
+                                        "width":  34,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Communications",
+                      "x":  212,
+                      "y":  1522,
+                      "words":  [
+                                    {
+                                        "text":  "Communications",
+                                        "x":  212,
+                                        "y":  1522,
+                                        "width":  174,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mathematics",
+                      "x":  212,
+                      "y":  1558,
+                      "words":  [
+                                    {
+                                        "text":  "Mathematics",
+                                        "x":  212,
+                                        "y":  1558,
+                                        "width":  130,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Science",
+                      "x":  212,
+                      "y":  1595,
+                      "words":  [
+                                    {
+                                        "text":  "Science",
+                                        "x":  212,
+                                        "y":  1595,
+                                        "width":  73,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Social and Behavioral Science",
+                      "x":  212,
+                      "y":  1631,
+                      "words":  [
+                                    {
+                                        "text":  "Social",
+                                        "x":  212,
+                                        "y":  1631,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  279,
+                                        "y":  1631,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Behavioral",
+                                        "x":  324,
+                                        "y":  1631,
+                                        "width":  105,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  437,
+                                        "y":  1632,
+                                        "width":  73,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Humanities",
+                      "x":  212,
+                      "y":  1669,
+                      "words":  [
+                                    {
+                                        "text":  "Humanities",
+                                        "x":  212,
+                                        "y":  1669,
+                                        "width":  118,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Creative and Fine Arts",
+                      "x":  212,
+                      "y":  1705,
+                      "words":  [
+                                    {
+                                        "text":  "Creative",
+                                        "x":  212,
+                                        "y":  1706,
+                                        "width":  83,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  302,
+                                        "y":  1705,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Fine",
+                                        "x":  347,
+                                        "y":  1706,
+                                        "width":  42,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  396,
+                                        "y":  1706,
+                                        "width":  43,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Flexible 3+",
+                      "x":  726,
+                      "y":  1353,
+                      "words":  [
+                                    {
+                                        "text":  "Flexible",
+                                        "x":  726,
+                                        "y":  1353,
+                                        "width":  91,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "3+",
+                                        "x":  825,
+                                        "y":  1355,
+                                        "width":  27,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Three credits from the content areas listed above or",
+                      "x":  726,
+                      "y":  1385,
+                      "words":  [
+                                    {
+                                        "text":  "Three",
+                                        "x":  726,
+                                        "y":  1385,
+                                        "width":  60,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credits",
+                                        "x":  793,
+                                        "y":  1385,
+                                        "width":  65,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "from",
+                                        "x":  866,
+                                        "y":  1385,
+                                        "width":  48,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  922,
+                                        "y":  1385,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "content",
+                                        "x":  960,
+                                        "y":  1391,
+                                        "width":  75,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "areas",
+                                        "x":  1042,
+                                        "y":  1393,
+                                        "width":  49,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "listed",
+                                        "x":  1098,
+                                        "y":  1385,
+                                        "width":  54,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "above",
+                                        "x":  1159,
+                                        "y":  1385,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  1223,
+                                        "y":  1392,
+                                        "width":  20,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\"other\" content areas that the institution deems appro-",
+                      "x":  727,
+                      "y":  1415,
+                      "words":  [
+                                    {
+                                        "text":  "\"other\"",
+                                        "x":  727,
+                                        "y":  1416,
+                                        "width":  70,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "content",
+                                        "x":  806,
+                                        "y":  1422,
+                                        "width":  74,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "areas",
+                                        "x":  888,
+                                        "y":  1423,
+                                        "width":  48,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  944,
+                                        "y":  1415,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  991,
+                                        "y":  1415,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "institution",
+                                        "x":  1030,
+                                        "y":  1418,
+                                        "width":  104,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "deems",
+                                        "x":  1142,
+                                        "y":  1416,
+                                        "width":  62,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "appro-",
+                                        "x":  1211,
+                                        "y":  1423,
+                                        "width":  65,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "priate. Courses that are part of the \"other\" area must",
+                      "x":  726,
+                      "y":  1446,
+                      "words":  [
+                                    {
+                                        "text":  "priate.",
+                                        "x":  726,
+                                        "y":  1448,
+                                        "width":  62,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "Courses",
+                                        "x":  797,
+                                        "y":  1447,
+                                        "width":  79,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  884,
+                                        "y":  1446,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  931,
+                                        "y":  1453,
+                                        "width":  29,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "part",
+                                        "x":  968,
+                                        "y":  1452,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  1016,
+                                        "y":  1446,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1043,
+                                        "y":  1446,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "\"other\"",
+                                        "x":  1081,
+                                        "y":  1446,
+                                        "width":  70,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "area",
+                                        "x":  1160,
+                                        "y":  1453,
+                                        "width":  40,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "must",
+                                        "x":  1208,
+                                        "y":  1452,
+                                        "width":  48,
+                                        "height":  13
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "be certified as meeting the essential skills chosen by the",
+                      "x":  726,
+                      "y":  1476,
+                      "words":  [
+                                    {
+                                        "text":  "be",
+                                        "x":  726,
+                                        "y":  1476,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "certified",
+                                        "x":  756,
+                                        "y":  1476,
+                                        "width":  84,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  847,
+                                        "y":  1484,
+                                        "width":  18,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "meeting",
+                                        "x":  874,
+                                        "y":  1479,
+                                        "width":  81,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  962,
+                                        "y":  1476,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "essential",
+                                        "x":  1000,
+                                        "y":  1476,
+                                        "width":  83,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "skills",
+                                        "x":  1091,
+                                        "y":  1476,
+                                        "width":  50,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "chosen",
+                                        "x":  1149,
+                                        "y":  1476,
+                                        "width":  67,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "by",
+                                        "x":  1224,
+                                        "y":  1476,
+                                        "width":  24,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1255,
+                                        "y":  1476,
+                                        "width":  30,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "higher education institution offering the course.",
+                      "x":  726,
+                      "y":  1507,
+                      "words":  [
+                                    {
+                                        "text":  "higher",
+                                        "x":  726,
+                                        "y":  1507,
+                                        "width":  64,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "education",
+                                        "x":  797,
+                                        "y":  1507,
+                                        "width":  98,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "institution",
+                                        "x":  903,
+                                        "y":  1509,
+                                        "width":  104,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "offering",
+                                        "x":  1015,
+                                        "y":  1507,
+                                        "width":  79,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1101,
+                                        "y":  1507,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "course.",
+                                        "x":  1140,
+                                        "y":  1514,
+                                        "width":  68,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "* Refer to degree plans for specific General Education",
+                      "x":  726,
+                      "y":  1567,
+                      "words":  [
+                                    {
+                                        "text":  "*",
+                                        "x":  726,
+                                        "y":  1568,
+                                        "width":  9,
+                                        "height":  9
+                                    },
+                                    {
+                                        "text":  "Refer",
+                                        "x":  743,
+                                        "y":  1567,
+                                        "width":  53,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  804,
+                                        "y":  1574,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  831,
+                                        "y":  1567,
+                                        "width":  63,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "plans",
+                                        "x":  902,
+                                        "y":  1568,
+                                        "width":  51,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  961,
+                                        "y":  1567,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "specific",
+                                        "x":  996,
+                                        "y":  1567,
+                                        "width":  75,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "General",
+                                        "x":  1078,
+                                        "y":  1567,
+                                        "width":  79,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Education",
+                                        "x":  1164,
+                                        "y":  1568,
+                                        "width":  103,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "requirements.",
+                      "x":  727,
+                      "y":  1600,
+                      "words":  [
+                                    {
+                                        "text":  "requirements.",
+                                        "x":  727,
+                                        "y":  1600,
+                                        "width":  135,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "* FYEX 1110 First-Year Seminar (Required for students",
+                      "x":  726,
+                      "y":  1628,
+                      "words":  [
+                                    {
+                                        "text":  "*",
+                                        "x":  726,
+                                        "y":  1629,
+                                        "width":  9,
+                                        "height":  9
+                                    },
+                                    {
+                                        "text":  "FYEX",
+                                        "x":  743,
+                                        "y":  1629,
+                                        "width":  63,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  815,
+                                        "y":  1630,
+                                        "width":  43,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "First-Year",
+                                        "x":  866,
+                                        "y":  1629,
+                                        "width":  95,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Seminar",
+                                        "x":  968,
+                                        "y":  1629,
+                                        "width":  83,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "(Required",
+                                        "x":  1060,
+                                        "y":  1628,
+                                        "width":  98,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  1166,
+                                        "y":  1628,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  1201,
+                                        "y":  1628,
+                                        "width":  82,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "testing into pre-collegiate courses).",
+                      "x":  727,
+                      "y":  1659,
+                      "words":  [
+                                    {
+                                        "text":  "testing",
+                                        "x":  727,
+                                        "y":  1661,
+                                        "width":  67,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "into",
+                                        "x":  801,
+                                        "y":  1661,
+                                        "width":  39,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "pre-collegiate",
+                                        "x":  848,
+                                        "y":  1659,
+                                        "width":  133,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "courses).",
+                                        "x":  989,
+                                        "y":  1659,
+                                        "width":  84,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "53",
+                      "x":  692,
+                      "y":  1768,
+                      "words":  [
+                                    {
+                                        "text":  "53",
+                                        "x":  692,
+                                        "y":  1768,
+                                        "width":  26,
+                                        "height":  20
+                                    }
+                                ]
+                  }
+              ]
+}

@@ -1,0 +1,1216 @@
+﻿{
+    "pdf_page":  33,
+    "lines":  [
+                  {
+                      "text":  "FARRIER SCIENCE",
+                      "x":  128,
+                      "y":  85,
+                      "words":  [
+                                    {
+                                        "text":  "FARRIER",
+                                        "x":  128,
+                                        "y":  85,
+                                        "width":  239,
+                                        "height":  38
+                                    },
+                                    {
+                                        "text":  "SCIENCE",
+                                        "x":  380,
+                                        "y":  85,
+                                        "width":  236,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CERTIFICATE",
+                      "x":  129,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  129,
+                                        "y":  145,
+                                        "width":  364,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Farrier Science Certificate is designed to give",
+                      "x":  126,
+                      "y":  225,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  126,
+                                        "y":  225,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Farrier",
+                                        "x":  174,
+                                        "y":  226,
+                                        "width":  67,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  249,
+                                        "y":  226,
+                                        "width":  73,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  330,
+                                        "y":  225,
+                                        "width":  107,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  444,
+                                        "y":  227,
+                                        "width":  14,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "designed",
+                                        "x":  466,
+                                        "y":  225,
+                                        "width":  87,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  560,
+                                        "y":  232,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "give",
+                                        "x":  587,
+                                        "y":  227,
+                                        "width":  39,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "students hands-on experience in horseshoeing and",
+                      "x":  127,
+                      "y":  256,
+                      "words":  [
+                                    {
+                                        "text":  "students",
+                                        "x":  127,
+                                        "y":  256,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hands-on",
+                                        "x":  217,
+                                        "y":  256,
+                                        "width":  93,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "experience",
+                                        "x":  318,
+                                        "y":  258,
+                                        "width":  104,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  430,
+                                        "y":  258,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "horseshoeing",
+                                        "x":  457,
+                                        "y":  256,
+                                        "width":  130,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  594,
+                                        "y":  256,
+                                        "width":  36,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "blacksmithing as well as familiarize students with the",
+                      "x":  127,
+                      "y":  286,
+                      "words":  [
+                                    {
+                                        "text":  "blacksmithing",
+                                        "x":  127,
+                                        "y":  286,
+                                        "width":  143,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  277,
+                                        "y":  294,
+                                        "width":  18,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "well",
+                                        "x":  302,
+                                        "y":  286,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  350,
+                                        "y":  294,
+                                        "width":  19,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "familiarize",
+                                        "x":  377,
+                                        "y":  286,
+                                        "width":  106,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  491,
+                                        "y":  286,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "with",
+                                        "x":  580,
+                                        "y":  286,
+                                        "width":  45,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  634,
+                                        "y":  286,
+                                        "width":  30,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "principles and theories of trimming and balancing",
+                      "x":  127,
+                      "y":  316,
+                      "words":  [
+                                    {
+                                        "text":  "principles",
+                                        "x":  127,
+                                        "y":  316,
+                                        "width":  95,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  230,
+                                        "y":  316,
+                                        "width":  37,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "theories",
+                                        "x":  275,
+                                        "y":  316,
+                                        "width":  77,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  360,
+                                        "y":  316,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "trimming",
+                                        "x":  387,
+                                        "y":  319,
+                                        "width":  97,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  491,
+                                        "y":  317,
+                                        "width":  37,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "balancing",
+                                        "x":  535,
+                                        "y":  316,
+                                        "width":  98,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "horses according to their conformation and use. The",
+                      "x":  127,
+                      "y":  347,
+                      "words":  [
+                                    {
+                                        "text":  "horses",
+                                        "x":  127,
+                                        "y":  347,
+                                        "width":  60,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "according",
+                                        "x":  195,
+                                        "y":  347,
+                                        "width":  98,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  301,
+                                        "y":  353,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "their",
+                                        "x":  328,
+                                        "y":  347,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "conformation",
+                                        "x":  382,
+                                        "y":  347,
+                                        "width":  135,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  525,
+                                        "y":  347,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "use.",
+                                        "x":  570,
+                                        "y":  354,
+                                        "width":  36,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "The",
+                                        "x":  614,
+                                        "y":  347,
+                                        "width":  41,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "certificate program is comparable to those offered in",
+                      "x":  127,
+                      "y":  377,
+                      "words":  [
+                                    {
+                                        "text":  "certificate",
+                                        "x":  127,
+                                        "y":  377,
+                                        "width":  99,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "program",
+                                        "x":  234,
+                                        "y":  385,
+                                        "width":  85,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  327,
+                                        "y":  379,
+                                        "width":  14,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "comparable",
+                                        "x":  348,
+                                        "y":  377,
+                                        "width":  115,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  471,
+                                        "y":  384,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "those",
+                                        "x":  498,
+                                        "y":  377,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "offered",
+                                        "x":  558,
+                                        "y":  377,
+                                        "width":  69,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  635,
+                                        "y":  379,
+                                        "width":  19,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "private horseshoeing schools. Students spend class time",
+                      "x":  127,
+                      "y":  408,
+                      "words":  [
+                                    {
+                                        "text":  "private",
+                                        "x":  127,
+                                        "y":  410,
+                                        "width":  67,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "horseshoeing",
+                                        "x":  202,
+                                        "y":  408,
+                                        "width":  129,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "schools.",
+                                        "x":  338,
+                                        "y":  408,
+                                        "width":  77,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Students",
+                                        "x":  424,
+                                        "y":  408,
+                                        "width":  86,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "spend",
+                                        "x":  518,
+                                        "y":  408,
+                                        "width":  57,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "class",
+                                        "x":  583,
+                                        "y":  408,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "time",
+                                        "x":  635,
+                                        "y":  410,
+                                        "width":  45,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "trimming and shoeing horses, forging tools and",
+                      "x":  127,
+                      "y":  438,
+                      "words":  [
+                                    {
+                                        "text":  "trimming",
+                                        "x":  127,
+                                        "y":  440,
+                                        "width":  97,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  231,
+                                        "y":  438,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "shoeing",
+                                        "x":  275,
+                                        "y":  438,
+                                        "width":  77,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "horses,",
+                                        "x":  358,
+                                        "y":  438,
+                                        "width":  67,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "forging",
+                                        "x":  434,
+                                        "y":  438,
+                                        "width":  72,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "tools",
+                                        "x":  513,
+                                        "y":  438,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  568,
+                                        "y":  438,
+                                        "width":  36,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "specialty (corrective) horseshoes and studying horse-",
+                      "x":  127,
+                      "y":  468,
+                      "words":  [
+                                    {
+                                        "text":  "specialty",
+                                        "x":  127,
+                                        "y":  468,
+                                        "width":  87,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "(corrective)",
+                                        "x":  222,
+                                        "y":  469,
+                                        "width":  108,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "horseshoes",
+                                        "x":  339,
+                                        "y":  468,
+                                        "width":  106,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  453,
+                                        "y":  469,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "studying",
+                                        "x":  497,
+                                        "y":  469,
+                                        "width":  87,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "horse-",
+                                        "x":  591,
+                                        "y":  469,
+                                        "width":  60,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "shoeing. Students also receive instruction in anatomy",
+                      "x":  127,
+                      "y":  499,
+                      "words":  [
+                                    {
+                                        "text":  "shoeing.",
+                                        "x":  127,
+                                        "y":  499,
+                                        "width":  81,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Students",
+                                        "x":  217,
+                                        "y":  499,
+                                        "width":  86,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "also",
+                                        "x":  310,
+                                        "y":  499,
+                                        "width":  38,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "receive",
+                                        "x":  356,
+                                        "y":  501,
+                                        "width":  67,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "instruction",
+                                        "x":  431,
+                                        "y":  501,
+                                        "width":  110,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  549,
+                                        "y":  501,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "anatomy",
+                                        "x":  576,
+                                        "y":  505,
+                                        "width":  86,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and physiology, business, and welding. Students who",
+                      "x":  127,
+                      "y":  529,
+                      "words":  [
+                                    {
+                                        "text":  "and",
+                                        "x":  127,
+                                        "y":  529,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "physiology,",
+                                        "x":  171,
+                                        "y":  529,
+                                        "width":  110,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "business,",
+                                        "x":  290,
+                                        "y":  529,
+                                        "width":  87,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  386,
+                                        "y":  529,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "welding.",
+                                        "x":  429,
+                                        "y":  529,
+                                        "width":  85,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Students",
+                                        "x":  523,
+                                        "y":  529,
+                                        "width":  85,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "who",
+                                        "x":  615,
+                                        "y":  529,
+                                        "width":  42,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "wish to gain advanced knowledge in Farrier Science",
+                      "x":  126,
+                      "y":  560,
+                      "words":  [
+                                    {
+                                        "text":  "wish",
+                                        "x":  126,
+                                        "y":  560,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  180,
+                                        "y":  566,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "gain",
+                                        "x":  207,
+                                        "y":  562,
+                                        "width":  42,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "advanced",
+                                        "x":  257,
+                                        "y":  560,
+                                        "width":  93,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "knowledge",
+                                        "x":  357,
+                                        "y":  560,
+                                        "width":  107,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  472,
+                                        "y":  562,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "Farrier",
+                                        "x":  499,
+                                        "y":  561,
+                                        "width":  67,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  574,
+                                        "y":  561,
+                                        "width":  73,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "should consider the College\u0027s degree program.",
+                      "x":  127,
+                      "y":  590,
+                      "words":  [
+                                    {
+                                        "text":  "should",
+                                        "x":  127,
+                                        "y":  590,
+                                        "width":  66,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "consider",
+                                        "x":  200,
+                                        "y":  590,
+                                        "width":  83,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  291,
+                                        "y":  590,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "College\u0027s",
+                                        "x":  329,
+                                        "y":  590,
+                                        "width":  88,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  425,
+                                        "y":  590,
+                                        "width":  64,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "program.",
+                                        "x":  496,
+                                        "y":  597,
+                                        "width":  91,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "OCCUPATIONAL CERTIFICATE",
+                      "x":  818,
+                      "y":  94,
+                      "words":  [
+                                    {
+                                        "text":  "OCCUPATIONAL",
+                                        "x":  818,
+                                        "y":  94,
+                                        "width":  200,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  1026,
+                                        "y":  94,
+                                        "width":  163,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ONE SEMESTER",
+                      "x":  727,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "ONE",
+                                        "x":  727,
+                                        "y":  145,
+                                        "width":  47,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "SEMESTER",
+                                        "x":  782,
+                                        "y":  146,
+                                        "width":  122,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  145,
+                                        "width":  98,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ANSC 1510",
+                      "x":  726,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "ANSC",
+                                        "x":  726,
+                                        "y":  179,
+                                        "width":  55,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1510",
+                                        "x":  788,
+                                        "y":  180,
+                                        "width":  40,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ANSC 1110",
+                      "x":  726,
+                      "y":  213,
+                      "words":  [
+                                    {
+                                        "text":  "ANSC",
+                                        "x":  726,
+                                        "y":  213,
+                                        "width":  55,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  788,
+                                        "y":  213,
+                                        "width":  35,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FASC 12101",
+                      "x":  727,
+                      "y":  247,
+                      "words":  [
+                                    {
+                                        "text":  "FASC",
+                                        "x":  727,
+                                        "y":  247,
+                                        "width":  49,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "12101",
+                                        "x":  790,
+                                        "y":  247,
+                                        "width":  51,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FASC 1310L",
+                      "x":  727,
+                      "y":  280,
+                      "words":  [
+                                    {
+                                        "text":  "FASC",
+                                        "x":  727,
+                                        "y":  280,
+                                        "width":  49,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "1310L",
+                                        "x":  784,
+                                        "y":  281,
+                                        "width":  51,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FASC",
+                      "x":  727,
+                      "y":  314,
+                      "words":  [
+                                    {
+                                        "text":  "FASC",
+                                        "x":  727,
+                                        "y":  314,
+                                        "width":  49,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "WELD 1110",
+                      "x":  726,
+                      "y":  378,
+                      "words":  [
+                                    {
+                                        "text":  "WELD",
+                                        "x":  726,
+                                        "y":  378,
+                                        "width":  59,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  792,
+                                        "y":  379,
+                                        "width":  35,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Equine Anatomy and Physiology 3",
+                      "x":  875,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "Equine",
+                                        "x":  875,
+                                        "y":  179,
+                                        "width":  66,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Anatomy",
+                                        "x":  948,
+                                        "y":  179,
+                                        "width":  87,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  1042,
+                                        "y":  179,
+                                        "width":  36,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Physiology",
+                                        "x":  1087,
+                                        "y":  179,
+                                        "width":  105,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  180,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Horeshoeing Theory",
+                      "x":  875,
+                      "y":  212,
+                      "words":  [
+                                    {
+                                        "text":  "Horeshoeing",
+                                        "x":  875,
+                                        "y":  212,
+                                        "width":  124,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Theory",
+                                        "x":  1006,
+                                        "y":  212,
+                                        "width":  68,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Horseshoeing Laboratory",
+                      "x":  875,
+                      "y":  246,
+                      "words":  [
+                                    {
+                                        "text":  "Horseshoeing",
+                                        "x":  875,
+                                        "y":  246,
+                                        "width":  135,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Laboratory",
+                                        "x":  1019,
+                                        "y":  246,
+                                        "width":  106,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Blacksmithing I",
+                      "x":  875,
+                      "y":  280,
+                      "words":  [
+                                    {
+                                        "text":  "Blacksmithing",
+                                        "x":  875,
+                                        "y":  280,
+                                        "width":  137,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  1022,
+                                        "y":  281,
+                                        "width":  2,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1710L Specialty Horseshoeing",
+                      "x":  873,
+                      "y":  314,
+                      "words":  [
+                                    {
+                                        "text":  "1710L",
+                                        "x":  873,
+                                        "y":  314,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Specialty",
+                                        "x":  931,
+                                        "y":  314,
+                                        "width":  90,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Horseshoeing",
+                                        "x":  1029,
+                                        "y":  314,
+                                        "width":  135,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "or FASC 1998 Internship",
+                      "x":  895,
+                      "y":  344,
+                      "words":  [
+                                    {
+                                        "text":  "or",
+                                        "x":  895,
+                                        "y":  349,
+                                        "width":  19,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "FASC",
+                                        "x":  922,
+                                        "y":  345,
+                                        "width":  49,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1998",
+                                        "x":  978,
+                                        "y":  345,
+                                        "width":  44,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Internship",
+                                        "x":  1031,
+                                        "y":  344,
+                                        "width":  98,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Welding",
+                      "x":  875,
+                      "y":  378,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  378,
+                                        "width":  118,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1001,
+                                        "y":  380,
+                                        "width":  18,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Welding",
+                                        "x":  1026,
+                                        "y":  378,
+                                        "width":  80,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Fundamentals",
+                      "x":  881,
+                      "y":  411,
+                      "words":  [
+                                    {
+                                        "text":  "Fundamentals",
+                                        "x":  881,
+                                        "y":  411,
+                                        "width":  139,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  874,
+                      "y":  445,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  874,
+                                        "y":  446,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  990,
+                                        "y":  445,
+                                        "width":  81,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "18",
+                      "x":  1219,
+                      "y":  447,
+                      "words":  [
+                                    {
+                                        "text":  "18",
+                                        "x":  1219,
+                                        "y":  447,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "82",
+                      "x":  692,
+                      "y":  1768,
+                      "words":  [
+                                    {
+                                        "text":  "82",
+                                        "x":  692,
+                                        "y":  1768,
+                                        "width":  26,
+                                        "height":  20
+                                    }
+                                ]
+                  }
+              ]
+}

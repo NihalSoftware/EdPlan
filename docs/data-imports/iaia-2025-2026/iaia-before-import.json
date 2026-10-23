@@ -1,0 +1,16 @@
+{
+  "universities": [
+    {
+      "university_id": "5ff13af3-5716-4a52-9355-b88131da5580",
+      "university_name": "Institute of American Indian Arts",
+      "city": "Santa Fe",
+      "state": "New Mexico",
+      "website": "https://iaia.edu",
+      "college_profile": {
+        "source": "New Mexico college list"
+      }
+    }
+  ],
+  "programs": [],
+  "courses": []
+}

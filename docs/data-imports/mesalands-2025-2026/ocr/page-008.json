@@ -1,0 +1,2301 @@
+﻿{
+    "pdf_page":  8,
+    "lines":  [
+                  {
+                      "text":  "ASSOCIATE OF ARTS DEGREE",
+                      "x":  135,
+                      "y":  95,
+                      "words":  [
+                                    {
+                                        "text":  "ASSOCIATE",
+                                        "x":  135,
+                                        "y":  95,
+                                        "width":  154,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "OF",
+                                        "x":  297,
+                                        "y":  95,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  339,
+                                        "y":  95,
+                                        "width":  70,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "DEGREE",
+                                        "x":  417,
+                                        "y":  95,
+                                        "width":  113,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Liberal Arts (AA) W/ OPTIONS",
+                      "x":  136,
+                      "y":  126,
+                      "words":  [
+                                    {
+                                        "text":  "Liberal",
+                                        "x":  136,
+                                        "y":  126,
+                                        "width":  84,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  226,
+                                        "y":  127,
+                                        "width":  50,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "(AA)",
+                                        "x":  286,
+                                        "y":  126,
+                                        "width":  52,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "W/",
+                                        "x":  346,
+                                        "y":  127,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "OPTIONS",
+                                        "x":  391,
+                                        "y":  127,
+                                        "width":  123,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Business Administration",
+                      "x":  137,
+                      "y":  165,
+                      "words":  [
+                                    {
+                                        "text":  "Business",
+                                        "x":  137,
+                                        "y":  166,
+                                        "width":  95,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Administration",
+                                        "x":  238,
+                                        "y":  165,
+                                        "width":  175,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "General Business",
+                      "x":  137,
+                      "y":  205,
+                      "words":  [
+                                    {
+                                        "text":  "General",
+                                        "x":  137,
+                                        "y":  205,
+                                        "width":  78,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Business",
+                                        "x":  224,
+                                        "y":  205,
+                                        "width":  83,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Education",
+                      "x":  136,
+                      "y":  243,
+                      "words":  [
+                                    {
+                                        "text":  "Education",
+                                        "x":  136,
+                                        "y":  243,
+                                        "width":  119,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Bilingual",
+                      "x":  137,
+                      "y":  283,
+                      "words":  [
+                                    {
+                                        "text":  "Bilingual",
+                                        "x":  137,
+                                        "y":  283,
+                                        "width":  92,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Early Childhood",
+                      "x":  137,
+                      "y":  321,
+                      "words":  [
+                                    {
+                                        "text":  "Early",
+                                        "x":  137,
+                                        "y":  321,
+                                        "width":  57,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Childhood",
+                                        "x":  201,
+                                        "y":  321,
+                                        "width":  119,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Elementary",
+                      "x":  137,
+                      "y":  360,
+                      "words":  [
+                                    {
+                                        "text":  "Elementary",
+                                        "x":  137,
+                                        "y":  360,
+                                        "width":  125,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Secondary",
+                      "x":  137,
+                      "y":  399,
+                      "words":  [
+                                    {
+                                        "text":  "Secondary",
+                                        "x":  137,
+                                        "y":  399,
+                                        "width":  113,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Fine Arts",
+                      "x":  137,
+                      "y":  440,
+                      "words":  [
+                                    {
+                                        "text":  "Fine",
+                                        "x":  137,
+                                        "y":  440,
+                                        "width":  49,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  193,
+                                        "y":  440,
+                                        "width":  50,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Digital Media Arts",
+                      "x":  137,
+                      "y":  478,
+                      "words":  [
+                                    {
+                                        "text":  "Digital",
+                                        "x":  137,
+                                        "y":  478,
+                                        "width":  69,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Media",
+                                        "x":  214,
+                                        "y":  478,
+                                        "width":  64,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  284,
+                                        "y":  479,
+                                        "width":  43,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Digital Media Arts: Comic Illustration and Charac-",
+                      "x":  137,
+                      "y":  516,
+                      "words":  [
+                                    {
+                                        "text":  "Digital",
+                                        "x":  137,
+                                        "y":  516,
+                                        "width":  75,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Media",
+                                        "x":  221,
+                                        "y":  516,
+                                        "width":  69,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Arts:",
+                                        "x":  297,
+                                        "y":  517,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Comic",
+                                        "x":  359,
+                                        "y":  517,
+                                        "width":  73,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Illustration",
+                                        "x":  440,
+                                        "y":  516,
+                                        "width":  121,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  570,
+                                        "y":  516,
+                                        "width":  40,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Charac-",
+                                        "x":  618,
+                                        "y":  516,
+                                        "width":  86,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ter Design",
+                      "x":  137,
+                      "y":  549,
+                      "words":  [
+                                    {
+                                        "text":  "ter",
+                                        "x":  137,
+                                        "y":  555,
+                                        "width":  28,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Design",
+                                        "x":  173,
+                                        "y":  549,
+                                        "width":  76,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Di ital Media Arts: Animation \u0026 Game Art",
+                      "x":  137,
+                      "y":  587,
+                      "words":  [
+                                    {
+                                        "text":  "Di",
+                                        "x":  137,
+                                        "y":  588,
+                                        "width":  27,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "ital",
+                                        "x":  179,
+                                        "y":  587,
+                                        "width":  33,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Media",
+                                        "x":  221,
+                                        "y":  587,
+                                        "width":  69,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Arts:",
+                                        "x":  297,
+                                        "y":  588,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Animation",
+                                        "x":  358,
+                                        "y":  588,
+                                        "width":  118,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  486,
+                                        "y":  589,
+                                        "width":  21,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Game",
+                                        "x":  516,
+                                        "y":  588,
+                                        "width":  64,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Art",
+                                        "x":  587,
+                                        "y":  588,
+                                        "width":  38,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Studio Art",
+                      "x":  137,
+                      "y":  626,
+                      "words":  [
+                                    {
+                                        "text":  "Studio",
+                                        "x":  137,
+                                        "y":  626,
+                                        "width":  70,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Art",
+                                        "x":  215,
+                                        "y":  627,
+                                        "width":  38,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Studio Art Proficiency",
+                      "x":  137,
+                      "y":  665,
+                      "words":  [
+                                    {
+                                        "text":  "Studio",
+                                        "x":  137,
+                                        "y":  665,
+                                        "width":  70,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Art",
+                                        "x":  215,
+                                        "y":  666,
+                                        "width":  38,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Proficiency",
+                                        "x":  261,
+                                        "y":  665,
+                                        "width":  122,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Bronze Metal Casting",
+                      "x":  137,
+                      "y":  704,
+                      "words":  [
+                                    {
+                                        "text":  "Bronze",
+                                        "x":  137,
+                                        "y":  706,
+                                        "width":  75,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Metal",
+                                        "x":  220,
+                                        "y":  704,
+                                        "width":  64,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Casting",
+                                        "x":  293,
+                                        "y":  705,
+                                        "width":  84,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Human Services",
+                      "x":  137,
+                      "y":  745,
+                      "words":  [
+                                    {
+                                        "text":  "Human",
+                                        "x":  137,
+                                        "y":  745,
+                                        "width":  88,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Services",
+                                        "x":  233,
+                                        "y":  745,
+                                        "width":  93,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Social Services Certificate",
+                      "x":  137,
+                      "y":  783,
+                      "words":  [
+                                    {
+                                        "text":  "Social",
+                                        "x":  137,
+                                        "y":  783,
+                                        "width":  59,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Services",
+                                        "x":  204,
+                                        "y":  784,
+                                        "width":  79,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  292,
+                                        "y":  783,
+                                        "width":  107,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Social Work",
+                      "x":  137,
+                      "y":  820,
+                      "words":  [
+                                    {
+                                        "text":  "Social",
+                                        "x":  137,
+                                        "y":  820,
+                                        "width":  64,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Work",
+                                        "x":  209,
+                                        "y":  820,
+                                        "width":  61,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "University Studies",
+                      "x":  137,
+                      "y":  935,
+                      "words":  [
+                                    {
+                                        "text":  "University",
+                                        "x":  137,
+                                        "y":  936,
+                                        "width":  112,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Studies",
+                                        "x":  257,
+                                        "y":  935,
+                                        "width":  77,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Natural Sciences",
+                      "x":  136,
+                      "y":  974,
+                      "words":  [
+                                    {
+                                        "text":  "Natural",
+                                        "x":  136,
+                                        "y":  974,
+                                        "width":  91,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Sciences",
+                                        "x":  234,
+                                        "y":  975,
+                                        "width":  96,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Geology",
+                      "x":  137,
+                      "y":  1013,
+                      "words":  [
+                                    {
+                                        "text":  "Geology",
+                                        "x":  137,
+                                        "y":  1013,
+                                        "width":  84,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Paleontology",
+                      "x":  137,
+                      "y":  1050,
+                      "words":  [
+                                    {
+                                        "text":  "Paleontology",
+                                        "x":  137,
+                                        "y":  1050,
+                                        "width":  140,
+                                        "height":  27
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ASSOCIATE OF APPLIED SCIENCE",
+                      "x":  135,
+                      "y":  1167,
+                      "words":  [
+                                    {
+                                        "text":  "ASSOCIATE",
+                                        "x":  135,
+                                        "y":  1167,
+                                        "width":  154,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "OF",
+                                        "x":  296,
+                                        "y":  1167,
+                                        "width":  36,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "APPLIED",
+                                        "x":  339,
+                                        "y":  1167,
+                                        "width":  118,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "SCIENCE",
+                                        "x":  465,
+                                        "y":  1167,
+                                        "width":  119,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "DEGREE(s) AAS",
+                      "x":  137,
+                      "y":  1200,
+                      "words":  [
+                                    {
+                                        "text":  "DEGREE(s)",
+                                        "x":  137,
+                                        "y":  1200,
+                                        "width":  137,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "AAS",
+                                        "x":  282,
+                                        "y":  1200,
+                                        "width":  52,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Agri-Business",
+                      "x":  135,
+                      "y":  1240,
+                      "words":  [
+                                    {
+                                        "text":  "Agri-Business",
+                                        "x":  135,
+                                        "y":  1240,
+                                        "width":  138,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Animal Science",
+                      "x":  135,
+                      "y":  1277,
+                      "words":  [
+                                    {
+                                        "text":  "Animal",
+                                        "x":  135,
+                                        "y":  1277,
+                                        "width":  83,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  227,
+                                        "y":  1278,
+                                        "width":  79,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Cowboy Arts/ Western Silversmithing \u0026 Fabrication",
+                      "x":  137,
+                      "y":  1316,
+                      "words":  [
+                                    {
+                                        "text":  "Cowboy",
+                                        "x":  137,
+                                        "y":  1316,
+                                        "width":  91,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Arts/",
+                                        "x":  234,
+                                        "y":  1317,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Western",
+                                        "x":  298,
+                                        "y":  1317,
+                                        "width":  89,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Silversmithing",
+                                        "x":  396,
+                                        "y":  1316,
+                                        "width":  158,
+                                        "height":  27
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  562,
+                                        "y":  1318,
+                                        "width":  21,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Fabrication",
+                                        "x":  592,
+                                        "y":  1316,
+                                        "width":  122,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Business Administration",
+                      "x":  137,
+                      "y":  1355,
+                      "words":  [
+                                    {
+                                        "text":  "Business",
+                                        "x":  137,
+                                        "y":  1356,
+                                        "width":  91,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Administration",
+                                        "x":  235,
+                                        "y":  1355,
+                                        "width":  169,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Farrier Science",
+                      "x":  137,
+                      "y":  1434,
+                      "words":  [
+                                    {
+                                        "text":  "Farrier",
+                                        "x":  137,
+                                        "y":  1435,
+                                        "width":  72,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  218,
+                                        "y":  1434,
+                                        "width":  79,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "General Studies",
+                      "x":  137,
+                      "y":  1473,
+                      "words":  [
+                                    {
+                                        "text":  "General",
+                                        "x":  137,
+                                        "y":  1473,
+                                        "width":  85,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Studies",
+                                        "x":  231,
+                                        "y":  1473,
+                                        "width":  78,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Nursing",
+                      "x":  136,
+                      "y":  1513,
+                      "words":  [
+                                    {
+                                        "text":  "Nursing",
+                                        "x":  136,
+                                        "y":  1513,
+                                        "width":  90,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Certified Nurses Aid",
+                      "x":  137,
+                      "y":  1551,
+                      "words":  [
+                                    {
+                                        "text":  "Certified",
+                                        "x":  137,
+                                        "y":  1551,
+                                        "width":  99,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Nurses",
+                                        "x":  244,
+                                        "y":  1552,
+                                        "width":  74,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Aid",
+                                        "x":  325,
+                                        "y":  1551,
+                                        "width":  40,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Phlebotomy",
+                      "x":  137,
+                      "y":  1590,
+                      "words":  [
+                                    {
+                                        "text":  "Phlebotomy",
+                                        "x":  137,
+                                        "y":  1590,
+                                        "width":  130,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Public Administration: Law Enforcement",
+                      "x":  137,
+                      "y":  1629,
+                      "words":  [
+                                    {
+                                        "text":  "Public",
+                                        "x":  137,
+                                        "y":  1629,
+                                        "width":  68,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Administration:",
+                                        "x":  212,
+                                        "y":  1629,
+                                        "width":  174,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Law",
+                                        "x":  396,
+                                        "y":  1630,
+                                        "width":  45,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Enforcement",
+                                        "x":  449,
+                                        "y":  1629,
+                                        "width":  140,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Technical \u0026 Professional Writing",
+                      "x":  136,
+                      "y":  1668,
+                      "words":  [
+                                    {
+                                        "text":  "Technical",
+                                        "x":  136,
+                                        "y":  1668,
+                                        "width":  106,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  251,
+                                        "y":  1670,
+                                        "width":  21,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Professional",
+                                        "x":  281,
+                                        "y":  1668,
+                                        "width":  129,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Writing",
+                                        "x":  417,
+                                        "y":  1670,
+                                        "width":  87,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wind Energy Technology",
+                      "x":  136,
+                      "y":  1708,
+                      "words":  [
+                                    {
+                                        "text":  "Wind",
+                                        "x":  136,
+                                        "y":  1708,
+                                        "width":  62,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Energy",
+                                        "x":  207,
+                                        "y":  1709,
+                                        "width":  77,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Technology",
+                                        "x":  291,
+                                        "y":  1708,
+                                        "width":  128,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "57",
+                      "x":  692,
+                      "y":  1769,
+                      "words":  [
+                                    {
+                                        "text":  "57",
+                                        "x":  692,
+                                        "y":  1769,
+                                        "width":  26,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Degree",
+                      "x":  737,
+                      "y":  95,
+                      "words":  [
+                                    {
+                                        "text":  "Degree",
+                                        "x":  737,
+                                        "y":  95,
+                                        "width":  82,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  206,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  206,
+                                        "width":  19,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  284,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  284,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  322,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  322,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  361,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  361,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  400,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  400,
+                                        "width":  19,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  479,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  479,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  737,
+                      "y":  517,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  737,
+                                        "y":  517,
+                                        "width":  31,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  737,
+                      "y":  588,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  737,
+                                        "y":  588,
+                                        "width":  31,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  627,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  627,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  737,
+                      "y":  666,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  737,
+                                        "y":  666,
+                                        "width":  31,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  737,
+                      "y":  705,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  737,
+                                        "y":  705,
+                                        "width":  34,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  784,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  784,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  821,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  821,
+                                        "width":  19,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  898,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  898,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  936,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  936,
+                                        "width":  19,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  1014,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  1014,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  1052,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  1052,
+                                        "width":  19,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  1128,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  1128,
+                                        "width":  19,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  1241,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  1241,
+                                        "width":  17,
+                                        "height":  16
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  1278,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  1278,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  1317,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  1317,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  1356,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  1356,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  1396,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  1396,
+                                        "width":  17,
+                                        "height":  16
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  1434,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  1434,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  1474,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  1474,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  1513,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  1513,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  737,
+                      "y":  1551,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  737,
+                                        "y":  1551,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  737,
+                      "y":  1591,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  737,
+                                        "y":  1591,
+                                        "width":  31,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  1630,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  1630,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  737,
+                      "y":  1669,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  737,
+                                        "y":  1669,
+                                        "width":  31,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  736,
+                      "y":  1709,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  736,
+                                        "y":  1709,
+                                        "width":  19,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Applied Science",
+                      "x":  879,
+                      "y":  94,
+                      "words":  [
+                                    {
+                                        "text":  "Applied",
+                                        "x":  879,
+                                        "y":  94,
+                                        "width":  92,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  979,
+                                        "y":  95,
+                                        "width":  85,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Certificate",
+                      "x":  881,
+                      "y":  126,
+                      "words":  [
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  881,
+                                        "y":  126,
+                                        "width":  124,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  205,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  205,
+                                        "width":  34,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  284,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  284,
+                                        "width":  31,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  321,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  321,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  880,
+                      "y":  361,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  880,
+                                        "y":  361,
+                                        "width":  32,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  400,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  400,
+                                        "width":  33,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  479,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  479,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  516,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  516,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  588,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  588,
+                                        "width":  31,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  626,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  626,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  880,
+                      "y":  666,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  880,
+                                        "y":  666,
+                                        "width":  32,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  705,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  705,
+                                        "width":  34,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  783,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  783,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  821,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  821,
+                                        "width":  34,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  898,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  898,
+                                        "width":  31,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  935,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  935,
+                                        "width":  33,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  1013,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  1013,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  1051,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  1051,
+                                        "width":  33,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  1128,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  1128,
+                                        "width":  34,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  1240,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  1240,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  1277,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  1277,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  879,
+                      "y":  1317,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  879,
+                                        "y":  1317,
+                                        "width":  18,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  1356,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  1356,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  1395,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  1395,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  1434,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  1434,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  1512,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  1512,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  1551,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  1551,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  880,
+                      "y":  1591,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  880,
+                                        "y":  1591,
+                                        "width":  32,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  880,
+                      "y":  1630,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  880,
+                                        "y":  1630,
+                                        "width":  32,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  881,
+                      "y":  1669,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  881,
+                                        "y":  1669,
+                                        "width":  31,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  879,
+                      "y":  1709,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  879,
+                                        "y":  1709,
+                                        "width":  19,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Occupational",
+                      "x":  1096,
+                      "y":  94,
+                      "words":  [
+                                    {
+                                        "text":  "Occupational",
+                                        "x":  1096,
+                                        "y":  94,
+                                        "width":  158,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Certificate",
+                      "x":  1096,
+                      "y":  126,
+                      "words":  [
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  1096,
+                                        "y":  126,
+                                        "width":  125,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  205,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  205,
+                                        "width":  34,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  284,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  284,
+                                        "width":  31,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  321,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  321,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  361,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  361,
+                                        "width":  31,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  479,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  479,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  1095,
+                      "y":  517,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  1095,
+                                        "y":  517,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  1095,
+                      "y":  588,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  1095,
+                                        "y":  588,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  626,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  626,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  1095,
+                      "y":  666,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  1095,
+                                        "y":  666,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  1095,
+                      "y":  706,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  1095,
+                                        "y":  706,
+                                        "width":  19,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  783,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  783,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1097,
+                      "y":  821,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1097,
+                                        "y":  821,
+                                        "width":  33,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  898,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  898,
+                                        "width":  31,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  935,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  935,
+                                        "width":  34,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1097,
+                      "y":  1013,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1097,
+                                        "y":  1013,
+                                        "width":  30,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  1051,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  1051,
+                                        "width":  34,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  1240,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  1240,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  1277,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  1277,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  1095,
+                      "y":  1317,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  1095,
+                                        "y":  1317,
+                                        "width":  18,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  1356,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  1356,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  1395,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  1395,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  1095,
+                      "y":  1434,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  1095,
+                                        "y":  1434,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  1473,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  1473,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  1095,
+                      "y":  1552,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  1095,
+                                        "y":  1552,
+                                        "width":  17,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  1095,
+                      "y":  1591,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  1095,
+                                        "y":  1591,
+                                        "width":  18,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "n/a",
+                      "x":  1096,
+                      "y":  1630,
+                      "words":  [
+                                    {
+                                        "text":  "n/a",
+                                        "x":  1096,
+                                        "y":  1630,
+                                        "width":  31,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  1095,
+                      "y":  1670,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  1095,
+                                        "y":  1670,
+                                        "width":  18,
+                                        "height":  16
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "x":  1095,
+                      "y":  1709,
+                      "words":  [
+                                    {
+                                        "text":  "x",
+                                        "x":  1095,
+                                        "y":  1709,
+                                        "width":  19,
+                                        "height":  18
+                                    }
+                                ]
+                  }
+              ]
+}

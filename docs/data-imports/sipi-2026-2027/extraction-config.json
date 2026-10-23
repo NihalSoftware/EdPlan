@@ -1,0 +1,326 @@
+{
+  "institution": {
+    "university_name": "Southwest Indian Polytechnic Institute",
+    "city": "Albuquerque",
+    "state": "New Mexico",
+    "catalog_institution_name": "Southwestern Indian Polytechnic Institute",
+    "abbreviation": "SIPI"
+  },
+  "source": {
+    "filename": "SOUTHWESTERN INDIAN POLYTECHNIC INSTITUTE.pdf",
+    "sha256": "6eaf3f400e5424ff5dfd9414a3b36f7304b932f0915d18b20041f08af938a205",
+    "catalog_year": "2026-2027",
+    "catalog_title": "Southwestern Indian Polytechnic Institute 2026-2027 Academic Catalog (provided excerpt)",
+    "pdf_page_count": 57,
+    "printed_page_range": [
+      61,
+      117
+    ],
+    "is_current_catalog": true
+  },
+  "specs": [
+    [
+      "Accounting",
+      "Certificate",
+      33,
+      "52.0302B",
+      8,
+      8,
+      "Required Courses"
+    ],
+    [
+      "Business Administration",
+      "Associate of Science",
+      68,
+      "52.0101D",
+      10,
+      11,
+      "General Education Required Courses"
+    ],
+    [
+      "Business Administration",
+      "Associate of Applied Science",
+      63,
+      "52.0201D",
+      13,
+      14,
+      "General Education Required Courses"
+    ],
+    [
+      "Business Administration",
+      "Certificate",
+      33,
+      "52.0201B",
+      16,
+      16,
+      "Required Courses"
+    ],
+    [
+      "Computer Aided Drafting and Design",
+      "Certificate",
+      38,
+      "15.1302",
+      17,
+      18,
+      "Required Courses"
+    ],
+    [
+      "Conservation and Resource Protection",
+      "Certificate of Achievement",
+      12,
+      "03.0201",
+      20,
+      20,
+      "Required Courses"
+    ],
+    [
+      "Culinary Arts & Sciences",
+      "Associate of Applied Science",
+      60,
+      "12.0504",
+      22,
+      23,
+      "General Education Required Courses"
+    ],
+    [
+      "Early Childhood Education",
+      "Associate of Arts",
+      63,
+      "13.1210C",
+      27,
+      28,
+      "General Education Required Courses"
+    ],
+    [
+      "Early Childhood Education",
+      "Certificate of Achievement",
+      28,
+      "13.1299B",
+      30,
+      30,
+      "Required Courses"
+    ],
+    [
+      "Geospatial Information Technology",
+      "Associate of Applied Science",
+      60,
+      "45.0702",
+      36,
+      37,
+      "General Education Required Courses"
+    ],
+    [
+      "Geospatial Information Technology",
+      "Certificate",
+      25,
+      "45.0702B",
+      38,
+      38,
+      "Required Courses"
+    ],
+    [
+      "Natural Resources Management",
+      "Associate of Applied Science",
+      60,
+      "03.0101",
+      43,
+      44,
+      "General Education Required Courses"
+    ],
+    [
+      "Network Management",
+      "Associate of Applied Science",
+      61,
+      "11.1002D",
+      46,
+      47,
+      "General Education Required Courses"
+    ],
+    [
+      "Pre-Engineering",
+      "Associate of Science",
+      61,
+      "14.0101D",
+      49,
+      51,
+      "General Education Required Courses"
+    ],
+    [
+      "Optical Laboratory Technology",
+      "Certificate of Completion",
+      34,
+      "51.1802",
+      56,
+      57,
+      "Required Courses"
+    ]
+  ],
+  "held_programs": [
+    {
+      "program_name": "Accounting",
+      "degree": "Associate of Applied Science",
+      "pages": [
+        65,
+        66,
+        67
+      ],
+      "reason": "The curriculum states 60 credits, but the suggested sequence explicitly states Total Program Credits: 63.",
+      "question": "Is the Accounting AAS total 60 or 63, and which course list is authoritative?"
+    },
+    {
+      "program_name": "Culinary Arts",
+      "degree": "Certificate",
+      "pages": [
+        85
+      ],
+      "reason": "No program total is stated in the supplied certificate section.",
+      "question": "What is the approved certificate total and complete curriculum?"
+    },
+    {
+      "program_name": "Environmental Sciences",
+      "degree": "Associate of Applied Science",
+      "pages": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "reason": "Program total is 61-62 and ENVS 2996 is 3-4 credits; programs.total_credit_hours accepts one integer, not a range.",
+      "question": "Which approved fixed-credit pathway should be imported?"
+    },
+    {
+      "program_name": "Liberal Arts",
+      "degree": "Associate of Arts",
+      "pages": [
+        99,
+        100,
+        101
+      ],
+      "reason": "The listed general education and program-specific requirements appear to sum to 76 credits, while the declared degree total is 63; overlap/substitution rules are not specified.",
+      "question": "Which requirements overlap or substitute, so the 63-credit degree can be represented accurately?"
+    },
+    {
+      "program_name": "Vision Care Technology",
+      "degree": "Associate of Applied Science",
+      "pages": [
+        113,
+        114,
+        115,
+        116
+      ],
+      "reason": "The listed curriculum appears to sum to 71 credits against a declared total of 70; suggested semester totals and displayed rows also disagree.",
+      "question": "Provide the corrected 70-credit curriculum, including math and elective requirements."
+    }
+  ],
+  "needs_clarification": [
+    {
+      "scope": "Accounting Certificate; Business AS/AAS/Certificate",
+      "printed_pages": [
+        68,
+        70,
+        71,
+        73,
+        74,
+        76
+      ],
+      "reason": "Required lists use ENGL 1110 Composition I, while suggested sequences use ENGL 2110 Composition I; elsewhere ENGL 2110 is Professional and Technical Communication.",
+      "question": "Confirm the correct English code for each program."
+    },
+    {
+      "scope": "Business Administration AAS",
+      "printed_pages": [
+        74,
+        75
+      ],
+      "reason": "Small Business Management appears as ENTR 2210 in requirements and ENTR 2110 in the suggested sequence.",
+      "question": "Which ENTR code is correct?"
+    },
+    {
+      "scope": "Business Administration Certificate",
+      "printed_pages": [
+        76
+      ],
+      "reason": "Business Math appears as BUED 125 versus BUSA 1180; Human Relations in Business appears as BUSA 2230 versus BUSA 2320.",
+      "question": "Confirm these two code/title pairs."
+    },
+    {
+      "scope": "Business Administration AS",
+      "printed_pages": [
+        71,
+        72
+      ],
+      "reason": "The suggested semester totals sum to 65, but both stated program totals and the required curriculum total 68.",
+      "question": "Which three credits are missing from the suggested schedule? The 68-credit program total is retained; no schedule is assigned."
+    },
+    {
+      "scope": "Culinary Arts & Sciences AAS",
+      "printed_pages": [
+        82,
+        83,
+        84
+      ],
+      "reason": "Public Speaking is ENGL 1130 here versus COMM 1130 in other curricula; Applied Fundamentals of Baking is CULN 1235L versus CULN 1235; Introduction to Business is BUSA 1110 versus BUSN 1110. CULN 2520L names prerequisite CULN 2410L, whereas the listed course is CULN 2410C.",
+      "question": "Confirm the speech, baking, business and food/culture prerequisite codes."
+    },
+    {
+      "scope": "Geospatial Information Technology AAS; Network Management AAS",
+      "printed_pages": [
+        97,
+        107,
+        108
+      ],
+      "reason": "COSC 145 is titled Intro to UNIV/Linux in one program and Introduction to UNIX Administration in another.",
+      "question": "What is the authoritative COSC 145 title?"
+    },
+    {
+      "scope": "Optical Laboratory Technology Certificate",
+      "printed_pages": [
+        117
+      ],
+      "reason": "The required/elective list names HLED 1120 without credits; the sequence names HLED 1110 for 2 credits.",
+      "question": "Which first-aid course code and credit value is correct?"
+    },
+    {
+      "scope": "Combined math sequence",
+      "printed_pages": [
+        77,
+        78
+      ],
+      "reason": "MATH 118/119 is a two-course sequence with 2/2 credits, not one identified course.",
+      "question": "Confirm individual course titles/codes if separate course records are required. The sequence remains in source requirements."
+    },
+    {
+      "scope": "SPAN 1110",
+      "printed_pages": [
+        71,
+        82,
+        110
+      ],
+      "reason": "Spanish I is listed as 3 credits in Business AS and 4 credits in Culinary/Pre-Engineering.",
+      "question": "What is the correct credit value and language course code?"
+    },
+    {
+      "scope": "Early Childhood Education AA biology identifier",
+      "printed_pages": [
+        87
+      ],
+      "reason": "The source prints BIOL/L1110 rather than the BIOL 1110/L layout elsewhere.",
+      "question": "Confirm the canonical biology-plus-laboratory identifier before importing this row."
+    }
+  ],
+  "choice_groups": [
+    {
+      "program_key": "Natural Resources Management | Associate of Applied Science",
+      "group_id": "natural-resources-lab-choice",
+      "choose_count": 2,
+      "course_codes": [
+        "NATR201/L",
+        "RGSC2110/L",
+        "FWCE2110/L"
+      ],
+      "source_pdf_page": 44,
+      "source_printed_page": 104,
+      "source_text": "Choose 2 of the following 3 courses:"
+    }
+  ]
+}

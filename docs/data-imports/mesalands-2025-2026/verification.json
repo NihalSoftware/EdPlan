@@ -1,0 +1,13 @@
+{
+  "source_hash_verified": true,
+  "program_rows_verified": 26,
+  "course_rows_verified": 258,
+  "duplicate_program_course_pairs": 0,
+  "fractional_programs_deferred": 4,
+  "ambiguous_programs_deferred": 1,
+  "held_source_course_rows": 14,
+  "unknown_hours_and_automatic_schedule_preserved_as_null": true,
+  "original_mesalands_profile_preserved": true,
+  "iaia_still_has_28_programs_and_319_course_rows": true,
+  "student_records_accessed": false
+}

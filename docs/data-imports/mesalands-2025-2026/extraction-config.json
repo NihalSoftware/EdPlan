@@ -1,0 +1,317 @@
+{
+  "specs": [
+    [
+      9,
+      "Education - Bilingual Option",
+      "Associate of Arts",
+      60
+    ],
+    [
+      10,
+      "Education - Early Childhood Option",
+      "Associate of Arts",
+      62
+    ],
+    [
+      11,
+      "Education - Elementary Education Option",
+      "Associate of Arts",
+      60
+    ],
+    [
+      12,
+      "Education - Secondary Education Option",
+      "Associate of Arts",
+      60
+    ],
+    [
+      13,
+      "Fine Arts - Digital Media Arts Option",
+      "Associate of Arts",
+      60
+    ],
+    [
+      14,
+      "Fine Arts - Studio Art Option",
+      "Associate of Arts",
+      60
+    ],
+    [
+      15,
+      "Fine Arts - Studio Art Proficiency",
+      "Occupational Certificate",
+      18
+    ],
+    [
+      16,
+      "Fine Arts - Comic Illustration and Character Design",
+      "Occupational Certificate",
+      15
+    ],
+    [
+      17,
+      "Fine Arts - Animation and Game Art",
+      "Occupational Certificate",
+      19
+    ],
+    [
+      18,
+      "Fine Arts - Bronze Metal Casting",
+      "Occupational Certificate",
+      18
+    ],
+    [
+      19,
+      "General Studies - Occupational/Experiential Learning",
+      "Associate of Arts",
+      60
+    ],
+    [
+      20,
+      "Human Services - Social Services",
+      "Certificate",
+      16
+    ],
+    [
+      21,
+      "Human Services - Social Work Option",
+      "Associate of Arts",
+      60
+    ],
+    [
+      22,
+      "Liberal Arts - University Studies Option",
+      "Associate of Arts",
+      60
+    ],
+    [
+      23,
+      "Natural Sciences - Geology Option",
+      "Associate of Arts",
+      60
+    ],
+    [
+      24,
+      "Natural Sciences - Paleontology Option",
+      "Associate of Arts",
+      60
+    ],
+    [
+      26,
+      "Nursing",
+      "Associate of Applied Science",
+      78
+    ],
+    [
+      29,
+      "Cowboy Arts - Western Artistic Silversmithing and Fabrication",
+      "Associate of Applied Science",
+      60
+    ],
+    [
+      30,
+      "Artistic Silversmithing",
+      "Applied Science Certificate",
+      33,
+      0,
+      800
+    ],
+    [
+      30,
+      "Artistic Silversmithing",
+      "Occupational Certificate",
+      15,
+      800,
+      1700
+    ],
+    [
+      31,
+      "Business Administration - General Option",
+      "Associate of Applied Science",
+      60
+    ],
+    [
+      32,
+      "Farrier Science",
+      "Associate of Applied Science",
+      60
+    ],
+    [
+      33,
+      "Farrier Science",
+      "Occupational Certificate",
+      18
+    ],
+    [
+      34,
+      "General Studies - Occupational/Experiential Learning",
+      "Associate of Applied Science",
+      60
+    ],
+    [
+      35,
+      "Technical and Professional Writing",
+      "Occupational Certificate",
+      19
+    ],
+    [
+      37,
+      "Wind Energy Technology",
+      "Occupational Certificate",
+      15,
+      1000,
+      1700
+    ]
+  ],
+  "manual": [
+    {
+      "page": 16,
+      "y": 179,
+      "course_code": "ARTS1610",
+      "course_name": "Drawing I",
+      "credits": 3
+    },
+    {
+      "page": 16,
+      "y": 212,
+      "course_code": "ARTS1616",
+      "course_name": "Drawing Comics and Sequential Art",
+      "credits": 3
+    },
+    {
+      "page": 16,
+      "y": 276,
+      "course_code": "FDMA1720",
+      "course_name": "3D Character Design",
+      "credits": 3
+    },
+    {
+      "page": 16,
+      "y": 374,
+      "course_code": "ENGL1110",
+      "course_name": "Composition I",
+      "credits": 3
+    },
+    {
+      "page": 17,
+      "y": 212,
+      "course_code": "ARTS2621L",
+      "course_name": "Drawing for Animation",
+      "credits": 3
+    },
+    {
+      "page": 18,
+      "y": 179,
+      "course_code": "ARTS1840",
+      "course_name": "Sculpture I",
+      "credits": 3
+    },
+    {
+      "page": 18,
+      "y": 246,
+      "course_code": "ARTS2861",
+      "course_name": "Modeling Sculpture and Mold Making",
+      "credits": 3
+    },
+    {
+      "page": 18,
+      "y": 314,
+      "course_code": "ARTS2862",
+      "course_name": "Casting Wax & Bronze",
+      "credits": 3
+    },
+    {
+      "page": 18,
+      "y": 411,
+      "course_code": "ARTS2010",
+      "course_name": "Portfolio Development",
+      "credits": 3
+    },
+    {
+      "page": 32,
+      "y": 246,
+      "course_code": "FASC1110",
+      "course_name": "Horseshoeing Theory I",
+      "credits": 3
+    },
+    {
+      "page": 32,
+      "y": 280,
+      "course_code": "FASC1210L",
+      "course_name": "Horseshoeing Laboratory I",
+      "credits": 3
+    },
+    {
+      "page": 32,
+      "y": 314,
+      "course_code": "FASC1310L",
+      "course_name": "Blacksmithing I",
+      "credits": 3
+    },
+    {
+      "page": 32,
+      "y": 448,
+      "course_code": "FASC1120",
+      "course_name": "Horseshoeing Theory II",
+      "credits": 3
+    },
+    {
+      "page": 32,
+      "y": 482,
+      "course_code": "FASC1220L",
+      "course_name": "Horseshoeing Laboratory II",
+      "credits": 3
+    },
+    {
+      "page": 32,
+      "y": 516,
+      "course_code": "FASC1320L",
+      "course_name": "Blacksmithing II",
+      "credits": 3
+    },
+    {
+      "page": 32,
+      "y": 799,
+      "course_code": "FASC2230L",
+      "course_name": "Farrier Science Therapeutics",
+      "credits": 3
+    },
+    {
+      "page": 32,
+      "y": 1163,
+      "course_code": "FASC2330L",
+      "course_name": "Farrier Craftsmanship Therapeutics",
+      "credits": 3
+    },
+    {
+      "page": 32,
+      "y": 1325,
+      "course_code": "FASC2999L",
+      "course_name": "Farrier Science Capstone",
+      "credits": 3
+    },
+    {
+      "page": 32,
+      "y": 1389,
+      "course_code": "ENGL2999",
+      "course_name": "Capstone Portfolio Course",
+      "credits": 1
+    }
+  ],
+  "canonical": {
+    "ARTS1240": "Design I",
+    "ARTS1250": "Design II",
+    "ARTS1320": "Ceramics I",
+    "ARTS1410": "Introduction to Photography",
+    "ARTS1520": "Digital Media I",
+    "ARTS1630": "Painting I",
+    "ARTS1840": "Sculpture I",
+    "ARTS2310": "Ceramics II",
+    "ARTH1110": "Art Appreciation",
+    "FDMA1720": "3D Character Design",
+    "FDMA2530": "Introduction to 3D Modeling",
+    "ARTS2870": "Engraving II",
+    "ACCT2120": "Principles of Accounting II",
+    "GEOL2920": "Research in Natural Sciences II"
+  }
+}

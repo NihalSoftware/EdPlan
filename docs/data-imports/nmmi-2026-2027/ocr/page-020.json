@@ -1,0 +1,3932 @@
+﻿{
+    "pdf_page":  20,
+    "lines":  [
+                  {
+                      "text":  "GPA in their college courses are also eligible to join. Cadets receive",
+                      "x":  83,
+                      "y":  112,
+                      "words":  [
+                                    {
+                                        "text":  "GPA",
+                                        "x":  83,
+                                        "y":  113,
+                                        "width":  36,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  125,
+                                        "y":  113,
+                                        "width":  13,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "their",
+                                        "x":  144,
+                                        "y":  112,
+                                        "width":  40,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "college",
+                                        "x":  189,
+                                        "y":  112,
+                                        "width":  59,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  254,
+                                        "y":  116,
+                                        "width":  63,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  323,
+                                        "y":  116,
+                                        "width":  26,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "also",
+                                        "x":  355,
+                                        "y":  112,
+                                        "width":  32,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "eligible",
+                                        "x":  393,
+                                        "y":  112,
+                                        "width":  59,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  458,
+                                        "y":  114,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "join.",
+                                        "x":  479,
+                                        "y":  113,
+                                        "width":  37,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Cadets",
+                                        "x":  522,
+                                        "y":  112,
+                                        "width":  56,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "receive",
+                                        "x":  585,
+                                        "y":  113,
+                                        "width":  59,
+                                        "height":  14
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "an invitation to join, and then log-in to the PTK website to make",
+                      "x":  83,
+                      "y":  141,
+                      "words":  [
+                                    {
+                                        "text":  "an",
+                                        "x":  83,
+                                        "y":  145,
+                                        "width":  20,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "invitation",
+                                        "x":  109,
+                                        "y":  142,
+                                        "width":  78,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  193,
+                                        "y":  143,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "join,",
+                                        "x":  215,
+                                        "y":  142,
+                                        "width":  37,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  258,
+                                        "y":  141,
+                                        "width":  30,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "then",
+                                        "x":  294,
+                                        "y":  141,
+                                        "width":  38,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "log-in",
+                                        "x":  339,
+                                        "y":  141,
+                                        "width":  45,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  390,
+                                        "y":  143,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  412,
+                                        "y":  141,
+                                        "width":  28,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "PTK",
+                                        "x":  446,
+                                        "y":  142,
+                                        "width":  30,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "website",
+                                        "x":  482,
+                                        "y":  141,
+                                        "width":  65,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  552,
+                                        "y":  143,
+                                        "width":  18,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "make",
+                                        "x":  576,
+                                        "y":  141,
+                                        "width":  44,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "High School Academic",
+                      "x":  86,
+                      "y":  284,
+                      "words":  [
+                                    {
+                                        "text":  "High",
+                                        "x":  86,
+                                        "y":  284,
+                                        "width":  117,
+                                        "height":  55
+                                    },
+                                    {
+                                        "text":  "School",
+                                        "x":  222,
+                                        "y":  284,
+                                        "width":  167,
+                                        "height":  43
+                                    },
+                                    {
+                                        "text":  "Academic",
+                                        "x":  405,
+                                        "y":  284,
+                                        "width":  251,
+                                        "height":  43
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Excellence",
+                      "x":  86,
+                      "y":  354,
+                      "words":  [
+                                    {
+                                        "text":  "Excellence",
+                                        "x":  86,
+                                        "y":  354,
+                                        "width":  268,
+                                        "height":  43
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Programs in Academic Excellence are programs at either the high",
+                      "x":  84,
+                      "y":  461,
+                      "words":  [
+                                    {
+                                        "text":  "Programs",
+                                        "x":  84,
+                                        "y":  462,
+                                        "width":  79,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  169,
+                                        "y":  462,
+                                        "width":  13,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Academic",
+                                        "x":  189,
+                                        "y":  461,
+                                        "width":  81,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Excellence",
+                                        "x":  276,
+                                        "y":  461,
+                                        "width":  86,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  368,
+                                        "y":  465,
+                                        "width":  27,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "programs",
+                                        "x":  401,
+                                        "y":  465,
+                                        "width":  79,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "at",
+                                        "x":  486,
+                                        "y":  463,
+                                        "width":  16,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "either",
+                                        "x":  508,
+                                        "y":  461,
+                                        "width":  49,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  562,
+                                        "y":  461,
+                                        "width":  27,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "high",
+                                        "x":  596,
+                                        "y":  461,
+                                        "width":  34,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "school or college level that challenge cadets to excel in their",
+                      "x":  83,
+                      "y":  490,
+                      "words":  [
+                                    {
+                                        "text":  "school",
+                                        "x":  83,
+                                        "y":  490,
+                                        "width":  53,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  142,
+                                        "y":  495,
+                                        "width":  18,
+                                        "height":  10
+                                    },
+                                    {
+                                        "text":  "college",
+                                        "x":  165,
+                                        "y":  490,
+                                        "width":  59,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "level",
+                                        "x":  230,
+                                        "y":  490,
+                                        "width":  38,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  273,
+                                        "y":  490,
+                                        "width":  35,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "challenge",
+                                        "x":  313,
+                                        "y":  490,
+                                        "width":  80,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "cadets",
+                                        "x":  399,
+                                        "y":  490,
+                                        "width":  53,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  458,
+                                        "y":  492,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "excel",
+                                        "x":  481,
+                                        "y":  490,
+                                        "width":  41,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  529,
+                                        "y":  491,
+                                        "width":  13,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "their",
+                                        "x":  548,
+                                        "y":  490,
+                                        "width":  40,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "academic studies",
+                      "x":  83,
+                      "y":  519,
+                      "words":  [
+                                    {
+                                        "text":  "academic",
+                                        "x":  83,
+                                        "y":  519,
+                                        "width":  80,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "studies",
+                                        "x":  168,
+                                        "y":  519,
+                                        "width":  59,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "High School Scholars Program",
+                      "x":  84,
+                      "y":  583,
+                      "words":  [
+                                    {
+                                        "text":  "High",
+                                        "x":  84,
+                                        "y":  583,
+                                        "width":  50,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "School",
+                                        "x":  142,
+                                        "y":  583,
+                                        "width":  74,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Scholars",
+                                        "x":  224,
+                                        "y":  583,
+                                        "width":  95,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Program",
+                                        "x":  327,
+                                        "y":  584,
+                                        "width":  96,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Scholars Program builds on the educational excellence of NMMI",
+                      "x":  83,
+                      "y":  648,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  83,
+                                        "y":  649,
+                                        "width":  31,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Scholars",
+                                        "x":  119,
+                                        "y":  649,
+                                        "width":  70,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Program",
+                                        "x":  195,
+                                        "y":  650,
+                                        "width":  70,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "builds",
+                                        "x":  272,
+                                        "y":  648,
+                                        "width":  49,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "on",
+                                        "x":  327,
+                                        "y":  653,
+                                        "width":  20,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  353,
+                                        "y":  649,
+                                        "width":  27,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "educational",
+                                        "x":  386,
+                                        "y":  649,
+                                        "width":  97,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "excellence",
+                                        "x":  490,
+                                        "y":  649,
+                                        "width":  86,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  582,
+                                        "y":  648,
+                                        "width":  18,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "NMMI",
+                                        "x":  605,
+                                        "y":  650,
+                                        "width":  51,
+                                        "height":  13
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "by encouraging academically exceptional students to gain a broad",
+                      "x":  84,
+                      "y":  678,
+                      "words":  [
+                                    {
+                                        "text":  "by",
+                                        "x":  84,
+                                        "y":  678,
+                                        "width":  19,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "encouraging",
+                                        "x":  108,
+                                        "y":  678,
+                                        "width":  104,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "academically",
+                                        "x":  217,
+                                        "y":  678,
+                                        "width":  108,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "exceptional",
+                                        "x":  331,
+                                        "y":  678,
+                                        "width":  95,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  433,
+                                        "y":  678,
+                                        "width":  72,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  510,
+                                        "y":  680,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "gain",
+                                        "x":  533,
+                                        "y":  678,
+                                        "width":  34,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  573,
+                                        "y":  682,
+                                        "width":  9,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "broad",
+                                        "x":  589,
+                                        "y":  678,
+                                        "width":  49,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "knowledge base, understanding the interaction between academic",
+                      "x":  84,
+                      "y":  707,
+                      "words":  [
+                                    {
+                                        "text":  "knowledge",
+                                        "x":  84,
+                                        "y":  707,
+                                        "width":  90,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "base,",
+                                        "x":  181,
+                                        "y":  707,
+                                        "width":  42,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "understanding",
+                                        "x":  230,
+                                        "y":  707,
+                                        "width":  121,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  356,
+                                        "y":  707,
+                                        "width":  28,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "interaction",
+                                        "x":  390,
+                                        "y":  707,
+                                        "width":  90,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "between",
+                                        "x":  487,
+                                        "y":  707,
+                                        "width":  72,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "academic",
+                                        "x":  566,
+                                        "y":  707,
+                                        "width":  79,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "areas. The curriculum consists of all NMMI courses — high school and",
+                      "x":  83,
+                      "y":  736,
+                      "words":  [
+                                    {
+                                        "text":  "areas.",
+                                        "x":  83,
+                                        "y":  740,
+                                        "width":  49,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "The",
+                                        "x":  138,
+                                        "y":  736,
+                                        "width":  31,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "curriculum",
+                                        "x":  175,
+                                        "y":  736,
+                                        "width":  89,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "consists",
+                                        "x":  270,
+                                        "y":  737,
+                                        "width":  66,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  342,
+                                        "y":  736,
+                                        "width":  17,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "all",
+                                        "x":  363,
+                                        "y":  736,
+                                        "width":  18,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "NMMI",
+                                        "x":  388,
+                                        "y":  737,
+                                        "width":  52,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  446,
+                                        "y":  740,
+                                        "width":  64,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "—",
+                                        "x":  515,
+                                        "y":  744,
+                                        "width":  11,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "high",
+                                        "x":  531,
+                                        "y":  736,
+                                        "width":  34,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "school",
+                                        "x":  572,
+                                        "y":  736,
+                                        "width":  52,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  631,
+                                        "y":  736,
+                                        "width":  30,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "college — as well as the courses a Scholar will take in order to",
+                      "x":  83,
+                      "y":  765,
+                      "words":  [
+                                    {
+                                        "text":  "college",
+                                        "x":  83,
+                                        "y":  765,
+                                        "width":  59,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "—",
+                                        "x":  147,
+                                        "y":  773,
+                                        "width":  11,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  163,
+                                        "y":  769,
+                                        "width":  17,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "well",
+                                        "x":  185,
+                                        "y":  765,
+                                        "width":  33,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  225,
+                                        "y":  769,
+                                        "width":  17,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  247,
+                                        "y":  765,
+                                        "width":  28,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  280,
+                                        "y":  769,
+                                        "width":  64,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  350,
+                                        "y":  769,
+                                        "width":  8,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "Scholar",
+                                        "x":  364,
+                                        "y":  765,
+                                        "width":  62,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "will",
+                                        "x":  430,
+                                        "y":  765,
+                                        "width":  28,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "take",
+                                        "x":  464,
+                                        "y":  765,
+                                        "width":  36,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  506,
+                                        "y":  766,
+                                        "width":  14,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "order",
+                                        "x":  526,
+                                        "y":  765,
+                                        "width":  46,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  577,
+                                        "y":  767,
+                                        "width":  17,
+                                        "height":  13
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "complete his or her Scholar\u0027s Thesis during the senior year. In",
+                      "x":  83,
+                      "y":  794,
+                      "words":  [
+                                    {
+                                        "text":  "complete",
+                                        "x":  83,
+                                        "y":  794,
+                                        "width":  79,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "his",
+                                        "x":  168,
+                                        "y":  794,
+                                        "width":  22,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  196,
+                                        "y":  798,
+                                        "width":  18,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "her",
+                                        "x":  220,
+                                        "y":  794,
+                                        "width":  27,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Scholar\u0027s",
+                                        "x":  252,
+                                        "y":  794,
+                                        "width":  74,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Thesis",
+                                        "x":  331,
+                                        "y":  794,
+                                        "width":  52,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "during",
+                                        "x":  389,
+                                        "y":  794,
+                                        "width":  54,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  448,
+                                        "y":  794,
+                                        "width":  27,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "senior",
+                                        "x":  481,
+                                        "y":  795,
+                                        "width":  52,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "year.",
+                                        "x":  537,
+                                        "y":  798,
+                                        "width":  41,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "In",
+                                        "x":  585,
+                                        "y":  795,
+                                        "width":  14,
+                                        "height":  14
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "addition, Scholars take Sophomore English during the summer after",
+                      "x":  83,
+                      "y":  823,
+                      "words":  [
+                                    {
+                                        "text":  "addition,",
+                                        "x":  83,
+                                        "y":  823,
+                                        "width":  74,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Scholars",
+                                        "x":  163,
+                                        "y":  823,
+                                        "width":  69,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "take",
+                                        "x":  238,
+                                        "y":  823,
+                                        "width":  35,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Sophomore",
+                                        "x":  279,
+                                        "y":  823,
+                                        "width":  97,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "English",
+                                        "x":  383,
+                                        "y":  823,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "during",
+                                        "x":  446,
+                                        "y":  823,
+                                        "width":  54,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  505,
+                                        "y":  823,
+                                        "width":  28,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "summer",
+                                        "x":  538,
+                                        "y":  827,
+                                        "width":  69,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "after",
+                                        "x":  613,
+                                        "y":  823,
+                                        "width":  40,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "their freshman year and are required to participate in summer",
+                      "x":  83,
+                      "y":  852,
+                      "words":  [
+                                    {
+                                        "text":  "their",
+                                        "x":  83,
+                                        "y":  852,
+                                        "width":  40,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "freshman",
+                                        "x":  128,
+                                        "y":  852,
+                                        "width":  79,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "year",
+                                        "x":  213,
+                                        "y":  857,
+                                        "width":  37,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  255,
+                                        "y":  852,
+                                        "width":  30,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  291,
+                                        "y":  857,
+                                        "width":  27,
+                                        "height":  10
+                                    },
+                                    {
+                                        "text":  "required",
+                                        "x":  324,
+                                        "y":  852,
+                                        "width":  70,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  400,
+                                        "y":  854,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "participate",
+                                        "x":  424,
+                                        "y":  853,
+                                        "width":  89,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  520,
+                                        "y":  853,
+                                        "width":  13,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "summer",
+                                        "x":  540,
+                                        "y":  857,
+                                        "width":  69,
+                                        "height":  10
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "enrich activities each year prior to graduation. Admission to the",
+                      "x":  83,
+                      "y":  881,
+                      "words":  [
+                                    {
+                                        "text":  "enrich",
+                                        "x":  83,
+                                        "y":  881,
+                                        "width":  52,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "activities",
+                                        "x":  141,
+                                        "y":  882,
+                                        "width":  74,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "each",
+                                        "x":  220,
+                                        "y":  881,
+                                        "width":  39,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "year",
+                                        "x":  264,
+                                        "y":  886,
+                                        "width":  37,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "prior",
+                                        "x":  307,
+                                        "y":  882,
+                                        "width":  40,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  352,
+                                        "y":  883,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "graduation.",
+                                        "x":  374,
+                                        "y":  881,
+                                        "width":  97,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Admission",
+                                        "x":  476,
+                                        "y":  881,
+                                        "width":  86,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  568,
+                                        "y":  883,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  591,
+                                        "y":  881,
+                                        "width":  27,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Scholars Program is competitive and admissions requirements",
+                      "x":  83,
+                      "y":  911,
+                      "words":  [
+                                    {
+                                        "text":  "Scholars",
+                                        "x":  83,
+                                        "y":  911,
+                                        "width":  69,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Program",
+                                        "x":  159,
+                                        "y":  911,
+                                        "width":  70,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  236,
+                                        "y":  911,
+                                        "width":  11,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "competitive",
+                                        "x":  253,
+                                        "y":  911,
+                                        "width":  99,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  358,
+                                        "y":  911,
+                                        "width":  30,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "admissions",
+                                        "x":  395,
+                                        "y":  911,
+                                        "width":  92,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "requirements",
+                                        "x":  493,
+                                        "y":  911,
+                                        "width":  113,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "include: entering as a freshman and having a minimum 3.5 GPA at",
+                      "x":  84,
+                      "y":  940,
+                      "words":  [
+                                    {
+                                        "text":  "include:",
+                                        "x":  84,
+                                        "y":  940,
+                                        "width":  64,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "entering",
+                                        "x":  155,
+                                        "y":  940,
+                                        "width":  70,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  231,
+                                        "y":  944,
+                                        "width":  17,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  254,
+                                        "y":  944,
+                                        "width":  8,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "freshman",
+                                        "x":  268,
+                                        "y":  940,
+                                        "width":  79,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  353,
+                                        "y":  940,
+                                        "width":  30,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "having",
+                                        "x":  390,
+                                        "y":  940,
+                                        "width":  54,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  450,
+                                        "y":  944,
+                                        "width":  8,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "minimum",
+                                        "x":  465,
+                                        "y":  940,
+                                        "width":  79,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "3.5",
+                                        "x":  550,
+                                        "y":  940,
+                                        "width":  25,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "GPA",
+                                        "x":  581,
+                                        "y":  940,
+                                        "width":  35,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "at",
+                                        "x":  622,
+                                        "y":  942,
+                                        "width":  16,
+                                        "height":  13
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the end of the freshman year, writing a letter of interest and",
+                      "x":  83,
+                      "y":  969,
+                      "words":  [
+                                    {
+                                        "text":  "the",
+                                        "x":  83,
+                                        "y":  969,
+                                        "width":  27,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "end",
+                                        "x":  116,
+                                        "y":  969,
+                                        "width":  31,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  153,
+                                        "y":  969,
+                                        "width":  17,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  175,
+                                        "y":  969,
+                                        "width":  27,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "freshman",
+                                        "x":  207,
+                                        "y":  969,
+                                        "width":  80,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "year,",
+                                        "x":  292,
+                                        "y":  973,
+                                        "width":  41,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "writing",
+                                        "x":  339,
+                                        "y":  969,
+                                        "width":  59,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  404,
+                                        "y":  973,
+                                        "width":  8,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "letter",
+                                        "x":  419,
+                                        "y":  969,
+                                        "width":  45,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  469,
+                                        "y":  969,
+                                        "width":  17,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "interest",
+                                        "x":  492,
+                                        "y":  970,
+                                        "width":  64,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  562,
+                                        "y":  969,
+                                        "width":  30,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "obtaining teacher recommendations.",
+                      "x":  83,
+                      "y":  998,
+                      "words":  [
+                                    {
+                                        "text":  "obtaining",
+                                        "x":  83,
+                                        "y":  998,
+                                        "width":  79,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "teacher",
+                                        "x":  167,
+                                        "y":  998,
+                                        "width":  65,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "recommendations.",
+                                        "x":  238,
+                                        "y":  998,
+                                        "width":  156,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "New Mexico Military Institute — Academic Catalog - 2026-27",
+                      "x":  96,
+                      "y":  1694,
+                      "words":  [
+                                    {
+                                        "text":  "New",
+                                        "x":  96,
+                                        "y":  1695,
+                                        "width":  39,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  141,
+                                        "y":  1694,
+                                        "width":  61,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Military",
+                                        "x":  209,
+                                        "y":  1694,
+                                        "width":  66,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Institute",
+                                        "x":  281,
+                                        "y":  1694,
+                                        "width":  71,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "—",
+                                        "x":  357,
+                                        "y":  1701,
+                                        "width":  12,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Academic",
+                                        "x":  373,
+                                        "y":  1694,
+                                        "width":  83,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Catalog",
+                                        "x":  462,
+                                        "y":  1694,
+                                        "width":  64,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  531,
+                                        "y":  1702,
+                                        "width":  6,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "2026-27",
+                                        "x":  542,
+                                        "y":  1695,
+                                        "width":  69,
+                                        "height":  14
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "their application. Induction takes place during the spring semester",
+                      "x":  746,
+                      "y":  112,
+                      "words":  [
+                                    {
+                                        "text":  "their",
+                                        "x":  746,
+                                        "y":  112,
+                                        "width":  41,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "application.",
+                                        "x":  792,
+                                        "y":  112,
+                                        "width":  97,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Induction",
+                                        "x":  896,
+                                        "y":  112,
+                                        "width":  78,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "takes",
+                                        "x":  980,
+                                        "y":  112,
+                                        "width":  44,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "place",
+                                        "x":  1030,
+                                        "y":  112,
+                                        "width":  43,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "during",
+                                        "x":  1079,
+                                        "y":  112,
+                                        "width":  54,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1138,
+                                        "y":  112,
+                                        "width":  27,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "spring",
+                                        "x":  1171,
+                                        "y":  113,
+                                        "width":  51,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "semester",
+                                        "x":  1227,
+                                        "y":  114,
+                                        "width":  78,
+                                        "height":  13
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(formal induction).",
+                      "x":  748,
+                      "y":  141,
+                      "words":  [
+                                    {
+                                        "text":  "(formal",
+                                        "x":  748,
+                                        "y":  141,
+                                        "width":  59,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "induction).",
+                                        "x":  814,
+                                        "y":  141,
+                                        "width":  89,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "High School Dual Graduate Program",
+                      "x":  748,
+                      "y":  276,
+                      "words":  [
+                                    {
+                                        "text":  "High",
+                                        "x":  748,
+                                        "y":  276,
+                                        "width":  49,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "School",
+                                        "x":  805,
+                                        "y":  276,
+                                        "width":  75,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Dual",
+                                        "x":  889,
+                                        "y":  276,
+                                        "width":  49,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Graduate",
+                                        "x":  947,
+                                        "y":  276,
+                                        "width":  106,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Program",
+                                        "x":  1062,
+                                        "y":  278,
+                                        "width":  95,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The New Mexico Military Institute is a College Prep High School and",
+                      "x":  746,
+                      "y":  336,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  746,
+                                        "y":  336,
+                                        "width":  31,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  784,
+                                        "y":  337,
+                                        "width":  37,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  827,
+                                        "y":  337,
+                                        "width":  60,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Military",
+                                        "x":  893,
+                                        "y":  336,
+                                        "width":  64,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Institute",
+                                        "x":  964,
+                                        "y":  337,
+                                        "width":  68,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  1039,
+                                        "y":  337,
+                                        "width":  11,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  1056,
+                                        "y":  341,
+                                        "width":  8,
+                                        "height":  10
+                                    },
+                                    {
+                                        "text":  "College",
+                                        "x":  1071,
+                                        "y":  336,
+                                        "width":  60,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Prep",
+                                        "x":  1138,
+                                        "y":  337,
+                                        "width":  37,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "High",
+                                        "x":  1182,
+                                        "y":  336,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "School",
+                                        "x":  1224,
+                                        "y":  336,
+                                        "width":  54,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  1285,
+                                        "y":  337,
+                                        "width":  30,
+                                        "height":  14
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Junior College that offers a Dual Graduate Program. This program is",
+                      "x":  746,
+                      "y":  366,
+                      "words":  [
+                                    {
+                                        "text":  "Junior",
+                                        "x":  746,
+                                        "y":  366,
+                                        "width":  52,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "College",
+                                        "x":  803,
+                                        "y":  366,
+                                        "width":  61,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  869,
+                                        "y":  366,
+                                        "width":  34,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "offers",
+                                        "x":  909,
+                                        "y":  366,
+                                        "width":  48,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  963,
+                                        "y":  370,
+                                        "width":  8,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "Dual",
+                                        "x":  979,
+                                        "y":  366,
+                                        "width":  36,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Graduate",
+                                        "x":  1021,
+                                        "y":  366,
+                                        "width":  78,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Program.",
+                                        "x":  1105,
+                                        "y":  367,
+                                        "width":  76,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "This",
+                                        "x":  1191,
+                                        "y":  366,
+                                        "width":  33,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "program",
+                                        "x":  1231,
+                                        "y":  370,
+                                        "width":  70,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  1308,
+                                        "y":  366,
+                                        "width":  11,
+                                        "height":  14
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "designed to address the aspiration of academically exceptional high",
+                      "x":  747,
+                      "y":  395,
+                      "words":  [
+                                    {
+                                        "text":  "designed",
+                                        "x":  747,
+                                        "y":  395,
+                                        "width":  74,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  827,
+                                        "y":  397,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "address",
+                                        "x":  850,
+                                        "y":  395,
+                                        "width":  65,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  920,
+                                        "y":  395,
+                                        "width":  28,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "aspiration",
+                                        "x":  954,
+                                        "y":  395,
+                                        "width":  82,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  1042,
+                                        "y":  395,
+                                        "width":  17,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "academically",
+                                        "x":  1064,
+                                        "y":  395,
+                                        "width":  108,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "exceptional",
+                                        "x":  1178,
+                                        "y":  395,
+                                        "width":  96,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "high",
+                                        "x":  1281,
+                                        "y":  395,
+                                        "width":  34,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "school cadets who are committed to earning their high school",
+                      "x":  747,
+                      "y":  424,
+                      "words":  [
+                                    {
+                                        "text":  "school",
+                                        "x":  747,
+                                        "y":  424,
+                                        "width":  53,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "cadets",
+                                        "x":  806,
+                                        "y":  424,
+                                        "width":  54,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "who",
+                                        "x":  866,
+                                        "y":  424,
+                                        "width":  35,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  907,
+                                        "y":  428,
+                                        "width":  26,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "committed",
+                                        "x":  939,
+                                        "y":  424,
+                                        "width":  91,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1036,
+                                        "y":  426,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "earning",
+                                        "x":  1060,
+                                        "y":  424,
+                                        "width":  62,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "their",
+                                        "x":  1127,
+                                        "y":  424,
+                                        "width":  40,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "high",
+                                        "x":  1173,
+                                        "y":  424,
+                                        "width":  34,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "school",
+                                        "x":  1214,
+                                        "y":  424,
+                                        "width":  52,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "diploma and college degree with New Mexico Military Institute. A",
+                      "x":  747,
+                      "y":  453,
+                      "words":  [
+                                    {
+                                        "text":  "diploma",
+                                        "x":  747,
+                                        "y":  453,
+                                        "width":  67,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  821,
+                                        "y":  453,
+                                        "width":  30,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "college",
+                                        "x":  857,
+                                        "y":  453,
+                                        "width":  58,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  922,
+                                        "y":  453,
+                                        "width":  57,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "with",
+                                        "x":  985,
+                                        "y":  453,
+                                        "width":  36,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  1028,
+                                        "y":  454,
+                                        "width":  37,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  1071,
+                                        "y":  454,
+                                        "width":  59,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Military",
+                                        "x":  1137,
+                                        "y":  453,
+                                        "width":  64,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Institute.",
+                                        "x":  1207,
+                                        "y":  454,
+                                        "width":  74,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "A",
+                                        "x":  1292,
+                                        "y":  454,
+                                        "width":  11,
+                                        "height":  14
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cadet in our Dual Graduate Program will be on a pathway toward",
+                      "x":  747,
+                      "y":  482,
+                      "words":  [
+                                    {
+                                        "text":  "cadet",
+                                        "x":  747,
+                                        "y":  482,
+                                        "width":  46,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  799,
+                                        "y":  482,
+                                        "width":  14,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "our",
+                                        "x":  819,
+                                        "y":  486,
+                                        "width":  28,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "Dual",
+                                        "x":  854,
+                                        "y":  482,
+                                        "width":  35,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Graduate",
+                                        "x":  896,
+                                        "y":  482,
+                                        "width":  78,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Program",
+                                        "x":  981,
+                                        "y":  483,
+                                        "width":  69,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "will",
+                                        "x":  1057,
+                                        "y":  482,
+                                        "width":  27,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  1091,
+                                        "y":  482,
+                                        "width":  19,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "on",
+                                        "x":  1116,
+                                        "y":  486,
+                                        "width":  20,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  1143,
+                                        "y":  486,
+                                        "width":  8,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "pathway",
+                                        "x":  1158,
+                                        "y":  482,
+                                        "width":  72,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "toward",
+                                        "x":  1235,
+                                        "y":  482,
+                                        "width":  59,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "earning an associate degree through New Mexico Military Institute",
+                      "x":  747,
+                      "y":  511,
+                      "words":  [
+                                    {
+                                        "text":  "earning",
+                                        "x":  747,
+                                        "y":  512,
+                                        "width":  63,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "an",
+                                        "x":  816,
+                                        "y":  515,
+                                        "width":  19,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "associate",
+                                        "x":  841,
+                                        "y":  512,
+                                        "width":  77,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  924,
+                                        "y":  511,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "through",
+                                        "x":  987,
+                                        "y":  511,
+                                        "width":  66,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  1060,
+                                        "y":  512,
+                                        "width":  37,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  1104,
+                                        "y":  512,
+                                        "width":  59,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Military",
+                                        "x":  1170,
+                                        "y":  511,
+                                        "width":  63,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Institute",
+                                        "x":  1240,
+                                        "y":  512,
+                                        "width":  69,
+                                        "height":  14
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "upon the completion of all high school and college course work. The",
+                      "x":  748,
+                      "y":  540,
+                      "words":  [
+                                    {
+                                        "text":  "upon",
+                                        "x":  748,
+                                        "y":  545,
+                                        "width":  41,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  795,
+                                        "y":  540,
+                                        "width":  27,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "completion",
+                                        "x":  828,
+                                        "y":  540,
+                                        "width":  94,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  929,
+                                        "y":  540,
+                                        "width":  17,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "all",
+                                        "x":  951,
+                                        "y":  540,
+                                        "width":  17,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "high",
+                                        "x":  975,
+                                        "y":  540,
+                                        "width":  35,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "school",
+                                        "x":  1016,
+                                        "y":  540,
+                                        "width":  52,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  1075,
+                                        "y":  540,
+                                        "width":  30,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "college",
+                                        "x":  1112,
+                                        "y":  540,
+                                        "width":  58,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "course",
+                                        "x":  1176,
+                                        "y":  545,
+                                        "width":  55,
+                                        "height":  10
+                                    },
+                                    {
+                                        "text":  "work.",
+                                        "x":  1237,
+                                        "y":  540,
+                                        "width":  46,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "The",
+                                        "x":  1293,
+                                        "y":  540,
+                                        "width":  31,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Dual Graduate Program has a curriculum that is broad enough to",
+                      "x":  748,
+                      "y":  569,
+                      "words":  [
+                                    {
+                                        "text":  "Dual",
+                                        "x":  748,
+                                        "y":  569,
+                                        "width":  36,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "Graduate",
+                                        "x":  790,
+                                        "y":  569,
+                                        "width":  78,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Program",
+                                        "x":  875,
+                                        "y":  570,
+                                        "width":  70,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "has",
+                                        "x":  952,
+                                        "y":  569,
+                                        "width":  27,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  985,
+                                        "y":  574,
+                                        "width":  8,
+                                        "height":  10
+                                    },
+                                    {
+                                        "text":  "curriculum",
+                                        "x":  999,
+                                        "y":  569,
+                                        "width":  89,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  1094,
+                                        "y":  569,
+                                        "width":  34,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  1135,
+                                        "y":  570,
+                                        "width":  11,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "broad",
+                                        "x":  1152,
+                                        "y":  569,
+                                        "width":  48,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "enough",
+                                        "x":  1207,
+                                        "y":  569,
+                                        "width":  62,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1275,
+                                        "y":  571,
+                                        "width":  17,
+                                        "height":  13
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "empower cadets to advance in a college environment and field of",
+                      "x":  747,
+                      "y":  598,
+                      "words":  [
+                                    {
+                                        "text":  "empower",
+                                        "x":  747,
+                                        "y":  603,
+                                        "width":  81,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "cadets",
+                                        "x":  833,
+                                        "y":  599,
+                                        "width":  54,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  892,
+                                        "y":  601,
+                                        "width":  17,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "advance",
+                                        "x":  915,
+                                        "y":  599,
+                                        "width":  69,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  990,
+                                        "y":  599,
+                                        "width":  14,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  1010,
+                                        "y":  603,
+                                        "width":  9,
+                                        "height":  10
+                                    },
+                                    {
+                                        "text":  "college",
+                                        "x":  1025,
+                                        "y":  599,
+                                        "width":  58,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "environment",
+                                        "x":  1089,
+                                        "y":  599,
+                                        "width":  108,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  1203,
+                                        "y":  599,
+                                        "width":  30,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "field",
+                                        "x":  1239,
+                                        "y":  598,
+                                        "width":  36,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  1281,
+                                        "y":  598,
+                                        "width":  18,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "interest while continuing to fulfill their high school academic",
+                      "x":  748,
+                      "y":  627,
+                      "words":  [
+                                    {
+                                        "text":  "interest",
+                                        "x":  748,
+                                        "y":  628,
+                                        "width":  64,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "while",
+                                        "x":  817,
+                                        "y":  628,
+                                        "width":  44,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "continuing",
+                                        "x":  868,
+                                        "y":  628,
+                                        "width":  88,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  961,
+                                        "y":  630,
+                                        "width":  18,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "fulfill",
+                                        "x":  984,
+                                        "y":  627,
+                                        "width":  41,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "their",
+                                        "x":  1031,
+                                        "y":  628,
+                                        "width":  40,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "high",
+                                        "x":  1077,
+                                        "y":  628,
+                                        "width":  34,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "school",
+                                        "x":  1118,
+                                        "y":  628,
+                                        "width":  52,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "academic",
+                                        "x":  1177,
+                                        "y":  628,
+                                        "width":  79,
+                                        "height":  14
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "requirementsv",
+                      "x":  748,
+                      "y":  657,
+                      "words":  [
+                                    {
+                                        "text":  "requirementsv",
+                                        "x":  748,
+                                        "y":  657,
+                                        "width":  119,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "With 18 concentrations in our junior college, t is allows our Dual",
+                      "x":  747,
+                      "y":  709,
+                      "words":  [
+                                    {
+                                        "text":  "With",
+                                        "x":  747,
+                                        "y":  709,
+                                        "width":  39,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "18",
+                                        "x":  794,
+                                        "y":  709,
+                                        "width":  19,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "concentrations",
+                                        "x":  818,
+                                        "y":  709,
+                                        "width":  126,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  950,
+                                        "y":  709,
+                                        "width":  13,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "our",
+                                        "x":  970,
+                                        "y":  713,
+                                        "width":  28,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "junior",
+                                        "x":  1002,
+                                        "y":  709,
+                                        "width":  51,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "college,",
+                                        "x":  1058,
+                                        "y":  709,
+                                        "width":  63,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "t",
+                                        "x":  1127,
+                                        "y":  711,
+                                        "width":  6,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  1146,
+                                        "y":  709,
+                                        "width":  11,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "allows",
+                                        "x":  1163,
+                                        "y":  709,
+                                        "width":  52,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "our",
+                                        "x":  1221,
+                                        "y":  713,
+                                        "width":  28,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "Dual",
+                                        "x":  1256,
+                                        "y":  709,
+                                        "width":  35,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Graduate cadets the ppportunity to excel in future career areas of",
+                      "x":  747,
+                      "y":  738,
+                      "words":  [
+                                    {
+                                        "text":  "Graduate",
+                                        "x":  747,
+                                        "y":  738,
+                                        "width":  78,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "cadets",
+                                        "x":  831,
+                                        "y":  738,
+                                        "width":  54,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  890,
+                                        "y":  738,
+                                        "width":  28,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "ppportunity",
+                                        "x":  924,
+                                        "y":  739,
+                                        "width":  100,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1029,
+                                        "y":  740,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "excel",
+                                        "x":  1052,
+                                        "y":  738,
+                                        "width":  41,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  1100,
+                                        "y":  739,
+                                        "width":  13,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "future",
+                                        "x":  1119,
+                                        "y":  738,
+                                        "width":  52,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "career",
+                                        "x":  1177,
+                                        "y":  742,
+                                        "width":  53,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "areas",
+                                        "x":  1236,
+                                        "y":  742,
+                                        "width":  44,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  1286,
+                                        "y":  738,
+                                        "width":  17,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "their choice. As they move on to their higher educational",
+                      "x":  747,
+                      "y":  767,
+                      "words":  [
+                                    {
+                                        "text":  "their",
+                                        "x":  747,
+                                        "y":  767,
+                                        "width":  40,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "choice.",
+                                        "x":  792,
+                                        "y":  767,
+                                        "width":  58,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "As",
+                                        "x":  860,
+                                        "y":  768,
+                                        "width":  20,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "they",
+                                        "x":  885,
+                                        "y":  767,
+                                        "width":  38,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "move",
+                                        "x":  929,
+                                        "y":  771,
+                                        "width":  45,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "on",
+                                        "x":  980,
+                                        "y":  771,
+                                        "width":  20,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1006,
+                                        "y":  769,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "their",
+                                        "x":  1029,
+                                        "y":  767,
+                                        "width":  39,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "higher",
+                                        "x":  1074,
+                                        "y":  767,
+                                        "width":  53,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "educational",
+                                        "x":  1133,
+                                        "y":  767,
+                                        "width":  97,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "institutions, our cadets are duly prepared for continuing in their",
+                      "x":  748,
+                      "y":  796,
+                      "words":  [
+                                    {
+                                        "text":  "institutions,",
+                                        "x":  748,
+                                        "y":  797,
+                                        "width":  97,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "our",
+                                        "x":  852,
+                                        "y":  800,
+                                        "width":  28,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "cadets",
+                                        "x":  886,
+                                        "y":  796,
+                                        "width":  54,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "are",
+                                        "x":  945,
+                                        "y":  800,
+                                        "width":  27,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "duly",
+                                        "x":  978,
+                                        "y":  796,
+                                        "width":  35,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "prepared",
+                                        "x":  1019,
+                                        "y":  796,
+                                        "width":  75,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  1100,
+                                        "y":  796,
+                                        "width":  24,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "continuing",
+                                        "x":  1130,
+                                        "y":  797,
+                                        "width":  88,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  1225,
+                                        "y":  797,
+                                        "width":  13,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "their",
+                                        "x":  1244,
+                                        "y":  796,
+                                        "width":  40,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "postsecondary success.",
+                      "x":  748,
+                      "y":  825,
+                      "words":  [
+                                    {
+                                        "text":  "postsecondary",
+                                        "x":  748,
+                                        "y":  825,
+                                        "width":  122,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "success.",
+                                        "x":  875,
+                                        "y":  829,
+                                        "width":  67,
+                                        "height":  11
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Beginning the spring semester of the 9th grade year, each college",
+                      "x":  748,
+                      "y":  877,
+                      "words":  [
+                                    {
+                                        "text":  "Beginning",
+                                        "x":  748,
+                                        "y":  878,
+                                        "width":  82,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  835,
+                                        "y":  877,
+                                        "width":  27,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "spring",
+                                        "x":  868,
+                                        "y":  878,
+                                        "width":  51,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "semester",
+                                        "x":  924,
+                                        "y":  879,
+                                        "width":  78,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  1007,
+                                        "y":  877,
+                                        "width":  17,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1028,
+                                        "y":  877,
+                                        "width":  28,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "9th",
+                                        "x":  1062,
+                                        "y":  877,
+                                        "width":  26,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "grade",
+                                        "x":  1095,
+                                        "y":  877,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "year,",
+                                        "x":  1147,
+                                        "y":  881,
+                                        "width":  41,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "each",
+                                        "x":  1194,
+                                        "y":  877,
+                                        "width":  38,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "college",
+                                        "x":  1239,
+                                        "y":  877,
+                                        "width":  58,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "course a cadet successfully completes in our Dual Graduate Program",
+                      "x":  747,
+                      "y":  906,
+                      "words":  [
+                                    {
+                                        "text":  "course",
+                                        "x":  747,
+                                        "y":  911,
+                                        "width":  55,
+                                        "height":  10
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  808,
+                                        "y":  911,
+                                        "width":  8,
+                                        "height":  10
+                                    },
+                                    {
+                                        "text":  "cadet",
+                                        "x":  823,
+                                        "y":  907,
+                                        "width":  46,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "successfully",
+                                        "x":  874,
+                                        "y":  906,
+                                        "width":  99,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "completes",
+                                        "x":  978,
+                                        "y":  907,
+                                        "width":  87,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  1071,
+                                        "y":  907,
+                                        "width":  13,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "our",
+                                        "x":  1091,
+                                        "y":  911,
+                                        "width":  28,
+                                        "height":  10
+                                    },
+                                    {
+                                        "text":  "Dual",
+                                        "x":  1125,
+                                        "y":  907,
+                                        "width":  36,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Graduate",
+                                        "x":  1168,
+                                        "y":  907,
+                                        "width":  78,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Program",
+                                        "x":  1253,
+                                        "y":  907,
+                                        "width":  69,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "earns both college and high school credit that aligns with one of the",
+                      "x":  747,
+                      "y":  935,
+                      "words":  [
+                                    {
+                                        "text":  "earns",
+                                        "x":  747,
+                                        "y":  940,
+                                        "width":  45,
+                                        "height":  10
+                                    },
+                                    {
+                                        "text":  "both",
+                                        "x":  799,
+                                        "y":  936,
+                                        "width":  37,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "college",
+                                        "x":  843,
+                                        "y":  936,
+                                        "width":  58,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  907,
+                                        "y":  936,
+                                        "width":  30,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "high",
+                                        "x":  944,
+                                        "y":  936,
+                                        "width":  34,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "school",
+                                        "x":  985,
+                                        "y":  936,
+                                        "width":  52,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  1043,
+                                        "y":  936,
+                                        "width":  48,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  1097,
+                                        "y":  935,
+                                        "width":  34,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "aligns",
+                                        "x":  1136,
+                                        "y":  936,
+                                        "width":  48,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "with",
+                                        "x":  1189,
+                                        "y":  936,
+                                        "width":  36,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "one",
+                                        "x":  1232,
+                                        "y":  940,
+                                        "width":  31,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  1269,
+                                        "y":  936,
+                                        "width":  17,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1290,
+                                        "y":  936,
+                                        "width":  27,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "associate degrees awarded by New Mexico Military Institute. Cadets",
+                      "x":  747,
+                      "y":  964,
+                      "words":  [
+                                    {
+                                        "text":  "associate",
+                                        "x":  747,
+                                        "y":  965,
+                                        "width":  77,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "degrees",
+                                        "x":  830,
+                                        "y":  964,
+                                        "width":  65,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "awarded",
+                                        "x":  901,
+                                        "y":  965,
+                                        "width":  73,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "by",
+                                        "x":  981,
+                                        "y":  965,
+                                        "width":  19,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  1006,
+                                        "y":  966,
+                                        "width":  37,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  1049,
+                                        "y":  966,
+                                        "width":  59,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Military",
+                                        "x":  1115,
+                                        "y":  965,
+                                        "width":  64,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Institute.",
+                                        "x":  1185,
+                                        "y":  965,
+                                        "width":  74,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Cadets",
+                                        "x":  1270,
+                                        "y":  965,
+                                        "width":  56,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "can choose to earn an Associate in Arts or an Associate in Science",
+                      "x":  747,
+                      "y":  994,
+                      "words":  [
+                                    {
+                                        "text":  "can",
+                                        "x":  747,
+                                        "y":  998,
+                                        "width":  28,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "choose",
+                                        "x":  781,
+                                        "y":  994,
+                                        "width":  59,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  846,
+                                        "y":  996,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "earn",
+                                        "x":  869,
+                                        "y":  998,
+                                        "width":  36,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "an",
+                                        "x":  912,
+                                        "y":  996,
+                                        "width":  21,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Associate",
+                                        "x":  937,
+                                        "y":  994,
+                                        "width":  79,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  1022,
+                                        "y":  995,
+                                        "width":  14,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  1042,
+                                        "y":  995,
+                                        "width":  33,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  1081,
+                                        "y":  998,
+                                        "width":  18,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "an",
+                                        "x":  1104,
+                                        "y":  998,
+                                        "width":  19,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "Associate",
+                                        "x":  1129,
+                                        "y":  994,
+                                        "width":  79,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  1215,
+                                        "y":  994,
+                                        "width":  13,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  1234,
+                                        "y":  994,
+                                        "width":  62,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Degree. All coursework leading to the successful completion of the",
+                      "x":  748,
+                      "y":  1020,
+                      "words":  [
+                                    {
+                                        "text":  "Degree.",
+                                        "x":  748,
+                                        "y":  1024,
+                                        "width":  63,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "All",
+                                        "x":  817,
+                                        "y":  1023,
+                                        "width":  21,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "coursework",
+                                        "x":  844,
+                                        "y":  1023,
+                                        "width":  98,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "leading",
+                                        "x":  948,
+                                        "y":  1023,
+                                        "width":  60,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1013,
+                                        "y":  1025,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1035,
+                                        "y":  1023,
+                                        "width":  28,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "successful",
+                                        "x":  1069,
+                                        "y":  1020,
+                                        "width":  83,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "completion",
+                                        "x":  1159,
+                                        "y":  1023,
+                                        "width":  94,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  1259,
+                                        "y":  1023,
+                                        "width":  17,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1281,
+                                        "y":  1023,
+                                        "width":  27,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Dual Graduate Program must be taken at New Mexico Military",
+                      "x":  748,
+                      "y":  1052,
+                      "words":  [
+                                    {
+                                        "text":  "Dual",
+                                        "x":  748,
+                                        "y":  1052,
+                                        "width":  36,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Graduate",
+                                        "x":  790,
+                                        "y":  1052,
+                                        "width":  78,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Program",
+                                        "x":  875,
+                                        "y":  1053,
+                                        "width":  70,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "must",
+                                        "x":  952,
+                                        "y":  1054,
+                                        "width":  41,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  999,
+                                        "y":  1052,
+                                        "width":  19,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "taken",
+                                        "x":  1024,
+                                        "y":  1052,
+                                        "width":  46,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "at",
+                                        "x":  1077,
+                                        "y":  1054,
+                                        "width":  16,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  1099,
+                                        "y":  1053,
+                                        "width":  37,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  1142,
+                                        "y":  1053,
+                                        "width":  59,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Military",
+                                        "x":  1208,
+                                        "y":  1052,
+                                        "width":  64,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(nstitute.",
+                      "x":  748,
+                      "y":  1082,
+                      "words":  [
+                                    {
+                                        "text":  "(nstitute.",
+                                        "x":  748,
+                                        "y":  1082,
+                                        "width":  73,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "With the rising cost of college, co-enrollment or the New Mexico",
+                      "x":  747,
+                      "y":  1133,
+                      "words":  [
+                                    {
+                                        "text":  "With",
+                                        "x":  747,
+                                        "y":  1133,
+                                        "width":  39,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  792,
+                                        "y":  1133,
+                                        "width":  28,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "rising",
+                                        "x":  826,
+                                        "y":  1134,
+                                        "width":  44,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "cost",
+                                        "x":  876,
+                                        "y":  1135,
+                                        "width":  34,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  916,
+                                        "y":  1133,
+                                        "width":  17,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "college,",
+                                        "x":  937,
+                                        "y":  1133,
+                                        "width":  63,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "co-enrollment",
+                                        "x":  1007,
+                                        "y":  1133,
+                                        "width":  119,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  1131,
+                                        "y":  1137,
+                                        "width":  18,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1154,
+                                        "y":  1133,
+                                        "width":  27,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  1188,
+                                        "y":  1134,
+                                        "width":  37,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  1231,
+                                        "y":  1134,
+                                        "width":  60,
+                                        "height":  14
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Military Institute Dual Graduate Program is becoming an increasingly",
+                      "x":  748,
+                      "y":  1162,
+                      "words":  [
+                                    {
+                                        "text":  "Military",
+                                        "x":  748,
+                                        "y":  1162,
+                                        "width":  64,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Institute",
+                                        "x":  818,
+                                        "y":  1163,
+                                        "width":  69,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Dual",
+                                        "x":  894,
+                                        "y":  1162,
+                                        "width":  36,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Graduate",
+                                        "x":  936,
+                                        "y":  1162,
+                                        "width":  78,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Program",
+                                        "x":  1021,
+                                        "y":  1163,
+                                        "width":  70,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  1098,
+                                        "y":  1163,
+                                        "width":  11,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "becoming",
+                                        "x":  1115,
+                                        "y":  1162,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "an",
+                                        "x":  1202,
+                                        "y":  1167,
+                                        "width":  19,
+                                        "height":  10
+                                    },
+                                    {
+                                        "text":  "increasingly",
+                                        "x":  1228,
+                                        "y":  1162,
+                                        "width":  99,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "popular choice for high school cadets. The New Mexico Military",
+                      "x":  748,
+                      "y":  1191,
+                      "words":  [
+                                    {
+                                        "text":  "popular",
+                                        "x":  748,
+                                        "y":  1192,
+                                        "width":  64,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "choice",
+                                        "x":  817,
+                                        "y":  1192,
+                                        "width":  53,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  876,
+                                        "y":  1191,
+                                        "width":  24,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "high",
+                                        "x":  906,
+                                        "y":  1191,
+                                        "width":  34,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "school",
+                                        "x":  947,
+                                        "y":  1191,
+                                        "width":  52,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "cadets.",
+                                        "x":  1006,
+                                        "y":  1191,
+                                        "width":  58,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "The",
+                                        "x":  1079,
+                                        "y":  1192,
+                                        "width":  31,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  1117,
+                                        "y":  1192,
+                                        "width":  37,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  1160,
+                                        "y":  1192,
+                                        "width":  59,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "Military",
+                                        "x":  1226,
+                                        "y":  1192,
+                                        "width":  64,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Institute Dual Graduate Program offers a great option for high",
+                      "x":  748,
+                      "y":  1221,
+                      "words":  [
+                                    {
+                                        "text":  "Institute",
+                                        "x":  748,
+                                        "y":  1221,
+                                        "width":  69,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Dual",
+                                        "x":  824,
+                                        "y":  1221,
+                                        "width":  35,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Graduate",
+                                        "x":  866,
+                                        "y":  1221,
+                                        "width":  78,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "Program",
+                                        "x":  951,
+                                        "y":  1222,
+                                        "width":  70,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "offers",
+                                        "x":  1027,
+                                        "y":  1221,
+                                        "width":  48,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  1081,
+                                        "y":  1225,
+                                        "width":  8,
+                                        "height":  10
+                                    },
+                                    {
+                                        "text":  "great",
+                                        "x":  1095,
+                                        "y":  1223,
+                                        "width":  44,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "option",
+                                        "x":  1144,
+                                        "y":  1221,
+                                        "width":  54,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  1204,
+                                        "y":  1221,
+                                        "width":  24,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "high",
+                                        "x":  1234,
+                                        "y":  1221,
+                                        "width":  34,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "school cadets in terms of opportunities and financial incentives.",
+                      "x":  747,
+                      "y":  1250,
+                      "words":  [
+                                    {
+                                        "text":  "school",
+                                        "x":  747,
+                                        "y":  1250,
+                                        "width":  53,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "cadets",
+                                        "x":  806,
+                                        "y":  1250,
+                                        "width":  54,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  866,
+                                        "y":  1250,
+                                        "width":  14,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "terms",
+                                        "x":  886,
+                                        "y":  1252,
+                                        "width":  48,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  940,
+                                        "y":  1250,
+                                        "width":  17,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "opportunities",
+                                        "x":  962,
+                                        "y":  1250,
+                                        "width":  113,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  1081,
+                                        "y":  1250,
+                                        "width":  30,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "financial",
+                                        "x":  1117,
+                                        "y":  1250,
+                                        "width":  70,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "incentives.",
+                                        "x":  1194,
+                                        "y":  1250,
+                                        "width":  88,
+                                        "height":  15
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "For eligibility requirements, see the online academic catalog.",
+                      "x":  748,
+                      "y":  1302,
+                      "words":  [
+                                    {
+                                        "text":  "For",
+                                        "x":  748,
+                                        "y":  1303,
+                                        "width":  26,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "eligibility",
+                                        "x":  779,
+                                        "y":  1302,
+                                        "width":  75,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "requirements,",
+                                        "x":  861,
+                                        "y":  1302,
+                                        "width":  117,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "see",
+                                        "x":  985,
+                                        "y":  1306,
+                                        "width":  27,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1018,
+                                        "y":  1302,
+                                        "width":  27,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "online",
+                                        "x":  1051,
+                                        "y":  1302,
+                                        "width":  51,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "academic",
+                                        "x":  1108,
+                                        "y":  1302,
+                                        "width":  79,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "catalog.",
+                                        "x":  1193,
+                                        "y":  1302,
+                                        "width":  64,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "38",
+                      "x":  1295,
+                      "y":  1695,
+                      "words":  [
+                                    {
+                                        "text":  "38",
+                                        "x":  1295,
+                                        "y":  1695,
+                                        "width":  19,
+                                        "height":  14
+                                    }
+                                ]
+                  }
+              ]
+}

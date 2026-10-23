@@ -1,0 +1,2651 @@
+﻿{
+    "pdf_page":  1,
+    "lines":  [
+                  {
+                      "text":  "EDUCATIONAL REQUIREMENTS",
+                      "x":  125,
+                      "y":  85,
+                      "words":  [
+                                    {
+                                        "text":  "EDUCATIONAL",
+                                        "x":  125,
+                                        "y":  85,
+                                        "width":  405,
+                                        "height":  39
+                                    },
+                                    {
+                                        "text":  "REQUIREMENTS",
+                                        "x":  545,
+                                        "y":  85,
+                                        "width":  447,
+                                        "height":  50
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GENERAL REQUIREMENTS FOR",
+                      "x":  125,
+                      "y":  167,
+                      "words":  [
+                                    {
+                                        "text":  "GENERAL",
+                                        "x":  125,
+                                        "y":  167,
+                                        "width":  155,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "REQUIREMENTS",
+                                        "x":  288,
+                                        "y":  167,
+                                        "width":  262,
+                                        "height":  29
+                                    },
+                                    {
+                                        "text":  "FOR",
+                                        "x":  559,
+                                        "y":  167,
+                                        "width":  66,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GRADUATION",
+                      "x":  125,
+                      "y":  206,
+                      "words":  [
+                                    {
+                                        "text":  "GRADUATION",
+                                        "x":  125,
+                                        "y":  206,
+                                        "width":  221,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "EDUCATIONAL PLANS OF STUDY",
+                      "x":  124,
+                      "y":  258,
+                      "words":  [
+                                    {
+                                        "text":  "EDUCATIONAL",
+                                        "x":  124,
+                                        "y":  258,
+                                        "width":  203,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "PLANS",
+                                        "x":  334,
+                                        "y":  259,
+                                        "width":  87,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "OF",
+                                        "x":  430,
+                                        "y":  259,
+                                        "width":  35,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "STUDY",
+                                        "x":  473,
+                                        "y":  258,
+                                        "width":  93,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Only Educational Plans of Study which have been",
+                      "x":  125,
+                      "y":  306,
+                      "words":  [
+                                    {
+                                        "text":  "Only",
+                                        "x":  125,
+                                        "y":  306,
+                                        "width":  52,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Educational",
+                                        "x":  183,
+                                        "y":  306,
+                                        "width":  121,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Plans",
+                                        "x":  312,
+                                        "y":  306,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  372,
+                                        "y":  306,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Study",
+                                        "x":  399,
+                                        "y":  306,
+                                        "width":  57,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "which",
+                                        "x":  462,
+                                        "y":  306,
+                                        "width":  61,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "have",
+                                        "x":  531,
+                                        "y":  306,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "been",
+                                        "x":  583,
+                                        "y":  306,
+                                        "width":  46,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "signed by the student and adviser and filed in the",
+                      "x":  125,
+                      "y":  336,
+                      "words":  [
+                                    {
+                                        "text":  "signed",
+                                        "x":  125,
+                                        "y":  337,
+                                        "width":  63,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "by",
+                                        "x":  195,
+                                        "y":  337,
+                                        "width":  24,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  226,
+                                        "y":  337,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "student",
+                                        "x":  264,
+                                        "y":  337,
+                                        "width":  74,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  346,
+                                        "y":  337,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "adviser",
+                                        "x":  390,
+                                        "y":  337,
+                                        "width":  69,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  466,
+                                        "y":  337,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "filed",
+                                        "x":  510,
+                                        "y":  336,
+                                        "width":  45,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  563,
+                                        "y":  339,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  590,
+                                        "y":  337,
+                                        "width":  31,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Office of Enrollment Services will be honored. A",
+                      "x":  125,
+                      "y":  367,
+                      "words":  [
+                                    {
+                                        "text":  "Office",
+                                        "x":  125,
+                                        "y":  367,
+                                        "width":  64,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  196,
+                                        "y":  367,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Enrollment",
+                                        "x":  223,
+                                        "y":  367,
+                                        "width":  114,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Services",
+                                        "x":  345,
+                                        "y":  368,
+                                        "width":  79,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "will",
+                                        "x":  431,
+                                        "y":  367,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  476,
+                                        "y":  367,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "honored.",
+                                        "x":  506,
+                                        "y":  367,
+                                        "width":  88,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "A",
+                                        "x":  601,
+                                        "y":  368,
+                                        "width":  17,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "student\u0027s plan of study remains valid only as long as the",
+                      "x":  125,
+                      "y":  397,
+                      "words":  [
+                                    {
+                                        "text":  "student\u0027s",
+                                        "x":  125,
+                                        "y":  397,
+                                        "width":  86,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "plan",
+                                        "x":  219,
+                                        "y":  397,
+                                        "width":  43,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  269,
+                                        "y":  397,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "study",
+                                        "x":  296,
+                                        "y":  398,
+                                        "width":  54,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "remains",
+                                        "x":  357,
+                                        "y":  400,
+                                        "width":  78,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "valid",
+                                        "x":  443,
+                                        "y":  398,
+                                        "width":  48,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "only",
+                                        "x":  499,
+                                        "y":  397,
+                                        "width":  44,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  549,
+                                        "y":  405,
+                                        "width":  19,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "long",
+                                        "x":  575,
+                                        "y":  397,
+                                        "width":  44,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  626,
+                                        "y":  405,
+                                        "width":  18,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  652,
+                                        "y":  398,
+                                        "width":  31,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "student remains continuously enrolled at Mesalands",
+                      "x":  125,
+                      "y":  428,
+                      "words":  [
+                                    {
+                                        "text":  "student",
+                                        "x":  125,
+                                        "y":  428,
+                                        "width":  74,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "remains",
+                                        "x":  206,
+                                        "y":  430,
+                                        "width":  78,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "continuously",
+                                        "x":  292,
+                                        "y":  428,
+                                        "width":  130,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "enrolled",
+                                        "x":  428,
+                                        "y":  428,
+                                        "width":  81,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "at",
+                                        "x":  517,
+                                        "y":  434,
+                                        "width":  17,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Mesalands",
+                                        "x":  542,
+                                        "y":  428,
+                                        "width":  105,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Community College after signing the Educational Plan",
+                      "x":  125,
+                      "y":  458,
+                      "words":  [
+                                    {
+                                        "text":  "Community",
+                                        "x":  125,
+                                        "y":  459,
+                                        "width":  125,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "College",
+                                        "x":  256,
+                                        "y":  458,
+                                        "width":  75,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "after",
+                                        "x":  339,
+                                        "y":  458,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "signing",
+                                        "x":  392,
+                                        "y":  460,
+                                        "width":  73,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  472,
+                                        "y":  458,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Educational",
+                                        "x":  510,
+                                        "y":  458,
+                                        "width":  121,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Plan",
+                                        "x":  639,
+                                        "y":  458,
+                                        "width":  43,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of Study (at least one course per fall and spring semes-",
+                      "x":  125,
+                      "y":  489,
+                      "words":  [
+                                    {
+                                        "text":  "of",
+                                        "x":  125,
+                                        "y":  489,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Study",
+                                        "x":  151,
+                                        "y":  489,
+                                        "width":  58,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "(at",
+                                        "x":  217,
+                                        "y":  489,
+                                        "width":  24,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "least",
+                                        "x":  248,
+                                        "y":  489,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "one",
+                                        "x":  300,
+                                        "y":  496,
+                                        "width":  34,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "course",
+                                        "x":  342,
+                                        "y":  496,
+                                        "width":  63,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "per",
+                                        "x":  413,
+                                        "y":  496,
+                                        "width":  31,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "fall",
+                                        "x":  452,
+                                        "y":  489,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  491,
+                                        "y":  489,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "spring",
+                                        "x":  535,
+                                        "y":  491,
+                                        "width":  62,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "semes-",
+                                        "x":  604,
+                                        "y":  496,
+                                        "width":  65,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ters). In addition, the College does not guarantee that",
+                      "x":  125,
+                      "y":  519,
+                      "words":  [
+                                    {
+                                        "text":  "ters).",
+                                        "x":  125,
+                                        "y":  519,
+                                        "width":  46,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "In",
+                                        "x":  180,
+                                        "y":  520,
+                                        "width":  21,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "addition,",
+                                        "x":  209,
+                                        "y":  519,
+                                        "width":  89,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  306,
+                                        "y":  519,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "College",
+                                        "x":  345,
+                                        "y":  519,
+                                        "width":  75,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "does",
+                                        "x":  428,
+                                        "y":  519,
+                                        "width":  43,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "not",
+                                        "x":  479,
+                                        "y":  526,
+                                        "width":  33,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "guarantee",
+                                        "x":  519,
+                                        "y":  526,
+                                        "width":  97,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  625,
+                                        "y":  519,
+                                        "width":  39,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "courses needed for completion of a given Educational",
+                      "x":  125,
+                      "y":  549,
+                      "words":  [
+                                    {
+                                        "text":  "courses",
+                                        "x":  125,
+                                        "y":  557,
+                                        "width":  72,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "needed",
+                                        "x":  205,
+                                        "y":  549,
+                                        "width":  69,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  282,
+                                        "y":  549,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "completion",
+                                        "x":  317,
+                                        "y":  550,
+                                        "width":  112,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  437,
+                                        "y":  549,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  463,
+                                        "y":  557,
+                                        "width":  10,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "given",
+                                        "x":  480,
+                                        "y":  552,
+                                        "width":  53,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "Educational",
+                                        "x":  540,
+                                        "y":  549,
+                                        "width":  121,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Plan of Study will be offered beyond three years from",
+                      "x":  125,
+                      "y":  580,
+                      "words":  [
+                                    {
+                                        "text":  "Plan",
+                                        "x":  125,
+                                        "y":  580,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  176,
+                                        "y":  580,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Study",
+                                        "x":  203,
+                                        "y":  580,
+                                        "width":  58,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "will",
+                                        "x":  267,
+                                        "y":  580,
+                                        "width":  38,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  313,
+                                        "y":  580,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "offered",
+                                        "x":  343,
+                                        "y":  580,
+                                        "width":  69,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "beyond",
+                                        "x":  420,
+                                        "y":  580,
+                                        "width":  72,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "three",
+                                        "x":  500,
+                                        "y":  580,
+                                        "width":  50,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "years",
+                                        "x":  557,
+                                        "y":  587,
+                                        "width":  50,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "from",
+                                        "x":  615,
+                                        "y":  580,
+                                        "width":  48,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the date of signing for associate degree plans, or one",
+                      "x":  125,
+                      "y":  610,
+                      "words":  [
+                                    {
+                                        "text":  "the",
+                                        "x":  125,
+                                        "y":  610,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "date",
+                                        "x":  163,
+                                        "y":  610,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  212,
+                                        "y":  610,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "signing",
+                                        "x":  238,
+                                        "y":  612,
+                                        "width":  73,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  318,
+                                        "y":  610,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "associate",
+                                        "x":  353,
+                                        "y":  612,
+                                        "width":  86,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  447,
+                                        "y":  610,
+                                        "width":  64,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "plans,",
+                                        "x":  518,
+                                        "y":  610,
+                                        "width":  58,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  584,
+                                        "y":  618,
+                                        "width":  21,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "one",
+                                        "x":  612,
+                                        "y":  618,
+                                        "width":  35,
+                                        "height":  11
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "year beyond the date of signing for certificate plans.",
+                      "x":  124,
+                      "y":  641,
+                      "words":  [
+                                    {
+                                        "text":  "year",
+                                        "x":  124,
+                                        "y":  648,
+                                        "width":  42,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "beyond",
+                                        "x":  173,
+                                        "y":  641,
+                                        "width":  73,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  253,
+                                        "y":  641,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "date",
+                                        "x":  292,
+                                        "y":  641,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  340,
+                                        "y":  641,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "signing",
+                                        "x":  367,
+                                        "y":  643,
+                                        "width":  73,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  447,
+                                        "y":  641,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "certificate",
+                                        "x":  482,
+                                        "y":  641,
+                                        "width":  99,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "plans.",
+                                        "x":  589,
+                                        "y":  641,
+                                        "width":  57,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Official Plans of Study which have been approved by",
+                      "x":  125,
+                      "y":  701,
+                      "words":  [
+                                    {
+                                        "text":  "Official",
+                                        "x":  125,
+                                        "y":  701,
+                                        "width":  78,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Plans",
+                                        "x":  211,
+                                        "y":  701,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  271,
+                                        "y":  701,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Study",
+                                        "x":  298,
+                                        "y":  701,
+                                        "width":  57,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "which",
+                                        "x":  362,
+                                        "y":  701,
+                                        "width":  61,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "have",
+                                        "x":  430,
+                                        "y":  701,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "been",
+                                        "x":  482,
+                                        "y":  701,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "approved",
+                                        "x":  536,
+                                        "y":  702,
+                                        "width":  91,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "by",
+                                        "x":  634,
+                                        "y":  702,
+                                        "width":  24,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the Curriculum Coordinating Committee and faculty",
+                      "x":  125,
+                      "y":  732,
+                      "words":  [
+                                    {
+                                        "text":  "the",
+                                        "x":  125,
+                                        "y":  732,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Curriculum",
+                                        "x":  163,
+                                        "y":  732,
+                                        "width":  119,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Coordinating",
+                                        "x":  290,
+                                        "y":  732,
+                                        "width":  137,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Committee",
+                                        "x":  434,
+                                        "y":  733,
+                                        "width":  114,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  555,
+                                        "y":  732,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "faculty",
+                                        "x":  600,
+                                        "y":  732,
+                                        "width":  69,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "council and filed with the Office of Enrollment Servic-",
+                      "x":  125,
+                      "y":  762,
+                      "words":  [
+                                    {
+                                        "text":  "council",
+                                        "x":  125,
+                                        "y":  762,
+                                        "width":  73,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  205,
+                                        "y":  762,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "filed",
+                                        "x":  250,
+                                        "y":  762,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "with",
+                                        "x":  301,
+                                        "y":  762,
+                                        "width":  45,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  354,
+                                        "y":  762,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Office",
+                                        "x":  393,
+                                        "y":  762,
+                                        "width":  64,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  464,
+                                        "y":  762,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Enrollment",
+                                        "x":  491,
+                                        "y":  762,
+                                        "width":  114,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Servic-",
+                                        "x":  612,
+                                        "y":  763,
+                                        "width":  68,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "es supersede those in prior catalogs or other College",
+                      "x":  125,
+                      "y":  793,
+                      "words":  [
+                                    {
+                                        "text":  "es",
+                                        "x":  125,
+                                        "y":  800,
+                                        "width":  18,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "supersede",
+                                        "x":  150,
+                                        "y":  793,
+                                        "width":  96,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "those",
+                                        "x":  253,
+                                        "y":  793,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  313,
+                                        "y":  795,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "prior",
+                                        "x":  340,
+                                        "y":  795,
+                                        "width":  49,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "catalogs",
+                                        "x":  396,
+                                        "y":  793,
+                                        "width":  78,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  482,
+                                        "y":  800,
+                                        "width":  21,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "other",
+                                        "x":  510,
+                                        "y":  793,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "College",
+                                        "x":  569,
+                                        "y":  793,
+                                        "width":  75,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "publications.",
+                      "x":  125,
+                      "y":  823,
+                      "words":  [
+                                    {
+                                        "text":  "publications.",
+                                        "x":  125,
+                                        "y":  823,
+                                        "width":  127,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Transfer students must complete a minimum 15 credits",
+                      "x":  124,
+                      "y":  884,
+                      "words":  [
+                                    {
+                                        "text":  "Transfer",
+                                        "x":  124,
+                                        "y":  884,
+                                        "width":  84,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  215,
+                                        "y":  884,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "must",
+                                        "x":  305,
+                                        "y":  890,
+                                        "width":  50,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "complete",
+                                        "x":  362,
+                                        "y":  884,
+                                        "width":  89,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  459,
+                                        "y":  892,
+                                        "width":  10,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "minimum",
+                                        "x":  476,
+                                        "y":  886,
+                                        "width":  101,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "15",
+                                        "x":  587,
+                                        "y":  885,
+                                        "width":  19,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credits",
+                                        "x":  615,
+                                        "y":  884,
+                                        "width":  65,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of any degree or certificate requirements in residence at",
+                      "x":  125,
+                      "y":  914,
+                      "words":  [
+                                    {
+                                        "text":  "of",
+                                        "x":  125,
+                                        "y":  914,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "any",
+                                        "x":  151,
+                                        "y":  922,
+                                        "width":  36,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  194,
+                                        "y":  914,
+                                        "width":  63,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  265,
+                                        "y":  922,
+                                        "width":  20,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "certificate",
+                                        "x":  292,
+                                        "y":  914,
+                                        "width":  100,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "requirements",
+                                        "x":  400,
+                                        "y":  916,
+                                        "width":  129,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  537,
+                                        "y":  916,
+                                        "width":  20,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "residence",
+                                        "x":  564,
+                                        "y":  914,
+                                        "width":  91,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "at",
+                                        "x":  663,
+                                        "y":  921,
+                                        "width":  17,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mesalands Community College.",
+                      "x":  125,
+                      "y":  945,
+                      "words":  [
+                                    {
+                                        "text":  "Mesalands",
+                                        "x":  125,
+                                        "y":  945,
+                                        "width":  105,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Community",
+                                        "x":  238,
+                                        "y":  946,
+                                        "width":  125,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "College.",
+                                        "x":  370,
+                                        "y":  945,
+                                        "width":  80,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GRADE POINT AVERAGE",
+                      "x":  727,
+                      "y":  167,
+                      "words":  [
+                                    {
+                                        "text":  "GRADE",
+                                        "x":  727,
+                                        "y":  167,
+                                        "width":  97,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "POINT",
+                                        "x":  832,
+                                        "y":  167,
+                                        "width":  88,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "AVERAGE",
+                                        "x":  926,
+                                        "y":  167,
+                                        "width":  128,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "To be eligible for graduation, a student must complete",
+                      "x":  726,
+                      "y":  214,
+                      "words":  [
+                                    {
+                                        "text":  "To",
+                                        "x":  726,
+                                        "y":  215,
+                                        "width":  26,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  760,
+                                        "y":  215,
+                                        "width":  22,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "eligible",
+                                        "x":  790,
+                                        "y":  214,
+                                        "width":  70,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  868,
+                                        "y":  214,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "graduation,",
+                                        "x":  903,
+                                        "y":  214,
+                                        "width":  113,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  1025,
+                                        "y":  222,
+                                        "width":  10,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "student",
+                                        "x":  1042,
+                                        "y":  215,
+                                        "width":  74,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "must",
+                                        "x":  1123,
+                                        "y":  221,
+                                        "width":  49,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "complete",
+                                        "x":  1180,
+                                        "y":  214,
+                                        "width":  89,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "all Mesalands Community College courses with a",
+                      "x":  726,
+                      "y":  245,
+                      "words":  [
+                                    {
+                                        "text":  "all",
+                                        "x":  726,
+                                        "y":  245,
+                                        "width":  24,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Mesalands",
+                                        "x":  758,
+                                        "y":  245,
+                                        "width":  105,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Community",
+                                        "x":  871,
+                                        "y":  246,
+                                        "width":  125,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "College",
+                                        "x":  1003,
+                                        "y":  245,
+                                        "width":  75,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  1085,
+                                        "y":  252,
+                                        "width":  72,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "with",
+                                        "x":  1164,
+                                        "y":  245,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  1217,
+                                        "y":  252,
+                                        "width":  10,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CGPA of 2.00 or better.",
+                      "x":  727,
+                      "y":  275,
+                      "words":  [
+                                    {
+                                        "text":  "CGPA",
+                                        "x":  727,
+                                        "y":  276,
+                                        "width":  65,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  799,
+                                        "y":  275,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "2.00",
+                                        "x":  825,
+                                        "y":  277,
+                                        "width":  45,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  878,
+                                        "y":  283,
+                                        "width":  20,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "better.",
+                                        "x":  905,
+                                        "y":  275,
+                                        "width":  63,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "INDEBTEDNESS TO THE COLLEGE",
+                      "x":  726,
+                      "y":  338,
+                      "words":  [
+                                    {
+                                        "text":  "INDEBTEDNESS",
+                                        "x":  726,
+                                        "y":  338,
+                                        "width":  213,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "TO",
+                                        "x":  947,
+                                        "y":  338,
+                                        "width":  39,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "THE",
+                                        "x":  994,
+                                        "y":  338,
+                                        "width":  58,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "COLLEGE",
+                                        "x":  1060,
+                                        "y":  338,
+                                        "width":  129,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "No degree or certificate will be awarded until all student",
+                      "x":  726,
+                      "y":  386,
+                      "words":  [
+                                    {
+                                        "text":  "No",
+                                        "x":  726,
+                                        "y":  387,
+                                        "width":  31,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  764,
+                                        "y":  386,
+                                        "width":  63,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  834,
+                                        "y":  393,
+                                        "width":  20,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "certificate",
+                                        "x":  861,
+                                        "y":  386,
+                                        "width":  97,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "will",
+                                        "x":  964,
+                                        "y":  386,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  1008,
+                                        "y":  386,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "awarded",
+                                        "x":  1037,
+                                        "y":  386,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "until",
+                                        "x":  1126,
+                                        "y":  386,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "all",
+                                        "x":  1180,
+                                        "y":  386,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "student",
+                                        "x":  1210,
+                                        "y":  386,
+                                        "width":  72,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "indebtedness to Mesalands Community College has",
+                      "x":  726,
+                      "y":  416,
+                      "words":  [
+                                    {
+                                        "text":  "indebtedness",
+                                        "x":  726,
+                                        "y":  416,
+                                        "width":  126,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  859,
+                                        "y":  423,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "Mesalands",
+                                        "x":  885,
+                                        "y":  416,
+                                        "width":  104,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Community",
+                                        "x":  996,
+                                        "y":  417,
+                                        "width":  123,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "College",
+                                        "x":  1125,
+                                        "y":  416,
+                                        "width":  74,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "has",
+                                        "x":  1206,
+                                        "y":  416,
+                                        "width":  31,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "been satisfied. Library and tool inventories must be",
+                      "x":  726,
+                      "y":  447,
+                      "words":  [
+                                    {
+                                        "text":  "been",
+                                        "x":  726,
+                                        "y":  447,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "satisfied.",
+                                        "x":  779,
+                                        "y":  447,
+                                        "width":  84,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Library",
+                                        "x":  871,
+                                        "y":  447,
+                                        "width":  73,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  950,
+                                        "y":  447,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "tool",
+                                        "x":  994,
+                                        "y":  447,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "inventories",
+                                        "x":  1038,
+                                        "y":  449,
+                                        "width":  105,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "must",
+                                        "x":  1151,
+                                        "y":  453,
+                                        "width":  48,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  1206,
+                                        "y":  447,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cleared, and any other obligations to the College must",
+                      "x":  726,
+                      "y":  477,
+                      "words":  [
+                                    {
+                                        "text":  "cleared,",
+                                        "x":  726,
+                                        "y":  477,
+                                        "width":  74,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  808,
+                                        "y":  477,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "any",
+                                        "x":  851,
+                                        "y":  484,
+                                        "width":  35,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "other",
+                                        "x":  892,
+                                        "y":  477,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "obligations",
+                                        "x":  950,
+                                        "y":  477,
+                                        "width":  107,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1065,
+                                        "y":  483,
+                                        "width":  18,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1091,
+                                        "y":  477,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "College",
+                                        "x":  1128,
+                                        "y":  477,
+                                        "width":  74,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "must",
+                                        "x":  1209,
+                                        "y":  483,
+                                        "width":  48,
+                                        "height":  13
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "be satisfied. The student should obtain the appropriate",
+                      "x":  727,
+                      "y":  507,
+                      "words":  [
+                                    {
+                                        "text":  "be",
+                                        "x":  727,
+                                        "y":  507,
+                                        "width":  21,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "satisfied.",
+                                        "x":  755,
+                                        "y":  507,
+                                        "width":  84,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "The",
+                                        "x":  847,
+                                        "y":  508,
+                                        "width":  40,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "student",
+                                        "x":  894,
+                                        "y":  508,
+                                        "width":  72,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "should",
+                                        "x":  973,
+                                        "y":  507,
+                                        "width":  65,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "obtain",
+                                        "x":  1045,
+                                        "y":  508,
+                                        "width":  63,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1115,
+                                        "y":  507,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "appropriate",
+                                        "x":  1152,
+                                        "y":  510,
+                                        "width":  111,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "signoff signatures on the \"Petition to Graduate Form\"",
+                      "x":  726,
+                      "y":  538,
+                      "words":  [
+                                    {
+                                        "text":  "signoff",
+                                        "x":  726,
+                                        "y":  538,
+                                        "width":  70,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "signatures",
+                                        "x":  799,
+                                        "y":  540,
+                                        "width":  98,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "on",
+                                        "x":  904,
+                                        "y":  545,
+                                        "width":  25,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  936,
+                                        "y":  538,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "\"Petition",
+                                        "x":  974,
+                                        "y":  538,
+                                        "width":  85,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1067,
+                                        "y":  544,
+                                        "width":  18,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Graduate",
+                                        "x":  1093,
+                                        "y":  538,
+                                        "width":  91,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Form\"",
+                                        "x":  1191,
+                                        "y":  538,
+                                        "width":  61,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "supplied by the Office of Enrollment Services.",
+                      "x":  726,
+                      "y":  568,
+                      "words":  [
+                                    {
+                                        "text":  "supplied",
+                                        "x":  726,
+                                        "y":  568,
+                                        "width":  82,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "by",
+                                        "x":  815,
+                                        "y":  568,
+                                        "width":  23,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  845,
+                                        "y":  568,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Office",
+                                        "x":  882,
+                                        "y":  568,
+                                        "width":  63,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  952,
+                                        "y":  568,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Enrollment",
+                                        "x":  978,
+                                        "y":  568,
+                                        "width":  112,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Services.",
+                                        "x":  1097,
+                                        "y":  569,
+                                        "width":  82,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "MINIMUM REQUIREMENT FOR",
+                      "x":  726,
+                      "y":  631,
+                      "words":  [
+                                    {
+                                        "text":  "MINIMUM",
+                                        "x":  726,
+                                        "y":  631,
+                                        "width":  141,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "REQUIREMENT",
+                                        "x":  876,
+                                        "y":  631,
+                                        "width":  209,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "FOR",
+                                        "x":  1093,
+                                        "y":  631,
+                                        "width":  56,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SUBSEQUENT DEGREES",
+                      "x":  726,
+                      "y":  664,
+                      "words":  [
+                                    {
+                                        "text":  "SUBSEQUENT",
+                                        "x":  726,
+                                        "y":  664,
+                                        "width":  184,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "DEGREES",
+                                        "x":  917,
+                                        "y":  664,
+                                        "width":  127,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Students may qualify for more than one Associate of",
+                      "x":  727,
+                      "y":  712,
+                      "words":  [
+                                    {
+                                        "text":  "Students",
+                                        "x":  727,
+                                        "y":  712,
+                                        "width":  85,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "may",
+                                        "x":  820,
+                                        "y":  719,
+                                        "width":  42,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "qualify",
+                                        "x":  869,
+                                        "y":  712,
+                                        "width":  71,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  947,
+                                        "y":  712,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "more",
+                                        "x":  982,
+                                        "y":  719,
+                                        "width":  50,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "than",
+                                        "x":  1040,
+                                        "y":  712,
+                                        "width":  45,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "one",
+                                        "x":  1093,
+                                        "y":  719,
+                                        "width":  35,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "Associate",
+                                        "x":  1134,
+                                        "y":  713,
+                                        "width":  93,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  1235,
+                                        "y":  712,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Applied Science (AAS) degree by completing the",
+                      "x":  725,
+                      "y":  742,
+                      "words":  [
+                                    {
+                                        "text":  "Applied",
+                                        "x":  725,
+                                        "y":  742,
+                                        "width":  79,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  812,
+                                        "y":  743,
+                                        "width":  73,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "(AAS)",
+                                        "x":  894,
+                                        "y":  743,
+                                        "width":  60,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  963,
+                                        "y":  742,
+                                        "width":  64,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "by",
+                                        "x":  1035,
+                                        "y":  742,
+                                        "width":  24,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "completing",
+                                        "x":  1065,
+                                        "y":  742,
+                                        "width":  113,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  1185,
+                                        "y":  742,
+                                        "width":  31,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "requirements for the subsequent degree(s) and by earn-",
+                      "x":  726,
+                      "y":  773,
+                      "words":  [
+                                    {
+                                        "text":  "requirements",
+                                        "x":  726,
+                                        "y":  775,
+                                        "width":  130,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  864,
+                                        "y":  773,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  899,
+                                        "y":  773,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "subsequent",
+                                        "x":  938,
+                                        "y":  773,
+                                        "width":  110,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "degree(s)",
+                                        "x":  1055,
+                                        "y":  773,
+                                        "width":  85,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  1149,
+                                        "y":  773,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "by",
+                                        "x":  1194,
+                                        "y":  773,
+                                        "width":  23,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "earn-",
+                                        "x":  1224,
+                                        "y":  780,
+                                        "width":  51,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ing at least 15 additional collegiate level credits after",
+                      "x":  726,
+                      "y":  803,
+                      "words":  [
+                                    {
+                                        "text":  "ing",
+                                        "x":  726,
+                                        "y":  805,
+                                        "width":  32,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "at",
+                                        "x":  765,
+                                        "y":  810,
+                                        "width":  18,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "least",
+                                        "x":  790,
+                                        "y":  803,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "15",
+                                        "x":  844,
+                                        "y":  805,
+                                        "width":  19,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "additional",
+                                        "x":  871,
+                                        "y":  803,
+                                        "width":  102,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "collegiate",
+                                        "x":  980,
+                                        "y":  803,
+                                        "width":  93,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "level",
+                                        "x":  1081,
+                                        "y":  803,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credits",
+                                        "x":  1133,
+                                        "y":  803,
+                                        "width":  64,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "after",
+                                        "x":  1205,
+                                        "y":  803,
+                                        "width":  46,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "receiving the previous degree.",
+                      "x":  726,
+                      "y":  834,
+                      "words":  [
+                                    {
+                                        "text":  "receiving",
+                                        "x":  726,
+                                        "y":  836,
+                                        "width":  90,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  824,
+                                        "y":  834,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "previous",
+                                        "x":  862,
+                                        "y":  836,
+                                        "width":  83,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "degree.",
+                                        "x":  953,
+                                        "y":  834,
+                                        "width":  69,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This applies to different degrees, not options within a",
+                      "x":  726,
+                      "y":  894,
+                      "words":  [
+                                    {
+                                        "text":  "This",
+                                        "x":  726,
+                                        "y":  895,
+                                        "width":  46,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "applies",
+                                        "x":  779,
+                                        "y":  894,
+                                        "width":  68,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  855,
+                                        "y":  901,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "different",
+                                        "x":  882,
+                                        "y":  894,
+                                        "width":  86,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "degrees,",
+                                        "x":  975,
+                                        "y":  894,
+                                        "width":  78,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "not",
+                                        "x":  1062,
+                                        "y":  901,
+                                        "width":  33,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "options",
+                                        "x":  1102,
+                                        "y":  897,
+                                        "width":  73,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "within",
+                                        "x":  1182,
+                                        "y":  894,
+                                        "width":  67,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  1256,
+                                        "y":  902,
+                                        "width":  10,
+                                        "height":  11
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "degree. For example, a student may qualify for degrees",
+                      "x":  726,
+                      "y":  925,
+                      "words":  [
+                                    {
+                                        "text":  "degree.",
+                                        "x":  726,
+                                        "y":  925,
+                                        "width":  69,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "For",
+                                        "x":  804,
+                                        "y":  926,
+                                        "width":  34,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "example,",
+                                        "x":  845,
+                                        "y":  925,
+                                        "width":  88,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  941,
+                                        "y":  932,
+                                        "width":  10,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "student",
+                                        "x":  958,
+                                        "y":  925,
+                                        "width":  74,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "may",
+                                        "x":  1039,
+                                        "y":  932,
+                                        "width":  42,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "qualify",
+                                        "x":  1088,
+                                        "y":  925,
+                                        "width":  71,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  1166,
+                                        "y":  925,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "degrees",
+                                        "x":  1201,
+                                        "y":  925,
+                                        "width":  72,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "in both Farrier Science and Cowboy Arts/Artistic",
+                      "x":  726,
+                      "y":  955,
+                      "words":  [
+                                    {
+                                        "text":  "in",
+                                        "x":  726,
+                                        "y":  957,
+                                        "width":  20,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "both",
+                                        "x":  754,
+                                        "y":  955,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Farrier",
+                                        "x":  808,
+                                        "y":  956,
+                                        "width":  67,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  882,
+                                        "y":  956,
+                                        "width":  73,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  962,
+                                        "y":  955,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Cowboy",
+                                        "x":  1007,
+                                        "y":  955,
+                                        "width":  84,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Arts/Artistic",
+                                        "x":  1097,
+                                        "y":  956,
+                                        "width":  126,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Silversmithing, but cannot earn degrees for both",
+                      "x":  727,
+                      "y":  985,
+                      "words":  [
+                                    {
+                                        "text":  "Silversmithing,",
+                                        "x":  727,
+                                        "y":  986,
+                                        "width":  150,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "but",
+                                        "x":  886,
+                                        "y":  986,
+                                        "width":  32,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "cannot",
+                                        "x":  926,
+                                        "y":  992,
+                                        "width":  69,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "earn",
+                                        "x":  1002,
+                                        "y":  993,
+                                        "width":  43,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "degrees",
+                                        "x":  1053,
+                                        "y":  986,
+                                        "width":  72,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  1133,
+                                        "y":  985,
+                                        "width":  28,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "both",
+                                        "x":  1168,
+                                        "y":  986,
+                                        "width":  46,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "50",
+                      "x":  692,
+                      "y":  1769,
+                      "words":  [
+                                    {
+                                        "text":  "50",
+                                        "x":  692,
+                                        "y":  1769,
+                                        "width":  26,
+                                        "height":  19
+                                    }
+                                ]
+                  }
+              ]
+}

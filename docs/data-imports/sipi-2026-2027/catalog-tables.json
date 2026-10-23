@@ -1,0 +1,7769 @@
+[
+  {
+    "pdf_page": 1,
+    "printed_page": 61,
+    "tables": [
+      {
+        "bbox": [
+          36.0,
+          743.16,
+          576.0,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 2,
+    "printed_page": 62,
+    "tables": [
+      {
+        "bbox": [
+          35.68186046511628,
+          69.05975000000001,
+          575.966511627907,
+          255.96000000000004
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ENGL098",
+            "Basic Writing and Reading Skills w/ Lab",
+            "4"
+          ],
+          [
+            "ENGL 099",
+            "Basic English Skills",
+            "4"
+          ],
+          [
+            "ENGL 100",
+            "Writing Standard English",
+            "4"
+          ],
+          [
+            "MATH098",
+            "Basic Mathematics I",
+            "4"
+          ],
+          [
+            "MATH 099",
+            "Basic Mathematics II",
+            "4"
+          ],
+          [
+            "MATH 100D/E",
+            "Basic Mathematics III Part I",
+            "2"
+          ],
+          [
+            "MATH 100G/H",
+            "Basic Mathematics III Part II",
+            "2"
+          ],
+          [
+            "READ098",
+            "Developmental Reading",
+            "4"
+          ],
+          [
+            "READ 099",
+            "Reading Improvement",
+            "4"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.68186046511628,
+          301.25975,
+          575.966511627907,
+          410.16
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ENGL093",
+            "GED/HSE Writing Skills",
+            "4"
+          ],
+          [
+            "SOCI093",
+            "GED/HSE Social Science",
+            ""
+          ],
+          [
+            "SCIE093",
+            "GED/HSE Science",
+            "4"
+          ],
+          [
+            "MATH093",
+            "GED/HSE Mathematics",
+            "4"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.68186046511628,
+          743.16,
+          575.966511627907,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "62",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 3,
+    "printed_page": 63,
+    "tables": [
+      {
+        "bbox": [
+          35.650285714285715,
+          133.67999999999995,
+          576.0,
+          306.96
+        ],
+        "rows": [
+          [
+            "Course",
+            "Title"
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "ENGL 099",
+            "Basic English Skills"
+          ],
+          [
+            "ENGL 100",
+            "Writing Standard English"
+          ],
+          [
+            "MATH 099",
+            "Basic Mathematics II"
+          ],
+          [
+            "MATH 100D",
+            "Basic Mathematics III Part I"
+          ],
+          [
+            "MATH 100E",
+            "Basic Mathematics III Part I"
+          ],
+          [
+            "MATH 100G",
+            "Basic Mathematics III Part II"
+          ],
+          [
+            "MATH 100H",
+            "Basic Mathematics III Part II"
+          ],
+          [
+            "MATH 100L",
+            "Introduction to Algebra Lab"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.650285714285715,
+          344.15999999999997,
+          580.5600000000001,
+          438.71999999999997
+        ],
+        "rows": [
+          [
+            "Course",
+            "Title"
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "ENGL 093",
+            "GED/HSE Writing"
+          ],
+          [
+            "SOSC 093",
+            "GED/HSE Social Science"
+          ],
+          [
+            "SCIE 093",
+            "GED/HSE Science"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.650285714285715,
+          743.16,
+          576.0,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 4,
+    "printed_page": 64,
+    "tables": [
+      {
+        "bbox": [
+          33.86541176470588,
+          110.7,
+          575.4075529411765,
+          400.25975
+        ],
+        "rows": [
+          [
+            "Program",
+            "Certificate",
+            "AA",
+            "AS",
+            "AAS"
+          ],
+          [
+            "",
+            "✓",
+            "",
+            "",
+            "✓"
+          ],
+          [
+            "Accounting",
+            "✓",
+            "",
+            "✓",
+            "✓"
+          ],
+          [
+            "Business Administration",
+            "✓",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Computer Aided Drafting & Design",
+            "✓",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Conservation and Resource Protection",
+            "✓",
+            "",
+            "",
+            "✓"
+          ],
+          [
+            "Culinary Arts & Sciences",
+            "✓",
+            "✓",
+            "",
+            ""
+          ],
+          [
+            "Early Childhood Education",
+            "",
+            "",
+            "",
+            "✓"
+          ],
+          [
+            "Environmental Science",
+            "✓",
+            "",
+            "",
+            "✓"
+          ],
+          [
+            "Geospatial Information Technology",
+            "",
+            "✓",
+            "",
+            ""
+          ],
+          [
+            "Liberal Arts",
+            "",
+            "",
+            "",
+            "✓"
+          ],
+          [
+            "Natural Resource Management",
+            "",
+            "",
+            "",
+            "✓"
+          ],
+          [
+            "Network Management",
+            "",
+            "",
+            "✓",
+            ""
+          ],
+          [
+            "Pre-Engineering",
+            "✓",
+            "",
+            "",
+            "✓"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          33.86541176470588,
+          743.16,
+          575.4075529411765,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "64",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 5,
+    "printed_page": 65,
+    "tables": [
+      {
+        "bbox": [
+          35.76,
+          593.4,
+          575.904,
+          640.44
+        ],
+        "rows": [
+          [
+            "",
+            "| AA/AS: 6 credits | AAS: may count toward Fixed 12 if selected",
+            ""
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Information and Digital Literacy",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          685.86,
+          575.904,
+          717.12
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Quantitative Reasoning",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          743.16,
+          575.904,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 6,
+    "printed_page": 66,
+    "tables": [
+      {
+        "bbox": [
+          35.684383561643834,
+          93.93000000000002,
+          575.9605479452055,
+          361.56
+        ],
+        "rows": [
+          [
+            "The required",
+            "courses within the declared program, including common course numbered courses,",
+            "prerequisite"
+          ],
+          [
+            "sequences, co",
+            "-requisites, capstones, clinical/field placements, internships, or portfolio requireme",
+            "nts."
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ACCT 2115",
+            "Survey of Accounting",
+            "3"
+          ],
+          [
+            "ENGL 2110",
+            "Professional and Technical Communication",
+            "3"
+          ],
+          [
+            "BUSA 1110",
+            "Introduction to Business",
+            "3"
+          ],
+          [
+            "BUSA 1180",
+            "Business Math",
+            "3"
+          ],
+          [
+            "MGMT 2110",
+            "Principles of Management",
+            "3"
+          ],
+          [
+            "ACCT 2320",
+            "Introduction to Tax I",
+            "3"
+          ],
+          [
+            "BCIS1110",
+            "Fundamentals of Information Literacy & Systems",
+            "3"
+          ],
+          [
+            "BLAW 2110",
+            "Business Law",
+            "3"
+          ],
+          [
+            "ACCT 2110x",
+            "Principles of Accounting 1A",
+            "3"
+          ],
+          [
+            "ACCT 2110y",
+            "Principles of Accounting 1B",
+            "3"
+          ],
+          [
+            "ACCT 2220",
+            "Computerized Accounting",
+            "3"
+          ],
+          [
+            "ENTR 2210",
+            "Small Business Management",
+            "3"
+          ],
+          [
+            "COSC 123",
+            "Excel",
+            "3"
+          ],
+          [
+            "BFIN 2110",
+            "Introduction to Finance",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.684383561643834,
+          436.65000000000003,
+          575.9605479452055,
+          467.87999999999994
+        ],
+        "rows": [
+          [
+            "or institutional",
+            "requirements. Developmental courses should not be counted toward degree credi",
+            "t"
+          ],
+          [
+            "unless permitte",
+            "d by institutional policy.",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.684383561643834,
+          528.1800000000001,
+          575.9605479452055,
+          736.44
+        ],
+        "rows": [
+          [
+            "",
+            null,
+            null,
+            null
+          ],
+          [
+            "Accounting Associate of Applied Science - (ACCT AAS) CIP Code: 52.0302D",
+            null,
+            null,
+            null
+          ],
+          [
+            "First Semester (",
+            "Fall 1)",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "ACCT 2115",
+            "Survey of Accounting",
+            "3",
+            "Hybrid"
+          ],
+          [
+            "BUSA 1110",
+            "Introduction to Business",
+            "3",
+            "Hybrid"
+          ],
+          [
+            "BUSA 1180 Business Math 3 In Class",
+            null,
+            null,
+            null
+          ],
+          [
+            "ENGL 2110 Professional and Technical Communication 3 In Class",
+            null,
+            null,
+            null
+          ],
+          [
+            "Semester Total:",
+            "12 Credit Hours",
+            "",
+            ""
+          ],
+          [
+            "Second Semeste",
+            "r (Spring 1)",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "ACCT 2110x",
+            "Principles of Accounting 1A",
+            "3",
+            "Hybrid"
+          ],
+          [
+            "ACCT 2320",
+            "Introduction to Tax I",
+            "3",
+            "Hybrid"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.684383561643834,
+          743.16,
+          575.9605479452055,
+          756.0
+        ],
+        "rows": [
+          [
+            "PBCaISg 1e1 1|",
+            "06 6",
+            "Fundamentals of Information Literacy and Systems 3 In Class"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 7,
+    "printed_page": 67,
+    "tables": [
+      {
+        "bbox": [
+          35.70285714285715,
+          49.19999999999993,
+          575.9428571428572,
+          488.03999999999996
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            null,
+            null,
+            null
+          ],
+          [
+            "MATH 1215 Intermediate Algebra 3 In Class",
+            null,
+            null,
+            null
+          ],
+          [
+            "Semester Total: 15 Credit Hours\nSUMMER SESSION (OPTIONAL)\nOptional summer offerings may be scheduled based on student needs. Courses offered during the summer may",
+            null,
+            null,
+            null
+          ],
+          [
+            "duplicate major courses from the fall or spring semesters. Courses offered will be determined based on student",
+            null,
+            null,
+            null
+          ],
+          [
+            "needs each sum",
+            "mer.",
+            "",
+            ""
+          ],
+          [
+            "Third Semester",
+            "(Fall 2)",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "ACCT 2110y",
+            "Principles of Accounting 1B",
+            "3",
+            "Hybrid"
+          ],
+          [
+            "ACCT 2220",
+            "Computerized Accounting",
+            "3",
+            "Hybrid"
+          ],
+          [
+            "ENTR 2110 Small Business Management 3 Hybrid",
+            null,
+            null,
+            null
+          ],
+          [
+            "SOCI 2325 Introduction to Native American Studies 3 In Class",
+            null,
+            null,
+            null
+          ],
+          [
+            "Semester Total:",
+            "12 Credit Hours",
+            "",
+            ""
+          ],
+          [
+            "Fourth Semeste",
+            "r (Spring 2)",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "BFIN 2110",
+            "Introduction to Finance",
+            "3",
+            "Async Online"
+          ],
+          [
+            "ECON 2110",
+            "Macroeconomic Principles",
+            "3",
+            "Hybrid"
+          ],
+          [
+            "ENGL 2210 Professional & Technical Communication 3 In Class",
+            null,
+            null,
+            null
+          ],
+          [
+            "COMM 1130 Public Speaking 3 In Class",
+            null,
+            null,
+            null
+          ],
+          [
+            "Semester Total:",
+            "12 Credit Hours",
+            "",
+            ""
+          ],
+          [
+            "Fifth Semester",
+            "(Fall 3)",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "ACCT 2120",
+            "Principles of Accounting II",
+            "3",
+            "In Class"
+          ],
+          [
+            "ECON 2120",
+            "Microeconomic Principles",
+            "3",
+            "Hybrid"
+          ],
+          [
+            "BLAW 2110 Business Law 3 Async Online",
+            null,
+            null,
+            null
+          ],
+          [
+            "Humanities and Fine Arts Elective 3 In Class",
+            null,
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.70285714285715,
+          743.16,
+          575.9428571428572,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 8,
+    "printed_page": 68,
+    "tables": [
+      {
+        "bbox": [
+          35.69012658227848,
+          79.17000000000004,
+          575.9544303797469,
+          282.59999999999997
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Required Courses",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ACCT 2115",
+            "Survey of Accounting",
+            "3"
+          ],
+          [
+            "BUSA 1110",
+            "Introduction to Business",
+            "3"
+          ],
+          [
+            "BUSA 1180",
+            "Business Math",
+            "3"
+          ],
+          [
+            "ENGL 1110",
+            "Composition I",
+            "3"
+          ],
+          [
+            "ACCT 2110x",
+            "Principles of Accounting IA",
+            "3"
+          ],
+          [
+            "ACCT 2320",
+            "Introduction to Tax I",
+            "3"
+          ],
+          [
+            "BCIS 1110",
+            "Fundamentals of Information Literacy and Systems",
+            "3"
+          ],
+          [
+            "MATH 1215",
+            "Intermediate Algebra or MATH 118/119 Sequence",
+            "3"
+          ],
+          [
+            "ACCT 2220\nENTR 2110",
+            "Computerized Accounting\nSmall Business Management",
+            "3\n3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.69012658227848,
+          342.84,
+          575.9544303797469,
+          718.6800000000001
+        ],
+        "rows": [
+          [
+            "",
+            null,
+            null
+          ],
+          [
+            "Accounting Cer",
+            "tificate - (ACCT CERT) CIP Code: 52.0302B",
+            ""
+          ],
+          [
+            "First Semester",
+            "(Fall 1)",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ACCT 2115",
+            "Survey of Accounting",
+            "3"
+          ],
+          [
+            "BUSA 1110",
+            "Introduction to Business",
+            "3"
+          ],
+          [
+            "BUSA 1180 Business Math 3",
+            null,
+            null
+          ],
+          [
+            "ENGL 2110 Composition I 3",
+            null,
+            null
+          ],
+          [
+            "Semester Total:",
+            "12 Credit Hours",
+            ""
+          ],
+          [
+            "Second Semest",
+            "er (Spring 1)",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ACCT 2110x",
+            "Principles of Accounting 1A",
+            "3"
+          ],
+          [
+            "ACCT 2320",
+            "Introduction to Tax I",
+            "3"
+          ],
+          [
+            "BCIS 1110 Fundamentals of Information Literacy and Systems 3",
+            null,
+            null
+          ],
+          [
+            "MATH 1215 Intermediate Algebra 3",
+            null,
+            null
+          ],
+          [
+            "Semester Total: 12 Credit Hours\nSUMMER SESSION (OPTIONAL)\nOptional summer offerings may be scheduled based on student needs. Courses offered during the summer may",
+            null,
+            null
+          ],
+          [
+            "duplicate major courses from the fall or spring semesters. Courses offered will be determined based on student",
+            null,
+            null
+          ],
+          [
+            "needs each sum",
+            "mer.",
+            ""
+          ],
+          [
+            "Third Semester",
+            "(Fall 2)",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ACCT 2220",
+            "Computerized Accounting",
+            "3"
+          ],
+          [
+            "ENTR 2110 Small Business Management 3",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.69012658227848,
+          743.16,
+          575.9544303797469,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "68",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 9,
+    "printed_page": 69,
+    "tables": [
+      {
+        "bbox": [
+          36.0,
+          743.16,
+          576.0,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 10,
+    "printed_page": 70,
+    "tables": [
+      {
+        "bbox": [
+          35.76,
+          319.86,
+          575.8909090909092,
+          366.71999999999997
+        ],
+        "rows": [
+          [
+            "",
+            "| AA/AS: 6 credits | AAS: may count toward Fixed 12 if selected",
+            ""
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Information and Digital Literacy",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          412.17,
+          575.8909090909092,
+          443.52
+        ],
+        "rows": [
+          [
+            "",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12 if selected",
+            ""
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Quantitative Reasoning",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          488.87999999999994,
+          575.8909090909092,
+          520.1999999999999
+        ],
+        "rows": [
+          [
+            "",
+            "| AA/AS: 4 credits | AAS: may count toward Fixed 12 if selected",
+            ""
+          ],
+          [
+            "",
+            "Critical Thinking; Personal and Social Responsibility; Quantitative",
+            "Reasoning"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          565.65,
+          575.8909090909092,
+          597.0
+        ],
+        "rows": [
+          [
+            "",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12 if",
+            "selected"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Personal and Social Responsibili",
+            "ty"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          657.20975,
+          575.8909090909092,
+          688.5600000000001
+        ],
+        "rows": [
+          [
+            "",
+            "Critical Thinking; Information and Digital Literacy; Personal and So",
+            "cial"
+          ],
+          [
+            "Responsibilit",
+            "y",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          743.16,
+          575.8909090909092,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "70",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 11,
+    "printed_page": 71,
+    "tables": [
+      {
+        "bbox": [
+          35.695774647887326,
+          79.17000000000004,
+          575.9492957746479,
+          110.39999999999998
+        ],
+        "rows": [
+          [
+            "",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12 if selected",
+            ""
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Personal and Social Responsibilit",
+            "y"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.695774647887326,
+          170.73,
+          575.9492957746479,
+          359.52
+        ],
+        "rows": [
+          [
+            "The required",
+            "courses within the declared program, including common course numbered courses,",
+            "prerequisite"
+          ],
+          [
+            "sequences, co",
+            "-requisites, capstones, clinical/field placements, internships, or portfolio requireme",
+            "nts."
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ENGL 2210",
+            "Professional and Technical Communication",
+            "3"
+          ],
+          [
+            "ECON 2120",
+            "Principles of Microeconomics",
+            "3"
+          ],
+          [
+            "BUSA1110",
+            "Introduction to Business",
+            "3"
+          ],
+          [
+            "MGMT 2110",
+            "Principles of Management",
+            "3"
+          ],
+          [
+            "BLAW 2110",
+            "Business Law",
+            "3"
+          ],
+          [
+            "ACCT 2110x",
+            "Principles of Accounting 1A",
+            "3"
+          ],
+          [
+            "ACCT 2110y",
+            "Principles of Accounting 1B",
+            "3"
+          ],
+          [
+            "MKTG 2110",
+            "Principles of Marketing",
+            "3"
+          ],
+          [
+            "BCIS1110",
+            "Fundamentals of Information Literacy & Systems",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.695774647887326,
+          434.60999999999996,
+          575.9492957746479,
+          513.12
+        ],
+        "rows": [
+          [
+            "competency r",
+            "equirements. For AA/AS degrees, use this section only when the program has speci",
+            "alized"
+          ],
+          [
+            "requirements",
+            ".",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title / Requirement",
+            "Credits"
+          ],
+          [
+            "HIST 1120",
+            "United States History II",
+            "3"
+          ],
+          [
+            "CHEM 1120",
+            "Introduction to Chemistry and Chemistry Lab",
+            "4"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.695774647887326,
+          558.54,
+          575.9492957746479,
+          731.64
+        ],
+        "rows": [
+          [
+            "",
+            null,
+            null
+          ],
+          [
+            "Business Ass",
+            "ociate of Science - (BUS AS) CIP Code: 52.0101D",
+            ""
+          ],
+          [
+            "First Semeste",
+            "r (Fall 1)",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "BUSA 1110",
+            "Introduction to Business",
+            "3"
+          ],
+          [
+            "BCIS 1110",
+            "Fundamentals of Information Literacy and Systems",
+            "3"
+          ],
+          [
+            "ECON 2110 Macroeconomic Principles 3",
+            null,
+            null
+          ],
+          [
+            "ENGL 2110 Composition I 3",
+            null,
+            null
+          ],
+          [
+            "Semester Tot",
+            "al: 12 Credit Hours",
+            ""
+          ],
+          [
+            "Second Seme",
+            "ster (Spring 1)",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.695774647887326,
+          743.16,
+          575.9492957746479,
+          756.0
+        ],
+        "rows": [
+          [
+            "BLAW 2110 Business Law 3",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 12,
+    "printed_page": 72,
+    "tables": [
+      {
+        "bbox": [
+          35.691428571428574,
+          49.19999999999993,
+          575.9542857142858,
+          518.64
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ENGL 2210",
+            "Professional & Technical Communication",
+            "3"
+          ],
+          [
+            "COMM",
+            "Public Speaking or ENGL 1120 Composition II",
+            "3"
+          ],
+          [
+            "1130",
+            null,
+            null
+          ],
+          [
+            "Humanities and Fine Arts Elective 3",
+            null,
+            null
+          ],
+          [
+            "Semester Total: 15 Credit Hours\nSUMMER SESSION (OPTIONAL)\nOptional summer offerings may be scheduled based on student needs. Courses offered during the summer may",
+            null,
+            null
+          ],
+          [
+            "duplicate major courses from the fall or spring semesters. Courses offered will be determined based on student",
+            null,
+            null
+          ],
+          [
+            "needs each s",
+            "ummer.",
+            ""
+          ],
+          [
+            "Third Semest",
+            "er (Fall 2)",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ACCT 2110x",
+            "Principles of Accounting 1A",
+            "3"
+          ],
+          [
+            "MATH 1220",
+            "College Algebra",
+            "3"
+          ],
+          [
+            "PSYC 1110 Introduction to Psychology 3",
+            null,
+            null
+          ],
+          [
+            "Humanities and Fine Arts Elective 3",
+            null,
+            null
+          ],
+          [
+            "Semester Tot",
+            "al: 12 Credit Hours",
+            ""
+          ],
+          [
+            "Fourth Seme",
+            "ster (Spring 2)",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ACCT 2110y",
+            "Principles of Accounting 1B",
+            "3"
+          ],
+          [
+            "MKTG 2110",
+            "Principles of Marketing",
+            "3"
+          ],
+          [
+            "Math 1350 Statistics 3",
+            null,
+            null
+          ],
+          [
+            "Laboratory Sciences and Laboratory Elective 4",
+            null,
+            null
+          ],
+          [
+            "Semester Tot",
+            "al: 13 Credit Hours",
+            ""
+          ],
+          [
+            "Fifth Semeste",
+            "r (Fall 3)",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ECON 2120",
+            "Microeconomic Principles",
+            "3"
+          ],
+          [
+            "",
+            "Laboratory Sciences and Laboratory Elective",
+            "4"
+          ],
+          [
+            "SOCI 2325 Introduction to Native American Studies 3",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.691428571428574,
+          743.16,
+          575.9542857142858,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "72",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 13,
+    "printed_page": 73,
+    "tables": [
+      {
+        "bbox": [
+          35.74956521739131,
+          503.25,
+          575.9060869565218,
+          550.32
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "AA/AS: 6 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Information and Digital Literacy",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.74956521739131,
+          595.67975,
+          575.9060869565218,
+          627.0
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.74956521739131,
+          687.33,
+          575.9060869565218,
+          734.4
+        ],
+        "rows": [
+          [
+            "The required\nCourse ID",
+            "courses within the declared program, including common course numbered courses,\nCourse Title",
+            "prerequisite\nCredits"
+          ],
+          [
+            "sequences, co",
+            "-requisites, capstones, clinical/field placements, internships, or portfolio requireme",
+            "nts."
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.74956521739131,
+          743.16,
+          575.9060869565218,
+          756.0
+        ],
+        "rows": [
+          [
+            "ENGL 2210 Professional and Technical Communication 3",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 14,
+    "printed_page": 74,
+    "tables": [
+      {
+        "bbox": [
+          35.68207792207792,
+          49.19999999999993,
+          575.9625974025975,
+          285.47999999999996
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "BUSA 1180",
+            "Business Math",
+            "3"
+          ],
+          [
+            "MGMT 2110",
+            "Principles of Management",
+            "3"
+          ],
+          [
+            "BUSA 2230",
+            "Human Relations in Business",
+            "3"
+          ],
+          [
+            "BCIS1110",
+            "Fundamentals of Information Literacy & Systems",
+            "3"
+          ],
+          [
+            "BLAW 2110",
+            "Business Law",
+            "3"
+          ],
+          [
+            "ACCT 2110x",
+            "Principles of Accounting 1A",
+            "3"
+          ],
+          [
+            "ACCT 2110y",
+            "Principles of Accounting 1B",
+            "3"
+          ],
+          [
+            "ACCT 2220",
+            "Computerized Accounting",
+            "3"
+          ],
+          [
+            "ENTR 2210",
+            "Small Business Management",
+            "3"
+          ],
+          [
+            "COSC 123",
+            "Excel",
+            "3"
+          ],
+          [
+            "BFIN 2110",
+            "Introduction to Finance",
+            "3"
+          ],
+          [
+            "MKTG 2110",
+            "Principles of Marketing",
+            "3"
+          ],
+          [
+            "ECON 2110",
+            "Principles of Macroeconomics",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.68207792207792,
+          360.59975000000003,
+          575.9625974025975,
+          391.9199999999999
+        ],
+        "rows": [
+          [
+            "or institution\nCourse ID",
+            "al requirements. Developmental courses should not be counted toward degree credi\nCourse Title",
+            "t\nCredits"
+          ],
+          [
+            "unless permit",
+            "ted by institutional policy.",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.68207792207792,
+          437.33975,
+          575.9625974025975,
+          734.4
+        ],
+        "rows": [
+          [
+            "First Semester (Fall 1)",
+            null,
+            null
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ACCT 2115",
+            "Survey of Accounting",
+            "3"
+          ],
+          [
+            "BUSA 1110",
+            "Introduction to Business",
+            "3"
+          ],
+          [
+            "BUSA 1180 Business Math 3\nSemester Total: 12 Credit Hours",
+            null,
+            null
+          ],
+          [
+            "ENGL 2110 Composition I 3\nSecond Semester (Spring 1)",
+            null,
+            null
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ACCT 2110x",
+            "Principles of Accounting 1A",
+            "3"
+          ],
+          [
+            "MGMT 2110",
+            "Principles of Management",
+            "3"
+          ],
+          [
+            "BLAW 2110",
+            "Business Law",
+            "3"
+          ],
+          [
+            "BUSA 2230 Human Relations in Business 3\nSemester Total: 15 Credit Hours",
+            null,
+            null
+          ],
+          [
+            "BCIS 1110 Fundamentals of Information Literacy and Systems 3\nSUMMER SESSION (OPTIONAL)",
+            null,
+            null
+          ],
+          [
+            "Optional summer offerings may be scheduled based on student needs. Courses offered during the summer\nmay duplicate major courses from the fall or spring semesters. Courses offered will be determined based\non student needs each summer.",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.68207792207792,
+          743.16,
+          575.9625974025975,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "74",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 15,
+    "printed_page": 75,
+    "tables": [
+      {
+        "bbox": [
+          35.691428571428574,
+          49.43999999999997,
+          575.955918367347,
+          380.03999999999996
+        ],
+        "rows": [
+          [
+            "Third Semester (Fall 2)",
+            null,
+            null
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ACCT 2110y",
+            "Principles of Accounting 1B",
+            "3"
+          ],
+          [
+            "ACCT 2220",
+            "Computerized Accounting",
+            "3"
+          ],
+          [
+            "ENTR 2110 Small Business Management 3\nSemester Total: 12 Credit Hours",
+            null,
+            null
+          ],
+          [
+            "SOCI 2325 Introduction to Native American Studies 3\nFourth Semester (Spring 2)",
+            null,
+            null
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "MKTG 2110",
+            "Principles of Marketing",
+            "3"
+          ],
+          [
+            "BFIN 2110",
+            "Introduction to Finance",
+            "3"
+          ],
+          [
+            "ECON 2110 Macroeconomic Principles 3\nSemester Total: 12 Credit Hours",
+            null,
+            null
+          ],
+          [
+            "MATH 1215 Intermediate Algebra 3\nFifth Semester (Fall 3)",
+            null,
+            null
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ENGL 2210",
+            "Professional & Technical Communication",
+            "3"
+          ],
+          [
+            "ECON 2120",
+            "Microeconomic Principles",
+            "3"
+          ],
+          [
+            "COMM 1130 Public Speaking 3\nSemester Total: 12 Credit Hours",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.691428571428574,
+          743.16,
+          575.955918367347,
+          756.0
+        ],
+        "rows": [
+          [
+            "corporate social responsibility.",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 16,
+    "printed_page": 76,
+    "tables": [
+      {
+        "bbox": [
+          35.69012658227848,
+          79.14000000000004,
+          575.9544303797469,
+          282.59999999999997
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ACCT 2115",
+            "Survey of Accounting",
+            "3"
+          ],
+          [
+            "BUSA 1110",
+            "Introduction to Business",
+            "3"
+          ],
+          [
+            "BUED 125",
+            "Business Math",
+            "3"
+          ],
+          [
+            "ENGL 1110",
+            "Composition I",
+            "3"
+          ],
+          [
+            "MGMT 2110",
+            "Principles of Management",
+            "3"
+          ],
+          [
+            "BUSA 2230",
+            "Human Relations in Business",
+            "3"
+          ],
+          [
+            "BLAW 2110",
+            "Business Law",
+            "3"
+          ],
+          [
+            "BCIS 1110",
+            "Fundamentals of Information Literacy and Systems",
+            "3"
+          ],
+          [
+            "ACCT 2220\nENTR 2110",
+            "Computerized Accounting\nSmall Business Management",
+            "3\n3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.69012658227848,
+          328.02,
+          575.9544303797469,
+          703.8000000000001
+        ],
+        "rows": [
+          [
+            "First Semester (Fall 1)",
+            null,
+            null,
+            null
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "ACCT 2115",
+            "Survey of Accounting",
+            "3",
+            "Hybrid"
+          ],
+          [
+            "BUSA 1110",
+            "Introduction to Business",
+            "3",
+            "Hybrid"
+          ],
+          [
+            "BUSA 1180 Business Math 3 In Class",
+            null,
+            null,
+            null
+          ],
+          [
+            "ENGL 2110 Composition I 3 In Class\nSecond Semester (Spring 1)",
+            null,
+            null,
+            null
+          ],
+          [
+            "Semester Tota",
+            "l: 12 Credit Hours",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "MGMT 2110",
+            "Principles of Management",
+            "3",
+            "Async Online"
+          ],
+          [
+            "BUSA 2320",
+            "Human Relations in Business",
+            "3",
+            "Async Online"
+          ],
+          [
+            "BLAW 2110 Business Law 3 Async Online",
+            null,
+            null,
+            null
+          ],
+          [
+            "BCIS 1110 Fundamentals of Information Literacy and Systems 3 In Class\nSUMMER SESSION (OPTIONAL)",
+            null,
+            null,
+            null
+          ],
+          [
+            "Semester Total: 12 Credit Hours\nOptional summer offerings may be scheduled based on student needs. Courses offered during the summer may",
+            null,
+            null,
+            null
+          ],
+          [
+            "duplicate major courses from the fall or spring semesters. Courses offered will be determined based on student\nThird Semester (Fall 2)",
+            null,
+            null,
+            null
+          ],
+          [
+            "needs each su",
+            "mmer.",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "ACCT 2220",
+            "Computerized Accounting",
+            "3",
+            "Hybrid"
+          ],
+          [
+            "ENTR 2110 Small Business Management 3 Hybrid",
+            null,
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.69012658227848,
+          743.16,
+          575.9544303797469,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "76",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 17,
+    "printed_page": 77,
+    "tables": [
+      {
+        "bbox": [
+          35.703529411764706,
+          606.17975,
+          575.9576470588236,
+          730.92
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ENGL 1110",
+            "Composition I",
+            "3"
+          ],
+          [
+            "MATH",
+            "Intermediate Algebra",
+            "2/2"
+          ],
+          [
+            "118/119",
+            "",
+            ""
+          ],
+          [
+            "COSC 121",
+            "Introduction to Programming",
+            "3"
+          ],
+          [
+            "ENGR 101",
+            "Introduction to CADD",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.703529411764706,
+          743.16,
+          575.9576470588236,
+          756.0
+        ],
+        "rows": [
+          [
+            "ENGR 103 Engineering Graphics 4",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 18,
+    "printed_page": 78,
+    "tables": [
+      {
+        "bbox": [
+          35.69491525423729,
+          49.19999999999993,
+          575.951186440678,
+          128.03999999999996
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ENGR 104",
+            "Mechanical and Electrical Drawing Applications",
+            "4"
+          ],
+          [
+            "ENGR 105",
+            "Introduction to Engineering and Design",
+            "3"
+          ],
+          [
+            "ENGR 106",
+            "Solid Modeling",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.69491525423729,
+          188.27999999999997,
+          575.951186440678,
+          502.91999999999996
+        ],
+        "rows": [
+          [
+            "First Semester (Fall 1)",
+            null,
+            null
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ENGR101",
+            "Introduction to CADD",
+            "3"
+          ],
+          [
+            "ENGR105 Introduction to Engineering and Design 3",
+            null,
+            null
+          ],
+          [
+            "ENGL1110 Composition I 3\nSecond Semester (Spring 1)",
+            null,
+            null
+          ],
+          [
+            "Semester Total:",
+            "9 Credit Hours",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ENGR102",
+            "Advanced CADD",
+            "3"
+          ],
+          [
+            "ENGR103 Engineering Graphics 4",
+            null,
+            null
+          ],
+          [
+            "MATH118/119 Intermediate Algebra 2/2\nThird Semester (Fall 2)",
+            null,
+            null
+          ],
+          [
+            "Semester Total:",
+            "11 Credit Hours",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ENGR104",
+            "Mechanical and Electrical Drawing Applications",
+            "4"
+          ],
+          [
+            "MT 211L Intro to Computer Numerical Control (Manufacturing I) 4",
+            null,
+            null
+          ],
+          [
+            "COSC121 Introduction to Programming 3\nFourth Semester (Spring 2)",
+            null,
+            null
+          ],
+          [
+            "Semester Total:",
+            "11 Credit Hours",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ENGR106 Solid Modeling 3",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.69491525423729,
+          743.16,
+          575.951186440678,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "78",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 19,
+    "printed_page": 79,
+    "tables": [
+      {
+        "bbox": [
+          36.0,
+          743.16,
+          576.0,
+          756.0
+        ],
+        "rows": [
+          [
+            "5) Implement approaches to protecting cultural and historic sites that integrate traditional knowledge and",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 20,
+    "printed_page": 80,
+    "tables": [
+      {
+        "bbox": [
+          35.72756756756757,
+          79.14000000000004,
+          575.9221621621622,
+          157.67999999999995
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "CONS 1110",
+            "Introduction to Forest and Natural Resources",
+            "3"
+          ],
+          [
+            "CONS 1120",
+            "Technical and Professional Report Writing",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.72756756756757,
+          217.91999999999996,
+          575.9221621621622,
+          359.28
+        ],
+        "rows": [
+          [
+            "First Semester (Fall 1)",
+            null,
+            null
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "CONS 1110 Introduction to Forest and Natural Resources 3",
+            null,
+            null
+          ],
+          [
+            "CONS 1120 Technical and Professional Report Writing 3\nSecond Semester (Spring 1)",
+            null,
+            null
+          ],
+          [
+            "Semester Total:",
+            "6 Credit Hours",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "CONS 1130 Conservation and Environmental Policy, Law, and Regulations 3",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.72756756756757,
+          743.16,
+          575.9221621621622,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "80",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 21,
+    "printed_page": 81,
+    "tables": [
+      {
+        "bbox": [
+          36.0,
+          743.16,
+          576.0,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 22,
+    "printed_page": 82,
+    "tables": [
+      {
+        "bbox": [
+          35.71932203389831,
+          108.81000000000002,
+          575.926779661017,
+          155.88
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 6 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Information and Digital Literacy",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71932203389831,
+          201.33,
+          575.926779661017,
+          232.55999999999995
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12 if\nCourse Title",
+            "selected\nCredits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Personal and Social Responsibili",
+            "ty"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71932203389831,
+          292.89000000000004,
+          575.926779661017,
+          324.12
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Critical Thinking; Information and Digital Literacy; Personal and So\nCourse Title",
+            "cial\nCredits"
+          ],
+          [
+            "Responsibility",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71932203389831,
+          369.56975000000006,
+          575.926779661017,
+          400.9199999999999
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12 if selecte\nCourse Title",
+            "d\nCredits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Personal and Social Responsibili",
+            "ty"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71932203389831,
+          461.16,
+          575.926779661017,
+          492.47999999999996
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Approved General Education content areas or institutionally appro\nCourse Title",
+            "ved other areas\nCredits"
+          ],
+          [
+            "meeting essent",
+            "ial skills",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71932203389831,
+          552.72,
+          575.926779661017,
+          756.0
+        ],
+        "rows": [
+          [
+            "The required c\nCourse ID",
+            null,
+            null,
+            "ourses within the declared program, including\nCourse Title",
+            "common c\nCredits",
+            "ourse numbered courses, prerequisite\nPrereq/Coreq"
+          ],
+          [
+            "sequences, co-",
+            null,
+            null,
+            "requisites, capstones, clinical/field placements,",
+            "internship",
+            "s, or portfolio requirements."
+          ],
+          [
+            "",
+            null,
+            null,
+            "",
+            "",
+            ""
+          ],
+          [
+            "CULN 1050",
+            null,
+            null,
+            "Safety & Sanitation Management",
+            "1T",
+            ""
+          ],
+          [
+            "HRTM 1140",
+            null,
+            null,
+            "Introduction to Food Preparation",
+            "2T",
+            "CULN1050"
+          ],
+          [
+            "CULN 1225",
+            null,
+            null,
+            "Fundamentals of Baking Theory",
+            "1",
+            "CULN1235L"
+          ],
+          [
+            "CULN 1235L",
+            null,
+            null,
+            "Applied Fundamentals of Baking (L)",
+            "3T",
+            "CULN1225"
+          ],
+          [
+            "CULN1405C",
+            null,
+            null,
+            "Culinary Nutrition with Lab",
+            "2T",
+            "HRTM1140"
+          ],
+          [
+            "FSTE 2110",
+            null,
+            null,
+            "Food Science I",
+            "4",
+            "HRTM1140"
+          ],
+          [
+            "HRTM 1145",
+            null,
+            null,
+            "Food and Beverage Service Management",
+            "1T",
+            ""
+          ],
+          [
+            "CULN 1810",
+            null,
+            null,
+            "Purchasing and Cost Control",
+            "1T",
+            ""
+          ],
+          [
+            "CULN 2050",
+            null,
+            null,
+            "Advanced Food Preparation",
+            "2T",
+            "HRTM1140"
+          ],
+          [
+            "CULN 222\nP ag e |",
+            "0L\n82",
+            "Garde Manger Cold Food Preparation (L) 2T HRTM1140, CULN2050",
+            null,
+            null,
+            null
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 23,
+    "printed_page": 83,
+    "tables": [
+      {
+        "bbox": [
+          35.68835820895522,
+          49.19999999999993,
+          575.9570149253732,
+          173.15999999999997
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "CULN 2410C F",
+            "ood and Culture with Lab",
+            "2T",
+            "CULN2220L"
+          ],
+          [
+            "CULN 2520L E",
+            "xploration of Indigenous Cuisine",
+            "2T",
+            "CULN2410L"
+          ],
+          [
+            "CULN 2235L A\nCULN2225L A",
+            "dvanced Baking and Pastry (L)\nrtisan Breads",
+            "3T\n3T",
+            "CULN1225, CULN1235L\nCULN1225, CULN1235L"
+          ],
+          [
+            "CULN 2999 C",
+            "ulinary Capstone",
+            "2T",
+            "Completion of Degree Requirements –\nRuns Concurrent with CULN 2998"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.68835820895522,
+          218.51999999999998,
+          575.9570149253732,
+          265.55999999999995
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Course Title / Requirement",
+            "Credits"
+          ],
+          [
+            "Technical, occu",
+            "pational, licensure, certification, laboratory, practicum, or program competency r",
+            "equirements."
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.68835820895522,
+          340.65000000000003,
+          575.9570149253732,
+          387.71999999999997
+        ],
+        "rows": [
+          [
+            "or institutional\nCourse ID",
+            "requirements. Developmental courses should not be counted toward degree cred\nCourse Title",
+            "it\nCredits"
+          ],
+          [
+            "unless permitte",
+            "d by institutional policy.",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.68835820895522,
+          448.02,
+          575.9570149253732,
+          730.2
+        ],
+        "rows": [
+          [
+            "First Semester (Fall 1)",
+            null,
+            null,
+            null
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "CULN 1050",
+            "Safety & Sanitation Management",
+            "1",
+            "F2F"
+          ],
+          [
+            "HRTM 1140",
+            "Introduction to Food Preparation",
+            "2",
+            "F2F"
+          ],
+          [
+            "CULN 1225",
+            "Fundamentals of Baking Theory",
+            "1",
+            "F2F"
+          ],
+          [
+            "CULN 1235",
+            "Applied Fundamentals of Baking",
+            "3",
+            "F2F"
+          ],
+          [
+            "ENGL 1110 Composition I 3",
+            null,
+            null,
+            null
+          ],
+          [
+            "ARTH 1120 Introduction to Art 3\nSecond Semester (Spring 1)",
+            null,
+            null,
+            null
+          ],
+          [
+            "Semester Total",
+            ": 13 Credit Hours",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "CULN 1405C",
+            "Culinary Nutrition with Lab",
+            "2",
+            "F2F"
+          ],
+          [
+            "HRTM 1145",
+            "Food and Beverage Service Management",
+            "1",
+            "F2F"
+          ],
+          [
+            "CULN 1810\nCULN 2050",
+            "Purchasing and Cost Control\nAdvanced Food Preparation",
+            "1\n2",
+            "F2F\nF2F"
+          ],
+          [
+            "SPAN/NAVA",
+            "Spanish I OR Navajo I",
+            "4",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.68835820895522,
+          743.16,
+          575.9570149253732,
+          756.0
+        ],
+        "rows": [
+          [
+            "ACCT 2115 Survey of Accounting 3",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 24,
+    "printed_page": 84,
+    "tables": [
+      {
+        "bbox": [
+          35.68941176470588,
+          49.19999999999993,
+          575.9576470588236,
+          425.28
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            null,
+            null,
+            null
+          ],
+          [
+            "ENGL 1130 Public Speaking 3\nSUMMER SESSION (OPTIONAL)",
+            null,
+            null,
+            null
+          ],
+          [
+            "Semester Total: 16 Credit Hours\nOptional summer offerings may be scheduled based on student needs. Courses offered during the summer may",
+            null,
+            null,
+            null
+          ],
+          [
+            "duplicate major courses from the fall or spring semesters. Courses offered will be determined based on student\nThird Semester (Fall 2)",
+            null,
+            null,
+            null
+          ],
+          [
+            "needs each sum",
+            "mer.",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "FSTE 2110",
+            "Food Science I",
+            "4",
+            "F2F"
+          ],
+          [
+            "CULN 2220L",
+            "Garde Manger and Cold Food Preparation",
+            "2",
+            "F2F"
+          ],
+          [
+            "CULN 2320C",
+            "Catering & Restaurant Management",
+            "1",
+            "F2F"
+          ],
+          [
+            "CULN 2410C",
+            "Food and Culture",
+            "2",
+            "F2F"
+          ],
+          [
+            "CULN 2999 Culinary Capstone 2 F2F",
+            null,
+            null,
+            null
+          ],
+          [
+            "BUSN 1110 Introduction to Business 3\nFourth Semester (Spring 2)",
+            null,
+            null,
+            null
+          ],
+          [
+            "Semester Total:",
+            "14 Credit Hours",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "CULN 2520L",
+            "Exploration of Indigenous Cuisine",
+            "2",
+            "F2F"
+          ],
+          [
+            "CULN 2235L",
+            "Advanced Baking and Pastry",
+            "3",
+            "F2F"
+          ],
+          [
+            "CULN 2225L",
+            "Artisan Breads",
+            "3",
+            "F2F"
+          ],
+          [
+            "CULN 2998",
+            "Culinary Internship",
+            "3",
+            "F2F"
+          ],
+          [
+            "PSYC 1110 Introduction to Psychology 3",
+            null,
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.68941176470588,
+          743.16,
+          575.9576470588236,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "84",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 25,
+    "printed_page": 85,
+    "tables": [
+      {
+        "bbox": [
+          35.76,
+          230.85,
+          575.9563636363637,
+          419.64000000000004
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ENGL 1110",
+            "Composition I",
+            "3"
+          ],
+          [
+            "COMM 1130",
+            "Public Speaking",
+            "3"
+          ],
+          [
+            "MATH 120",
+            "Intermediate Algebra (MATH118/119)",
+            "3"
+          ],
+          [
+            "HLED 1120",
+            "American Red Cross First Aid & CPR/AED",
+            "2"
+          ],
+          [
+            "CULN 1050",
+            "Safety & Sanitation Management",
+            "1T"
+          ],
+          [
+            "HRTM 1140",
+            "Introduction to Food Preparation",
+            "2T"
+          ],
+          [
+            "CULN 1225",
+            "Fundamentals of Baking Theory",
+            "1"
+          ],
+          [
+            "CULN1235L",
+            "Applied Fundamentals of Baking (L)",
+            "3T"
+          ],
+          [
+            "CULN 1810",
+            "Purchasing and Cost Control",
+            "1T"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          450.24,
+          575.9563636363637,
+          481.56
+        ],
+        "rows": [
+          [
+            "Requirement",
+            "Description"
+          ],
+          [
+            "Industry Certification",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          743.16,
+          575.9563636363637,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 26,
+    "printed_page": 86,
+    "tables": [
+      {
+        "bbox": [
+          36.0,
+          743.16,
+          576.0,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "86",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 27,
+    "printed_page": 87,
+    "tables": [
+      {
+        "bbox": [
+          35.76,
+          227.39974999999995,
+          575.888,
+          274.43999999999994
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "| AA: 6 credits",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          305.13,
+          575.888,
+          336.36
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "| AA: 3 credits",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          367.04999999999995,
+          575.888,
+          398.28
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "| AA: 4 credits",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          428.94,
+          575.888,
+          460.2
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "| AA: 3 credits",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          490.8,
+          575.888,
+          522.12
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "| AA: 3 credits",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          552.72,
+          575.888,
+          584.0400000000001
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "| AA: 3 credits",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          644.27975,
+          575.888,
+          675.6
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Approved General Education content areas or institutionally appro\nCourse Title",
+            "ved other areas\nCredits"
+          ],
+          [
+            "meeting essen",
+            "tial skills",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          743.16,
+          575.888,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 28,
+    "printed_page": 88,
+    "tables": [
+      {
+        "bbox": [
+          35.69012658227848,
+          93.93000000000002,
+          575.9544303797469,
+          313.2
+        ],
+        "rows": [
+          [
+            "The required c\nCourse ID",
+            "ourses within the declared program, including common course numbered courses,\nCourse Title",
+            "prerequisite\nCredits"
+          ],
+          [
+            "sequences, co-",
+            "requisites, capstones, clinical/field placements, internships, or portfolio requireme",
+            "nts."
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ECED 1110",
+            "Child Growth, Development and Learning",
+            "3"
+          ],
+          [
+            "ECED 1115",
+            "Health, Safety and Nutrition",
+            "2"
+          ],
+          [
+            "ECED 1120",
+            "Guiding Young Children",
+            "3"
+          ],
+          [
+            "ECED 1125",
+            "Assessment of Children and Evaluation of Programs",
+            "3"
+          ],
+          [
+            "ECED 1130",
+            "Family and Community Collaboration",
+            "3"
+          ],
+          [
+            "ECED 2110",
+            "Professionalism",
+            "2"
+          ],
+          [
+            "ECED 2115",
+            "Introduction to Language, Literacy and Reading",
+            "3"
+          ],
+          [
+            "ECED 2120",
+            "Curriculum Development through Play: Birth through Age 4 (PreK)",
+            "3"
+          ],
+          [
+            "ECED 2121",
+            "Curriculum Development through Play Practicum: Birth through Age 4 (PreK)",
+            "2"
+          ],
+          [
+            "ECED 2130\nECED 2131",
+            "Curriculum Development and Implementation; Age 3 (PreK) through Grade 3\nCurriculum Development and Implementation Practicum: Age 3 – Grade 3",
+            "3\n2"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.69012658227848,
+          373.38,
+          575.9544303797469,
+          733.44
+        ],
+        "rows": [
+          [
+            "First Semester (Fall 1)",
+            null,
+            null
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ECED 1115",
+            "Health, Safety and Nutrition",
+            "2"
+          ],
+          [
+            "ECED 1110",
+            "Childhood Growth/Development and Learning",
+            "3"
+          ],
+          [
+            "MATH",
+            "College-Level Math Requirement",
+            "3"
+          ],
+          [
+            "ENGL 1110 Composition I 3",
+            null,
+            null
+          ],
+          [
+            "PSYC 1110 Introduction to Psychology 3\nSecond Semester (Spring 1)",
+            null,
+            null
+          ],
+          [
+            "Semester To",
+            "tal: 14",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ECED 2110",
+            "Professionalism",
+            "2"
+          ],
+          [
+            "ECED 2115",
+            "Introduction to Language, Literacy and Reading",
+            "3"
+          ],
+          [
+            "HIST 2136",
+            "History of Indian Education",
+            "3"
+          ],
+          [
+            "ENGL 1120",
+            "Composition II",
+            "3"
+          ],
+          [
+            "Creative and Fine Arts Requirement 3",
+            null,
+            null
+          ],
+          [
+            "Laboratory Science Requirement 4\nSUMMER SESSION (OPTIONAL)",
+            null,
+            null
+          ],
+          [
+            "Semester Total: 18\nOptional summer offerings may be scheduled based on student needs. Courses offered during the summer may",
+            null,
+            null
+          ],
+          [
+            "duplicate major courses from the fall or spring semesters. Courses offered will be determined based on student\nThird Semester (Fall 2)",
+            null,
+            null
+          ],
+          [
+            "needs each s",
+            "ummer.",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.69012658227848,
+          743.16,
+          575.9544303797469,
+          756.0
+        ],
+        "rows": [
+          [
+            "PCoaurgsee I |D",
+            "8 8",
+            "Course Title Credits"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 29,
+    "printed_page": 89,
+    "tables": [
+      {
+        "bbox": [
+          35.674838709677424,
+          49.19999999999993,
+          575.9767741935483,
+          284.4
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ECED 1130",
+            "Family and Community Collaboration",
+            "3"
+          ],
+          [
+            "SOCI 2325",
+            "Introduction to Native American Studies",
+            "3"
+          ],
+          [
+            "ECED 1120",
+            "Guiding Young Children",
+            "3"
+          ],
+          [
+            "ECED 2120 Curriculum Development through Play; Birth through Age 4 (Pre-K) 3",
+            null,
+            null
+          ],
+          [
+            "ECED 2121 Curriculum Development through Play Practicum; Birth through Age 4 (Pre-K) 2\nFourth Semester (Spring 2)",
+            null,
+            null
+          ],
+          [
+            "Semester To",
+            "tal: 17",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ECED 2130",
+            "Curriculum Development and Implementation: Age 3 through Grade 3",
+            "3"
+          ],
+          [
+            "ECED 2131",
+            "Curriculum Development and Implementation Practicum: Age 3 through Grade 3",
+            "2"
+          ],
+          [
+            "ECED 1125",
+            "Assessment of Children and Evaluation of Programs\nGeneral Education Elective",
+            "3\n3"
+          ],
+          [
+            "Foundations for the Integration of Native Language and Culture in Early Childhood\nECED 2999 3",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.674838709677424,
+          743.16,
+          575.9767741935483,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 30,
+    "printed_page": 90,
+    "tables": [
+      {
+        "bbox": [
+          35.682711864406784,
+          123.60000000000002,
+          575.9633898305084,
+          296.64
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ECED 1110",
+            "Child Growth, Development and Learning",
+            "3"
+          ],
+          [
+            "ECED 1115",
+            "Health, Safety and Nutrition",
+            "2"
+          ],
+          [
+            "ECED 1120",
+            "Guiding Young Children",
+            "3"
+          ],
+          [
+            "ECED 1125",
+            "Assessment of Children and Evaluation of Programs",
+            "3"
+          ],
+          [
+            "ECED 1130",
+            "Family and Community Collaboration",
+            "3"
+          ],
+          [
+            "ECED 2120",
+            "Curriculum Development through Play: Birth through Age 4 (PreK)",
+            "3"
+          ],
+          [
+            "ECED 2121",
+            "Curriculum Development through Play Practicum: Birth through Age 4 (PreK)",
+            "2"
+          ],
+          [
+            "ENGL 1110",
+            "Composition I",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.682711864406784,
+          342.06,
+          575.9633898305084,
+          578.16
+        ],
+        "rows": [
+          [
+            "First Semester (Fall 1)",
+            null,
+            null
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ECED 1110",
+            "Child Growth, Development and Learning",
+            "3"
+          ],
+          [
+            "ECED 1115",
+            "Health, Safety and Nutrition",
+            "2"
+          ],
+          [
+            "ECED 1120",
+            "Guiding Young Children",
+            "3"
+          ],
+          [
+            "ECED 1130 Family and Community Collaboration 3",
+            null,
+            null
+          ],
+          [
+            "ENGL 1110 Composition I 3\nSecond Semester (Spring 1)",
+            null,
+            null
+          ],
+          [
+            "Semester Tot",
+            "al: 14 Credit Hours",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "COMM 1130",
+            "Public Speaking",
+            "3"
+          ],
+          [
+            "MATH 111",
+            "Mathematics for Elementary & Middle School Teachers",
+            "3"
+          ],
+          [
+            "ECED 1125",
+            "Assessment of Children and Evaluation of Programs",
+            "3"
+          ],
+          [
+            "ECED 2120 Curriculum Development through Play: Birth through Age 4 (PreK) 3",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.682711864406784,
+          743.16,
+          575.9633898305084,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "90",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 31,
+    "printed_page": 91,
+    "tables": [
+      {
+        "bbox": [
+          35.7408,
+          465.93,
+          575.9136,
+          497.28
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 6 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Information and Digital Literacy",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.7408,
+          542.64,
+          575.9136,
+          573.96
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Quantitative Reasoning",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.7408,
+          619.40975,
+          575.9136,
+          697.92
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 4 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            null,
+            "Credits"
+          ],
+          [
+            "",
+            null,
+            "Critical Thinking; Personal and Social Responsibility; Quantitative",
+            "Reasoning"
+          ],
+          [
+            "",
+            null,
+            "",
+            ""
+          ],
+          [
+            "AGRO 1110/L",
+            null,
+            "Introduction to Plant Science and Lab OR",
+            "4"
+          ],
+          [
+            "BIOL 2610/L",
+            null,
+            "Principles of Biology and Lab OR",
+            "4"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.7408,
+          743.16,
+          575.9136,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 32,
+    "printed_page": 92,
+    "tables": [
+      {
+        "bbox": [
+          35.73818181818182,
+          79.17000000000004,
+          575.9127272727272,
+          116.27999999999997
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12 if\nCourse Title",
+            "selected\nCredits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Personal and Social Responsibili\nSelect from any Social and Behavioral Science Classes.",
+            "ty"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.73818181818182,
+          176.51999999999998,
+          575.9127272727272,
+          207.84000000000003
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Critical Thinking; Information and Digital Literacy; Personal and So\nCourse Title",
+            "cial\nCredits"
+          ],
+          [
+            "Responsibility",
+            "OR Select from any Humanities Classes.",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.73818181818182,
+          268.07975,
+          575.9127272727272,
+          299.4
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Approved General Education content areas or institutionally appro\nCourse Title",
+            "ved other areas\nCredits"
+          ],
+          [
+            "meeting essentia",
+            "l skills",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.73818181818182,
+          359.7,
+          575.9127272727272,
+          473.64000000000004
+        ],
+        "rows": [
+          [
+            "Use this section\nCourse ID",
+            "for required courses within the declared program, including common course num\nCourse Title",
+            "bered courses,\nCredits"
+          ],
+          [
+            "prerequisite seq",
+            "uences, co-requisites, capstones, clinical/field placements, internships, or portfol\nOR",
+            "io requirements."
+          ],
+          [
+            "ENGL 1120",
+            "Composition II",
+            "3"
+          ],
+          [
+            "ENGL 2210",
+            "Professional & Technical CommuOnRication",
+            "3"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "MATH 1250",
+            "Trigonometry and Pre-Calculus",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.73818181818182,
+          743.16,
+          575.9127272727272,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "92",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 33,
+    "printed_page": 93,
+    "tables": [
+      {
+        "bbox": [
+          35.7011320754717,
+          133.64999999999995,
+          575.9416216216216,
+          237.72000000000003
+        ],
+        "rows": [
+          [
+            "competency req\nCourse ID",
+            "uirements. For AA/AS degrees, use this section only when the program has speci\nCourse Title / Requirement",
+            "alized\nCredits"
+          ],
+          [
+            "requirements.",
+            "",
+            ""
+          ],
+          [
+            "ENVS 1130/L",
+            "Blue Planet and Lab",
+            "4 (3/1)"
+          ],
+          [
+            "GEOL 1210/L",
+            "Introduction to Hydrology and Lab",
+            "4 (3/1)"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "BIOL 1140/L",
+            "Biology for Health Sciences and Lab",
+            "4 (3/1)"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.7011320754717,
+          312.84,
+          575.9416216216216,
+          359.87999999999994
+        ],
+        "rows": [
+          [
+            "preparation,\nCourse ID",
+            "or institutional requirements. Developmental courses should not be counted toward\nCourse Title",
+            "degree credit\nCredits"
+          ],
+          [
+            "unless permi",
+            "tted by institutional policy.",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.7011320754717,
+          435.0,
+          575.9416216216216,
+          539.16
+        ],
+        "rows": [
+          [
+            "competency req\nCourse ID",
+            "uirements. For AA/AS degrees, use this section only when the program has speci\nCourse Title / Requirement",
+            "alized\nCredits"
+          ],
+          [
+            "requirements.",
+            "",
+            ""
+          ],
+          [
+            "ENVS 1310",
+            "Environmental Regulations",
+            "3"
+          ],
+          [
+            "ENVS 2110",
+            "Contemporary Issues in Env. Science",
+            "3"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ENVS 2120",
+            "Tribal Environmental Management & Planning",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.7011320754717,
+          584.57975,
+          561.9200000000001,
+          738.96
+        ],
+        "rows": [
+          [
+            "First Semester (Fall 1)",
+            null,
+            null
+          ],
+          [
+            "",
+            "03.0104",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ENGL 1110",
+            "Composition I",
+            "3"
+          ],
+          [
+            "MATH 1220",
+            "College Algebra",
+            "3"
+          ],
+          [
+            "GIT 111\nSOCI 2325\nArea IV: Social\nOR\nand Behavioral",
+            "Introduction to GIS/GPS Technology\nIntroduction to Native American Studies",
+            "3\n3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.7011320754717,
+          743.16,
+          575.9416216216216,
+          756.0
+        ],
+        "rows": [
+          [
+            "Area V:",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 34,
+    "printed_page": 94,
+    "tables": [
+      {
+        "bbox": [
+          35.697391304347825,
+          49.19999999999993,
+          561.6670588235294,
+          654.48
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            null,
+            null
+          ],
+          [
+            "Humanities\nSecond Semester (Spring 1)",
+            null,
+            null
+          ],
+          [
+            "Semester Total",
+            ": 16",
+            ""
+          ],
+          [
+            "Course ID\nENGL 1120",
+            "OR\nCourse Title\nComposition II",
+            "Credits"
+          ],
+          [
+            "ENGL 2210",
+            "Professional & Technical CommuOnRication",
+            "3"
+          ],
+          [
+            "MATH 1250",
+            "Trigonometry and Pre-Calculus",
+            "3"
+          ],
+          [
+            "MATH 1350\nBIOL 1140/L",
+            "Introduction to Statistics\nBiology for Health Sciences and Lab",
+            "4 (3/1)"
+          ],
+          [
+            "CHEM 1215/L",
+            "General Chemistry and Lab",
+            "4 (3/1)"
+          ],
+          [
+            "",
+            null,
+            null
+          ],
+          [
+            "ENVS 1310 Environmental Regulations 3\nSUMMER SESSION (OPTIONAL)",
+            null,
+            null
+          ],
+          [
+            "Semester Total: 16\nOptional summer offerings may be scheduled based on student needs. Courses offered during the summer may",
+            null,
+            null
+          ],
+          [
+            "duplicate major courses from the fall or spring semesters. Courses offered will be determined based on student\nThird Semester (Fall 2)",
+            null,
+            null
+          ],
+          [
+            "needs each sum",
+            "mer.",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ENVS 1130/L\nGEOL 1210/L\nArea III:",
+            "Blue Planet and Lab\nOR\nIntroduction to Hydrology and Lab\nOR OR\nAGRO 1110/L: Introduction to Plant Science and Lab BIOL 2610/L Principles",
+            "4 (3/1)\n4 (3/1)\n4 (3/1)"
+          ],
+          [
+            "Science",
+            "of Biology and Lab GEOL 2110/L Historical Geology and Lab (Pre-Req.)",
+            ""
+          ],
+          [
+            "PHYS 1310/L Calculus-Based Physics and Lab (Pre-Req.)",
+            null,
+            null
+          ],
+          [
+            "ENVS 2111 Environmental Engineering and Science 3\nFourth Semester (Spring 2)",
+            null,
+            null
+          ],
+          [
+            "Semester Total",
+            ": 15",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ENVS 2120",
+            "Tribal Environmental Management & Planning",
+            "3"
+          ],
+          [
+            "ENVS 2110",
+            "Contemporary Issues in Env. Science",
+            "3"
+          ],
+          [
+            "ENVS 2996",
+            "Topics in Environmental Science",
+            "3-4"
+          ],
+          [
+            "ENVS 1210 Field Methods in Environmental Science 3",
+            null,
+            null
+          ],
+          [
+            "ENVS 2998 Environmental Science Internship 3\nSUMMER SESSION (OPTIONAL)",
+            null,
+            null
+          ],
+          [
+            "Semester Total: 15-16\nOptional summer offerings may be scheduled based on student needs. Courses offered during the summer may",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.697391304347825,
+          743.16,
+          576.0,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "94",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 35,
+    "printed_page": 95,
+    "tables": [
+      {
+        "bbox": [
+          36.0,
+          743.16,
+          576.0,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 36,
+    "printed_page": 96,
+    "tables": [
+      {
+        "bbox": [
+          35.760000000000005,
+          651.4797500000001,
+          575.92,
+          698.52
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 6 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Information and Digital Literacy",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.760000000000005,
+          743.16,
+          575.92,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "96",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 37,
+    "printed_page": 97,
+    "tables": [
+      {
+        "bbox": [
+          35.71932203389831,
+          79.17000000000004,
+          575.926779661017,
+          126.24000000000001
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Quantitative Reasoning",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71932203389831,
+          171.59975,
+          575.926779661017,
+          218.64
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 4 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Critical Thinking; Personal and Social Responsibility; Quantitative",
+            "Reasoning"
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71932203389831,
+          278.96999999999997,
+          575.926779661017,
+          310.2
+        ],
+        "rows": [
+          [
+            "12 if selected\nCourse ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Personal and Social Responsibili",
+            "ty"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71932203389831,
+          340.89000000000004,
+          575.926779661017,
+          372.12000000000006
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71932203389831,
+          432.45000000000005,
+          575.926779661017,
+          573.96
+        ],
+        "rows": [
+          [
+            "The required\nCourse ID",
+            "courses within the declared program, including common course numbered courses,\nCourse Title",
+            "prerequisite\nCredits"
+          ],
+          [
+            "sequences, co",
+            "-requisites, capstones, clinical/field placements, internships, or portfolio requireme",
+            "nts."
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "GEOG 1160",
+            "Home Planet and Lab",
+            "4"
+          ],
+          [
+            "GIT 111",
+            "Intro to GIS Technology",
+            "3"
+          ],
+          [
+            "GIT 121",
+            "Advanced GIS with Applications",
+            "3"
+          ],
+          [
+            "GIT 201",
+            "Principles and Theory of GIS",
+            "3"
+          ],
+          [
+            "GIT 202",
+            "Photogrammetry and Mapping",
+            "3"
+          ],
+          [
+            "GIT 203",
+            "Remote Sensing",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71932203389831,
+          649.0500000000001,
+          575.926779661017,
+          711.84
+        ],
+        "rows": [
+          [
+            "or institutional r\nCourse ID",
+            "equirements. Developmental courses should not be counted toward degree credi\nCourse Title",
+            "t\nCredits"
+          ],
+          [
+            "unless permitte",
+            "d by institutional policy.",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "COSC 121",
+            "Intro to Computer Programming",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71932203389831,
+          743.16,
+          575.926779661017,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 38,
+    "printed_page": 98,
+    "tables": [
+      {
+        "bbox": [
+          35.691428571428574,
+          542.52,
+          575.9657142857143,
+          684.12
+        ],
+        "rows": [
+          [
+            "Couse ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "GEOG 1160",
+            "Home Planet",
+            "4"
+          ],
+          [
+            "GIT 111",
+            "Introduction to GIS/GPS Technology",
+            "3"
+          ],
+          [
+            "GIT 121",
+            "Advanced GIS/GPS with Applications",
+            "3"
+          ],
+          [
+            "GIT 201",
+            "Principles and Theory of GIS & GPS Applied",
+            "3"
+          ],
+          [
+            "GIT ANY",
+            "Any other GIT course",
+            "3"
+          ],
+          [
+            "ENGL 1110",
+            "Composition 1",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.691428571428574,
+          743.16,
+          575.9657142857143,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "98",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 39,
+    "printed_page": 99,
+    "tables": [
+      {
+        "bbox": [
+          35.76,
+          607.8897499999999,
+          575.904,
+          654.96
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 6 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Information and Digital Literac",
+            "y"
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          700.41,
+          575.904,
+          731.7599999999999
+        ],
+        "rows": [
+          [
+            "| AA/A\nCourse ID",
+            "S: 3 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "C",
+            "ommunication; Critical Thinking; Quantitative Reasoning",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          743.16,
+          575.904,
+          756.0
+        ],
+        "rows": [
+          [
+            "MATH 1130 Or MATH 1350 Survey of Mathematics or Introduction to Statistics 3",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 40,
+    "printed_page": 100,
+    "tables": [
+      {
+        "bbox": [
+          35.71672131147541,
+          79.17000000000004,
+          575.9291803278688,
+          110.39999999999998
+        ],
+        "rows": [
+          [
+            "| AA/AS: 4 c\nCourse ID",
+            "redits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "C",
+            "ritical Thinking; Personal and Social Responsibility; Quantitative",
+            "Reasoning"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71672131147541,
+          155.85,
+          575.9291803278688,
+          187.19999999999993
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12\nCourse Title",
+            "if selected\nCredits"
+          ],
+          [
+            "Comm",
+            "unication; Critical Thinking; Personal and Social Responsibi",
+            "lity"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71672131147541,
+          247.40999999999994,
+          575.9291803278688,
+          278.76
+        ],
+        "rows": [
+          [
+            "Critica\nCourse ID",
+            "l Thinking; Information and Digital Literacy; Personal and S\nCourse Title",
+            "ocial\nCredits"
+          ],
+          [
+            "Responsibility",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71672131147541,
+          324.21,
+          575.9291803278688,
+          355.44
+        ],
+        "rows": [
+          [
+            "|\nCourse ID",
+            "AA/AS: 3 credits | AAS: may count toward Fixed 12 if select\nCourse Title",
+            "ed\nCredits"
+          ],
+          [
+            "Comm",
+            "unication; Critical Thinking; Personal and Social Responsibi",
+            "lity"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71672131147541,
+          415.77,
+          575.9291803278688,
+          462.84
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Approved General Education content areas or institutionally appr\nCourse Title",
+            "oved other areas\nCredits"
+          ],
+          [
+            "meeting essenti",
+            "al skills",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71672131147541,
+          523.0500000000001,
+          575.9291803278688,
+          727.68
+        ],
+        "rows": [
+          [
+            "The required courses within the de\nCourse ID",
+            "clared program, including common course numbered course\nCourse Title",
+            "s, prerequisite\nCredits"
+          ],
+          [
+            "sequences, co-requisites, capstone",
+            "s, clinical/field placements, internships, or portfolio requirem",
+            "ents."
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "BCIS 1110",
+            "Fundamentalsof Information Literacy & Systems",
+            "3"
+          ],
+          [
+            "ENGL 1120",
+            "Composition II",
+            "3"
+          ],
+          [
+            "ENGL 2210",
+            "Professional & Technical Writing",
+            "3"
+          ],
+          [
+            "MATH 1220 or other math",
+            "College Algebra or Other math",
+            "3"
+          ],
+          [
+            "ASTR 1115/L or other Sci.",
+            "Introduction to Astronomy w/Laboratory or Other Sci.",
+            "4"
+          ],
+          [
+            "SOCI 1110 or other B/Sci.",
+            "Introduction to Sociology other B/Sci.",
+            "3"
+          ],
+          [
+            "PSYC 1110 or other Humanities",
+            "Introduction to Psychology or other Humanities",
+            "3"
+          ],
+          [
+            "HIST 1110 or other humanities",
+            "U. S. History I or other humanities",
+            "3"
+          ],
+          [
+            "HIST 1120 or other humanities",
+            "U. S. History II or other humanities",
+            "3"
+          ],
+          [
+            "ARTH 2140 or other Fine arts",
+            "Art of the American Southwest or other Fine arts",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.71672131147541,
+          743.16,
+          575.9291803278688,
+          756.0
+        ],
+        "rows": [
+          [
+            "PHED 15\nP ag e |",
+            "10 o\n100",
+            "r other PE Training: Resistance Training or other PE 1"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 41,
+    "printed_page": 101,
+    "tables": [
+      {
+        "bbox": [
+          35.691428571428574,
+          49.19999999999993,
+          576.0,
+          96.48000000000002
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "PHED 1620 or other PE",
+            "Fitness: Individual Sports or Other PE",
+            "1"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.691428571428574,
+          743.16,
+          576.0,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 42,
+    "printed_page": 102,
+    "tables": [
+      {
+        "bbox": [
+          36.0,
+          743.16,
+          576.0,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "10D2e",
+            "monstrate technical knowledge of natural resources through oral and written communication."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 43,
+    "printed_page": 103,
+    "tables": [
+      {
+        "bbox": [
+          35.744,
+          149.63975,
+          575.904,
+          180.96000000000004
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 6 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Information and Digital Literac",
+            "y"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.744,
+          226.40999999999997,
+          575.904,
+          257.76
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Quantitative Reasoning",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.744,
+          303.12,
+          575.904,
+          334.44
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 4 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Critical Thinking; Personal and Social Responsibility; Quantitati",
+            "ve Reasoning"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.744,
+          454.04999999999995,
+          575.904,
+          485.3999999999999
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Critical Thinking; Information and Digital Literacy; Personal and S\nCourse Title",
+            "ocial\nCredits"
+          ],
+          [
+            "Responsibilit",
+            "y",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.744,
+          545.60975,
+          575.904,
+          576.96
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Approved General Education content areas or institutionally appr\nCourse Title",
+            "oved other areas\nCredits"
+          ],
+          [
+            "meeting essen",
+            "tial skills",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.744,
+          637.17,
+          575.904,
+          731.52
+        ],
+        "rows": [
+          [
+            "The required cou\nCourse ID",
+            "rses within the declared program, including common course numbered course\nCourse Title",
+            "s, prerequisite\nCredits"
+          ],
+          [
+            "sequences, co-req",
+            "uisites, capstones, clinical/field placements, internships, or portfolio requirem",
+            "ents."
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "SOIL 1110",
+            "Fundamentals of Soils (SOIL 2110/L recommended)",
+            "3"
+          ],
+          [
+            "AGRO 1110/L",
+            "Introduction to Plant Science and Lab",
+            "4"
+          ],
+          [
+            "BIOL 2610/L",
+            "Principles of Biology: Biodiversity. Ecology, and Evolution with Lab",
+            "4"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.744,
+          743.16,
+          575.904,
+          756.0
+        ],
+        "rows": [
+          [
+            "NATR 221 OR Identification of Grasses and Shrubs OR 3",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 44,
+    "printed_page": 104,
+    "tables": [
+      {
+        "bbox": [
+          35.67549295774648,
+          49.19999999999993,
+          575.9695774647887,
+          314.88
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "NATR 202",
+            "Trees of North America",
+            ""
+          ],
+          [
+            "NATR 2998",
+            "Natural Resources Internship",
+            "3"
+          ],
+          [
+            "",
+            "Choose 2 of the following 3 courses:",
+            ""
+          ],
+          [
+            "NATR 201/L",
+            "Introduction to Forestry and Lab",
+            "4"
+          ],
+          [
+            "RGSC 2110/L",
+            "Intro. to Rangeland Management and Lab",
+            "4"
+          ],
+          [
+            "FWCE 2110/L",
+            "Principles of Fish and Wildlife Management and Lab",
+            "4"
+          ],
+          [
+            "ENGL 2210",
+            "Professional & Technical Communication",
+            "3"
+          ],
+          [
+            "MATH 123 OR\nMATH 1350",
+            "Trigonometry OR\nIntroduction to Statistics",
+            "3"
+          ],
+          [
+            "",
+            "Science Elective: Select from: BIOL, CHEM (1120/L excluded), NATR, ENVS,",
+            "4"
+          ],
+          [
+            "",
+            "GEOL, PHYS, AGRO, AGRI, SOIL, FWCE.",
+            ""
+          ],
+          [
+            "",
+            "Choose 2 of the following 4 courses:",
+            ""
+          ],
+          [
+            "NATR 205",
+            "Advanced Field Topics: Forestry",
+            ""
+          ],
+          [
+            "NATR 225",
+            "Advanced Field Topics: Range Management",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.67549295774648,
+          375.05975,
+          575.9695774647887,
+          731.04
+        ],
+        "rows": [
+          [
+            "First Semester (Fall 1)",
+            null,
+            null
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ENGL 1110",
+            "Composition I",
+            "3"
+          ],
+          [
+            "AGRO 1110/L",
+            "Introduction to Plant Science with Laboratory",
+            "4"
+          ],
+          [
+            "MATH 1220 College Algebra 3",
+            null,
+            null
+          ],
+          [
+            "BIOL 2610/L Principles of Biology: Biodiversity, Ecology, & Evolution with Lab 4\nSecond Semester (Spring 1)",
+            null,
+            null
+          ],
+          [
+            "Semester Total: 14",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID\nENGL 2210\nNATR 201/L or",
+            "Course Title\nProfessional & Technical Communication\nIntroduction to Forestry with Lab or",
+            "Credits\n3\n4"
+          ],
+          [
+            "FWCE 2110/L or",
+            "Principles of Fish and Wildlife Management with Lab or",
+            ""
+          ],
+          [
+            "RGSC 2110/L\nGIT 111",
+            "Introduction to Range Management with Lab\nIntroduction to GIS/GPS Technology",
+            "3"
+          ],
+          [
+            "MATH 123 or\nMATH 1350",
+            "Trigonometry or\nIntroduction to Statistics",
+            "3"
+          ],
+          [
+            "NATR 202 or Trees of North America 3",
+            null,
+            null
+          ],
+          [
+            "NATR 221 Identification of Grasses and Shrubs\nSUMMER SESSION (OPTIONAL)",
+            null,
+            null
+          ],
+          [
+            "Semester Total: 16\nOptional summer offerings may be scheduled based on student needs. Courses offered during the summer may",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.67549295774648,
+          743.16,
+          575.9695774647887,
+          756.0
+        ],
+        "rows": [
+          [
+            "needs eac\nP ag e |",
+            "h su\n104",
+            "mmer."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 45,
+    "printed_page": 105,
+    "tables": [
+      {
+        "bbox": [
+          35.68864864864865,
+          49.43999999999997,
+          575.9610810810811,
+          419.15999999999997
+        ],
+        "rows": [
+          [
+            "Third Semester (Fall 2)",
+            null,
+            null
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID\nNATR 201/L",
+            "Course Title\nIntroduction to Forestry with Lab or",
+            "Credits\n4"
+          ],
+          [
+            "FWCE 2110/L",
+            "Principles of Fish and Wildlife Management with Lab or",
+            ""
+          ],
+          [
+            "RGSC 2110/L\nCHEM 1215/L\nNATR 205 or",
+            "Introduction to Range Management with Lab\nGeneral Chemistry for STEM Majors with Laboratory\nAdvanced Field Topics in Forestry or",
+            "4\n3"
+          ],
+          [
+            "NATR 225 or",
+            "Advanced Field Topics in Range Management or",
+            ""
+          ],
+          [
+            "NATR 235 or",
+            "Advanced Field Topics in Wildlife Management or",
+            ""
+          ],
+          [
+            "GIT 121 Advanced GIS/GPS with Applications",
+            null,
+            null
+          ],
+          [
+            "SOIL 1110 Fundamentals of Soils 3\nFourth Semester (Spring 2)",
+            null,
+            null
+          ],
+          [
+            "Semester Total: 14",
+            "",
+            ""
+          ],
+          [
+            "Course ID\nNATR 205 or\nNATR 225 or",
+            "Course Title\nAdvanced Field Topics in Forestry or\nAdvanced Field Topics in Range Management or",
+            "Credits\n3"
+          ],
+          [
+            "NATR 235 or\nGIT 121",
+            "Advanced Field Topics in Wildlife Management or\nAdvanced GIS/GPS with Applications",
+            ""
+          ],
+          [
+            "",
+            "Science Elective: choose from BIOL, CHEM, ENVS, FWCE, GEOG, GEOL,",
+            "4"
+          ],
+          [
+            "",
+            "PHYS, RGSC, etc. Excluding CHEM 1120.",
+            ""
+          ],
+          [
+            "",
+            "Area IV: Social and Behavioral Science or Area V: Humanities Elective",
+            "3"
+          ],
+          [
+            "SOCI 2325 Introduction to Native American Studies 3",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.68864864864865,
+          743.16,
+          575.9610810810811,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 46,
+    "printed_page": 106,
+    "tables": [
+      {
+        "bbox": [
+          35.77263157894737,
+          490.04999999999995,
+          575.8863157894737,
+          521.28
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 6 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Information and Digital Literacy",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.77263157894737,
+          566.76,
+          575.8863157894737,
+          598.08
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Quantitative Reasoning",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.77263157894737,
+          643.5300000000001,
+          575.8863157894737,
+          689.52
+        ],
+        "rows": [
+          [
+            "| AA/AS: 4 credit\nCourse ID",
+            "s | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "Critica",
+            "l Thinking; Personal and Social Responsibility; Quantitative",
+            "Reasoning"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.77263157894737,
+          743.16,
+          575.8863157894737,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "106",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 47,
+    "printed_page": 107,
+    "tables": [
+      {
+        "bbox": [
+          35.69311475409837,
+          79.17000000000004,
+          575.9527868852459,
+          110.39999999999998
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12 if\nCourse Title",
+            "selected\nCredits"
+          ],
+          [
+            "Comm",
+            "unication; Critical Thinking; Personal and Social Responsibili",
+            "ty"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.69311475409837,
+          170.73,
+          575.9527868852459,
+          201.96000000000004
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Approved General Education content areas or institutionally appro\nCourse Title",
+            "ved other areas\nCredits"
+          ],
+          [
+            "meeting essen",
+            "tial skills",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.69311475409837,
+          262.29,
+          575.9527868852459,
+          587.4
+        ],
+        "rows": [
+          [
+            "The required courses\nCourse ID",
+            "within the declared program, including common course numbered courses,\nCourse Title",
+            "prerequisite\nCredits"
+          ],
+          [
+            "sequences, co-requisi",
+            "tes, capstones, clinical/field placements, internships, or portfolio requireme",
+            "nts."
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "BCIS 1110",
+            "Fundamentals of Information Literacy and Systems",
+            "3"
+          ],
+          [
+            "COSC 121",
+            "Introduction to Programming",
+            "3"
+          ],
+          [
+            "COSC 145",
+            "Introduction to UNIX Administration",
+            "3"
+          ],
+          [
+            "ITCT 111",
+            "IT Essentials I (A+)",
+            "3"
+          ],
+          [
+            "ITCT 112",
+            "IT Essentials II (Server +)",
+            "3"
+          ],
+          [
+            "ITCT 151",
+            "Network Management – CISCO I",
+            "3"
+          ],
+          [
+            "ITCT 152",
+            "Network Management – CISCO II",
+            "3"
+          ],
+          [
+            "ITCT 153",
+            "Network Management – CISCO III",
+            "3"
+          ],
+          [
+            "ITCT 154\nITCT 280",
+            "Network Management – CISCO IV\nNetwork Management Internship",
+            "3\n3"
+          ],
+          [
+            "COSC/GIT/ENGR\nElective",
+            "COSC123, COSC185, GIT101, GIT111, GIT121, GIT201, GIT202, GIT203,\nGIT290, ENGR101, ENGR102, ENGR105, ENGR106, ENGR110, ENGR290",
+            "3"
+          ],
+          [
+            "COSC/GIT/ENGR\nElective",
+            "COSC123, COSC185, GIT101, GIT111, GIT121, GIT201, GIT202, GIT203,\nGIT290, ENGR101, ENGR102, ENGR105, ENGR106, ENGR110, ENGR290",
+            "3"
+          ],
+          [
+            "COSC/GIT/ENGR\nElective",
+            "COSC123, COSC185, GIT101, GIT111, GIT121, GIT201, GIT202, GIT203,\nGIT290, ENGR101, ENGR102, ENGR105, ENGR106, ENGR110, ENGR290",
+            "3"
+          ],
+          [
+            "COSC/GIT/ENGR\nElective",
+            "COSC123, COSC185, GIT101, GIT111, GIT121, GIT201, GIT202, GIT203,\nGIT290, ENGR101, ENGR102, ENGR105, ENGR106, ENGR110, ENGR290",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.69311475409837,
+          632.81975,
+          575.9527868852459,
+          727.08
+        ],
+        "rows": [
+          [
+            "First Semester (Fall 1)",
+            null,
+            null
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "BCIS 1110",
+            "Fundamentals of Information Literacy and Systems",
+            "3"
+          ],
+          [
+            "COSC 121",
+            "Introduction to Programming",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.69311475409837,
+          743.16,
+          575.9527868852459,
+          756.0
+        ],
+        "rows": [
+          [
+            "ITCT 112 IT Essentials II (Server +) 3",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 48,
+    "printed_page": 108,
+    "tables": [
+      {
+        "bbox": [
+          35.689846153846155,
+          49.19999999999993,
+          575.9556923076924,
+          622.32
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            null,
+            null
+          ],
+          [
+            "ENG L1110 Composition I 3\nSecond Semester (Spring 1)",
+            null,
+            null
+          ],
+          [
+            "Semester Total: 15",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ITCT 151",
+            "Network Management – CISCO I",
+            "3"
+          ],
+          [
+            "ITCT 152\nCOSC 145",
+            "Network Management – CISCO II\nIntroduction to UNIX Administration",
+            "3\n3"
+          ],
+          [
+            "ECON 2110 or other",
+            "Macroeconomic Principles or other social science course",
+            "3"
+          ],
+          [
+            "Social Science",
+            null,
+            null
+          ],
+          [
+            "MATH 1220 College Algebra 3\nSUMMER SESSION (OPTIONAL)",
+            null,
+            null
+          ],
+          [
+            "Semester Total: 15\nOptional summer offerings may be scheduled based on student needs. Courses offered during the summer may",
+            null,
+            null
+          ],
+          [
+            "duplicate major courses from the fall or spring semesters. Courses offered will be determined based on student\nThird Semester (Fall 2)",
+            null,
+            null
+          ],
+          [
+            "needs each summer.",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ITCT 153\nITCT 154",
+            "Network Management – CISCO III\nNetwork Management – CISCO IV",
+            "3\n3"
+          ],
+          [
+            "PHYS 1115/L or other\nLab Science",
+            "Survey of Physics and Laboratory or other lecture/lab science\ncombination",
+            "4"
+          ],
+          [
+            "COSC/GIT/ENGR\nElective",
+            "Varies",
+            "3"
+          ],
+          [
+            "COSC/GIT/ENGR Varies 3",
+            null,
+            null
+          ],
+          [
+            "Elective\nFourth Semester (Spring 2)",
+            null,
+            null
+          ],
+          [
+            "Semester Total: 16",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID\nITCT 280",
+            "Course Title\nNetwork Management Internship",
+            "Credits\n3"
+          ],
+          [
+            "COSC/GIT/ENGR\nElective",
+            "Varies",
+            "3"
+          ],
+          [
+            "COSC/GIT/ENGR",
+            "Varies",
+            "3"
+          ],
+          [
+            "Elective\nSOCI 2325",
+            "Introduction to Native American Studies",
+            "3"
+          ],
+          [
+            "COSC/GIT/ENGR Varies 3",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.689846153846155,
+          743.16,
+          575.9556923076924,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "108",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 49,
+    "printed_page": 109,
+    "tables": [
+      {
+        "bbox": [
+          35.76,
+          538.08,
+          575.904,
+          614.64
+        ],
+        "rows": [
+          [
+            "|\nCourse ID",
+            "AA/AS: 6 credits | AAS: may count toward Fixed 12 if selected\nCourse Title\nCommunication; Critical Thinking; Information and Digital Literacy",
+            "Credits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ENGL 1110",
+            "Composition I",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          660.09,
+          575.904,
+          691.44
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Quantitative Reasoning",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.76,
+          743.16,
+          575.904,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 50,
+    "printed_page": 110,
+    "tables": [
+      {
+        "bbox": [
+          35.735510204081635,
+          79.17000000000004,
+          575.9118367346939,
+          110.39999999999998
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 4 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "Credits"
+          ],
+          [
+            "",
+            "Critical Thinking; Personal and Social Responsibility; Quantitative",
+            "Reasoning"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.735510204081635,
+          155.85,
+          575.9118367346939,
+          187.19999999999993
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12\nCourse Title",
+            "if selected\nCredits"
+          ],
+          [
+            "",
+            "Communication; Critical Thinking; Personal and Social Responsibi",
+            "lity"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.735510204081635,
+          247.40999999999994,
+          575.9118367346939,
+          278.76
+        ],
+        "rows": [
+          [
+            "C\nCourse ID",
+            "ritical Thinking; Information and Digital Literacy; Personal and S\nCourse Title",
+            "ocial\nCredits"
+          ],
+          [
+            "Responsibility",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.735510204081635,
+          324.21,
+          575.9118367346939,
+          384.96
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12 if select\nCourse Title",
+            "ed\nCredits"
+          ],
+          [
+            "ARTH 1120",
+            "Communication; Critical Thinking; Personal and Social Responsibi",
+            "lity"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.735510204081635,
+          445.28999999999996,
+          575.9118367346939,
+          522.7199999999999
+        ],
+        "rows": [
+          [
+            "Course ID",
+            "Approved General Education content areas or institutionally appr\nCourse Title",
+            "oved other areas\nCredits"
+          ],
+          [
+            "meeting essential s\n*",
+            "kills",
+            ""
+          ],
+          [
+            "PHYS 1115/L or",
+            "Survey of Physics and Laboratory or Calculus-based Physics II and",
+            "3/1"
+          ],
+          [
+            "PHYS 1320/L",
+            "Laboratory",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.735510204081635,
+          642.33,
+          575.9118367346939,
+          736.5600000000001
+        ],
+        "rows": [
+          [
+            "The required\nCourse ID",
+            "courses within the declared program, including common course numbered course\nCourse Title",
+            "s, prerequisite\nCredits"
+          ],
+          [
+            "sequences, co",
+            "-requisites, capstones, clinical/field placements, internships, or portfolio requirem",
+            "ents."
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ENGR102",
+            "Advanced CAD",
+            "3"
+          ],
+          [
+            "ENGR105",
+            "Introduction to Engineering and Design",
+            "3"
+          ],
+          [
+            "ENGR106",
+            "Solid Modeling",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.735510204081635,
+          743.16,
+          575.9118367346939,
+          756.0
+        ],
+        "rows": [
+          [
+            "PENaGgRe20 |5",
+            "1 10",
+            "Engineering Statics 3"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 51,
+    "printed_page": 111,
+    "tables": [
+      {
+        "bbox": [
+          35.691428571428574,
+          49.19999999999993,
+          575.9532467532467,
+          126.0
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "ENGR211/L\nENGR280 or",
+            "Circuit Analysis and Laboratory",
+            "3/1"
+          ],
+          [
+            "ENGR285 or",
+            "Engineering Internship or Design Project or Special Topics",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.691428571428574,
+          186.3,
+          575.9532467532467,
+          732.12
+        ],
+        "rows": [
+          [
+            "First Semester (Fall 1)",
+            null,
+            null
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ENGR 102\nENGR 105\n*",
+            "Advanced CAD\nIntroduction to Engineering and Design",
+            "3\n3"
+          ],
+          [
+            "PHYS 1115/L or",
+            "Survey of Physics and Laboratory or Calculus-based Physics II and",
+            "4"
+          ],
+          [
+            "PHYS 1320/L Laboratory",
+            null,
+            null
+          ],
+          [
+            "ENGL 1110 Composition I 3\nSecond Semester (Spring 1)",
+            null,
+            null
+          ],
+          [
+            "Semester Total: 13",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ENGR 106",
+            "Solid Modeling",
+            "3"
+          ],
+          [
+            "ENGR 110",
+            "Computer-aided Problem Solving",
+            "3"
+          ],
+          [
+            "MATH 1510\nCHEM 1215/L",
+            "Calculus I\nGeneral Chemistry for STEM Majors and Laboratory",
+            "4\n4"
+          ],
+          [
+            "ENGL 1120 or ENGL Composition II or Professional and Technical Writing 3",
+            null,
+            null
+          ],
+          [
+            "2210\nSUMMER SESSION (OPTIONAL)",
+            null,
+            null
+          ],
+          [
+            "Semester Total: 17\nOptional summer offerings may be scheduled based on student needs. Courses offered during the summer may",
+            null,
+            null
+          ],
+          [
+            "duplicate major courses from the fall or spring semesters. Courses offered will be determined based on student\nThird Semester (Fall 2)",
+            null,
+            null
+          ],
+          [
+            "needs each summer.",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ENGR 205",
+            "Engineering Statics",
+            "3"
+          ],
+          [
+            "ENGR 211/L",
+            "Circuit Analysis and Laboratory",
+            "4"
+          ],
+          [
+            "MATH 1520",
+            "Calculus II",
+            "4"
+          ],
+          [
+            "PHYS 1310/L Calculus-based Physics I and Laboratory 4",
+            null,
+            null
+          ],
+          [
+            "SOCI 2325 Introduction to Native American Studies 3\nFourth Semester (Spring 2)",
+            null,
+            null
+          ],
+          [
+            "Semester Total: 18",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits"
+          ],
+          [
+            "ENGR 280 or ENGR 285",
+            "Engineering Internship or Design Project or Special Topics",
+            "3"
+          ],
+          [
+            "or ENGR 290",
+            "",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.691428571428574,
+          743.16,
+          575.9532467532467,
+          756.0
+        ],
+        "rows": [
+          [
+            "NAVA 1110 or SPAN Navajo I or Spanish I 4",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 52,
+    "printed_page": 112,
+    "tables": [
+      {
+        "bbox": [
+          35.691428571428574,
+          49.19999999999993,
+          576.0,
+          111.12
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "1110",
+            "",
+            ""
+          ],
+          [
+            "ARTH 1120 or ARTH Introduction to Art or Foundations of Art 3",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.691428571428574,
+          743.16,
+          576.0,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "112",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 53,
+    "printed_page": 113,
+    "tables": [
+      {
+        "bbox": [
+          36.345375,
+          660.84,
+          575.55,
+          702.84
+        ],
+        "rows": [
+          [
+            "",
+            "Course ID",
+            "",
+            "",
+            "| AA/AS: 6 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "",
+            "",
+            "Credits",
+            ""
+          ],
+          [
+            "",
+            null,
+            null,
+            "Communication; Critical Thinking; Information and Digital Literac",
+            null,
+            null,
+            "y",
+            null,
+            null
+          ],
+          [
+            "",
+            null,
+            null,
+            "",
+            null,
+            null,
+            "",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          36.345375,
+          743.16,
+          575.55,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 54,
+    "printed_page": 114,
+    "tables": [
+      {
+        "bbox": [
+          34.70084615384615,
+          78.95975000000004,
+          577.2877692307693,
+          107.51999999999998
+        ],
+        "rows": [
+          [
+            "",
+            "Course ID",
+            "",
+            "",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "",
+            "",
+            "Credits",
+            ""
+          ],
+          [
+            "",
+            null,
+            null,
+            "Communication; Critical Thinking; Quantitative Reasoning",
+            null,
+            null,
+            "",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          34.70084615384615,
+          152.63975,
+          577.2877692307693,
+          181.31999999999994
+        ],
+        "rows": [
+          [
+            "",
+            "Course ID",
+            "",
+            "",
+            "| AA/AS: 4 credits | AAS: may count toward Fixed 12 if selected\nCourse Title",
+            "",
+            "",
+            "Credits",
+            ""
+          ],
+          [
+            "",
+            null,
+            null,
+            "Critical Thinking; Personal and Social Responsibility; Quantitative\nScience Course",
+            null,
+            null,
+            "Reasoning",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          34.70084615384615,
+          226.32000000000005,
+          577.2877692307693,
+          255.0
+        ],
+        "rows": [
+          [
+            "",
+            "Course ID",
+            "",
+            "",
+            "| AA/AS: 3 credits | AAS: may count toward Fixed 12\nCourse Title",
+            "",
+            "if",
+            "selected\nCredits",
+            ""
+          ],
+          [
+            "",
+            null,
+            null,
+            "Communication; Critical Thinking; Personal and Social Responsibi",
+            null,
+            null,
+            "lity",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          34.70084615384615,
+          314.88,
+          577.2877692307693,
+          343.56
+        ],
+        "rows": [
+          [
+            "",
+            "Course ID",
+            "",
+            "",
+            "Critical Thinking; Information and Digital Literacy; Personal and\nCourse Title",
+            "S",
+            "o",
+            "cial\nCredits",
+            ""
+          ],
+          [
+            "Responsibilit",
+            null,
+            null,
+            "y",
+            null,
+            null,
+            "",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          34.70084615384615,
+          403.44,
+          577.2877692307693,
+          632.04
+        ],
+        "rows": [
+          [
+            "U",
+            "se this sect\nCourse ID",
+            "i",
+            "o",
+            "n for required courses within the declared program\nCourse Title",
+            ", i",
+            "n",
+            "cluding com\nCredits",
+            "m",
+            "o",
+            "n course numbered courses,\nPrereq/Coreq",
+            ""
+          ],
+          [
+            "prerequisite s",
+            null,
+            null,
+            "equences, co-requisites, capstones, clinical/field plac",
+            null,
+            null,
+            "ements, interns",
+            null,
+            null,
+            "hips, or portfolio requirements.",
+            null,
+            null
+          ],
+          [
+            "",
+            null,
+            null,
+            "",
+            null,
+            null,
+            "",
+            null,
+            null,
+            "",
+            null,
+            null
+          ],
+          [
+            "OPTI 101",
+            null,
+            null,
+            "Introduction to Optics w/Lab",
+            null,
+            null,
+            "5",
+            null,
+            null,
+            "Acceptance to Program",
+            null,
+            null
+          ],
+          [
+            "OPTI 105A",
+            null,
+            null,
+            "Ophthalmic Finishing and Surfacing I w/Lab",
+            null,
+            null,
+            "5",
+            null,
+            null,
+            "Acceptance to Program",
+            null,
+            null
+          ],
+          [
+            "OPTI 110A",
+            null,
+            null,
+            "Ophthalmic Dispensing I",
+            null,
+            null,
+            "3",
+            null,
+            null,
+            "Co-Requisite-OPTI 110 L",
+            null,
+            null
+          ],
+          [
+            "OPTI 110L",
+            null,
+            null,
+            "Ophthalmic Dispensing I Lab",
+            null,
+            null,
+            "1",
+            null,
+            null,
+            "Co-Requisite-OPTI 110 A",
+            null,
+            null
+          ],
+          [
+            "OPTI 112",
+            null,
+            null,
+            "Opticianry Environmental and Safety Issues",
+            null,
+            null,
+            "2",
+            null,
+            null,
+            "Acceptance to Program",
+            null,
+            null
+          ],
+          [
+            "OPTI 115",
+            null,
+            null,
+            "Ophthalmic Sales",
+            null,
+            null,
+            "2",
+            null,
+            null,
+            "OPTI 101",
+            null,
+            null
+          ],
+          [
+            "OPTI 205A\nOPTI 215",
+            null,
+            null,
+            "Ophthalmic Finishing and Surfacing II w/Lab\nAnatomy and Physiology of the Eye",
+            null,
+            null,
+            "5\n3",
+            null,
+            null,
+            "OPTI 105A\nOPTI 101",
+            null,
+            null
+          ],
+          [
+            "OPTI 220A",
+            null,
+            null,
+            "Ophthalmic Dispensing II",
+            null,
+            null,
+            "3",
+            null,
+            null,
+            "OPTI 110 A/ Co-Requisite-\nOPTI 220 L",
+            null,
+            null
+          ],
+          [
+            "OPTI 220L",
+            null,
+            null,
+            "Ophthalmic Dispensing II Lab",
+            null,
+            null,
+            "1",
+            null,
+            null,
+            "OPTI 110 A/ Co-Requisite-",
+            null,
+            null
+          ],
+          [
+            "",
+            null,
+            null,
+            "",
+            null,
+            null,
+            "",
+            null,
+            null,
+            "OPTI 220 A",
+            null,
+            null
+          ],
+          [
+            "OPTI 225",
+            null,
+            null,
+            "Management for Opticians",
+            null,
+            null,
+            "3",
+            null,
+            null,
+            "OPTI 101",
+            null,
+            null
+          ],
+          [
+            "OPTI 235",
+            null,
+            null,
+            "Contact Lenses w/Lab",
+            null,
+            null,
+            "4",
+            null,
+            null,
+            "OPTI 215",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          34.70084615384615,
+          743.16,
+          577.2877692307693,
+          756.0
+        ],
+        "rows": [
+          [
+            "P ag e |",
+            "114",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 55,
+    "printed_page": 115,
+    "tables": [
+      {
+        "bbox": [
+          31.269924050632913,
+          108.56000000000002,
+          580.7149873417723,
+          205.08000000000004
+        ],
+        "rows": [
+          [
+            "competency\nCreoquurisree mIDe n",
+            "requirements. For AA/AS degrees, use this section only when the program has speci\ntsC. ourse Title / Requirement",
+            "alized\nCredits"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "BUSA",
+            "Introduction to Business",
+            "3"
+          ],
+          [
+            "1110\nBCIS 1110",
+            "Fundamentals of Information Literacy",
+            "3"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          31.269924050632913,
+          250.37999999999997,
+          580.7149873417723,
+          737.28
+        ],
+        "rows": [
+          [
+            "First Semester (Fall 1)",
+            null,
+            null,
+            "Modality"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            ""
+          ],
+          [
+            "OPTI 101",
+            "Introduction to Optics with Lab",
+            "5",
+            "In Person"
+          ],
+          [
+            "OPTI 112",
+            "Opticianry Environmental and Safety Issues",
+            "2",
+            "In Person"
+          ],
+          [
+            "BCIS 1110 Fundamentals of Information Literacy 3",
+            null,
+            null,
+            ""
+          ],
+          [
+            "ENGL 1110 Composition I 3\nSecond Semester (Spring 1)",
+            null,
+            null,
+            ""
+          ],
+          [
+            "Semester Tot",
+            "al:",
+            "",
+            "13"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            ""
+          ],
+          [
+            "OPTI 105A",
+            "Ophthalmic Finishing and Surfacing I with Lab",
+            "5",
+            "In Person"
+          ],
+          [
+            "OPTI 115",
+            "Ophthalmic Sales",
+            "2",
+            "In Person"
+          ],
+          [
+            "OPTI 215 Anatomy and Physiology of the Eye 3",
+            null,
+            null,
+            "In Person"
+          ],
+          [
+            "ENGL 2210 Professional & Technical Communication 3\nSUMMER SESSION",
+            null,
+            null,
+            ""
+          ],
+          [
+            "Semester Tot",
+            "al:",
+            "",
+            "13"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            ""
+          ],
+          [
+            "OPTI 2O5A Ophthalmic Finishing and Surfacing II with Lab 5\nThird Semester (Fall 2)",
+            null,
+            null,
+            "In Person"
+          ],
+          [
+            "OPTI 225",
+            "Management for Opticians",
+            "3",
+            "In Person"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            ""
+          ],
+          [
+            "OPTI 110A",
+            "Ophthalmic Dispensing I",
+            "3",
+            "In Person"
+          ],
+          [
+            "OPTI 11OL",
+            "Ophthalmic Dispensing I Lab",
+            "1",
+            "In Person"
+          ],
+          [
+            "HLED 1120\nSOCI 2325",
+            "American Red Cross First Aid, CPR & AED\nIntroduction to Native American Studies",
+            "2\n3",
+            "In Person"
+          ],
+          [
+            "MATH Intermediate Algebra 4",
+            null,
+            null,
+            ""
+          ],
+          [
+            "118/119\nFourth Semester (Spring 2)",
+            null,
+            null,
+            ""
+          ],
+          [
+            "Semester Tot",
+            "al:",
+            "",
+            "14"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.46,
+          743.16,
+          576.54,
+          756.0
+        ],
+        "rows": [
+          [
+            "PTI 220L Ophthalmic Dispensing II Lab 1 In Person",
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 56,
+    "printed_page": 116,
+    "tables": [
+      {
+        "bbox": [
+          32.70302380952381,
+          49.19999999999993,
+          579.285880952381,
+          222.48000000000002
+        ],
+        "rows": [
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "BUSA 1110 Introduction to Business 3",
+            null,
+            null,
+            ""
+          ],
+          [
+            "Science Elective 3\nFifth Semester (Fall 3)",
+            null,
+            null,
+            ""
+          ],
+          [
+            "Semester Tot",
+            "al:",
+            "",
+            "14"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID Course Title Credits",
+            null,
+            null,
+            ""
+          ],
+          [
+            "OPTI 236 Introduction to Refraction with Lab 4\nSixth Semester (Spring 3)",
+            null,
+            null,
+            "In Person"
+          ],
+          [
+            "Semester Tot",
+            "al:",
+            "",
+            "4"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            ""
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          32.70302380952381,
+          575.99975,
+          579.285880952381,
+          710.2795
+        ],
+        "rows": [
+          [
+            "",
+            "Course ID",
+            "",
+            "",
+            "Course Title",
+            "",
+            "",
+            "Credits",
+            "",
+            "",
+            "Prereq/Coreq",
+            ""
+          ],
+          [
+            "",
+            null,
+            null,
+            "",
+            null,
+            null,
+            "",
+            null,
+            null,
+            "",
+            null,
+            null
+          ],
+          [
+            "OPTI 101",
+            null,
+            null,
+            "Introduction to Optics with Lab",
+            null,
+            null,
+            "5",
+            null,
+            null,
+            "Acceptance\ninto program",
+            null,
+            null
+          ],
+          [
+            "OPTI 112",
+            null,
+            null,
+            "Opticianry Environmental and Safety Issues",
+            null,
+            null,
+            "2",
+            null,
+            null,
+            "Acceptance\ninto program",
+            null,
+            null
+          ],
+          [
+            "OPTI 105A",
+            null,
+            null,
+            "Ophthalmic Finishing and Surfacing I with Lab",
+            null,
+            null,
+            "5",
+            null,
+            null,
+            "Acceptance",
+            null,
+            null
+          ],
+          [
+            "",
+            null,
+            null,
+            "",
+            null,
+            null,
+            "",
+            null,
+            null,
+            "into program",
+            null,
+            null
+          ],
+          [
+            "OPTI 205A",
+            null,
+            null,
+            "Ophthalmic Finishing and Surfacing II with Lab",
+            null,
+            null,
+            "5",
+            null,
+            null,
+            "OPTI 105A",
+            null,
+            null
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "pdf_page": 57,
+    "printed_page": 117,
+    "tables": [
+      {
+        "bbox": [
+          30.62227272727273,
+          78.95975000000004,
+          575.9572321428572,
+          147.72000000000003
+        ],
+        "rows": [
+          [
+            "",
+            "Course ID",
+            "",
+            "",
+            "Course Title",
+            "",
+            "",
+            "Credits",
+            ""
+          ],
+          [
+            "",
+            null,
+            null,
+            "",
+            null,
+            null,
+            "",
+            null,
+            null
+          ],
+          [
+            "",
+            null,
+            null,
+            "",
+            null,
+            null,
+            "",
+            null,
+            null
+          ],
+          [
+            "ENGL 1110",
+            null,
+            null,
+            "Composition I",
+            null,
+            null,
+            "3",
+            null,
+            null
+          ],
+          [
+            "COMM 1130",
+            null,
+            null,
+            "Public Speaking",
+            null,
+            null,
+            "3",
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.702608695652174,
+          193.02000000000004,
+          575.9572321428572,
+          492.12
+        ],
+        "rows": [
+          [
+            "First Semester (Fall 1)",
+            null,
+            null,
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "OPTI 101",
+            "Introduction to Optics with Lab",
+            "5",
+            "In Person"
+          ],
+          [
+            "OPTI 105A",
+            "Ophthalmic Finishing and Surfacing I with Lab",
+            "5",
+            "In Person"
+          ],
+          [
+            "OPTI 112 Opticianry Environmental and Safety Issues 2",
+            null,
+            null,
+            "In Person"
+          ],
+          [
+            "BCIS 1110 Fundamentals of Information Literacy 3\nSecond Semester (Spring 1)",
+            null,
+            null,
+            ""
+          ],
+          [
+            "Semester Tot",
+            "al: 15",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "OPTI 205A",
+            "Ophthalmic Finishing and Surfacing II with Lab",
+            "5",
+            "In Person"
+          ],
+          [
+            "ENGL 1110 Composition I 3",
+            null,
+            null,
+            ""
+          ],
+          [
+            "HLED 1110 American Red Cross First Aid, CPR & AED 2\nThird Semester (Fall 2)",
+            null,
+            null,
+            "In Person"
+          ],
+          [
+            "Semester Tot",
+            "al: 10",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Course ID",
+            "Course Title",
+            "Credits",
+            "Modality"
+          ],
+          [
+            "OPTI 225",
+            "Management for Opticians",
+            "3",
+            "In Person"
+          ],
+          [
+            "OPTI 240 Optical Laboratory Technology Internship 3",
+            null,
+            null,
+            "In Person"
+          ]
+        ]
+      },
+      {
+        "bbox": [
+          35.702608695652174,
+          743.16,
+          575.9572321428572,
+          756.0
+        ],
+        "rows": [
+          [
+            "",
+            ""
+          ]
+        ]
+      }
+    ]
+  }
+]

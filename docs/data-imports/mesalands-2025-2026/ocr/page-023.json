@@ -1,0 +1,3687 @@
+﻿{
+    "pdf_page":  23,
+    "lines":  [
+                  {
+                      "text":  "NATURAL SCIENCES",
+                      "x":  125,
+                      "y":  85,
+                      "words":  [
+                                    {
+                                        "text":  "NATURAL",
+                                        "x":  125,
+                                        "y":  85,
+                                        "width":  268,
+                                        "height":  39
+                                    },
+                                    {
+                                        "text":  "SCIENCES",
+                                        "x":  407,
+                                        "y":  85,
+                                        "width":  266,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Natural Sciences program at Mesalands Commu-",
+                      "x":  124,
+                      "y":  165,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  124,
+                                        "y":  165,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Natural",
+                                        "x":  172,
+                                        "y":  165,
+                                        "width":  78,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Sciences",
+                                        "x":  258,
+                                        "y":  166,
+                                        "width":  81,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "program",
+                                        "x":  347,
+                                        "y":  173,
+                                        "width":  85,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "at",
+                                        "x":  440,
+                                        "y":  172,
+                                        "width":  18,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "Mesalands",
+                                        "x":  465,
+                                        "y":  165,
+                                        "width":  105,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Commu-",
+                                        "x":  579,
+                                        "y":  166,
+                                        "width":  90,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "nity College awards an Associate of Arts degree for",
+                      "x":  125,
+                      "y":  196,
+                      "words":  [
+                                    {
+                                        "text":  "nity",
+                                        "x":  125,
+                                        "y":  198,
+                                        "width":  40,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "College",
+                                        "x":  172,
+                                        "y":  196,
+                                        "width":  75,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "awards",
+                                        "x":  254,
+                                        "y":  196,
+                                        "width":  68,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "an",
+                                        "x":  330,
+                                        "y":  203,
+                                        "width":  24,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "Associate",
+                                        "x":  360,
+                                        "y":  197,
+                                        "width":  93,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  461,
+                                        "y":  196,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  486,
+                                        "y":  197,
+                                        "width":  43,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  537,
+                                        "y":  196,
+                                        "width":  64,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  608,
+                                        "y":  196,
+                                        "width":  28,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "students completing the degree plan requirements in",
+                      "x":  125,
+                      "y":  226,
+                      "words":  [
+                                    {
+                                        "text":  "students",
+                                        "x":  125,
+                                        "y":  226,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "completing",
+                                        "x":  215,
+                                        "y":  226,
+                                        "width":  112,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  334,
+                                        "y":  226,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "degree",
+                                        "x":  373,
+                                        "y":  226,
+                                        "width":  64,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "plan",
+                                        "x":  444,
+                                        "y":  226,
+                                        "width":  43,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "requirements",
+                                        "x":  495,
+                                        "y":  228,
+                                        "width":  130,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  633,
+                                        "y":  228,
+                                        "width":  19,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "either the Geology or Paleontology options.",
+                      "x":  125,
+                      "y":  257,
+                      "words":  [
+                                    {
+                                        "text":  "either",
+                                        "x":  125,
+                                        "y":  257,
+                                        "width":  56,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  188,
+                                        "y":  257,
+                                        "width":  31,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Geology",
+                                        "x":  227,
+                                        "y":  257,
+                                        "width":  85,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  318,
+                                        "y":  264,
+                                        "width":  21,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "Paleontology",
+                                        "x":  346,
+                                        "y":  257,
+                                        "width":  129,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "options.",
+                                        "x":  482,
+                                        "y":  259,
+                                        "width":  79,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GEOLOGY OPTION",
+                      "x":  125,
+                      "y":  322,
+                      "words":  [
+                                    {
+                                        "text":  "GEOLOGY",
+                                        "x":  125,
+                                        "y":  322,
+                                        "width":  159,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "OPTION",
+                                        "x":  292,
+                                        "y":  322,
+                                        "width":  128,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Earth has been important to the inhabitants of",
+                      "x":  124,
+                      "y":  372,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  124,
+                                        "y":  373,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Earth",
+                                        "x":  172,
+                                        "y":  373,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "has",
+                                        "x":  236,
+                                        "y":  373,
+                                        "width":  32,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "been",
+                                        "x":  276,
+                                        "y":  373,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "important",
+                                        "x":  330,
+                                        "y":  375,
+                                        "width":  101,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  439,
+                                        "y":  379,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  466,
+                                        "y":  373,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "inhabitants",
+                                        "x":  504,
+                                        "y":  373,
+                                        "width":  113,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  625,
+                                        "y":  372,
+                                        "width":  22,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "New Mexico from the beginning: early Native Ameri-",
+                      "x":  125,
+                      "y":  403,
+                      "words":  [
+                                    {
+                                        "text":  "New",
+                                        "x":  125,
+                                        "y":  404,
+                                        "width":  47,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  179,
+                                        "y":  404,
+                                        "width":  74,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "from",
+                                        "x":  261,
+                                        "y":  403,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  317,
+                                        "y":  403,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "beginning:",
+                                        "x":  355,
+                                        "y":  403,
+                                        "width":  107,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "early",
+                                        "x":  471,
+                                        "y":  403,
+                                        "width":  48,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Native",
+                                        "x":  525,
+                                        "y":  404,
+                                        "width":  66,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Ameri-",
+                                        "x":  597,
+                                        "y":  404,
+                                        "width":  71,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cans collected chert to make arrowheads, the Spanish",
+                      "x":  125,
+                      "y":  433,
+                      "words":  [
+                                    {
+                                        "text":  "cans",
+                                        "x":  125,
+                                        "y":  441,
+                                        "width":  43,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "collected",
+                                        "x":  176,
+                                        "y":  433,
+                                        "width":  88,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "chert",
+                                        "x":  271,
+                                        "y":  434,
+                                        "width":  51,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  329,
+                                        "y":  440,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "make",
+                                        "x":  356,
+                                        "y":  433,
+                                        "width":  53,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "arrowheads,",
+                                        "x":  417,
+                                        "y":  434,
+                                        "width":  119,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  545,
+                                        "y":  434,
+                                        "width":  30,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Spanish",
+                                        "x":  583,
+                                        "y":  433,
+                                        "width":  78,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "mined copper and gold, and Anglo settlers extracted",
+                      "x":  125,
+                      "y":  464,
+                      "words":  [
+                                    {
+                                        "text":  "mined",
+                                        "x":  125,
+                                        "y":  464,
+                                        "width":  64,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "copper",
+                                        "x":  196,
+                                        "y":  471,
+                                        "width":  67,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  270,
+                                        "y":  464,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "gold,",
+                                        "x":  314,
+                                        "y":  464,
+                                        "width":  48,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  371,
+                                        "y":  464,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Anglo",
+                                        "x":  414,
+                                        "y":  464,
+                                        "width":  61,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "settlers",
+                                        "x":  483,
+                                        "y":  464,
+                                        "width":  69,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "extracted",
+                                        "x":  560,
+                                        "y":  464,
+                                        "width":  91,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "silver and uranium. The tradition continues.",
+                      "x":  125,
+                      "y":  494,
+                      "words":  [
+                                    {
+                                        "text":  "silver",
+                                        "x":  125,
+                                        "y":  494,
+                                        "width":  51,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  183,
+                                        "y":  494,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "uranium.",
+                                        "x":  228,
+                                        "y":  497,
+                                        "width":  91,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "The",
+                                        "x":  328,
+                                        "y":  494,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "tradition",
+                                        "x":  376,
+                                        "y":  494,
+                                        "width":  87,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "continues.",
+                                        "x":  470,
+                                        "y":  497,
+                                        "width":  102,
+                                        "height":  16
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The field of geology continues to be an important",
+                      "x":  124,
+                      "y":  525,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  124,
+                                        "y":  525,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "field",
+                                        "x":  172,
+                                        "y":  525,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  224,
+                                        "y":  525,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "geology",
+                                        "x":  250,
+                                        "y":  525,
+                                        "width":  77,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "continues",
+                                        "x":  334,
+                                        "y":  527,
+                                        "width":  95,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  437,
+                                        "y":  531,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  464,
+                                        "y":  525,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "an",
+                                        "x":  494,
+                                        "y":  532,
+                                        "width":  24,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "important",
+                                        "x":  526,
+                                        "y":  527,
+                                        "width":  101,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "component of the economy of New Mexico, from the",
+                      "x":  125,
+                      "y":  555,
+                      "words":  [
+                                    {
+                                        "text":  "component",
+                                        "x":  125,
+                                        "y":  561,
+                                        "width":  112,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  244,
+                                        "y":  555,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  271,
+                                        "y":  555,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "economy",
+                                        "x":  309,
+                                        "y":  562,
+                                        "width":  90,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  406,
+                                        "y":  555,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  432,
+                                        "y":  556,
+                                        "width":  48,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Mexico,",
+                                        "x":  487,
+                                        "y":  556,
+                                        "width":  79,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "from",
+                                        "x":  575,
+                                        "y":  555,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  630,
+                                        "y":  555,
+                                        "width":  31,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "oil companies of Roswell and Farmington to the",
+                      "x":  125,
+                      "y":  585,
+                      "words":  [
+                                    {
+                                        "text":  "oil",
+                                        "x":  125,
+                                        "y":  585,
+                                        "width":  25,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "companies",
+                                        "x":  157,
+                                        "y":  588,
+                                        "width":  106,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  270,
+                                        "y":  585,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Roswell",
+                                        "x":  297,
+                                        "y":  585,
+                                        "width":  78,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  382,
+                                        "y":  586,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Farmington",
+                                        "x":  427,
+                                        "y":  587,
+                                        "width":  119,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  554,
+                                        "y":  592,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  581,
+                                        "y":  585,
+                                        "width":  31,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "copper mines of",
+                      "x":  125,
+                      "y":  616,
+                      "words":  [
+                                    {
+                                        "text":  "copper",
+                                        "x":  125,
+                                        "y":  623,
+                                        "width":  67,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "mines",
+                                        "x":  200,
+                                        "y":  618,
+                                        "width":  58,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  266,
+                                        "y":  616,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Silver City, the coal mines of Gallup, the potash mines",
+                      "x":  125,
+                      "y":  646,
+                      "words":  [
+                                    {
+                                        "text":  "Silver",
+                                        "x":  125,
+                                        "y":  646,
+                                        "width":  55,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "City,",
+                                        "x":  187,
+                                        "y":  647,
+                                        "width":  48,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  243,
+                                        "y":  646,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "coal",
+                                        "x":  282,
+                                        "y":  646,
+                                        "width":  39,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "mines",
+                                        "x":  329,
+                                        "y":  649,
+                                        "width":  59,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  396,
+                                        "y":  646,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Gallup,",
+                                        "x":  423,
+                                        "y":  646,
+                                        "width":  73,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  505,
+                                        "y":  646,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "potash",
+                                        "x":  543,
+                                        "y":  646,
+                                        "width":  66,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "mines",
+                                        "x":  617,
+                                        "y":  649,
+                                        "width":  58,
+                                        "height":  16
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of Carlsbad, to the hydrogeologists who try to find",
+                      "x":  125,
+                      "y":  676,
+                      "words":  [
+                                    {
+                                        "text":  "of",
+                                        "x":  125,
+                                        "y":  676,
+                                        "width":  22,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Carlsbad,",
+                                        "x":  152,
+                                        "y":  677,
+                                        "width":  94,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  254,
+                                        "y":  683,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  281,
+                                        "y":  677,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hydrogeologists",
+                                        "x":  319,
+                                        "y":  677,
+                                        "width":  156,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "who",
+                                        "x":  482,
+                                        "y":  677,
+                                        "width":  42,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "try",
+                                        "x":  532,
+                                        "y":  683,
+                                        "width":  29,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  568,
+                                        "y":  683,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "find",
+                                        "x":  595,
+                                        "y":  676,
+                                        "width":  41,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "enough water for the major cities of the state.",
+                      "x":  125,
+                      "y":  707,
+                      "words":  [
+                                    {
+                                        "text":  "enough",
+                                        "x":  125,
+                                        "y":  707,
+                                        "width":  73,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "water",
+                                        "x":  205,
+                                        "y":  713,
+                                        "width":  55,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  267,
+                                        "y":  707,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  302,
+                                        "y":  707,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "major",
+                                        "x":  341,
+                                        "y":  709,
+                                        "width":  57,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "cities",
+                                        "x":  405,
+                                        "y":  709,
+                                        "width":  50,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  463,
+                                        "y":  707,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  489,
+                                        "y":  707,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "state.",
+                                        "x":  527,
+                                        "y":  713,
+                                        "width":  51,
+                                        "height":  13
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This program provides a primary education in the",
+                      "x":  124,
+                      "y":  768,
+                      "words":  [
+                                    {
+                                        "text":  "This",
+                                        "x":  124,
+                                        "y":  768,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "program",
+                                        "x":  178,
+                                        "y":  775,
+                                        "width":  85,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "provides",
+                                        "x":  270,
+                                        "y":  768,
+                                        "width":  83,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  361,
+                                        "y":  776,
+                                        "width":  10,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "primary",
+                                        "x":  378,
+                                        "y":  770,
+                                        "width":  81,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "education",
+                                        "x":  466,
+                                        "y":  768,
+                                        "width":  97,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  571,
+                                        "y":  770,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  598,
+                                        "y":  768,
+                                        "width":  31,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "natural sciences. Students will be exposed to the funda-",
+                      "x":  125,
+                      "y":  798,
+                      "words":  [
+                                    {
+                                        "text":  "natural",
+                                        "x":  125,
+                                        "y":  798,
+                                        "width":  71,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "sciences.",
+                                        "x":  204,
+                                        "y":  801,
+                                        "width":  83,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "Students",
+                                        "x":  297,
+                                        "y":  798,
+                                        "width":  85,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "will",
+                                        "x":  389,
+                                        "y":  798,
+                                        "width":  38,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  435,
+                                        "y":  798,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "exposed",
+                                        "x":  465,
+                                        "y":  798,
+                                        "width":  79,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  551,
+                                        "y":  805,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  578,
+                                        "y":  798,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "funda-",
+                                        "x":  617,
+                                        "y":  798,
+                                        "width":  66,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "mentals of geology, biology, and computer science. The",
+                      "x":  125,
+                      "y":  829,
+                      "words":  [
+                                    {
+                                        "text":  "mentals",
+                                        "x":  125,
+                                        "y":  829,
+                                        "width":  77,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  210,
+                                        "y":  829,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "geology,",
+                                        "x":  236,
+                                        "y":  829,
+                                        "width":  80,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "biology,",
+                                        "x":  325,
+                                        "y":  829,
+                                        "width":  77,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  410,
+                                        "y":  829,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "computer",
+                                        "x":  454,
+                                        "y":  835,
+                                        "width":  95,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "science.",
+                                        "x":  556,
+                                        "y":  831,
+                                        "width":  75,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "The",
+                                        "x":  639,
+                                        "y":  829,
+                                        "width":  40,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "geology program emphasizes practical knowledge",
+                      "x":  125,
+                      "y":  859,
+                      "words":  [
+                                    {
+                                        "text":  "geology",
+                                        "x":  125,
+                                        "y":  859,
+                                        "width":  77,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "program",
+                                        "x":  208,
+                                        "y":  866,
+                                        "width":  85,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "emphasizes",
+                                        "x":  301,
+                                        "y":  859,
+                                        "width":  111,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "practical",
+                                        "x":  420,
+                                        "y":  859,
+                                        "width":  85,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "knowledge",
+                                        "x":  513,
+                                        "y":  859,
+                                        "width":  107,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "through field trips and laboratory work. Courses take",
+                      "x":  125,
+                      "y":  889,
+                      "words":  [
+                                    {
+                                        "text":  "through",
+                                        "x":  125,
+                                        "y":  889,
+                                        "width":  81,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "field",
+                                        "x":  213,
+                                        "y":  889,
+                                        "width":  44,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "trips",
+                                        "x":  265,
+                                        "y":  892,
+                                        "width":  44,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  317,
+                                        "y":  890,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "laboratory",
+                                        "x":  361,
+                                        "y":  890,
+                                        "width":  103,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "work.",
+                                        "x":  469,
+                                        "y":  889,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Courses",
+                                        "x":  534,
+                                        "y":  890,
+                                        "width":  80,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "take",
+                                        "x":  622,
+                                        "y":  889,
+                                        "width":  41,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "advantage of the rich natural resources of the mesa",
+                      "x":  125,
+                      "y":  920,
+                      "words":  [
+                                    {
+                                        "text":  "advantage",
+                                        "x":  125,
+                                        "y":  920,
+                                        "width":  99,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  232,
+                                        "y":  920,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  259,
+                                        "y":  920,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "rich",
+                                        "x":  297,
+                                        "y":  920,
+                                        "width":  38,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "natural",
+                                        "x":  343,
+                                        "y":  920,
+                                        "width":  71,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "resources",
+                                        "x":  422,
+                                        "y":  927,
+                                        "width":  91,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  521,
+                                        "y":  920,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  547,
+                                        "y":  920,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "mesa",
+                                        "x":  586,
+                                        "y":  927,
+                                        "width":  49,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "country of eastern New Mexico, a state-of-the-art,",
+                      "x":  125,
+                      "y":  950,
+                      "words":  [
+                                    {
+                                        "text":  "country",
+                                        "x":  125,
+                                        "y":  957,
+                                        "width":  78,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  210,
+                                        "y":  950,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "eastern",
+                                        "x":  237,
+                                        "y":  957,
+                                        "width":  70,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  314,
+                                        "y":  952,
+                                        "width":  47,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Mexico,",
+                                        "x":  368,
+                                        "y":  952,
+                                        "width":  80,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  456,
+                                        "y":  958,
+                                        "width":  10,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "state-of-the-art,",
+                                        "x":  473,
+                                        "y":  950,
+                                        "width":  155,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "computer-interactive science laboratory, and the",
+                      "x":  125,
+                      "y":  981,
+                      "words":  [
+                                    {
+                                        "text":  "computer-interactive",
+                                        "x":  125,
+                                        "y":  983,
+                                        "width":  206,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "science",
+                                        "x":  338,
+                                        "y":  983,
+                                        "width":  69,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "laboratory,",
+                                        "x":  415,
+                                        "y":  981,
+                                        "width":  106,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  529,
+                                        "y":  981,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  574,
+                                        "y":  981,
+                                        "width":  31,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "College\u0027s natural history museum, the Mesalands",
+                      "x":  125,
+                      "y":  1011,
+                      "words":  [
+                                    {
+                                        "text":  "College\u0027s",
+                                        "x":  125,
+                                        "y":  1011,
+                                        "width":  88,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "natural",
+                                        "x":  221,
+                                        "y":  1011,
+                                        "width":  71,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "history",
+                                        "x":  300,
+                                        "y":  1011,
+                                        "width":  70,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "museum,",
+                                        "x":  377,
+                                        "y":  1019,
+                                        "width":  90,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  476,
+                                        "y":  1011,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Mesalands",
+                                        "x":  514,
+                                        "y":  1011,
+                                        "width":  106,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Dinosaur Museum.",
+                      "x":  125,
+                      "y":  1043,
+                      "words":  [
+                                    {
+                                        "text":  "Dinosaur",
+                                        "x":  125,
+                                        "y":  1043,
+                                        "width":  93,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Museum.",
+                                        "x":  225,
+                                        "y":  1043,
+                                        "width":  94,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "***FYEX 1110 First-Year Seminar is required for all",
+                      "x":  125,
+                      "y":  1102,
+                      "words":  [
+                                    {
+                                        "text":  "***FYEX",
+                                        "x":  125,
+                                        "y":  1103,
+                                        "width":  94,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  228,
+                                        "y":  1104,
+                                        "width":  43,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "First-Year",
+                                        "x":  279,
+                                        "y":  1104,
+                                        "width":  94,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Seminar",
+                                        "x":  380,
+                                        "y":  1103,
+                                        "width":  84,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  471,
+                                        "y":  1105,
+                                        "width":  14,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "required",
+                                        "x":  493,
+                                        "y":  1102,
+                                        "width":  83,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  584,
+                                        "y":  1102,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "all",
+                                        "x":  619,
+                                        "y":  1102,
+                                        "width":  24,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "degree-seeking students with fewer than 30 credit",
+                      "x":  125,
+                      "y":  1133,
+                      "words":  [
+                                    {
+                                        "text":  "degree-seeking",
+                                        "x":  125,
+                                        "y":  1133,
+                                        "width":  147,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  279,
+                                        "y":  1133,
+                                        "width":  83,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "with",
+                                        "x":  369,
+                                        "y":  1133,
+                                        "width":  45,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "fewer",
+                                        "x":  422,
+                                        "y":  1133,
+                                        "width":  53,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "than",
+                                        "x":  483,
+                                        "y":  1133,
+                                        "width":  45,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "30",
+                                        "x":  536,
+                                        "y":  1134,
+                                        "width":  24,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  568,
+                                        "y":  1133,
+                                        "width":  57,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "hours successfully completed including transfer credits.",
+                      "x":  125,
+                      "y":  1163,
+                      "words":  [
+                                    {
+                                        "text":  "hours",
+                                        "x":  125,
+                                        "y":  1163,
+                                        "width":  55,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "successfully",
+                                        "x":  187,
+                                        "y":  1163,
+                                        "width":  118,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "completed",
+                                        "x":  312,
+                                        "y":  1163,
+                                        "width":  103,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "including",
+                                        "x":  423,
+                                        "y":  1163,
+                                        "width":  95,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "transfer",
+                                        "x":  525,
+                                        "y":  1163,
+                                        "width":  76,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credits.",
+                                        "x":  609,
+                                        "y":  1163,
+                                        "width":  70,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The course must be taken in the first semester of",
+                      "x":  124,
+                      "y":  1193,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  124,
+                                        "y":  1194,
+                                        "width":  41,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "course",
+                                        "x":  172,
+                                        "y":  1201,
+                                        "width":  63,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "must",
+                                        "x":  243,
+                                        "y":  1200,
+                                        "width":  49,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  300,
+                                        "y":  1193,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "taken",
+                                        "x":  330,
+                                        "y":  1194,
+                                        "width":  54,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  392,
+                                        "y":  1196,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  419,
+                                        "y":  1194,
+                                        "width":  31,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "first",
+                                        "x":  458,
+                                        "y":  1193,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "semester",
+                                        "x":  505,
+                                        "y":  1200,
+                                        "width":  85,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  597,
+                                        "y":  1193,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "enrollment at MCC.",
+                      "x":  125,
+                      "y":  1224,
+                      "words":  [
+                                    {
+                                        "text":  "enrollment",
+                                        "x":  125,
+                                        "y":  1224,
+                                        "width":  109,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "at",
+                                        "x":  241,
+                                        "y":  1230,
+                                        "width":  18,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "MCC.",
+                                        "x":  267,
+                                        "y":  1225,
+                                        "width":  63,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FALL",
+                      "x":  727,
+                      "y":  146,
+                      "words":  [
+                                    {
+                                        "text":  "FALL",
+                                        "x":  727,
+                                        "y":  146,
+                                        "width":  54,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PHYS 1115C",
+                      "x":  727,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "PHYS",
+                                        "x":  727,
+                                        "y":  179,
+                                        "width":  52,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1115C",
+                                        "x":  786,
+                                        "y":  179,
+                                        "width":  48,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ENGL 1110",
+                      "x":  727,
+                      "y":  213,
+                      "words":  [
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  727,
+                                        "y":  213,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  787,
+                                        "y":  213,
+                                        "width":  35,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GEOL 1110",
+                      "x":  727,
+                      "y":  247,
+                      "words":  [
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  727,
+                                        "y":  247,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  786,
+                                        "y":  247,
+                                        "width":  35,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "HIST 1110",
+                      "x":  727,
+                      "y":  280,
+                      "words":  [
+                                    {
+                                        "text":  "HIST",
+                                        "x":  727,
+                                        "y":  280,
+                                        "width":  45,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  778,
+                                        "y":  281,
+                                        "width":  34,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SPRING",
+                      "x":  726,
+                      "y":  382,
+                      "words":  [
+                                    {
+                                        "text":  "SPRING",
+                                        "x":  726,
+                                        "y":  382,
+                                        "width":  86,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ENGL 1120",
+                      "x":  727,
+                      "y":  415,
+                      "words":  [
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  727,
+                                        "y":  415,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1120",
+                                        "x":  787,
+                                        "y":  416,
+                                        "width":  39,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GEOL 2110",
+                      "x":  727,
+                      "y":  449,
+                      "words":  [
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  727,
+                                        "y":  449,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2110",
+                                        "x":  787,
+                                        "y":  450,
+                                        "width":  38,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GEOL 1998",
+                      "x":  727,
+                      "y":  513,
+                      "words":  [
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  727,
+                                        "y":  513,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1998",
+                                        "x":  786,
+                                        "y":  514,
+                                        "width":  44,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GEOL",
+                      "x":  727,
+                      "y":  547,
+                      "words":  [
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  727,
+                                        "y":  547,
+                                        "width":  53,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PSYC 1110",
+                      "x":  727,
+                      "y":  581,
+                      "words":  [
+                                    {
+                                        "text":  "PSYC",
+                                        "x":  727,
+                                        "y":  581,
+                                        "width":  49,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  783,
+                                        "y":  581,
+                                        "width":  35,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FALL",
+                      "x":  727,
+                      "y":  797,
+                      "words":  [
+                                    {
+                                        "text":  "FALL",
+                                        "x":  727,
+                                        "y":  797,
+                                        "width":  54,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CHEM 1215C",
+                      "x":  727,
+                      "y":  830,
+                      "words":  [
+                                    {
+                                        "text":  "CHEM",
+                                        "x":  727,
+                                        "y":  830,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1215C",
+                                        "x":  793,
+                                        "y":  830,
+                                        "width":  52,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "COMM 1130",
+                      "x":  727,
+                      "y":  894,
+                      "words":  [
+                                    {
+                                        "text":  "COMM",
+                                        "x":  727,
+                                        "y":  894,
+                                        "width":  63,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1130",
+                                        "x":  798,
+                                        "y":  895,
+                                        "width":  39,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GEOL 1120",
+                      "x":  727,
+                      "y":  928,
+                      "words":  [
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  727,
+                                        "y":  928,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1120",
+                                        "x":  786,
+                                        "y":  929,
+                                        "width":  39,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GEOL 2910",
+                      "x":  727,
+                      "y":  992,
+                      "words":  [
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  727,
+                                        "y":  992,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2910",
+                                        "x":  787,
+                                        "y":  993,
+                                        "width":  43,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SPRING",
+                      "x":  726,
+                      "y":  1157,
+                      "words":  [
+                                    {
+                                        "text":  "SPRING",
+                                        "x":  726,
+                                        "y":  1157,
+                                        "width":  86,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GEOL 2145",
+                      "x":  727,
+                      "y":  1191,
+                      "words":  [
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  727,
+                                        "y":  1191,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2145",
+                                        "x":  787,
+                                        "y":  1192,
+                                        "width":  42,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GEOL 2920",
+                      "x":  727,
+                      "y":  1255,
+                      "words":  [
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  727,
+                                        "y":  1255,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2920",
+                                        "x":  787,
+                                        "y":  1256,
+                                        "width":  47,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "MATH",
+                      "x":  727,
+                      "y":  1289,
+                      "words":  [
+                                    {
+                                        "text":  "MATH",
+                                        "x":  727,
+                                        "y":  1289,
+                                        "width":  54,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "HIST 2110",
+                      "x":  727,
+                      "y":  1353,
+                      "words":  [
+                                    {
+                                        "text":  "HIST",
+                                        "x":  727,
+                                        "y":  1353,
+                                        "width":  45,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2110",
+                                        "x":  778,
+                                        "y":  1354,
+                                        "width":  39,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ENGL 2999",
+                      "x":  727,
+                      "y":  1421,
+                      "words":  [
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  727,
+                                        "y":  1421,
+                                        "width":  54,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "2999",
+                                        "x":  787,
+                                        "y":  1421,
+                                        "width":  48,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FIRST YEAR",
+                      "x":  931,
+                      "y":  94,
+                      "words":  [
+                                    {
+                                        "text":  "FIRST",
+                                        "x":  931,
+                                        "y":  94,
+                                        "width":  71,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "YEAR",
+                                        "x":  1010,
+                                        "y":  94,
+                                        "width":  66,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Survey of Physics (Area Ill)",
+                      "x":  874,
+                      "y":  178,
+                      "words":  [
+                                    {
+                                        "text":  "Survey",
+                                        "x":  874,
+                                        "y":  179,
+                                        "width":  66,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  948,
+                                        "y":  178,
+                                        "width":  18,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Physics",
+                                        "x":  973,
+                                        "y":  179,
+                                        "width":  73,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1054,
+                                        "y":  179,
+                                        "width":  50,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "Ill)",
+                                        "x":  1114,
+                                        "y":  179,
+                                        "width":  22,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Composition I (Area l)",
+                      "x":  874,
+                      "y":  212,
+                      "words":  [
+                                    {
+                                        "text":  "Composition",
+                                        "x":  874,
+                                        "y":  212,
+                                        "width":  122,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  1006,
+                                        "y":  213,
+                                        "width":  2,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1018,
+                                        "y":  212,
+                                        "width":  50,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "l)",
+                                        "x":  1078,
+                                        "y":  212,
+                                        "width":  10,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Physical Geology (Area Ill)",
+                      "x":  875,
+                      "y":  246,
+                      "words":  [
+                                    {
+                                        "text":  "Physical",
+                                        "x":  875,
+                                        "y":  246,
+                                        "width":  78,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Geology",
+                                        "x":  962,
+                                        "y":  246,
+                                        "width":  81,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1050,
+                                        "y":  246,
+                                        "width":  50,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "Ill)",
+                                        "x":  1110,
+                                        "y":  246,
+                                        "width":  22,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  146,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  146,
+                                        "width":  98,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  180,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  180,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  213,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  213,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  247,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  247,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "United States History I or (Area V) 3",
+                      "x":  875,
+                      "y":  280,
+                      "words":  [
+                                    {
+                                        "text":  "United",
+                                        "x":  875,
+                                        "y":  280,
+                                        "width":  62,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "States",
+                                        "x":  945,
+                                        "y":  280,
+                                        "width":  60,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "History",
+                                        "x":  1014,
+                                        "y":  280,
+                                        "width":  68,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  1091,
+                                        "y":  281,
+                                        "width":  2,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  1102,
+                                        "y":  285,
+                                        "width":  19,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1129,
+                                        "y":  280,
+                                        "width":  50,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "V)",
+                                        "x":  1187,
+                                        "y":  280,
+                                        "width":  20,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  281,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  874,
+                      "y":  314,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  874,
+                                        "y":  314,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  990,
+                                        "y":  314,
+                                        "width":  81,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Composition 11 (Area l)",
+                      "x":  874,
+                      "y":  415,
+                      "words":  [
+                                    {
+                                        "text":  "Composition",
+                                        "x":  874,
+                                        "y":  415,
+                                        "width":  122,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  1006,
+                                        "y":  415,
+                                        "width":  9,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1024,
+                                        "y":  415,
+                                        "width":  50,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "l)",
+                                        "x":  1084,
+                                        "y":  415,
+                                        "width":  10,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Historical Geology (Area Ill)",
+                      "x":  875,
+                      "y":  448,
+                      "words":  [
+                                    {
+                                        "text":  "Historical",
+                                        "x":  875,
+                                        "y":  448,
+                                        "width":  90,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Geology",
+                                        "x":  974,
+                                        "y":  448,
+                                        "width":  80,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1062,
+                                        "y":  448,
+                                        "width":  50,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Ill)",
+                                        "x":  1121,
+                                        "y":  448,
+                                        "width":  23,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "prerequisite GEOL 1110",
+                      "x":  896,
+                      "y":  479,
+                      "words":  [
+                                    {
+                                        "text":  "prerequisite",
+                                        "x":  896,
+                                        "y":  479,
+                                        "width":  116,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  1020,
+                                        "y":  479,
+                                        "width":  53,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  1079,
+                                        "y":  480,
+                                        "width":  35,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Internship in Geology",
+                      "x":  875,
+                      "y":  513,
+                      "words":  [
+                                    {
+                                        "text":  "Internship",
+                                        "x":  875,
+                                        "y":  513,
+                                        "width":  97,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  981,
+                                        "y":  513,
+                                        "width":  15,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Geology",
+                                        "x":  1005,
+                                        "y":  513,
+                                        "width":  80,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GEOL Elective",
+                      "x":  874,
+                      "y":  546,
+                      "words":  [
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  874,
+                                        "y":  547,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  935,
+                                        "y":  546,
+                                        "width":  75,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to",
+                      "x":  875,
+                      "y":  580,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  580,
+                                        "width":  118,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  1001,
+                                        "y":  582,
+                                        "width":  18,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Psychology or (ArealV)",
+                      "x":  875,
+                      "y":  614,
+                      "words":  [
+                                    {
+                                        "text":  "Psychology",
+                                        "x":  875,
+                                        "y":  614,
+                                        "width":  111,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  994,
+                                        "y":  619,
+                                        "width":  19,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "(ArealV)",
+                                        "x":  1021,
+                                        "y":  614,
+                                        "width":  78,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  874,
+                      "y":  648,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  874,
+                                        "y":  648,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  990,
+                                        "y":  648,
+                                        "width":  81,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SECOND YEAR",
+                      "x":  913,
+                      "y":  745,
+                      "words":  [
+                                    {
+                                        "text":  "SECOND",
+                                        "x":  913,
+                                        "y":  745,
+                                        "width":  106,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "YEAR",
+                                        "x":  1027,
+                                        "y":  745,
+                                        "width":  67,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "General Chemistry I STEM",
+                      "x":  874,
+                      "y":  830,
+                      "words":  [
+                                    {
+                                        "text":  "General",
+                                        "x":  874,
+                                        "y":  830,
+                                        "width":  75,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Chemistry",
+                                        "x":  957,
+                                        "y":  830,
+                                        "width":  100,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  1065,
+                                        "y":  830,
+                                        "width":  2,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "STEM",
+                                        "x":  1076,
+                                        "y":  830,
+                                        "width":  53,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(Area Ill)",
+                      "x":  895,
+                      "y":  860,
+                      "words":  [
+                                    {
+                                        "text":  "(Area",
+                                        "x":  895,
+                                        "y":  860,
+                                        "width":  50,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "Ill)",
+                                        "x":  955,
+                                        "y":  860,
+                                        "width":  22,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Public Speaking (Area l)",
+                      "x":  875,
+                      "y":  893,
+                      "words":  [
+                                    {
+                                        "text":  "Public",
+                                        "x":  875,
+                                        "y":  893,
+                                        "width":  59,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Speaking",
+                                        "x":  941,
+                                        "y":  894,
+                                        "width":  90,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1040,
+                                        "y":  893,
+                                        "width":  51,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "l)",
+                                        "x":  1100,
+                                        "y":  893,
+                                        "width":  11,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Environmental Geology",
+                      "x":  875,
+                      "y":  927,
+                      "words":  [
+                                    {
+                                        "text":  "Environmental",
+                                        "x":  875,
+                                        "y":  927,
+                                        "width":  140,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Geology",
+                                        "x":  1024,
+                                        "y":  928,
+                                        "width":  80,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "prerequisite GEOL 1110",
+                      "x":  896,
+                      "y":  958,
+                      "words":  [
+                                    {
+                                        "text":  "prerequisite",
+                                        "x":  896,
+                                        "y":  958,
+                                        "width":  116,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  1026,
+                                        "y":  958,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  1085,
+                                        "y":  959,
+                                        "width":  35,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Research in Natural Sciences I",
+                      "x":  875,
+                      "y":  992,
+                      "words":  [
+                                    {
+                                        "text":  "Research",
+                                        "x":  875,
+                                        "y":  992,
+                                        "width":  90,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  974,
+                                        "y":  992,
+                                        "width":  15,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Natural",
+                                        "x":  999,
+                                        "y":  992,
+                                        "width":  69,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Sciences",
+                                        "x":  1077,
+                                        "y":  992,
+                                        "width":  88,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  1174,
+                                        "y":  992,
+                                        "width":  2,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Creative/Fine Arts Elective",
+                      "x":  874,
+                      "y":  1025,
+                      "words":  [
+                                    {
+                                        "text":  "Creative/Fine",
+                                        "x":  874,
+                                        "y":  1025,
+                                        "width":  129,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  1011,
+                                        "y":  1026,
+                                        "width":  39,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  1058,
+                                        "y":  1025,
+                                        "width":  75,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(Area VI)",
+                      "x":  895,
+                      "y":  1055,
+                      "words":  [
+                                    {
+                                        "text":  "(Area",
+                                        "x":  895,
+                                        "y":  1055,
+                                        "width":  50,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "VI)",
+                                        "x":  954,
+                                        "y":  1055,
+                                        "width":  25,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  874,
+                      "y":  1089,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  874,
+                                        "y":  1090,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  990,
+                                        "y":  1089,
+                                        "width":  81,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "History of Life - prerequisite",
+                      "x":  875,
+                      "y":  1190,
+                      "words":  [
+                                    {
+                                        "text":  "History",
+                                        "x":  875,
+                                        "y":  1191,
+                                        "width":  68,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  951,
+                                        "y":  1190,
+                                        "width":  18,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Life",
+                                        "x":  976,
+                                        "y":  1190,
+                                        "width":  33,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  1017,
+                                        "y":  1203,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "prerequisite",
+                                        "x":  1032,
+                                        "y":  1191,
+                                        "width":  116,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BIOL 1110 or GEOL 1110",
+                      "x":  896,
+                      "y":  1222,
+                      "words":  [
+                                    {
+                                        "text":  "BIOL",
+                                        "x":  896,
+                                        "y":  1222,
+                                        "width":  45,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  947,
+                                        "y":  1222,
+                                        "width":  34,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  990,
+                                        "y":  1227,
+                                        "width":  19,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  1016,
+                                        "y":  1222,
+                                        "width":  53,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  1076,
+                                        "y":  1222,
+                                        "width":  34,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Research in Natural Sciences 11",
+                      "x":  875,
+                      "y":  1255,
+                      "words":  [
+                                    {
+                                        "text":  "Research",
+                                        "x":  875,
+                                        "y":  1255,
+                                        "width":  90,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  974,
+                                        "y":  1255,
+                                        "width":  15,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Natural",
+                                        "x":  999,
+                                        "y":  1255,
+                                        "width":  69,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Sciences",
+                                        "x":  1077,
+                                        "y":  1255,
+                                        "width":  88,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  1173,
+                                        "y":  1256,
+                                        "width":  9,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "MATH 1220 or MATH 1350",
+                      "x":  875,
+                      "y":  1289,
+                      "words":  [
+                                    {
+                                        "text":  "MATH",
+                                        "x":  875,
+                                        "y":  1289,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1220",
+                                        "x":  937,
+                                        "y":  1290,
+                                        "width":  43,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  988,
+                                        "y":  1294,
+                                        "width":  19,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "MATH",
+                                        "x":  1016,
+                                        "y":  1289,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1350",
+                                        "x":  1078,
+                                        "y":  1290,
+                                        "width":  43,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(Area 11)",
+                      "x":  895,
+                      "y":  1319,
+                      "words":  [
+                                    {
+                                        "text":  "(Area",
+                                        "x":  895,
+                                        "y":  1319,
+                                        "width":  50,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "11)",
+                                        "x":  955,
+                                        "y":  1319,
+                                        "width":  16,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Survey of New Mexico",
+                      "x":  874,
+                      "y":  1352,
+                      "words":  [
+                                    {
+                                        "text":  "Survey",
+                                        "x":  874,
+                                        "y":  1353,
+                                        "width":  66,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  948,
+                                        "y":  1352,
+                                        "width":  18,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  973,
+                                        "y":  1353,
+                                        "width":  43,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  1024,
+                                        "y":  1353,
+                                        "width":  68,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "History or (Area V)",
+                      "x":  875,
+                      "y":  1386,
+                      "words":  [
+                                    {
+                                        "text":  "History",
+                                        "x":  875,
+                                        "y":  1386,
+                                        "width":  68,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  951,
+                                        "y":  1392,
+                                        "width":  19,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  977,
+                                        "y":  1386,
+                                        "width":  51,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "V)",
+                                        "x":  1036,
+                                        "y":  1386,
+                                        "width":  20,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Capstone Portfolio Course",
+                      "x":  874,
+                      "y":  1420,
+                      "words":  [
+                                    {
+                                        "text":  "Capstone",
+                                        "x":  874,
+                                        "y":  1421,
+                                        "width":  92,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Portfolio",
+                                        "x":  975,
+                                        "y":  1420,
+                                        "width":  81,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Course",
+                                        "x":  1064,
+                                        "y":  1421,
+                                        "width":  68,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  874,
+                      "y":  1453,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  874,
+                                        "y":  1454,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  990,
+                                        "y":  1453,
+                                        "width":  81,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "TOTAL DEGREE CREDITS",
+                      "x":  873,
+                      "y":  1522,
+                      "words":  [
+                                    {
+                                        "text":  "TOTAL",
+                                        "x":  873,
+                                        "y":  1522,
+                                        "width":  72,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "DEGREE",
+                                        "x":  953,
+                                        "y":  1522,
+                                        "width":  91,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1052,
+                                        "y":  1522,
+                                        "width":  98,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "14",
+                      "x":  1220,
+                      "y":  315,
+                      "words":  [
+                                    {
+                                        "text":  "14",
+                                        "x":  1220,
+                                        "y":  315,
+                                        "width":  21,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  382,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  382,
+                                        "width":  98,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  416,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  416,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  480,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  480,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2",
+                      "x":  1225,
+                      "y":  514,
+                      "words":  [
+                                    {
+                                        "text":  "2",
+                                        "x":  1225,
+                                        "y":  514,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  548,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  548,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  615,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  615,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "16",
+                      "x":  1219,
+                      "y":  649,
+                      "words":  [
+                                    {
+                                        "text":  "16",
+                                        "x":  1219,
+                                        "y":  649,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  796,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  796,
+                                        "width":  98,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  861,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  861,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  895,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  895,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  959,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  959,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2",
+                      "x":  1225,
+                      "y":  993,
+                      "words":  [
+                                    {
+                                        "text":  "2",
+                                        "x":  1225,
+                                        "y":  993,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  1057,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  1057,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "16",
+                      "x":  1219,
+                      "y":  1091,
+                      "words":  [
+                                    {
+                                        "text":  "16",
+                                        "x":  1219,
+                                        "y":  1091,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  1157,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  1157,
+                                        "width":  98,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  1222,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  1222,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2",
+                      "x":  1225,
+                      "y":  1256,
+                      "words":  [
+                                    {
+                                        "text":  "2",
+                                        "x":  1225,
+                                        "y":  1256,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  1320,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  1320,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  1387,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  1387,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "14",
+                      "x":  1220,
+                      "y":  1455,
+                      "words":  [
+                                    {
+                                        "text":  "14",
+                                        "x":  1220,
+                                        "y":  1455,
+                                        "width":  21,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "60",
+                      "x":  1217,
+                      "y":  1522,
+                      "words":  [
+                                    {
+                                        "text":  "60",
+                                        "x":  1217,
+                                        "y":  1522,
+                                        "width":  27,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "72",
+                      "x":  692,
+                      "y":  1768,
+                      "words":  [
+                                    {
+                                        "text":  "72",
+                                        "x":  692,
+                                        "y":  1768,
+                                        "width":  26,
+                                        "height":  19
+                                    }
+                                ]
+                  }
+              ]
+}

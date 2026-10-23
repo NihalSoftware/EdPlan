@@ -1,0 +1,16 @@
+{
+  "universities": [
+    {
+      "university_id": "e9580b21-f16b-471a-8ad9-ecf7b0fec09b",
+      "university_name": "Mesalands Community College",
+      "city": "Tucumcari",
+      "state": "New Mexico",
+      "website": "https://www.mesalands.edu",
+      "college_profile": {
+        "source": "New Mexico college list"
+      }
+    }
+  ],
+  "programs": [],
+  "courses": []
+}

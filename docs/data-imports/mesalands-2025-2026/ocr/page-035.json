@@ -1,0 +1,1279 @@
+﻿{
+    "pdf_page":  35,
+    "lines":  [
+                  {
+                      "text":  "TECHNICAL AND",
+                      "x":  124,
+                      "y":  85,
+                      "words":  [
+                                    {
+                                        "text":  "TECHNICAL",
+                                        "x":  124,
+                                        "y":  85,
+                                        "width":  330,
+                                        "height":  39
+                                    },
+                                    {
+                                        "text":  "AND",
+                                        "x":  466,
+                                        "y":  85,
+                                        "width":  124,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PROFESSIONAL",
+                      "x":  125,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "PROFESSIONAL",
+                                        "x":  125,
+                                        "y":  145,
+                                        "width":  412,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "WRITING",
+                      "x":  122,
+                      "y":  204,
+                      "words":  [
+                                    {
+                                        "text":  "WRITING",
+                                        "x":  122,
+                                        "y":  204,
+                                        "width":  261,
+                                        "height":  40
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Technical and Professional Writing Occupational",
+                      "x":  124,
+                      "y":  285,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  124,
+                                        "y":  285,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Technical",
+                                        "x":  171,
+                                        "y":  285,
+                                        "width":  98,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  277,
+                                        "y":  285,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Professional",
+                                        "x":  321,
+                                        "y":  285,
+                                        "width":  119,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Writing",
+                                        "x":  447,
+                                        "y":  286,
+                                        "width":  79,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Occupational",
+                                        "x":  534,
+                                        "y":  285,
+                                        "width":  135,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Certificate program provides students with a selection",
+                      "x":  124,
+                      "y":  315,
+                      "words":  [
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  124,
+                                        "y":  315,
+                                        "width":  107,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "program",
+                                        "x":  239,
+                                        "y":  323,
+                                        "width":  85,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "provides",
+                                        "x":  331,
+                                        "y":  316,
+                                        "width":  83,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  422,
+                                        "y":  316,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "with",
+                                        "x":  511,
+                                        "y":  316,
+                                        "width":  45,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  564,
+                                        "y":  323,
+                                        "width":  10,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "selection",
+                                        "x":  581,
+                                        "y":  316,
+                                        "width":  86,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of courses designed to enhance professional opportuni-",
+                      "x":  124,
+                      "y":  346,
+                      "words":  [
+                                    {
+                                        "text":  "of",
+                                        "x":  124,
+                                        "y":  346,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  151,
+                                        "y":  353,
+                                        "width":  71,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "designed",
+                                        "x":  230,
+                                        "y":  346,
+                                        "width":  87,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  325,
+                                        "y":  352,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "enhance",
+                                        "x":  352,
+                                        "y":  346,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "professional",
+                                        "x":  441,
+                                        "y":  346,
+                                        "width":  118,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "opportuni-",
+                                        "x":  567,
+                                        "y":  348,
+                                        "width":  109,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ties in a variety of communication fields. The program",
+                      "x":  124,
+                      "y":  376,
+                      "words":  [
+                                    {
+                                        "text":  "ties",
+                                        "x":  124,
+                                        "y":  378,
+                                        "width":  33,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  165,
+                                        "y":  378,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  192,
+                                        "y":  384,
+                                        "width":  10,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "variety",
+                                        "x":  208,
+                                        "y":  379,
+                                        "width":  69,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  284,
+                                        "y":  376,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "communication",
+                                        "x":  311,
+                                        "y":  379,
+                                        "width":  158,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "fields.",
+                                        "x":  476,
+                                        "y":  376,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "The",
+                                        "x":  543,
+                                        "y":  376,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "program",
+                                        "x":  591,
+                                        "y":  384,
+                                        "width":  85,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "is intended to develop written, verbal, and digital",
+                      "x":  124,
+                      "y":  407,
+                      "words":  [
+                                    {
+                                        "text":  "is",
+                                        "x":  124,
+                                        "y":  409,
+                                        "width":  14,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "intended",
+                                        "x":  146,
+                                        "y":  407,
+                                        "width":  88,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  241,
+                                        "y":  413,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "develop",
+                                        "x":  268,
+                                        "y":  407,
+                                        "width":  76,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "written,",
+                                        "x":  351,
+                                        "y":  409,
+                                        "width":  78,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "verbal,",
+                                        "x":  436,
+                                        "y":  407,
+                                        "width":  66,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  511,
+                                        "y":  407,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "digital",
+                                        "x":  555,
+                                        "y":  407,
+                                        "width":  64,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "communication skills to advance students in their",
+                      "x":  124,
+                      "y":  437,
+                      "words":  [
+                                    {
+                                        "text":  "communication",
+                                        "x":  124,
+                                        "y":  439,
+                                        "width":  158,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "skills",
+                                        "x":  290,
+                                        "y":  437,
+                                        "width":  50,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  348,
+                                        "y":  444,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "advance",
+                                        "x":  375,
+                                        "y":  437,
+                                        "width":  79,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  462,
+                                        "y":  437,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  552,
+                                        "y":  439,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "their",
+                                        "x":  579,
+                                        "y":  437,
+                                        "width":  47,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "fields of study. Taken alone, the Certificate serves as a",
+                      "x":  124,
+                      "y":  467,
+                      "words":  [
+                                    {
+                                        "text":  "fields",
+                                        "x":  124,
+                                        "y":  467,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  185,
+                                        "y":  468,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "study.",
+                                        "x":  211,
+                                        "y":  468,
+                                        "width":  57,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "Taken",
+                                        "x":  277,
+                                        "y":  468,
+                                        "width":  62,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "alone,",
+                                        "x":  347,
+                                        "y":  468,
+                                        "width":  57,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  413,
+                                        "y":  468,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  452,
+                                        "y":  468,
+                                        "width":  106,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "serves",
+                                        "x":  566,
+                                        "y":  475,
+                                        "width":  57,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  631,
+                                        "y":  475,
+                                        "width":  18,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  657,
+                                        "y":  475,
+                                        "width":  10,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "basis for entry-level positions in administrative or",
+                      "x":  124,
+                      "y":  498,
+                      "words":  [
+                                    {
+                                        "text":  "basis",
+                                        "x":  124,
+                                        "y":  498,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  179,
+                                        "y":  498,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "entry-level",
+                                        "x":  214,
+                                        "y":  498,
+                                        "width":  103,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "positions",
+                                        "x":  325,
+                                        "y":  500,
+                                        "width":  89,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  422,
+                                        "y":  500,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "administrative",
+                                        "x":  449,
+                                        "y":  498,
+                                        "width":  144,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  601,
+                                        "y":  505,
+                                        "width":  20,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "communication industries. Students will participate in",
+                      "x":  124,
+                      "y":  528,
+                      "words":  [
+                                    {
+                                        "text":  "communication",
+                                        "x":  124,
+                                        "y":  531,
+                                        "width":  158,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "industries.",
+                                        "x":  290,
+                                        "y":  528,
+                                        "width":  103,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Students",
+                                        "x":  402,
+                                        "y":  528,
+                                        "width":  85,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "will",
+                                        "x":  495,
+                                        "y":  528,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "participate",
+                                        "x":  540,
+                                        "y":  531,
+                                        "width":  106,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  654,
+                                        "y":  530,
+                                        "width":  19,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "a capstone project to create a deliverable product which",
+                      "x":  124,
+                      "y":  559,
+                      "words":  [
+                                    {
+                                        "text":  "a",
+                                        "x":  124,
+                                        "y":  566,
+                                        "width":  10,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "capstone",
+                                        "x":  141,
+                                        "y":  565,
+                                        "width":  86,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "project",
+                                        "x":  235,
+                                        "y":  561,
+                                        "width":  68,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  310,
+                                        "y":  565,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "create",
+                                        "x":  337,
+                                        "y":  565,
+                                        "width":  58,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  402,
+                                        "y":  566,
+                                        "width":  10,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "deliverable",
+                                        "x":  419,
+                                        "y":  559,
+                                        "width":  106,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "product",
+                                        "x":  533,
+                                        "y":  559,
+                                        "width":  78,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "which",
+                                        "x":  617,
+                                        "y":  559,
+                                        "width":  61,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "illustrates their technical and professional communica-",
+                      "x":  124,
+                      "y":  589,
+                      "words":  [
+                                    {
+                                        "text":  "illustrates",
+                                        "x":  124,
+                                        "y":  589,
+                                        "width":  96,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "their",
+                                        "x":  228,
+                                        "y":  589,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "technical",
+                                        "x":  282,
+                                        "y":  589,
+                                        "width":  91,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  380,
+                                        "y":  589,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "professional",
+                                        "x":  424,
+                                        "y":  589,
+                                        "width":  119,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "communica-",
+                                        "x":  550,
+                                        "y":  591,
+                                        "width":  126,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "tion skills.",
+                      "x":  124,
+                      "y":  620,
+                      "words":  [
+                                    {
+                                        "text":  "tion",
+                                        "x":  124,
+                                        "y":  622,
+                                        "width":  40,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "skills.",
+                                        "x":  171,
+                                        "y":  620,
+                                        "width":  56,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "OCCUPATIONAL CERTIFICATE",
+                      "x":  818,
+                      "y":  94,
+                      "words":  [
+                                    {
+                                        "text":  "OCCUPATIONAL",
+                                        "x":  818,
+                                        "y":  94,
+                                        "width":  200,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  1026,
+                                        "y":  94,
+                                        "width":  163,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ONE SEMESTER",
+                      "x":  727,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "ONE",
+                                        "x":  727,
+                                        "y":  145,
+                                        "width":  47,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "SEMESTER",
+                                        "x":  782,
+                                        "y":  146,
+                                        "width":  122,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ENGL 1110",
+                      "x":  727,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  727,
+                                        "y":  179,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  787,
+                                        "y":  180,
+                                        "width":  35,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ENGL 1120",
+                      "x":  727,
+                      "y":  213,
+                      "words":  [
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  727,
+                                        "y":  213,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1120",
+                                        "x":  787,
+                                        "y":  213,
+                                        "width":  39,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BUSA 2110",
+                      "x":  727,
+                      "y":  247,
+                      "words":  [
+                                    {
+                                        "text":  "BUSA",
+                                        "x":  727,
+                                        "y":  247,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2110",
+                                        "x":  788,
+                                        "y":  247,
+                                        "width":  38,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ENGL 2210",
+                      "x":  727,
+                      "y":  280,
+                      "words":  [
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  727,
+                                        "y":  280,
+                                        "width":  54,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "2210",
+                                        "x":  787,
+                                        "y":  281,
+                                        "width":  43,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BCIS 2120",
+                      "x":  727,
+                      "y":  344,
+                      "words":  [
+                                    {
+                                        "text":  "BCIS",
+                                        "x":  727,
+                                        "y":  344,
+                                        "width":  44,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "2120",
+                                        "x":  779,
+                                        "y":  345,
+                                        "width":  43,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ARTS 1520",
+                      "x":  726,
+                      "y":  378,
+                      "words":  [
+                                    {
+                                        "text":  "ARTS",
+                                        "x":  726,
+                                        "y":  378,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1520",
+                                        "x":  784,
+                                        "y":  379,
+                                        "width":  43,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Composition I (Area l)",
+                      "x":  874,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "Composition",
+                                        "x":  874,
+                                        "y":  179,
+                                        "width":  122,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  1006,
+                                        "y":  179,
+                                        "width":  2,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1018,
+                                        "y":  179,
+                                        "width":  50,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "l)",
+                                        "x":  1078,
+                                        "y":  179,
+                                        "width":  10,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Composition 11 (Area l)",
+                      "x":  874,
+                      "y":  212,
+                      "words":  [
+                                    {
+                                        "text":  "Composition",
+                                        "x":  874,
+                                        "y":  212,
+                                        "width":  122,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  1006,
+                                        "y":  213,
+                                        "width":  9,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1024,
+                                        "y":  212,
+                                        "width":  50,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "l)",
+                                        "x":  1084,
+                                        "y":  212,
+                                        "width":  10,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Business Communication",
+                      "x":  875,
+                      "y":  246,
+                      "words":  [
+                                    {
+                                        "text":  "Business",
+                                        "x":  875,
+                                        "y":  246,
+                                        "width":  87,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Communication",
+                                        "x":  970,
+                                        "y":  246,
+                                        "width":  154,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Professional \u0026",
+                      "x":  875,
+                      "y":  280,
+                      "words":  [
+                                    {
+                                        "text":  "Professional",
+                                        "x":  875,
+                                        "y":  280,
+                                        "width":  118,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  1002,
+                                        "y":  280,
+                                        "width":  15,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Technical Writing (Area l)",
+                      "x":  894,
+                      "y":  310,
+                      "words":  [
+                                    {
+                                        "text":  "Technical",
+                                        "x":  894,
+                                        "y":  310,
+                                        "width":  92,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Writing",
+                                        "x":  994,
+                                        "y":  310,
+                                        "width":  70,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1073,
+                                        "y":  310,
+                                        "width":  50,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "l)",
+                                        "x":  1132,
+                                        "y":  310,
+                                        "width":  11,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Desktop Publishing",
+                      "x":  875,
+                      "y":  344,
+                      "words":  [
+                                    {
+                                        "text":  "Desktop",
+                                        "x":  875,
+                                        "y":  344,
+                                        "width":  79,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Publishing",
+                                        "x":  963,
+                                        "y":  344,
+                                        "width":  101,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Digital Media I or FDMA",
+                      "x":  875,
+                      "y":  378,
+                      "words":  [
+                                    {
+                                        "text":  "Digital",
+                                        "x":  875,
+                                        "y":  378,
+                                        "width":  60,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Media",
+                                        "x":  944,
+                                        "y":  378,
+                                        "width":  58,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  1012,
+                                        "y":  378,
+                                        "width":  2,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  1023,
+                                        "y":  383,
+                                        "width":  19,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "FDMA",
+                                        "x":  1050,
+                                        "y":  378,
+                                        "width":  58,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "or BUSA Elective",
+                      "x":  895,
+                      "y":  408,
+                      "words":  [
+                                    {
+                                        "text":  "or",
+                                        "x":  895,
+                                        "y":  414,
+                                        "width":  19,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "BUSA",
+                                        "x":  922,
+                                        "y":  409,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  984,
+                                        "y":  408,
+                                        "width":  74,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  895,
+                      "y":  476,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  895,
+                                        "y":  476,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  1010,
+                                        "y":  476,
+                                        "width":  81,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  145,
+                                        "width":  98,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  180,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  180,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  213,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  213,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  247,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  247,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  311,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  311,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  346,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  346,
+                                        "width":  11,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  409,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  409,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "19",
+                      "x":  1219,
+                      "y":  477,
+                      "words":  [
+                                    {
+                                        "text":  "19",
+                                        "x":  1219,
+                                        "y":  477,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "84",
+                      "x":  692,
+                      "y":  1769,
+                      "words":  [
+                                    {
+                                        "text":  "84",
+                                        "x":  692,
+                                        "y":  1769,
+                                        "width":  26,
+                                        "height":  19
+                                    }
+                                ]
+                  }
+              ]
+}

@@ -1,0 +1,2245 @@
+﻿{
+    "pdf_page":  37,
+    "lines":  [
+                  {
+                      "text":  "WIND ENERGY",
+                      "x":  122,
+                      "y":  85,
+                      "words":  [
+                                    {
+                                        "text":  "WIND",
+                                        "x":  122,
+                                        "y":  86,
+                                        "width":  166,
+                                        "height":  38
+                                    },
+                                    {
+                                        "text":  "ENERGY",
+                                        "x":  305,
+                                        "y":  85,
+                                        "width":  224,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "TECHNOLOGY",
+                      "x":  125,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "TECHNOLOGY",
+                                        "x":  125,
+                                        "y":  145,
+                                        "width":  395,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CERTIFICATE",
+                      "x":  126,
+                      "y":  204,
+                      "words":  [
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  126,
+                                        "y":  204,
+                                        "width":  365,
+                                        "height":  40
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Wind Energy Technology Certificate program is",
+                      "x":  124,
+                      "y":  285,
+                      "words":  [
+                                    {
+                                        "text":  "The",
+                                        "x":  124,
+                                        "y":  285,
+                                        "width":  41,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Wind",
+                                        "x":  171,
+                                        "y":  285,
+                                        "width":  58,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Energy",
+                                        "x":  236,
+                                        "y":  286,
+                                        "width":  72,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Technology",
+                                        "x":  314,
+                                        "y":  285,
+                                        "width":  118,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Certificate",
+                                        "x":  439,
+                                        "y":  285,
+                                        "width":  107,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "program",
+                                        "x":  553,
+                                        "y":  292,
+                                        "width":  85,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  646,
+                                        "y":  287,
+                                        "width":  14,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "designed to give students a selection of courses to",
+                      "x":  125,
+                      "y":  315,
+                      "words":  [
+                                    {
+                                        "text":  "designed",
+                                        "x":  125,
+                                        "y":  316,
+                                        "width":  87,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  219,
+                                        "y":  322,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "give",
+                                        "x":  246,
+                                        "y":  318,
+                                        "width":  39,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  293,
+                                        "y":  316,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  382,
+                                        "y":  323,
+                                        "width":  11,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "selection",
+                                        "x":  400,
+                                        "y":  316,
+                                        "width":  86,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  493,
+                                        "y":  315,
+                                        "width":  22,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  520,
+                                        "y":  323,
+                                        "width":  72,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  600,
+                                        "y":  322,
+                                        "width":  18,
+                                        "height":  13
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "enhance professional opportunities in the growing field",
+                      "x":  125,
+                      "y":  346,
+                      "words":  [
+                                    {
+                                        "text":  "enhance",
+                                        "x":  125,
+                                        "y":  346,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "professional",
+                                        "x":  214,
+                                        "y":  346,
+                                        "width":  118,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "opportunities",
+                                        "x":  340,
+                                        "y":  348,
+                                        "width":  135,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  483,
+                                        "y":  348,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  510,
+                                        "y":  346,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "growing",
+                                        "x":  548,
+                                        "y":  348,
+                                        "width":  83,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "field",
+                                        "x":  638,
+                                        "y":  346,
+                                        "width":  44,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of wind energy. The Wind Energy Technology Certifi-",
+                      "x":  125,
+                      "y":  376,
+                      "words":  [
+                                    {
+                                        "text":  "of",
+                                        "x":  125,
+                                        "y":  376,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "wind",
+                                        "x":  151,
+                                        "y":  376,
+                                        "width":  50,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "energy.",
+                                        "x":  209,
+                                        "y":  384,
+                                        "width":  69,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "The",
+                                        "x":  286,
+                                        "y":  376,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Wind",
+                                        "x":  333,
+                                        "y":  376,
+                                        "width":  58,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Energy",
+                                        "x":  398,
+                                        "y":  378,
+                                        "width":  72,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "Technology",
+                                        "x":  476,
+                                        "y":  376,
+                                        "width":  118,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Certifi-",
+                                        "x":  601,
+                                        "y":  376,
+                                        "width":  75,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cate provides instruction in turbine maintenance,",
+                      "x":  125,
+                      "y":  407,
+                      "words":  [
+                                    {
+                                        "text":  "cate",
+                                        "x":  125,
+                                        "y":  413,
+                                        "width":  38,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "provides",
+                                        "x":  171,
+                                        "y":  407,
+                                        "width":  83,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "instruction",
+                                        "x":  262,
+                                        "y":  409,
+                                        "width":  110,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  380,
+                                        "y":  409,
+                                        "width":  19,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "turbine",
+                                        "x":  407,
+                                        "y":  407,
+                                        "width":  73,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "maintenance,",
+                                        "x":  487,
+                                        "y":  409,
+                                        "width":  134,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "electrical theory, monitoring and communications",
+                      "x":  125,
+                      "y":  437,
+                      "words":  [
+                                    {
+                                        "text":  "electrical",
+                                        "x":  125,
+                                        "y":  437,
+                                        "width":  89,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "theory,",
+                                        "x":  222,
+                                        "y":  437,
+                                        "width":  68,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "monitoring",
+                                        "x":  298,
+                                        "y":  439,
+                                        "width":  113,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  418,
+                                        "y":  437,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "communications",
+                                        "x":  463,
+                                        "y":  439,
+                                        "width":  167,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "technology, safety, motors, generators, and mechanical",
+                      "x":  125,
+                      "y":  468,
+                      "words":  [
+                                    {
+                                        "text":  "technology,",
+                                        "x":  125,
+                                        "y":  468,
+                                        "width":  114,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "safety,",
+                                        "x":  247,
+                                        "y":  468,
+                                        "width":  61,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "motors,",
+                                        "x":  317,
+                                        "y":  474,
+                                        "width":  74,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "generators,",
+                                        "x":  400,
+                                        "y":  474,
+                                        "width":  106,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  515,
+                                        "y":  468,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "mechanical",
+                                        "x":  559,
+                                        "y":  468,
+                                        "width":  114,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "systems. Students who complete these courses will be",
+                      "x":  125,
+                      "y":  498,
+                      "words":  [
+                                    {
+                                        "text":  "systems.",
+                                        "x":  125,
+                                        "y":  505,
+                                        "width":  81,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Students",
+                                        "x":  214,
+                                        "y":  498,
+                                        "width":  86,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "who",
+                                        "x":  307,
+                                        "y":  498,
+                                        "width":  42,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "complete",
+                                        "x":  357,
+                                        "y":  498,
+                                        "width":  90,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "these",
+                                        "x":  455,
+                                        "y":  498,
+                                        "width":  50,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  512,
+                                        "y":  506,
+                                        "width":  72,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "will",
+                                        "x":  591,
+                                        "y":  498,
+                                        "width":  38,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  637,
+                                        "y":  498,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "prepared to ease the shortage of trained wind energy",
+                      "x":  125,
+                      "y":  528,
+                      "words":  [
+                                    {
+                                        "text":  "prepared",
+                                        "x":  125,
+                                        "y":  528,
+                                        "width":  87,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  219,
+                                        "y":  535,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "ease",
+                                        "x":  246,
+                                        "y":  536,
+                                        "width":  40,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  294,
+                                        "y":  528,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "shortage",
+                                        "x":  332,
+                                        "y":  528,
+                                        "width":  83,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  423,
+                                        "y":  528,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "trained",
+                                        "x":  450,
+                                        "y":  528,
+                                        "width":  71,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "wind",
+                                        "x":  527,
+                                        "y":  529,
+                                        "width":  51,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "energy",
+                                        "x":  586,
+                                        "y":  536,
+                                        "width":  66,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "technicians.",
+                      "x":  125,
+                      "y":  559,
+                      "words":  [
+                                    {
+                                        "text":  "technicians.",
+                                        "x":  125,
+                                        "y":  559,
+                                        "width":  118,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "APPLIED SCIENCE CERTIFICATE (ONE YEAR)",
+                      "x":  748,
+                      "y":  94,
+                      "words":  [
+                                    {
+                                        "text":  "APPLIED",
+                                        "x":  748,
+                                        "y":  95,
+                                        "width":  99,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "SCIENCE",
+                                        "x":  856,
+                                        "y":  95,
+                                        "width":  102,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  966,
+                                        "y":  95,
+                                        "width":  149,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "(ONE",
+                                        "x":  1124,
+                                        "y":  94,
+                                        "width":  57,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "YEAR)",
+                                        "x":  1188,
+                                        "y":  94,
+                                        "width":  70,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FALL",
+                      "x":  727,
+                      "y":  146,
+                      "words":  [
+                                    {
+                                        "text":  "FALL",
+                                        "x":  727,
+                                        "y":  146,
+                                        "width":  54,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 1010",
+                      "x":  727,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  179,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1010",
+                                        "x":  786,
+                                        "y":  180,
+                                        "width":  39,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 1060",
+                      "x":  727,
+                      "y":  213,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  213,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1060",
+                                        "x":  786,
+                                        "y":  213,
+                                        "width":  44,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 1200",
+                      "x":  727,
+                      "y":  277,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  277,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1200",
+                                        "x":  786,
+                                        "y":  278,
+                                        "width":  43,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 1210",
+                      "x":  727,
+                      "y":  311,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  311,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1210",
+                                        "x":  786,
+                                        "y":  311,
+                                        "width":  38,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 2040",
+                      "x":  727,
+                      "y":  345,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  345,
+                                        "width":  53,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "2040",
+                                        "x":  787,
+                                        "y":  345,
+                                        "width":  47,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 1400",
+                      "x":  727,
+                      "y":  378,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  378,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1400",
+                                        "x":  786,
+                                        "y":  379,
+                                        "width":  44,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SPRING",
+                      "x":  726,
+                      "y":  479,
+                      "words":  [
+                                    {
+                                        "text":  "SPRING",
+                                        "x":  726,
+                                        "y":  479,
+                                        "width":  86,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 1150",
+                      "x":  727,
+                      "y":  513,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  513,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1150",
+                                        "x":  786,
+                                        "y":  514,
+                                        "width":  39,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 1394",
+                      "x":  727,
+                      "y":  547,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  547,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1394",
+                                        "x":  786,
+                                        "y":  547,
+                                        "width":  43,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GEOL 1122",
+                      "x":  727,
+                      "y":  611,
+                      "words":  [
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  727,
+                                        "y":  611,
+                                        "width":  52,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1122",
+                                        "x":  785,
+                                        "y":  611,
+                                        "width":  38,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 1160",
+                      "x":  727,
+                      "y":  675,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  675,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1160",
+                                        "x":  786,
+                                        "y":  676,
+                                        "width":  39,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "HLED 1110",
+                      "x":  727,
+                      "y":  709,
+                      "words":  [
+                                    {
+                                        "text":  "HLED",
+                                        "x":  727,
+                                        "y":  709,
+                                        "width":  52,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  786,
+                                        "y":  709,
+                                        "width":  34,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BUSA 1110",
+                      "x":  727,
+                      "y":  773,
+                      "words":  [
+                                    {
+                                        "text":  "BUSA",
+                                        "x":  727,
+                                        "y":  773,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  786,
+                                        "y":  773,
+                                        "width":  34,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 1410",
+                      "x":  727,
+                      "y":  841,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  841,
+                                        "width":  53,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1410",
+                                        "x":  786,
+                                        "y":  841,
+                                        "width":  38,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  145,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  145,
+                                        "width":  97,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Renewable Energy",
+                      "x":  875,
+                      "y":  179,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  179,
+                                        "width":  115,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  997,
+                                        "y":  181,
+                                        "width":  19,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Renewable",
+                                        "x":  1024,
+                                        "y":  179,
+                                        "width":  105,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Energy",
+                                        "x":  1138,
+                                        "y":  179,
+                                        "width":  66,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Electrical Theory for",
+                      "x":  875,
+                      "y":  212,
+                      "words":  [
+                                    {
+                                        "text":  "Electrical",
+                                        "x":  875,
+                                        "y":  212,
+                                        "width":  86,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Theory",
+                                        "x":  968,
+                                        "y":  212,
+                                        "width":  67,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  1041,
+                                        "y":  212,
+                                        "width":  26,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Renewable Energy",
+                      "x":  896,
+                      "y":  243,
+                      "words":  [
+                                    {
+                                        "text":  "Renewable",
+                                        "x":  896,
+                                        "y":  243,
+                                        "width":  105,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Energy",
+                                        "x":  1009,
+                                        "y":  244,
+                                        "width":  67,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "OSHA 10",
+                      "x":  874,
+                      "y":  277,
+                      "words":  [
+                                    {
+                                        "text":  "OSHA",
+                                        "x":  874,
+                                        "y":  277,
+                                        "width":  55,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "10",
+                                        "x":  935,
+                                        "y":  278,
+                                        "width":  19,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wind Turbine Mechanical Systems",
+                      "x":  874,
+                      "y":  310,
+                      "words":  [
+                                    {
+                                        "text":  "Wind",
+                                        "x":  874,
+                                        "y":  310,
+                                        "width":  48,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Turbine",
+                                        "x":  929,
+                                        "y":  310,
+                                        "width":  69,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Mechanical",
+                                        "x":  1006,
+                                        "y":  310,
+                                        "width":  107,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Systems",
+                                        "x":  1121,
+                                        "y":  311,
+                                        "width":  79,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Hydraulics",
+                      "x":  875,
+                      "y":  344,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  344,
+                                        "width":  115,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  997,
+                                        "y":  346,
+                                        "width":  19,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Hydraulics",
+                                        "x":  1024,
+                                        "y":  344,
+                                        "width":  100,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wind Turbine Climbing \u0026 Safety",
+                      "x":  874,
+                      "y":  377,
+                      "words":  [
+                                    {
+                                        "text":  "Wind",
+                                        "x":  874,
+                                        "y":  378,
+                                        "width":  49,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Turbine",
+                                        "x":  930,
+                                        "y":  378,
+                                        "width":  71,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Climbing",
+                                        "x":  1009,
+                                        "y":  378,
+                                        "width":  83,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  1100,
+                                        "y":  378,
+                                        "width":  15,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Safety",
+                                        "x":  1122,
+                                        "y":  377,
+                                        "width":  60,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  895,
+                      "y":  411,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  895,
+                                        "y":  412,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  1010,
+                                        "y":  411,
+                                        "width":  81,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  180,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  180,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  244,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  244,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  311,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  311,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  345,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  345,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "15",
+                      "x":  1219,
+                      "y":  413,
+                      "words":  [
+                                    {
+                                        "text":  "15",
+                                        "x":  1219,
+                                        "y":  413,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Field Safety and Experience",
+                      "x":  875,
+                      "y":  512,
+                      "words":  [
+                                    {
+                                        "text":  "Field",
+                                        "x":  875,
+                                        "y":  513,
+                                        "width":  43,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Safety",
+                                        "x":  926,
+                                        "y":  512,
+                                        "width":  60,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  993,
+                                        "y":  513,
+                                        "width":  35,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Experience",
+                                        "x":  1037,
+                                        "y":  513,
+                                        "width":  105,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Communication Technology",
+                      "x":  874,
+                      "y":  546,
+                      "words":  [
+                                    {
+                                        "text":  "Communication",
+                                        "x":  874,
+                                        "y":  546,
+                                        "width":  152,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Technology",
+                                        "x":  1033,
+                                        "y":  546,
+                                        "width":  111,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "for the Technician",
+                      "x":  894,
+                      "y":  576,
+                      "words":  [
+                                    {
+                                        "text":  "for",
+                                        "x":  894,
+                                        "y":  576,
+                                        "width":  26,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  925,
+                                        "y":  577,
+                                        "width":  31,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Technician",
+                                        "x":  962,
+                                        "y":  577,
+                                        "width":  103,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Environmental",
+                      "x":  875,
+                      "y":  610,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  610,
+                                        "width":  115,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  997,
+                                        "y":  612,
+                                        "width":  19,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Environmental",
+                                        "x":  1024,
+                                        "y":  610,
+                                        "width":  137,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Science (Area Ill)",
+                      "x":  894,
+                      "y":  641,
+                      "words":  [
+                                    {
+                                        "text":  "Science",
+                                        "x":  894,
+                                        "y":  641,
+                                        "width":  76,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  978,
+                                        "y":  641,
+                                        "width":  49,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "Ill)",
+                                        "x":  1036,
+                                        "y":  641,
+                                        "width":  22,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Motors and Generators",
+                      "x":  875,
+                      "y":  675,
+                      "words":  [
+                                    {
+                                        "text":  "Motors",
+                                        "x":  875,
+                                        "y":  675,
+                                        "width":  65,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  948,
+                                        "y":  675,
+                                        "width":  34,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Generators",
+                                        "x":  991,
+                                        "y":  675,
+                                        "width":  106,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "AHA Heartsaver First Aid",
+                      "x":  874,
+                      "y":  708,
+                      "words":  [
+                                    {
+                                        "text":  "AHA",
+                                        "x":  874,
+                                        "y":  709,
+                                        "width":  41,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Heartsaver",
+                                        "x":  923,
+                                        "y":  709,
+                                        "width":  104,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "First",
+                                        "x":  1034,
+                                        "y":  708,
+                                        "width":  40,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Aid",
+                                        "x":  1081,
+                                        "y":  708,
+                                        "width":  29,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\u0026 CPR/AED",
+                      "x":  895,
+                      "y":  739,
+                      "words":  [
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  895,
+                                        "y":  739,
+                                        "width":  15,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "CPR/AED",
+                                        "x":  917,
+                                        "y":  739,
+                                        "width":  87,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Information",
+                      "x":  875,
+                      "y":  772,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  772,
+                                        "width":  115,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  997,
+                                        "y":  774,
+                                        "width":  19,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Information",
+                                        "x":  1024,
+                                        "y":  772,
+                                        "width":  108,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Systems",
+                      "x":  874,
+                      "y":  807,
+                      "words":  [
+                                    {
+                                        "text":  "Systems",
+                                        "x":  874,
+                                        "y":  807,
+                                        "width":  81,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  479,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  479,
+                                        "width":  98,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  514,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  514,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2",
+                      "x":  1225,
+                      "y":  578,
+                      "words":  [
+                                    {
+                                        "text":  "2",
+                                        "x":  1225,
+                                        "y":  578,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  642,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  642,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  676,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  676,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".5",
+                      "x":  1223,
+                      "y":  740,
+                      "words":  [
+                                    {
+                                        "text":  ".5",
+                                        "x":  1223,
+                                        "y":  740,
+                                        "width":  15,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  807,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  807,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wind Turbine Climbing \u0026 Safety 11 1",
+                      "x":  874,
+                      "y":  840,
+                      "words":  [
+                                    {
+                                        "text":  "Wind",
+                                        "x":  874,
+                                        "y":  840,
+                                        "width":  49,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Turbine",
+                                        "x":  930,
+                                        "y":  840,
+                                        "width":  71,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Climbing",
+                                        "x":  1009,
+                                        "y":  840,
+                                        "width":  83,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  1100,
+                                        "y":  840,
+                                        "width":  15,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Safety",
+                                        "x":  1122,
+                                        "y":  840,
+                                        "width":  60,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  1189,
+                                        "y":  841,
+                                        "width":  9,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  1227,
+                                        "y":  841,
+                                        "width":  5,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  874,
+                      "y":  874,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  874,
+                                        "y":  875,
+                                        "width":  102,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  983,
+                                        "y":  874,
+                                        "width":  77,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "17.5",
+                      "x":  1212,
+                      "y":  876,
+                      "words":  [
+                                    {
+                                        "text":  "17.5",
+                                        "x":  1212,
+                                        "y":  876,
+                                        "width":  36,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "TOTAL CERTIFICATE CREDITS 32.5",
+                      "x":  873,
+                      "y":  942,
+                      "words":  [
+                                    {
+                                        "text":  "TOTAL",
+                                        "x":  873,
+                                        "y":  942,
+                                        "width":  69,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  948,
+                                        "y":  942,
+                                        "width":  139,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1094,
+                                        "y":  942,
+                                        "width":  93,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "32.5",
+                                        "x":  1208,
+                                        "y":  943,
+                                        "width":  45,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "OCCUPATIONAL CERTIFICATE (ONE SEMESTER)",
+                      "x":  739,
+                      "y":  1039,
+                      "words":  [
+                                    {
+                                        "text":  "OCCUPATIONAL",
+                                        "x":  739,
+                                        "y":  1040,
+                                        "width":  178,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "CERTIFICATE",
+                                        "x":  924,
+                                        "y":  1040,
+                                        "width":  145,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "(ONE",
+                                        "x":  1077,
+                                        "y":  1039,
+                                        "width":  54,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "SEMESTER)",
+                                        "x":  1139,
+                                        "y":  1039,
+                                        "width":  128,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ONE SEMESTER",
+                      "x":  727,
+                      "y":  1090,
+                      "words":  [
+                                    {
+                                        "text":  "ONE",
+                                        "x":  727,
+                                        "y":  1090,
+                                        "width":  47,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "SEMESTER",
+                                        "x":  781,
+                                        "y":  1090,
+                                        "width":  120,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  1090,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  1090,
+                                        "width":  97,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 1010",
+                      "x":  727,
+                      "y":  1124,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  1124,
+                                        "width":  53,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1010",
+                                        "x":  786,
+                                        "y":  1124,
+                                        "width":  39,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 1060",
+                      "x":  727,
+                      "y":  1158,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  1158,
+                                        "width":  53,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1060",
+                                        "x":  786,
+                                        "y":  1158,
+                                        "width":  44,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 1200",
+                      "x":  727,
+                      "y":  1222,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  1222,
+                                        "width":  53,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1200",
+                                        "x":  786,
+                                        "y":  1222,
+                                        "width":  43,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 1210",
+                      "x":  727,
+                      "y":  1256,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  1256,
+                                        "width":  53,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1210",
+                                        "x":  786,
+                                        "y":  1256,
+                                        "width":  38,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 2040",
+                      "x":  727,
+                      "y":  1289,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  1289,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2040",
+                                        "x":  787,
+                                        "y":  1290,
+                                        "width":  47,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "RNBL 1400",
+                      "x":  727,
+                      "y":  1323,
+                      "words":  [
+                                    {
+                                        "text":  "RNBL",
+                                        "x":  727,
+                                        "y":  1323,
+                                        "width":  53,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1400",
+                                        "x":  786,
+                                        "y":  1323,
+                                        "width":  44,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Renewable Energy",
+                      "x":  875,
+                      "y":  1123,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  1123,
+                                        "width":  113,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  994,
+                                        "y":  1125,
+                                        "width":  18,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Renewable",
+                                        "x":  1020,
+                                        "y":  1123,
+                                        "width":  104,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Energy",
+                                        "x":  1132,
+                                        "y":  1124,
+                                        "width":  65,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Electrical Theory for",
+                      "x":  875,
+                      "y":  1157,
+                      "words":  [
+                                    {
+                                        "text":  "Electrical",
+                                        "x":  875,
+                                        "y":  1157,
+                                        "width":  86,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Theory",
+                                        "x":  968,
+                                        "y":  1157,
+                                        "width":  67,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  1041,
+                                        "y":  1157,
+                                        "width":  26,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Renewable Energy",
+                      "x":  896,
+                      "y":  1187,
+                      "words":  [
+                                    {
+                                        "text":  "Renewable",
+                                        "x":  896,
+                                        "y":  1187,
+                                        "width":  105,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Energy",
+                                        "x":  1009,
+                                        "y":  1188,
+                                        "width":  67,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "OSHA 10",
+                      "x":  874,
+                      "y":  1221,
+                      "words":  [
+                                    {
+                                        "text":  "OSHA",
+                                        "x":  874,
+                                        "y":  1221,
+                                        "width":  55,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "10",
+                                        "x":  935,
+                                        "y":  1222,
+                                        "width":  19,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wind Turbine Mechanical Systems",
+                      "x":  874,
+                      "y":  1255,
+                      "words":  [
+                                    {
+                                        "text":  "Wind",
+                                        "x":  874,
+                                        "y":  1255,
+                                        "width":  48,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Turbine",
+                                        "x":  929,
+                                        "y":  1255,
+                                        "width":  69,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Mechanical",
+                                        "x":  1006,
+                                        "y":  1255,
+                                        "width":  107,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Systems",
+                                        "x":  1121,
+                                        "y":  1255,
+                                        "width":  79,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Hydraulics",
+                      "x":  875,
+                      "y":  1288,
+                      "words":  [
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  875,
+                                        "y":  1288,
+                                        "width":  115,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  997,
+                                        "y":  1290,
+                                        "width":  19,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Hydraulics",
+                                        "x":  1024,
+                                        "y":  1288,
+                                        "width":  100,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wind Turbine Climbing \u0026 Safety",
+                      "x":  874,
+                      "y":  1322,
+                      "words":  [
+                                    {
+                                        "text":  "Wind",
+                                        "x":  874,
+                                        "y":  1322,
+                                        "width":  49,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Turbine",
+                                        "x":  930,
+                                        "y":  1322,
+                                        "width":  71,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Climbing",
+                                        "x":  1009,
+                                        "y":  1322,
+                                        "width":  83,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  1100,
+                                        "y":  1323,
+                                        "width":  15,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Safety",
+                                        "x":  1122,
+                                        "y":  1322,
+                                        "width":  60,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  874,
+                      "y":  1356,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  874,
+                                        "y":  1356,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  990,
+                                        "y":  1356,
+                                        "width":  81,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  1124,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  1124,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  1189,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  1189,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  1256,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  1256,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  1290,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  1290,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "15",
+                      "x":  1219,
+                      "y":  1357,
+                      "words":  [
+                                    {
+                                        "text":  "15",
+                                        "x":  1219,
+                                        "y":  1357,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "86",
+                      "x":  692,
+                      "y":  1769,
+                      "words":  [
+                                    {
+                                        "text":  "86",
+                                        "x":  692,
+                                        "y":  1769,
+                                        "width":  26,
+                                        "height":  19
+                                    }
+                                ]
+                  }
+              ]
+}

@@ -1,0 +1,3050 @@
+﻿{
+    "pdf_page":  5,
+    "lines":  [
+                  {
+                      "text":  "COMMUNICATIONS REQUIREMENT (AREA 1)",
+                      "x":  125,
+                      "y":  81,
+                      "words":  [
+                                    {
+                                        "text":  "COMMUNICATIONS",
+                                        "x":  125,
+                                        "y":  84,
+                                        "width":  314,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "REQUIREMENT",
+                                        "x":  448,
+                                        "y":  84,
+                                        "width":  246,
+                                        "height":  29
+                                    },
+                                    {
+                                        "text":  "(AREA",
+                                        "x":  705,
+                                        "y":  81,
+                                        "width":  97,
+                                        "height":  29
+                                    },
+                                    {
+                                        "text":  "1)",
+                                        "x":  810,
+                                        "y":  81,
+                                        "width":  19,
+                                        "height":  29
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "COMM 1130 - Public Speaking 3 credit hour(s)",
+                      "x":  171,
+                      "y":  135,
+                      "words":  [
+                                    {
+                                        "text":  "COMM",
+                                        "x":  171,
+                                        "y":  136,
+                                        "width":  84,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1130",
+                                        "x":  265,
+                                        "y":  137,
+                                        "width":  45,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  319,
+                                        "y":  147,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Public",
+                                        "x":  334,
+                                        "y":  135,
+                                        "width":  63,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Speaking",
+                                        "x":  404,
+                                        "y":  135,
+                                        "width":  92,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  504,
+                                        "y":  137,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  523,
+                                        "y":  135,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  587,
+                                        "y":  135,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "COMM 2120 - Interpersonal Communication 3 credit hour(s)",
+                      "x":  171,
+                      "y":  178,
+                      "words":  [
+                                    {
+                                        "text":  "COMM",
+                                        "x":  171,
+                                        "y":  179,
+                                        "width":  84,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2120",
+                                        "x":  263,
+                                        "y":  179,
+                                        "width":  48,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  319,
+                                        "y":  189,
+                                        "width":  8,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Interpersonal",
+                                        "x":  335,
+                                        "y":  178,
+                                        "width":  132,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Communication",
+                                        "x":  475,
+                                        "y":  179,
+                                        "width":  165,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  648,
+                                        "y":  179,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  668,
+                                        "y":  178,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  731,
+                                        "y":  178,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "COMM 2170 — Intercultural Communication 3 credit hour(s)",
+                      "x":  171,
+                      "y":  220,
+                      "words":  [
+                                    {
+                                        "text":  "COMM",
+                                        "x":  171,
+                                        "y":  221,
+                                        "width":  84,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "2170",
+                                        "x":  263,
+                                        "y":  222,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "—",
+                                        "x":  317,
+                                        "y":  233,
+                                        "width":  13,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Intercultural",
+                                        "x":  337,
+                                        "y":  220,
+                                        "width":  127,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Communication",
+                                        "x":  472,
+                                        "y":  221,
+                                        "width":  165,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  645,
+                                        "y":  222,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  665,
+                                        "y":  221,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  728,
+                                        "y":  221,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 1110",
+                      "x":  144,
+                      "y":  264,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  269,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  264,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  248,
+                                        "y":  265,
+                                        "width":  43,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 1120",
+                      "x":  144,
+                      "y":  307,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  312,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  307,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1120",
+                                        "x":  248,
+                                        "y":  308,
+                                        "width":  46,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2120",
+                      "x":  144,
+                      "y":  350,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  355,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  350,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2120",
+                                        "x":  246,
+                                        "y":  351,
+                                        "width":  48,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2210",
+                      "x":  144,
+                      "y":  393,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  398,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  393,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2210",
+                                        "x":  246,
+                                        "y":  394,
+                                        "width":  48,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2994",
+                      "x":  144,
+                      "y":  435,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  441,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  436,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2994",
+                                        "x":  246,
+                                        "y":  435,
+                                        "width":  50,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2999",
+                      "x":  144,
+                      "y":  479,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  483,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  479,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2999",
+                                        "x":  246,
+                                        "y":  479,
+                                        "width":  50,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Composition 1 3 credit hour(s)",
+                      "x":  299,
+                      "y":  263,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  299,
+                                        "y":  275,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Composition",
+                                        "x":  314,
+                                        "y":  264,
+                                        "width":  131,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  453,
+                                        "y":  265,
+                                        "width":  7,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  468,
+                                        "y":  265,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  487,
+                                        "y":  263,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  551,
+                                        "y":  263,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Composition 11 3 credit hour(s)",
+                      "x":  302,
+                      "y":  306,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  302,
+                                        "y":  318,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Composition",
+                                        "x":  317,
+                                        "y":  307,
+                                        "width":  130,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  455,
+                                        "y":  307,
+                                        "width":  16,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  480,
+                                        "y":  308,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  499,
+                                        "y":  306,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  563,
+                                        "y":  306,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Intermediate Composition 3 credit hour(s)",
+                      "x":  302,
+                      "y":  349,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  302,
+                                        "y":  361,
+                                        "width":  8,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Intermediate",
+                                        "x":  318,
+                                        "y":  349,
+                                        "width":  127,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Composition",
+                                        "x":  453,
+                                        "y":  350,
+                                        "width":  130,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  591,
+                                        "y":  351,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  610,
+                                        "y":  349,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  674,
+                                        "y":  349,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Professional and Technical Communication 3 credit hour(s)",
+                      "x":  302,
+                      "y":  392,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  302,
+                                        "y":  404,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Professional",
+                                        "x":  317,
+                                        "y":  392,
+                                        "width":  119,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  444,
+                                        "y":  392,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Technical",
+                                        "x":  487,
+                                        "y":  392,
+                                        "width":  98,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Communication",
+                                        "x":  593,
+                                        "y":  393,
+                                        "width":  165,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  767,
+                                        "y":  394,
+                                        "width":  10,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  786,
+                                        "y":  392,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  850,
+                                        "y":  392,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Experiential Learning Portfolio 3 credit hour(s)",
+                      "x":  304,
+                      "y":  435,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  304,
+                                        "y":  446,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Experiential",
+                                        "x":  319,
+                                        "y":  435,
+                                        "width":  121,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Learning",
+                                        "x":  448,
+                                        "y":  436,
+                                        "width":  91,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "Portfolio",
+                                        "x":  546,
+                                        "y":  435,
+                                        "width":  87,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  642,
+                                        "y":  436,
+                                        "width":  10,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  661,
+                                        "y":  435,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  725,
+                                        "y":  435,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Capstone Portfolio Course 1 credit hour",
+                      "x":  304,
+                      "y":  477,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  304,
+                                        "y":  489,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Capstone",
+                                        "x":  319,
+                                        "y":  479,
+                                        "width":  93,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "Portfolio",
+                                        "x":  420,
+                                        "y":  477,
+                                        "width":  87,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Course",
+                                        "x":  515,
+                                        "y":  479,
+                                        "width":  71,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  596,
+                                        "y":  479,
+                                        "width":  7,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  613,
+                                        "y":  478,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour",
+                                        "x":  677,
+                                        "y":  478,
+                                        "width":  47,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "MATHEMATICS REQUIREMENT (AREA 11)",
+                      "x":  125,
+                      "y":  553,
+                      "words":  [
+                                    {
+                                        "text":  "MATHEMATICS",
+                                        "x":  125,
+                                        "y":  555,
+                                        "width":  243,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "REQUIREMENT",
+                                        "x":  378,
+                                        "y":  555,
+                                        "width":  246,
+                                        "height":  30
+                                    },
+                                    {
+                                        "text":  "(AREA",
+                                        "x":  634,
+                                        "y":  553,
+                                        "width":  97,
+                                        "height":  28
+                                    },
+                                    {
+                                        "text":  "11)",
+                                        "x":  739,
+                                        "y":  553,
+                                        "width":  33,
+                                        "height":  28
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Math for Teachers 1 3 credit hour(s)",
+                      "x":  309,
+                      "y":  606,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  309,
+                                        "y":  618,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Math",
+                                        "x":  324,
+                                        "y":  606,
+                                        "width":  54,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  386,
+                                        "y":  606,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Teachers",
+                                        "x":  421,
+                                        "y":  606,
+                                        "width":  86,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  515,
+                                        "y":  607,
+                                        "width":  7,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  531,
+                                        "y":  608,
+                                        "width":  10,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  550,
+                                        "y":  606,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  614,
+                                        "y":  606,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• MATH 1110",
+                      "x":  144,
+                      "y":  607,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  612,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "MATH",
+                                        "x":  171,
+                                        "y":  607,
+                                        "width":  76,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  258,
+                                        "y":  608,
+                                        "width":  43,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Survey of Mathematics 4 credit hour(s)",
+                      "x":  311,
+                      "y":  649,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  311,
+                                        "y":  661,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Survey",
+                                        "x":  326,
+                                        "y":  650,
+                                        "width":  69,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  402,
+                                        "y":  649,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Mathematics",
+                                        "x":  428,
+                                        "y":  649,
+                                        "width":  130,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  565,
+                                        "y":  649,
+                                        "width":  12,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  585,
+                                        "y":  649,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  649,
+                                        "y":  649,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• MATH 1130",
+                      "x":  144,
+                      "y":  650,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  655,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "MATH",
+                                        "x":  171,
+                                        "y":  650,
+                                        "width":  76,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1130",
+                                        "x":  258,
+                                        "y":  651,
+                                        "width":  45,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• MATH 1220",
+                      "x":  144,
+                      "y":  692,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  698,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "MATH",
+                                        "x":  171,
+                                        "y":  692,
+                                        "width":  76,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1220",
+                                        "x":  258,
+                                        "y":  694,
+                                        "width":  47,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- College Algebra 4 credit hour(s)",
+                      "x":  313,
+                      "y":  692,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  313,
+                                        "y":  704,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "College",
+                                        "x":  329,
+                                        "y":  692,
+                                        "width":  75,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Algebra",
+                                        "x":  410,
+                                        "y":  692,
+                                        "width":  78,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  495,
+                                        "y":  692,
+                                        "width":  12,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  515,
+                                        "y":  692,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  579,
+                                        "y":  692,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• MATH 1230 -",
+                      "x":  144,
+                      "y":  735,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  741,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "MATH",
+                                        "x":  171,
+                                        "y":  735,
+                                        "width":  76,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1230",
+                                        "x":  258,
+                                        "y":  736,
+                                        "width":  47,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  313,
+                                        "y":  746,
+                                        "width":  7,
+                                        "height":  3
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Trigonometry 3 credit hour(s)",
+                      "x":  328,
+                      "y":  735,
+                      "words":  [
+                                    {
+                                        "text":  "Trigonometry",
+                                        "x":  328,
+                                        "y":  735,
+                                        "width":  140,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  475,
+                                        "y":  736,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  495,
+                                        "y":  735,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  558,
+                                        "y":  735,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Introduction to Statistics 4 credit hour(s)",
+                      "x":  312,
+                      "y":  777,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  312,
+                                        "y":  789,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  327,
+                                        "y":  777,
+                                        "width":  128,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  463,
+                                        "y":  784,
+                                        "width":  18,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "Statistics",
+                                        "x":  490,
+                                        "y":  778,
+                                        "width":  88,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  585,
+                                        "y":  778,
+                                        "width":  12,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  605,
+                                        "y":  777,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  669,
+                                        "y":  778,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• MATH 1350",
+                      "x":  144,
+                      "y":  778,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  783,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "MATH",
+                                        "x":  171,
+                                        "y":  778,
+                                        "width":  76,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1350",
+                                        "x":  258,
+                                        "y":  779,
+                                        "width":  46,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• MATH 1410",
+                      "x":  144,
+                      "y":  820,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  826,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "MATH",
+                                        "x":  171,
+                                        "y":  821,
+                                        "width":  76,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1410",
+                                        "x":  258,
+                                        "y":  820,
+                                        "width":  44,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Applications of Calculus 1 3 credit hour(s)",
+                      "x":  310,
+                      "y":  820,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  310,
+                                        "y":  832,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Applications",
+                                        "x":  323,
+                                        "y":  820,
+                                        "width":  127,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  458,
+                                        "y":  820,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Calculus",
+                                        "x":  484,
+                                        "y":  820,
+                                        "width":  87,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  579,
+                                        "y":  822,
+                                        "width":  7,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  594,
+                                        "y":  822,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  614,
+                                        "y":  820,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  678,
+                                        "y":  820,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Calculus 1 4 credit hour(s)",
+                      "x":  309,
+                      "y":  863,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  309,
+                                        "y":  875,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Calculus",
+                                        "x":  324,
+                                        "y":  863,
+                                        "width":  87,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  419,
+                                        "y":  864,
+                                        "width":  7,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  434,
+                                        "y":  863,
+                                        "width":  12,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  454,
+                                        "y":  863,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  518,
+                                        "y":  863,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• MATH 1512",
+                      "x":  144,
+                      "y":  864,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  869,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "MATH",
+                                        "x":  171,
+                                        "y":  864,
+                                        "width":  76,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1512",
+                                        "x":  258,
+                                        "y":  865,
+                                        "width":  43,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Any MATH course with a prerequisite of MATH 1220 or higher may be substituted for MATH 1220.",
+                      "x":  124,
+                      "y":  906,
+                      "words":  [
+                                    {
+                                        "text":  "Any",
+                                        "x":  124,
+                                        "y":  907,
+                                        "width":  42,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "MATH",
+                                        "x":  173,
+                                        "y":  906,
+                                        "width":  76,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "course",
+                                        "x":  258,
+                                        "y":  913,
+                                        "width":  63,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "with",
+                                        "x":  328,
+                                        "y":  906,
+                                        "width":  45,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  381,
+                                        "y":  914,
+                                        "width":  10,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "prerequisite",
+                                        "x":  398,
+                                        "y":  908,
+                                        "width":  115,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  521,
+                                        "y":  906,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "MATH",
+                                        "x":  547,
+                                        "y":  907,
+                                        "width":  77,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1220",
+                                        "x":  634,
+                                        "y":  908,
+                                        "width":  48,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  690,
+                                        "y":  913,
+                                        "width":  20,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "higher",
+                                        "x":  717,
+                                        "y":  906,
+                                        "width":  64,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "may",
+                                        "x":  789,
+                                        "y":  914,
+                                        "width":  41,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "be",
+                                        "x":  837,
+                                        "y":  906,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "substituted",
+                                        "x":  867,
+                                        "y":  906,
+                                        "width":  110,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  984,
+                                        "y":  906,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "MATH",
+                                        "x":  1019,
+                                        "y":  907,
+                                        "width":  77,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1220.",
+                                        "x":  1106,
+                                        "y":  908,
+                                        "width":  54,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "LABORATORY SCIENCE REQUIREMENT (AREA 111)",
+                      "x":  125,
+                      "y":  969,
+                      "words":  [
+                                    {
+                                        "text":  "LABORATORY",
+                                        "x":  125,
+                                        "y":  971,
+                                        "width":  221,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "SCIENCE",
+                                        "x":  352,
+                                        "y":  971,
+                                        "width":  139,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "REQUIREMENT",
+                                        "x":  500,
+                                        "y":  971,
+                                        "width":  246,
+                                        "height":  30
+                                    },
+                                    {
+                                        "text":  "(AREA",
+                                        "x":  756,
+                                        "y":  969,
+                                        "width":  97,
+                                        "height":  28
+                                    },
+                                    {
+                                        "text":  "111)",
+                                        "x":  861,
+                                        "y":  969,
+                                        "width":  45,
+                                        "height":  28
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ASTR 1115C - Introduction to Astronomy (Lecture \u0026 Lab) 4 credit hour(s)",
+                      "x":  170,
+                      "y":  1022,
+                      "words":  [
+                                    {
+                                        "text":  "ASTR",
+                                        "x":  170,
+                                        "y":  1023,
+                                        "width":  65,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1115C",
+                                        "x":  244,
+                                        "y":  1023,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  311,
+                                        "y":  1034,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  327,
+                                        "y":  1022,
+                                        "width":  127,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  462,
+                                        "y":  1029,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "Astronomy",
+                                        "x":  488,
+                                        "y":  1023,
+                                        "width":  112,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "(Lecture",
+                                        "x":  608,
+                                        "y":  1022,
+                                        "width":  84,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  700,
+                                        "y":  1024,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Lab)",
+                                        "x":  727,
+                                        "y":  1022,
+                                        "width":  43,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  779,
+                                        "y":  1022,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  799,
+                                        "y":  1022,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  862,
+                                        "y":  1022,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• BIOL 11 IOC - General Biology (Lecture \u0026 Lab) 4 credit hour(s)",
+                      "x":  144,
+                      "y":  1065,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1071,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "BIOL",
+                                        "x":  171,
+                                        "y":  1066,
+                                        "width":  57,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  238,
+                                        "y":  1067,
+                                        "width":  17,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "IOC",
+                                        "x":  260,
+                                        "y":  1066,
+                                        "width":  39,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  307,
+                                        "y":  1077,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "General",
+                                        "x":  322,
+                                        "y":  1065,
+                                        "width":  78,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Biology",
+                                        "x":  409,
+                                        "y":  1065,
+                                        "width":  76,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "(Lecture",
+                                        "x":  493,
+                                        "y":  1065,
+                                        "width":  83,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  584,
+                                        "y":  1067,
+                                        "width":  20,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Lab)",
+                                        "x":  612,
+                                        "y":  1065,
+                                        "width":  43,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  663,
+                                        "y":  1065,
+                                        "width":  12,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  683,
+                                        "y":  1065,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  747,
+                                        "y":  1065,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• BIOL 2410C - Principles of Biology: Genetics (Lecture \u0026 Lab) 4 credit hour(s)",
+                      "x":  144,
+                      "y":  1108,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1114,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "BIOL",
+                                        "x":  171,
+                                        "y":  1109,
+                                        "width":  57,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2410C",
+                                        "x":  235,
+                                        "y":  1108,
+                                        "width":  67,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  309,
+                                        "y":  1120,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Principles",
+                                        "x":  325,
+                                        "y":  1108,
+                                        "width":  96,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  429,
+                                        "y":  1108,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Biology:",
+                                        "x":  456,
+                                        "y":  1108,
+                                        "width":  81,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Genetics",
+                                        "x":  546,
+                                        "y":  1109,
+                                        "width":  86,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "(Lecture",
+                                        "x":  641,
+                                        "y":  1108,
+                                        "width":  84,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  733,
+                                        "y":  1110,
+                                        "width":  20,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Lab)",
+                                        "x":  760,
+                                        "y":  1108,
+                                        "width":  43,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  812,
+                                        "y":  1108,
+                                        "width":  12,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  832,
+                                        "y":  1108,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  896,
+                                        "y":  1108,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• BIOL 2210C - Human Anatomy and Physiology I (Lecture \u0026 Lab) 4 credit hour(s)",
+                      "x":  144,
+                      "y":  1151,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1157,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "BIOL",
+                                        "x":  171,
+                                        "y":  1152,
+                                        "width":  57,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2210C",
+                                        "x":  235,
+                                        "y":  1152,
+                                        "width":  67,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  309,
+                                        "y":  1162,
+                                        "width":  8,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Human",
+                                        "x":  325,
+                                        "y":  1152,
+                                        "width":  77,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Anatomy",
+                                        "x":  409,
+                                        "y":  1152,
+                                        "width":  93,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  509,
+                                        "y":  1151,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Physiology",
+                                        "x":  553,
+                                        "y":  1151,
+                                        "width":  108,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  668,
+                                        "y":  1152,
+                                        "width":  7,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "(Lecture",
+                                        "x":  685,
+                                        "y":  1151,
+                                        "width":  83,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  776,
+                                        "y":  1152,
+                                        "width":  20,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Lab)",
+                                        "x":  803,
+                                        "y":  1151,
+                                        "width":  43,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  855,
+                                        "y":  1151,
+                                        "width":  12,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  875,
+                                        "y":  1151,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  939,
+                                        "y":  1151,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• BIOL 2225C - Human Anatomy and Physiology 11 (Lecture \u0026 Lab) 4 credit hour(s)",
+                      "x":  144,
+                      "y":  1193,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1199,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "BIOL",
+                                        "x":  171,
+                                        "y":  1194,
+                                        "width":  57,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2225C",
+                                        "x":  235,
+                                        "y":  1194,
+                                        "width":  68,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  311,
+                                        "y":  1205,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Human",
+                                        "x":  326,
+                                        "y":  1195,
+                                        "width":  77,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Anatomy",
+                                        "x":  410,
+                                        "y":  1195,
+                                        "width":  93,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  510,
+                                        "y":  1193,
+                                        "width":  37,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Physiology",
+                                        "x":  555,
+                                        "y":  1193,
+                                        "width":  107,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  669,
+                                        "y":  1195,
+                                        "width":  16,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "(Lecture",
+                                        "x":  695,
+                                        "y":  1194,
+                                        "width":  83,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  787,
+                                        "y":  1195,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Lab)",
+                                        "x":  813,
+                                        "y":  1193,
+                                        "width":  43,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  865,
+                                        "y":  1194,
+                                        "width":  12,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  885,
+                                        "y":  1193,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  949,
+                                        "y":  1193,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• BIOL 2310C - Microbiology (Lecture \u0026 Lab) 4 credit hour(s)",
+                      "x":  144,
+                      "y":  1236,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1242,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "BIOL",
+                                        "x":  171,
+                                        "y":  1237,
+                                        "width":  57,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2310C",
+                                        "x":  235,
+                                        "y":  1237,
+                                        "width":  66,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  309,
+                                        "y":  1248,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Microbiology",
+                                        "x":  324,
+                                        "y":  1236,
+                                        "width":  135,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "(Lecture",
+                                        "x":  467,
+                                        "y":  1237,
+                                        "width":  84,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  559,
+                                        "y":  1238,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Lab)",
+                                        "x":  586,
+                                        "y":  1236,
+                                        "width":  43,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  638,
+                                        "y":  1236,
+                                        "width":  12,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  658,
+                                        "y":  1236,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  721,
+                                        "y":  1236,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CHEM 1215C - General Chemistry I for STEM Majors (Lecture \u0026 Lab) 4 credit hour(s)",
+                      "x":  171,
+                      "y":  1279,
+                      "words":  [
+                                    {
+                                        "text":  "CHEM",
+                                        "x":  171,
+                                        "y":  1280,
+                                        "width":  76,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1215C",
+                                        "x":  258,
+                                        "y":  1280,
+                                        "width":  62,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  327,
+                                        "y":  1291,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "General",
+                                        "x":  343,
+                                        "y":  1279,
+                                        "width":  78,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Chemistry",
+                                        "x":  429,
+                                        "y":  1279,
+                                        "width":  106,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  542,
+                                        "y":  1280,
+                                        "width":  7,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  557,
+                                        "y":  1279,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "STEM",
+                                        "x":  593,
+                                        "y":  1280,
+                                        "width":  67,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Majors",
+                                        "x":  668,
+                                        "y":  1280,
+                                        "width":  69,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "(Lecture",
+                                        "x":  746,
+                                        "y":  1279,
+                                        "width":  84,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  838,
+                                        "y":  1281,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Lab)",
+                                        "x":  865,
+                                        "y":  1279,
+                                        "width":  43,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  917,
+                                        "y":  1279,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  936,
+                                        "y":  1279,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  1000,
+                                        "y":  1279,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CHEM 1216C - General Chemistry I (Lecture \u0026 Lab) 4 credit hour(s)",
+                      "x":  171,
+                      "y":  1322,
+                      "words":  [
+                                    {
+                                        "text":  "CHEM",
+                                        "x":  171,
+                                        "y":  1323,
+                                        "width":  76,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1216C",
+                                        "x":  258,
+                                        "y":  1323,
+                                        "width":  63,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  329,
+                                        "y":  1334,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "General",
+                                        "x":  344,
+                                        "y":  1322,
+                                        "width":  78,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Chemistry",
+                                        "x":  430,
+                                        "y":  1322,
+                                        "width":  107,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  543,
+                                        "y":  1323,
+                                        "width":  8,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "(Lecture",
+                                        "x":  560,
+                                        "y":  1322,
+                                        "width":  83,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  652,
+                                        "y":  1324,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Lab)",
+                                        "x":  679,
+                                        "y":  1322,
+                                        "width":  43,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  731,
+                                        "y":  1322,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  750,
+                                        "y":  1322,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  814,
+                                        "y":  1322,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CHEM 1225C - General Chemistry 11 for STEM Majors (Lecture \u0026 Lab) 4 credit hour(s)",
+                      "x":  171,
+                      "y":  1365,
+                      "words":  [
+                                    {
+                                        "text":  "CHEM",
+                                        "x":  171,
+                                        "y":  1366,
+                                        "width":  76,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1225C",
+                                        "x":  258,
+                                        "y":  1366,
+                                        "width":  65,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  330,
+                                        "y":  1377,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "General",
+                                        "x":  345,
+                                        "y":  1365,
+                                        "width":  79,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Chemistry",
+                                        "x":  432,
+                                        "y":  1365,
+                                        "width":  106,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  545,
+                                        "y":  1366,
+                                        "width":  16,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  569,
+                                        "y":  1365,
+                                        "width":  28,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "STEM",
+                                        "x":  604,
+                                        "y":  1365,
+                                        "width":  68,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Majors",
+                                        "x":  680,
+                                        "y":  1366,
+                                        "width":  69,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "(Lecture",
+                                        "x":  758,
+                                        "y":  1365,
+                                        "width":  83,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  850,
+                                        "y":  1367,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Lab)",
+                                        "x":  877,
+                                        "y":  1365,
+                                        "width":  43,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  928,
+                                        "y":  1365,
+                                        "width":  12,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  948,
+                                        "y":  1365,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  1012,
+                                        "y":  1365,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GEOL 1110 - Physical Geography (Lecture \u0026 Lab) 4 credit hour(s)",
+                      "x":  171,
+                      "y":  1408,
+                      "words":  [
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  171,
+                                        "y":  1409,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  248,
+                                        "y":  1409,
+                                        "width":  43,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  299,
+                                        "y":  1419,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Physical",
+                                        "x":  314,
+                                        "y":  1408,
+                                        "width":  81,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "Geography",
+                                        "x":  403,
+                                        "y":  1408,
+                                        "width":  110,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "(Lecture",
+                                        "x":  521,
+                                        "y":  1408,
+                                        "width":  84,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  613,
+                                        "y":  1409,
+                                        "width":  19,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Lab)",
+                                        "x":  640,
+                                        "y":  1408,
+                                        "width":  43,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  692,
+                                        "y":  1408,
+                                        "width":  12,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  712,
+                                        "y":  1408,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  775,
+                                        "y":  1408,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GEOL 1122 - Introduction to Environmental Science (Lecture \u0026 Lab) 4 credit hour(s)",
+                      "x":  171,
+                      "y":  1450,
+                      "words":  [
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  171,
+                                        "y":  1451,
+                                        "width":  68,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1122",
+                                        "x":  248,
+                                        "y":  1452,
+                                        "width":  46,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  302,
+                                        "y":  1462,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  317,
+                                        "y":  1450,
+                                        "width":  128,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  453,
+                                        "y":  1457,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Environmental",
+                                        "x":  480,
+                                        "y":  1450,
+                                        "width":  150,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  638,
+                                        "y":  1451,
+                                        "width":  73,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "(Lecture",
+                                        "x":  719,
+                                        "y":  1451,
+                                        "width":  84,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  811,
+                                        "y":  1452,
+                                        "width":  20,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Lab)",
+                                        "x":  838,
+                                        "y":  1450,
+                                        "width":  43,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  890,
+                                        "y":  1451,
+                                        "width":  12,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  910,
+                                        "y":  1451,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  974,
+                                        "y":  1451,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GEOL 2110 - Historical Geology (Lecture \u0026 Lab) 4 credit hour(s)",
+                      "x":  171,
+                      "y":  1493,
+                      "words":  [
+                                    {
+                                        "text":  "GEOL",
+                                        "x":  171,
+                                        "y":  1494,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2110",
+                                        "x":  246,
+                                        "y":  1495,
+                                        "width":  46,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  300,
+                                        "y":  1505,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Historical",
+                                        "x":  315,
+                                        "y":  1493,
+                                        "width":  99,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Geology",
+                                        "x":  422,
+                                        "y":  1493,
+                                        "width":  85,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "(Lecture",
+                                        "x":  515,
+                                        "y":  1494,
+                                        "width":  83,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  607,
+                                        "y":  1495,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Lab)",
+                                        "x":  633,
+                                        "y":  1493,
+                                        "width":  43,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  685,
+                                        "y":  1494,
+                                        "width":  12,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  705,
+                                        "y":  1493,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  769,
+                                        "y":  1493,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PHYS 1115C - Survey of Physics (Lecture \u0026 Lab) 4 credit hour(s)",
+                      "x":  171,
+                      "y":  1536,
+                      "words":  [
+                                    {
+                                        "text":  "PHYS",
+                                        "x":  171,
+                                        "y":  1537,
+                                        "width":  61,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1115C",
+                                        "x":  243,
+                                        "y":  1537,
+                                        "width":  59,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  310,
+                                        "y":  1548,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Survey",
+                                        "x":  325,
+                                        "y":  1537,
+                                        "width":  69,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  400,
+                                        "y":  1536,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Physics",
+                                        "x":  427,
+                                        "y":  1536,
+                                        "width":  71,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "(Lecture",
+                                        "x":  507,
+                                        "y":  1537,
+                                        "width":  84,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  599,
+                                        "y":  1538,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Lab)",
+                                        "x":  626,
+                                        "y":  1536,
+                                        "width":  43,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "4",
+                                        "x":  678,
+                                        "y":  1536,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  698,
+                                        "y":  1536,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  761,
+                                        "y":  1536,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "*Meets lab class requirement",
+                      "x":  125,
+                      "y":  1590,
+                      "words":  [
+                                    {
+                                        "text":  "*Meets",
+                                        "x":  125,
+                                        "y":  1591,
+                                        "width":  73,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "lab",
+                                        "x":  205,
+                                        "y":  1590,
+                                        "width":  32,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "class",
+                                        "x":  245,
+                                        "y":  1590,
+                                        "width":  49,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "requirement",
+                                        "x":  301,
+                                        "y":  1592,
+                                        "width":  131,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Any lab science course, with the exception of GEOG 2110, that has one or more of the above courses listed as a",
+                      "x":  123,
+                      "y":  1620,
+                      "words":  [
+                                    {
+                                        "text":  "Any",
+                                        "x":  123,
+                                        "y":  1622,
+                                        "width":  43,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "lab",
+                                        "x":  173,
+                                        "y":  1621,
+                                        "width":  29,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "science",
+                                        "x":  210,
+                                        "y":  1623,
+                                        "width":  69,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "course,",
+                                        "x":  287,
+                                        "y":  1628,
+                                        "width":  69,
+                                        "height":  14
+                                    },
+                                    {
+                                        "text":  "with",
+                                        "x":  363,
+                                        "y":  1620,
+                                        "width":  46,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  416,
+                                        "y":  1621,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "exception",
+                                        "x":  455,
+                                        "y":  1623,
+                                        "width":  95,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  558,
+                                        "y":  1620,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "GEOG",
+                                        "x":  584,
+                                        "y":  1621,
+                                        "width":  72,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "2110,",
+                                        "x":  665,
+                                        "y":  1622,
+                                        "width":  51,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  725,
+                                        "y":  1621,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "has",
+                                        "x":  772,
+                                        "y":  1621,
+                                        "width":  32,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "one",
+                                        "x":  812,
+                                        "y":  1628,
+                                        "width":  34,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  854,
+                                        "y":  1628,
+                                        "width":  20,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "more",
+                                        "x":  882,
+                                        "y":  1628,
+                                        "width":  50,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  939,
+                                        "y":  1620,
+                                        "width":  22,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  966,
+                                        "y":  1620,
+                                        "width":  31,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "above",
+                                        "x":  1004,
+                                        "y":  1621,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "courses",
+                                        "x":  1068,
+                                        "y":  1628,
+                                        "width":  72,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "listed",
+                                        "x":  1148,
+                                        "y":  1620,
+                                        "width":  53,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  1208,
+                                        "y":  1628,
+                                        "width":  18,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "a",
+                                        "x":  1234,
+                                        "y":  1628,
+                                        "width":  10,
+                                        "height":  11
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "prerequisite meets the lab science general education core requirements.",
+                      "x":  125,
+                      "y":  1651,
+                      "words":  [
+                                    {
+                                        "text":  "prerequisite",
+                                        "x":  125,
+                                        "y":  1653,
+                                        "width":  115,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "meets",
+                                        "x":  248,
+                                        "y":  1657,
+                                        "width":  56,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  313,
+                                        "y":  1651,
+                                        "width":  30,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "lab",
+                                        "x":  351,
+                                        "y":  1651,
+                                        "width":  29,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "science",
+                                        "x":  388,
+                                        "y":  1653,
+                                        "width":  69,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "general",
+                                        "x":  464,
+                                        "y":  1651,
+                                        "width":  71,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "education",
+                                        "x":  543,
+                                        "y":  1651,
+                                        "width":  97,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "core",
+                                        "x":  648,
+                                        "y":  1658,
+                                        "width":  41,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "requirements.",
+                                        "x":  697,
+                                        "y":  1653,
+                                        "width":  135,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "54",
+                      "x":  692,
+                      "y":  1768,
+                      "words":  [
+                                    {
+                                        "text":  "54",
+                                        "x":  692,
+                                        "y":  1768,
+                                        "width":  26,
+                                        "height":  20
+                                    }
+                                ]
+                  }
+              ]
+}

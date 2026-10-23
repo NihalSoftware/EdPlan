@@ -1,0 +1,3001 @@
+﻿{
+    "pdf_page":  6,
+    "lines":  [
+                  {
+                      "text":  "SOCIAL AND BEHAVIORAL SCIENCE REQUIREMENT (AREA IV)",
+                      "x":  125,
+                      "y":  81,
+                      "words":  [
+                                    {
+                                        "text":  "SOCIAL",
+                                        "x":  125,
+                                        "y":  84,
+                                        "width":  120,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "AND",
+                                        "x":  252,
+                                        "y":  84,
+                                        "width":  73,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "BEHAVIORAL",
+                                        "x":  334,
+                                        "y":  84,
+                                        "width":  212,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "SCIENCE",
+                                        "x":  554,
+                                        "y":  84,
+                                        "width":  139,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "REQUIREMENT",
+                                        "x":  702,
+                                        "y":  84,
+                                        "width":  245,
+                                        "height":  29
+                                    },
+                                    {
+                                        "text":  "(AREA",
+                                        "x":  958,
+                                        "y":  81,
+                                        "width":  97,
+                                        "height":  29
+                                    },
+                                    {
+                                        "text":  "IV)",
+                                        "x":  1063,
+                                        "y":  81,
+                                        "width":  43,
+                                        "height":  29
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ANTH 1140 - Introduction to Cultural Anthropology 3 credit hour(s)",
+                      "x":  170,
+                      "y":  135,
+                      "words":  [
+                                    {
+                                        "text":  "ANTH",
+                                        "x":  170,
+                                        "y":  135,
+                                        "width":  75,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1140",
+                                        "x":  256,
+                                        "y":  135,
+                                        "width":  44,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  309,
+                                        "y":  147,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  324,
+                                        "y":  135,
+                                        "width":  127,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  459,
+                                        "y":  141,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Cultural",
+                                        "x":  486,
+                                        "y":  135,
+                                        "width":  85,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Anthropology",
+                                        "x":  578,
+                                        "y":  135,
+                                        "width":  142,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  727,
+                                        "y":  137,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  747,
+                                        "y":  135,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  810,
+                                        "y":  135,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CJUS 1110 - Introduction to Criminal Justice 3 credit hour(s)",
+                      "x":  171,
+                      "y":  178,
+                      "words":  [
+                                    {
+                                        "text":  "CJUS",
+                                        "x":  171,
+                                        "y":  179,
+                                        "width":  57,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  239,
+                                        "y":  179,
+                                        "width":  42,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  290,
+                                        "y":  189,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  305,
+                                        "y":  178,
+                                        "width":  127,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  440,
+                                        "y":  184,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Criminal",
+                                        "x":  468,
+                                        "y":  178,
+                                        "width":  91,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Justice",
+                                        "x":  565,
+                                        "y":  179,
+                                        "width":  67,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  640,
+                                        "y":  179,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  660,
+                                        "y":  178,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  723,
+                                        "y":  178,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CJUS 2140 - Criminal Investigations 3 credit hour(s)",
+                      "x":  171,
+                      "y":  220,
+                      "words":  [
+                                    {
+                                        "text":  "CJUS",
+                                        "x":  171,
+                                        "y":  221,
+                                        "width":  57,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "2140",
+                                        "x":  236,
+                                        "y":  221,
+                                        "width":  48,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  292,
+                                        "y":  232,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Criminal",
+                                        "x":  307,
+                                        "y":  220,
+                                        "width":  92,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Investigations",
+                                        "x":  407,
+                                        "y":  222,
+                                        "width":  138,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  553,
+                                        "y":  222,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  572,
+                                        "y":  220,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  636,
+                                        "y":  221,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ECON 2110 - Macroeconomic Principles 3 credit hour(s)",
+                      "x":  171,
+                      "y":  263,
+                      "words":  [
+                                    {
+                                        "text":  "ECON",
+                                        "x":  171,
+                                        "y":  264,
+                                        "width":  72,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2110",
+                                        "x":  251,
+                                        "y":  265,
+                                        "width":  46,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  305,
+                                        "y":  275,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Macroeconomic",
+                                        "x":  320,
+                                        "y":  265,
+                                        "width":  161,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Principles",
+                                        "x":  489,
+                                        "y":  263,
+                                        "width":  96,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  593,
+                                        "y":  265,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  613,
+                                        "y":  263,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  676,
+                                        "y":  263,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ECON 2120 - Microeconomic Principles 3 credit hour(s)",
+                      "x":  171,
+                      "y":  306,
+                      "words":  [
+                                    {
+                                        "text":  "ECON",
+                                        "x":  171,
+                                        "y":  307,
+                                        "width":  72,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2120",
+                                        "x":  251,
+                                        "y":  308,
+                                        "width":  48,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "-",
+                                        "x":  307,
+                                        "y":  318,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Microeconomic",
+                                        "x":  322,
+                                        "y":  307,
+                                        "width":  158,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Principles",
+                                        "x":  487,
+                                        "y":  306,
+                                        "width":  97,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  592,
+                                        "y":  308,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  611,
+                                        "y":  306,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  675,
+                                        "y":  306,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• POLS 2160",
+                      "x":  144,
+                      "y":  350,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  355,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "POLS",
+                                        "x":  171,
+                                        "y":  350,
+                                        "width":  60,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2160",
+                                        "x":  239,
+                                        "y":  350,
+                                        "width":  48,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• POLS 1120",
+                      "x":  144,
+                      "y":  393,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  398,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "POLS",
+                                        "x":  171,
+                                        "y":  393,
+                                        "width":  60,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1120",
+                                        "x":  242,
+                                        "y":  394,
+                                        "width":  45,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• PSYC 1110",
+                      "x":  144,
+                      "y":  436,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  441,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "PSYC",
+                                        "x":  171,
+                                        "y":  436,
+                                        "width":  58,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  239,
+                                        "y":  437,
+                                        "width":  43,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• POLS 1120",
+                      "x":  144,
+                      "y":  479,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  483,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "POLS",
+                                        "x":  171,
+                                        "y":  479,
+                                        "width":  60,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1120",
+                                        "x":  242,
+                                        "y":  479,
+                                        "width":  45,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• POLS 2160",
+                      "x":  144,
+                      "y":  521,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  526,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "POLS",
+                                        "x":  171,
+                                        "y":  521,
+                                        "width":  60,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2160",
+                                        "x":  239,
+                                        "y":  521,
+                                        "width":  48,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• PSYC 2120",
+                      "x":  144,
+                      "y":  564,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  569,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "PSYC",
+                                        "x":  171,
+                                        "y":  564,
+                                        "width":  58,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2120",
+                                        "x":  236,
+                                        "y":  565,
+                                        "width":  49,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• SOCI 1110",
+                      "x":  144,
+                      "y":  607,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  612,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "SOCI",
+                                        "x":  171,
+                                        "y":  607,
+                                        "width":  58,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  240,
+                                        "y":  608,
+                                        "width":  43,
+                                        "height":  17
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• SOCI 2240",
+                      "x":  144,
+                      "y":  649,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  655,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "SOCI",
+                                        "x":  171,
+                                        "y":  650,
+                                        "width":  58,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2240",
+                                        "x":  238,
+                                        "y":  649,
+                                        "width":  50,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• SOCI 2310",
+                      "x":  144,
+                      "y":  693,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  698,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "SOCI",
+                                        "x":  171,
+                                        "y":  693,
+                                        "width":  58,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2310",
+                                        "x":  238,
+                                        "y":  694,
+                                        "width":  47,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- State and Local Government 3 credit hour(s)",
+                      "x":  295,
+                      "y":  349,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  295,
+                                        "y":  361,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "State",
+                                        "x":  310,
+                                        "y":  350,
+                                        "width":  49,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  366,
+                                        "y":  349,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Local",
+                                        "x":  411,
+                                        "y":  349,
+                                        "width":  55,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Government",
+                                        "x":  474,
+                                        "y":  350,
+                                        "width":  126,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  607,
+                                        "y":  351,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  627,
+                                        "y":  349,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  690,
+                                        "y":  349,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- American National Government 3 credit hour(s)",
+                      "x":  295,
+                      "y":  392,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  295,
+                                        "y":  404,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "American",
+                                        "x":  309,
+                                        "y":  393,
+                                        "width":  98,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "National",
+                                        "x":  415,
+                                        "y":  392,
+                                        "width":  88,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Government",
+                                        "x":  511,
+                                        "y":  393,
+                                        "width":  126,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  644,
+                                        "y":  394,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  664,
+                                        "y":  392,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  728,
+                                        "y":  392,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Introduction to Psychology 3 credit hour(s)",
+                      "x":  290,
+                      "y":  435,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  290,
+                                        "y":  447,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  305,
+                                        "y":  435,
+                                        "width":  128,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  441,
+                                        "y":  441,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Psychology",
+                                        "x":  468,
+                                        "y":  435,
+                                        "width":  112,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  587,
+                                        "y":  436,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  606,
+                                        "y":  435,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  670,
+                                        "y":  435,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- American National Government",
+                      "x":  295,
+                      "y":  478,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  295,
+                                        "y":  489,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "American",
+                                        "x":  309,
+                                        "y":  479,
+                                        "width":  98,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "National",
+                                        "x":  415,
+                                        "y":  478,
+                                        "width":  88,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Government",
+                                        "x":  511,
+                                        "y":  479,
+                                        "width":  126,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- State \u0026 Local Government",
+                      "x":  295,
+                      "y":  520,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  295,
+                                        "y":  532,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "State",
+                                        "x":  310,
+                                        "y":  521,
+                                        "width":  49,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "\u0026",
+                                        "x":  367,
+                                        "y":  522,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Local",
+                                        "x":  394,
+                                        "y":  520,
+                                        "width":  55,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Government",
+                                        "x":  457,
+                                        "y":  521,
+                                        "width":  126,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Developmental Psychology 3 credit hour(s)",
+                      "x":  293,
+                      "y":  563,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  293,
+                                        "y":  575,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Developmental",
+                                        "x":  308,
+                                        "y":  563,
+                                        "width":  152,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Psychology",
+                                        "x":  468,
+                                        "y":  563,
+                                        "width":  112,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  587,
+                                        "y":  565,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  606,
+                                        "y":  563,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  670,
+                                        "y":  563,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Introduction to Sociology 3 credit hour(s)",
+                      "x":  291,
+                      "y":  606,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  291,
+                                        "y":  618,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  306,
+                                        "y":  606,
+                                        "width":  128,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  442,
+                                        "y":  612,
+                                        "width":  18,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Sociology",
+                                        "x":  469,
+                                        "y":  606,
+                                        "width":  97,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  573,
+                                        "y":  608,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  592,
+                                        "y":  606,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  656,
+                                        "y":  606,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Sociology of Intimate Relationships and Family 3 credit hour(s)",
+                      "x":  296,
+                      "y":  649,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  296,
+                                        "y":  661,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Sociology",
+                                        "x":  311,
+                                        "y":  649,
+                                        "width":  97,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  415,
+                                        "y":  649,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Intimate",
+                                        "x":  442,
+                                        "y":  650,
+                                        "width":  85,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Relationships",
+                                        "x":  535,
+                                        "y":  649,
+                                        "width":  134,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  677,
+                                        "y":  649,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Family",
+                                        "x":  721,
+                                        "y":  649,
+                                        "width":  70,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  798,
+                                        "y":  651,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  817,
+                                        "y":  649,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  881,
+                                        "y":  649,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Contemporary Social Problems 3 credit hour(s)",
+                      "x":  293,
+                      "y":  692,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  293,
+                                        "y":  704,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Contemporary",
+                                        "x":  308,
+                                        "y":  693,
+                                        "width":  148,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "Social",
+                                        "x":  463,
+                                        "y":  692,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Problems",
+                                        "x":  530,
+                                        "y":  692,
+                                        "width":  91,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  630,
+                                        "y":  694,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  649,
+                                        "y":  692,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  713,
+                                        "y":  692,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "HUMANITIES REQUIREMENT (AREA V)",
+                      "x":  125,
+                      "y":  797,
+                      "words":  [
+                                    {
+                                        "text":  "HUMANITIES",
+                                        "x":  125,
+                                        "y":  800,
+                                        "width":  214,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "REQUIREMENT",
+                                        "x":  348,
+                                        "y":  800,
+                                        "width":  246,
+                                        "height":  29
+                                    },
+                                    {
+                                        "text":  "(AREA",
+                                        "x":  605,
+                                        "y":  797,
+                                        "width":  97,
+                                        "height":  29
+                                    },
+                                    {
+                                        "text":  "V)",
+                                        "x":  708,
+                                        "y":  797,
+                                        "width":  32,
+                                        "height":  29
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 1410",
+                      "x":  144,
+                      "y":  851,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  857,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  852,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1410",
+                                        "x":  248,
+                                        "y":  851,
+                                        "width":  44,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Introduction to Literature 3 credit hour(s)",
+                      "x":  301,
+                      "y":  851,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  301,
+                                        "y":  862,
+                                        "width":  6,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  316,
+                                        "y":  851,
+                                        "width":  127,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  451,
+                                        "y":  857,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Literature",
+                                        "x":  478,
+                                        "y":  852,
+                                        "width":  98,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  584,
+                                        "y":  852,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  603,
+                                        "y":  851,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  667,
+                                        "y":  851,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Introduction to Creative Writing 3 credit hour(s)",
+                      "x":  301,
+                      "y":  894,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  301,
+                                        "y":  905,
+                                        "width":  8,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  317,
+                                        "y":  894,
+                                        "width":  127,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  452,
+                                        "y":  900,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Creative",
+                                        "x":  479,
+                                        "y":  894,
+                                        "width":  83,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Writing",
+                                        "x":  569,
+                                        "y":  895,
+                                        "width":  79,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  655,
+                                        "y":  895,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  675,
+                                        "y":  894,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  739,
+                                        "y":  894,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2310",
+                      "x":  144,
+                      "y":  895,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  899,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  895,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2310",
+                                        "x":  246,
+                                        "y":  895,
+                                        "width":  47,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Introduction to Drama 3 credit hour(s)",
+                      "x":  303,
+                      "y":  936,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  303,
+                                        "y":  948,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  318,
+                                        "y":  936,
+                                        "width":  128,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  454,
+                                        "y":  943,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "Drama",
+                                        "x":  481,
+                                        "y":  938,
+                                        "width":  70,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  558,
+                                        "y":  938,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  578,
+                                        "y":  936,
+                                        "width":  56,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  641,
+                                        "y":  936,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2350",
+                      "x":  144,
+                      "y":  937,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  942,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  937,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2350",
+                                        "x":  246,
+                                        "y":  938,
+                                        "width":  49,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Introduction to Poetry 3 credit hour(s)",
+                      "x":  304,
+                      "y":  979,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  304,
+                                        "y":  991,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  320,
+                                        "y":  979,
+                                        "width":  127,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  455,
+                                        "y":  986,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "Poetry",
+                                        "x":  482,
+                                        "y":  980,
+                                        "width":  66,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  555,
+                                        "y":  981,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  574,
+                                        "y":  979,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  638,
+                                        "y":  979,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2360",
+                      "x":  144,
+                      "y":  980,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  985,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  980,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2360",
+                                        "x":  246,
+                                        "y":  980,
+                                        "width":  50,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Introduction to the Novel 3 credit hour(s)",
+                      "x":  303,
+                      "y":  1022,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  303,
+                                        "y":  1034,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  318,
+                                        "y":  1022,
+                                        "width":  128,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  454,
+                                        "y":  1029,
+                                        "width":  19,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  481,
+                                        "y":  1022,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Novel",
+                                        "x":  519,
+                                        "y":  1022,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  586,
+                                        "y":  1024,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  605,
+                                        "y":  1022,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  669,
+                                        "y":  1022,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2370",
+                      "x":  144,
+                      "y":  1023,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1028,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  1023,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2370",
+                                        "x":  246,
+                                        "y":  1024,
+                                        "width":  49,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Introduction to Short Fiction 3 credit hour(s)",
+                      "x":  304,
+                      "y":  1065,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  304,
+                                        "y":  1077,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  319,
+                                        "y":  1065,
+                                        "width":  128,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  455,
+                                        "y":  1071,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Short",
+                                        "x":  482,
+                                        "y":  1065,
+                                        "width":  54,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Fiction",
+                                        "x":  544,
+                                        "y":  1066,
+                                        "width":  70,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  622,
+                                        "y":  1067,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  641,
+                                        "y":  1065,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  705,
+                                        "y":  1065,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2380",
+                      "x":  144,
+                      "y":  1066,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1071,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  1066,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2380",
+                                        "x":  246,
+                                        "y":  1067,
+                                        "width":  50,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Introduction to Southwest Literature 3 credit hour(s)",
+                      "x":  302,
+                      "y":  1108,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  302,
+                                        "y":  1120,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Introduction",
+                                        "x":  317,
+                                        "y":  1108,
+                                        "width":  128,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  453,
+                                        "y":  1114,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "Southwest",
+                                        "x":  480,
+                                        "y":  1108,
+                                        "width":  103,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Literature",
+                                        "x":  590,
+                                        "y":  1109,
+                                        "width":  98,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  696,
+                                        "y":  1110,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  715,
+                                        "y":  1108,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  779,
+                                        "y":  1108,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2550",
+                      "x":  144,
+                      "y":  1109,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1114,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  1109,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2550",
+                                        "x":  246,
+                                        "y":  1109,
+                                        "width":  48,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Science Fiction 3 credit hour (3)",
+                      "x":  303,
+                      "y":  1151,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  303,
+                                        "y":  1162,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Science",
+                                        "x":  318,
+                                        "y":  1152,
+                                        "width":  74,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Fiction",
+                                        "x":  399,
+                                        "y":  1152,
+                                        "width":  70,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  477,
+                                        "y":  1152,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  497,
+                                        "y":  1151,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour",
+                                        "x":  560,
+                                        "y":  1151,
+                                        "width":  48,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "(3)",
+                                        "x":  616,
+                                        "y":  1151,
+                                        "width":  25,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2580",
+                      "x":  144,
+                      "y":  1152,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1157,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  1152,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2580",
+                                        "x":  246,
+                                        "y":  1152,
+                                        "width":  49,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- American Literature 1 3 credit hour(s)",
+                      "x":  301,
+                      "y":  1193,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  301,
+                                        "y":  1205,
+                                        "width":  8,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "American",
+                                        "x":  315,
+                                        "y":  1195,
+                                        "width":  98,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Literature",
+                                        "x":  421,
+                                        "y":  1195,
+                                        "width":  98,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  529,
+                                        "y":  1195,
+                                        "width":  7,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  547,
+                                        "y":  1195,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  566,
+                                        "y":  1193,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  630,
+                                        "y":  1193,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2610",
+                      "x":  144,
+                      "y":  1194,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1199,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  1194,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2610",
+                                        "x":  246,
+                                        "y":  1194,
+                                        "width":  47,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- British Literature 1 3 credit hour(s)",
+                      "x":  304,
+                      "y":  1236,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  304,
+                                        "y":  1248,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "British",
+                                        "x":  319,
+                                        "y":  1236,
+                                        "width":  67,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Literature",
+                                        "x":  393,
+                                        "y":  1238,
+                                        "width":  98,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  499,
+                                        "y":  1237,
+                                        "width":  7,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  515,
+                                        "y":  1238,
+                                        "width":  10,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  534,
+                                        "y":  1236,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  598,
+                                        "y":  1236,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2630",
+                      "x":  144,
+                      "y":  1237,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1242,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  1237,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2630",
+                                        "x":  246,
+                                        "y":  1237,
+                                        "width":  50,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- World Literature 1 3 credit hour(s)",
+                      "x":  303,
+                      "y":  1279,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  303,
+                                        "y":  1291,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "World",
+                                        "x":  317,
+                                        "y":  1279,
+                                        "width":  63,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Literature",
+                                        "x":  388,
+                                        "y":  1280,
+                                        "width":  98,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  494,
+                                        "y":  1280,
+                                        "width":  7,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  509,
+                                        "y":  1281,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  528,
+                                        "y":  1279,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  592,
+                                        "y":  1279,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2650",
+                      "x":  144,
+                      "y":  1280,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1285,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  1280,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2650",
+                                        "x":  246,
+                                        "y":  1280,
+                                        "width":  49,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Women\u0027s Literature 3 credit hour(s)",
+                      "x":  305,
+                      "y":  1322,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  305,
+                                        "y":  1334,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Women\u0027s",
+                                        "x":  319,
+                                        "y":  1322,
+                                        "width":  91,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Literature",
+                                        "x":  418,
+                                        "y":  1323,
+                                        "width":  98,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  524,
+                                        "y":  1324,
+                                        "width":  10,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  543,
+                                        "y":  1322,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  607,
+                                        "y":  1322,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2680",
+                      "x":  144,
+                      "y":  1323,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1328,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  1323,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2680",
+                                        "x":  246,
+                                        "y":  1323,
+                                        "width":  50,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• ENGL 2996",
+                      "x":  144,
+                      "y":  1365,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1371,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  171,
+                                        "y":  1366,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "2996",
+                                        "x":  246,
+                                        "y":  1365,
+                                        "width":  50,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Topics in English 3 credit hour(s)",
+                      "x":  304,
+                      "y":  1365,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  304,
+                                        "y":  1377,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Topics",
+                                        "x":  318,
+                                        "y":  1365,
+                                        "width":  65,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  391,
+                                        "y":  1367,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "English",
+                                        "x":  418,
+                                        "y":  1365,
+                                        "width":  76,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  502,
+                                        "y":  1367,
+                                        "width":  10,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  521,
+                                        "y":  1365,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  585,
+                                        "y":  1365,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• HIST 1110",
+                      "x":  144,
+                      "y":  1408,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1414,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "HIST",
+                                        "x":  171,
+                                        "y":  1408,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  240,
+                                        "y":  1409,
+                                        "width":  43,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- United States History 1 3 credit hour(s)",
+                      "x":  291,
+                      "y":  1408,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  291,
+                                        "y":  1419,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "United",
+                                        "x":  306,
+                                        "y":  1408,
+                                        "width":  69,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "States",
+                                        "x":  382,
+                                        "y":  1409,
+                                        "width":  57,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "History",
+                                        "x":  447,
+                                        "y":  1409,
+                                        "width":  78,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  532,
+                                        "y":  1409,
+                                        "width":  7,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  547,
+                                        "y":  1409,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  566,
+                                        "y":  1408,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  630,
+                                        "y":  1408,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- United States History 11 3 credit hour(s)",
+                      "x":  293,
+                      "y":  1450,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  293,
+                                        "y":  1462,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "United",
+                                        "x":  308,
+                                        "y":  1451,
+                                        "width":  70,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "States",
+                                        "x":  385,
+                                        "y":  1451,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "History",
+                                        "x":  450,
+                                        "y":  1452,
+                                        "width":  77,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  534,
+                                        "y":  1452,
+                                        "width":  16,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  559,
+                                        "y":  1452,
+                                        "width":  10,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  578,
+                                        "y":  1450,
+                                        "width":  57,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  642,
+                                        "y":  1451,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• HIST 1120",
+                      "x":  144,
+                      "y":  1451,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1456,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "HIST",
+                                        "x":  171,
+                                        "y":  1451,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1120",
+                                        "x":  240,
+                                        "y":  1452,
+                                        "width":  45,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Western Civilization 1 3 credit hour(s)",
+                      "x":  291,
+                      "y":  1493,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  291,
+                                        "y":  1505,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "Western",
+                                        "x":  305,
+                                        "y":  1495,
+                                        "width":  83,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "Civilization",
+                                        "x":  396,
+                                        "y":  1493,
+                                        "width":  117,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "1",
+                                        "x":  521,
+                                        "y":  1495,
+                                        "width":  7,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  536,
+                                        "y":  1495,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  556,
+                                        "y":  1493,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  620,
+                                        "y":  1494,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• HIST 1150",
+                      "x":  144,
+                      "y":  1494,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1499,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "HIST",
+                                        "x":  171,
+                                        "y":  1494,
+                                        "width":  59,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1150",
+                                        "x":  240,
+                                        "y":  1495,
+                                        "width":  43,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Western Civilization 11 3 credit hour(s)",
+                      "x":  292,
+                      "y":  1536,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  292,
+                                        "y":  1548,
+                                        "width":  8,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Western",
+                                        "x":  307,
+                                        "y":  1537,
+                                        "width":  82,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Civilization",
+                                        "x":  397,
+                                        "y":  1536,
+                                        "width":  118,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  523,
+                                        "y":  1537,
+                                        "width":  16,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  547,
+                                        "y":  1538,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  566,
+                                        "y":  1536,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  630,
+                                        "y":  1536,
+                                        "width":  69,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• HIST 1160",
+                      "x":  144,
+                      "y":  1537,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1542,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "HIST",
+                                        "x":  171,
+                                        "y":  1537,
+                                        "width":  59,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "1160",
+                                        "x":  240,
+                                        "y":  1537,
+                                        "width":  44,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• HIST 2060",
+                      "x":  144,
+                      "y":  1579,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1585,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "HIST",
+                                        "x":  171,
+                                        "y":  1579,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "2060",
+                                        "x":  237,
+                                        "y":  1580,
+                                        "width":  51,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- History and Video Games 3 credit hours",
+                      "x":  296,
+                      "y":  1579,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  296,
+                                        "y":  1591,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "History",
+                                        "x":  312,
+                                        "y":  1580,
+                                        "width":  77,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  395,
+                                        "y":  1579,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Video",
+                                        "x":  439,
+                                        "y":  1579,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Games",
+                                        "x":  506,
+                                        "y":  1580,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  589,
+                                        "y":  1581,
+                                        "width":  11,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  608,
+                                        "y":  1579,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hours",
+                                        "x":  672,
+                                        "y":  1579,
+                                        "width":  55,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• HIST 2050",
+                      "x":  144,
+                      "y":  1622,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1628,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "HIST",
+                                        "x":  171,
+                                        "y":  1622,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "2050",
+                                        "x":  237,
+                                        "y":  1623,
+                                        "width":  50,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- American History through Film",
+                      "x":  295,
+                      "y":  1622,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  295,
+                                        "y":  1634,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "American",
+                                        "x":  309,
+                                        "y":  1623,
+                                        "width":  98,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "History",
+                                        "x":  415,
+                                        "y":  1623,
+                                        "width":  77,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "through",
+                                        "x":  499,
+                                        "y":  1622,
+                                        "width":  81,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Film",
+                                        "x":  588,
+                                        "y":  1622,
+                                        "width":  46,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• HIST 2110",
+                      "x":  144,
+                      "y":  1665,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1671,
+                                        "width":  7,
+                                        "height":  7
+                                    },
+                                    {
+                                        "text":  "HIST",
+                                        "x":  171,
+                                        "y":  1665,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "2110",
+                                        "x":  237,
+                                        "y":  1666,
+                                        "width":  46,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Survey of New Mexico History 3 credit hour(s)",
+                      "x":  291,
+                      "y":  1665,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  291,
+                                        "y":  1677,
+                                        "width":  7,
+                                        "height":  2
+                                    },
+                                    {
+                                        "text":  "Survey",
+                                        "x":  307,
+                                        "y":  1666,
+                                        "width":  68,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  382,
+                                        "y":  1665,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  408,
+                                        "y":  1666,
+                                        "width":  47,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  462,
+                                        "y":  1666,
+                                        "width":  74,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "History",
+                                        "x":  544,
+                                        "y":  1666,
+                                        "width":  77,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  628,
+                                        "y":  1666,
+                                        "width":  11,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  648,
+                                        "y":  1665,
+                                        "width":  56,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  711,
+                                        "y":  1665,
+                                        "width":  69,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• HIST 2145",
+                      "x":  144,
+                      "y":  1708,
+                      "words":  [
+                                    {
+                                        "text":  "•",
+                                        "x":  144,
+                                        "y":  1713,
+                                        "width":  7,
+                                        "height":  8
+                                    },
+                                    {
+                                        "text":  "HIST",
+                                        "x":  171,
+                                        "y":  1708,
+                                        "width":  59,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "2145",
+                                        "x":  237,
+                                        "y":  1708,
+                                        "width":  46,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- American Military History 3 credit hour(s)",
+                      "x":  292,
+                      "y":  1708,
+                      "words":  [
+                                    {
+                                        "text":  "-",
+                                        "x":  292,
+                                        "y":  1719,
+                                        "width":  7,
+                                        "height":  3
+                                    },
+                                    {
+                                        "text":  "American",
+                                        "x":  305,
+                                        "y":  1709,
+                                        "width":  99,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "Military",
+                                        "x":  411,
+                                        "y":  1708,
+                                        "width":  84,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "History",
+                                        "x":  503,
+                                        "y":  1709,
+                                        "width":  76,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "3",
+                                        "x":  587,
+                                        "y":  1709,
+                                        "width":  10,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "credit",
+                                        "x":  606,
+                                        "y":  1708,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "hour(s)",
+                                        "x":  670,
+                                        "y":  1708,
+                                        "width":  68,
+                                        "height":  22
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "55",
+                      "x":  692,
+                      "y":  1769,
+                      "words":  [
+                                    {
+                                        "text":  "55",
+                                        "x":  692,
+                                        "y":  1769,
+                                        "width":  27,
+                                        "height":  19
+                                    }
+                                ]
+                  }
+              ]
+}

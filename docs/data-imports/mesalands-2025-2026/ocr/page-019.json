@@ -1,0 +1,2777 @@
+﻿{
+    "pdf_page":  19,
+    "lines":  [
+                  {
+                      "text":  "GENERAL STUDIES",
+                      "x":  127,
+                      "y":  85,
+                      "words":  [
+                                    {
+                                        "text":  "GENERAL",
+                                        "x":  127,
+                                        "y":  85,
+                                        "width":  263,
+                                        "height":  39
+                                    },
+                                    {
+                                        "text":  "STUDIES",
+                                        "x":  404,
+                                        "y":  85,
+                                        "width":  235,
+                                        "height":  39
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SOCCUPATIONAL/EXPERIENTIAL",
+                      "x":  125,
+                      "y":  170,
+                      "words":  [
+                                    {
+                                        "text":  "SOCCUPATIONAL/EXPERIENTIAL",
+                                        "x":  125,
+                                        "y":  170,
+                                        "width":  529,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "LEARNING",
+                      "x":  125,
+                      "y":  208,
+                      "words":  [
+                                    {
+                                        "text":  "LEARNING",
+                                        "x":  125,
+                                        "y":  208,
+                                        "width":  172,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Experiential learning is an intentional, student-centered",
+                      "x":  125,
+                      "y":  259,
+                      "words":  [
+                                    {
+                                        "text":  "Experiential",
+                                        "x":  125,
+                                        "y":  259,
+                                        "width":  121,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "learning",
+                                        "x":  253,
+                                        "y":  259,
+                                        "width":  83,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "is",
+                                        "x":  343,
+                                        "y":  262,
+                                        "width":  14,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "an",
+                                        "x":  365,
+                                        "y":  267,
+                                        "width":  23,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "intentional,",
+                                        "x":  396,
+                                        "y":  259,
+                                        "width":  114,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "student-centered",
+                                        "x":  518,
+                                        "y":  259,
+                                        "width":  166,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "approach to education that integrates active, real-world",
+                      "x":  125,
+                      "y":  290,
+                      "words":  [
+                                    {
+                                        "text":  "approach",
+                                        "x":  125,
+                                        "y":  290,
+                                        "width":  91,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  223,
+                                        "y":  296,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "education",
+                                        "x":  250,
+                                        "y":  290,
+                                        "width":  97,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "that",
+                                        "x":  355,
+                                        "y":  290,
+                                        "width":  40,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "integrates",
+                                        "x":  402,
+                                        "y":  292,
+                                        "width":  96,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "active,",
+                                        "x":  506,
+                                        "y":  292,
+                                        "width":  62,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "real-world",
+                                        "x":  577,
+                                        "y":  290,
+                                        "width":  101,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "experiences with academic learning in order to foster",
+                      "x":  125,
+                      "y":  320,
+                      "words":  [
+                                    {
+                                        "text":  "experiences",
+                                        "x":  125,
+                                        "y":  322,
+                                        "width":  113,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "with",
+                                        "x":  245,
+                                        "y":  320,
+                                        "width":  45,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "academic",
+                                        "x":  298,
+                                        "y":  320,
+                                        "width":  92,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "learning",
+                                        "x":  397,
+                                        "y":  320,
+                                        "width":  83,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  487,
+                                        "y":  322,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "order",
+                                        "x":  514,
+                                        "y":  320,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  573,
+                                        "y":  326,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "foster",
+                                        "x":  600,
+                                        "y":  320,
+                                        "width":  55,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "deeper understanding, critical thinking, and practical",
+                      "x":  125,
+                      "y":  350,
+                      "words":  [
+                                    {
+                                        "text":  "deeper",
+                                        "x":  125,
+                                        "y":  350,
+                                        "width":  65,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "understanding,",
+                                        "x":  198,
+                                        "y":  350,
+                                        "width":  151,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "critical",
+                                        "x":  357,
+                                        "y":  351,
+                                        "width":  68,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "thinking,",
+                                        "x":  433,
+                                        "y":  350,
+                                        "width":  94,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  535,
+                                        "y":  350,
+                                        "width":  37,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "practical",
+                                        "x":  579,
+                                        "y":  351,
+                                        "width":  86,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "application. At the higher education level, experiential",
+                      "x":  125,
+                      "y":  381,
+                      "words":  [
+                                    {
+                                        "text":  "application.",
+                                        "x":  125,
+                                        "y":  381,
+                                        "width":  115,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "At",
+                                        "x":  248,
+                                        "y":  382,
+                                        "width":  25,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  280,
+                                        "y":  381,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "higher",
+                                        "x":  319,
+                                        "y":  381,
+                                        "width":  64,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "education",
+                                        "x":  390,
+                                        "y":  381,
+                                        "width":  97,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "level,",
+                                        "x":  495,
+                                        "y":  381,
+                                        "width":  49,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "experiential",
+                                        "x":  553,
+                                        "y":  381,
+                                        "width":  115,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "learning provides students with opportunities to",
+                      "x":  125,
+                      "y":  411,
+                      "words":  [
+                                    {
+                                        "text":  "learning",
+                                        "x":  125,
+                                        "y":  411,
+                                        "width":  82,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "provides",
+                                        "x":  214,
+                                        "y":  411,
+                                        "width":  83,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  305,
+                                        "y":  411,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "with",
+                                        "x":  394,
+                                        "y":  411,
+                                        "width":  45,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "opportunities",
+                                        "x":  447,
+                                        "y":  414,
+                                        "width":  135,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  590,
+                                        "y":  418,
+                                        "width":  19,
+                                        "height":  12
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "connect classroom theory to hands-on practice through",
+                      "x":  125,
+                      "y":  442,
+                      "words":  [
+                                    {
+                                        "text":  "connect",
+                                        "x":  125,
+                                        "y":  448,
+                                        "width":  78,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "classroom",
+                                        "x":  211,
+                                        "y":  442,
+                                        "width":  98,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "theory",
+                                        "x":  316,
+                                        "y":  442,
+                                        "width":  65,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "to",
+                                        "x":  388,
+                                        "y":  448,
+                                        "width":  19,
+                                        "height":  13
+                                    },
+                                    {
+                                        "text":  "hands-on",
+                                        "x":  415,
+                                        "y":  442,
+                                        "width":  93,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "practice",
+                                        "x":  516,
+                                        "y":  444,
+                                        "width":  78,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "through",
+                                        "x":  602,
+                                        "y":  442,
+                                        "width":  81,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "structured engagement in internships, service-learning,",
+                      "x":  125,
+                      "y":  472,
+                      "words":  [
+                                    {
+                                        "text":  "structured",
+                                        "x":  125,
+                                        "y":  472,
+                                        "width":  103,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "engagement",
+                                        "x":  235,
+                                        "y":  479,
+                                        "width":  120,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  362,
+                                        "y":  474,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "internships,",
+                                        "x":  390,
+                                        "y":  472,
+                                        "width":  115,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "service-learning,",
+                                        "x":  514,
+                                        "y":  472,
+                                        "width":  163,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "research, study abroad, fieldwork, cooperative educa-",
+                      "x":  125,
+                      "y":  502,
+                      "words":  [
+                                    {
+                                        "text":  "research,",
+                                        "x":  125,
+                                        "y":  502,
+                                        "width":  86,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "study",
+                                        "x":  219,
+                                        "y":  503,
+                                        "width":  55,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "abroad,",
+                                        "x":  281,
+                                        "y":  503,
+                                        "width":  73,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "fieldwork,",
+                                        "x":  362,
+                                        "y":  502,
+                                        "width":  100,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "cooperative",
+                                        "x":  470,
+                                        "y":  505,
+                                        "width":  114,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "educa-",
+                                        "x":  592,
+                                        "y":  503,
+                                        "width":  64,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "tion, capstone projects, simulations, and reflective",
+                      "x":  125,
+                      "y":  533,
+                      "words":  [
+                                    {
+                                        "text":  "tion,",
+                                        "x":  125,
+                                        "y":  535,
+                                        "width":  45,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "capstone",
+                                        "x":  178,
+                                        "y":  539,
+                                        "width":  86,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "projects,",
+                                        "x":  271,
+                                        "y":  535,
+                                        "width":  83,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "simulations,",
+                                        "x":  363,
+                                        "y":  533,
+                                        "width":  120,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  492,
+                                        "y":  533,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "reflective",
+                                        "x":  536,
+                                        "y":  533,
+                                        "width":  91,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "practice.",
+                      "x":  125,
+                      "y":  566,
+                      "words":  [
+                                    {
+                                        "text":  "practice.",
+                                        "x":  125,
+                                        "y":  566,
+                                        "width":  83,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Rooted in the principles of Kolb\u0027s Experiential Learn-",
+                      "x":  125,
+                      "y":  624,
+                      "words":  [
+                                    {
+                                        "text":  "Rooted",
+                                        "x":  125,
+                                        "y":  624,
+                                        "width":  72,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "in",
+                                        "x":  205,
+                                        "y":  626,
+                                        "width":  19,
+                                        "height":  17
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  232,
+                                        "y":  624,
+                                        "width":  31,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "principles",
+                                        "x":  270,
+                                        "y":  624,
+                                        "width":  96,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  374,
+                                        "y":  624,
+                                        "width":  22,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Kolb\u0027s",
+                                        "x":  401,
+                                        "y":  624,
+                                        "width":  61,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Experiential",
+                                        "x":  470,
+                                        "y":  624,
+                                        "width":  121,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Learn-",
+                                        "x":  599,
+                                        "y":  625,
+                                        "width":  65,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ing Theory, this model emphasizes the cycle of experi-",
+                      "x":  125,
+                      "y":  654,
+                      "words":  [
+                                    {
+                                        "text":  "ing",
+                                        "x":  125,
+                                        "y":  657,
+                                        "width":  32,
+                                        "height":  23
+                                    },
+                                    {
+                                        "text":  "Theory,",
+                                        "x":  163,
+                                        "y":  655,
+                                        "width":  78,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "this",
+                                        "x":  249,
+                                        "y":  655,
+                                        "width":  37,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "model",
+                                        "x":  294,
+                                        "y":  655,
+                                        "width":  61,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "emphasizes",
+                                        "x":  363,
+                                        "y":  655,
+                                        "width":  111,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "the",
+                                        "x":  482,
+                                        "y":  655,
+                                        "width":  31,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "cycle",
+                                        "x":  521,
+                                        "y":  655,
+                                        "width":  48,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  576,
+                                        "y":  654,
+                                        "width":  23,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "experi-",
+                                        "x":  603,
+                                        "y":  657,
+                                        "width":  68,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ence, reflection, conceptualization, and experimenta-",
+                      "x":  125,
+                      "y":  685,
+                      "words":  [
+                                    {
+                                        "text":  "ence,",
+                                        "x":  125,
+                                        "y":  692,
+                                        "width":  49,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "reflection,",
+                                        "x":  183,
+                                        "y":  685,
+                                        "width":  101,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "conceptualization,",
+                                        "x":  292,
+                                        "y":  685,
+                                        "width":  183,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  484,
+                                        "y":  685,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "experimenta-",
+                                        "x":  528,
+                                        "y":  687,
+                                        "width":  130,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "tion. Through this process, students not only acquire",
+                      "x":  125,
+                      "y":  715,
+                      "words":  [
+                                    {
+                                        "text":  "tion.",
+                                        "x":  125,
+                                        "y":  718,
+                                        "width":  45,
+                                        "height":  16
+                                    },
+                                    {
+                                        "text":  "Through",
+                                        "x":  178,
+                                        "y":  715,
+                                        "width":  90,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "this",
+                                        "x":  276,
+                                        "y":  715,
+                                        "width":  36,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "process,",
+                                        "x":  320,
+                                        "y":  723,
+                                        "width":  78,
+                                        "height":  18
+                                    },
+                                    {
+                                        "text":  "students",
+                                        "x":  406,
+                                        "y":  715,
+                                        "width":  82,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "not",
+                                        "x":  496,
+                                        "y":  722,
+                                        "width":  33,
+                                        "height":  12
+                                    },
+                                    {
+                                        "text":  "only",
+                                        "x":  536,
+                                        "y":  715,
+                                        "width":  44,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "acquire",
+                                        "x":  587,
+                                        "y":  718,
+                                        "width":  72,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "disciplinary knowledge but also build essential profes-",
+                      "x":  125,
+                      "y":  746,
+                      "words":  [
+                                    {
+                                        "text":  "disciplinary",
+                                        "x":  125,
+                                        "y":  746,
+                                        "width":  118,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "knowledge",
+                                        "x":  250,
+                                        "y":  746,
+                                        "width":  107,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "but",
+                                        "x":  364,
+                                        "y":  746,
+                                        "width":  33,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "also",
+                                        "x":  405,
+                                        "y":  746,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "build",
+                                        "x":  450,
+                                        "y":  746,
+                                        "width":  52,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "essential",
+                                        "x":  510,
+                                        "y":  746,
+                                        "width":  83,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "profes-",
+                                        "x":  600,
+                                        "y":  746,
+                                        "width":  68,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "sional competencies such as communication, problem-",
+                      "x":  125,
+                      "y":  776,
+                      "words":  [
+                                    {
+                                        "text":  "sional",
+                                        "x":  125,
+                                        "y":  776,
+                                        "width":  57,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "competencies",
+                                        "x":  190,
+                                        "y":  779,
+                                        "width":  133,
+                                        "height":  22
+                                    },
+                                    {
+                                        "text":  "such",
+                                        "x":  330,
+                                        "y":  776,
+                                        "width":  45,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "as",
+                                        "x":  383,
+                                        "y":  784,
+                                        "width":  18,
+                                        "height":  11
+                                    },
+                                    {
+                                        "text":  "communication,",
+                                        "x":  409,
+                                        "y":  778,
+                                        "width":  163,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "problem-",
+                                        "x":  581,
+                                        "y":  776,
+                                        "width":  90,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "solving, collaboration, and ethical reasoning.",
+                      "x":  125,
+                      "y":  807,
+                      "words":  [
+                                    {
+                                        "text":  "solving,",
+                                        "x":  125,
+                                        "y":  807,
+                                        "width":  76,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "collaboration,",
+                                        "x":  209,
+                                        "y":  807,
+                                        "width":  137,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  355,
+                                        "y":  807,
+                                        "width":  37,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "ethical",
+                                        "x":  399,
+                                        "y":  807,
+                                        "width":  67,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "reasoning.",
+                                        "x":  474,
+                                        "y":  809,
+                                        "width":  101,
+                                        "height":  23
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Option: Occupational/Experiential Learning",
+                      "x":  134,
+                      "y":  1345,
+                      "words":  [
+                                    {
+                                        "text":  "Option:",
+                                        "x":  134,
+                                        "y":  1346,
+                                        "width":  89,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Occupational/Experiential",
+                                        "x":  233,
+                                        "y":  1345,
+                                        "width":  323,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Learning",
+                                        "x":  567,
+                                        "y":  1346,
+                                        "width":  107,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FIRST YEAR",
+                      "x":  931,
+                      "y":  177,
+                      "words":  [
+                                    {
+                                        "text":  "FIRST",
+                                        "x":  931,
+                                        "y":  177,
+                                        "width":  71,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "YEAR",
+                                        "x":  1010,
+                                        "y":  177,
+                                        "width":  66,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  228,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  228,
+                                        "width":  98,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FALL",
+                      "x":  727,
+                      "y":  229,
+                      "words":  [
+                                    {
+                                        "text":  "FALL",
+                                        "x":  727,
+                                        "y":  229,
+                                        "width":  55,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ENGL 1110",
+                      "x":  727,
+                      "y":  262,
+                      "words":  [
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  727,
+                                        "y":  262,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  787,
+                                        "y":  263,
+                                        "width":  35,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BCIS 1110",
+                      "x":  727,
+                      "y":  296,
+                      "words":  [
+                                    {
+                                        "text":  "BCIS",
+                                        "x":  727,
+                                        "y":  296,
+                                        "width":  44,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  779,
+                                        "y":  296,
+                                        "width":  34,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "HIST",
+                      "x":  727,
+                      "y":  363,
+                      "words":  [
+                                    {
+                                        "text":  "HIST",
+                                        "x":  727,
+                                        "y":  363,
+                                        "width":  45,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SPRING",
+                      "x":  726,
+                      "y":  532,
+                      "words":  [
+                                    {
+                                        "text":  "SPRING",
+                                        "x":  726,
+                                        "y":  532,
+                                        "width":  86,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ENGL 1120",
+                      "x":  727,
+                      "y":  566,
+                      "words":  [
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  727,
+                                        "y":  566,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1120",
+                                        "x":  787,
+                                        "y":  566,
+                                        "width":  39,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FALL",
+                      "x":  727,
+                      "y":  883,
+                      "words":  [
+                                    {
+                                        "text":  "FALL",
+                                        "x":  727,
+                                        "y":  883,
+                                        "width":  55,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "COMM 1130",
+                      "x":  727,
+                      "y":  916,
+                      "words":  [
+                                    {
+                                        "text":  "COMM",
+                                        "x":  727,
+                                        "y":  916,
+                                        "width":  63,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1130",
+                                        "x":  798,
+                                        "y":  917,
+                                        "width":  39,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SPRING",
+                      "x":  726,
+                      "y":  1152,
+                      "words":  [
+                                    {
+                                        "text":  "SPRING",
+                                        "x":  726,
+                                        "y":  1152,
+                                        "width":  86,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "MATH 1130",
+                      "x":  727,
+                      "y":  1186,
+                      "words":  [
+                                    {
+                                        "text":  "MATH",
+                                        "x":  727,
+                                        "y":  1186,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1130",
+                                        "x":  789,
+                                        "y":  1187,
+                                        "width":  39,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "HIST 2110",
+                      "x":  727,
+                      "y":  1287,
+                      "words":  [
+                                    {
+                                        "text":  "HIST",
+                                        "x":  727,
+                                        "y":  1287,
+                                        "width":  45,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2110",
+                                        "x":  778,
+                                        "y":  1288,
+                                        "width":  39,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ENGL 2999",
+                      "x":  727,
+                      "y":  1321,
+                      "words":  [
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  727,
+                                        "y":  1321,
+                                        "width":  54,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "2999",
+                                        "x":  788,
+                                        "y":  1322,
+                                        "width":  47,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Composition (Area l)",
+                      "x":  874,
+                      "y":  262,
+                      "words":  [
+                                    {
+                                        "text":  "Composition",
+                                        "x":  874,
+                                        "y":  262,
+                                        "width":  122,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1005,
+                                        "y":  262,
+                                        "width":  51,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "l)",
+                                        "x":  1065,
+                                        "y":  262,
+                                        "width":  10,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Fundamentals of Information",
+                      "x":  875,
+                      "y":  295,
+                      "words":  [
+                                    {
+                                        "text":  "Fundamentals",
+                                        "x":  875,
+                                        "y":  295,
+                                        "width":  138,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  1021,
+                                        "y":  295,
+                                        "width":  19,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Information",
+                                        "x":  1047,
+                                        "y":  295,
+                                        "width":  111,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Literacy and Systems",
+                      "x":  875,
+                      "y":  329,
+                      "words":  [
+                                    {
+                                        "text":  "Literacy",
+                                        "x":  875,
+                                        "y":  329,
+                                        "width":  76,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  959,
+                                        "y":  329,
+                                        "width":  35,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Systems",
+                                        "x":  1002,
+                                        "y":  330,
+                                        "width":  83,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "United States History I (Area V)",
+                      "x":  875,
+                      "y":  363,
+                      "words":  [
+                                    {
+                                        "text":  "United",
+                                        "x":  875,
+                                        "y":  363,
+                                        "width":  62,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "States",
+                                        "x":  945,
+                                        "y":  363,
+                                        "width":  60,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "History",
+                                        "x":  1014,
+                                        "y":  363,
+                                        "width":  68,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "I",
+                                        "x":  1091,
+                                        "y":  363,
+                                        "width":  2,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1102,
+                                        "y":  363,
+                                        "width":  50,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "V)",
+                                        "x":  1160,
+                                        "y":  363,
+                                        "width":  21,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Transferable Liberal Arts Elective",
+                      "x":  873,
+                      "y":  396,
+                      "words":  [
+                                    {
+                                        "text":  "Transferable",
+                                        "x":  873,
+                                        "y":  396,
+                                        "width":  121,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Liberal",
+                                        "x":  1003,
+                                        "y":  396,
+                                        "width":  64,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  1075,
+                                        "y":  397,
+                                        "width":  39,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  1123,
+                                        "y":  396,
+                                        "width":  74,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Field of Study Requirement",
+                      "x":  875,
+                      "y":  430,
+                      "words":  [
+                                    {
+                                        "text":  "Field",
+                                        "x":  875,
+                                        "y":  430,
+                                        "width":  44,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  928,
+                                        "y":  430,
+                                        "width":  18,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Study",
+                                        "x":  952,
+                                        "y":  430,
+                                        "width":  56,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Requirement",
+                                        "x":  1016,
+                                        "y":  430,
+                                        "width":  126,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  263,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  263,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  330,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  330,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  364,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  364,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  398,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  398,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  431,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  431,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "15",
+                      "x":  1219,
+                      "y":  465,
+                      "words":  [
+                                    {
+                                        "text":  "15",
+                                        "x":  1219,
+                                        "y":  465,
+                                        "width":  22,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  874,
+                      "y":  464,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  874,
+                                        "y":  464,
+                                        "width":  108,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  990,
+                                        "y":  464,
+                                        "width":  81,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Composition 11 (Area l)",
+                      "x":  874,
+                      "y":  565,
+                      "words":  [
+                                    {
+                                        "text":  "Composition",
+                                        "x":  874,
+                                        "y":  565,
+                                        "width":  122,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "11",
+                                        "x":  1006,
+                                        "y":  566,
+                                        "width":  9,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1024,
+                                        "y":  565,
+                                        "width":  50,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "l)",
+                                        "x":  1084,
+                                        "y":  565,
+                                        "width":  10,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  532,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  532,
+                                        "width":  98,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Creative and Fine Arts (Area VI)",
+                      "x":  874,
+                      "y":  599,
+                      "words":  [
+                                    {
+                                        "text":  "Creative",
+                                        "x":  874,
+                                        "y":  599,
+                                        "width":  79,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "and",
+                                        "x":  961,
+                                        "y":  599,
+                                        "width":  35,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Fine",
+                                        "x":  1006,
+                                        "y":  599,
+                                        "width":  39,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  1052,
+                                        "y":  600,
+                                        "width":  39,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1100,
+                                        "y":  599,
+                                        "width":  50,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "VI)",
+                                        "x":  1158,
+                                        "y":  599,
+                                        "width":  25,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Science Elective (Area Ill)",
+                      "x":  874,
+                      "y":  632,
+                      "words":  [
+                                    {
+                                        "text":  "Science",
+                                        "x":  874,
+                                        "y":  633,
+                                        "width":  77,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  960,
+                                        "y":  633,
+                                        "width":  74,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1042,
+                                        "y":  633,
+                                        "width":  51,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "Ill)",
+                                        "x":  1102,
+                                        "y":  632,
+                                        "width":  23,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Field of Study Requirement",
+                      "x":  875,
+                      "y":  666,
+                      "words":  [
+                                    {
+                                        "text":  "Field",
+                                        "x":  875,
+                                        "y":  666,
+                                        "width":  44,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  928,
+                                        "y":  666,
+                                        "width":  18,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Study",
+                                        "x":  952,
+                                        "y":  666,
+                                        "width":  56,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Requirement",
+                                        "x":  1016,
+                                        "y":  666,
+                                        "width":  126,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Transferable Liberal Arts Elective",
+                      "x":  873,
+                      "y":  700,
+                      "words":  [
+                                    {
+                                        "text":  "Transferable",
+                                        "x":  873,
+                                        "y":  700,
+                                        "width":  121,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Liberal",
+                                        "x":  1003,
+                                        "y":  700,
+                                        "width":  64,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  1075,
+                                        "y":  701,
+                                        "width":  39,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  1123,
+                                        "y":  700,
+                                        "width":  74,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  874,
+                      "y":  734,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  874,
+                                        "y":  734,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  990,
+                                        "y":  734,
+                                        "width":  81,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SECOND YEAR",
+                      "x":  913,
+                      "y":  831,
+                      "words":  [
+                                    {
+                                        "text":  "SECOND",
+                                        "x":  913,
+                                        "y":  831,
+                                        "width":  106,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "YEAR",
+                                        "x":  1027,
+                                        "y":  832,
+                                        "width":  67,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  566,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  566,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  600,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  600,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  634,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  634,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  667,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  667,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  701,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  701,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "16",
+                      "x":  1219,
+                      "y":  735,
+                      "words":  [
+                                    {
+                                        "text":  "16",
+                                        "x":  1219,
+                                        "y":  735,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  883,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  883,
+                                        "width":  98,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Public Speaking (Area l)",
+                      "x":  875,
+                      "y":  916,
+                      "words":  [
+                                    {
+                                        "text":  "Public",
+                                        "x":  875,
+                                        "y":  916,
+                                        "width":  59,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Speaking",
+                                        "x":  941,
+                                        "y":  916,
+                                        "width":  90,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1040,
+                                        "y":  916,
+                                        "width":  51,
+                                        "height":  24
+                                    },
+                                    {
+                                        "text":  "l)",
+                                        "x":  1100,
+                                        "y":  916,
+                                        "width":  11,
+                                        "height":  24
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PSYC 1110 or soci 1110 (Area IV)",
+                      "x":  875,
+                      "y":  949,
+                      "words":  [
+                                    {
+                                        "text":  "PSYC",
+                                        "x":  875,
+                                        "y":  950,
+                                        "width":  49,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  931,
+                                        "y":  951,
+                                        "width":  34,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "or",
+                                        "x":  974,
+                                        "y":  955,
+                                        "width":  19,
+                                        "height":  15
+                                    },
+                                    {
+                                        "text":  "soci",
+                                        "x":  1000,
+                                        "y":  950,
+                                        "width":  45,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "1110",
+                                        "x":  1053,
+                                        "y":  951,
+                                        "width":  35,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1096,
+                                        "y":  949,
+                                        "width":  50,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "IV)",
+                                        "x":  1156,
+                                        "y":  949,
+                                        "width":  25,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Field of Study Requirement",
+                      "x":  875,
+                      "y":  983,
+                      "words":  [
+                                    {
+                                        "text":  "Field",
+                                        "x":  875,
+                                        "y":  983,
+                                        "width":  44,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  928,
+                                        "y":  983,
+                                        "width":  18,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Study",
+                                        "x":  952,
+                                        "y":  983,
+                                        "width":  56,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Requirement",
+                                        "x":  1016,
+                                        "y":  983,
+                                        "width":  126,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Transferable Liberal Arts Elective",
+                      "x":  873,
+                      "y":  1017,
+                      "words":  [
+                                    {
+                                        "text":  "Transferable",
+                                        "x":  873,
+                                        "y":  1017,
+                                        "width":  121,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Liberal",
+                                        "x":  1003,
+                                        "y":  1017,
+                                        "width":  64,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Arts",
+                                        "x":  1075,
+                                        "y":  1018,
+                                        "width":  39,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Elective",
+                                        "x":  1123,
+                                        "y":  1017,
+                                        "width":  74,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Level)",
+                      "x":  875,
+                      "y":  1050,
+                      "words":  [
+                                    {
+                                        "text":  "Level)",
+                                        "x":  875,
+                                        "y":  1050,
+                                        "width":  56,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  874,
+                      "y":  1084,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  874,
+                                        "y":  1085,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  990,
+                                        "y":  1084,
+                                        "width":  81,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  917,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  917,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  951,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  951,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  984,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  984,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  1018,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  1018,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  1052,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  1052,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "15",
+                      "x":  1219,
+                      "y":  1086,
+                      "words":  [
+                                    {
+                                        "text":  "15",
+                                        "x":  1219,
+                                        "y":  1086,
+                                        "width":  22,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  1182,
+                      "y":  1152,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1182,
+                                        "y":  1152,
+                                        "width":  98,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Survey of Mathematics (Area 11)",
+                      "x":  874,
+                      "y":  1185,
+                      "words":  [
+                                    {
+                                        "text":  "Survey",
+                                        "x":  874,
+                                        "y":  1186,
+                                        "width":  66,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  948,
+                                        "y":  1185,
+                                        "width":  18,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Mathematics",
+                                        "x":  973,
+                                        "y":  1186,
+                                        "width":  126,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "(Area",
+                                        "x":  1107,
+                                        "y":  1185,
+                                        "width":  51,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "11)",
+                                        "x":  1167,
+                                        "y":  1185,
+                                        "width":  17,
+                                        "height":  25
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Field of Study Requirement",
+                      "x":  875,
+                      "y":  1219,
+                      "words":  [
+                                    {
+                                        "text":  "Field",
+                                        "x":  875,
+                                        "y":  1219,
+                                        "width":  44,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  928,
+                                        "y":  1219,
+                                        "width":  18,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Study",
+                                        "x":  952,
+                                        "y":  1219,
+                                        "width":  56,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Requirement",
+                                        "x":  1016,
+                                        "y":  1219,
+                                        "width":  126,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Field of Study Requirement",
+                      "x":  875,
+                      "y":  1253,
+                      "words":  [
+                                    {
+                                        "text":  "Field",
+                                        "x":  875,
+                                        "y":  1253,
+                                        "width":  44,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  928,
+                                        "y":  1253,
+                                        "width":  18,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Study",
+                                        "x":  952,
+                                        "y":  1253,
+                                        "width":  56,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Requirement",
+                                        "x":  1016,
+                                        "y":  1253,
+                                        "width":  126,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Survey of New Mexico History",
+                      "x":  874,
+                      "y":  1286,
+                      "words":  [
+                                    {
+                                        "text":  "Survey",
+                                        "x":  874,
+                                        "y":  1287,
+                                        "width":  66,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "of",
+                                        "x":  948,
+                                        "y":  1286,
+                                        "width":  18,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "New",
+                                        "x":  973,
+                                        "y":  1288,
+                                        "width":  43,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "Mexico",
+                                        "x":  1024,
+                                        "y":  1287,
+                                        "width":  68,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "History",
+                                        "x":  1101,
+                                        "y":  1287,
+                                        "width":  69,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Capstone Portfolio Course",
+                      "x":  874,
+                      "y":  1320,
+                      "words":  [
+                                    {
+                                        "text":  "Capstone",
+                                        "x":  874,
+                                        "y":  1321,
+                                        "width":  92,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Portfolio",
+                                        "x":  975,
+                                        "y":  1320,
+                                        "width":  81,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Course",
+                                        "x":  1064,
+                                        "y":  1321,
+                                        "width":  68,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Semester Credits",
+                      "x":  874,
+                      "y":  1354,
+                      "words":  [
+                                    {
+                                        "text":  "Semester",
+                                        "x":  874,
+                                        "y":  1355,
+                                        "width":  108,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Credits",
+                                        "x":  990,
+                                        "y":  1354,
+                                        "width":  81,
+                                        "height":  21
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "TOTAL DEGREE CREDITS",
+                      "x":  873,
+                      "y":  1422,
+                      "words":  [
+                                    {
+                                        "text":  "TOTAL",
+                                        "x":  873,
+                                        "y":  1422,
+                                        "width":  72,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "DEGREE",
+                                        "x":  953,
+                                        "y":  1422,
+                                        "width":  91,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  1052,
+                                        "y":  1422,
+                                        "width":  98,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "x":  1225,
+                      "y":  1187,
+                      "words":  [
+                                    {
+                                        "text":  "4",
+                                        "x":  1225,
+                                        "y":  1187,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  1220,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  1220,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  1254,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  1254,
+                                        "width":  11,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "x":  1225,
+                      "y":  1288,
+                      "words":  [
+                                    {
+                                        "text":  "3",
+                                        "x":  1225,
+                                        "y":  1288,
+                                        "width":  11,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "14",
+                      "x":  1220,
+                      "y":  1356,
+                      "words":  [
+                                    {
+                                        "text":  "14",
+                                        "x":  1220,
+                                        "y":  1356,
+                                        "width":  21,
+                                        "height":  18
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "60",
+                      "x":  1217,
+                      "y":  1423,
+                      "words":  [
+                                    {
+                                        "text":  "60",
+                                        "x":  1217,
+                                        "y":  1423,
+                                        "width":  27,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Option",
+                      "x":  128,
+                      "y":  1405,
+                      "words":  [
+                                    {
+                                        "text":  "Option",
+                                        "x":  128,
+                                        "y":  1405,
+                                        "width":  74,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ENGL 2994",
+                      "x":  128,
+                      "y":  1609,
+                      "words":  [
+                                    {
+                                        "text":  "ENGL",
+                                        "x":  128,
+                                        "y":  1609,
+                                        "width":  54,
+                                        "height":  19
+                                    },
+                                    {
+                                        "text":  "2994",
+                                        "x":  188,
+                                        "y":  1609,
+                                        "width":  49,
+                                        "height":  19
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CREDITS",
+                      "x":  582,
+                      "y":  1406,
+                      "words":  [
+                                    {
+                                        "text":  "CREDITS",
+                                        "x":  582,
+                                        "y":  1406,
+                                        "width":  99,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Credit for Experiential Learning",
+                      "x":  275,
+                      "y":  1439,
+                      "words":  [
+                                    {
+                                        "text":  "Credit",
+                                        "x":  275,
+                                        "y":  1439,
+                                        "width":  58,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  339,
+                                        "y":  1439,
+                                        "width":  27,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Experiential",
+                                        "x":  374,
+                                        "y":  1439,
+                                        "width":  112,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Learning",
+                                        "x":  496,
+                                        "y":  1439,
+                                        "width":  85,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Credit for Experiential Learning",
+                      "x":  275,
+                      "y":  1473,
+                      "words":  [
+                                    {
+                                        "text":  "Credit",
+                                        "x":  275,
+                                        "y":  1473,
+                                        "width":  58,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  339,
+                                        "y":  1473,
+                                        "width":  27,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Experiential",
+                                        "x":  374,
+                                        "y":  1473,
+                                        "width":  112,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Learning",
+                                        "x":  496,
+                                        "y":  1473,
+                                        "width":  85,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Credit for Experiential Learning",
+                      "x":  275,
+                      "y":  1506,
+                      "words":  [
+                                    {
+                                        "text":  "Credit",
+                                        "x":  275,
+                                        "y":  1506,
+                                        "width":  58,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  339,
+                                        "y":  1507,
+                                        "width":  27,
+                                        "height":  20
+                                    },
+                                    {
+                                        "text":  "Experiential",
+                                        "x":  374,
+                                        "y":  1506,
+                                        "width":  112,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Learning",
+                                        "x":  496,
+                                        "y":  1506,
+                                        "width":  85,
+                                        "height":  27
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Credit for Experiential Learning",
+                      "x":  275,
+                      "y":  1540,
+                      "words":  [
+                                    {
+                                        "text":  "Credit",
+                                        "x":  275,
+                                        "y":  1540,
+                                        "width":  58,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  339,
+                                        "y":  1540,
+                                        "width":  27,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Experiential",
+                                        "x":  374,
+                                        "y":  1540,
+                                        "width":  112,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Learning",
+                                        "x":  496,
+                                        "y":  1540,
+                                        "width":  85,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Credit for Experiential Learning",
+                      "x":  275,
+                      "y":  1574,
+                      "words":  [
+                                    {
+                                        "text":  "Credit",
+                                        "x":  275,
+                                        "y":  1574,
+                                        "width":  58,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "for",
+                                        "x":  339,
+                                        "y":  1574,
+                                        "width":  27,
+                                        "height":  21
+                                    },
+                                    {
+                                        "text":  "Experiential",
+                                        "x":  374,
+                                        "y":  1574,
+                                        "width":  112,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Learning",
+                                        "x":  496,
+                                        "y":  1574,
+                                        "width":  85,
+                                        "height":  26
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Experiential Learning Portfolio",
+                      "x":  276,
+                      "y":  1608,
+                      "words":  [
+                                    {
+                                        "text":  "Experiential",
+                                        "x":  276,
+                                        "y":  1608,
+                                        "width":  113,
+                                        "height":  25
+                                    },
+                                    {
+                                        "text":  "Learning",
+                                        "x":  399,
+                                        "y":  1608,
+                                        "width":  84,
+                                        "height":  26
+                                    },
+                                    {
+                                        "text":  "Portfolio",
+                                        "x":  492,
+                                        "y":  1608,
+                                        "width":  81,
+                                        "height":  20
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "68",
+                      "x":  691,
+                      "y":  1768,
+                      "words":  [
+                                    {
+                                        "text":  "68",
+                                        "x":  691,
+                                        "y":  1768,
+                                        "width":  27,
+                                        "height":  20
+                                    }
+                                ]
+                  }
+              ]
+}
