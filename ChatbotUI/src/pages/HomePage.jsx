@@ -1,77 +1,78 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { LuArrowRight, LuChartNoAxesCombined, LuChevronDown, LuMapPin } from "react-icons/lu";
 import { load } from "../utils/storage.js";
+import { homeActionUrl, NORTHERN_PLANNER_URL } from "../utils/homeNavigation.js";
+import "./HomePage.css";
+
+const DISCLAIMER = "edplanAI-29 helps students explore colleges, compare programs, save options, and organize their education plans across 29 campuses throughout New Mexico. We strive to keep information accurate and up to date, but academic requirements and costs may change. Please verify important details with the respective college or academic advisor before making academic decisions.";
 
 const HomePage = () => {
-	const profile = load("UserProfile");
-	const firstName =
-		typeof profile?.first_name === "string"
-			? profile.first_name
-			: typeof profile?.firstName === "string"
-			? profile.firstName
-			: "";
+  const [disclaimerOpen, setDisclaimerOpen] = useState(false);
+  const authenticated = Boolean(load("AuthToken"));
 
-	return (
-		<section className="w-full h-full flex flex-col items-center justify-center py-12 px-6 bg-gradient-to-br from-indigo-50 via-white to-purple-50">
-			<div className="container mx-auto px-4 sm:px-6 lg:px-8">
-				<div className="max-w-4xl mx-auto text-center space-y-8">
-					{/* Main Heading */}
-					<img
-						src="/assets/logo.jpeg"
-						alt="EdPlan.ai"
-						className="w-28 h-28 object-contain mx-auto rounded-full shadow-md"
-					/>
-					<h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground">
-						Find Your Perfect <span className="text-[#0069e0]">College</span>
-					</h1>
+  useEffect(() => {
+    const previousTitle = document.title;
+    document.title = "edplanAI-29 | Your New Mexico Education Plan";
+    return () => { document.title = previousTitle; };
+  }, []);
 
-					<h2 className="text-4xl font-bold text-slate-900">
-						Plan your educational path.
-					</h2>
-
-					<p className="text-lg text-slate-600">
-						Discover and compare colleges, explore programs, and create
-						personalized education plans. Make informed decisions about your
-						future with comprehensive data and expert guidance.
-					</p>
-				</div>
-			</div>
-
-			<div className="max-w-3xl text-center space-y-6">
-				<div className="flex flex-wrap items-center justify-center gap-4 mt-5">
-					{firstName ? (
-						<div className="px-6 py-3 rounded-lg border border-slate-300 text-slate-700 font-semibold">
-							Hi {firstName}
-						</div>
-					) : (
-						<Link
-							to="/login"
-							className="px-6 py-3 rounded-lg border border-slate-300 text-slate-700 font-semibold hover:border-slate-500"
-						>
-							Login
-						</Link>
-					)}
-					<Link
-						to="/career"
-						className="px-6 py-3 rounded-lg bg-[#0069e0] hover:bg-[#1977e3] text-white font-semibold shadow"
-					>
-						Start Now
-					</Link>
-				</div>
-
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-slate-600">
-					<div className="bg-white rounded-lg shadow p-4">
-						Help me find the best education plan tailored to my goals.
-					</div>
-					<div className="bg-white rounded-lg shadow p-4">
-						Estimate the total tuition and living expenses by university.
-					</div>
-					<div className="bg-white rounded-lg shadow p-4">
-						Learn how to apply for scholarships and financial aid.
-					</div>
-				</div>
-			</div>
-		</section>
-	);
+  return (
+    <div className="edplan-home">
+      <a className="home-skip-link" href="#home-content">Skip to content</a>
+      <section id="home-content" className="home-landscape" tabIndex={-1} aria-label="Explore and plan your education">
+        <div className="home-introduction">
+          <h1>Your Education Plan for New Mexico, Simplified</h1>
+          <p>One platform to explore, compare, and plan your path through New Mexico higher education — built for students, advisors, and families.</p>
+        </div>
+        <section id="compare-colleges" className="home-comparison-card" aria-labelledby="compare-heading">
+          <div className="home-comparison-intro">
+            <span className="home-feature-icon" aria-hidden="true"><LuChartNoAxesCombined /></span>
+            <div>
+              <h2 id="compare-heading">Compare 29 NM Colleges</h2>
+              <p>Explore tuition, programs, outcomes, and compare side-by-side across New Mexico&apos;s 29 public colleges.</p>
+              <ul className="home-feature-badges" aria-label="College comparison features">
+                <li>Tuition &amp; Costs</li><li>Programs &amp; Degrees</li><li>Outcomes &amp; Rankings</li>
+              </ul>
+            </div>
+          </div>
+          <Link className="home-primary-action" to={homeActionUrl(authenticated, "/compare")}>
+            {authenticated ? "Compare Colleges" : "Login to Compare"}<LuArrowRight aria-hidden="true" />
+          </Link>
+          <p className="home-account-prompt">{authenticated ? (
+            <Link to="/uni">Explore colleges to add to your comparison</Link>
+          ) : <>New to edplanAI? <Link to="/signup?next=%2Fcompare">Create free account</Link></>}</p>
+        </section>
+        <section id="college-planner" className="home-planner-section" aria-labelledby="planner-heading">
+          <h2 id="planner-heading">Directly make your plan in a pre-chosen college</h2>
+          <p className="home-planner-subtitle">Other colleges joining soon</p>
+          <article className="home-planner-card" aria-labelledby="northern-heading">
+            <span className="home-pin-icon" aria-hidden="true"><LuMapPin /></span>
+            <div>
+              <h3 id="northern-heading">Northern NM College Planner</h3>
+              <p>Build a personalized path for Northern New Mexico students — career, transfer, financial aid, and course planning in one place.</p>
+              <Link className="home-planner-action" to={homeActionUrl(authenticated, NORTHERN_PLANNER_URL)}>
+                {authenticated ? "Open Planner" : "Login to Planner"}<LuArrowRight aria-hidden="true" />
+              </Link>
+              <p className="home-planner-note">Northern NM students start here</p>
+            </div>
+          </article>
+        </section>
+      </section>
+      <footer id="home-about" className="home-footer">
+        <p>Serving students across Northern New Mexico <span aria-hidden="true">•</span> Taos <span aria-hidden="true">•</span> Santa Fe <span aria-hidden="true">•</span> Española <span aria-hidden="true">•</span> Farmington <span aria-hidden="true">•</span> Los Alamos</p>
+        <button className="home-disclaimer-toggle" type="button" aria-expanded={disclaimerOpen}
+          aria-controls="home-disclaimer" onClick={() => setDisclaimerOpen(!disclaimerOpen)}>
+          Disclaimer — {disclaimerOpen ? "Know Less" : "Know More"}
+          <LuChevronDown aria-hidden="true" className={disclaimerOpen ? "is-expanded" : ""} />
+        </button>
+        <div id="home-disclaimer" className={`home-disclaimer${disclaimerOpen ? " is-expanded" : ""}`}
+          aria-hidden={!disclaimerOpen}>
+          <div><p>{DISCLAIMER}</p></div>
+        </div>
+      </footer>
+    </div>
+  );
 };
 
 export default HomePage;

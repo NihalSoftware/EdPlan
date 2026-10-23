@@ -229,11 +229,11 @@ const validatePlan = (planCourses, knownCodes) => {
 	return issues;
 };
 
-const EducationPlanEditor = () => {
+const EducationPlanEditor = ({ initialUniversity = "" }) => {
 	const [catalogOpen, setCatalogOpen] = useState(false);
 	const [programs, setPrograms] = useState([]);
 	const [selectedProgram, setSelectedProgram] = useState("");
-	const selectedUniversity = normalizeUniversityName(loadStorage("University") || "");
+	const selectedUniversity = normalizeUniversityName(initialUniversity || loadStorage("University") || "");
 	const [selectedDegree, setSelectedDegree] = useState("");
 	const [courses, setCourses] = useState([]);
 	const [availableCourses, setAvailableCourses] = useState([]);
@@ -260,6 +260,8 @@ const EducationPlanEditor = () => {
 				setError("Unable to load program catalog.");
 			});
 		// Load program from storage on mount (keep university even if program is missing)
+		// A homepage college shortcut must not restore another institution's draft.
+		if (initialUniversity && normalizeUniversityName(loadStorage("University")) !== initialUniversity) return;
 		const savedProgram = loadStorage("Programname", "");
 		setSelectedProgram(savedProgram || "");
 		const savedDegree =
@@ -272,7 +274,7 @@ const EducationPlanEditor = () => {
 		if (editingActive && storedEditingPlan) {
 			setEditingPlan(storedEditingPlan);
 		}
-	}, []);
+	}, [initialUniversity]);
 
 	// When no program is selected, clear available courses
 	useEffect(() => {
