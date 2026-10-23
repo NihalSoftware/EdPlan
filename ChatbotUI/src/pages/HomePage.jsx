@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { LuArrowRight, LuChartNoAxesCombined, LuChevronDown, LuMapPin } from "react-icons/lu";
+import { LuArrowRight, LuChevronDown, LuMapPin } from "react-icons/lu";
 import { load } from "../utils/storage.js";
 import { homeActionUrl, NORTHERN_PLANNER_URL } from "../utils/homeNavigation.js";
 import "./HomePage.css";
@@ -22,22 +22,21 @@ const HomePage = () => {
       <a className="home-skip-link" href="#home-content">Skip to content</a>
       <section id="home-content" className="home-landscape" tabIndex={-1} aria-label="Explore and plan your education">
         <div className="home-introduction">
-          <h1>Your Education Plan for New Mexico, Simplified</h1>
+          <h1>Your Future in New Mexico Starts Here</h1>
           <p>One platform to explore, compare, and plan your path through New Mexico higher education — built for students, advisors, and families.</p>
         </div>
         <section id="compare-colleges" className="home-comparison-card" aria-labelledby="compare-heading">
           <div className="home-comparison-intro">
-            <span className="home-feature-icon" aria-hidden="true"><LuChartNoAxesCombined /></span>
             <div>
-              <h2 id="compare-heading">Compare 29 NM Colleges</h2>
-              <p>Explore tuition, programs, outcomes, and compare side-by-side across New Mexico&apos;s 29 public colleges.</p>
+              <h2 id="compare-heading">Compare New Mexico's 29 Public Colleges</h2>
+              <p>Compare real tuition, degrees, and job outcomes — side-by-side, not on 29 different websites.</p>
               <ul className="home-feature-badges" aria-label="College comparison features">
                 <li>Tuition &amp; Costs</li><li>Programs &amp; Degrees</li><li>Outcomes &amp; Rankings</li>
               </ul>
             </div>
           </div>
           <Link className="home-primary-action" to={homeActionUrl(authenticated, "/compare")}>
-            {authenticated ? "Compare Colleges" : "Login to Compare"}<LuArrowRight aria-hidden="true" />
+            {authenticated ? "Start Comparing" : "Login to Compare"}<LuArrowRight aria-hidden="true" />
           </Link>
           <p className="home-account-prompt">{authenticated ? (
             <Link to="/uni">Explore colleges to add to your comparison</Link>

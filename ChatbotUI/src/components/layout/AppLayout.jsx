@@ -26,7 +26,13 @@ const AppLayout = () => {
 							</span>
 						)}
 					</button>
-					<h1 className="text-2xl font-semibold text-slate-900">EdPlan.ai</h1>
+					<img
+						src="/assets/edplan-ai-logo.jpg"
+						alt="EdPlan AI — Choose. Compare. Plan."
+						width="1599"
+						height="1066"
+						className="block w-44 max-w-full h-auto aspect-[2.5] object-cover object-[center_53%]"
+					/>
 					<div style={{ width: 40 }} />
 				</div>
 			</header>

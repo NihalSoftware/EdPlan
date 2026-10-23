@@ -56,7 +56,7 @@ const Navigation = ({ open, setOpen }) => {
 			)}
 		>
 			<header className="p-6 flex items-center justify-between gap-4">
-				<div className="flex items-center gap-3">
+				<div className="flex w-full min-w-0 items-center gap-3">
 					<button
 						type="button"
 						onClick={() => setOpen && setOpen(false)}
@@ -66,7 +66,13 @@ const Navigation = ({ open, setOpen }) => {
 						<span className="text-xl text-slate-700">✕</span>
 					</button>
 
-					<h1 className="text-3xl font-semibold text-slate-900">EdPlan.ai</h1>
+					<img
+						src="/assets/edplan-ai-logo.jpg"
+						alt="EdPlan AI — Choose. Compare. Plan."
+						width="1599"
+						height="1066"
+						className="block w-full min-w-0 h-auto aspect-[2.5] object-cover object-[center_53%]"
+					/>
 				</div>
 			</header>
 
