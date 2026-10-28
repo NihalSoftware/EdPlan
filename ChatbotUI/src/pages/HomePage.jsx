@@ -28,14 +28,14 @@ const HomePage = () => {
         <section id="compare-colleges" className="home-comparison-card" aria-labelledby="compare-heading">
           <div className="home-comparison-intro">
             <div>
-              <h2 id="compare-heading">Compare New Mexico's 29 Public Colleges</h2>
+              <h2 id="compare-heading">Compare New Mexico&apos;s 29 Public Colleges</h2>
               <p>Compare real tuition, degrees, and job outcomes — side-by-side, not on 29 different websites.</p>
               <ul className="home-feature-badges" aria-label="College comparison features">
                 <li>Tuition &amp; Costs</li><li>Programs &amp; Degrees</li><li>Outcomes &amp; Rankings</li>
               </ul>
             </div>
           </div>
-          <Link className="home-primary-action" to={homeActionUrl(authenticated, "/compare")}>
+          <Link className="home-primary-action" to={homeActionUrl(authenticated, "/uni")}>
             {authenticated ? "Start Comparing" : "Login to Compare"}<LuArrowRight aria-hidden="true" />
           </Link>
           <p className="home-account-prompt">{authenticated ? (

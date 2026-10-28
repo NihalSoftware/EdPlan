@@ -1,7 +1,7 @@
 export const NORTHERN_PLANNER_URL = "/educationplan?college=nnmc";
 
 // Explicit internal destinations only: never trust an arbitrary return URL.
-const HOME_DESTINATIONS = new Set(["/compare", NORTHERN_PLANNER_URL]);
+const HOME_DESTINATIONS = new Set(["/compare", "/uni", NORTHERN_PLANNER_URL]);
 
 export const homeActionUrl = (authenticated, destination) =>
   authenticated ? destination : `/login?next=${encodeURIComponent(destination)}`;

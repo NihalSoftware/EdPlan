@@ -23,7 +23,7 @@
 .home-comparison-card { max-width: 920px; margin: 0 auto; padding: 32px 36px 20px; background: white; border: 1px solid var(--home-border); border-radius: 16px; box-shadow: 0 1px 3px rgb(15 23 42 / 5%), 0 12px 32px rgb(15 23 42 / 6%); scroll-margin-top: 24px; }
 .home-comparison-card h2 { font-size: clamp(26px, 2.8vw, 40px); font-weight: 750; line-height: 1.2; letter-spacing: -.035em; }
 .home-comparison-intro p { margin-top: 14px; font-size: 17px; line-height: 1.55; color: var(--home-muted); }
-.home-feature-badges { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 0; padding: 0; list-style: none; }
+.home-feature-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 18px 0 0; padding: 0; list-style: none; }
 .home-feature-badges li { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 9px 12px; background: #eff6ff; border: 1px solid #dbeafe; border-radius: 9px; color: #1d4ed8; font-size: 12px; font-weight: 650; }
 .home-feature-badges li::before { content: ""; width: 8px; height: 8px; flex: 0 0 8px; border-radius: 50%; background: var(--home-primary); }
 .home-primary-action { display: flex; justify-content: center; align-items: center; gap: 8px; min-height: 58px; margin-top: 28px; padding: 14px 20px; border-radius: 9px; background: var(--home-primary); color: white; font-size: 19px; font-weight: 650; box-shadow: 0 6px 14px rgb(1 108 230 / 13%); transition: background .16s ease, box-shadow .16s ease; }
@@ -63,7 +63,7 @@
   .home-comparison-intro { text-align: center; }
   .home-comparison-card h2 { font-size: clamp(25px, 5vw, 34px); }
   .home-comparison-intro p { font-size: 14px; margin-top: 12px; }
-  .home-feature-badges { justify-content: center; gap: 7px; margin-top: 16px; }
+  .home-feature-badges { gap: 7px; margin-top: 16px; }
   .home-feature-badges li { padding: 8px 10px; font-size: 11px; min-height: 34px; }
   .home-primary-action { font-size: 17px; min-height: 54px; margin-top: 22px; }
   .home-comparison-card .home-account-prompt { font-size: 12px; }
