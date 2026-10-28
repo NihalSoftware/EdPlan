@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import toast from "react-hot-toast";
 import { save as saveStorage } from "../utils/storage.js";
 import { getCareers } from "../services/catalogService.js";
 import { listPrograms } from "../services/educationPlanService.js";
+import { LuArrowRight, LuChevronRight, LuCar, LuWrench, LuGraduationCap, LuBriefcaseBusiness, LuBadgeDollarSign, LuLightbulb, LuBookOpen, LuSettings2, LuMapPin, LuCheck } from "react-icons/lu";
+import "./CareerProgramPage.css";
 
 const CAREER_CATALOG_URL = "/assets/career_program_data.json";
 const CAREER_EMPLOYERS_URL = "/assets/career_employers.json";
@@ -86,9 +87,10 @@ const buildCareerProgramData = (programs = [], careers = []) => {
 
 const CareerProgramPage = () => {
 	const [data, setData] = useState(null);
-	const [selectedDegree, setSelectedDegree] = useState("");
-	const [selectedProgram, setSelectedProgram] = useState("");
-	const [notAvailable, setNotAvailable] = useState("");
+	const [selectedDegree, setSelectedDegree] = useState("Associate");
+	const [selectedProgram, setSelectedProgram] = useState("Automotive Technology");
+	const [careerIndex, setCareerIndex] = useState(0);
+	const [showAllCareers, setShowAllCareers] = useState(false);
 	const [employers, setEmployers] = useState({});
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState("");
@@ -158,232 +160,109 @@ const CareerProgramPage = () => {
 	}, [selectedDegree, degreeOptions]);
 
 	useEffect(() => {
-		if (!selectedDegree) return;
+		if (loading || !selectedDegree) return;
 		const isValid = degreeOptionsForProgram.some(
 			(degree) => degree.name === selectedDegree
 		);
 		if (!isValid) {
 			setSelectedDegree("");
 		}
-	}, [selectedDegree, degreeOptionsForProgram]);
-
-	useEffect(() => {
-		if (!selectedProgram || !selectedDegree) {
-			setNotAvailable("");
-			return;
-		}
-
-		const match = programsForDegree.find((program) => program.name === selectedProgram);
-
-		if (!match) {
-			setNotAvailable(`${selectedProgram} is not available in ${selectedDegree}`);
-		} else {
-			setNotAvailable("");
-		}
-	}, [selectedProgram, selectedDegree, programsForDegree]);
-
-	useEffect(() => {
-		if (notAvailable) {
-			toast.error(notAvailable);
-		}
-	}, [notAvailable]);
+	}, [loading, selectedDegree, degreeOptionsForProgram]);
 
 	const selectedProgramObj =
 		selectedProgram && selectedDegree
 			? programsForDegree.find((program) => program.name === selectedProgram) || null
 			: null;
 
-	const hasValidData = Boolean(selectedProgramObj);
-
-	const getEmployersForCareer = (careerTitle) => {
-		if (!careerTitle || !selectedDegree) return [];
-		return employers?.[selectedDegree]?.[careerTitle] || [];
-	};
+	const careers = selectedProgramObj?.careers || [];
+	const activeCareer = careers[careerIndex] || careers[0];
+	const visibleCareers = showAllCareers ? careers : careers.slice(0, 5);
+	const activeEmployers = employers?.[selectedDegree]?.[activeCareer?.title] || [];
+	const competencies = (activeCareer?.competencies || []).map((item) =>
+		typeof item === "string"
+			? { topic: item, description: data?.competencies?.[item] || "" }
+			: { topic: item.topic || item.name, description: item.description || "" }
+	);
+	const resetCareer = () => { setCareerIndex(0); setShowAllCareers(false); };
 
 	return (
-		<div
-			className="p-6 min-h-screen relative"
-			style={
-				hasValidData
-					? {}
-					: {
-							backgroundImage: "url('/assets/bg.png')",
-							backgroundSize: "cover",
-							backgroundPosition: "center",
-							backgroundAttachment: "fixed",
-					  }
-			}
-		>
-			{!hasValidData && (
-				<div className="absolute inset-0 bg-white" style={{ opacity: 0.6 }} />
-			)}
-			<div className="relative z-10">
-				<header>
-					<h1 className="text-[40px] -mt-2 font-semibold">
-						Discover <span className="text-[#0069e0]">Careers</span> and{" "}
-						<span className="text-[#0069e0]">Programs</span> that fit you
-					</h1>
-					<p className="text-[20px] font-medium text-slate-600 mb-5">
-						Connect your program to real careers and the competencies you need.
-					</p>
-				</header>
-				{loading && (
-					<div className="mb-5 rounded-lg border border-blue-100 bg-blue-50 px-4 py-3 text-sm font-semibold text-blue-700">
-						Loading catalog...
+		<div className="career-explorer">
+			<header className="career-hero">
+				<div className="career-hero-copy">
+					<span className="career-eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+					<h1>Explore Careers<br />and Programs that Fit You</h1>
+					<p>Your interests + our insights = a brighter future.</p>
+				</div>
+			</header>
+			<div className="career-content">
+				<section className="career-selection-bar" aria-label="Choose your program and degree">
+					<div className="career-field">
+						<span className="career-field-icon"><LuSettings2 aria-hidden="true" /></span>
+						<div><label htmlFor="career-program">Program</label>
+						<select id="career-program" value={selectedProgram} disabled={loading} onChange={(event) => { setSelectedProgram(event.target.value); resetCareer(); }}>
+							<option value="">Choose your program</option>
+							{allPrograms.map((program) => <option key={program.name} value={program.name}>{program.name}</option>)}
+						</select></div>
 					</div>
-				)}
-				{error && (
-					<div className="mb-5 rounded-lg border border-rose-100 bg-rose-50 px-4 py-3 text-sm font-semibold text-rose-700">
-						{error}
+					<div className="career-field">
+						<span className="career-field-icon"><LuGraduationCap aria-hidden="true" /></span>
+						<div><label htmlFor="career-degree">Degree</label>
+						<select id="career-degree" value={selectedDegree} disabled={loading} onChange={(event) => { setSelectedDegree(event.target.value); resetCareer(); }}>
+							<option value="">Choose your degree</option>
+							{degreeOptionsForProgram.map((degree) => <option key={degree.name} value={degree.name}>{degree.name}</option>)}
+						</select></div>
 					</div>
-				)}
-
-				<section className="career-filter-panel">
-					<div>
-						<label htmlFor="career-program" className="block font-medium mb-1">Program</label>
-						<select
-							id="career-program"
-							className="w-full border rounded-md p-2"
-							value={selectedProgram}
-							onChange={(event) => setSelectedProgram(event.target.value)}
-						>
-							<option value="">Choose Your Program</option>
-							{allPrograms.map((program) => (
-								<option key={program.name} value={program.name}>
-									{program.name}
-								</option>
-							))}
-						</select>
-					</div>
-
-					<div>
-						<label htmlFor="career-degree" className="block font-medium mb-1">Degree</label>
-						<select
-							id="career-degree"
-							className="w-full border rounded-md p-2"
-							value={selectedDegree}
-							onChange={(event) => setSelectedDegree(event.target.value)}
-						>
-							<option value="">Choose Your Degree</option>
-							{degreeOptionsForProgram.map((degree) => (
-								<option key={degree.name} value={degree.name}>
-									{degree.name}
-								</option>
-							))}
-						</select>
-					</div>
-
-					<Link
-						to="/intake"
-						onClick={() => {
-							if (selectedProgram) {
-								saveStorage("SelectedProgram", selectedProgram);
-							}
-							if (selectedDegree) {
-								saveStorage("SelectedDegreeLevel", selectedDegree);
-							}
-						}}
-						className="career-continue"
-					>
-						Continue
-					</Link>
-
-					<div className={selectedProgramObj ? "career-program-summary" : "hidden"}>
-						{selectedProgramObj && (
-							<div className="mt-4">
-								<h3 className="text-xl font-medium">Program Summary</h3>
-								<p className="text-slate-600 text-lg mb-2">
-									{selectedProgramObj.description}
-								</p>
-							</div>
-						)}
-					</div>
+					<Link to="/intake" className="career-next" onClick={() => {
+						if (selectedProgram) saveStorage("SelectedProgram", selectedProgram);
+						if (selectedDegree) saveStorage("SelectedDegreeLevel", selectedDegree);
+					}}>Continue <LuArrowRight aria-hidden="true" /></Link>
 				</section>
 
-				<section>
-					{selectedProgramObj && selectedProgramObj.careers.length > 0 && (
-						<div>
-							<h3 className="text-xl font-semibold mb-3">Career Options</h3>
+				{loading ? <div className="career-message" role="status">Loading your career possibilities…</div>
+					: error ? <div className="career-message career-error" role="alert">{error}</div>
+					: !selectedProgramObj ? <div className="career-message">Choose a program and degree to explore your career possibilities.</div>
+					: <>
+						<div className="career-main-grid">
+							<section className="career-options" aria-labelledby="career-options-heading">
+								<div className="career-section-heading"><div><h2 id="career-options-heading">Career Options</h2><p>Find the possibilities your program can open for you.</p></div><span>{careers.length} careers</span></div>
+								<ul className="career-option-list">
+									{visibleCareers.map((career, index) => <li key={career.title + index}>
+										<button type="button" className={activeCareer === career ? "career-option is-selected" : "career-option"} aria-pressed={activeCareer === career} onClick={() => setCareerIndex(index)}>
+											<span className={"career-option-icon tone-" + index % 4}>{/automotive|tire|vehicle|body/i.test(career.title) ? <LuCar aria-hidden="true" /> : <LuBriefcaseBusiness aria-hidden="true" />}</span>
+											<span className="career-option-copy"><strong>{career.title}</strong>{activeCareer === career && <span className="career-selected-salary"><LuBadgeDollarSign aria-hidden="true" /><span><b>{career.salary}</b><small>Salary range</small></span></span>}</span>
+											{activeCareer !== career && <span className="career-salary">{career.salary}</span>}
+											<LuChevronRight className="career-row-arrow" aria-hidden="true" />
+										</button>
+									</li>)}
+								</ul>
+								{careers.length > 5 && <button type="button" className="career-show-all" onClick={() => setShowAllCareers(!showAllCareers)}>{showAllCareers ? "Show fewer careers" : "View all " + careers.length + " careers"}<LuArrowRight aria-hidden="true" /></button>}
+								{!careers.length && <p className="career-message">Career details for this program are coming soon.</p>}
+							</section>
 
-							<ul className="space-y-12">
-								{selectedProgramObj.careers.map((career, careerIndex) => (
-									<li
-										key={career.title + careerIndex}
-										className="border border-slate-300 rounded-md p-4 hover:shadow-xl transition"
-									>
-										<div className="flex items-center text-lg gap-14">
-											<strong className="text-[#0069e0] w-72">
-												{career.title}
-											</strong>
-											<span className="font-bold text-green-700">
-												Salary Range: {career.salary}
-											</span>
-										</div>
-
-										{getEmployersForCareer(career.title).length > 0 && (
-											<div className="mt-3 text-sm">
-												<p className="text-base font-semibold text-slate-700">
-													Top employers for this career:
-												</p>
-												<ul className="mt-1 grid grid-cols-1 md:grid-cols-5 gap-2">
-													{getEmployersForCareer(career.title).map((employer) => (
-														<li
-															key={employer}
-															className="px-3 py-2 text-base font-medium rounded-2xl border border-slate-200 bg-indigo-50 text-slate-700 hover:shadow-md transition"
-														>
-															{employer}
-														</li>
-													))}
-												</ul>
-											</div>
-										)}
-
-										{career.competencies && career.competencies.length > 0 && (
-											<div className="mt-8">
-												<p className="text-base font-semibold text-slate-700 mb-3">
-													Key Competencies acquired by the students upon
-													completion of this program:
-												</p>
-
-												<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-													{career.competencies.map((competency, competencyIndex) => {
-														let topic = "";
-														let description = "";
-
-														if (typeof competency === "string") {
-															topic = competency;
-															description = data.competencies?.[competency] || "";
-														} else if (competency && typeof competency === "object") {
-															topic = competency.topic || competency.name || "";
-															description =
-																competency.description ||
-																data.competencies?.[topic] ||
-																"";
-														}
-
-														return (
-															<div
-																key={topic + competencyIndex}
-																className="flex gap-3 text-base p-3 bg-indigo-50 rounded-md border-l-4 border-indigo-400 hover:shadow-md transition"
-															>
-																<div>
-																	<strong className="text-indigo-700">
-																		{topic}:
-																	</strong>
-																	<p className="text-slate-600 mt-1">{description}</p>
-																</div>
-															</div>
-														);
-													})}
-												</div>
-											</div>
-										)}
-									</li>
-								))}
-							</ul>
+							<aside className="career-snapshot" aria-labelledby="snapshot-heading">
+								<h2 id="snapshot-heading"><span className="career-small-icon"><LuBookOpen aria-hidden="true" /></span>Program Snapshot</h2>
+								<dl>
+									<div><span className="career-small-icon"><LuWrench aria-hidden="true" /></span><div><dt>Program</dt><dd>{selectedProgram}</dd></div></div>
+									<div><span className="career-small-icon"><LuGraduationCap aria-hidden="true" /></span><div><dt>Degree level</dt><dd>{selectedDegree}</dd></div></div>
+									{activeCareer && <div><span className="career-small-icon"><LuBadgeDollarSign aria-hidden="true" /></span><div><dt>Salary range</dt><dd>{activeCareer.salary}</dd></div></div>}
+									<div><span className="career-small-icon"><LuBriefcaseBusiness aria-hidden="true" /></span><div><dt>About this program</dt><dd className="career-summary">{selectedProgramObj.description}</dd></div></div>
+								</dl>
+								<div className="career-inspiration"><LuLightbulb aria-hidden="true" /><span>Dream It. Plan It. Do It.</span></div>
+							</aside>
 						</div>
-					)}
-				</section>
+
+						<div className="career-detail-grid" aria-live="polite">
+							<section className="career-employers" aria-labelledby="employers-heading">
+								<h2 id="employers-heading">Top Employers</h2><p>Explore employers connected to this career.</p>
+								{activeEmployers.length ? <ul>{activeEmployers.map((employer) => <li key={employer}><LuBriefcaseBusiness aria-hidden="true" /><span>{employer}</span></li>)}</ul> : <p className="career-no-details">Employer information is not available for this career yet.</p>}
+							</section>
+							<section className="career-competencies" aria-labelledby="competencies-heading">
+								<div className="career-section-heading"><h2 id="competencies-heading">Key Competencies</h2><span><LuMapPin aria-hidden="true" />New Mexico</span></div>
+								<p>Skills you’ll build for {activeCareer?.title || selectedProgram}.</p>
+								{competencies.length ? <ul>{competencies.map((competency, index) => <li key={competency.topic + index}><span><LuCheck aria-hidden="true" />{competency.topic}</span>{competency.description && <p>{competency.description}</p>}</li>)}</ul> : <p className="career-no-details">Competency information is not available for this career yet.</p>}
+							</section>
+						</div>
+					</>}
 			</div>
 		</div>
 	);
