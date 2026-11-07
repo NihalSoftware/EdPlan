@@ -1,4 +1,5 @@
 from datetime import datetime
+from typing import Literal
 
 from pydantic import BaseModel, EmailStr
 
@@ -27,7 +28,7 @@ class RegisterRequest(BaseModel):
     email: EmailStr
     phone_number: str | None = None
     password: str
-    role: UserRole = UserRole.CUSTOMER
+    role: Literal[UserRole.CUSTOMER] = UserRole.CUSTOMER
 
 
 class UserProfile(BaseModel):

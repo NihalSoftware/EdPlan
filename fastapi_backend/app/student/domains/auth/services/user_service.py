@@ -24,6 +24,8 @@ async def get_user_by_email(db: AsyncSession, email: str) -> User | None:
 
 
 async def register_user(db: AsyncSession, payload: RegisterRequest) -> User:
+    if payload.role != UserRole.CUSTOMER:
+        raise HTTPException(status_code=403, detail="Public registration is for students only")
     existing = await get_user_by_email(db, payload.email)
     if existing:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Email already exists")

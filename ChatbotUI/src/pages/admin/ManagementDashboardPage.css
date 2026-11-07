@@ -1,0 +1,126 @@
+.management-shell { --mg-navy: #14284f; --mg-blue: #1768e7; --mg-text: #192e4e; --mg-muted: #65748b; color: var(--mg-text); background: #f4f7fc; min-height: 100vh; font-family: Inter, system-ui, sans-serif; font-size: 14px; }
+.management-shell * { box-sizing: border-box; }
+.management-shell :is(h1,h2,p,ul) { margin: 0; }
+.management-shell h2 { font-size: 16px; font-weight: 700; letter-spacing: -.025em; }
+.management-shell :is(a,button,select,input,summary):focus-visible { outline: 3px solid #1768e7; outline-offset: 4px; }
+.management-sidebar { position: fixed; width: 248px; inset: 0 auto 0 0; z-index: 40; display: flex; flex-direction: column; padding: 30px 18px 20px; color: #e7effe; background: linear-gradient(160deg,#19345d,#12254a 70%); }
+.management-brand { display: flex; align-items: center; gap: 10px; padding: 0 10px; font-size: 27px; font-weight: 700; }
+.management-brand-symbol { font-size: 43px; color: #eea365; }
+.management-brand div>span { color: #73d0db; margin-left: 3px; }
+.management-brand small { display: block; color: #a4badb; font-size: 7px; letter-spacing: .11em; margin-top: 3px; }
+.management-brand button { display: none; }
+.management-nav-label { font-size: 9px; letter-spacing: .12em; color: #91a8cb; margin: 42px 12px 13px !important; }
+.management-sidebar nav { display: grid; gap: 8px; }
+.management-sidebar nav a { display: flex; align-items: center; gap: 10px; border-radius: 8px; padding: 13px 12px; font-size: 12px; color: #bbcee8; }
+.management-sidebar nav a:first-child { background: #2866c7; color: #fff; box-shadow: 0 5px 18px #041e4b22; }
+.management-sidebar nav a:hover { background: #ffffff14; color: white; }
+.management-sidebar nav svg { width: 18px; height: 18px; }
+.management-sidebar-note { margin: auto 8px 22px; border: 1px solid #b7cef529; padding: 17px 13px; border-radius: 10px; background: #ffffff05; }
+.management-sidebar-note svg { display: block; color: #8fb8ee; font-size: 22px; margin-bottom: 10px; }
+.management-sidebar-note strong { font-size: 11px; }
+.management-sidebar-note p { font-size: 10px; line-height: 1.7; color: #a4b9d9; margin-top: 6px; }
+.management-back-to-site { display: flex; align-items: center; justify-content: space-between; padding: 12px; color: #a9bfdc; font-size: 12px; border-top: 1px solid #ffffff15; }
+.management-main { margin-left: 248px; min-width: 0; }
+.management-topbar { height: 66px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 30px; background: white; border-bottom: 1px solid #e5ebf4; font-size: 11px; color: #6d7f98; }
+.management-topbar>div { display: flex; align-items: center; gap: 13px; }
+.management-topbar b { font-weight: 500; color: #29405e; margin-left: 8px; }
+.management-access-badge { display: flex; align-items: center; gap: 6px; color: #477064; font-size: 10px; }
+.management-menu { display: none; }
+.management-body { max-width: 1660px; margin: 0 auto; padding: 32px 30px 20px; }
+.management-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 24px; }
+.management-eyebrow { color: #6682aa; font-size: 9px; letter-spacing: .13em; font-weight: 700; }
+.management-heading h1 { margin: 7px 0; font-size: clamp(23px,2.3vw,34px); line-height: 1.25; font-weight: 720; letter-spacing: -.04em; }
+.management-heading p:last-child { color: var(--mg-muted); font-size: 12px; line-height: 1.6; }
+.management-export { display: inline-flex; align-items: center; justify-content: center; gap: 9px; white-space: nowrap; padding: 11px 15px; color: white; background: var(--mg-blue); border-radius: 8px; font-size: 11px; font-weight: 600; box-shadow: 0 3px 8px #1768e71a; }
+.management-shell button:disabled { opacity: .45; cursor: not-allowed; }
+.management-context { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 15px 18px; border: 1px solid #dbe8fa; border-radius: 10px; background: #eaf3ff; margin-bottom: 18px; }
+.management-context>div { display: flex; align-items: center; gap: 11px; }
+.management-context svg { font-size: 23px; color: #447cbf; flex-shrink: 0; }
+.management-context strong { display: block; color: #224d80; font-size: 11px; }
+.management-context p span { display: block; color: #617e9f; font-size: 10px; margin-top: 4px; line-height: 1.5; }
+.management-context-tag { font-size: 8px; color: #4976a8; letter-spacing: .05em; white-space: nowrap; }
+.management-filters { display: flex; align-items: end; flex-wrap: wrap; gap: 12px; padding: 17px; background: white; border: 1px solid #e6ebf3; border-radius: 10px; }
+.management-filters label { display: grid; gap: 6px; flex: 1 1 140px; min-width: 0; font-size: 9px; font-weight: 600; color: #6b7a91; }
+.management-filters :is(select,input) { width: 100%; max-width: 100%; min-width: 0; min-height: 36px; border: 1px solid #dee5ef; border-radius: 6px; background: #fbfcfe; padding: 6px 9px; font-size: 11px; color: #304664; font-weight: 500; }
+.management-refresh { display: flex; align-items: center; gap: 6px; padding: 9px; font-size: 10px; color: #3064a8; }
+.management-reset { color: #7b8ca3; padding: 9px 0; font-size: 10px; }
+.management-custom { display: flex; align-items: end; gap: 12px; width: 100%; padding-top: 12px; border-top: 1px solid #edf1f6; }
+.management-custom button { padding: 11px 16px; border-radius: 6px; background: #1768e7; color: white; font-size: 11px; white-space: nowrap; }
+.management-freshness { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 9px; color: #8190a5; padding: 12px 1px 20px; }
+.management-freshness a { color: #3975bf; margin-left: 6px; text-decoration: underline; }
+.management-pillars { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; margin-bottom: 18px; }
+.management-pillars article { display: flex; align-items: start; gap: 11px; padding: 18px 14px; border: 1px solid #e3eaf3; border-radius: 11px; background: #fff; }
+.management-pillar-icon { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 9px; background: #eaf4ff; color: #1768e7; flex-shrink: 0; font-size: 18px; }
+.management-pillar-icon.purple { background: #f3edfb; color: #8a52c4; }
+.management-pillar-icon.green { background: #e9f8f0; color: #1f9d65; }
+.management-pillars h2 { font-size: 13px; }
+.management-pillars p { margin-top: 4px; font-size: 9px; color: #7d8ba0; }
+.management-pillars strong { display: block; font-size: 10px; font-weight: 600; margin-top: 13px; line-height: 1.6; }
+.management-pillars small { display: block; font-size: 8px; color: #8693a5; margin-top: 3px; }
+.management-kpis { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 14px; margin-bottom: 20px; }
+.management-kpi { min-width: 0; padding: 19px 17px 12px; border: 1px solid #e4eaf2; border-radius: 10px; background: white; border-top: 3px solid #8bb7f5; }
+.management-kpi.tone-impact { border-top-color: #7ac9a6; }
+.management-kpi>span { color: #62758e; font-size: 10px; }
+.management-kpi>strong { display: block; font-size: 31px; line-height: 1.4; font-weight: 740; letter-spacing: -.04em; margin: 6px 0; }
+.management-kpi>p { color: #8996a8; font-size: 9px; line-height: 1.6; min-height: 28px; }
+.management-shell summary { cursor: pointer; color: #4a76ad; font-size: 10px; padding: 8px 0; }
+.management-kpi details p { color: #6a7c92; font-size: 10px; line-height: 1.7; margin-bottom: 8px; }
+.management-grid { display: grid; grid-template-columns: minmax(0,1.4fr) minmax(0,1fr); gap: 18px; margin-bottom: 18px; }
+.management-panel { background: white; border: 1px solid #e3eaf3; border-radius: 11px; padding: 21px; min-width: 0; scroll-margin-top: 20px; }
+.management-panel-heading { display: flex; align-items: start; justify-content: space-between; gap: 14px; margin-bottom: 20px; }
+.management-panel-heading h2 { font-size: 14px; }
+.management-panel-heading p { font-size: 10px; color: #8290a4; line-height: 1.6; margin-top: 5px; }
+.management-tag { display: inline-block; color: #497cbb; background: #edf5ff; padding: 5px 7px; border-radius: 5px; font-size: 7px; letter-spacing: .07em; margin-bottom: 10px; }
+.management-tag.purple { color: #8352aa; background: #f3edfb; }
+.management-tag.green { color: #2c8e63; background: #ecf8f1; }
+.management-attention-count { display: grid; place-items: center; background: #fff4e5; color: #b97b23; border-radius: 7px; width: 28px; height: 28px; font-size: 12px; }
+.management-attention { padding: 0; list-style: none; display: grid; gap: 15px; }
+.management-attention li { padding-left: 12px; border-left: 2px solid #efbb64; }
+.management-attention strong { font-size: 11px; font-weight: 600; }
+.management-attention p { margin-top: 5px; font-size: 10px; line-height: 1.7; color: #7b899d; }
+.management-attention small { color: #697d95; font-size: 9px; }
+.management-unavailable { padding: 25px 14px; border: 1px dashed #dce5f1; border-radius: 9px; color: #7f8fa6; font-size: 11px; line-height: 1.9; background: #fbfcff; margin-top: 15px !important; }
+.management-clarification { margin-top: 13px !important; font-size: 10px; line-height: 1.8; color: #8a96a8; }
+.management-chart-legend { display: flex; flex-wrap: wrap; gap: 15px; font-size: 9px; color: #1768e7; margin-bottom: 12px; }
+.management-chart-legend span:last-child { color: #1f9d65; }
+.management-trend { width: 100%; min-height: 160px; }
+.management-trend text { font: 10px system-ui; fill: #8a99ad; }
+.management-data-table { max-width: 100%; }
+.management-data-table>div { overflow: auto; max-height: 320px; }
+.management-shell table { border-collapse: collapse; width: 100%; text-align: left; font-size: 10px; }
+.management-shell :is(td,th) { padding: 9px; border-bottom: 1px solid #e5ebf4; line-height: 1.6; vertical-align: top; overflow-wrap: anywhere; }
+.management-shell th { color: #5e7796; background: #f5f8fc; }
+.management-shell caption { text-align: left; padding: 8px; color: #7b8ba1; }
+.management-bars { list-style: none; padding: 0; display: grid; gap: 17px; }
+.management-bars li>div:first-child { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.management-bars button { color: #425a78; font-size: 11px; text-align: left; text-transform: capitalize; }
+.management-bars button:hover { color: #1768e7; text-decoration: underline; }
+.management-bars b { color: #345c89; font-size: 12px; white-space: nowrap; }
+.management-bars small { color: #8a9ab0; font-weight: 400; font-size: 9px; }
+.management-bar-track { height: 7px; background: #edf3fc; border-radius: 4px; overflow: hidden; margin: 7px 0 4px; }
+.management-bar-track span { display: block; height: 100%; border-radius: 4px; background: #629bea; }
+.management-bars li:nth-child(2n) .management-bar-track span { background: #73bbad; }
+.management-decision { display: grid; grid-template-columns: 1fr 1.5fr; align-items: center; gap: 26px; padding: 25px; margin-bottom: 18px; border-radius: 11px; background: #eaf2fd; border: 1px solid #d9e6f7; }
+.management-decision h2 { margin-top: 7px; font-size: 19px; }
+.management-decision p { margin-top: 8px; font-size: 10px; color: #6c85a5; line-height: 1.6; }
+.management-decision ul { padding-left: 18px; color: #516d91; font-size: 11px; line-height: 1.9; }
+.management-decision li+li { margin-top: 7px; }
+.management-methodology>p { margin: 14px 0; color: #6c7f98; font-size: 11px; line-height: 1.9; }
+.management-methodology details { border-top: 1px solid #edf1f7; }
+.management-methodology details :is(p,li) { font-size: 11px; color: #6c7f98; line-height: 1.9; padding: 8px 0; }
+.management-methodology details ul { padding-left: 18px; }
+.management-methodology .management-data-table { overflow-x: auto; }
+.management-footer { padding: 22px 8px 6px; color: #93a1b4; text-align: center; font-size: 9px; line-height: 1.8; }
+.management-loading,.management-error { margin: 22px 0; padding: 25px; border-radius: 10px; color: #597698; background: #eaf2fd; font-size: 13px; }
+.management-error { color: #a43145; background: #fff0f2; }
+.management-error button { display: inline-block; text-decoration: underline; margin-left: 12px; }
+.management-access { min-height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px; padding: 30px; background: #f3f7fc; text-align: center; color: #23456e; }
+.management-access>svg { width: 50px; height: 50px; }
+.management-access h1 { font-size: 26px; font-weight: 700; }
+.management-access p { max-width: 500px; color: #6b819b; }
+.management-access a,.management-access button { color: #1768e7; text-decoration: underline; }
+.management-backdrop { display: none; }
+@media (max-width: 1100px) { .management-sidebar { width: 218px; } .management-main { margin-left: 218px; } .management-body { padding: 26px 22px; } .management-grid { grid-template-columns: minmax(0,1fr); } .management-kpis { grid-template-columns: repeat(2,minmax(0,1fr)); } .management-pillars article { flex-direction: column; } .management-context-tag { display: none; } }
+@media (max-width: 800px) { .management-sidebar { transform: translateX(-100%); width: 248px; transition: transform .2s; } .management-sidebar.is-open { transform: translateX(0); } .management-main { margin-left: 0; } .management-menu { display: block; font-size: 20px; } .management-brand button { display: block; margin-left: auto; font-size: 20px; } .management-backdrop { display: block; position: fixed; inset: 0; z-index: 35; background: #07192a66; } .management-access-badge { font-size: 8px; } .management-topbar { padding: 0 20px; } }
+@media (max-width: 500px) { .management-body { padding: 22px 15px; } .management-heading { align-items: start; flex-direction: column; gap: 15px; } .management-heading h1 { font-size: 25px; } .management-pillars { grid-template-columns: 1fr; } .management-pillars article { flex-direction: row; } .management-pillars small { font-size: 9px; } .management-kpis { gap: 10px; } .management-kpi { padding: 15px 12px 10px; } .management-context { padding: 14px; } .management-panel { padding: 18px; } .management-topbar b { display: none; } .management-filters label { flex-basis: 120px; } .management-decision { grid-template-columns: 1fr; padding: 20px; } .management-custom { flex-wrap: wrap; } .management-filters select { font-size: 10px; } }
+@media (prefers-reduced-motion: reduce) { .management-shell * { transition: none !important; } }

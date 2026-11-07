@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
+import { lazy, Suspense } from "react";
 import AppLayout from "./components/layout/AppLayout.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import EducationPlanEditPage from "./pages/EducationPlanEditPage.jsx";
@@ -11,9 +12,11 @@ import ScheduleGenerator from "./pages/ScheduleGenerator.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import SignupPage from "./pages/SignupPage.jsx";
 import IntakeForm from "./pages/IntakeForm.jsx";
+const ManagementDashboardPage = lazy(() => import("./pages/admin/ManagementDashboardPage.jsx"));
 
 const App = () => (
 	<Routes>
+		<Route path="/admin/dashboard" element={<Suspense fallback={<p role="status">Loading management workspace…</p>}><ManagementDashboardPage /></Suspense>} />
 		<Route element={<AppLayout />}>
 			<Route path="/" element={<Navigate to="/home" replace />} />
 			<Route path="/home" element={<HomePage />} />
