@@ -84,6 +84,8 @@ const Navigation = ({ open, setOpen }) => {
 				<NavItem to="/educationplan" label="Create Education Plan" onClick={() => setOpen && setOpen(false)} />
 				{/* <NavItem to="/schedule-generator" label="Schedule Generator" onClick={() => setOpen && setOpen(false)} /> */}
 				<NavItem to="/view" label="Saved Plans" onClick={() => setOpen && setOpen(false)} />
+				<NavItem to="/financial-aid" label="Financial Aid" onClick={() => setOpen && setOpen(false)} />
+				<NavItem to="/what-if-analysis" label="What If Analysis" onClick={() => setOpen && setOpen(false)} />
 			</nav>
 
 			<footer className="mt-auto border-t border-slate-50 p-10">

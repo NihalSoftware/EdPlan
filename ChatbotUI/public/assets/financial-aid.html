@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Financial Aid Hub · EdPlan AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+*{box-sizing:border-box}
+button{font-family:inherit;cursor:pointer}
+input{font-family:inherit}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #0A7A72;outline-offset:2px}
+a{color:#0A7A72}a:hover{color:#075A54}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<template id="tpl">
+
+
+<div id="top" style="width:100%;min-height:100%;background:#F6F1E7;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#14213D;padding:24px 20px 32px">
+<div style="max-width:1360px;margin:0 auto;display:flex;flex-direction:column;gap:24px">
+
+<!-- HEADER -->
+<header style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;background:#FFFDF8;border:1px solid #E6DDC8;border-radius:20px;padding:14px 24px">
+<div style="display:flex;align-items:center;gap:14px">
+<svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+<circle cx="24" cy="24" r="6" fill="none" stroke="#D9541E" stroke-width="2.6"></circle>
+<g fill="#D9541E">
+<g><rect x="16.4" y="3" width="2.6" height="11" rx="1"></rect><rect x="20.8" y="1" width="2.6" height="13" rx="1"></rect><rect x="25.2" y="1" width="2.6" height="13" rx="1"></rect><rect x="29.6" y="3" width="2.6" height="11" rx="1"></rect></g>
+<g transform="rotate(90 24 24)"><rect x="16.4" y="3" width="2.6" height="11" rx="1"></rect><rect x="20.8" y="1" width="2.6" height="13" rx="1"></rect><rect x="25.2" y="1" width="2.6" height="13" rx="1"></rect><rect x="29.6" y="3" width="2.6" height="11" rx="1"></rect></g>
+<g transform="rotate(180 24 24)"><rect x="16.4" y="3" width="2.6" height="11" rx="1"></rect><rect x="20.8" y="1" width="2.6" height="13" rx="1"></rect><rect x="25.2" y="1" width="2.6" height="13" rx="1"></rect><rect x="29.6" y="3" width="2.6" height="11" rx="1"></rect></g>
+<g transform="rotate(270 24 24)"><rect x="16.4" y="3" width="2.6" height="11" rx="1"></rect><rect x="20.8" y="1" width="2.6" height="13" rx="1"></rect><rect x="25.2" y="1" width="2.6" height="13" rx="1"></rect><rect x="29.6" y="3" width="2.6" height="11" rx="1"></rect></g>
+</g>
+</svg>
+<div style="display:flex;flex-direction:column;line-height:1.1">
+<span style="font-size:28px;font-weight:800;color:#0F2D5C">EdPlan AI</span>
+<span style="font-size:14px;font-weight:600;color:#55607A">StudentSpace.ai</span>
+</div>
+</div>
+<nav aria-label="Primary" style="display:flex;flex-wrap:wrap;align-items:center;gap:4px 28px">
+<a href="#top" aria-current="page" style="color:#0F2D5C;font-weight:700;font-size:16px;text-decoration:none;padding:12px 0;border-bottom:3px solid #0A7A72">Dashboard</a>
+<a href="#scholarships" style="color:#14213D;font-weight:600;font-size:16px;text-decoration:none;padding:12px 0;border-bottom:3px solid transparent">Choose</a>
+<a href="#loans" style="color:#14213D;font-weight:600;font-size:16px;text-decoration:none;padding:12px 0;border-bottom:3px solid transparent">Compare</a>
+<a href="#plan" style="color:#14213D;font-weight:600;font-size:16px;text-decoration:none;padding:12px 0;border-bottom:3px solid transparent">Plan</a>
+</nav>
+<div style="display:flex;align-items:center;gap:12px">
+<button type="button" aria-label="Notifications" style="width:44px;height:44px;border-radius:999px;border:1px solid #E6DDC8;background:#FFFDF8;color:#14213D;display:flex;align-items:center;justify-content:center">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 0112 0v5l1.5 2h-15zM10 20a2 2 0 004 0"></path></svg>
+</button>
+<div style="width:48px;height:48px;border-radius:999px;background:#0F2D5C;color:#FFFFFF;font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center" role="img" aria-label="Signed in as AJ">AJ</div>
+</div>
+</header>
+
+<!-- TITLE ROW -->
+<div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px">
+<div>
+<h1 style="margin:0;font-size:clamp(36px,5vw,56px);line-height:1.05;font-weight:800;color:#0F2D5C;letter-spacing:-0.02em">Financial Aid Hub</h1>
+<p style="margin:8px 0 0;font-size:16px;color:#55607A">Your personalized aid overview · 2026–27 academic year · Updated Nov 3, 2026</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px">
+<a href="#loans" style="display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 22px;border-radius:12px;background:#0A7A72;color:#FFFFFF;font-weight:700;font-size:16px;text-decoration:none">+ Compare plans</a>
+<button type="button" onClick="{{ exportPdf }}" style="min-height:48px;padding:0 22px;border-radius:12px;border:2px solid #0F2D5C;background:#FFFDF8;color:#0F2D5C;font-weight:700;font-size:16px">Export PDF</button>
+</div>
+</div>
+
+<!-- THREE COLUMNS -->
+<div style="display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start">
+
+<!-- LEFT COLUMN -->
+<div style="flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:20px">
+
+<section id="cost" style="background:#FFFDF8;border:1px solid #E6DDC8;border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(20,33,61,.06)">
+<div style="display:flex;align-items:center;gap:10px">
+<span style="width:36px;height:36px;border-radius:10px;background:#E0F2EF;color:#0A7A72;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"></rect><circle cx="12" cy="12" r="2.5"></circle></svg></span>
+<h2 style="margin:0;font-size:18px;font-weight:700">Estimated Cost of Attendance</h2>
+</div>
+<div style="display:flex;align-items:baseline;gap:8px;margin:14px 0 4px">
+<span style="font-size:34px;font-weight:800;color:#0F2D5C">{{cost}}</span>
+<span style="color:#55607A;font-size:15px">per year</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
+<sc-for list="{{costRows}}" as="r" hint-placeholder-count="4">
+<div style="display:grid;grid-template-columns:110px minmax(0,1fr) 60px;gap:12px;align-items:center">
+<span style="font-size:15px;font-weight:600">{{r.label}}</span>
+<span style="height:10px;border-radius:999px;background:#EDE6D5;overflow:hidden;display:block"><span style="display:block;height:100%;border-radius:999px;width:{{r.w}};background:{{r.c}}"></span></span>
+<span style="font-size:15px;font-weight:700;text-align:right">{{r.amt}}</span>
+</div>
+</sc-for>
+</div>
+<div style="margin-top:18px">
+<div style="font-size:13px;font-weight:700;color:#55607A;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px">Where you'll live</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<sc-for list="{{housingOpts}}" as="o" hint-placeholder-count="3">
+<button type="button" onClick="{{ o.pick }}" aria-pressed="{{ o.pressed }}" style="min-height:44px;padding:0 14px;border-radius:999px;border:1.5px solid {{o.border}};background:{{o.bg}};color:{{o.color}};font-weight:600;font-size:14px">{{o.label}}</button>
+</sc-for>
+</div>
+<p style="margin:10px 0 0;font-size:13px;color:#55607A;line-height:1.5">Housing figures are typical estimates you can switch between. Your school's official cost of attendance is final.</p>
+</div>
+</section>
+
+<section style="background:#FFFDF8;border:1px solid #E6DDC8;border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(20,33,61,.06)">
+<div style="display:flex;align-items:center;gap:10px">
+<span style="width:36px;height:36px;border-radius:10px;background:#E0F2EF;color:#0A7A72;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M3.5 6l1 1 2-2M3.5 12l1 1 2-2M3.5 18l1 1 2-2"></path></svg></span>
+<h2 style="margin:0;font-size:18px;font-weight:700">FAFSA Status Tracker</h2>
+</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:14px">
+<span style="display:inline-flex;align-items:center;gap:6px;background:#DDF3E4;color:#14532D;font-weight:700;font-size:13px;padding:4px 10px;border-radius:999px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Completed</span>
+<span style="font-size:13px;font-weight:700;color:#0B5E58">100% complete</span>
+</div>
+<p style="margin:10px 0 0;font-size:14px;color:#55607A">Submitted Sep 28, 2026 · Verified by your school</p>
+<div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;margin-top:12px" aria-hidden="true">
+<span style="height:8px;border-radius:999px;background:#0A7A72"></span><span style="height:8px;border-radius:999px;background:#0A7A72"></span><span style="height:8px;border-radius:999px;background:#0A7A72"></span><span style="height:8px;border-radius:999px;background:#0A7A72"></span><span style="height:8px;border-radius:999px;background:#0A7A72"></span>
+</div>
+<div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;margin-top:6px;font-size:11px;color:#55607A;text-align:center;line-height:1.3">
+<span>Submitted</span><span>Processed</span><span>Verified</span><span>Sent to school</span><span>Aid offer</span>
+</div>
+<button type="button" onClick="{{ toggleFafsa }}" aria-expanded="{{ fafsaOpen }}" style="margin-top:12px;min-height:44px;padding:0;background:none;border:none;color:#0A7A72;font-weight:700;font-size:14px;text-decoration:underline">{{fafsaLabel}}</button>
+<sc-if value="{{ fafsaOpen }}" hint-placeholder-val="{{ false }}">
+<div style="margin-top:4px;padding:12px 14px;background:#F6F1E7;border-radius:10px;font-size:14px;line-height:1.55;color:#14213D">
+Your Student Aid Index (SAI) is <strong>500</strong>. The SAI is the number schools use to measure financial need. A lower SAI means more need, which is why you qualify for a near-full Pell Grant.
+</div>
+</sc-if>
+</section>
+
+<section style="background:#FFFDF8;border:1px solid #E6DDC8;border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(20,33,61,.06)">
+<div style="display:flex;align-items:center;gap:10px">
+<span style="width:36px;height:36px;border-radius:10px;background:#E0F2EF;color:#0A7A72;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"></path></svg></span>
+<h2 style="margin:0;font-size:18px;font-weight:700">Pell Grant Estimator</h2>
+</div>
+<div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin-top:12px">
+<span style="font-size:34px;font-weight:800;color:#0A7A72">{{pell}}</span>
+<span style="font-size:14px;color:#55607A">estimated federal Pell Grant per year</span>
+</div>
+<p style="margin:6px 0 0;font-size:14px;color:#55607A">Based on your FAFSA SAI of 500. A grant, so no repayment.</p>
+<div style="font-size:13px;font-weight:700;color:#55607A;text-transform:uppercase;letter-spacing:.04em;margin:14px 0 8px">Enrollment each term</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<sc-for list="{{enrollOpts}}" as="o" hint-placeholder-count="3">
+<button type="button" onClick="{{ o.pick }}" aria-pressed="{{ o.pressed }}" style="min-height:44px;padding:0 14px;border-radius:999px;border:1.5px solid {{o.border}};background:{{o.bg}};color:{{o.color}};font-weight:600;font-size:14px">{{o.label}}</button>
+</sc-for>
+</div>
+<p style="margin:10px 0 0;font-size:13px;color:#55607A;line-height:1.5">Pell scales with how many credits you take. This is an estimate; your school's award letter sets the final amount.</p>
+</section>
+
+<section style="background:#FFFDF8;border:1px solid #E6DDC8;border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(20,33,61,.06)">
+<div style="display:flex;align-items:center;gap:10px">
+<span style="width:36px;height:36px;border-radius:10px;background:#E0F2EF;color:#0A7A72;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M9 7V5a1 1 0 011-1h4a1 1 0 011 1v2M3 13h18"></path></svg></span>
+<h2 style="margin:0;font-size:18px;font-weight:700">Work-Study Eligibility</h2>
+<span style="margin-left:auto;background:#FFEDD5;color:#9A3412;font-weight:700;font-size:13px;padding:4px 10px;border-radius:999px">Eligible</span>
+</div>
+<p style="margin:14px 0 0;font-size:24px;font-weight:800;color:#0F2D5C">Up to $2,500 <span style="font-size:14px;font-weight:500;color:#55607A">per year</span></p>
+<p style="margin:6px 0 0;font-size:14px;color:#55607A;line-height:1.55">Part-time on-campus jobs, usually 10–12 hours a week. You earn it through a paycheck, so it lowers what you need to borrow without being a grant.</p>
+<button type="button" onClick="{{ toggleWork }}" aria-expanded="{{ workOpen }}" style="margin-top:8px;min-height:44px;padding:0;background:none;border:none;color:#0A7A72;font-weight:700;font-size:14px;text-decoration:underline">{{workLabel}}</button>
+<sc-if value="{{ workOpen }}" hint-placeholder-val="{{ false }}">
+<ol style="margin:4px 0 0;padding-left:20px;font-size:14px;line-height:1.7;color:#14213D">
+<li>Accept the work-study award in your student portal.</li>
+<li>Look for postings marked work-study on your school's student jobs page.</li>
+<li>Apply, interview, then submit your hiring paperwork before your first shift.</li>
+</ol>
+</sc-if>
+</section>
+
+<section style="background:#FFFDF8;border:1px solid #E6DDC8;border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(20,33,61,.06)">
+<h2 style="margin:0 0 4px;font-size:18px;font-weight:700">Your next steps</h2>
+<p style="margin:0 0 10px;font-size:14px;color:#55607A">{{tasksLeft}}</p>
+<div style="display:flex;flex-direction:column">
+<sc-for list="{{tasks}}" as="t" hint-placeholder-count="4">
+<label style="display:flex;align-items:flex-start;gap:12px;min-height:44px;padding:10px 0;border-top:1px solid #EDE6D5;cursor:pointer">
+<input type="checkbox" checked="{{ t.done }}" onChange="{{ t.toggle }}" style="width:22px;height:22px;margin:0;accent-color:#0A7A72;flex:none">
+<span style="display:flex;flex-direction:column;gap:2px">
+<span style="font-size:15px;font-weight:600;text-decoration:{{t.deco}}">{{t.text}}</span>
+<span style="font-size:13px;color:#55607A">{{t.when}}</span>
+</span>
+</label>
+</sc-for>
+</div>
+</section>
+
+</div>
+
+<!-- MIDDLE COLUMN -->
+<div style="flex:1.5 1 440px;min-width:0;display:flex;flex-direction:column;gap:20px">
+
+<section id="scholarships" style="background:#FFFDF8;border:1px solid #E6DDC8;border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(20,33,61,.06)">
+<div style="display:flex;align-items:center;gap:10px">
+<span style="width:36px;height:36px;border-radius:10px;background:#E0F2EF;color:#0A7A72;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"></path></svg></span>
+<div>
+<h2 style="margin:0;font-size:18px;font-weight:700">Scholarship Matcher</h2>
+<p style="margin:2px 0 0;font-size:14px;color:#55607A">3 matching scholarships found · {{schPotential}} possible</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;margin-top:16px">
+<sc-for list="{{scholarships}}" as="s" hint-placeholder-count="3">
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 16px;border:1px solid #E6DDC8;border-radius:12px;padding:14px 16px;background:#FFFFFF">
+<div style="flex:1 1 260px;min-width:0">
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px">
+<span style="background:{{s.badgeBg}};color:{{s.badgeColor}};font-weight:700;font-size:12px;padding:4px 10px;border-radius:8px">{{s.badge}}</span>
+<span style="font-size:17px;font-weight:700;color:#0F2D5C">{{s.name}}</span>
+</div>
+<p style="margin:8px 0 0;font-size:14px;color:#55607A">{{s.meta}}</p>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:8px">
+<span style="font-size:13px;font-weight:600;color:#14213D">{{s.deadline}}</span>
+<sc-if value="{{ s.hasChip }}" hint-placeholder-val="{{ true }}">
+<span style="background:{{s.chipBg}};color:{{s.chipColor}};font-weight:700;font-size:12px;padding:3px 9px;border-radius:999px">{{s.chipText}}</span>
+</sc-if>
+</div>
+</div>
+<sc-if value="{{ s.isAuto }}" hint-placeholder-val="{{ false }}">
+<span style="display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 16px;border-radius:10px;background:#E0F2EF;color:#0B5E58;font-weight:700;font-size:14px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Counted automatically</span>
+</sc-if>
+<sc-if value="{{ s.notAuto }}" hint-placeholder-val="{{ true }}">
+<button type="button" onClick="{{ s.toggle }}" aria-pressed="{{ s.pressed }}" style="min-height:44px;padding:0 20px;border-radius:10px;border:2px solid {{s.btnBorder}};background:{{s.btnBg}};color:{{s.btnColor}};font-weight:700;font-size:14px">{{s.btnText}}</button>
+</sc-if>
+</div>
+</sc-for>
+</div>
+<p style="margin:12px 0 0;font-size:13px;color:#55607A;line-height:1.5">Choosing "Add to plan" counts the award toward your net price as if you received it. Awards are not guaranteed, so treat these as best-case numbers.</p>
+</section>
+
+<section id="loans" style="background:#FFFDF8;border:1px solid #E6DDC8;border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(20,33,61,.06)">
+<div style="display:flex;align-items:center;gap:10px">
+<span style="width:36px;height:36px;border-radius:10px;background:#E0F2EF;color:#0A7A72;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M6 20h12M5 7h14M5 7l-3 7a3.5 3.5 0 006 0zM19 7l-3 7a3.5 3.5 0 006 0z"></path></svg></span>
+<div>
+<h2 style="margin:0;font-size:18px;font-weight:700">Loan Comparison</h2>
+<p style="margin:2px 0 0;font-size:14px;color:#55607A">Federal Direct Loans offered: $5,500 · 6.52% fixed for 2026–27</p>
+</div>
+</div>
+<div style="margin-top:16px">
+<div style="font-size:13px;font-weight:700;color:#55607A;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px">Years until you graduate</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<sc-for list="{{yearOpts}}" as="o" hint-placeholder-count="4">
+<button type="button" onClick="{{ o.pick }}" aria-pressed="{{ o.pressed }}" style="min-width:56px;min-height:44px;padding:0 14px;border-radius:999px;border:1.5px solid {{o.border}};background:{{o.bg}};color:{{o.color}};font-weight:600;font-size:14px">{{o.label}}</button>
+</sc-for>
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:16px">
+<sc-for list="{{loans}}" as="l" hint-placeholder-count="2">
+<div style="flex:1 1 240px;min-width:0;border:{{l.borderW}} {{l.borderStyle}} {{l.borderC}};border-radius:14px;padding:16px;background:{{l.bg}}">
+<div style="font-size:17px;font-weight:700;color:#14213D">{{l.title}}</div>
+<div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;margin-top:6px">
+<span style="font-size:28px;font-weight:800;color:#0F2D5C">{{l.amount}}</span>
+<span style="font-size:14px;font-weight:600;color:#55607A">at {{l.rate}}</span>
+</div>
+<span style="display:inline-block;margin-top:8px;background:{{l.tagBg}};color:{{l.tagColor}};font-weight:700;font-size:13px;padding:4px 10px;border-radius:8px">{{l.tag}}</span>
+<dl style="margin:14px 0 0;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 12px;font-size:14px">
+<dt style="color:#55607A">Est. monthly payment</dt><dd style="margin:0;font-weight:800;text-align:right">{{l.monthly}}</dd>
+<dt style="color:#55607A">Interest added before repayment</dt><dd style="margin:0;font-weight:700;text-align:right">{{l.accrued}}</dd>
+<dt style="color:#55607A">Total interest over 10 years</dt><dd style="margin:0;font-weight:700;text-align:right">{{l.interest}}</dd>
+<dt style="color:#55607A">Origination fee (1.057%)</dt><dd style="margin:0;font-weight:700;text-align:right">{{l.fee}}</dd>
+</dl>
+<p style="margin:12px 0 0;font-size:13px;color:#55607A;line-height:1.5">Federal Direct Loan · 6-month grace period after you leave school</p>
+<label style="display:flex;align-items:center;gap:10px;min-height:44px;margin-top:8px;font-size:14px;font-weight:600;cursor:pointer">
+<input type="checkbox" checked="{{ l.selected }}" onChange="{{ l.toggle }}" style="width:22px;height:22px;margin:0;accent-color:#0A7A72;flex:none">
+Include in comparison
+</label>
+</div>
+</sc-for>
+</div>
+<div style="margin-top:16px;padding:14px 16px;background:#0F2D5C;color:#FFFFFF;border-radius:12px;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;justify-content:space-between">
+<div style="font-size:14px;line-height:1.5">{{loanSummaryLead}}</div>
+<div style="font-size:20px;font-weight:800">{{loanSummaryPay}}</div>
+</div>
+<p style="margin:12px 0 0;font-size:13px;color:#55607A;line-height:1.5">Estimates assume a fixed 6.52% rate, the 10-year standard repayment plan and one year of borrowing. Unsubsidized interest is estimated with simple interest from disbursement through a 6-month grace period.</p>
+</section>
+
+</div>
+
+<!-- RIGHT COLUMN -->
+<div style="flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:20px">
+
+<section style="background:#FFFDF8;border:1px solid #E6DDC8;border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(20,33,61,.06)">
+<div style="display:flex;align-items:center;gap:10px">
+<span style="width:36px;height:36px;border-radius:10px;background:#E0F2EF;color:#0A7A72;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"></rect><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"></path></svg></span>
+<h2 style="margin:0;font-size:18px;font-weight:700">Net Price Calculator</h2>
+</div>
+<div style="font-size:42px;font-weight:800;color:#0F2D5C;margin-top:12px;line-height:1.1">{{net}}</div>
+<div style="font-size:14px;color:#55607A;margin-top:2px">Your estimated net price per year</div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin-top:14px;font-size:15px">
+<span>Cost <strong>{{cost}}</strong></span><span aria-hidden="true">−</span><span>Aid <strong>{{aid}}</strong></span><span aria-hidden="true">=</span><span><strong>{{net}}</strong></span>
+</div>
+<div style="display:flex;height:14px;border-radius:999px;overflow:hidden;background:#EDE6D5;margin-top:14px" role="img" aria-label="{{barLabel}}">
+<sc-for list="{{segs}}" as="g" hint-placeholder-count="3"><span style="display:block;height:100%;width:{{g.w}};background:{{g.c}}"></span></sc-for>
+</div>
+<ul style="list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:8px">
+<sc-for list="{{legend}}" as="g" hint-placeholder-count="3">
+<li style="display:flex;align-items:center;gap:10px;font-size:14px">
+<span style="width:12px;height:12px;border-radius:4px;background:{{g.c}};flex:none" aria-hidden="true"></span>
+<span style="flex:1;min-width:0">{{g.label}}</span>
+<span style="font-weight:700">{{g.amt}}</span>
+</li>
+</sc-for>
+</ul>
+<div style="display:inline-block;margin-top:14px;background:#E0F2EF;color:#0B5E58;font-weight:700;font-size:14px;padding:6px 12px;border-radius:999px">{{cov}}% covered by grants and scholarships</div>
+<a href="#cost" style="display:flex;align-items:center;justify-content:center;min-height:48px;margin-top:16px;border-radius:12px;background:#0A7A72;color:#FFFFFF;font-weight:700;font-size:16px;text-decoration:none">Adjust expenses</a>
+</section>
+
+<section id="plan" style="background:#FFFDF8;border:1px solid #E6DDC8;border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(20,33,61,.06)">
+<h2 style="margin:0;font-size:18px;font-weight:700">Suggested funding plan</h2>
+<p style="margin:4px 0 0;font-size:14px;color:#55607A">How to cover the {{net}} left after grants, cheapest money first.</p>
+<sc-if value="{{ plan.covered }}" hint-placeholder-val="{{ false }}">
+<p style="margin:14px 0 0;font-size:15px;line-height:1.5;font-weight:600;color:#0B5E58">Your grants and scholarships cover your full cost. No loans needed.</p>
+</sc-if>
+<ol style="list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:12px">
+<sc-for list="{{planRows}}" as="p" hint-placeholder-count="3">
+<li style="display:flex;align-items:flex-start;gap:12px">
+<span style="width:28px;height:28px;border-radius:999px;background:#0F2D5C;color:#FFFFFF;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;flex:none">{{p.n}}</span>
+<span style="flex:1;min-width:0;display:flex;flex-direction:column"><span style="font-size:15px;font-weight:700">{{p.label}}</span><span style="font-size:13px;color:#55607A;line-height:1.4">{{p.note}}</span></span>
+<span style="font-size:15px;font-weight:800">{{p.amt}}</span>
+</li>
+</sc-for>
+</ol>
+<sc-if value="{{ plan.hasLeft }}" hint-placeholder-val="{{ false }}">
+<p style="margin:14px 0 0;padding:10px 12px;background:#FFEDD5;color:#7C2D12;border-radius:10px;font-size:14px;line-height:1.5">{{plan.leftText}}</p>
+</sc-if>
+<p style="margin:14px 0 0;font-size:14px;line-height:1.5;color:#14213D">{{plan.payText}}</p>
+</section>
+
+<section aria-label="AI Assistant" style="background:#0F2D5C;color:#FFFFFF;border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(20,33,61,.12)">
+<div style="display:flex;align-items:center;gap:10px">
+<span style="width:36px;height:36px;border-radius:10px;background:#1B4380;color:#7FE0D4;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path></svg></span>
+<div>
+<h2 style="margin:0;font-size:18px;font-weight:700;color:#FFFFFF">AI Assistant</h2>
+<p style="margin:2px 0 0;font-size:13px;color:#C7D4EC">Ask about aid, using the numbers on this page</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column-reverse;gap:10px;margin-top:16px;max-height:320px;overflow-y:auto;padding-right:4px" role="log" aria-live="polite">
+<sc-for list="{{chat}}" as="m" hint-placeholder-count="2">
+<div style="max-width:90%;align-self:{{m.align}};background:{{m.bg}};color:{{m.color}};padding:10px 14px;border-radius:14px;font-size:14px;line-height:1.5">{{m.text}}</div>
+</sc-for>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px">
+<sc-for list="{{chips}}" as="c" hint-placeholder-count="3">
+<button type="button" onClick="{{ c.ask }}" style="min-height:44px;padding:0 14px;border-radius:999px;border:1.5px solid #8FA6CF;background:transparent;color:#FFFFFF;font-weight:600;font-size:13px">{{c.label}}</button>
+</sc-for>
+</div>
+<form onSubmit="{{ onSubmit }}" style="display:flex;gap:8px;margin-top:14px;background:#FFFFFF;border-radius:12px;padding:6px">
+<input type="text" aria-label="Ask about aid, deadlines or scholarships" placeholder="Ask about aid, deadlines, or scholarships…" value="{{ draft }}" onChange="{{ onDraft }}" style="flex:1;min-width:0;min-height:44px;border:none;background:transparent;padding:0 10px;font-size:14px;color:#14213D">
+<button type="submit" aria-label="Send question" style="width:44px;height:44px;border-radius:10px;border:none;background:#0A7A72;color:#FFFFFF;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l16-8-6 16-2-7z"></path></svg></button>
+</form>
+</section>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer style="border-top:1px solid #DCD3BE;padding-top:16px;display:flex;flex-direction:column;gap:8px;font-size:13px;color:#55607A;line-height:1.6;text-align:center">
+<div>Estimates only. Your school's official award letter is final. · Data refreshed daily · Questions? Contact your Financial Aid Office · Privacy · Help Center</div>
+<div>Loan rates and fees are for federal Direct Loans first disbursed July 1, 2026 to June 30, 2027. <a href="https://fsapartners.ed.gov/knowledge-center/library/electronic-announcements/2026-06-04/interest-rates-federal-direct-loans-first-disbursed-between-july-1-2026-and-june-30-2027">Federal Student Aid announcement</a></div>
+</footer>
+
+</div>
+</div>
+
+</template>
+<script>
+
+class DCLogic {
+  constructor(props) { this.props = props || {}; this.state = {}; }
+  setState(p) { Object.assign(this.state, p); schedule(); }
+}
+
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = {
+      housing: 'hall',
+      enroll: 'full',
+      years: 4,
+      sel: { opp: false, nihal: false },
+      useLoan: { sub: true, un: true },
+      done: { t1: false, t2: false, t3: false, t4: false },
+      fafsaOpen: false,
+      workOpen: false,
+      draft: '',
+      msgs: []
+    };
+  }
+
+  fmt(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
+
+  daysTo(y, m, d) {
+    const end = new Date(y, m - 1, d, 23, 59, 59);
+    return Math.floor((end - new Date()) / 864e5);
+  }
+
+  chipFor(d) {
+    if (d < 0) return { t: 'Closed', bg: '#ECE7DA', c: '#3F4963' };
+    if (d === 0) return { t: 'Due today', bg: '#FFEDD5', c: '#9A3412' };
+    const t = d === 1 ? '1 day left' : d + ' days left';
+    if (d <= 14) return { t, bg: '#FFEDD5', c: '#9A3412' };
+    return { t, bg: '#E0F2EF', c: '#0B5E58' };
+  }
+
+  calc() {
+    const s = this.state;
+    const R = 0.0652 / 12, N = 120, yrs = s.years;
+    const pmt = (p) => (p > 0 ? p * R / (1 - Math.pow(1 + R, -N)) : 0);
+    const mkLoan = (p, uns) => {
+      const bal = uns ? p * (1 + 0.0652 * (yrs + 0.5)) : p;
+      const m = pmt(bal);
+      return { p, bal, m, total: m * N, interest: m * N - p, fee: p * 0.01057, accrued: bal - p };
+    };
+    const housing = { hall: 4600, apt: 6300, home: 1500 }[s.housing];
+    const cost = 8200 + housing + 900 + 700;
+    const f = { full: 1, three: 0.75, half: 0.5 }[s.enroll];
+    const pell = Math.round(6895 * f);
+    const lottery = 2400;
+    const opp = s.sel.opp ? 3000 : 0;
+    const nihal = s.sel.nihal ? 1500 : 0;
+    const aid = pell + lottery + opp + nihal;
+    const net = Math.max(0, cost - aid);
+    const cov = Math.min(100, Math.round(aid / cost * 100));
+    let g = net;
+    const ws = Math.min(2500, g); g -= ws;
+    const sub = Math.min(3500, g); g -= sub;
+    const un = Math.min(2000, g); g -= un;
+    const L = { sub: mkLoan(3500, false), un: mkLoan(2000, true) };
+    const planPay = (sub > 0 ? mkLoan(sub, false).m : 0) + (un > 0 ? mkLoan(un, true).m : 0);
+    const dOpp = this.daysTo(2026, 12, 1);
+    const dNih = this.daysTo(2026, 11, 15);
+    return { housing, cost, f, pell, lottery, opp, nihal, aid, net, cov, ws, sub, un, left: g, L, planPay, dOpp, dNih, mkLoan };
+  }
+
+  answer(q, c) {
+    const t = q.toLowerCase();
+    const fm = (n) => this.fmt(n);
+    const enrollName = { full: 'full-time', three: 'three-quarter-time', half: 'half-time' }[this.state.enroll];
+    if (/monthly|payment|lowest|cheapest/.test(t)) {
+      return 'Taking only the subsidized loan (' + fm(3500) + ') comes to about ' + fm(c.L.sub.m) + ' a month on the 10-year standard plan, the lowest of your options. Both loans together are about ' + fm(c.L.sub.m + c.L.un.m) + ' a month. The subsidized loan also builds no interest while you are enrolled at least half-time.';
+    }
+    if (/deadline|due|soon|when/.test(t)) {
+      const a = c.dNih >= 0 ? 'Nihal Foundation Grant: Nov 15, 2026 (' + this.chipFor(c.dNih).t.toLowerCase() + ')' : 'Nihal Foundation Grant: closed';
+      const b = c.dOpp >= 0 ? 'NMSU Opportunity Scholarship: Dec 1, 2026 (' + this.chipFor(c.dOpp).t.toLowerCase() + ')' : 'NMSU Opportunity Scholarship: closed';
+      return 'Upcoming deadlines. ' + a + '. ' + b + '. The NM Lottery Scholarship is automatic, so there is nothing to submit.';
+    }
+    if (/pell/.test(t)) {
+      return 'Your estimated Pell Grant is ' + fm(c.pell) + ' a year at ' + enrollName + ' enrollment, based on an SAI of 500. It is a grant, so you do not repay it. Your school\'s award letter sets the final amount.';
+    }
+    if (/work|job|study/.test(t)) {
+      return 'You are eligible for up to $2,500 a year in work-study, usually 10 to 12 hours a week on campus. It is paid as a paycheck, so it is not a grant, but it reduces how much you need to borrow. The funding plan uses it first.';
+    }
+    if (/fafsa|sai/.test(t)) {
+      return 'Your FAFSA was submitted on Sep 28, 2026 and verified. Your SAI is 500, which is what drives your Pell estimate.';
+    }
+    if (/interest|rate|fee/.test(t)) {
+      return 'Both federal Direct Loans for 2026–27 carry a fixed 6.52% rate for undergraduates, plus a 1.057% origination fee taken from each disbursement. The difference is who pays interest while you are in school: the government covers it on the subsidized loan, but it builds on the unsubsidized one.';
+    }
+    if (/scholar|grant|apply/.test(t)) {
+      return 'You match three awards: the NMSU Opportunity Scholarship (up to $3,000, due Dec 1), the NM Lottery Scholarship (up to $2,400, automatic) and the Nihal Foundation Grant ($1,500, essay due Nov 15). Use Add to plan on each to see how it changes your net price.';
+    }
+    if (/net|pay|cost|afford|owe|out.of.pocket|gap/.test(t)) {
+      let s = 'Your estimated net price is ' + fm(c.net) + ' a year: ' + fm(c.cost) + ' in cost minus ' + fm(c.aid) + ' in grants and scholarships (' + c.cov + '% covered).';
+      if (c.net > 0) s += ' The funding plan covers that gap with work-study first, then the subsidized loan, then the unsubsidized loan only if needed.';
+      return s;
+    }
+    return 'I can help with your net price, loan payments, scholarships, deadlines, Pell Grant and work-study. Try one of the suggested questions below.';
+  }
+
+  send(text) {
+    const q = (text || '').trim();
+    if (!q) return;
+    const msgs = this.state.msgs.concat([{ role: 'user', text: q }, { role: 'ai', text: this.answer(q, this.calc()) }]);
+    this.setState({ msgs, draft: '' });
+  }
+
+  renderVals() {
+    const s = this.state;
+    const c = this.calc();
+    const fm = (n) => this.fmt(n);
+    const pill = (a) => ({ bg: a ? '#0F2D5C' : '#FFFFFF', color: a ? '#FFFFFF' : '#14213D', border: a ? '#0F2D5C' : '#CFC5AE', pressed: a });
+
+    // Cost of attendance
+    const tuition = 8200, books = 900, fees = 700;
+    const costRows = [
+      { label: 'Tuition', amt: fm(tuition), w: (tuition / tuition * 100) + '%', c: '#0F2D5C' },
+      { label: 'Housing', amt: fm(c.housing), w: (c.housing / tuition * 100) + '%', c: '#0A7A72' },
+      { label: 'Books & supplies', amt: fm(books), w: (books / tuition * 100) + '%', c: '#4F86D6' },
+      { label: 'Fees', amt: fm(fees), w: (fees / tuition * 100) + '%', c: '#E8772E' }
+    ];
+    const hdefs = [
+      { id: 'hall', label: 'Residence hall · $4,600' },
+      { id: 'apt', label: 'Off campus · $6,300' },
+      { id: 'home', label: 'At home · $1,500' }
+    ];
+    const housingOpts = hdefs.map((h) => Object.assign({ label: h.label, pick: () => this.setState({ housing: h.id }) }, pill(s.housing === h.id)));
+
+    // Pell
+    const edefs = [
+      { id: 'full', label: 'Full-time (12+ credits)' },
+      { id: 'three', label: '¾ time (9–11)' },
+      { id: 'half', label: 'Half-time (6–8)' }
+    ];
+    const enrollOpts = edefs.map((e) => Object.assign({ label: e.label, pick: () => this.setState({ enroll: e.id }) }, pill(s.enroll === e.id)));
+
+    // Tasks
+    const tdefs = [
+      { id: 't1', text: 'Submit your Nihal Foundation Grant essay', when: 'Due Nov 15, 2026' },
+      { id: 't2', text: 'Apply for the NMSU Opportunity Scholarship', when: 'Due Dec 1, 2026' },
+      { id: 't3', text: 'Accept or decline your federal loans in your student portal', when: 'Accept only what you need' },
+      { id: 't4', text: 'Browse open work-study positions', when: 'Hours are usually 10–12 a week' }
+    ];
+    const tasks = tdefs.map((t) => ({
+      text: t.text, when: t.when, done: !!s.done[t.id],
+      deco: s.done[t.id] ? 'line-through' : 'none',
+      toggle: () => this.setState({ done: Object.assign({}, s.done, { [t.id]: !s.done[t.id] }) })
+    }));
+    const remaining = tdefs.filter((t) => !s.done[t.id]).length;
+    const tasksLeft = remaining === 0 ? 'All caught up.' : remaining + (remaining === 1 ? ' step left' : ' steps left');
+
+    // Scholarships
+    const mkSch = (key, badge, badgeFilled, name, meta, deadline, d) => {
+      const picked = !!s.sel[key];
+      const ch = d === null ? null : this.chipFor(d);
+      return {
+        badge, name, meta, deadline,
+        badgeBg: badgeFilled ? '#0F2D5C' : '#FFEDD5',
+        badgeColor: badgeFilled ? '#FFFFFF' : '#9A3412',
+        hasChip: !!ch, chipText: ch ? ch.t : '', chipBg: ch ? ch.bg : '#fff', chipColor: ch ? ch.c : '#000',
+        isAuto: false, notAuto: true,
+        pressed: picked,
+        btnText: picked ? 'Added to plan ✓' : 'Add to plan',
+        btnBg: picked ? '#0A7A72' : '#FFFFFF',
+        btnColor: picked ? '#FFFFFF' : '#0A7A72',
+        btnBorder: '#0A7A72',
+        toggle: () => this.setState({ sel: Object.assign({}, s.sel, { [key]: !s.sel[key] }) })
+      };
+    };
+    const lot = {
+      badge: 'Up to $2,400', name: 'NM Lottery Scholarship', meta: 'Automatic · 2.5 GPA required · Renewable',
+      deadline: 'No application needed', badgeBg: '#FFEDD5', badgeColor: '#9A3412',
+      hasChip: false, chipText: '', chipBg: '#fff', chipColor: '#000',
+      isAuto: true, notAuto: false, pressed: false, btnText: '', btnBg: '#fff', btnColor: '#000', btnBorder: '#000', toggle: () => {}
+    };
+    const scholarships = [
+      mkSch('opp', 'Up to $3,000', false, 'NMSU Opportunity Scholarship', 'Merit-based · NM resident', 'Deadline: Dec 1, 2026', c.dOpp),
+      lot,
+      mkSch('nihal', '$1,500', true, 'Nihal Foundation Grant', 'Need-based · Essay required', 'Deadline: Nov 15, 2026', c.dNih)
+    ];
+
+    // Net price
+    const gtot = Math.max(c.cost, c.aid);
+    const segDefs = [
+      { label: 'Pell Grant', amt: c.pell, c: '#0F2D5C' },
+      { label: 'NM Lottery Scholarship', amt: c.lottery, c: '#2BB3A3' },
+      { label: 'NMSU Opportunity Scholarship', amt: c.opp, c: '#E8A33A' },
+      { label: 'Nihal Foundation Grant', amt: c.nihal, c: '#7FA7E0' }
+    ].filter((x) => x.amt > 0);
+    const segs = segDefs.map((x) => ({ w: (x.amt / gtot * 100) + '%', c: x.c }));
+    const legend = segDefs.map((x) => ({ label: x.label, amt: fm(x.amt), c: x.c }));
+    legend.push({ label: 'Left to cover', amt: fm(c.net), c: '#D9D2C0' });
+    const barLabel = 'Grants and scholarships cover ' + c.cov + ' percent of the ' + fm(c.cost) + ' cost';
+
+    // Plan
+    const planRows = [];
+    let n = 1;
+    if (c.ws > 0) planRows.push({ n: n++, label: 'Work-study earnings', note: 'About 10–12 hours a week on campus', amt: fm(c.ws) });
+    if (c.sub > 0) planRows.push({ n: n++, label: 'Subsidized loan', note: 'No interest builds while you are enrolled', amt: fm(c.sub) });
+    if (c.un > 0) planRows.push({ n: n++, label: 'Unsubsidized loan', note: 'Interest builds from the day it is paid out', amt: fm(c.un) });
+    const hasLoans = c.sub > 0 || c.un > 0;
+    const plan = {
+      covered: c.net === 0,
+      hasLeft: c.left > 0,
+      leftText: fm(c.left) + ' is still uncovered after every offer above. Look at a lower-cost housing option, more scholarships, or talk to your Financial Aid Office.',
+      payText: hasLoans
+        ? 'Estimated payment after graduation: about ' + fm(c.planPay) + ' a month on the 10-year standard plan, using ' + s.years + (s.years === 1 ? ' year' : ' years') + ' until graduation.'
+        : 'This plan has no loan payments.'
+    };
+
+    // Loans
+    const useSub = s.useLoan.sub, useUn = s.useLoan.un;
+    const loanDef = (key, title, amount, uns, tag, tagBg, tagColor, data, used) => ({
+      title, amount: fm(amount), rate: '6.52%', tag, tagBg, tagColor,
+      monthly: fm(data.m) + '/mo', accrued: uns ? fm(data.accrued) : '$0', interest: fm(data.interest), fee: fm(data.fee),
+      selected: used,
+      borderW: used ? '2px' : '1.5px', borderStyle: used ? 'solid' : 'dashed', borderC: used ? (uns ? '#C2410C' : '#0F2D5C') : '#CFC5AE',
+      bg: used ? '#FFFFFF' : '#FBF8F0',
+      toggle: () => this.setState({ useLoan: Object.assign({}, s.useLoan, { [key]: !s.useLoan[key] }) })
+    });
+    const loans = [
+      loanDef('sub', 'Subsidized Loan', 3500, false, 'No interest while enrolled', '#E0F2EF', '#0B5E58', c.L.sub, useSub),
+      loanDef('un', 'Unsubsidized Loan', 2000, true, 'Interest builds immediately', '#FFEDD5', '#9A3412', c.L.un, useUn)
+    ];
+    const sumP = (useSub ? 3500 : 0) + (useUn ? 2000 : 0);
+    const sumM = (useSub ? c.L.sub.m : 0) + (useUn ? c.L.un.m : 0);
+    const sumI = (useSub ? c.L.sub.interest : 0) + (useUn ? c.L.un.interest : 0);
+    const loanSummaryLead = sumP > 0
+      ? 'Borrowing ' + fm(sumP) + ' costs about ' + fm(sumI) + ' in interest over 10 years.'
+      : 'No loans selected. Pick one above to see its monthly payment.';
+    const loanSummaryPay = sumP > 0 ? '≈ ' + fm(sumM) + ' / month' : '$0 / month';
+    const yearOpts = [1, 2, 3, 4].map((y) => Object.assign({ label: y + (y === 1 ? ' year' : ' years'), pick: () => this.setState({ years: y }) }, pill(s.years === y)));
+
+    // Chat
+    const chat = s.msgs.slice().reverse().map((m) => (m.role === 'user'
+      ? { text: m.text, align: 'flex-end', bg: '#0A7A72', color: '#FFFFFF' }
+      : { text: m.text, align: 'flex-start', bg: '#FFFFFF', color: '#14213D' }));
+    chat.push({ text: 'I see you\'re eligible for an estimated ' + fm(c.pell) + ' Pell Grant. Want me to compare loan options to reduce your out-of-pocket costs?', align: 'flex-start', bg: '#FFFFFF', color: '#14213D' });
+    const chips = [
+      'What\'s the lowest monthly payment?',
+      'What\'s due soon?',
+      'How much will I pay out of pocket?',
+      'Is work-study worth it?'
+    ].map((q) => ({ label: q, ask: () => this.send(q) }));
+
+    return {
+      cost: fm(c.cost), costRows, housingOpts, enrollOpts, pell: fm(c.pell),
+      tasks, tasksLeft,
+      fafsaOpen: s.fafsaOpen, fafsaLabel: s.fafsaOpen ? 'Hide FAFSA details' : 'View FAFSA details',
+      toggleFafsa: () => this.setState({ fafsaOpen: !s.fafsaOpen }),
+      workOpen: s.workOpen, workLabel: s.workOpen ? 'Hide steps' : 'How to get a work-study job',
+      toggleWork: () => this.setState({ workOpen: !s.workOpen }),
+      scholarships, schPotential: fm(3000 + 2400 + 1500),
+      net: fm(c.net), aid: fm(c.aid), cov: c.cov, segs, legend, barLabel,
+      plan, planRows,
+      loans, yearOpts, loanSummaryLead, loanSummaryPay,
+      chat, chips, draft: s.draft,
+      onDraft: (e) => { this.state.draft = e && e.target ? e.target.value : ''; },
+      onSubmit: (e) => { if (e && e.preventDefault) e.preventDefault(); this.send(this.state.draft); },
+      exportPdf: () => { try { window.print(); } catch (err) {} }
+    };
+  }
+}
+
+
+(function () {
+  var tpl = document.getElementById('tpl').content;
+  var root = document.getElementById('app');
+  var comp = new Component({});
+  var WHOLE = /^\s*\{\{\s*([^{}]+?)\s*\}\}\s*$/;
+  var ANY = /\{\{\s*([^{}]+?)\s*\}\}/g;
+
+  function lookup(path, scope) {
+    path = path.trim();
+    if (path === 'true') return true;
+    if (path === 'false') return false;
+    var v = scope, parts = path.split('.');
+    for (var i = 0; i < parts.length; i++) { if (v == null) return undefined; v = v[parts[i]]; }
+    return v;
+  }
+  function interp(str, scope) {
+    return str.replace(ANY, function (m, p) { var v = lookup(p, scope); return v == null ? '' : String(v); });
+  }
+  function wire(el, name, fn) {
+    var ev = name.slice(2);
+    if (ev === 'change' && el.tagName === 'INPUT' && el.type === 'text') el.addEventListener('input', function (e) { fn(e); });
+    else if (ev === 'submit') el.addEventListener('submit', function (e) { e.preventDefault(); fn(e); });
+    else el.addEventListener(ev, function (e) { fn(e); });
+  }
+  function kids(node, scope, parent) {
+    for (var c = node.firstChild; c; c = c.nextSibling) build(c, scope, parent);
+  }
+  function build(node, scope, parent) {
+    if (node.nodeType === 3) { parent.appendChild(document.createTextNode(interp(node.nodeValue, scope))); return; }
+    if (node.nodeType !== 1) return;
+    var tag = node.localName;
+    if (tag === 'sc-if') {
+      var mi = WHOLE.exec(node.getAttribute('value') || '');
+      if (mi && lookup(mi[1], scope)) kids(node, scope, parent);
+      return;
+    }
+    if (tag === 'sc-for') {
+      var mf = WHOLE.exec(node.getAttribute('list') || '');
+      var list = (mf ? lookup(mf[1], scope) : []) || [];
+      var as = node.getAttribute('as');
+      list.forEach(function (item, i) {
+        var s = Object.create(scope); s[as] = item; s.$index = i;
+        kids(node, s, parent);
+      });
+      return;
+    }
+    var el = document.createElementNS(node.namespaceURI, tag);
+    Array.prototype.forEach.call(node.attributes, function (a) {
+      var name = a.name;
+      if (name.indexOf('hint-') === 0) return;
+      var w = WHOLE.exec(a.value);
+      if (name.indexOf('on') === 0) {
+        if (w) { var fn = lookup(w[1], scope); if (typeof fn === 'function') wire(el, name, fn); }
+        return;
+      }
+      var val = w ? lookup(w[1], scope) : interp(a.value, scope);
+      if (name === 'checked') { el.checked = !!val; return; }
+      if (name === 'value' && tag === 'input') { el.value = val == null ? '' : val; return; }
+      if (typeof val === 'boolean') {
+        if (name.indexOf('aria-') === 0) el.setAttribute(name, String(val));
+        else if (val) el.setAttribute(name, '');
+        return;
+      }
+      if (val == null) return;
+      el.setAttribute(name, String(val));
+    });
+    kids(node, scope, el);
+    parent.appendChild(el);
+  }
+
+  var FOCUSABLE = 'button,input,a[href]';
+  function render() {
+    var y = window.scrollY;
+    var all = Array.prototype.slice.call(root.querySelectorAll(FOCUSABLE));
+    var idx = all.indexOf(document.activeElement);
+    var scope = comp.renderVals();
+    var frag = document.createDocumentFragment();
+    kids(tpl, scope, frag);
+    root.replaceChildren(frag);
+    if (idx >= 0) {
+      var next = root.querySelectorAll(FOCUSABLE)[idx];
+      if (next) next.focus({ preventScroll: true });
+    }
+    window.scrollTo(0, y);
+  }
+  var pending = false;
+  window.schedule = function () {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(function () { pending = false; render(); });
+  };
+  render();
+})();
+
+</script>
+</body>
+</html>

@@ -11,6 +11,10 @@ import ScheduleGenerator from "./pages/ScheduleGenerator.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import SignupPage from "./pages/SignupPage.jsx";
 import IntakeForm from "./pages/IntakeForm.jsx";
+import FinancialAidPage from "./pages/FinancialAidPage.jsx";
+import WhatIfAnalysisPage from "./pages/WhatIfAnalysisPage.jsx";
+
+
 
 const App = () => (
 	<Routes>
@@ -20,11 +24,13 @@ const App = () => (
 			<Route path="/intake" element={<IntakeForm />} />
 			<Route path="/educationplan" element={<EducationPlanEditPage />} />
 			<Route path="/career" element={<CareerProgramPage />} />
+			<Route path="/financial-aid" element={<FinancialAidPage />} />
 			<Route path="/schedule-generator" element={<ScheduleGenerator />} />
 			<Route path="/view" element={<ViewEducationPlanPage />} />
 			<Route path="/uni" element={<FindUniversityPage />} />
 			<Route path="/compare" element={<CollegeComparePage />} />
 			<Route path="/college/:unitId" element={<CollegeDetailPage />} />
+			<Route path="/what-if-analysis" element={<WhatIfAnalysisPage />} />
 		</Route>
 		<Route path="/login" element={<LoginPage />} />
 		<Route path="/signup" element={<SignupPage />} />

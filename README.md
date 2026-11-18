@@ -26,7 +26,7 @@ source .venv/bin/activate  # or .venv\Scripts\activate on Windows
 pip install -e .[dev]      # or pip install -r requirements.txt
 cp .env.example .env
 # edit .env with Postgres creds and COLLEGE_SCORECARD_API_KEY
-alembic upgrade head
+alembic upgrade headsource .venv/bin/activate
 uvicorn app.main:app --reload
 ```
 
