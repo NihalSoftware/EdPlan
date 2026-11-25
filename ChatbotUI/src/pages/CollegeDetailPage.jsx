@@ -18,7 +18,8 @@ const CollegeDetailPage = () => {
       setLoading(true);
       setError("");
       try {
-        const resolved = await getUniversityById(unitId);
+        const detail = await getUniversityById(unitId);
+        const resolved = detail || initialCollege || null;
         setCollege(resolved);
         if (resolved) {
           saveStorage("LastCollegeDetail", resolved);

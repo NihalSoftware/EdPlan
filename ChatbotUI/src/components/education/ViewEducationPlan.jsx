@@ -1,7 +1,6 @@
 import { Fragment, useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { jsPDF } from "jspdf";
-import { FaDownload } from "react-icons/fa6";
 import {
 	deletePlan,
 	getGraduationAudit,
@@ -71,7 +70,7 @@ const ViewEducationPlan = () => {
 	const [auditingPlanId, setAuditingPlanId] = useState(null);
 	const [planFeedback, setPlanFeedback] = useState({});
 	const profile = loadStorage("UserProfile") || {};
-	const studentId = profile.student_id || profile.studentId || profile.id || 1;
+	const studentId = profile.student_id || profile.studentId || profile.id;
 	const navigate = useNavigate();
 
 	const resolveDegree = (plan) => {
@@ -99,6 +98,8 @@ const ViewEducationPlan = () => {
 		saveStorage("SelectedProgram", plan.program || "");
 		saveStorage("SelectedDegreeLevel", degree || "");
 		saveStorage("EditingPlan", {
+			id: plan.id,
+			plan_id: plan.plan_id || plan.id,
 			university: plan.university || "",
 			program: plan.program || "",
 			degree: degree || "",
@@ -151,6 +152,7 @@ const ViewEducationPlan = () => {
 				name: course.course_name || course.name,
 				courseName: course.course_name || course.name,
 				credits: course.credits,
+				planned_term_id: planCourse.planned_term_id,
 				year: course.recommended_year ? `Year ${course.recommended_year}` : term.term_name || "Unassigned Year",
 				semester: course.recommended_semester || term.term_name || "Unassigned Semester",
 				prerequisite: course.prerequisite || "",
@@ -184,6 +186,10 @@ const ViewEducationPlan = () => {
 	const loadPlans = async () => {
 		const localPlans = loadLocalPlans();
 		setError("");
+		if (!studentId) {
+			setSavedPlans(localPlans);
+			return;
+		}
 		try {
 			const summaries = await listPlans({ userId: studentId });
 			const remotePlans = await Promise.all(
@@ -497,8 +503,8 @@ const ViewEducationPlan = () => {
 						<h1 className="text-3xl font-semibold text-slate-900">
 							Saved Education <span className="text-[#0069e0]">Plans</span>
 						</h1>
-						<p className="text-lg mt-1 text-slate-500">
-							Browse and share the education plans you&apos;ve saved.
+						<p className="text-lg mt-1">
+							View, manage, and share your saved education plans.
 						</p>
 					</div>
 				</header>
@@ -512,7 +518,8 @@ const ViewEducationPlan = () => {
 							value={filter}
 							onChange={(event) => setFilter(event.target.value)}
 							className="flex-1 min-w-[200px] px-3 py-2 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-							placeholder="Filter by program or university"
+							placeholder="View a Saved Education Plan by University or Program
+"
 						/>
 					</div>
 
@@ -561,17 +568,23 @@ const ViewEducationPlan = () => {
 											</td>
 											<td className="px-2 py-3 text-slate-700">
 												<span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
-													{getTotalCredits(plan.courses)} credits
+													{getTotalCredits(plan.courses)}
 												</span>
 											</td>
 											<td className="px-2 py-3 text-center">
 												<div className="flex items-center justify-center gap-2">
 													<button
 														type="button"
-														onClick={() => handleEdit(plan)}
-														className="px-4 py-1.5 rounded-lg bg-orange-200 text-orange-700 text-sm font-medium hover:bg-orange-300 transition"
+														className="px-4 py-1.5 rounded-lg bg-emerald-100 text-emerald-700 text-sm font-medium hover:bg-emerald-200 transition"
 													>
-														Edit
+														Request Advisor Approval
+													</button>
+													<button
+														type="button"
+														onClick={() => downloadPlan(plan)}
+														className="px-4 py-1.5 rounded-lg bg-emerald-100 hover:bg-emerald-200 transition"
+													>
+													Download PDF
 													</button>
 													<button
 														type="button"
@@ -582,7 +595,7 @@ const ViewEducationPlan = () => {
 																: "bg-indigo-100 text-indigo-700 hover:bg-indigo-200"
 														}`}
 													>
-														{expandedPlanId === plan.id ? "Hide" : "View Plan"}
+														{expandedPlanId === plan.id ? "Hide" : "View"}
 													</button>
 													<button
 														type="button"
@@ -606,9 +619,10 @@ const ViewEducationPlan = () => {
 													</button>
 													<button
 														type="button"
-														className="px-4 py-1.5 rounded-lg bg-emerald-100 text-emerald-700 text-sm font-medium hover:bg-emerald-200 transition"
+														onClick={() => handleEdit(plan)}
+														className="px-4 py-1.5 rounded-lg bg-orange-200 text-orange-700 text-sm font-medium hover:bg-orange-300 transition"
 													>
-														Send to Advisor
+														Edit
 													</button>
 													<button
 														type="button"
@@ -622,15 +636,9 @@ const ViewEducationPlan = () => {
 													>
 														{deletingPlanId === plan.id
 															? "Deleting..."
-															: "Delete Plan"}
+															: "Delete"}
 													</button>
-													<button
-														type="button"
-														onClick={() => downloadPlan(plan)}
-														className="px-4 py-1.5 rounded-lg bg-emerald-100 hover:bg-emerald-200 transition"
-													>
-														<FaDownload className="inline-block text-emerald-700" />
-													</button>
+													
 												</div>
 											</td>
 										</tr>

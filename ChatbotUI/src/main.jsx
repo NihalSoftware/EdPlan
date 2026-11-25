@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import { Toaster } from "react-hot-toast";
+import toast, { Toaster, ToastBar } from "react-hot-toast";
 import App from "./App.jsx";
 import "./index.css";
 
@@ -29,6 +29,38 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           },
         },
       }}
-    />
+    >
+      {(currentToast) => (
+        <ToastBar toast={currentToast} position="bottom-left">
+          {({ icon, message }) => (
+            <>
+              {currentToast.type === "error" ? (
+                <button
+                  type="button"
+                  aria-label="Dismiss error message"
+                  title="Dismiss error message"
+                  onClick={() => toast.dismiss(currentToast.id)}
+                  style={{
+                    alignItems: "center",
+                    background: "transparent",
+                    border: 0,
+                    cursor: "pointer",
+                    display: "flex",
+                    flexShrink: 0,
+                    justifyContent: "center",
+                    padding: 0,
+                  }}
+                >
+                  {icon}
+                </button>
+              ) : (
+                icon
+              )}
+              {message}
+            </>
+          )}
+        </ToastBar>
+      )}
+    </Toaster>
   </BrowserRouter>
 );

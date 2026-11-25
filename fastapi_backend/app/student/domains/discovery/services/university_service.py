@@ -8,6 +8,8 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.student.domains.discovery.clients.college_scorecard import (
     CollegeScorecardClient,
+)
+from app.student.domains.discovery.clients.college_scorecard import (
     client as college_scorecard_client,
 )
 from app.student.domains.discovery.repositories.university_repository import (
@@ -76,10 +78,11 @@ class UniversityService:
             offset=page * per_page,
             limit=per_page,
         )
+        enriched_universities = await self._enrich_many_with_scorecard(universities)
         return {
-            "results": universities,
+            "results": enriched_universities,
             "metadata": {
-                "count": len(universities),
+                "count": len(enriched_universities),
                 "page": page,
                 "per_page": per_page,
                 "source": "live_database",
@@ -108,7 +111,11 @@ class UniversityService:
         for university_id in selected_ids:
             _validate_uuid(university_id, "university_id")
         universities = await self.repository.get_universities_by_ids(db, selected_ids)
-        return list(await asyncio.gather(*(self._enrich_with_scorecard(item) for item in universities)))
+        return list(
+            await asyncio.gather(
+                *(self._enrich_with_scorecard(item) for item in universities)
+            )
+        )
 
     async def _enrich_with_scorecard(self, university: dict) -> dict:
         try:
@@ -122,6 +129,30 @@ class UniversityService:
         if not scorecard:
             return university
         return _merge_university_data(university, scorecard)
+
+    async def _enrich_many_with_scorecard(
+        self,
+        universities: list[dict],
+    ) -> list[dict]:
+        if not universities:
+            return []
+        try:
+            scorecards = await self.scorecard_client.find_schools_by_profiles(
+                universities
+            )
+        except Exception:
+            return list(
+                await asyncio.gather(
+                    *(self._enrich_with_scorecard(item) for item in universities)
+                )
+            )
+
+        return [
+            _merge_university_data(university, scorecard)
+            if scorecard
+            else university
+            for university, scorecard in zip(universities, scorecards, strict=True)
+        ]
 
 
 university_service = UniversityService()

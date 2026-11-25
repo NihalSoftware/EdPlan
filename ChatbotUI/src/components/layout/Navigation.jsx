@@ -1,12 +1,10 @@
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import clsx from "clsx";
-import { load, remove } from "../../utils/storage.js";
+import { clearUserData, load } from "../../utils/storage.js";
 import {
-	FaArrowRight,
 	FaBookOpen,
 	FaBuildingColumns,
 	FaClipboardList,
-	FaGraduationCap,
 	FaHouse,
 	FaRegBookmark,
 	FaRegCompass,
@@ -60,10 +58,8 @@ const Navigation = ({ open, setOpen }) => {
 
 	const handleAuthClick = () => {
 		if (isAuthenticated) {
-			remove("AuthToken");
-			remove("UserEmail");
-			remove("UserProfile");
-			navigate("/login");
+			clearUserData();
+			navigate("/login", { replace: true });
 			return;
 		}
 		navigate(location.pathname === "/login" ? "/signup" : "/login");
@@ -78,7 +74,7 @@ const Navigation = ({ open, setOpen }) => {
 			)}
 		>
 			<header className="flex items-center justify-between gap-4 border-b border-slate-100 p-6">
-				<div className="flex items-center gap-3">
+				<div className="flex w-full min-w-0 items-center gap-3">
 					<button
 						type="button"
 						onClick={closeMenu}
@@ -88,10 +84,13 @@ const Navigation = ({ open, setOpen }) => {
 						<span className="text-xl text-slate-700">x</span>
 					</button>
 
-					<div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-violet-600 text-white shadow-lg shadow-indigo-200">
-						<FaGraduationCap className="h-5 w-5" />
-					</div>
-					<h1 className="text-3xl font-bold text-slate-950">EdPlan.ai</h1>
+					<img
+						src="/assets/edplan-ai-logo.jpg"
+						alt="EdPlan AI — Choose. Compare. Plan."
+						width="1599"
+						height="1066"
+						className="block w-full min-w-0 h-auto aspect-[2.5] object-cover object-[center_53%]"
+					/>
 				</div>
 			</header>
 
@@ -103,6 +102,8 @@ const Navigation = ({ open, setOpen }) => {
 				<NavItem to="/educationplan" label="Create Education Plan" icon={FaBookOpen} onClick={closeMenu} />
 				<NavItem to="/schedule-generator" label="Schedule Generator" icon={FaCalendarAlt} onClick={closeMenu} />
 				<NavItem to="/view" label="Saved Plans" icon={FaRegBookmark} onClick={closeMenu} />
+				<NavItem to="/financial-aid" label="Financial Aid" icon={FaBookOpen} onClick={closeMenu} />
+				<NavItem to="/what-if-analysis" label="What If Analysis" icon={FaWandMagicSparkles} onClick={closeMenu} />
 				<NavItem to="/edplan-nexus" label="EdPlan Nexus" icon={FaWandMagicSparkles} badge="NEW" onClick={closeMenu} />
 			</nav>
 			<footer className="border-t border-slate-50 p-6">

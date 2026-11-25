@@ -19,6 +19,8 @@ import UniversityAdvisorPage from "./pages/UniversityAdvisorPage.jsx";
 import FinanceGuidePage from "./pages/FinanceGuidePage.jsx";
 import CareerNavigatorPage from "./pages/CareerNavigatorPage.jsx";
 import AcademicSuccessPage from "./pages/AcademicSuccessPage.jsx";
+import FinancialAidPage from "./pages/FinancialAidPage.jsx";
+import WhatIfAnalysisPage from "./pages/WhatIfAnalysisPage.jsx";
 
 const App = () => (
 	<Routes>
@@ -28,6 +30,7 @@ const App = () => (
 			<Route path="/intake" element={<IntakeForm />} />
 			<Route path="/educationplan" element={<EducationPlanEditPage />} />
 			<Route path="/career" element={<CareerProgramPage />} />
+			<Route path="/financial-aid" element={<FinancialAidPage />} />
 			<Route path="/schedule-generator" element={<ScheduleGenerator />} />
 			<Route path="/view" element={<ViewEducationPlanPage />} />
 			<Route path="/edplan-nexus" element={<EdPlanNexusPage />} />
@@ -41,6 +44,7 @@ const App = () => (
 			<Route path="/uni" element={<FindUniversityPage />} />
 			<Route path="/compare" element={<CollegeComparePage />} />
 			<Route path="/college/:unitId" element={<CollegeDetailPage />} />
+			<Route path="/what-if-analysis" element={<WhatIfAnalysisPage />} />
 		</Route>
 		<Route path="/login" element={<LoginPage />} />
 		<Route path="/signup" element={<SignupPage />} />

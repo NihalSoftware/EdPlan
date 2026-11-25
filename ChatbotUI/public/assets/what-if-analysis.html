@@ -1,0 +1,310 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>EdPlan What-If Analysis</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: fixed left nav + top bar, content grid of scenario builder / overview, comparison table, timeline / advisor notes */
+:root {
+  --bg: #f3f6fc;
+  --surface: #ffffff;
+  --surface-2: #eaf1fd;
+  --line: #d9e2f1;
+  --fg: #0e2147;
+  --fg-muted: #4a5b7c;
+  --accent: #0b5ed7;
+  --accent-ink: #ffffff;
+  --accent-soft: #dce9ff;
+  --ok-bg: #dff3e3; --ok-fg: #1c6b33;
+  --warn-bg: #fdebd3; --warn-fg: #a4510a;
+  --info-bg: #e3edff; --info-fg: #1e4fa8;
+  --track: #e1e6ef;
+  --font-body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --radius: 8px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b1426; --surface: #121e36; --surface-2: #19294a; --line: #26385d;
+    --fg: #e8eefb; --fg-muted: #9fb0cf; --accent: #5c9bff; --accent-ink: #07142c; --accent-soft: #1d3260;
+    --ok-bg: #173a24; --ok-fg: #7fd69a; --warn-bg: #4a2d10; --warn-fg: #f6b46e;
+    --info-bg: #1b2f58; --info-fg: #9cc0ff; --track: #26385d;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b1426; --surface: #121e36; --surface-2: #19294a; --line: #26385d;
+  --fg: #e8eefb; --fg-muted: #9fb0cf; --accent: #5c9bff; --accent-ink: #07142c; --accent-soft: #1d3260;
+  --ok-bg: #173a24; --ok-fg: #7fd69a; --warn-bg: #4a2d10; --warn-fg: #f6b46e;
+  --info-bg: #1b2f58; --info-fg: #9cc0ff; --track: #26385d;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.45; margin: 0; }
+button, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.topbar { display: flex; align-items: center; justify-content: space-between; background: var(--surface); border-bottom: 1px solid var(--line); height: 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.logo { font-weight: 800; font-size: 32px; letter-spacing: -0.5px; color: var(--accent); }
+.top-actions { display: flex; align-items: center; gap: 22px; }
+.bell { position: relative; display: grid; place-items: center; background: none; border: 0; padding: 4px; cursor: pointer; }
+.bell i { position: absolute; top: 2px; right: 3px; width: 9px; height: 9px; background: #e5383b; border-radius: 50%; border: 2px solid var(--surface); }
+.avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font-weight: 700; font-size: 18px; }
+
+.shell { display: grid; grid-template-columns: minmax(0, 1fr); min-height: 100vh; }
+.side-logo { padding: 0 16px 18px; }
+.side { background: var(--surface); border-right: 1px solid var(--line); padding: 20px 8px 20px max(8px, env(safe-area-inset-left, 0px)); }
+.side nav { display: flex; flex-direction: column; gap: 4px; }
+.nav-item { display: flex; align-items: center; gap: 18px; width: 100%; background: none; border: 0; border-radius: var(--radius); padding: 12px 16px; text-align: left; cursor: pointer; color: var(--fg); }
+.nav-item:hover { background: var(--surface-2); }
+.nav-item[aria-current="page"] { background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+.nav-item svg { flex: none; }
+
+main { padding-block: 22px 40px; padding-left: max(16px, env(safe-area-inset-left, 0px)); max-width: 1200px; width: 100%; margin: 0 auto; padding-right: max(16px, env(safe-area-inset-right, 0px)); min-width: 0; }
+.logo { margin-bottom: 14px; }
+.crumbs { font-size: 14px; color: var(--fg-muted); display: flex; gap: 8px; align-items: center; }
+.crumbs a { color: var(--accent); text-decoration: none; }
+.head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-top: 10px; }
+h1 { font-size: 38px; line-height: 1.1; letter-spacing: -0.8px; margin: 0; font-weight: 800; text-wrap: balance; }
+.lede { color: var(--fg-muted); margin: 6px 0 0; font-size: 16px; max-width: 65ch; }
+.btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: var(--radius); border: 1.5px solid var(--accent); background: var(--surface); color: var(--accent); font-weight: 600; cursor: pointer; }
+.btn.primary { background: var(--accent); color: var(--accent-ink); }
+.btn:hover { filter: brightness(0.96); }
+
+.grid { display: grid; gap: 16px; margin-top: 20px; }
+.row-top { grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr); }
+.row-bottom { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; min-width: 0; }
+.card h2 { display: flex; align-items: center; gap: 12px; font-size: 20px; margin: 0 0 16px; font-weight: 700; letter-spacing: -0.2px; }
+.card h2 svg { color: var(--accent); flex: none; }
+
+.form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 14px; }
+.field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.field label { font-size: 14px; font-weight: 600; }
+select { width: 100%; padding: 10px 12px; border: 1.5px solid var(--line); border-radius: var(--radius); background: var(--surface); appearance: none; -webkit-appearance: none; cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%236b7a99' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 12px center; padding-right: 32px; }
+.run { margin-top: 18px; }
+
+.tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.tile { background: var(--surface-2); border-radius: var(--radius); padding: 12px 14px; display: flex; flex-direction: column; justify-content: space-between; gap: 8px; min-height: 104px; }
+.tile span { font-size: 14px; font-weight: 600; line-height: 1.25; }
+.tile strong { font-size: 34px; font-weight: 700; line-height: 1; letter-spacing: -0.5px; font-variant-numeric: tabular-nums; }
+.tile strong.term { font-size: 28px; }
+.progress-label { font-weight: 600; margin: 20px 0 8px; }
+.bar { display: flex; align-items: center; gap: 14px; }
+.track { flex: 1; height: 16px; background: var(--track); border-radius: 99px; overflow: hidden; }
+.fill { height: 100%; background: var(--accent); border-radius: 99px; transition: width .4s ease; }
+.pct { font-weight: 700; font-size: 20px; font-variant-numeric: tabular-nums; }
+
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+table { width: 100%; border-collapse: collapse; min-width: 560px; font-variant-numeric: tabular-nums; }
+th { background: var(--surface-2); text-align: left; font-weight: 700; padding: 12px 14px; }
+td { padding: 11px 14px; border-top: 1px solid var(--line); }
+td:first-child { font-weight: 500; }
+.pill { display: inline-block; padding: 3px 12px; border-radius: 99px; font-size: 14px; font-weight: 600; white-space: nowrap; }
+.pill.none { background: var(--info-bg); color: var(--info-fg); }
+.pill.up, .pill.add { background: var(--ok-bg); color: var(--ok-fg); }
+.pill.down { background: var(--warn-bg); color: var(--warn-fg); }
+
+.timeline { display: flex; padding: 8px 4px 0; }
+.stop { flex: 1; position: relative; display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; min-width: 0; padding-top: 28px; }
+.stop::before { content: ""; position: absolute; top: 9px; left: -50%; right: 50%; height: 3px; background: var(--accent); opacity: .55; }
+.stop:first-child::before { display: none; }
+.dot { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; border-radius: 50%; background: var(--accent); border: 4px solid var(--surface); box-shadow: 0 0 0 1.5px var(--accent); }
+.stop.grad .dot { width: 34px; height: 34px; top: -7px; display: grid; place-items: center; color: var(--accent-ink); box-shadow: none; border: 0; }
+.stop b { font-weight: 600; }
+.stop small { color: var(--fg-muted); font-size: 14px; }
+.stop.grad small { color: var(--accent); font-weight: 600; }
+.stop.grad { padding-top: 34px; }
+
+.note { display: flex; gap: 12px; background: var(--info-bg); color: var(--fg); padding: 14px; border-radius: var(--radius); }
+.note svg { flex: none; color: var(--accent); margin-top: 1px; }
+.note p { margin: 0; }
+.link-btn { margin-top: 16px; background: var(--surface); }
+.toast { margin-top: 12px; font-size: 14px; color: var(--ok-fg); min-height: 20px; text-align: right; }
+
+@media (max-width: 1100px) {
+  .row-top, .row-bottom { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 860px) {
+  .shell { grid-template-columns: minmax(0, 1fr); }
+  .side { border-right: 0; border-bottom: 1px solid var(--line); padding: 8px max(16px, env(safe-area-inset-right, 0px)) 8px max(16px, env(safe-area-inset-left, 0px)); overflow-x: auto; }
+  .side nav { flex-direction: row; }
+  .nav-item { width: auto; white-space: nowrap; padding: 10px 14px; gap: 10px; }
+  main { padding-left: max(16px, env(safe-area-inset-left, 0px)); }
+  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  h1 { font-size: 30px; }
+}
+@media (max-width: 520px) {
+  .form { grid-template-columns: minmax(0, 1fr); }
+  .timeline { flex-direction: column; gap: 14px; align-items: flex-start; padding-left: 28px; }
+  .stop { flex-direction: row; align-items: center; padding: 0 0 0 22px; text-align: left; gap: 10px; }
+  .stop::before { display: none; }
+  .dot, .stop.grad .dot { left: -10px; top: 50%; transform: translateY(-50%); }
+  .stop.grad { padding-top: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .fill { transition: none; } }
+</style>
+
+<div class="shell">
+  <main>
+    <div class="logo">EdPlan</div>
+    <div class="crumbs"><a href="#">Academic Planning</a><span aria-hidden="true">&rsaquo;</span><span>What-If Analysis</span></div>
+    <div class="head">
+      <div>
+        <h1>What-If Analysis</h1>
+        <p class="lede">Explore how changing your academic path may affect your degree progress and graduation timeline.</p>
+      </div>
+      <div class="btns">
+        <button class="btn" id="reset"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.700"/><path d="M21 4v5h-5"/></svg>Reset scenario</button>
+        <button class="btn primary" id="save"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 3h12l4 4v14H3V5a2 2 0 0 1 2-2z"/><path d="M7 3v6h8V3M7 21v-7h10v7"/></svg>Save scenario</button>
+      </div>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div class="grid row-top" style="margin-top:8px">
+      <section class="card" aria-labelledby="build-h">
+        <h2 id="build-h"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M3 6h10M17 6h4M3 12h4M11 12h10M3 18h12M19 18h2"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></svg>Build a scenario</h2>
+        <div class="form">
+          <div class="field"><label for="cur">Current program</label>
+            <select id="cur"><option>Business Administration, BBA</option></select></div>
+          <div class="field"><label for="major">Proposed major</label>
+            <select id="major"></select></div>
+          <div class="field"><label for="minor">Minor</label>
+            <select id="minor"></select></div>
+          <div class="field"><label for="term">Effective term</label>
+            <select id="term"></select></div>
+        </div>
+        <button class="btn primary run" id="run"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg>Run analysis</button>
+      </section>
+
+      <section class="card" aria-labelledby="ov-h">
+        <h2 id="ov-h"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="12" width="5" height="9" rx="1"/><rect x="10" y="5" width="5" height="16" rx="1"/><rect x="17" y="9" width="4" height="12" rx="1"/></svg>Scenario overview</h2>
+        <div class="tiles">
+          <div class="tile"><span>Credits applied</span><strong id="t-applied">54</strong></div>
+          <div class="tile"><span>Credits remaining</span><strong id="t-rem">66</strong></div>
+          <div class="tile"><span>Additional requirements</span><strong id="t-req">5</strong></div>
+          <div class="tile"><span>Projected graduation</span><strong class="term" id="t-grad">Spring 2028</strong></div>
+        </div>
+        <div class="progress-label" id="prog-label">Degree progress &middot; 54 of 120 credits applied</div>
+        <div class="bar"><div class="track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="45" id="track"><div class="fill" id="fill" style="width:45%"></div></div><span class="pct" id="pct">45%</span></div>
+      </section>
+    </div>
+
+    <section class="card" style="margin-top:16px" aria-labelledby="chg-h">
+      <h2 id="chg-h"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M6 21h12M5 7h14"/><path d="M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></svg>How your plan changes</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Requirement</th><th>Current plan</th><th>Proposed plan</th><th>Impact</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="grid row-bottom">
+      <section class="card" aria-labelledby="tl-h">
+        <h2 id="tl-h"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 14h2M14 14h2M8 17.500h2"/></svg>Graduation timeline</h2>
+        <div class="timeline" id="timeline"></div>
+      </section>
+      <section class="card" aria-labelledby="adv-h">
+        <h2 id="adv-h"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.500"/><path d="M12 11v6M12 7.500v.01"/></svg>Advisor notes</h2>
+        <div class="note">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.500"/><path d="M12 11v6M12 7.500v.01"/></svg>
+          <p>Some completed courses may apply differently to the proposed program. Meet with your advisor to confirm final requirements.</p>
+        </div>
+        <button class="btn link-btn">View degree requirements</button>
+      </section>
+    </div>
+  </main>
+</div>
+
+<script>
+(function () {
+  var TOTAL = 120, APPLIED = 54, GENED = 31, ELECTIVES = 12, BASE_CORE = 24;
+  var TERMS = ["Fall 2026", "Spring 2027", "Fall 2027", "Spring 2028", "Fall 2028", "Spring 2029", "Fall 2029"];
+  var MAJORS = [
+    { name: "Computer Science, BS",         core: 36, reqs: 5, span: 4 },
+    { name: "Data Science, BS",             core: 33, reqs: 4, span: 4 },
+    { name: "Economics, BA",                core: 27, reqs: 2, span: 3 },
+    { name: "Business Administration, BBA", core: 24, reqs: 0, span: 3 }
+  ];
+  var MINORS = [
+    { name: "Mathematics", credits: 18 },
+    { name: "Statistics",  credits: 15 },
+    { name: "Psychology",  credits: 18 },
+    { name: "None",        credits: 0 }
+  ];
+  var START_TERMS = TERMS.slice(0, 3);
+  var DEFAULTS = { major: 0, minor: 0, term: 0 };
+
+  var $ = function (id) { return document.getElementById(id); };
+  var major = $("major"), minor = $("minor"), term = $("term");
+
+  function fill(sel, items, key) {
+    sel.innerHTML = "";
+    items.forEach(function (it, i) {
+      var o = document.createElement("option");
+      o.value = i; o.textContent = typeof it === "string" ? it : it[key];
+      sel.appendChild(o);
+    });
+  }
+  fill(major, MAJORS, "name"); fill(minor, MINORS, "name"); fill(term, START_TERMS);
+
+  function row(req, cur, prop, label, kind) {
+    return "<tr><td>" + req + "</td><td>" + cur + "</td><td>" + prop + '</td><td><span class="pill ' + kind + '">' + label + "</span></td></tr>";
+  }
+
+  function render() {
+    var m = MAJORS[+major.value], mn = MINORS[+minor.value], start = +term.value;
+    var coreDelta = m.core - BASE_CORE;
+    var elec = Math.max(0, ELECTIVES - Math.round(mn.credits / 3));
+    var elecDelta = ELECTIVES - elec;
+    var remaining = TOTAL - APPLIED, pct = Math.round(APPLIED / TOTAL * 100);
+
+    var rows = row("General Education", GENED + " credits", GENED + " credits", "No change", "none");
+    rows += coreDelta === 0
+      ? row("Program core", BASE_CORE + " credits remaining", m.core + " credits remaining", "No change", "none")
+      : row("Program core", BASE_CORE + " credits remaining", m.core + " credits remaining", (coreDelta > 0 ? "+" : "") + coreDelta + " credits", coreDelta > 0 ? "up" : "down");
+    rows += mn.credits
+      ? row(mn.name === "None" ? "Minor" : mn.name + " minor", "Not included", mn.credits + " credits", "Added", "add")
+      : row("Minor", "Not included", "Not included", "No change", "none");
+    rows += elecDelta === 0
+      ? row("Electives", ELECTIVES + " credits", elec + " credits", "No change", "none")
+      : row("Electives", ELECTIVES + " credits", elec + " credits", elecDelta + " fewer credits", "down");
+    $("rows").innerHTML = rows;
+
+    var gradIdx = start + m.span - 1;
+    $("t-applied").textContent = APPLIED;
+    $("t-rem").textContent = remaining;
+    $("t-req").textContent = m.reqs;
+    $("t-grad").textContent = TERMS[gradIdx];
+    $("prog-label").innerHTML = "Degree progress &middot; " + APPLIED + " of " + TOTAL + " credits applied";
+    $("fill").style.width = pct + "%";
+    $("pct").textContent = pct + "%";
+    $("track").setAttribute("aria-valuenow", pct);
+
+    var html = "";
+    for (var i = start; i <= gradIdx; i++) {
+      var last = i === gradIdx, first = i === start;
+      var sub = last ? "Projected Graduation" : first ? "Start term" : "On track";
+      var star = last ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.900 7.500.7-5.700 5 1.700 7.400L12 18l-6.500 4 1.700-7.400-5.700-5L9 8.900z"/></svg>' : "";
+      html += '<div class="stop' + (last ? " grad" : "") + '"><span class="dot">' + star + "</span><b>" + TERMS[i] + "</b><small>" + sub + "</small></div>";
+    }
+    $("timeline").innerHTML = html;
+  }
+
+  $("run").addEventListener("click", render);
+  [major, minor, term].forEach(function (s) { s.addEventListener("change", render); });
+  $("reset").addEventListener("click", function () {
+    major.value = DEFAULTS.major; minor.value = DEFAULTS.minor; term.value = DEFAULTS.term;
+    $("toast").textContent = ""; render();
+  });
+  $("save").addEventListener("click", function () {
+    var m = MAJORS[+major.value].name, mn = MINORS[+minor.value].name;
+    $("toast").textContent = "Scenario saved: " + m + (mn === "None" ? "" : " with a " + mn + " minor") + ", starting " + TERMS[+term.value] + ".";
+  });
+  render();
+})();
+</script>
+
+</body></html>

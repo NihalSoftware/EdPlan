@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { loginDestination } from "../utils/homeNavigation.js";
 import { login, register } from "../services/authService.js";
 import { save as saveStorage } from "../utils/storage.js";
 import toast from "react-hot-toast";
@@ -15,6 +16,7 @@ const LoginPage = ({ initialMode = "login" }) => {
 	});
 	const [error, setError] = useState("");
 	const navigate = useNavigate();
+	const location = useLocation();
 	const isValidEmail = (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 	const hasUppercase = (value) => /[A-Z]/.test(value);
 
@@ -49,7 +51,7 @@ const LoginPage = ({ initialMode = "login" }) => {
 						saveStorage("UserProfile", data);
 					}
 					saveStorage("UserEmail", form.email);
-					navigate("/eduai");
+					navigate(loginDestination(location.search));
 				} else {
 					setError(message || "Login failed. Please check your credentials.");
 				}

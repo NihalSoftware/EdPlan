@@ -38,3 +38,4 @@ target/
 .project
 .DS_Store
 intake_submissions.json
+ChatbotUI/artifacts/

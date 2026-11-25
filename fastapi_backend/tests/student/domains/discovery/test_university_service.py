@@ -37,9 +37,34 @@ class _Repository:
         return [self.university]
 
 
+class _NoMatchScorecard:
+    async def find_schools_by_profiles(self, profiles):
+        return [None] * len(profiles)
+
+    async def find_school_by_profile(self, **kwargs):
+        return None
+
+
+class _MatchingScorecard:
+    async def find_schools_by_profiles(self, profiles):
+        return [await self.find_school_by_profile() for _ in profiles]
+
+    async def find_school_by_profile(self, **kwargs):
+        return {
+            "unit_id": 188058,
+            "scorecard_unit_id": 188058,
+            "size": 926,
+            "graduation_rate": 0.2967,
+            "average_annual_cost": 7276,
+            "typical_earnings": 38112,
+            "financial_aid_debt": 6000,
+            "open_admissions_policy": True,
+        }
+
+
 def test_search_universities_returns_results_and_metadata():
     repository = _Repository()
-    service = UniversityService(repository)
+    service = UniversityService(repository, _NoMatchScorecard())
 
     result = asyncio.run(
         service.search_universities(
@@ -67,6 +92,23 @@ def test_search_universities_returns_results_and_metadata():
             "limit": 10,
         }
     ]
+
+
+def test_search_universities_enriches_cards_with_scorecard_data():
+    repository = _Repository()
+    service = UniversityService(repository, _MatchingScorecard())
+
+    result = asyncio.run(service.search_universities(object()))
+
+    school = result["results"][0]
+    assert school["unit_id"] == repository.university["unit_id"]
+    assert school["scorecard_unit_id"] == 188058
+    assert school["size"] == 926
+    assert school["graduation_rate"] == 0.2967
+    assert school["average_annual_cost"] == 7276
+    assert school["typical_earnings"] == 38112
+    assert school["financial_aid_debt"] == 6000
+    assert school["open_admissions_policy"] is True
 
 
 def test_get_university_rejects_invalid_uuid():
@@ -110,7 +152,7 @@ def test_compare_universities_requires_two_valid_uuid_values():
 
 def test_compare_universities_delegates_up_to_five_ids():
     repository = _Repository()
-    service = UniversityService(repository)
+    service = UniversityService(repository, _NoMatchScorecard())
     ids = [str(uuid.uuid4()) for _ in range(6)]
 
     result = asyncio.run(service.compare_universities(object(), ids))

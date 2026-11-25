@@ -5,6 +5,59 @@ import { useNavigate } from "react-router-dom";
 const API_BASE_URL =
 	import.meta.env.VITE_API_BASE_URL || `${window.location.origin}/api`;
 
+const US_STATES = [
+	"Alabama",
+	"Alaska",
+	"Arizona",
+	"Arkansas",
+	"California",
+	"Colorado",
+	"Connecticut",
+	"Delaware",
+	"Florida",
+	"Georgia",
+	"Hawaii",
+	"Idaho",
+	"Illinois",
+	"Indiana",
+	"Iowa",
+	"Kansas",
+	"Kentucky",
+	"Louisiana",
+	"Maine",
+	"Maryland",
+	"Massachusetts",
+	"Michigan",
+	"Minnesota",
+	"Mississippi",
+	"Missouri",
+	"Montana",
+	"Nebraska",
+	"Nevada",
+	"New Hampshire",
+	"New Jersey",
+	"New Mexico",
+	"New York",
+	"North Carolina",
+	"North Dakota",
+	"Ohio",
+	"Oklahoma",
+	"Oregon",
+	"Pennsylvania",
+	"Rhode Island",
+	"South Carolina",
+	"South Dakota",
+	"Tennessee",
+	"Texas",
+	"Utah",
+	"Vermont",
+	"Virginia",
+	"Washington",
+	"West Virginia",
+	"Wisconsin",
+	"Wyoming",
+];
+
 const IntakeForm = () => {
 	const navigate = useNavigate();
 	const [satTaken, setSatTaken] = useState("no");
@@ -49,7 +102,7 @@ const IntakeForm = () => {
 
 	return (
 		<section className="bg-slate-100 min-h-screen flex items-center justify-center p-4">
-			<div className="w-full max-w-6xl bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+			<div className="w-full max-w-7xl bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
 				<header className="px-6 sm:px-10 py-6 border-b border-slate-200 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white">
 					<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
 						<div className="flex flex-col">
@@ -115,13 +168,18 @@ const IntakeForm = () => {
 								<span className="flex items-center gap-1">
 									State <span className="text-red-500">*</span>
 								</span>
-								<input
+								<select
 									name="state"
-									type="text"
-									placeholder="e.g. California / Outside US"
-									className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
+									defaultValue="New Mexico"
+									className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm shadow-sm bg-white focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none"
 									required
-								/>
+								>
+									{US_STATES.map((state) => (
+										<option key={state} value={state}>
+											{state}
+										</option>
+									))}
+								</select>
 							</label>
 							<label className="flex flex-col gap-1.5 text-sm font-medium text-slate-700">
 								<span className="flex items-center gap-1">

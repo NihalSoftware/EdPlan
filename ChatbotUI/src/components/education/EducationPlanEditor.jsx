@@ -4,6 +4,7 @@ import {
 	FaChevronDown,
 	FaChevronUp,
 	FaPlus,
+	FaTrash,
 } from "react-icons/fa";
 import {
 	getProgramWithCourses,
@@ -12,6 +13,8 @@ import {
 import {
 	addCourseToPlan,
 	createPlan,
+	listPlanCourses,
+	removeCourseFromPlan,
 	updatePlan,
 	validatePlan as validateBackendPlan,
 } from "../../services/planService.js";
@@ -22,8 +25,9 @@ import {
 import toast from "react-hot-toast";
 
 const LOCAL_PLAN_KEY = "LocalSavedPlans";
-const MIN_SEMESTER_CREDITS = 12;
+const MIN_SEMESTER_CREDITS = 3;
 const MAX_SEMESTER_CREDITS = 20;
+const MAX_SEMESTERS = 10;
 const normalizeRequirement = (value) => (value || "").trim();
 const normalizeDegree = (value = "") => {
 	const raw = String(value || "").trim().toLowerCase();
@@ -46,6 +50,9 @@ const YEAR_ORDER = [
 	"Third Year",
 	"Fourth Year",
 	"Fifth Year",
+	"Sixth Year",
+	"Seventh Year",
+	"Eighth Year",
 ];
 const SEMESTER_ORDER = ["Fall", "Spring", "Summer", "Winter"];
 const UNIVERSITY_ALIASES = {
@@ -74,6 +81,21 @@ const getSemesterRank = (semester) => {
 		(label) => label.toLowerCase() === String(semester).toLowerCase()
 	);
 	return idx >= 0 ? idx + 1 : Number.MAX_SAFE_INTEGER;
+};
+
+const buildGeneratedTerm = (termNumber) => {
+	const normalizedTermNumber = Math.max(1, Number(termNumber) || 1);
+	const yearIndex = Math.floor((normalizedTermNumber - 1) / 2);
+	const year = YEAR_ORDER[yearIndex] || `Year ${yearIndex + 1}`;
+	const semester = normalizedTermNumber % 2 === 1 ? "Fall" : "Spring";
+	return { key: `${year}::${semester}`, year, semester };
+};
+
+const getDisplaySemester = (semester, termNumber) => {
+	const normalized = normalizeRequirement(semester);
+	return /^semester\s+\d+$/i.test(normalized)
+		? buildGeneratedTerm(termNumber).semester
+		: normalized || "Term";
 };
 
 const isSameTerm = (a, b) =>
@@ -108,6 +130,42 @@ const getDependencies = (course, knownCodes) => {
 	};
 };
 
+const normalizeCourseCode = (value) => String(value || "").trim().toUpperCase();
+
+const getCorequisiteRemovalCodes = (planCourses, targetCode, knownCodes) => {
+	const removalCodes = new Set([normalizeCourseCode(targetCode)]);
+	let changed = true;
+
+	while (changed) {
+		changed = false;
+		(planCourses || []).forEach((course) => {
+			const courseCode = normalizeCourseCode(course.code);
+			if (!courseCode) return;
+
+			const coreqCodes = getDependencies(course, knownCodes).coreqCodes.map(
+				normalizeCourseCode
+			);
+			const isConnected =
+				removalCodes.has(courseCode) ||
+				coreqCodes.some((code) => removalCodes.has(code));
+			if (!isConnected) return;
+
+			if (!removalCodes.has(courseCode)) {
+				removalCodes.add(courseCode);
+				changed = true;
+			}
+			coreqCodes.forEach((code) => {
+				if (code && !removalCodes.has(code)) {
+					removalCodes.add(code);
+					changed = true;
+				}
+			});
+		});
+	}
+
+	return removalCodes;
+};
+
 const formatSchedule = (schedule) => {
 	if (!schedule) return "";
 	if (typeof schedule === "string") return schedule;
@@ -127,6 +185,7 @@ const validatePlan = (planCourses, knownCodes) => {
 	const issues = [];
 	(planCourses || []).forEach((course) => {
 		const { prereqCodes, coreqCodes } = getDependencies(course, knownCodes);
+		const courseCode = course.code || course.courseName || "Unknown course";
 
 		prereqCodes.forEach((code) => {
 			const prereqCourse = planCourses.find((item) => item.code === code);
@@ -135,7 +194,7 @@ const validatePlan = (planCourses, knownCodes) => {
 					courseCode: course.code,
 					type: "prereq-missing",
 					relatedCode: code,
-					message: `${course.courseName} requires ${code} in a prior term.`,
+					message: `${courseCode} requires ${code} in a prior term.`,
 					blocking: true,
 				});
 				return;
@@ -145,7 +204,7 @@ const validatePlan = (planCourses, knownCodes) => {
 					courseCode: course.code,
 					type: "prereq-order",
 					relatedCode: code,
-					message: `${code} must be scheduled before ${course.courseName}.`,
+					message: `${code} must be scheduled before ${courseCode}.`,
 					blocking: true,
 				});
 			}
@@ -158,7 +217,7 @@ const validatePlan = (planCourses, knownCodes) => {
 					courseCode: course.code,
 					type: "coreq-missing",
 					relatedCode: code,
-					message: `${course.courseName} requires co-requisite ${code} in the same term.`,
+					message: `${courseCode} requires co-requisite ${code} in the same term.`,
 					blocking: true,
 				});
 				return;
@@ -168,7 +227,7 @@ const validatePlan = (planCourses, knownCodes) => {
 					courseCode: course.code,
 					type: "coreq-term",
 					relatedCode: code,
-					message: `${code} must be taken in the same term as ${course.courseName}.`,
+					message: `${code} must be taken in the same term as ${courseCode}.`,
 					blocking: true,
 				});
 			}
@@ -177,10 +236,11 @@ const validatePlan = (planCourses, knownCodes) => {
 	return issues;
 };
 
-const EducationPlanEditor = () => {
+const EducationPlanEditor = ({ initialUniversity = "" }) => {
+	const [catalogOpen, setCatalogOpen] = useState(false);
 	const [programs, setPrograms] = useState([]);
 	const [selectedProgram, setSelectedProgram] = useState("");
-	const selectedUniversity = normalizeUniversityName(loadStorage("University") || "");
+	const selectedUniversity = normalizeUniversityName(initialUniversity || loadStorage("University") || "");
 	const [selectedDegree, setSelectedDegree] = useState("");
 	const [courses, setCourses] = useState([]);
 	const [availableCourses, setAvailableCourses] = useState([]);
@@ -199,7 +259,8 @@ const EducationPlanEditor = () => {
 	const profile = loadStorage("UserProfile") || {};
 	const navigate = useNavigate();
 
-	const backendStudentId = profile.student_id || profile.studentId || profile.id || 1;
+	const backendStudentId =
+		profile.student_id || profile.studentId || profile.id || null;
 
 	useEffect(() => {
 		listPrograms()
@@ -209,6 +270,8 @@ const EducationPlanEditor = () => {
 				setError("Unable to load program catalog.");
 			});
 		// Load program from storage on mount (keep university even if program is missing)
+		// A homepage college shortcut must not restore another institution's draft.
+		if (initialUniversity && normalizeUniversityName(loadStorage("University")) !== initialUniversity) return;
 		const savedProgram = loadStorage("Programname", "");
 		setSelectedProgram(savedProgram || "");
 		const savedDegree =
@@ -221,7 +284,7 @@ const EducationPlanEditor = () => {
 		if (editingActive && storedEditingPlan) {
 			setEditingPlan(storedEditingPlan);
 		}
-	}, []);
+	}, [initialUniversity]);
 
 	// When no program is selected, clear available courses
 	useEffect(() => {
@@ -229,6 +292,11 @@ const EducationPlanEditor = () => {
 			setAvailableCourses([]);
 		}
 	}, [selectedProgram]);
+
+	useEffect(() => {
+		setYearFilter("");
+		setSemesterFilter("");
+	}, [selectedProgram, selectedUniversity]);
 
 	// Update availableCourses when a program + university is selected.
 	useEffect(() => {
@@ -307,11 +375,16 @@ const EducationPlanEditor = () => {
 						(semester.courses || []).map((course) => ({
 							id: course.id || course.course_id,
 							course_id: course.course_id || course.id,
-							year: entry.year,
-							semester: semester.semester,
+							recommended_year: course.recommended_year || entry.year,
+							recommended_semester:
+								course.recommended_semester || semester.semester,
+							year: course.recommended_year || entry.year,
+							semester: course.recommended_semester || semester.semester,
 							code: course.code,
 							name: course.name,
 							credits: course.credits,
+							is_elective: course.is_elective,
+							default_plan_eligible: course.default_plan_eligible,
 							prerequisite: course.prerequisite,
 							corequisite: course.corequisite,
 							schedule: course.schedule,
@@ -324,13 +397,13 @@ const EducationPlanEditor = () => {
 
 			const builtDefaultPlan = dedupeCourses(
 				cleanedCourses
-					.filter((course) => !course.code?.toUpperCase().startsWith("ELEC"))
+					.filter((course) => course.default_plan_eligible)
 					.map((course) => ({
-				program: selectedProgram,
-				university: selectedUniversity,
-				id: course.id || course.course_id,
-				course_id: course.course_id || course.id,
-				year: course.year,
+						program: selectedProgram,
+						university: selectedUniversity,
+						id: course.id || course.course_id,
+						course_id: course.course_id || course.id,
+						year: course.year,
 						semester: course.semester,
 						courseName: course.name,
 						code: course.code,
@@ -339,6 +412,28 @@ const EducationPlanEditor = () => {
 						corequisite: course.corequisite,
 						schedule: course.schedule,
 					}))
+			);
+			const defaultTerms = Array.from(
+				new Map(
+					builtDefaultPlan.map((course) => [
+						`${course.year}::${course.semester}`,
+						{
+							key: `${course.year}::${course.semester}`,
+							year: course.year,
+							semester: course.semester,
+						},
+					])
+				).values()
+			)
+				.sort((a, b) => {
+					const yearDiff = getYearRank(a.year) - getYearRank(b.year);
+					if (yearDiff !== 0) return yearDiff;
+					return getSemesterRank(a.semester) - getSemesterRank(b.semester);
+				})
+				.slice(0, MAX_SEMESTERS);
+			const defaultTermKeys = new Set(defaultTerms.map((term) => term.key));
+			const placedDefaultPlan = builtDefaultPlan.filter((course) =>
+				defaultTermKeys.has(`${course.year}::${course.semester}`)
 			);
 			setDefaultPlan(builtDefaultPlan);
 			const degreeToUse = selectedDegree || hydratedMatch.degree || "";
@@ -385,9 +480,14 @@ const EducationPlanEditor = () => {
 			}
 
 			if (!editingMatch || !editApplied) {
-				setCourses([]);
-				setPlanTerms([]);
-				setActiveTermKey("");
+				setCourses(placedDefaultPlan);
+				setPlanTerms(defaultTerms);
+				setActiveTermKey(defaultTerms[0]?.key || "");
+				setExpandedTerms(
+					Object.fromEntries(
+						defaultTerms.map((term, index) => [term.key, index < 2])
+					)
+				);
 			}
 		};
 
@@ -455,6 +555,18 @@ const EducationPlanEditor = () => {
 		});
 	}, [courses, yearFilter, semesterFilter]);
 
+	const filteredPlanTerms = useMemo(
+		() =>
+			planTerms.filter((term) => {
+				const yearOk = yearFilter ? term.year === yearFilter : true;
+				const semesterOk = semesterFilter
+					? term.semester === semesterFilter
+					: true;
+				return yearOk && semesterOk;
+			}),
+		[planTerms, yearFilter, semesterFilter]
+	);
+
 	const groupedCourses = useMemo(() => {
 		return filteredPlanCourses.reduce((acc, course) => {
 			const key = `${course.year}::${course.semester}`;
@@ -485,11 +597,23 @@ const EducationPlanEditor = () => {
 
 	const groupedCourseEntries = useMemo(
 		() => {
+			const termNumberByKey = new Map(
+				planTerms.map((term, index) => [term.key, index + 1])
+			);
 			const entries = new Map(
-				planTerms.map((term) => [term.key, [term.key, groupedCourses[term.key] || []]])
+				filteredPlanTerms.map((term) => [
+					term.key,
+					[
+						term.key,
+						groupedCourses[term.key] || [],
+						termNumberByKey.get(term.key),
+					],
+				])
 			);
 			Object.entries(groupedCourses).forEach(([key, list]) => {
-				if (!entries.has(key)) entries.set(key, [key, list]);
+				if (!entries.has(key)) {
+					entries.set(key, [key, list, termNumberByKey.get(key) || entries.size + 1]);
+				}
 			});
 			return Array.from(entries.values()).sort(([a], [b]) => {
 				const [yearA, semesterA] = a.split("::");
@@ -499,7 +623,7 @@ const EducationPlanEditor = () => {
 				return getSemesterRank(semesterA) - getSemesterRank(semesterB);
 			});
 		},
-		[groupedCourses, planTerms]
+		[filteredPlanTerms, groupedCourses, planTerms]
 	);
 
 	useEffect(() => {
@@ -524,11 +648,30 @@ const EducationPlanEditor = () => {
 
 	const yearOptions = useMemo(
 		() =>
-			[...new Set(availableCourses.map((course) => course.year))].filter(
-				Boolean
+			[...new Set(planTerms.map((term) => term.year).filter(Boolean))].sort(
+				(a, b) => getYearRank(a) - getYearRank(b)
 			),
-		[availableCourses]
+		[planTerms]
 	);
+
+	const semesterOptions = useMemo(
+		() =>
+			[
+				...new Set(
+					planTerms
+						.filter((term) => !yearFilter || term.year === yearFilter)
+						.map((term) => term.semester)
+						.filter(Boolean)
+				),
+			].sort((a, b) => getSemesterRank(a) - getSemesterRank(b)),
+		[planTerms, yearFilter]
+	);
+
+	useEffect(() => {
+		if (semesterFilter && !semesterOptions.includes(semesterFilter)) {
+			setSemesterFilter("");
+		}
+	}, [semesterFilter, semesterOptions]);
 
 	const selectedProgramMeta = useMemo(() => {
 		if (!selectedProgram || !selectedUniversity) return null;
@@ -552,11 +695,6 @@ const EducationPlanEditor = () => {
 		);
 	}, [programs, selectedProgram, selectedUniversity, selectedDegree]);
 
-	const averageAnnualCost =
-		selectedProgramMeta?.average_annual_cost ||
-		selectedProgramMeta?.averageAnnualCost ||
-		selectedProgramMeta?.college_profile?.average_annual_cost ||
-		null;
 	const eligibilityCriteria =
 		selectedProgramMeta?.eligibility_criteria ||
 		selectedProgramMeta?.eligibility ||
@@ -578,15 +716,20 @@ const EducationPlanEditor = () => {
 			toast.error("Select a university and program first.");
 			return;
 		}
+		if (planTerms.length >= MAX_SEMESTERS) {
+			toast.error(`You can add a maximum of ${MAX_SEMESTERS} semesters.`);
+			return;
+		}
 		const existing = new Set(planTerms.map((term) => term.key));
 		const nextRecommended = recommendedTerms.find((term) => !existing.has(term.key));
-		const fallbackIndex = planTerms.length + 1;
+		let fallbackIndex = planTerms.length + 1;
+		let fallbackTerm = buildGeneratedTerm(fallbackIndex);
+		while (existing.has(fallbackTerm.key) && fallbackIndex < MAX_SEMESTERS) {
+			fallbackIndex += 1;
+			fallbackTerm = buildGeneratedTerm(fallbackIndex);
+		}
 		const nextTerm =
-			nextRecommended || {
-				key: `Custom Year::Semester ${fallbackIndex}`,
-				year: "Custom Year",
-				semester: `Semester ${fallbackIndex}`,
-			};
+			nextRecommended || fallbackTerm;
 
 		setPlanTerms((prev) => {
 			if (prev.some((term) => term.key === nextTerm.key)) return prev;
@@ -594,6 +737,35 @@ const EducationPlanEditor = () => {
 		});
 		setActiveTermKey(nextTerm.key);
 		setExpandedTerms((prev) => ({ ...prev, [nextTerm.key]: true }));
+	};
+
+	const deleteSemester = (term) => {
+		const termCourses = courses.filter((course) => isSameTerm(course, term));
+		const termLabel = `${term.year} - ${term.semester}`;
+
+		if (
+			termCourses.length > 0 &&
+			!window.confirm(
+				`Delete ${termLabel}? This will also remove ${termCourses.length} course${
+					termCourses.length === 1 ? "" : "s"
+				} from your plan.`
+			)
+		) {
+			return;
+		}
+
+		setPlanTerms((prev) => prev.filter((entry) => entry.key !== term.key));
+		setCourses((prev) => prev.filter((course) => !isSameTerm(course, term)));
+		setExpandedTerms((prev) => {
+			const next = { ...prev };
+			delete next[term.key];
+			return next;
+		});
+		setActiveTermKey((prev) => {
+			if (prev !== term.key) return prev;
+			return planTerms.find((entry) => entry.key !== term.key)?.key || "";
+		});
+		toast.success(`${termLabel} deleted.`);
 	};
 
 	const addCourse = (course) => {
@@ -641,18 +813,19 @@ const EducationPlanEditor = () => {
 			}
 
 			const { prereqCodes, coreqCodes } = getDependencies(newEntry, knownCodes);
+			const newCourseCode = newEntry.code || newEntry.courseName || "Unknown course";
 
 			for (const prereqCode of prereqCodes) {
 				const prereqCourse = prev.find((item) => item.code === prereqCode);
 				if (!prereqCourse) {
 					toast(
-						`${newEntry.courseName} requires ${prereqCode} in a prior term. Add the pre-requisite first.`
+						`${newCourseCode} requires ${prereqCode} in a prior term. Add the pre-requisite first.`
 					);
 					return prev;
 				}
 				if (!isBefore(prereqCourse, newEntry)) {
 					toast(
-						`${prereqCode} must be scheduled before ${newEntry.courseName}. Move the pre-requisite to an earlier term.`
+						`${prereqCode} must be scheduled before ${newCourseCode}. Move the pre-requisite to an earlier term.`
 					);
 					return prev;
 				}
@@ -667,7 +840,7 @@ const EducationPlanEditor = () => {
 				}
 				if (!isSameTerm(match, newEntry)) {
 					toast(
-						`${code} must be scheduled in ${newEntry.year} - ${newEntry.semester} with ${newEntry.courseName}. Move the co-requisite to the same term.`
+						`${code} must be scheduled in ${newEntry.year} - ${newEntry.semester} with ${newCourseCode}. Move the co-requisite to the same term.`
 					);
 					return prev;
 				}
@@ -695,6 +868,8 @@ const EducationPlanEditor = () => {
 							extraCourses.push({
 								program: selectedProgram,
 								university: selectedUniversity,
+								id: item.id || item.course_id,
+								course_id: item.course_id || item.id,
 								year: activeTerm.year,
 								semester: activeTerm.semester,
 								courseName: item.name,
@@ -708,7 +883,7 @@ const EducationPlanEditor = () => {
 					} else {
 						toast(
 							`Co-requisite ${missingCoreqs.join(", ")} must be taken with ${
-								newEntry.courseName
+								newCourseCode
 							}.`
 						);
 						return prev;
@@ -716,7 +891,7 @@ const EducationPlanEditor = () => {
 				} else {
 				toast(
 					`Co-requisite ${missingCoreqs.join(", ")} must be taken with ${
-						newEntry.courseName
+						newCourseCode
 					} in the same term.`
 				);
 				return dedupeCourses(prev);
@@ -747,41 +922,65 @@ const EducationPlanEditor = () => {
 		});
 	};
 
-		const removeCourse = (code) => {
-			setCourses((prev) => {
-				const target = prev.find((course) => course.code === code);
-				if (!target) return prev;
+	const removeCourse = (code) => {
+		setCourses((prev) => {
+			const targetCode = normalizeCourseCode(code);
+			const target = prev.find(
+				(course) => normalizeCourseCode(course.code) === targetCode
+			);
+			if (!target) return prev;
 
-				const dependents = prev.filter((course) =>
-					getDependencies(course, knownCodes).coreqCodes.includes(code)
+			const removalCodes = getCorequisiteRemovalCodes(
+				prev,
+				targetCode,
+				knownCodes
+			);
+			const coursesToRemove = prev.filter((course) =>
+				removalCodes.has(normalizeCourseCode(course.code))
+			);
+			const removedPlanCodes = new Set(
+				coursesToRemove.map((course) => normalizeCourseCode(course.code))
+			);
+
+			const prerequisiteDependents = prev.filter((course) => {
+				const courseCode = normalizeCourseCode(course.code);
+				if (removedPlanCodes.has(courseCode)) return false;
+				return getDependencies(course, knownCodes).prereqCodes.some((prereqCode) =>
+					removedPlanCodes.has(normalizeCourseCode(prereqCode))
 				);
-				const prereqDependents = prev.filter((course) =>
-					getDependencies(course, knownCodes).prereqCodes.includes(code)
-				);
-
-				// Block removal when other courses depend on this one and show a single toast message.
-				if (dependents.length > 0 || prereqDependents.length > 0) {
-					const parts = [];
-					
-					if (dependents.length > 0) {
-						parts.push(
-							`${target.courseName} is tied to a co-requisite course.\n\n`
-						);
-					}
-					if (prereqDependents.length > 0) {
-						parts.push(
-							`Can't Remove ${target.courseName} because it is a pre-requisite course.`
-						);
-					}
-					toast.error(parts.join(" "));
-					return prev;
-				}
-
-				// Safe to remove only the selected course
-				toast.success("Successfully Removed");
-				return dedupeCourses(prev.filter((course) => course.code !== code));
 			});
-		};
+
+			if (prerequisiteDependents.length > 0) {
+				const dependentCodes = prerequisiteDependents
+					.map((course) => course.code)
+					.filter(Boolean)
+					.join(", ");
+				toast.error(
+					`${target.code} and its co-requisite courses cannot be removed because they are prerequisites for ${dependentCodes}.` ,{duration: 60 * 1000,}
+
+				);
+				return prev;
+			}
+
+			const corequisiteCodes = coursesToRemove
+				.map((course) => course.code)
+				.filter(
+					(courseCode) => normalizeCourseCode(courseCode) !== targetCode
+				);
+			toast.success(
+				corequisiteCodes.length > 0
+					? `Removed ${target.code} with co-requisite${
+							corequisiteCodes.length === 1 ? "" : "s"
+						}: ${corequisiteCodes.join(", ")}.`
+					: `Removed ${target.code}.`
+			);
+			return dedupeCourses(
+				prev.filter(
+					(course) => !removedPlanCodes.has(normalizeCourseCode(course.code))
+				)
+			);
+		});
+	};
 
 	const getSemesterCreditIssues = () =>
 		planTerms
@@ -863,13 +1062,20 @@ const EducationPlanEditor = () => {
 			return;
 		}
 		try {
-			if (!selectedProgramMeta?.program_id || !selectedProgramMeta?.university_id) {
-				toast.error("Select a catalog-backed university and program before saving.");
+			if (
+				!backendStudentId ||
+				editingPlan?.source === "local" ||
+				!selectedProgramMeta?.program_id ||
+				!selectedProgramMeta?.university_id
+			) {
+				savePlanLocally();
 				return;
 			}
 			const existingPlanId = editingPlan?.plan_id || editingPlan?.id;
+			const isExistingBackendPlan =
+				existingPlanId && !String(existingPlanId).startsWith("local-");
 			const planName = `${selectedProgram} Plan`;
-			const plan = existingPlanId && !String(existingPlanId).startsWith("local-")
+			const plan = isExistingBackendPlan
 				? await updatePlan(existingPlanId, {
 					plan_name: planName,
 					description: selectedDegree || undefined,
@@ -887,13 +1093,34 @@ const EducationPlanEditor = () => {
 			if (!planId) {
 				throw new Error("Backend did not return a plan id.");
 			}
-			const courseIds = courses
-				.map((course) => course.course_id || course.id)
-				.filter(Boolean);
+			const existingCourses = isExistingBackendPlan
+				? await listPlanCourses(planId)
+				: [];
+			const getCourseId = (course) =>
+				course.course_id || course.course?.course_id || course.id;
+			const existingCourseIds = new Set(
+				existingCourses.map(getCourseId).filter(Boolean)
+			);
+			const selectedCourses = new Map(
+				courses
+					.map((course) => [getCourseId(course), course])
+					.filter(([courseId]) => courseId)
+			);
 			await Promise.all(
-				Array.from(new Set(courseIds)).map((courseId) =>
-					addCourseToPlan(planId, { courseId })
-				)
+				[
+					...existingCourses
+						.map(getCourseId)
+						.filter((courseId) => courseId && !selectedCourses.has(courseId))
+						.map((courseId) => removeCourseFromPlan(planId, courseId)),
+					...[...selectedCourses.keys()]
+						.filter((courseId) => !existingCourseIds.has(courseId))
+						.map((courseId) =>
+							addCourseToPlan(planId, {
+								courseId,
+								plannedTermId: selectedCourses.get(courseId).planned_term_id,
+							})
+						),
+				]
 			);
 			await validateBackendPlan(planId, {});
 			saveStorage("ActivePlanId", planId);
@@ -907,7 +1134,7 @@ const EducationPlanEditor = () => {
 				degree: selectedDegree || "",
 				courses,
 			});
-			toast.success("Education plan saved.");
+			toast("Plan saved. Semester placements are not saved by the backend.");
 			saveStorage("EditingPlanActive", false);
 			navigate("/view");
 		} catch (err) {
@@ -967,18 +1194,20 @@ const EducationPlanEditor = () => {
 	const studentId =
 		profile.student_id || profile.studentId || profile.id || userEmail || "Local profile";
 	const termOptions = planTerms.map((term, index) => {
-		const [, semester] = term.key.split("::");
-		return { key: term.key, label: `Sem ${index + 1}: ${semester || "Term"}` };
+		return {
+			key: term.key,
+			label: `Sem ${index + 1}: ${getDisplaySemester(term.semester, index + 1)}`,
+		};
 	});
 	const activeTermOption =
 		termOptions.find((term) => term.key === activeTermKey) || termOptions[0];
 	const activeTermLabel = activeTermOption?.label || "No semester selected";
 	const dashboardContent = (
-		<div className="min-h-screen bg-slate-100 px-4 py-4 text-slate-900 sm:px-6 lg:px-8">
+		<div className="compact-planner">
 			<div className="mx-auto max-w-none">
-				<header className="mb-4">
+				<header className="compact-planner-heading">
 					<h1 className="text-2xl font-semibold text-slate-950">
-						Customize Your Education <span className="text-blue-600">Plan</span>
+						Build Your Semester-by-Semester <span className="text-blue-600">Plan</span>
 					</h1>
 				</header>
 
@@ -988,8 +1217,8 @@ const EducationPlanEditor = () => {
 					</div>
 				)}
 
-				<div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_430px]">
-					<aside className="space-y-4 xl:order-2">
+				<div className={`compact-planner-layout ${catalogOpen ? "catalog-is-open" : ""}`}>
+					<aside id="program-course-list" className="compact-planner-catalog" aria-label="Available program courses">
 						<div className="hidden rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
 							<div className="flex items-center gap-3">
 								<div className="flex h-11 w-11 items-center justify-center rounded-lg bg-blue-700 text-sm font-extrabold text-white">
@@ -1037,25 +1266,12 @@ const EducationPlanEditor = () => {
 							</div>
 						</div>
 
-						<div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-							<div className="mb-3 flex items-center justify-between">
-								<h3 className="text-xs font-extrabold uppercase tracking-wide text-slate-500">
-									Course Catalog
-								</h3>
-								<div className="flex items-center gap-2">
-									<span className="rounded bg-slate-50 px-2 py-1 text-xs font-extrabold text-slate-500">
-										{remainingCourses.length}
-									</span>
-									<button
-										type="button"
-										onClick={savePlan}
-										disabled={dependencyIssues.some((issue) => issue.blocking)}
-										className="rounded-md bg-indigo-600 px-3 py-1.5 text-xs font-extrabold text-white hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-60"
-									>
-										Save Plan
-									</button>
-								</div>
-							</div>
+						<div className="compact-catalog-panel">
+							<button type="button" className="compact-catalog-toggle" aria-expanded={catalogOpen} aria-controls="program-course-list-content" onClick={() => setCatalogOpen(value => !value)}>
+								<span>Program course list <span className="text-slate-500">({remainingCourses.length})</span></span>
+								{catalogOpen ? <FaChevronUp aria-hidden="true" /> : <FaChevronDown aria-hidden="true" />}
+							</button>
+							<div id="program-course-list-content" className="compact-catalog-content" hidden={!catalogOpen}>
 							<p className="mb-3 rounded-md bg-blue-50 px-3 py-2 text-xs font-bold text-blue-700">
 								Adding to: {activeTermLabel}
 							</p>
@@ -1088,15 +1304,14 @@ const EducationPlanEditor = () => {
 									</button>
 								))}
 							</div>
+							</div>
 						</div>
 					</aside>
 
-					<main className="space-y-4 xl:order-1">
-						<h2 className="text-xl font-semibold text-slate-800">
-							My Education Plan
-						</h2>
-						<div className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-							<div className="grid gap-4 lg:grid-cols-[1fr_auto]">
+					<section className="compact-planner-plan" aria-label="My education plan">
+						<p className="compact-planner-description">Review the recommended courses and customize your plan based on your academic needs, preferences, and goals.</p>
+						<div className="compact-planner-controls">
+							<div className="compact-planner-fields">
 								<div className="space-y-3">
 									<label className="block text-xs font-extrabold uppercase tracking-wide text-slate-400">
 										University
@@ -1111,51 +1326,78 @@ const EducationPlanEditor = () => {
 											</span>
 										)}
 									</label>
-
-									<label className="block text-xs font-extrabold uppercase tracking-wide text-slate-400">
-										Program
-										<select
-											value={selectedProgram}
-											onChange={(event) => {
-												setSelectedProgram(event.target.value);
-												saveStorage("Programname", event.target.value);
-												const found = programs.find(
-													(p) =>
-														p.program === event.target.value &&
-														p.university === selectedUniversity
-												);
-												if (found) {
-													setSelectedDegree(found.degree || "");
-													saveStorage("ProgramDegree", found.degree || "");
-												} else {
-													setSelectedDegree("");
-													saveStorage("ProgramDegree", "");
-												}
-											}}
-											className="mt-2 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-bold normal-case tracking-normal text-slate-700 outline-none focus:border-blue-500"
-										>
-											<option value="">Select Program</option>
-											{uniqueProgramOptions.map((program) => (
-												<option
-													key={`${program.university}-${program.program}`}
-													value={program.program}
-												>
-													{program.program}
-												</option>
-											))}
-										</select>
-									</label>
 								</div>
 
-								<div className="flex flex-wrap items-start gap-2 lg:justify-end">
+								<label className="block text-xs font-extrabold uppercase tracking-wide text-slate-400">
+									Program
 									<select
+										aria-label="Program"
+										value={selectedProgram}
+										onChange={(event) => {
+											setSelectedProgram(event.target.value);
+											saveStorage("Programname", event.target.value);
+											const found = programs.find(
+												(p) =>
+													p.program === event.target.value &&
+													p.university === selectedUniversity
+											);
+											if (found) {
+												setSelectedDegree(found.degree || "");
+												saveStorage("ProgramDegree", found.degree || "");
+											} else {
+												setSelectedDegree("");
+												saveStorage("ProgramDegree", "");
+											}
+										}}
+										className="mt-2 w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-bold normal-case tracking-normal text-slate-700 outline-none focus:border-blue-500"
+									>
+										<option value="">Select Program</option>
+										{uniqueProgramOptions.map((program) => (
+											<option
+												key={`${program.university}-${program.program}`}
+												value={program.program}
+											>
+												{program.program}
+											</option>
+										))}
+									</select>
+								</label>
+								<button type="button" onClick={savePlan} disabled={dependencyIssues.some(issue => issue.blocking)} className="compact-planner-save">Save Your Plan</button>
+							</div>
+
+							<div className="compact-planner-toolbar">
+								<select
+									aria-label="Filter plan by year"
+									value={yearFilter}
+									onChange={(e) => setYearFilter(e.target.value)}
+									className="rounded-md border border-slate-200 px-3 py-2 text-sm font-bold text-slate-700"
+								>
+									<option value="">View by year</option>
+									{yearOptions.map((yr) => (
+										<option key={yr} value={yr}>
+											{yr}
+										</option>
+									))}
+								</select>
+								<span className="rounded-md bg-blue-50 px-3 py-2 text-sm font-extrabold text-blue-700">
+									{totalCourses} courses
+								</span>
+								<span className="rounded-md bg-emerald-50 px-3 py-2 text-sm font-extrabold text-emerald-700">
+									{creditsProgressText}
+								</span>
+								<span className="rounded-md bg-slate-50 px-3 py-2 text-sm font-bold text-slate-600">
+									Pre: {prereqProgramCount} / Co: {coreqProgramCount}
+								</span>
+								<div className="flex items-center gap-2">
+									<select
+										aria-label="Select semester"
 										value={activeTermOption?.key || ""}
 										onChange={(event) => {
 											const nextKey = event.target.value;
 											setActiveTermKey(nextKey);
 											setExpandedTerms((prev) => ({ ...prev, [nextKey]: true }));
 										}}
-										className="h-11 rounded-lg border-2 border-blue-700 bg-white px-3 text-sm font-extrabold text-slate-800 outline-none"
+										className="h-10 rounded-lg border-2 border-blue-700 bg-white px-2 text-xs font-extrabold text-slate-800 outline-none"
 									>
 										{termOptions.length === 0 ? (
 											<option value="">No terms</option>
@@ -1170,62 +1412,27 @@ const EducationPlanEditor = () => {
 									<button
 										type="button"
 										onClick={addSemester}
-										className="inline-flex h-11 items-center gap-2 rounded-lg bg-blue-700 px-4 text-sm font-extrabold text-white shadow-sm hover:bg-blue-800"
+										disabled={planTerms.length >= MAX_SEMESTERS}
+										title={
+											planTerms.length >= MAX_SEMESTERS
+												? `Maximum of ${MAX_SEMESTERS} semesters reached`
+												: "Add a semester"
+										}
+										className="inline-flex h-10 items-center gap-1.5 whitespace-nowrap rounded-lg bg-blue-700 px-3 text-xs font-extrabold text-white shadow-sm hover:bg-blue-800 disabled:cursor-not-allowed disabled:bg-slate-300"
 									>
-										<FaPlus className="h-3 w-3" />
 										Add Semester
+										<span className="font-bold opacity-80">
+											({planTerms.length}/{MAX_SEMESTERS})
+										</span>
 									</button>
 								</div>
-							</div>
-
-							<div className="mt-4 flex flex-wrap gap-3 border-t border-slate-100 pt-4">
-								<select
-									value={yearFilter}
-									onChange={(e) => setYearFilter(e.target.value)}
-									className="rounded-md border border-slate-200 px-3 py-2 text-sm font-bold text-slate-700"
-								>
-									<option value="">All Years</option>
-									{yearOptions.map((yr) => (
-										<option key={yr} value={yr}>
-											{yr}
-										</option>
-									))}
-								</select>
-								<select
-									value={semesterFilter}
-									onChange={(e) => setSemesterFilter(e.target.value)}
-									className="rounded-md border border-slate-200 px-3 py-2 text-sm font-bold text-slate-700"
-								>
-									<option value="">All Semesters</option>
-									{[...new Set(courses.map((c) => c.semester).filter(Boolean))].map((sem) => (
-										<option key={sem} value={sem}>
-											{sem}
-										</option>
-									))}
-								</select>
-								<span className="rounded-md bg-blue-50 px-3 py-2 text-sm font-extrabold text-blue-700">
-									{totalCourses} courses
-								</span>
-								<span className="rounded-md bg-emerald-50 px-3 py-2 text-sm font-extrabold text-emerald-700">
-									{creditsProgressText}
-								</span>
-								<span className="rounded-md bg-slate-50 px-3 py-2 text-sm font-bold text-slate-600">
-									Pre: {prereqProgramCount} / Co: {coreqProgramCount}
-								</span>
-								<span className="rounded-md bg-amber-50 px-3 py-2 text-sm font-bold text-amber-700">
-									Semester limit: {MIN_SEMESTER_CREDITS}-{MAX_SEMESTER_CREDITS} credits
-								</span>
-								{averageAnnualCost && (
-									<span className="rounded-md bg-slate-50 px-3 py-2 text-sm font-bold text-slate-600">
-										Avg. Annual Cost: {averageAnnualCost}
-									</span>
-								)}
 							</div>
 						</div>
 
 						{dependencyIssues.length > 0 && (
 							<div className="rounded-lg border border-rose-200 bg-rose-50 p-4 text-sm text-rose-700 shadow-sm">
-								<p className="font-extrabold">Resolve these before saving:</p>
+								<p className="font-extrabold"> These prerequisite courses must be passed in a previous semester before you can enroll in the main course.
+								</p>
 								<ul className="mt-2 list-inside list-disc space-y-1">
 									{dependencyIssues.map((issue) => (
 										<li key={`${issue.type}-${issue.courseCode}-${issue.relatedCode || ""}`}>
@@ -1243,9 +1450,10 @@ const EducationPlanEditor = () => {
 							</div>
 						)}
 
-						<div className="space-y-2">
-							{groupedCourseEntries.map(([groupKey, courseList], index) => {
+						<div className="compact-semester-grid">
+							{groupedCourseEntries.map(([groupKey, courseList, termNumber]) => {
 								const [courseYear, courseSemester] = groupKey.split("::");
+								const displaySemester = getDisplaySemester(courseSemester, termNumber);
 								const semesterCredits = courseList.reduce((sum, course) => {
 									const value = Number(course.credits);
 									return sum + (Number.isFinite(value) ? value : 0);
@@ -1260,50 +1468,90 @@ const EducationPlanEditor = () => {
 								return (
 									<div
 										key={groupKey}
-										className={`rounded-lg border bg-white shadow-sm ${
-											isExpanded ? "border-emerald-100" : "border-slate-200"
+										className={`compact-semester-card rounded-lg border bg-white shadow-sm ${
+											activeTermKey === groupKey ? "border-blue-600 ring-1 ring-blue-600" : "border-slate-200"
 										}`}
 									>
-										<button
-											type="button"
-											onClick={() => {
-												setActiveTermKey(groupKey);
-												setExpandedTerms((prev) => ({
-													...prev,
-													[groupKey]: !prev[groupKey],
-												}));
-											}}
-											className={`flex w-full items-center gap-3 px-4 py-4 text-left ${
-												activeTermKey === groupKey ? "bg-blue-50/70" : ""
-											}`}
-										>
+						<div
+							className={`compact-semester-header flex w-full items-center gap-2 px-3 py-3 ${
+								activeTermKey === groupKey ? "bg-blue-50/70" : ""
+							}`}
+						>
+						<button
+							type="button"
+							aria-expanded={isExpanded}
+							aria-pressed={activeTermKey === groupKey}
+							onClick={() => {
+								setActiveTermKey(groupKey);
+								setExpandedTerms((prev) => ({
+									...prev,
+									[groupKey]: !prev[groupKey],
+								}));
+							}}
+							className="flex min-w-0 flex-1 items-center gap-3 text-left"
+						>
 											<span
 												className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-sm font-extrabold text-white ${
 													activeTermKey === groupKey ? "bg-blue-700" : "bg-slate-400"
 												}`}
 											>
-												{index + 1}
+												{termNumber}
 											</span>
 											<div className="min-w-0 flex-1">
 												<h3 className="truncate text-sm font-extrabold text-slate-900">
-													Sem {index + 1}: {courseSemester}
+													Sem {termNumber}: {displaySemester}
 												</h3>
 												<p className="text-xs font-medium text-slate-500">
-													{courseList.length} courses - {semesterCredits} credits - {courseYear}
-												</p>
-											</div>
-											<span className={`rounded-md px-3 py-1 text-xs font-extrabold uppercase ${statusClass}`}>
-												{status}
-											</span>
-											{isExpanded ? (
-												<FaChevronUp className="h-3 w-3 text-slate-400" />
-											) : (
-												<FaChevronDown className="h-3 w-3 text-slate-400" />
-											)}
-										</button>
+									{courseList.length} courses - {semesterCredits} credits - {courseYear}
+								</p>
+							</div>
+						</button>
+						<button type="button" className="compact-add-course" aria-label={`Add course to semester ${termNumber}: ${displaySemester}`} onClick={() => {
+							setActiveTermKey(groupKey);
+							setCatalogOpen(true);
+							requestAnimationFrame(() => document.getElementById("program-course-list")?.scrollIntoView({ block: "nearest" }));
+						}}><FaPlus aria-hidden="true" /><span>Add Course</span></button>
+						<button
+							type="button"
+							onClick={() =>
+								deleteSemester({
+									key: groupKey,
+									year: courseYear,
+									semester: courseSemester,
+								})
+							}
+							className="inline-flex shrink-0 items-center gap-1 rounded-md px-2 py-1 text-xs font-extrabold text-rose-500 hover:bg-rose-50 hover:text-rose-700"
+							aria-label={`Delete semester ${termNumber}: ${displaySemester}`}
+							title="Delete semester"
+						>
+							<FaTrash className="h-3 w-3" />
+							<span className="hidden sm:inline">Semester</span>
+						</button>
+							<span className={`rounded-md px-3 py-1 text-xs font-extrabold uppercase ${statusClass}`}>
+								{status}
+							</span>
+						<button
+							type="button"
+							onClick={() => {
+								setActiveTermKey(groupKey);
+								setExpandedTerms((prev) => ({
+									...prev,
+									[groupKey]: !prev[groupKey],
+								}));
+							}}
+							className="shrink-0 rounded p-1"
+							aria-label={`${isExpanded ? "Collapse" : "Expand"} semester ${termNumber}`}
+						>
+							{isExpanded ? (
+								<FaChevronUp className="h-3 w-3 text-slate-400" />
+							) : (
+								<FaChevronDown className="h-3 w-3 text-slate-400" />
+							)}
+						</button>
+						</div>
 
 										{isExpanded && (
-											<div className="space-y-2 border-t border-slate-100 px-4 pb-4 pt-3">
+											<div className="compact-semester-courses space-y-2 border-t border-slate-100 p-3">
 												{courseList.length === 0 && (
 													<div className="rounded-md border border-dashed border-slate-200 bg-slate-50 p-4 text-sm font-semibold text-slate-500">
 														Select this semester, then add subjects from the course catalog.
@@ -1326,7 +1574,7 @@ const EducationPlanEditor = () => {
 														>
 															<div className="flex items-center gap-3">
 																<div className="min-w-0 flex-1">
-																	<p className="truncate text-sm font-semibold text-slate-900">
+																	<p className="text-sm font-semibold text-slate-900">
 																		{course.courseName}
 																	</p>
 																	<div className="mt-1 flex flex-wrap gap-x-5 gap-y-1 text-xs font-medium text-slate-600">
@@ -1334,12 +1582,12 @@ const EducationPlanEditor = () => {
 																		<span>Credits: <span className="font-semibold text-slate-800">{course.credits ?? "N/A"}</span></span>
 																		{hasMeaningfulRequirement(prereqText) && (
 																			<span className="text-sky-700">
-																				Pre-requisite: <span className="text-orange-500">{prereqText}</span>
+																		Pre-requisite: <span className="text-orange-700">{prereqText}</span>
 																			</span>
 																		)}
 																		{hasMeaningfulRequirement(coreqText) && (
 																			<span className="text-sky-700">
-																				Corequisite: <span className="text-yellow-500">{coreqText}</span>
+																		Corequisite: <span className="text-amber-700">{coreqText}</span>
 																			</span>
 																		)}
 																	</div>
@@ -1367,10 +1615,12 @@ const EducationPlanEditor = () => {
 								);
 							})}
 
-							{selectedProgram && selectedUniversity && groupedCourseEntries.length === 0 && (
-								<div className="rounded-lg border border-slate-200 bg-white p-8 text-center text-sm font-semibold text-slate-500 shadow-sm">
-									Click Add Semester to start building Jack&apos;s plan.
-								</div>
+			{selectedProgram && selectedUniversity && groupedCourseEntries.length === 0 && (
+				<div className="rounded-lg border border-slate-200 bg-white p-8 text-center text-sm font-semibold text-slate-500 shadow-sm">
+					{yearFilter || semesterFilter
+						? "No semesters match the selected filters."
+						: "Click Add Semester to start building education plan."}
+				</div>
 							)}
 
 							{(!selectedProgram || !selectedUniversity) && (
@@ -1379,7 +1629,7 @@ const EducationPlanEditor = () => {
 								</div>
 							)}
 						</div>
-					</main>
+					</section>
 				</div>
 			</div>
 		</div>
@@ -1472,4 +1722,3 @@ const EducationPlanEditor = () => {
 };
 
 export default EducationPlanEditor;
-

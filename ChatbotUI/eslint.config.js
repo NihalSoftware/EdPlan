@@ -17,7 +17,7 @@ export default [
   reactHooksRecommended,
   eslintConfigPrettier,
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{js,jsx,mjs}'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
