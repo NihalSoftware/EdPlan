@@ -1,9 +1,4 @@
-import axios from "axios";
-import { API_BASE_URL } from "./apiBaseUrl.js";
-
-const client = axios.create({
-	baseURL: API_BASE_URL,
-});
+import client from "./apiClient.js";
 
 export const searchUniversities = async ({
 	search,
@@ -27,15 +22,7 @@ export const getUniversityById = async (unitId) => {
 	return response.data?.data || null;
 };
 
-export const compareUniversitiesByIds = async (unitIds) => {
-	const response = await client.post("/universities/compare", {
-		unit_ids: unitIds,
-	});
-	return response.data?.data || [];
-};
-
 export default {
 	searchUniversities,
 	getUniversityById,
-	compareUniversitiesByIds,
 };

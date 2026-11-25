@@ -57,6 +57,8 @@ class ScheduleCourse(BaseModel):
     recommended_year: int | None = None
     recommended_semester: str | None = None
     planned_term: ScheduleTerm | None = None
+    prerequisite_course_ids: list[str] = Field(default_factory=list)
+    corequisite_course_ids: list[str] = Field(default_factory=list)
 
 
 class ScheduleCourseOffering(BaseModel):

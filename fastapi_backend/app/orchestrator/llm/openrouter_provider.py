@@ -90,9 +90,12 @@ class OpenRouterProvider(BaseLLMProvider):
         }
 
     def build_request_payload(self, request: LLMRequest) -> dict[str, Any]:
-        messages = [message.model_dump(mode="json") for message in request.messages]
+        messages = [
+            {"role": message.role, "content": message.content}
+            for message in request.messages
+        ]
         if request.system_prompt:
-            messages = [{"role": "system", "content": request.system_prompt, "metadata": {}}] + messages
+            messages = [{"role": "system", "content": request.system_prompt}] + messages
 
         payload: dict[str, Any] = {
             "model": request.model or self.model_config.primary_model,
@@ -105,11 +108,12 @@ class OpenRouterProvider(BaseLLMProvider):
             "max_tokens": (
                 request.max_tokens if request.max_tokens is not None else self.model_config.max_tokens
             ),
-            "metadata": request.metadata,
         }
         if request.tools:
             payload["tools"] = request.tools
             payload["tool_choice"] = request.tool_choice or "auto"
+        if not self.model_config.reasoning_enabled:
+            payload["reasoning"] = {"enabled": False}
         return payload
 
     @staticmethod

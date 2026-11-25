@@ -6,11 +6,18 @@ import {
 	FaPlus,
 	FaTrash,
 } from "react-icons/fa";
-import { addEducationPlan } from "../../services/authService.js";
 import {
 	getProgramWithCourses,
 	listPrograms,
 } from "../../services/educationPlanService.js";
+import {
+	addCourseToPlan,
+	createPlan,
+	listPlanCourses,
+	removeCourseFromPlan,
+	updatePlan,
+	validatePlan as validateBackendPlan,
+} from "../../services/planService.js";
 import {
 	load as loadStorage,
 	save as saveStorage,
@@ -252,6 +259,9 @@ const EducationPlanEditor = ({ initialUniversity = "" }) => {
 	const profile = loadStorage("UserProfile") || {};
 	const navigate = useNavigate();
 
+	const backendStudentId =
+		profile.student_id || profile.studentId || profile.id || null;
+
 	useEffect(() => {
 		listPrograms()
 			.then((items) => setPrograms(items))
@@ -363,6 +373,8 @@ const EducationPlanEditor = ({ initialUniversity = "" }) => {
 				(hydratedMatch.years || []).flatMap((entry) =>
 					(entry.semesters || []).flatMap((semester) =>
 						(semester.courses || []).map((course) => ({
+							id: course.id || course.course_id,
+							course_id: course.course_id || course.id,
 							recommended_year: course.recommended_year || entry.year,
 							recommended_semester:
 								course.recommended_semester || semester.semester,
@@ -389,6 +401,8 @@ const EducationPlanEditor = ({ initialUniversity = "" }) => {
 					.map((course) => ({
 						program: selectedProgram,
 						university: selectedUniversity,
+						id: course.id || course.course_id,
+						course_id: course.course_id || course.id,
 						year: course.year,
 						semester: course.semester,
 						courseName: course.name,
@@ -764,6 +778,8 @@ const EducationPlanEditor = ({ initialUniversity = "" }) => {
 			const newEntry = {
 				program: selectedProgram,
 				university: selectedUniversity,
+				id: course.id || course.course_id,
+				course_id: course.course_id || course.id,
 				year: activeTerm.year,
 				semester: activeTerm.semester,
 				courseName: course.name,
@@ -852,6 +868,8 @@ const EducationPlanEditor = ({ initialUniversity = "" }) => {
 							extraCourses.push({
 								program: selectedProgram,
 								university: selectedUniversity,
+								id: item.id || item.course_id,
+								course_id: item.course_id || item.id,
 								year: activeTerm.year,
 								semester: activeTerm.semester,
 								courseName: item.name,
@@ -1031,10 +1049,6 @@ const EducationPlanEditor = ({ initialUniversity = "" }) => {
 	};
 
 	const savePlan = async () => {
-		if (!userEmail) {
-			savePlanLocally();
-			return;
-		}
 		if (dependencyIssues.some((issue) => issue.blocking)) {
 			toast.error("Fix pre-requisite/co-requisite issues before saving.");
 			return;
@@ -1048,12 +1062,79 @@ const EducationPlanEditor = ({ initialUniversity = "" }) => {
 			return;
 		}
 		try {
-			await addEducationPlan({
-				email: userEmail,
-				program: courses,
+			if (
+				!backendStudentId ||
+				editingPlan?.source === "local" ||
+				!selectedProgramMeta?.program_id ||
+				!selectedProgramMeta?.university_id
+			) {
+				savePlanLocally();
+				return;
+			}
+			const existingPlanId = editingPlan?.plan_id || editingPlan?.id;
+			const isExistingBackendPlan =
+				existingPlanId && !String(existingPlanId).startsWith("local-");
+			const planName = `${selectedProgram} Plan`;
+			const plan = isExistingBackendPlan
+				? await updatePlan(existingPlanId, {
+					plan_name: planName,
+					description: selectedDegree || undefined,
+					is_active: true,
+				})
+				: await createPlan({
+					userId: backendStudentId,
+					universityId: selectedProgramMeta.university_id,
+					programId: selectedProgramMeta.program_id,
+					planName,
+					description: selectedDegree || undefined,
+					isActive: true,
+				});
+			const planId = plan?.plan_id || existingPlanId;
+			if (!planId) {
+				throw new Error("Backend did not return a plan id.");
+			}
+			const existingCourses = isExistingBackendPlan
+				? await listPlanCourses(planId)
+				: [];
+			const getCourseId = (course) =>
+				course.course_id || course.course?.course_id || course.id;
+			const existingCourseIds = new Set(
+				existingCourses.map(getCourseId).filter(Boolean)
+			);
+			const selectedCourses = new Map(
+				courses
+					.map((course) => [getCourseId(course), course])
+					.filter(([courseId]) => courseId)
+			);
+			await Promise.all(
+				[
+					...existingCourses
+						.map(getCourseId)
+						.filter((courseId) => courseId && !selectedCourses.has(courseId))
+						.map((courseId) => removeCourseFromPlan(planId, courseId)),
+					...[...selectedCourses.keys()]
+						.filter((courseId) => !existingCourseIds.has(courseId))
+						.map((courseId) =>
+							addCourseToPlan(planId, {
+								courseId,
+								plannedTermId: selectedCourses.get(courseId).planned_term_id,
+							})
+						),
+				]
+			);
+			await validateBackendPlan(planId, {});
+			saveStorage("ActivePlanId", planId);
+			saveStorage("SelectedPlanId", planId);
+			saveStorage("CurrentPlanId", planId);
+			saveStorage("EditingPlan", {
+				...(editingPlan || {}),
+				plan_id: planId,
+				university: selectedUniversity,
+				program: selectedProgram,
 				degree: selectedDegree || "",
+				courses,
 			});
-			toast.success("Education plan saved.");
+			toast("Plan saved. Semester placements are not saved by the backend.");
 			saveStorage("EditingPlanActive", false);
 			navigate("/view");
 		} catch (err) {
@@ -1641,4 +1722,3 @@ const EducationPlanEditor = ({ initialUniversity = "" }) => {
 };
 
 export default EducationPlanEditor;
-

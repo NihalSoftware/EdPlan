@@ -7,6 +7,7 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import joinedload, selectinload
 
+from app.student.domains.discovery.models import Course, CourseCorequisite, CoursePrerequisite
 from app.student.domains.planning.models import EdPlan, PlanCourse
 from app.student.domains.scheduling.models import (
     AcademicTerm,
@@ -51,7 +52,12 @@ class ScheduleRetrievalRepository:
         result = await db.execute(
             select(PlanCourse)
             .options(
-                joinedload(PlanCourse.course),
+                joinedload(PlanCourse.course)
+                .selectinload(Course.prerequisite_links)
+                .selectinload(CoursePrerequisite.prerequisite_course),
+                joinedload(PlanCourse.course)
+                .selectinload(Course.corequisite_links)
+                .selectinload(CourseCorequisite.corequisite_course),
                 joinedload(PlanCourse.planned_term),
             )
             .where(PlanCourse.plan_id == parsed_plan_id)

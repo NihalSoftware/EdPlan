@@ -6,6 +6,7 @@ from typing import Any
 from uuid import UUID, uuid4
 
 from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy.exc import SQLAlchemyError
 
 from app.models.agentic import ModuleExecution, OrchestratorRun
 from app.orchestrator.execution.module_executor import ModuleExecutionResult
@@ -36,7 +37,10 @@ class RunTracker:
             run_metadata={},
         )
         self.db.add(run)
-        await self._commit()
+        try:
+            await self._commit()
+        except SQLAlchemyError:
+            return None
         return run
 
     async def mark_running(self, run: OrchestratorRun | None) -> None:

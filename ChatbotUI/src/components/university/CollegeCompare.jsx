@@ -1,25 +1,223 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import {
-  compareUniversitiesByIds,
-  getUniversityById,
-} from "../../services/universityService.js";
-import {
-  load as loadStorage,
-  save as saveStorage,
-} from "../../utils/storage.js";
-import {
-  NOT_REPORTED,
-  admissionsMetrics,
-  costMetrics,
-  enrollmentMetrics,
-  getMetricValue,
-  hasValue,
-  institutionMetrics,
-  outcomeMetrics,
-  overviewMetrics,
-} from "./collegeMetrics.jsx";
+import { compareUniversities } from "../../services/comparisonService.js";
+import { getUniversityById } from "../../services/universityService.js";
+import { load as loadStorage, save as saveStorage } from "../../utils/storage.js";
+import { costMetrics, NOT_REPORTED } from "./collegeMetrics.jsx";
 
+const formatPercent = (value) =>
+	value || value === 0 ? `${(value * 100).toFixed(1).replace(/\.0$/, "")} %` : "N/A";
+const formatCurrency = (value) =>
+	value || value === 0 ? `$ ${Number(value).toLocaleString()}` : "N/A";
+const formatNumber = (value) =>
+	value || value === 0 ? Number(value).toLocaleString() : "N/A";
+const formatRatio = (value) =>
+	value || value === 0 ? `${Number(value).toFixed(0)} : 1` : "N/A";
+const formatWebsite = (value) =>
+	value ? (
+		<a
+			href={value.startsWith("http") ? value : `https://${value}`}
+			target="_blank"
+			rel="noreferrer"
+			className="text-indigo-600 hover:text-indigo-500"
+		>
+			Visit Website
+		</a>
+	) : (
+		"N/A"
+	);
+const hasValue = (value) => value || value === 0;
+const getUniversityKey = (entry = {}) => entry.university_id || entry.unit_id;
+const normalizeComparedSchool = (school = {}) => ({
+	...school,
+	unit_id: school.unit_id || school.university_id,
+	name: school.name || school.university_name,
+});
+const formatSatRange = (school) => {
+	if (!school) return "N/A";
+	const low = school.sat_reading_25th;
+	const high = school.sat_reading_75th;
+
+	if (hasValue(low) && hasValue(high)) {
+		return `${formatNumber(low)} - ${formatNumber(high)}`;
+	}
+	if (hasValue(low)) {
+		return `>= ${formatNumber(low)}`;
+	}
+	if (hasValue(high)) {
+		return `<= ${formatNumber(high)}`;
+	}
+	return "Open Admission Policy";
+};
+const formatActRange = (school) => {
+	if (!school) return "Open Admission Policy";
+	const low = school.act_score_25th;
+	const high = school.act_score_75th;
+
+	if (hasValue(low) && hasValue(high)) {
+		return `${formatNumber(low)} - ${formatNumber(high)}`;
+	}
+	if (hasValue(low)) {
+		return `>= ${formatNumber(low)}`;
+	}
+	if (hasValue(high)) {
+		return `<= ${formatNumber(high)}`;
+	}
+	return "Open Admission Policy";
+};
+
+const overviewMetrics = [
+	{ key: "city", label: "City" },
+	{ key: "state", label: "State" },
+	{ key: "organization_type", label: "Institution Type" },
+	{ key: "location_type", label: "Campus Setting" },
+	{
+		key: "campus_size_acres",
+		label: "Campus Area (acres)",
+		accessor: (s) => s.campus_size_acres || s.campus_acres || s.acres || s.campus?.acres,
+		format: formatNumber,
+	},
+	{ key: "size", label: "Total Student Enrollment", format: formatNumber },
+	{
+		key: "rank",
+		label: "University Ranking",
+		accessor: (s) => s.rank || s.national_rank || s.world_rank,
+		format: (v) => (v || v === 0 ? v : "N/A"),
+	},
+	{ key: "website", label: "Official Website", format: formatWebsite },
+];
+
+const institutionMetrics = [
+	{
+		key: "faculty_count",
+		label: "Total Faculty",
+		accessor: (s) => s.faculty_count || s.number_of_faculty || s.faculty?.total,
+		format: formatNumber,
+	},
+	{
+		key: "faculty_phd_count",
+		label: "Faculty with Doctoral Degrees",
+		accessor: (s) =>
+			s.faculty_phd_count || s.faculty_with_phd_count ||
+			(s.faculty_with_phd && s.faculty_count ? Math.round(Number(s.faculty_with_phd) * Number(s.faculty_count)) : undefined) ||
+			s.faculty_with_phd,
+		format: formatNumber,
+	},
+	{ key: "student_faculty_ratio", label: "Student-to-Faculty Ratio", format: formatRatio },
+];
+
+const researchMetrics = [
+	{
+		key: "program_accreditations",
+		label: "Accredited Programs",
+		accessor: (s) => s.program_accreditations || s.accreditations_count || s.accreditation_count,
+		format: formatNumber,
+	},
+	{
+		key: "centres_of_excellence",
+		label: "Centers of Excellence",
+		accessor: (s) => s.centres_of_excellence || s.centers_of_excellence || s.centres_count,
+		format: formatNumber,
+	},
+	{
+		key: "patent_grants",
+		label: "Patents Awarded",
+		accessor: (s) => s.patents_count || s.patent_grants || s.patent_count,
+		format: formatNumber,
+	},
+	{
+		key: "research_funding",
+		label: "Annual Research Funding",
+		accessor: (s) => s.research_funding || s.research_expenditure || s.research_grants,
+		format: formatCurrency,
+	},
+];
+
+const admissionsMetrics = [
+	{ key: "acceptance_rate", label: "Acceptance Rate", format: formatPercent },
+	{
+		key: "test_score",
+		label: "SAT Critical Reading Range",
+		render: (_, school) => formatSatRange(school),
+	},
+	{
+		key: "act_score",
+		label: "ACT Score Range",
+		render: (_, school) => formatActRange(school),
+	},
+	{
+		key: "first_year_return_rate",
+		label: "First-Year Retention Rate",
+		format: formatPercent,
+	},
+	{ key: "graduation_rate", label: "Graduation Rate", format: formatPercent },
+];
+
+const enrollmentMetrics = [
+	{ key: "size", label: "Undergraduate Enrollment", format: formatNumber },
+	{
+		key: "international_students",
+		label: "International Students",
+		accessor: (s) => s.international_students || s.international_student_count || (s.international_student_share && s.size ? Math.round(Number(s.international_student_share) * Number(s.size)) : undefined),
+		format: formatNumber,
+	},
+	{ key: "full_time_enrollment", label: "Full-time Enrollment", format: formatNumber },
+	{ key: "part_time_enrollment", label: "Part-time Enrollment", format: formatNumber },
+];
+
+const outcomeMetrics = [
+	{
+		key: "campus_visits",
+		label: "Annual Campus Drives",
+		accessor: (s) => s.campus_visits || s.visits_count || s.open_days_count,
+		format: formatNumber,
+	},
+	{
+		key: "placement_drive",
+		label: "Placement Rate",
+		accessor: (s) => s.placement_drive || s.placement_info || s.placement_rate,
+		render: (val) => (val === undefined || val === null ? "N/A" : typeof val === "number" ? `${Math.round(val * 100)}%` : String(val)),
+	},
+];
+
+const financialMetrics = [
+	{ key: "average_annual_cost", label: "Average Annual Cost", format: formatCurrency },
+	{ key: "median_earnings", label: "Median Graduate Earnings", format: formatCurrency },
+	{ key: "median_debt", label: "Median Student Debt After Graduation", format: formatCurrency },
+	{
+		key: "typical_monthly_payment",
+		label: "Estimated Monthly Loan Payment",
+		format: formatCurrency,
+	},
+	{
+		key: "federal_loan_rate",
+		label: "Students Using Federal Loans",
+		format: formatPercent,
+	},
+	{
+		key: "percent_more_than_hs",
+		label: "Earnings Advantage Over High School Graduate",
+		format: formatPercent,
+	},
+];
+
+const financialComparisonMetrics = [
+	...costMetrics,
+	...financialMetrics.filter((metric) => metric.key !== "average_annual_cost"),
+];
+
+// Helper to get a metric value from the API response only.
+const getMetricValue = (metric, school) => {
+	if (!school) return undefined;
+	if (metric.accessor) {
+		try {
+			return metric.accessor(school);
+		} catch {
+			return undefined;
+		}
+	}
+	return metric.key ? school[metric.key] : undefined;
+};
 const SectionCard = ({ title, children, note }) => (
   <div className="bg-white border border-slate-200 rounded-xl shadow-sm p-5 space-y-3">
     <div>
@@ -122,21 +320,22 @@ const CollegeCompare = () => {
     navigate("/uni");
   };
 
-  useEffect(() => {
-    const stored = loadStorage("CompareQueue", []);
-    if (Array.isArray(stored)) {
-      const unique = [];
-      const seen = new Set();
-      stored.forEach((entry) => {
-        if (entry?.unit_id && !seen.has(entry.unit_id)) {
-          seen.add(entry.unit_id);
-          unique.push(entry);
-        }
-      });
-      setSelected(unique.slice(0, 3));
-    }
-    setInitializing(false);
-  }, []);
+	useEffect(() => {
+		const stored = loadStorage("CompareQueue", []);
+		if (Array.isArray(stored)) {
+			const unique = [];
+			const seen = new Set();
+			stored.forEach((entry) => {
+				const key = getUniversityKey(entry);
+				if (key && !seen.has(key)) {
+					seen.add(key);
+					unique.push(normalizeComparedSchool(entry));
+				}
+			});
+			setSelected(unique.slice(0, 3));
+		}
+		setInitializing(false);
+	}, []);
 
   useEffect(() => {
     if (initializing) return;
@@ -154,13 +353,16 @@ const CollegeCompare = () => {
       setLoadingCompare(true);
       setError("");
       try {
-        const unitIds = selected.map((entry) => entry.unit_id);
+        const universityIds = selected.map(getUniversityKey).filter(Boolean);
         const detail =
-          unitIds.length === 1
-            ? [await getUniversityById(unitIds[0])]
-            : await compareUniversitiesByIds(unitIds);
+          universityIds.length === 1
+            ? [await getUniversityById(selected[0].unit_id || universityIds[0])]
+            : (await compareUniversities(universityIds)).universities || [];
         const mapped = detail.reduce((result, school) => {
-          if (school?.unit_id) result[school.unit_id] = school;
+          if (!school) return result;
+          const normalized = normalizeComparedSchool(school);
+          const key = getUniversityKey(normalized);
+          if (key) result[key] = normalized;
           return result;
         }, {});
         setComparison(mapped);
@@ -177,7 +379,7 @@ const CollegeCompare = () => {
 
   const handleRemove = (unitId) => {
     setSelected((previous) =>
-      previous.filter((entry) => entry.unit_id !== unitId),
+      previous.filter((entry) => getUniversityKey(entry) !== unitId),
     );
     setComparison((previous) => {
       const next = { ...previous };
@@ -187,7 +389,7 @@ const CollegeCompare = () => {
   };
 
   const comparisonOrder = useMemo(
-    () => selected.map((entry) => comparison[entry.unit_id] || entry),
+    () => selected.map((entry) => comparison[getUniversityKey(entry)] || entry),
     [selected, comparison],
   );
 
@@ -227,7 +429,7 @@ const CollegeCompare = () => {
                 <button
                   type="button"
                   aria-label={`Remove ${entry.name} from comparison`}
-                  onClick={() => handleRemove(entry.unit_id)}
+                  onClick={() => handleRemove(getUniversityKey(entry))}
                   className="text-indigo-500 hover:text-indigo-700"
                 >
                   ×
@@ -258,6 +460,11 @@ const CollegeCompare = () => {
                 schools={comparisonOrder}
               />
               <ComparisonTable
+                title="Research & Development"
+                metrics={researchMetrics}
+                schools={comparisonOrder}
+              />
+              <ComparisonTable
                 title="Admissions & Student Success"
                 metrics={admissionsMetrics}
                 schools={comparisonOrder}
@@ -268,16 +475,16 @@ const CollegeCompare = () => {
                 schools={comparisonOrder}
               />
               <ComparisonTable
-                title="Cost of Attendance"
-                metrics={costMetrics}
+                title="Cost, Financial Aid & Outcomes"
+                metrics={financialComparisonMetrics}
                 schools={comparisonOrder}
                 note="Net price is the average annual cost after grants and scholarships."
               />
               <ComparisonTable
-                title="Financial Aid & Student Outcomes"
+                title="Student Outcomes & Campus Engagement"
                 metrics={outcomeMetrics}
                 schools={comparisonOrder}
-                note="Debt, repayment, and earnings measures cover the applicable federally aided cohorts."
+                note="Reported student and campus outcome measures."
               />
             </div>
           )}

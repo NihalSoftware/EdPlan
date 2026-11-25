@@ -7,10 +7,16 @@ import {
 	getGeneratedSchedule,
 	getGeneratedSchedules,
 } from "../services/scheduleService.js";
+import { load as loadStorage } from "../utils/storage.js";
 
 const ScheduleGenerator = () => {
 	const [searchParams, setSearchParams] = useSearchParams();
-	const planIdFromQuery = searchParams.get("plan_id") || "";
+	const storedPlanId =
+		loadStorage("ActivePlanId") ||
+		loadStorage("SelectedPlanId") ||
+		loadStorage("CurrentPlanId") ||
+		"";
+	const planIdFromQuery = searchParams.get("plan_id") || storedPlanId;
 	const [planIdInput, setPlanIdInput] = useState(planIdFromQuery);
 	const [activePlanId, setActivePlanId] = useState(planIdFromQuery);
 	const [schedules, setSchedules] = useState([]);
