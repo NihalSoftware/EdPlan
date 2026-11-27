@@ -4,6 +4,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.db.session import get_db
+from app.student.domains.planning.api.access import require_plan_owner
 from app.student.domains.planning.schemas.graduation_audit import (
     GraduationAuditResult,
 )
@@ -11,7 +12,7 @@ from app.student.domains.planning.services.graduation_audit_service import (
     graduation_audit_service,
 )
 
-router = APIRouter(prefix="/plans", tags=["plans"])
+router = APIRouter(prefix="/plans", tags=["plans"], dependencies=[Depends(require_plan_owner)])
 
 
 @router.get("/{plan_id}/audit", response_model=GraduationAuditResult)

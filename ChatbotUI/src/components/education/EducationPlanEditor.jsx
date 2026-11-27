@@ -236,12 +236,12 @@ const validatePlan = (planCourses, knownCodes) => {
 	return issues;
 };
 
-const EducationPlanEditor = ({ initialUniversity = "" }) => {
+const EducationPlanEditor = ({ initialUniversity = "", initialProgram = null }) => {
 	const [catalogOpen, setCatalogOpen] = useState(false);
 	const [programs, setPrograms] = useState([]);
-	const [selectedProgram, setSelectedProgram] = useState("");
+	const [selectedProgram, setSelectedProgram] = useState(initialProgram?.program || "");
 	const selectedUniversity = normalizeUniversityName(initialUniversity || loadStorage("University") || "");
-	const [selectedDegree, setSelectedDegree] = useState("");
+	const [selectedDegree, setSelectedDegree] = useState(initialProgram?.degree || "");
 	const [courses, setCourses] = useState([]);
 	const [availableCourses, setAvailableCourses] = useState([]);
 	const [defaultPlan, setDefaultPlan] = useState([]);
@@ -264,14 +264,14 @@ const EducationPlanEditor = ({ initialUniversity = "" }) => {
 
 	useEffect(() => {
 		listPrograms()
-			.then((items) => setPrograms(items))
+			.then((items) => setPrograms(initialProgram ? [initialProgram, ...items.filter((item) => item.program_id !== initialProgram.program_id)] : items))
 			.catch((err) => {
 				console.error(err);
 				setError("Unable to load program catalog.");
 			});
 		// Load program from storage on mount (keep university even if program is missing)
 		// A homepage college shortcut must not restore another institution's draft.
-		if (initialUniversity && normalizeUniversityName(loadStorage("University")) !== initialUniversity) return;
+		if (initialProgram || (initialUniversity && normalizeUniversityName(loadStorage("University")) !== initialUniversity)) return;
 		const savedProgram = loadStorage("Programname", "");
 		setSelectedProgram(savedProgram || "");
 		const savedDegree =
@@ -284,7 +284,7 @@ const EducationPlanEditor = ({ initialUniversity = "" }) => {
 		if (editingActive && storedEditingPlan) {
 			setEditingPlan(storedEditingPlan);
 		}
-	}, [initialUniversity]);
+	}, [initialUniversity, initialProgram]);
 
 	// When no program is selected, clear available courses
 	useEffect(() => {

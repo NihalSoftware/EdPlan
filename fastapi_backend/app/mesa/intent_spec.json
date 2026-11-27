@@ -1,0 +1,800 @@
+[
+  {
+    "id": "M01",
+    "label": "Orientation",
+    "utterances": [
+      "What can Mesa do?",
+      "How does EdPlan AI work?",
+      "Can you help me choose college?",
+      "I don't know where to start.",
+      "Where do I create a plan?"
+    ],
+    "suggestions": [
+      "Which careers fit my interests?",
+      "Show public colleges in New Mexico",
+      "Compare colleges and programs",
+      "Help me build an education plan",
+      "How does Mesa use my information?"
+    ],
+    "guidance": "I can help you explore careers, find colleges and programs, compare choices, plan courses, and understand possible jobs. What would you like to explore first?",
+    "clarification": "\"Would you like to explore careers, compare colleges, or build an education plan?\" (ask only if the student needs a starting route).",
+    "service": "Explain scope and available features, show navigation to profile, program search, comparison, or planner."
+  },
+  {
+    "id": "M02",
+    "label": "Student profile",
+    "utterances": [
+      "Help me set up my profile.",
+      "I'm a high-school senior in Española.",
+      "I'm returning to college after ten years.",
+      "I'm studying part time.",
+      "Remember my interests."
+    ],
+    "suggestions": [
+      "I'm a high-school student",
+      "I have a GED",
+      "I'm transferring colleges",
+      "I'm returning to school",
+      "What information is optional?"
+    ],
+    "guidance": "We can start with just a few useful details, such as your education stage and the program you're interested in. You can explore without saving a personal profile.",
+    "clarification": "\"Are you a high-school student, current college student, transfer student, or returning learner?\"; \"Which city/ZIP should I use for local options?\"; \"May I save these preferences to your profile?\"",
+    "service": "Minimal profile; consented storage; never require sensitive details just for browsing."
+  },
+  {
+    "id": "M03",
+    "label": "Career/interest discovery",
+    "utterances": [
+      "I like science but not sure what to study.",
+      "What jobs fit someone who enjoys helping people?",
+      "What careers use math and art?",
+      "I want a job in healthcare.",
+      "Show high-demand careers."
+    ],
+    "suggestions": [
+      "I enjoy science and helping people",
+      "What healthcare careers are available?",
+      "Show careers requiring two years of college",
+      "Which careers are growing in New Mexico?",
+      "Compare two career paths"
+    ],
+    "guidance": "Career discovery starts with your interests and preferred work activities. I can connect those interests to occupations and programs, and show the evidence behind each match.",
+    "clarification": "\"Which two subjects or activities do you enjoy most?\"; \"Would you prefer hands-on work, working with people, or analytical work?\"; \"What education length sounds realistic?\"",
+    "service": "Career clusters; occupations mapped to SOC/O*NET; matching programs; local labor signals with evidence."
+  },
+  {
+    "id": "M04",
+    "label": "College discovery",
+    "utterances": [
+      "What public colleges are in New Mexico?",
+      "Show colleges near Santa Fe.",
+      "Which colleges offer associate degrees?",
+      "Find colleges within 50 miles of me.",
+      "I want a small public campus."
+    ],
+    "suggestions": [
+      "Show all New Mexico public colleges",
+      "Find colleges near Española",
+      "Which offer associate degrees?",
+      "Which offer online study?",
+      "Compare three colleges"
+    ],
+    "guidance": "I can list New Mexico public institutions and filter their campus locations, credential types, and study options. For nearby results, I can use a city or ZIP code you choose.",
+    "clarification": "\"Which city or ZIP should I search around?\" (if 'near me' and location unavailable); \"Any preferred degree level?\"; \"Is maximum drive time more useful than straight-line distance?\"",
+    "service": "Search/filter colleges; institution vs campus distinction; directory/card/map view; links to official college websites."
+  },
+  {
+    "id": "M05",
+    "label": "Program discovery",
+    "utterances": [
+      "Where can I study nursing?",
+      "Find computer science bachelor's degrees.",
+      "What colleges teach welding?",
+      "Show online psychology programs.",
+      "Which colleges offer teacher education?"
+    ],
+    "suggestions": [
+      "Show nursing associate degrees",
+      "Find bachelor's degrees in computer science",
+      "Show online programs",
+      "What are the program requirements?",
+      "Compare costs across programs"
+    ],
+    "guidance": "I can find programs by subject, credential, campus, and learning format. I'll verify program availability against the applicable college catalog before showing results.",
+    "clarification": "\"Are you looking for a certificate, associate, or bachelor's program?\"; \"On campus, online, or either?\"; \"Should I include schools across New Mexico or near your city?\"",
+    "service": "Program matches from catalog, degree and modality, duration/credits, campus and accreditation/licensure checks where relevant."
+  },
+  {
+    "id": "M06",
+    "label": "Program suitability",
+    "utterances": [
+      "Is nursing right for me?",
+      "Would I like cybersecurity?",
+      "Is this program too math-heavy?",
+      "What can I do with a biology degree?",
+      "I like engineering but dislike chemistry."
+    ],
+    "suggestions": [
+      "What classes will I take?",
+      "What jobs can graduates pursue?",
+      "How much math does this require?",
+      "Compare this with another program",
+      "Create a sample study plan"
+    ],
+    "guidance": "I'll explain what the program covers, the skills it develops, common career paths, and possible challenges. The final choice depends on your interests and circumstances.",
+    "clarification": "\"Are you most interested in the coursework, day-to-day jobs, or future career options?\"; \"What part worries you most?\"",
+    "service": "Objective program/course requirements, aligned careers, pros/considerations, avoid deterministic personality judgments."
+  },
+  {
+    "id": "M07",
+    "label": "Admissions fit",
+    "utterances": [
+      "Can I get into Northern?",
+      "Am I eligible for engineering?",
+      "What GPA do I need for nursing?",
+      "Do I need SAT scores?",
+      "Can I start in spring?"
+    ],
+    "suggestions": [
+      "What GPA is required?",
+      "Which prerequisites do I need?",
+      "When is the application deadline?",
+      "What if I have a GED?",
+      "Open the official admission page"
+    ],
+    "guidance": "Admission requirements depend on the institution, program, and entry term. I can build a checklist from official requirements, but only the college can make an admission decision.",
+    "clarification": "\"Which college and program?\"; \"Which entry term?\"; \"Are you applying from high school, transferring, or returning?\"; \"Would you like to check your prerequisites against the official requirements?\"",
+    "service": "Source-grounded admission requirements and checklist; never promise an admission decision."
+  },
+  {
+    "id": "M08",
+    "label": "College facts and support",
+    "utterances": [
+      "Does this college have housing?",
+      "Is there disability support?",
+      "What are the tutoring hours?",
+      "How do I contact admissions?",
+      "Are evening classes available?"
+    ],
+    "suggestions": [
+      "Does this campus have housing?",
+      "Show tutoring and advising services",
+      "Can I study in the evening?",
+      "How do I contact admissions?",
+      "Compare student services"
+    ],
+    "guidance": "I can look up official campus information, such as housing, tutoring, accessibility services, admissions contacts, and published class formats.",
+    "clarification": "\"Which campus?\" when the institution has multiple locations; \"Are you asking about this semester or next?\" when date-dependent.",
+    "service": "Direct source-backed fact, hours/contact, official link; no unnecessary interrogation."
+  },
+  {
+    "id": "M09",
+    "label": "Institution comparison",
+    "utterances": [
+      "Compare UNM, NMSU, and New Mexico Tech.",
+      "Which is better overall?",
+      "Show colleges with high graduation rates.",
+      "Compare rural and urban campuses.",
+      "Which public college is most affordable?"
+    ],
+    "suggestions": [
+      "Compare tuition and fees",
+      "Compare graduation and retention data",
+      "Which offers my major?",
+      "Show campuses on a map",
+      "Change my comparison priorities"
+    ],
+    "guidance": "I can compare these colleges side by side for cost, program options, location, and published outcomes. There is no universal 'best' college; your priorities determine the useful trade-offs.",
+    "clarification": "\"What are your top two decision factors: cost, program availability, academic outcomes, campus location, or student support?\"; \"Are you considering a particular program?\"",
+    "service": "Side-by-side institution data; ranked only against stated weights; highlight non-comparable denominators and missing metrics."
+  },
+  {
+    "id": "M10",
+    "label": "Multi-parameter program comparison",
+    "utterances": [
+      "Compare nursing at three colleges by cost, travel time, NCLEX results, and clinical placement.",
+      "Which CS program has lower debt and better earnings?",
+      "Find 4-year STEM degrees under my budget within 90 minutes.",
+      "Compare online business programs with strong completion rates.",
+      "Rank associate nursing programs by price and location."
+    ],
+    "suggestions": [
+      "Make cost the top priority",
+      "Set a 60-minute commute limit",
+      "Show nursing licensure information",
+      "Map nearby healthcare employers",
+      "What if I change the budget?"
+    ],
+    "guidance": "I'll apply your nonnegotiable limits first, then compare eligible programs across the remaining criteria. I'll flag missing metrics rather than invent a score.",
+    "clarification": "\"Which criteria are mandatory and which can be trade-offs?\"; \"What is your annual budget and home city?\"; \"Would you like equally weighted criteria or a priority order?\"",
+    "service": "Hard-filter first, normalize compatible measures, score soft criteria, show transparent ranked table and alternatives; never fabricate missing program-level metrics."
+  },
+  {
+    "id": "M11",
+    "label": "Cost of attendance",
+    "utterances": [
+      "How much would attending Northern cost?",
+      "Compare tuition and housing for NMSU and UNM.",
+      "Is commuting cheaper than living on campus?",
+      "How much will four years cost?",
+      "What is the cost per semester?"
+    ],
+    "suggestions": [
+      "Show tuition per credit",
+      "Compare in-district and out-of-state rates",
+      "Estimate 12 versus 15 credits",
+      "Include housing and transportation",
+      "What fees are included?"
+    ],
+    "guidance": "College cost can include tuition, mandatory fees, supplies, housing, meals, and travel. I'll separate published charges from estimates and show which residency and credit assumptions apply.",
+    "clarification": "\"In-state or out-of-state tuition?\"; \"Would you live at home, on campus, or off campus?\"; \"How many credits each term?\" if per-credit pricing is relevant.",
+    "service": "Tuition/required fees, living/transport/books, year and duration, disclosed assumptions, cost-of-attendance vs net price distinction."
+  },
+  {
+    "id": "M12",
+    "label": "Financial aid and scholarships",
+    "utterances": [
+      "Can I get the Opportunity Scholarship?",
+      "How much Pell Grant might I receive?",
+      "Will FAFSA cover nursing?",
+      "What scholarships can I apply for?",
+      "What happens if my aid changes?"
+    ],
+    "suggestions": [
+      "What scholarships might apply?",
+      "Explain Pell Grant eligibility",
+      "How does FAFSA work?",
+      "Estimate my remaining college cost",
+      "Where can I verify an award?"
+    ],
+    "guidance": "I can explain published aid rules, help interpret award offers, and point you to official applications or estimators. Eligibility and award amounts require confirmation from the proper program or aid office.",
+    "clarification": "\"For which academic year and college?\"; \"Are you an established NM resident?\" only if state aid eligibility relevant; \"Would you like a general eligibility guide or a personalized estimate?\"",
+    "service": "Official current eligibility rules, tentative screening without determination, secure estimator link, award offer distinction, advisor handoff."
+  },
+  {
+    "id": "M13",
+    "label": "Salary, ROI, and career outcomes",
+    "utterances": [
+      "Which degree has the highest salary?",
+      "Will nursing pay more than teaching?",
+      "Compare earnings after graduation.",
+      "Is the extra year worth it financially?",
+      "What is the debt-to-earnings ratio?"
+    ],
+    "suggestions": [
+      "Compare RN and teacher wages",
+      "Use New Mexico wage data",
+      "Show degree and occupation differences",
+      "Estimate illustrative payback",
+      "Where do the salary figures come from?"
+    ],
+    "guidance": "I can compare occupation wages, published education outcomes, and education costs. Those population figures can guide decisions but do not predict any individual's future salary.",
+    "clarification": "\"Should I compare salaries in New Mexico or nationwide?\"; \"Are you choosing a specific occupation or just a major?\"; \"Would you like gross earnings or an illustrative net-cost/payback scenario?\"",
+    "service": "SOC wages and field-of-study outcomes labeled distinctly; avoid causal ROI claims; show year, cohort, geography, data coverage."
+  },
+  {
+    "id": "M14",
+    "label": "Admissions and outcome metrics",
+    "utterances": [
+      "Which college has the best retention?",
+      "Compare six-year graduation rates.",
+      "Which nursing program has better completion?",
+      "What's the student-faculty ratio?",
+      "How large is the student body?"
+    ],
+    "suggestions": [
+      "Compare graduation rates",
+      "Show student retention",
+      "What is the reporting year?",
+      "Are program outcomes available?",
+      "Explain this metric"
+    ],
+    "guidance": "I'll show published outcomes with their reporting year, population, and credential level. Institutional graduation rates will not be presented as nursing-program completion rates.",
+    "clarification": "\"Are you comparing schools generally or a specific credential?\"; \"Which cohort or period matters?\" only if ambiguous and material.",
+    "service": "Cohort- and credential-aligned indicators; institutional figures never mislabeled program outcomes."
+  },
+  {
+    "id": "M15",
+    "label": "Accessibility and lifestyle fit",
+    "utterances": [
+      "Which colleges work for someone with a job?",
+      "Where can I study mostly online?",
+      "Find weekend or evening programs.",
+      "Which campuses have child care?",
+      "Which school is easiest to commute to?"
+    ],
+    "suggestions": [
+      "Show evening or weekend options",
+      "Find online or hybrid programs",
+      "Compare campus commute times",
+      "Does this school offer child care?",
+      "Build a schedule around work"
+    ],
+    "guidance": "I can look for programs that match your work schedule, accessibility needs, commute preferences, and preferred learning format, using verified services or schedule data where available.",
+    "clarification": "\"How many days per week can you be on campus?\"; \"Do you prefer online, hybrid, or in-person?\"; \"Where would your commute begin?\"",
+    "service": "Modality and services comparison with source verification, actual class schedule when available."
+  },
+  {
+    "id": "M16",
+    "label": "Build first plan",
+    "utterances": [
+      "Create a nursing education plan.",
+      "Plan my computer science degree.",
+      "How do I graduate in four years?",
+      "Build a part-time path.",
+      "Start me in fall 2027."
+    ],
+    "suggestions": [
+      "Start with 12 credits per semester",
+      "Include summer courses",
+      "Show prerequisites by semester",
+      "Estimate graduation timing",
+      "Save a new draft plan"
+    ],
+    "guidance": "I can prepare a suggested semester-by-semester plan based on an official program catalog. It's a draft you can adjust; academic approval and actual class availability are separate.",
+    "clarification": "\"Which institution, program, and catalog year?\" (use selected program when known); \"What is your intended start term?\"; \"How many credits can you manage each semester?\"",
+    "service": "Suggested semester-by-semester plan with program requirements, course sequencing, total credits, status: draft."
+  },
+  {
+    "id": "M17",
+    "label": "Prerequisites/corequisites",
+    "utterances": [
+      "Why can't I take BIOL 2715 yet?",
+      "Can I take chemistry and its lab together?",
+      "What happens if I remove a prerequisite?",
+      "Which courses must come before this?",
+      "Can I take the lab later?"
+    ],
+    "suggestions": [
+      "Which courses must I pass first?",
+      "Can I take the lab at the same time?",
+      "What is the minimum grade?",
+      "Move this course to another term",
+      "What if I fail a prerequisite?"
+    ],
+    "guidance": "A prerequisite must be completed before a later course; a corequisite is normally taken alongside it, subject to catalog rules. I can show the dependency chain for your specific course.",
+    "clarification": "\"Which college/catalog and course code?\" only if not clear; \"Would you like the earliest valid term or all dependency courses?\"",
+    "service": "Dependency graph; distinguish prerequisites, corequisites, minimum grades, and substitution; block invalid plans and explain exactly why."
+  },
+  {
+    "id": "M18",
+    "label": "Scheduling and course offerings",
+    "utterances": [
+      "Which classes can I take next semester?",
+      "Find evening anatomy sections.",
+      "Can I fit 15 credits around my job?",
+      "Are these classes offered in summer?",
+      "Build a conflict-free schedule."
+    ],
+    "suggestions": [
+      "Show sections offered next term",
+      "Only evening classes",
+      "Avoid classes on Fridays",
+      "Reduce my credit load",
+      "Check for time conflicts"
+    ],
+    "guidance": "I can help build a conflict-free draft schedule from confirmed course offerings and your availability. A draft timetable does not guarantee an open seat.",
+    "clarification": "\"Which term and campus?\"; \"What days/times are unavailable?\"; \"Maximum credits?\"",
+    "service": "Section-specific timetable where verified; schedule conflict checks, travel/online modality; no claim of actual seat availability without SIS connection."
+  },
+  {
+    "id": "M19",
+    "label": "Academic history/placement",
+    "utterances": [
+      "Do my AP credits count?",
+      "I already passed college algebra.",
+      "Where should I start in math?",
+      "Am I ready for English composition?",
+      "Does dual credit help?"
+    ],
+    "suggestions": [
+      "Will my AP credit count?",
+      "Do dual credits transfer?",
+      "Check my math placement",
+      "Show credits already satisfied",
+      "What records do I need?"
+    ],
+    "guidance": "Prior college, AP, dual-credit, and placement information may affect your plan. I'll distinguish verified records from self-reported information and estimated credit.",
+    "clarification": "\"Which institution and intended program?\"; \"Do you have a verified transcript/credit evaluation, or should we estimate?\"; \"May I access your authorized academic history?\"",
+    "service": "Placement advice only under published rules; distinguish verified credit, self-reported course, and proposed transfer."
+  },
+  {
+    "id": "M20",
+    "label": "Transfer pathway",
+    "utterances": [
+      "Can I transfer from SFCC to UNM?",
+      "Which classes transfer to NMSU?",
+      "How do I start at a community college and finish a bachelor's?",
+      "Will my biology credits count?",
+      "Could I save money by transferring?"
+    ],
+    "suggestions": [
+      "Which courses transfer?",
+      "Which credits satisfy my new major?",
+      "Compare two transfer pathways",
+      "Estimate extra semesters",
+      "Contact a transfer advisor"
+    ],
+    "guidance": "I can compare completed courses with the receiving institution's transfer rules and degree requirements. Transferability and applicability toward a specific major are not the same thing.",
+    "clarification": "\"From which institution/program to which destination program?\"; \"Which courses/credits have you completed?\"; \"What catalog year applies?\"",
+    "service": "Course equivalency versus degree applicability, credits accepted/uncertain, bridge requirements, time and cost implications, advisor review."
+  },
+  {
+    "id": "M21",
+    "label": "Saved plans and advisor workflow",
+    "utterances": [
+      "Save my education plan.",
+      "Show my saved nursing plan.",
+      "Compare my two saved plans.",
+      "Email this to my advisor.",
+      "Download my plan as PDF."
+    ],
+    "suggestions": [
+      "Open my saved plan",
+      "Download the plan as PDF",
+      "Send a plan to my advisor",
+      "Create a copy of this plan",
+      "Show my pending approvals"
+    ],
+    "guidance": "I can help find a saved plan, explain how to download it, or prepare it for advisor review. I'll ask for confirmation before sending or replacing anything.",
+    "clarification": "\"Which saved plan?\" when ambiguous; \"Should I create a new version or replace the existing draft?\"; \"Is this the advisor/recipient you want to send to?\"",
+    "service": "Authenticated retrieval; compare versions; explicit confirmation and permissions for save/send; receipt/status; downloadable plan."
+  },
+  {
+    "id": "M22",
+    "label": "Academic progress and support",
+    "utterances": [
+      "Am I on track to graduate?",
+      "What classes am I missing?",
+      "How can I improve my GPA?",
+      "I failed chemistry—what next?",
+      "Where can I get tutoring?"
+    ],
+    "suggestions": [
+      "How many credits are complete?",
+      "What requirements are left?",
+      "Am I on track to graduate?",
+      "Which courses should I take next?",
+      "What if I reduce my course load?"
+    ],
+    "guidance": "I can review your plan's progress and identify possible delays if you authorize access to the relevant academic information. Any estimate should show missing or unverified records.",
+    "clarification": "\"May I use your authorized transcript or should we use an illustrative plan?\"; \"Which term/course outcome should I evaluate?\"",
+    "service": "Degree-audit-like progress labeled provisional unless official; repeat/policy implications; supportive resources; advisor referral."
+  },
+  {
+    "id": "M23",
+    "label": "Employers near student",
+    "utterances": [
+      "Which hospitals hire nurses within 25 miles of Española?",
+      "Show engineering employers near Los Alamos.",
+      "Find tech companies near my home.",
+      "What employers are in Santa Fe?",
+      "Where could I work after this degree?"
+    ],
+    "suggestions": [
+      "Show hospitals near my home",
+      "Search within 25 miles",
+      "Show currently posted nurse jobs",
+      "Compare employer commute times",
+      "Which degree fits these employers?"
+    ],
+    "guidance": "I can locate relevant employer sites near a city or point you choose, then separate potential employers from confirmed current vacancies. Employer proximity alone does not mean the organization is hiring.",
+    "clarification": "\"Which career/occupation are you targeting?\"; \"Which city, ZIP, or chosen map point should I search from?\"; \"Should I use miles or drive time?\"",
+    "service": "Geocoded employer sites and map; sector/occupation fit; distance vs driving time labeled; distinguish organization presence from live jobs."
+  },
+  {
+    "id": "M24",
+    "label": "Employers near college",
+    "utterances": [
+      "What hospitals are near Northern?",
+      "Show labs near New Mexico Tech.",
+      "Find employers within 30 minutes of NMSU.",
+      "Which college has more nearby engineering employers?",
+      "Compare campuses for access to local jobs."
+    ],
+    "suggestions": [
+      "Show employers near Northern",
+      "Find science employers near New Mexico Tech",
+      "Map hospitals within 30 minutes",
+      "Compare two campus employment areas",
+      "Show internships near the campus"
+    ],
+    "guidance": "I can map employer facilities around selected campuses to show nearby industries and possible work settings. Distances will be labeled as straight-line or routed travel.",
+    "clarification": "\"Which colleges/campuses?\"; \"Which industry or occupation?\"; \"Do you mean distance from the campus or from where you'd live?\"",
+    "service": "Campus-to-employer route matrix, credible fit filter, map and table, data coverage warnings."
+  },
+  {
+    "id": "M25",
+    "label": "Verified jobs and internships",
+    "utterances": [
+      "Are there nursing internships in Santa Fe?",
+      "Who is hiring computer science students now?",
+      "Show paid internships near campus.",
+      "Which businesses offer work-study?",
+      "Is there a job I can get while enrolled?"
+    ],
+    "suggestions": [
+      "Show current internships",
+      "Find part-time student jobs",
+      "Only paid opportunities",
+      "Show jobs within 30 miles",
+      "What qualifications do these jobs need?"
+    ],
+    "guidance": "I can search verified job or internship sources, filter by your occupation and location, and show posting dates when available. I'll distinguish live vacancies from general employer listings.",
+    "clarification": "\"Are you seeking a current vacancy, internship, apprenticeship, or potential future employer?\"; \"Full/part time?\"; \"What date and travel radius?\"",
+    "service": "Separately labeled live postings (verified with timestamps) or potential employers; qualification requirements; job-link dates; school work-study source."
+  },
+  {
+    "id": "M26",
+    "label": "Employer-to-degree pathways",
+    "utterances": [
+      "What major would help me work at Los Alamos National Laboratory?",
+      "Which degrees align with local healthcare employers?",
+      "What skills do New Mexico manufacturers need?",
+      "Where should I study for a cybersecurity job?",
+      "What courses help with renewable energy jobs?"
+    ],
+    "suggestions": [
+      "What degrees fit this job?",
+      "What skills do I need?",
+      "Which nearby colleges teach those skills?",
+      "Show entry-level roles",
+      "Compare two employer pathways"
+    ],
+    "guidance": "I can work backward from a target job or employer to relevant occupations, skills, credentials, and college programs. This is a pathway suggestion, not a hiring guarantee.",
+    "clarification": "\"Which employer/industry and target job role?\"; \"Would you like the shortest credential path or a bachelor's pathway?\"",
+    "service": "Occupation-to-skill-to-CIP/program graph, employer roles verified from source, skill gaps, suggested pathway without placement guarantees."
+  },
+  {
+    "id": "M27",
+    "label": "Credit load and graduation",
+    "utterances": [
+      "What if I take 12 instead of 15 credits?",
+      "What if I study part time?",
+      "What if I add summer courses?",
+      "Can I finish one semester early?",
+      "What if I skip spring?"
+    ],
+    "suggestions": [
+      "Try 12 credits instead of 15",
+      "Add summer courses",
+      "Show my graduation-date difference",
+      "Compare tuition by term",
+      "Save this as a separate scenario"
+    ],
+    "guidance": "I can test a different number of credits per term against your plan. The new completion estimate must respect prerequisite order and actual course rotations, not just divide credits by a load.",
+    "clarification": "\"Which saved or proposed plan should be the baseline?\"; \"What credit load/term should change?\"; \"Should I include summer offerings only when confirmed?\"",
+    "service": "Rebuild dependency-aware sequence and compare earliest feasible completion, workload, tuition, risks."
+  },
+  {
+    "id": "M28",
+    "label": "Course failure/retake",
+    "utterances": [
+      "What if I fail chemistry?",
+      "What if I need to repeat anatomy?",
+      "What if I get a D instead of B?",
+      "What if I drop a prerequisite?",
+      "Will missing a lab delay nursing?"
+    ],
+    "suggestions": [
+      "Which courses would be delayed?",
+      "When could I retake it?",
+      "What happens to estimated GPA?",
+      "Compare with withdrawal instead",
+      "Return to my original plan"
+    ],
+    "guidance": "I can simulate a withdrawal, failed course, or retake and show possible downstream effects on prerequisites, time, cost, and GPA. Your real academic record stays unchanged.",
+    "clarification": "\"Which course and term?\"; \"What hypothetical grade or outcome?\"; \"Should I include the institution's repeat and minimum-grade rules?\"",
+    "service": "New prerequisite-ready dates, repeat cost, impacted courses, GPA only if sufficient inputs and actual policy."
+  },
+  {
+    "id": "M29",
+    "label": "Institution/program switch",
+    "utterances": [
+      "What if I change from nursing to biology?",
+      "What if I transfer to UNM after one year?",
+      "Could I start at a community college?",
+      "What if I switch to computer science?",
+      "Which path loses fewer credits?"
+    ],
+    "suggestions": [
+      "Switch from nursing to biology",
+      "Compare remaining required credits",
+      "Estimate extra tuition",
+      "Check transfer-course applicability",
+      "Keep both plans as options"
+    ],
+    "guidance": "I can compare the courses that still count, requirements of the new program or institution, and possible added terms. The receiving college must confirm final degree applicability.",
+    "clarification": "\"What is the current baseline and target school/program?\"; \"Which completed courses are verified?\"; \"Should we compare time, total cost, credits lost, or all?\"",
+    "service": "Dual plan comparison; transfer equivalencies, program applicability, requirements and warnings; no unsupported acceptance claims."
+  },
+  {
+    "id": "M30",
+    "label": "Tuition, aid, living situation",
+    "utterances": [
+      "What if my scholarship ends?",
+      "What if tuition goes up 5%?",
+      "What if I live at home?",
+      "What if I qualify for in-state rates?",
+      "What if I work 20 hours a week?"
+    ],
+    "suggestions": [
+      "Remove a scholarship next year",
+      "Compare living at home with campus housing",
+      "Try out-of-state tuition",
+      "What if tuition rises 5%?",
+      "Show my budget gap"
+    ],
+    "guidance": "I can illustrate how tuition rates, residency classification, housing, or a scholarship change may affect your projected costs. All hypothetical inputs will be labeled.",
+    "clarification": "\"Which school/program and academic years?\"; \"What amount or percentage should change?\"; \"Should the analysis include rent, transport, and realistic available study time?\"",
+    "service": "Formula-driven baseline-vs-scenario cost, per-term cash requirement, feasible hours, uncertainty and aid-rule disclaimers."
+  },
+  {
+    "id": "M31",
+    "label": "Grades and GPA",
+    "utterances": [
+      "What if I get A's in the next three courses?",
+      "Can I raise my GPA to 3.0?",
+      "What if I withdraw?",
+      "How will a retake affect GPA?",
+      "Do I still qualify for the program?"
+    ],
+    "suggestions": [
+      "What if I earn all A's?",
+      "What if I earn a C in chemistry?",
+      "What GPA would I need next term?",
+      "Explain grade points and credits",
+      "Compare two grade scenarios"
+    ],
+    "guidance": "I can calculate an illustrative term or cumulative GPA from graded credits and proposed grades. Actual repeat and GPA policies depend on your college.",
+    "clarification": "\"What's your current earned GPA/credits (or may I use your authorized record)?\"; \"Which courses, credit hours and grades should I model?\"",
+    "service": "Hypothetical term/cumulative GPA; institution-specific forgiveness/replacement policy; eligibility cannot be confirmed without verified policy."
+  },
+  {
+    "id": "M32",
+    "label": "Schedule-work-commute tradeoffs",
+    "utterances": [
+      "What if I take a job 40 minutes away?",
+      "Would evening classes let me work full time?",
+      "What if I live near campus instead?",
+      "Can I commute between work and college?",
+      "What if I switch to hybrid learning?"
+    ],
+    "suggestions": [
+      "What if I work 20 hours weekly?",
+      "Show a lighter semester",
+      "Avoid morning classes",
+      "Compare driving and transit",
+      "Estimate working income separately"
+    ],
+    "guidance": "I can explore whether a class and work schedule appears feasible, including credit load, travel time, and available hours. I'll flag uncertain travel or offering information.",
+    "clarification": "\"Where are school, workplace, and home (city/ZIP or map point)?\"; \"What days/hours are fixed?\"; \"Drive, transit, or walking?\"",
+    "service": "Feasibility simulation with routed travel buffer and time constraints; label estimated route times and unknown schedules."
+  },
+  {
+    "id": "M33",
+    "label": "Career and earnings alternatives",
+    "utterances": [
+      "What if I choose an associate degree rather than a bachelor's?",
+      "Would an extra year improve earnings?",
+      "What if I work in Albuquerque instead of Santa Fe?",
+      "What if I pursue teaching instead of nursing?",
+      "How much more debt would another degree require?"
+    ],
+    "suggestions": [
+      "ADN versus BSN pathway",
+      "Compare two occupations",
+      "Show required degree levels",
+      "Compare New Mexico wages",
+      "What if I start at a community college?"
+    ],
+    "guidance": "I can compare alternative educational routes using study time, required credentials, costs, and regional occupation wage benchmarks. These are scenario comparisons, not career promises.",
+    "clarification": "\"Which paths and location?\"; \"Do you want a cost comparison, labor-market comparison, or an illustrative financial scenario?\"",
+    "service": "Education duration/cost vs occupation wage distributions, not individualized salary prediction or guaranteed ROI."
+  },
+  {
+    "id": "M34",
+    "label": "Scenario optimizer",
+    "utterances": [
+      "Find the quickest affordable path to become a nurse.",
+      "How do I graduate by 2030 without spending over $20,000?",
+      "Which college is cheapest within a 45-minute drive?",
+      "Can I avoid taking classes on Fridays?",
+      "What is the best trade-off among time, cost, and salary?"
+    ],
+    "suggestions": [
+      "Find the lowest-cost feasible path",
+      "Graduate as early as possible",
+      "Limit to 12 credits per term",
+      "Keep driving under 45 minutes",
+      "Show why no plan matches"
+    ],
+    "guidance": "I can search for feasible plans that satisfy your hard constraints and optimize the remaining preferences. If no plan fits all limits, I'll show which constraint prevents a solution.",
+    "clarification": "\"Which constraints are hard limits?\"; \"Which two outcomes should be optimized first?\"; \"Can I suggest alternatives that relax one limit?\"",
+    "service": "Pareto-feasible options, unmet constraints and explanations; never invent a feasible path when constraints conflict."
+  },
+  {
+    "id": "M35",
+    "label": "Definitions and data quality",
+    "utterances": [
+      "What's net price?",
+      "Where did this salary come from?",
+      "Why are earnings missing?",
+      "Are these rankings official?",
+      "What year is this data from?"
+    ],
+    "suggestions": [
+      "How was this tuition calculated?",
+      "What exactly is a credit hour?",
+      "Where did this data come from?",
+      "What does this graduation rate mean?",
+      "Show source and update date"
+    ],
+    "guidance": "I can explain the meaning, source, reporting period, and limitations of a displayed number, including tuition rates, credit hours, graduation rates, and job statistics.",
+    "clarification": "None unless the referenced metric is ambiguous; \"Which figure should I explain?\" only if multiple.",
+    "service": "Plain-language definition, source/time/cohort, estimated-vs-observed status; allow source drill-down."
+  },
+  {
+    "id": "M36",
+    "label": "Student correction",
+    "utterances": [
+      "Actually my budget is $8,000.",
+      "Only public schools.",
+      "Make it 30 miles, not 50.",
+      "I prefer online.",
+      "Replace nursing with radiology."
+    ],
+    "suggestions": [
+      "Set the maximum budget to $8,000",
+      "Only show public colleges",
+      "Use a 30-minute commute",
+      "Switch to associate degrees",
+      "Undo my last filter change"
+    ],
+    "guidance": "I've updated the specific preference you changed and kept the other comparison settings the same. I can refresh the relevant result without restarting our conversation.",
+    "clarification": "None if the change is unambiguous; ask only which prior comparison to update if multiple active.",
+    "service": "Apply changed slot, recalculate and show changed outcome with baseline retained as prior option."
+  },
+  {
+    "id": "M37",
+    "label": "Ambiguity or no results",
+    "utterances": [
+      "Which Northern?",
+      "Find colleges near me",
+      "I need a really cheap school.",
+      "No programs match my filters.",
+      "Can you try something else?"
+    ],
+    "suggestions": [
+      "Widen the commute range",
+      "Increase the budget",
+      "Show another credential level",
+      "Remove only one filter",
+      "Ask an advisor for alternatives"
+    ],
+    "guidance": "I couldn't find verified options that meet every stated requirement, or the request needs one detail to avoid a wrong match. I can explain the limitation and offer the smallest useful adjustment.",
+    "clarification": "\"Which institution or place did you mean?\"; \"Would you like to widen distance, relax cost, or include another credential level?\"",
+    "service": "Clarification or nearest viable alternatives; explicitly state constraints relaxed."
+  },
+  {
+    "id": "M38",
+    "label": "Sensitive decisions and escalation",
+    "utterances": [
+      "Can you approve this course substitution?",
+      "Guarantee my admission.",
+      "Tell me my exact FAFSA award.",
+      "Send my transcript to my employer.",
+      "I'm in crisis and need help."
+    ],
+    "suggestions": [
+      "Find the right college office",
+      "Prepare an advisor question",
+      "Review official requirements",
+      "Show what information I should include",
+      "Explain what Mesa cannot approve"
+    ],
+    "guidance": "I can explain the official process and help prepare a question or request for the appropriate staff member. I cannot approve admission, substitute a course, release protected records, or guarantee aid.",
+    "clarification": "\"Would you like the official office contact or help drafting a question for an advisor?\"; for records-sharing require authorization and explicit confirmation.",
+    "service": "No false authority; policy explanation, verified contacts, trusted human escalation, safety-appropriate support."
+  }
+]

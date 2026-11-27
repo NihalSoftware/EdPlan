@@ -1,0 +1,220 @@
+[
+  {
+    "title": "nursing",
+    "turns": [
+      {
+        "message": "I want to become a nurse in New Mexico.",
+        "intent": "M03"
+      },
+      {
+        "message": "I have passed the GED.",
+        "intent": "M02"
+      },
+      {
+        "message": "Option 1: show the ADN pathway.",
+        "intent": "M05"
+      },
+      {
+        "message": "Give me the list of colleges with RN programs.",
+        "intent": "M05"
+      },
+      {
+        "message": "Compare ADN tuition and deadlines.",
+        "intent": "M10"
+      },
+      {
+        "message": "What are the prerequisites besides graduation?",
+        "intent": "M17"
+      },
+      {
+        "message": "Is it the same for bachelor's nursing?",
+        "intent": "M17"
+      },
+      {
+        "message": "Do I finish prerequisites before joining college?",
+        "intent": "M17"
+      },
+      {
+        "message": "How many credit hours is the course?",
+        "intent": "M05"
+      },
+      {
+        "message": "What is my tuition based on?",
+        "intent": "M11"
+      },
+      {
+        "message": "How do you calculate tuition for Northern?",
+        "intent": "M11"
+      },
+      {
+        "message": "I am an international student. What would my fees be?",
+        "intent": "M11"
+      },
+      {
+        "message": "If I'm from California, what would tuition be?",
+        "intent": "M30"
+      },
+      {
+        "message": "What is a degree for a two-credit hour?",
+        "intent": "M35"
+      },
+      {
+        "message": "What student-status categories apply, and what does each cost per credit?",
+        "intent": "M11"
+      }
+    ]
+  },
+  {
+    "title": "From career interests to a shortlist",
+    "turns": [
+      {
+        "message": "I like science, but I do not know what I want to study.",
+        "intent": "M03"
+      },
+      {
+        "message": "Show healthcare careers.",
+        "intent": "M03"
+      },
+      {
+        "message": "Show healthcare associate degrees.",
+        "intent": "M05"
+      }
+    ]
+  },
+  {
+    "title": "Multi-parameter comparison with changing constraints",
+    "turns": [
+      {
+        "message": "Compare public New Mexico colleges for computer science or related programs.",
+        "intent": "M10"
+      },
+      {
+        "message": "Only show bachelor's degrees with total annual cost under $12,000.",
+        "intent": "M10"
+      },
+      {
+        "message": "Also keep colleges within a 90-minute drive of Santa Fe.",
+        "intent": "M10"
+      }
+    ]
+  },
+  {
+    "title": "Employer vicinity versus actual vacancies",
+    "turns": [
+      {
+        "message": "Show engineering employers near New Mexico Tech.",
+        "intent": "M24"
+      },
+      {
+        "message": "Show employers within 45 minutes of the campus.",
+        "intent": "M24"
+      },
+      {
+        "message": "Which of those offer internships right now?",
+        "intent": "M25"
+      }
+    ]
+  },
+  {
+    "title": "What-if credit-load planning and summer courses",
+    "turns": [
+      {
+        "message": "What if I take 12 credits each semester instead of 15?",
+        "intent": "M27"
+      },
+      {
+        "message": "Use my saved education plan and compare both options.",
+        "intent": "M27"
+      },
+      {
+        "message": "Include summer classes, but keep my original plan.",
+        "intent": "M27"
+      }
+    ]
+  },
+  {
+    "title": "Prerequisites and safe course movement",
+    "turns": [
+      {
+        "message": "Can I move BIOL 2715 into my first semester?",
+        "intent": "M17"
+      },
+      {
+        "message": "Show why it cannot be moved if I am missing chemistry.",
+        "intent": "M17"
+      },
+      {
+        "message": "What can I take in its place?",
+        "intent": "M17"
+      }
+    ]
+  },
+  {
+    "title": "Transfer planning across destination universities",
+    "turns": [
+      {
+        "message": "I have taken courses at Santa Fe Community College. Can I transfer to UNM?",
+        "intent": "M20"
+      },
+      {
+        "message": "I want a bachelor's degree in biology.",
+        "intent": "M20"
+      },
+      {
+        "message": "What if I choose NMSU instead?",
+        "intent": "M29"
+      }
+    ]
+  },
+  {
+    "title": "Residency and international tuition: hypothetical versus actual",
+    "turns": [
+      {
+        "message": "I am an international student. How much would nursing cost?",
+        "intent": "M11"
+      },
+      {
+        "message": "What if I lived in California instead?",
+        "intent": "M30"
+      },
+      {
+        "message": "Return to my actual international status.",
+        "intent": "M36"
+      }
+    ]
+  },
+  {
+    "title": "Budget, living at home and missing aid",
+    "turns": [
+      {
+        "message": "Can I afford college with an $8,000 yearly budget?",
+        "intent": "M11"
+      },
+      {
+        "message": "I can live at home.",
+        "intent": "M30"
+      },
+      {
+        "message": "What if a scholarship ends after my first year?",
+        "intent": "M30"
+      }
+    ]
+  },
+  {
+    "title": "Saved plan and advisor approval workflow",
+    "turns": [
+      {
+        "message": "I have finished my education plan. Can Mesa send it to my advisor?",
+        "intent": "M21"
+      },
+      {
+        "message": "Preview the plan first.",
+        "intent": "M21"
+      },
+      {
+        "message": "Prepare it for my advisor.",
+        "intent": "M21"
+      }
+    ]
+  }
+]

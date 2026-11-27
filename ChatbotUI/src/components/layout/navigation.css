@@ -1,0 +1,79 @@
+.site-navigation-header {
+  padding: 24px;
+}
+
+.site-navigation-links {
+  gap: 8px;
+  padding: 28px 20px;
+}
+
+.site-navigation-link {
+  gap: 16px;
+  padding: 12px 16px;
+}
+
+.site-navigation-label {
+  overflow-wrap: anywhere;
+}
+
+.site-navigation-footer {
+  padding: 24px;
+}
+
+@media (max-height: 810px) {
+  .site-navigation-header {
+    padding: 12px 18px;
+  }
+
+  .site-navigation-logo {
+    max-width: 180px;
+  }
+
+  .site-navigation-links {
+    gap: 4px;
+    padding: 12px 16px;
+  }
+
+  .site-navigation-link {
+    min-height: 40px;
+    padding-block: 8px;
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+  .site-navigation-footer {
+    padding: 8px 18px;
+  }
+}
+
+@media (max-height: 550px) {
+  .site-navigation-header {
+    padding: 4px 12px;
+  }
+
+  .site-navigation-logo {
+    max-width: 108px;
+  }
+
+  .site-navigation-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 6px 10px;
+  }
+
+  .site-navigation-link {
+    min-height: 36px;
+    gap: 6px;
+    padding: 4px 8px;
+    font-size: 13px;
+    line-height: 1.15;
+  }
+
+  .site-navigation-link svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .site-navigation-footer {
+    padding: 4px 12px;
+  }
+}

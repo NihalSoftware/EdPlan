@@ -52,6 +52,7 @@ class Settings(BaseSettings):
     openrouter_temperature: float = Field(0.2, alias="OPENROUTER_TEMPERATURE")
     openrouter_max_tokens: int = Field(1024, alias="OPENROUTER_MAX_TOKENS")
     openrouter_timeout: float = Field(30.0, alias="OPENROUTER_TIMEOUT")
+    mesa_model_routing: bool = Field(False, alias="MESA_MODEL_ROUTING")
     default_admin_email: str = Field(..., alias="DEFAULT_ADMIN_EMAIL")
     default_admin_password: str = Field(..., alias="DEFAULT_ADMIN_PASSWORD")
 

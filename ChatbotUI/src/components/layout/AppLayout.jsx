@@ -6,7 +6,6 @@ const AppLayout = () => {
 	const [open, setOpen] = useState(false);
 	const location = useLocation();
 	const mainRef = useRef(null);
-	const isNexusRoute = location.pathname.startsWith("/edplan-nexus");
 
 	useEffect(() => {
 		mainRef.current?.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -50,10 +49,8 @@ const AppLayout = () => {
 			{/* Backdrop for mobile when menu is open */}
 			{open && <div className="fixed inset-0 bg-black/30 z-40 lg:hidden" onClick={() => setOpen(false)} />}
 
-			<main ref={mainRef} className="flex-1 w-full min-h-screen overflow-y-auto lg:ml-72">
-				<div className={isNexusRoute ? "edplan-nexus-scaled" : ""}>
-					<Outlet />
-				</div>
+			<main ref={mainRef} className={`flex-1 w-full min-h-screen lg:ml-72 ${location.pathname === "/mesa" ? "overflow-visible" : "overflow-y-auto"}`}>
+				<Outlet />
 			</main>
 		</div>
 	);

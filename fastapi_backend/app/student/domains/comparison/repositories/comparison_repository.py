@@ -126,7 +126,8 @@ class ComparisonRepository:
         result = await db.execute(
             text(
                 """
-                SELECT pc.program_id, c.career_id, c.career_name, c.description
+                SELECT pc.program_id, c.career_id, c.career_name,
+                       COALESCE(to_jsonb(c)->>'career_description', to_jsonb(c)->>'description') AS description
                 FROM program_careers pc
                 JOIN careers c ON c.career_id = pc.career_id
                 WHERE pc.program_id IN :program_ids
@@ -146,7 +147,8 @@ class ComparisonRepository:
         result = await db.execute(
             text(
                 """
-                SELECT co.program_id, cc.course_id, c.career_id, c.career_name, c.description
+                SELECT co.program_id, cc.course_id, c.career_id, c.career_name,
+                       COALESCE(to_jsonb(c)->>'career_description', to_jsonb(c)->>'description') AS description
                 FROM course_careers cc
                 JOIN careers c ON c.career_id = cc.career_id
                 JOIN courses co ON co.course_id = cc.course_id

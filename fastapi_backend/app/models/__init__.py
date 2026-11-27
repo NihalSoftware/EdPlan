@@ -1,4 +1,5 @@
 from app.models.user import Customer, User, UserRole  # noqa: F401
+from app.mesa.models import MesaConversation, MesaDailyMetric, MesaScenario  # noqa: F401
 from app.student.domains.onboarding.models.intake import IntakeSubmission  # noqa: F401
 from app.student.domains.discovery.models.program import (  # noqa: F401
     Course,

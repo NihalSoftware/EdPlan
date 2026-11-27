@@ -1,9 +1,12 @@
 from __future__ import annotations
 
-from fastapi import APIRouter, Depends, Query
+from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.db.session import get_db
+from app.models.user import User
+from app.security.auth import get_current_user
+from app.student.domains.planning.api.access import require_plan_owner
 from app.student.domains.planning.schemas.normalized_plan import (
     PlanCourseCreateRequest,
     PlanCourseDeleteResponse,
@@ -28,7 +31,7 @@ from app.student.domains.planning.services.planning_validation_service import (
     planning_validation_service,
 )
 
-router = APIRouter(prefix="/plans", tags=["plans"])
+router = APIRouter(prefix="/plans", tags=["plans"], dependencies=[Depends(require_plan_owner)])
 
 
 @router.get("", response_model=PlanListResponse)
@@ -36,10 +39,13 @@ async def list_plans(
     user_id: int | None = Query(default=None, gt=0),
     is_active: bool | None = None,
     db: AsyncSession = Depends(get_db),
+    user: User = Depends(get_current_user),
 ):
+    if user_id is not None and user_id != user.id:
+        raise HTTPException(403, "Cannot list another student's plans")
     plans = await normalized_plan_service.list_plans(
         db,
-        user_id=user_id,
+        user_id=user.id,
         is_active=is_active,
     )
     return _success(plans, metadata={"count": len(plans)})
@@ -49,7 +55,10 @@ async def list_plans(
 async def create_plan(
     request: PlanCreateRequest,
     db: AsyncSession = Depends(get_db),
+    user: User = Depends(get_current_user),
 ):
+    if request.user_id != user.id:
+        raise HTTPException(403, "Cannot create a plan for another student")
     plan = await normalized_plan_service.create_plan(db, request)
     return _success(plan)
 
